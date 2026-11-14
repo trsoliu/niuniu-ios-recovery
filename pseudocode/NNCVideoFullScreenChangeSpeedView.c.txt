@@ -1,0 +1,660 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCVideoFullScreenChangeSpeedView.initWithFrame: | 0x10000fa0c | ev_925d699bc5040b8db778c710594c433c46b47376d586932d8f4e37c9a5e3da5c */
+
+/* Function Stack Size: 0x30 bytes */
+
+ID NNCVideoFullScreenChangeSpeedView::initWithFrame_(ID param_1,SEL param_2,CGRect param_3)
+
+{
+  ID IVar1;
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCVideoFullScreenChangeSpeedView;
+  local_30 = param_1;
+  IVar1 = _objc_msgSendSuper2(param_3.field0_0x0.field0_0x0,param_3.field0_0x0.field1_0x8,
+                              param_3.field1_0x10.field0_0x0,param_3.field1_0x10.field1_0x8,
+                              &local_30,"initWithFrame:");
+  if (IVar1 != 0) {
+    FUN_1015e0228(IVar1);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.hitTest:withEvent: | 0x10000fa5c | ev_053257ba3e5891fa910f0cdd93275d85bd4a4646ed1fe5106149ca739ffd2a3d */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x28 bytes */
+
+ID NNCVideoFullScreenChangeSpeedView::hitTest_withEvent_
+             (ID param_1,SEL param_2,CGPoint param_3,ID param_4)
+
+{
+  ID IVar1;
+  ID IVar2;
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCVideoFullScreenChangeSpeedView;
+  local_30 = param_1;
+  IVar2 = _objc_msgSendSuper2(param_3.field0_0x0,param_3.field1_0x8,&local_30,"hitTest:withEvent:");
+  IVar1 = 0;
+  if (IVar2 != param_1) {
+    IVar1 = IVar2;
+  }
+  return IVar1;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.setupView | 0x10000fac4 | ev_ac5dfbe5f2a1cefe64a14de78541a42628b13b63ee5e2b37a90a721628388f7e */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoFullScreenChangeSpeedView::setupView(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  SEL extraout_x1_03;
+  SEL extraout_x1_04;
+  SEL extraout_x1_05;
+  SEL extraout_x1_06;
+  double dVar4;
+  double dVar5;
+  double in_d2;
+  double in_d3;
+  undefined1 auVar6 [16];
+  
+  uVar1 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+  FUN_101531d88(uVar1);
+  dVar4 = in_d2;
+  uVar1 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+  FUN_101531d88(uVar1);
+  dVar5 = in_d3;
+  if (in_d3 <= in_d2) {
+    dVar5 = in_d2;
+  }
+  uVar1 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+  FUN_101531d88(uVar1);
+  uVar1 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+  FUN_101531d88(uVar1);
+  if (in_d3 <= dVar4) {
+    dVar4 = in_d3;
+  }
+  _objc_alloc(&_OBJC_CLASS___UIView);
+  auVar6 = FUN_101564e08(dVar5 + -300.0,0,0x4072c00000000000,dVar4);
+  FUN_1015ce348(param_1,auVar6._8_8_,auVar6._0_8_);
+  uVar1 = FUN_101531348(&_OBJC_CLASS___UIColor);
+  uVar1 = FUN_10153bfa8(0x3fe8000000000000,uVar1);
+  auVar6 = FUN_10159a348(param_1);
+  FUN_1015a5908(auVar6._0_8_,auVar6._8_8_,uVar1);
+  auVar6 = FUN_10159a348(param_1);
+  FUN_101527148(param_1,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_10159a348(param_1);
+  FUN_1015d2748(auVar6._0_8_,auVar6._8_8_,4);
+  uVar1 = _objc_alloc(&_OBJC_CLASS___UITableView);
+  uVar2 = FUN_10159a348(param_1);
+  dVar4 = (double)FUN_1015fc468(uVar2);
+  uVar2 = FUN_10159a348(param_1);
+  dVar5 = (double)FUN_10155e568(uVar2);
+  auVar6 = FUN_101565388(0x4024000000000000,0x4039000000000000,dVar4 + -50.0,dVar5 + -50.0,uVar1,
+                         extraout_x1,1);
+  FUN_1015d62e8(param_1,auVar6._8_8_,auVar6._0_8_);
+  IVar3 = FUN_1015edca8(param_1,extraout_x1_00);
+  FUN_1015d2308(IVar3);
+  IVar3 = FUN_1015edca8(param_1,extraout_x1_01);
+  FUN_1015d0928(IVar3);
+  IVar3 = FUN_1015edca8(param_1,extraout_x1_02);
+  FUN_1015ae568(IVar3);
+  IVar3 = FUN_1015edca8(param_1,extraout_x1_03);
+  FUN_1015aeee8(IVar3,extraout_x1_04,param_1);
+  FUN_10153a2e8(&_OBJC_CLASS___UIColor);
+  IVar3 = FUN_1015edca8(param_1,extraout_x1_05);
+  FUN_1015a5908(IVar3);
+  IVar3 = FUN_1015edca8(param_1,extraout_x1_06);
+  FUN_1015ac048(IVar3);
+  auVar6 = FUN_10159a348(param_1);
+  FUN_1015edca8(param_1,auVar6._8_8_);
+  FUN_101527148(auVar6._0_8_);
+  return;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.tableView:numberOfRowsInSection: | 0x10000fe58 | ev_262068f9bd873597b8f9dcfed70cbe6808b3789cd2bb1bde733d37fad3c0afa4 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+long_long NNCVideoFullScreenChangeSpeedView::tableView_numberOfRowsInSection_
+                    (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  long_long lVar3;
+  
+  IVar1 = FUN_101546808(param_1,param_2,param_3);
+  uVar2 = FUN_10155a248(IVar1);
+  lVar3 = FUN_10153f908(uVar2);
+  return lVar3;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.tableView:cellForRowAtIndexPath: | 0x10000feb4 | ev_05ab9cc092208fc254f9a291d26ac20d4341fb3dd08dcfd9cac09f2e41846e79 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID NNCVideoFullScreenChangeSpeedView::tableView_cellForRowAtIndexPath_
+             (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  int iVar1;
+  ID IVar2;
+  SEL extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  cfstringStruct *pcVar3;
+  undefined8 uVar4;
+  ID IVar5;
+  float fVar6;
+  undefined1 auVar7 [16];
+  
+  pcVar3 = &cf_VideoSpeedCell;
+  auVar7 = FUN_101546e68(param_3);
+  if (auVar7._0_8_ == 0) {
+    auVar7 = FUN_101538148(&objc::class_t::NNCVideoFullScreenSpeedCell);
+  }
+  IVar5 = auVar7._0_8_;
+  IVar2 = FUN_101546808(param_1,auVar7._8_8_,(ID)pcVar3);
+  iVar1 = FUN_101557608(IVar2);
+  auVar7 = FUN_10159ad88(param_4);
+  if (auVar7._0_8_ == (long)iVar1) {
+    uVar4 = 0xff8038;
+  }
+  else {
+    uVar4 = 0xffffff;
+  }
+  IVar2 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar7._8_8_,uVar4);
+  uVar4 = FUN_1015e6ac8(IVar5);
+  FUN_1015d6fa8(uVar4);
+  IVar2 = FUN_101546808(param_1,extraout_x1,IVar2);
+  uVar4 = FUN_10155a248(IVar2);
+  auVar7 = FUN_10159ad88(param_4);
+  uVar4 = FUN_101583328(uVar4,auVar7._8_8_,auVar7._0_8_);
+  fVar6 = (float)FUN_101553868(uVar4);
+  iVar1 = (int)(fVar6 * 100.0);
+  if (iVar1 == 100) {
+    auVar7 = FUN_1015e6ac8(IVar5);
+    FUN_1015d6f08(auVar7._0_8_,auVar7._8_8_,&cf_ck8_);
+    goto LAB_100010100;
+  }
+  if ((iVar1 * -0x3d70a3d7 + 0x51eb850U >> 2 | iVar1 * 0x40000000) < 0x28f5c29) {
+    FUN_101553868(uVar4);
+    uVar4 = extraout_x1_01;
+LAB_1000100bc:
+    pcVar3 = &cf___1fX;
+  }
+  else {
+    FUN_101553868(uVar4);
+    uVar4 = extraout_x1_00;
+    if ((iVar1 * -0x33333333 + 0x19999998U >> 1 | iVar1 * -0x80000000) < 0x19999999)
+    goto LAB_1000100bc;
+    pcVar3 = &cf___2fX;
+  }
+  uVar4 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,uVar4,pcVar3);
+  auVar7 = FUN_1015e6ac8(IVar5);
+  FUN_1015d6f08(auVar7._0_8_,auVar7._8_8_,uVar4);
+LAB_100010100:
+  auVar7 = FUN_10153a2e8(&_OBJC_CLASS___UIColor);
+  FUN_1015a5908(IVar5,auVar7._8_8_,auVar7._0_8_);
+  return IVar5;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.tableView:heightForRowAtIndexPath: | 0x10001015c | ev_14540cc70b7a80f3fc9d4aaed47163268c5c156d39cd96aecff927a48d2ad974 */
+
+/* Function Stack Size: 0x20 bytes */
+
+double NNCVideoFullScreenChangeSpeedView::tableView_heightForRowAtIndexPath_
+                 (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  return 50.0;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.tableView:viewForHeaderInSection: | 0x100010168 | ev_a787f0380242e47d97434d3fec1aeabf0b3f57c8afcd74c96e4d2468a2f471c5 */
+
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID NNCVideoFullScreenChangeSpeedView::tableView_viewForHeaderInSection_
+             (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_1015813c8(&_OBJC_CLASS___UIView);
+  return IVar1;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.tableView:heightForHeaderInSection: | 0x100010184 | ev_288df9ae97d7e4780c88f471c807aeb21b382c9cc4e1de03aa14b93bf63c6927 */
+
+/* Function Stack Size: 0x20 bytes */
+
+double NNCVideoFullScreenChangeSpeedView::tableView_heightForHeaderInSection_
+                 (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  return 6.0;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.tableView:viewForFooterInSection: | 0x10001018c | ev_daf505a78ebe8efd17975548e947ff8e787fbadc605d6b930793e95a61ef1e17 */
+
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID NNCVideoFullScreenChangeSpeedView::tableView_viewForFooterInSection_
+             (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_1015813c8(&_OBJC_CLASS___UIView);
+  return IVar1;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.tableView:heightForFooterInSection: | 0x1000101a8 | ev_c5c067b8487f07ad8cb8bdaf83c94d474764004038c43e47b69238a578e55220 */
+
+/* Function Stack Size: 0x20 bytes */
+
+double NNCVideoFullScreenChangeSpeedView::tableView_heightForFooterInSection_
+                 (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  return 0.009999999776482582;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.tableView:didSelectRowAtIndexPath: | 0x1000101b4 | ev_e85f591e6bf4d95ee11f8ce8900600b0d92cb16f1badccbad14c63e950994d14 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCVideoFullScreenChangeSpeedView::tableView_didSelectRowAtIndexPath_
+               (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  ID IVar1;
+  undefined1 auVar2 [16];
+  
+  IVar1 = FUN_101546808(param_1,param_2,param_3);
+  auVar2 = FUN_10159ad88(param_4);
+  FUN_101581da8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_10157d348(param_1);
+  FUN_1015ee108(auVar2._0_8_,auVar2._8_8_,param_1);
+  return;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.controlView | 0x100010240 | ev_a816bcb1411fa38da784df7465d8e0fee2777d307f1ed79968470a30ee7a6369 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoFullScreenChangeSpeedView::controlView(ID param_1,SEL param_2)
+
+{
+  return param_1;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.installedControlViewToVideoPlayer: | 0x100010244 | ev_e9f216b0b0aded2a9914270e8d8e405c168047107b2dc2f4bba0c68ff004fb59 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoFullScreenChangeSpeedView::installedControlViewToVideoPlayer_
+               (ID param_1,SEL param_2,ID param_3)
+
+{
+  SEL extraout_x1;
+  
+  FUN_1015dc3c8();
+  FUN_101574ae8(param_1,extraout_x1,param_3);
+  return;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.restartControlLayer | 0x100010268 | ev_0bb01aa0587ca7c99b819406a56cc01df8d65d14e7dbd5570357235bdd9cf444 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoFullScreenChangeSpeedView::restartControlLayer(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  SEL pcVar4;
+  
+  *(undefined1 *)(param_1 + (long)__restarted) = 1;
+  uVar2 = FUN_1015f9428();
+  iVar1 = FUN_10156dde8(uVar2);
+  pcVar4 = extraout_x1;
+  if (iVar1 != 0) {
+    uVar2 = FUN_1015f9428(param_1);
+    FUN_101580988(uVar2);
+    pcVar4 = extraout_x1_00;
+  }
+  IVar3 = FUN_1015edca8(param_1,pcVar4);
+  FUN_101592d08(IVar3);
+  uVar2 = FUN_10153eca8(param_1);
+  FUN_1005491e8(uVar2,1);
+  uVar2 = FUN_10159a348(param_1);
+  FUN_1005491e8(uVar2,1);
+  return;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.exitControlLayer | 0x100010344 | ev_a38a7ddcba5aa0866434df338679f55738766196c73c3b3f433beaa8315f2d7e */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoFullScreenChangeSpeedView::exitControlLayer(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined *local_48;
+  undefined8 local_40;
+  code *local_38;
+  undefined *puStack_30;
+  ID local_28;
+  
+  *(undefined1 *)(param_1 + (long)__restarted) = 0;
+  uVar1 = FUN_10159a348();
+  FUN_1005491f0(uVar1,1);
+  uVar1 = FUN_10153eca8(param_1);
+  local_48 = PTR___NSConcreteStackBlock_101d78760;
+  local_40 = 0xc2000000;
+  local_38 = FUN_1000103ec;
+  puStack_30 = &UNK_101d7b580;
+  local_28 = param_1;
+  FUN_100548f44(uVar1,1,&local_48);
+  return;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.videoPlayer:gestureRecognizerShouldTrigger:location: | 0x10001043c | ev_f4ce74c01afa7f299d0563237b8c0baceb584ac04374c04feceea7eb637dfe97 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x30 bytes */
+
+bool NNCVideoFullScreenChangeSpeedView::videoPlayer_gestureRecognizerShouldTrigger_location_
+               (ID param_1,SEL param_2,ID param_3,unsigned_long_long param_4,CGPoint param_5)
+
+{
+  int iVar1;
+  ulong uVar2;
+  undefined1 auVar3 [16];
+  
+  if (param_4 == 0) {
+    auVar3 = FUN_10159a348();
+    FUN_101554148(auVar3._0_8_,auVar3._8_8_);
+    uVar2 = _CGRectContainsPoint();
+    if ((uVar2 & 1) == 0) {
+      auVar3 = FUN_10157d348(param_1);
+      iVar1 = FUN_101598088(auVar3._0_8_,auVar3._8_8_,"tappedBlankAreaOnTheControlLayer:");
+      if (iVar1 != 0) {
+        auVar3 = FUN_10157d348(param_1);
+        FUN_1015ee108(auVar3._0_8_,auVar3._8_8_,param_1);
+      }
+    }
+  }
+  return 0;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.canTriggerRotationOfVideoPlayer: | 0x1000104fc | ev_de366ea47cc2dadce01ce1c2c775e4f36b15421f7c54228a8230ba66c8bd1d5f */
+
+/* Function Stack Size: 0x18 bytes */
+
+bool NNCVideoFullScreenChangeSpeedView::canTriggerRotationOfVideoPlayer_
+               (ID param_1,SEL param_2,ID param_3)
+
+{
+  return 0;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.restarted | 0x100010504 | ev_3036ea3639b75e8a333adf05309a153f152fe619ca09b5dd8e46cf6013cd9403 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCVideoFullScreenChangeSpeedView::restarted(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__restarted);
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.delegate | 0x100010514 | ev_381c5ea0ec799d1536621ea2283151e66b338e97382f08af7e7ab70a8d4efb16 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoFullScreenChangeSpeedView::delegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__delegate);
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.setDelegate: | 0x100010534 | ev_2ca3e6b1c6a61d6b209e07dfdf598733cbb7d0407ce4b3d7aba41baa0df68ec0 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoFullScreenChangeSpeedView::setDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__delegate) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.moreDelegate | 0x100010548 | ev_684558ab9c784dba14ecbcbe06bd52671f804558457d328625a843a2c2ae1293 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoFullScreenChangeSpeedView::moreDelegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__moreDelegate);
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.setMoreDelegate: | 0x100010568 | ev_fb2f609fc226f70e7e8298afd7e0be252bf30652cd402fb16bfd334722dc66ae */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoFullScreenChangeSpeedView::setMoreDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__moreDelegate) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.videoPlayer | 0x10001057c | ev_fc12185af2f92ab1c7420f43b5624175264e0941aff74d5206957e01d446caf8 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoFullScreenChangeSpeedView::videoPlayer(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__videoPlayer);
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.setVideoPlayer: | 0x10001059c | ev_a90c9fbd39d5c70c658dda411a8839161a628ec62b0e6b26c4c34da6eef05794 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoFullScreenChangeSpeedView::setVideoPlayer_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__videoPlayer) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.rightContainerView | 0x1000105b0 | ev_0cdd2ecae31499c5c4804271da7762bc468ab416cfba46c3adfa1bd0f19fdfab */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoFullScreenChangeSpeedView::rightContainerView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__rightContainerView);
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.setRightContainerView: | 0x1000105c0 | ev_ceb467d2ffe67538c3859a3a471815496dd960e1e8922bcb7df987d22718d146 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoFullScreenChangeSpeedView::setRightContainerView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__rightContainerView) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.tableView | 0x1000105d4 | ev_f61bfffa9c85f9be98b8e7ad0afa8a81c74ce18f02e5c2af5c035fc3bc21bcb7 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoFullScreenChangeSpeedView::tableView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__tableView);
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView.setTableView: | 0x1000105e4 | ev_f1331539b62aa7c899e5fddbbfab7874d8aca8afdb6eb50165f010fc523f82ff */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoFullScreenChangeSpeedView::setTableView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__tableView) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoFullScreenChangeSpeedView..cxx_destruct | 0x1000105f8 | ev_361380ed8ae869100641fe9e368a547148e548ac4143b4212e72633f113bf91d */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoFullScreenChangeSpeedView::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__tableView) = 0;
+  *(undefined8 *)(param_1 + (long)__rightContainerView) = 0;
+  _objc_destroyWeak(param_1 + (long)__videoPlayer);
+  _objc_destroyWeak(param_1 + (long)__moreDelegate);
+  _objc_destroyWeak(param_1 + (long)__delegate);
+  return;
+}
+
+

@@ -1,0 +1,311 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCNoticeView.initWithFrame: | 0x1000c1888 | ev_37c0f272de9555b2745d24bf0243c5922bf946b1364cc3c8861c09b60bf99a49 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x30 bytes */
+
+ID NNCNoticeView::initWithFrame_(ID param_1,SEL param_2,CGRect param_3)
+
+{
+  undefined *puVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  ID IVar4;
+  ID IVar5;
+  undefined8 uVar6;
+  undefined8 uVar7;
+  ID IVar8;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  SEL extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined8 extraout_x1_07;
+  undefined8 extraout_x1_08;
+  undefined8 extraout_x1_09;
+  undefined8 extraout_x1_10;
+  undefined8 extraout_x1_11;
+  undefined8 extraout_x1_12;
+  undefined8 extraout_x1_13;
+  undefined8 extraout_x1_14;
+  undefined8 extraout_x1_15;
+  undefined8 extraout_x1_16;
+  undefined8 extraout_x1_17;
+  SEL extraout_x1_18;
+  SEL extraout_x1_19;
+  undefined8 extraout_x1_20;
+  undefined8 extraout_x1_21;
+  undefined8 extraout_x1_22;
+  undefined8 extraout_x1_23;
+  undefined8 extraout_x1_24;
+  SEL extraout_x1_25;
+  SEL extraout_x1_26;
+  undefined8 extraout_x1_27;
+  undefined8 extraout_x1_28;
+  undefined8 extraout_x1_29;
+  undefined8 extraout_x1_30;
+  undefined8 extraout_x1_31;
+  SEL extraout_x1_32;
+  SEL extraout_x1_33;
+  double dVar9;
+  double dVar10;
+  undefined1 auVar11 [16];
+  undefined1 auVar12 [16];
+  undefined1 auVar13 [16];
+  undefined *local_120;
+  undefined8 local_118;
+  code *local_110;
+  undefined *puStack_108;
+  ID local_100;
+  undefined *local_f8;
+  undefined8 local_f0;
+  code *local_e8;
+  undefined *puStack_e0;
+  ID local_d8;
+  ID local_d0;
+  class_t *pcStack_c8;
+  undefined8 local_c0;
+  undefined8 local_b8;
+  undefined8 local_b0;
+  undefined8 local_a8;
+  undefined8 local_a0;
+  undefined8 uStack_98;
+  undefined8 local_90;
+  undefined8 local_88;
+  long local_80;
+  
+  local_80 = *(long *)PTR____stack_chk_guard_101d78938;
+  pcStack_c8 = &objc::class_t::NNCNoticeView;
+  local_d0 = param_1;
+  IVar2 = _objc_msgSendSuper2(param_3.field0_0x0.field0_0x0,param_3.field0_0x0.field1_0x8,
+                              param_3.field1_0x10.field0_0x0,param_3.field1_0x10.field1_0x8,
+                              &local_d0,"initWithFrame:");
+  if (IVar2 != 0) {
+    uVar3 = _objc_alloc(&_OBJC_CLASS___UIImageView);
+    FUN_101531d88(IVar2);
+    auVar11 = FUN_101564e08(uVar3);
+    auVar12 = FUN_10153c008(0x3f000000,&_OBJC_CLASS___UIColor,auVar11._8_8_,0);
+    FUN_1015a5908(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_);
+    FUN_101527148(IVar2,extraout_x1,auVar11._0_8_);
+    uVar3 = _objc_alloc(&_OBJC_CLASS___UIView);
+    dVar9 = (double)FUN_1015fc468(IVar2);
+    IVar4 = FUN_101564e08((dVar9 + -320.0) * 0.5,0x4059000000000000,0x4074000000000000,0,uVar3);
+    uVar3 = _objc_alloc(&objc::class_t::NNCBgView);
+    FUN_101531d88(IVar4);
+    uVar3 = FUN_101564e08(uVar3);
+    FUN_101527148(IVar4);
+    FUN_101527148(IVar2,extraout_x1_00,IVar4);
+    _objc_alloc(&_OBJC_CLASS___UILabel);
+    auVar11 = FUN_101564e08(0x4034000000000000,0x4034000000000000,0,0);
+    uVar6 = auVar11._0_8_;
+    FUN_1015d6f08(uVar6,auVar11._8_8_,&cfstringStruct_101de8ac0);
+    auVar11 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_01,0xbed4fb);
+    FUN_1015d6fa8(uVar6,auVar11._8_8_,auVar11._0_8_);
+    auVar11 = FUN_101531668(0x4036000000000000,&_OBJC_CLASS___UIFont);
+    FUN_1015b4788(uVar6,auVar11._8_8_,auVar11._0_8_);
+    FUN_1015e3aa8(uVar6);
+    FUN_101527148(IVar4,extraout_x1_02,uVar6);
+    _objc_alloc(&_OBJC_CLASS___UILabel);
+    auVar11 = FUN_101564e08(0x4034000000000000,0x4049000000000000,0,0);
+    uVar6 = auVar11._0_8_;
+    FUN_1015d6f08(uVar6,auVar11._8_8_,&cf_ANNOUNCEMENT);
+    auVar11 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_03,0xbed4fb);
+    FUN_1015d6fa8(uVar6,auVar11._8_8_,auVar11._0_8_);
+    auVar11 = FUN_1015ed768(0x4030000000000000,&_OBJC_CLASS___UIFont);
+    FUN_1015b4788(uVar6,auVar11._8_8_,auVar11._0_8_);
+    FUN_1015e3aa8(uVar6);
+    FUN_101527148(IVar4,extraout_x1_04,uVar6);
+    _objc_alloc(&_OBJC_CLASS___UIImageView);
+    auVar11 = FUN_101564e08(0x4034000000000000,0x4054000000000000,0x4053000000000000,
+                            0x4024000000000000);
+    IVar8 = auVar11._0_8_;
+    IVar5 = FUN_101574688(IVar8,auVar11._8_8_);
+    FUN_1015ac5e8(0x4014000000000000,IVar5);
+    IVar5 = FUN_101574688(IVar8,extraout_x1_05);
+    FUN_1015c25a8(IVar5);
+    auVar11 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_06,0xffffff);
+    FUN_1015a5908(IVar8,auVar11._8_8_,auVar11._0_8_);
+    FUN_101527148(IVar4,extraout_x1_07,IVar8);
+    _objc_alloc(&_OBJC_CLASS___UILabel);
+    dVar9 = 0.0;
+    uVar6 = FUN_101564e08(0x4034000000000000,0x4058800000000000,0,0);
+    uVar7 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+    uVar7 = FUN_1015826c8(uVar7);
+    uVar7 = FUN_1015f01e8(uVar7);
+    auVar11 = FUN_1015750a8(uVar7);
+    if (auVar11._0_8_ == 0) {
+      auVar11._8_8_ = auVar11._8_8_;
+      auVar11._0_8_ = &cf_w;
+    }
+    else {
+      uVar7 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+      uVar7 = FUN_1015826c8(uVar7);
+      auVar11 = FUN_1015f01e8(uVar7);
+    }
+    FUN_1015d6f08(uVar6,auVar11._8_8_,auVar11._0_8_);
+    auVar11 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_08,&cf_myBgColor);
+    FUN_1015d6fa8(uVar6,auVar11._8_8_,auVar11._0_8_);
+    auVar11 = FUN_101531668(0x4033000000000000,&_OBJC_CLASS___UIFont);
+    FUN_1015b4788(uVar6,auVar11._8_8_,auVar11._0_8_);
+    FUN_1015e3aa8(uVar6);
+    FUN_101527148(IVar4,extraout_x1_09,uVar6);
+    auVar11 = _objc_alloc(&_OBJC_CLASS___UIImageView);
+    auVar12 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar11._8_8_,&cf_nnc_notice_right);
+    uVar6 = FUN_101565668(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_);
+    FUN_1015dd9c8(0x4059c00000000000,uVar6);
+    FUN_1015b6f28(0x405b000000000000,uVar6);
+    FUN_1015d84c8(0x4031000000000000,uVar6);
+    dVar10 = (double)FUN_1015fc468(IVar4);
+    FUN_1015ce268(dVar10 + -20.0,uVar6);
+    FUN_101527148(IVar4,extraout_x1_10,uVar6);
+    uVar6 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+    uVar6 = FUN_1015826c8(uVar6);
+    uVar6 = FUN_10153e528(uVar6);
+    auVar11 = _objc_alloc(&_OBJC_CLASS___NSMutableAttributedString);
+    auVar12 = FUN_101544828(uVar6,auVar11._8_8_,10);
+    local_90 = *(undefined8 *)PTR__NSDocumentTypeDocumentAttribute_101d78248;
+    local_88 = *(undefined8 *)PTR__NSHTMLTextDocumentType_101d78328;
+    auVar13 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar12._8_8_,&local_88,&local_90,1);
+    uVar6 = FUN_1015645a8(auVar11._0_8_,auVar13._8_8_,auVar12._0_8_,auVar13._0_8_,0,0);
+    _objc_alloc(&_OBJC_CLASS___NSMutableParagraphStyle);
+    auVar11 = FUN_101561e88();
+    uVar7 = auVar11._0_8_;
+    FUN_1015c0108(uVar7,auVar11._8_8_,1);
+    FUN_1015c0308(0x4000000000000000,uVar7);
+    local_c0 = *(undefined8 *)PTR__NSFontAttributeName_101d782f8;
+    auVar11 = FUN_1015ed768(0x402c000000000000,&_OBJC_CLASS___UIFont);
+    local_a8 = auVar11._0_8_;
+    local_b8 = *(undefined8 *)PTR__NSForegroundColorAttributeName_101d78300;
+    auVar11 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar11._8_8_,&cf_myBgColor);
+    local_a0 = auVar11._0_8_;
+    local_b0 = *(undefined8 *)PTR__NSParagraphStyleAttributeName_101d783e0;
+    uStack_98 = uVar7;
+    uVar7 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar11._8_8_,&local_a8,&local_c0,3);
+    auVar11 = FUN_1015750a8(uVar6);
+    FUN_1015250a8(uVar6,auVar11._8_8_,uVar7,0,auVar11._0_8_);
+    dVar10 = (double)FUN_1015fc468(IVar4);
+    FUN_101531d68(dVar10 + -40.0,0x7fefffffffffffff,uVar6,extraout_x1_11,1,0);
+    _objc_alloc(&_OBJC_CLASS___UITextView);
+    auVar11 = FUN_101564e08(*(undefined8 *)PTR__CGRectZero_101d78140,
+                            *(undefined8 *)(PTR__CGRectZero_101d78140 + 8),
+                            *(undefined8 *)(PTR__CGRectZero_101d78140 + 0x10),
+                            *(undefined8 *)(PTR__CGRectZero_101d78140 + 0x18));
+    uVar7 = auVar11._0_8_;
+    FUN_1015b1588(uVar7,auVar11._8_8_,0);
+    FUN_1015d03c8(uVar7,extraout_x1_12,0);
+    auVar11 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_13,&cf_myBgColor);
+    FUN_1015d6fa8(uVar7,auVar11._8_8_,auVar11._0_8_);
+    auVar11 = FUN_1015ed768(0x402c000000000000,&_OBJC_CLASS___UIFont);
+    FUN_1015b4788(uVar7,auVar11._8_8_,auVar11._0_8_);
+    FUN_1015d2308(uVar7,extraout_x1_14,0);
+    FUN_1015ae448(uVar7,extraout_x1_15,2);
+    FUN_1015d6fe8(0,0,0,0,uVar7);
+    auVar11 = FUN_10153a2e8(&_OBJC_CLASS___UIColor);
+    FUN_1015a5908(uVar7,auVar11._8_8_,auVar11._0_8_);
+    FUN_1015a4ea8(uVar7,extraout_x1_16,uVar6);
+    dVar10 = (double)FUN_1015fc468(IVar4);
+    FUN_1015b4b08(0x4034000000000000,0x4060400000000000,dVar10 + -40.0,dVar9 + 1.0,uVar7);
+    FUN_101527148(IVar4,extraout_x1_17,uVar7);
+    uVar6 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+    uVar6 = FUN_1015826c8(uVar6);
+    uVar6 = FUN_10158c8e8(uVar6);
+    auVar11 = FUN_1015750a8(uVar6);
+    uVar6 = auVar11._8_8_;
+    if (auVar11._0_8_ != 0) {
+      IVar8 = FUN_101534f68(&_OBJC_CLASS___UIButton,uVar6,0);
+      uVar6 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+      uVar6 = FUN_1015826c8(uVar6);
+      auVar12 = FUN_10158c8e8(uVar6);
+      FUN_1015d7e48(IVar8,auVar12._8_8_,auVar12._0_8_,0);
+      dVar9 = (double)FUN_1015319c8(uVar7);
+      FUN_1015d84c8(dVar9 + 20.0,IVar8);
+      FUN_1015dd9c8(0x405e000000000000,IVar8);
+      FUN_1015b6f28(0x4044000000000000,IVar8);
+      IVar5 = FUN_101574688(IVar8,extraout_x1_18);
+      FUN_1015ac5e8(0x4034000000000000,IVar5);
+      IVar5 = FUN_101574688(IVar8,extraout_x1_19);
+      FUN_1015c25a8(IVar5);
+      dVar9 = (double)FUN_1015fc468(IVar4);
+      FUN_1015bfa48(dVar9 * 0.5 + 10.0,IVar8);
+      auVar12 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_20,0xbed4fb);
+      FUN_1015a5908(IVar8,auVar12._8_8_,auVar12._0_8_);
+      auVar12 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_21,0xffffff);
+      FUN_1015d7ea8(IVar8,auVar12._8_8_,auVar12._0_8_,0);
+      FUN_101527148(IVar4,extraout_x1_22,IVar8);
+      local_f8 = PTR___NSConcreteStackBlock_101d78760;
+      local_f0 = 0xc2000000;
+      local_e8 = FUN_1000c26e0;
+      puStack_e0 = &UNK_101d7b960;
+      local_d8 = IVar2;
+      FUN_1015a70e8(IVar8,extraout_x1_23,0x40,&local_f8);
+      uVar6 = extraout_x1_24;
+    }
+    IVar8 = FUN_101534f68(&_OBJC_CLASS___UIButton,uVar6,0);
+    uVar6 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+    uVar6 = FUN_1015826c8(uVar6);
+    uVar6 = FUN_101580cc8(uVar6);
+    auVar12 = FUN_1015750a8(uVar6);
+    if (auVar12._0_8_ == 0) {
+      FUN_1015d7e48(IVar8,auVar12._8_8_,&cf_b_wSf,0);
+    }
+    else {
+      uVar6 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+      uVar6 = FUN_1015826c8(uVar6);
+      auVar12 = FUN_101580cc8(uVar6);
+      FUN_1015d7e48(IVar8,auVar12._8_8_,auVar12._0_8_,0);
+    }
+    dVar9 = (double)FUN_1015319c8(uVar7);
+    FUN_1015d84c8(dVar9 + 20.0,IVar8);
+    FUN_1015dd9c8(0x405e000000000000,IVar8);
+    FUN_1015b6f28(0x4044000000000000,IVar8);
+    IVar5 = FUN_101574688(IVar8,extraout_x1_25);
+    FUN_1015ac5e8(0x4034000000000000,IVar5);
+    IVar5 = FUN_101574688(IVar8,extraout_x1_26);
+    FUN_1015c25a8(IVar5);
+    dVar9 = (double)FUN_1015fc468(IVar4);
+    puVar1 = PTR___NSConcreteStackBlock_101d78760;
+    if (auVar11._0_8_ == 0) {
+      FUN_1015a9928(IVar8);
+      uVar6 = extraout_x1_28;
+    }
+    else {
+      FUN_1015ce268(dVar9 * 0.5 + -10.0,IVar8);
+      uVar6 = extraout_x1_27;
+    }
+    auVar11 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,uVar6,0xbed4fb);
+    FUN_1015a5908(IVar8,auVar11._8_8_,auVar11._0_8_);
+    auVar11 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_29,0xffffff);
+    FUN_1015d7ea8(IVar8,auVar11._8_8_,auVar11._0_8_,0);
+    FUN_101527148(IVar4,extraout_x1_30,IVar8);
+    local_120 = puVar1;
+    local_118 = 0xc2000000;
+    local_110 = FUN_1000c28e4;
+    puStack_108 = &UNK_101d7b960;
+    local_100 = IVar2;
+    FUN_1015a70e8(IVar8,extraout_x1_31,0x40,&local_120);
+    dVar9 = (double)FUN_1015319c8(IVar8);
+    FUN_1015b6f28(dVar9 + 20.0,IVar4);
+    dVar9 = (double)FUN_10155e568(IVar2);
+    FUN_1015a9948(dVar9 * 0.5,IVar4);
+    IVar8 = FUN_101574688(IVar4,extraout_x1_32);
+    FUN_1015ac5e8(0x4024000000000000,IVar8);
+    IVar8 = FUN_101574688(IVar4,extraout_x1_33);
+    FUN_1015c25a8(IVar8);
+    FUN_101531d88(IVar4);
+    FUN_1015b4b08(uVar3);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_80) {
+    return IVar2;
+  }
+  IVar2 = FUN_100ab8e90(0);
+  return IVar2;
+}
+
+

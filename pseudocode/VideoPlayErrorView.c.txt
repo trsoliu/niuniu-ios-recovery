@@ -1,0 +1,409 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* VideoPlayErrorView.awakeFromNib | 0x1000c42c4 | ev_887fd396d9eb80da9de9ee0f55732393000ab2e5d11f38521aa0aab23cc1ef59 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void VideoPlayErrorView::awakeFromNib(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined1 auVar2 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::VideoPlayErrorView;
+  local_40 = param_1;
+  _objc_msgSendSuper2(&local_40,"awakeFromNib");
+  auVar2 = FUN_101538788(param_1);
+  IVar1 = FUN_101574688(auVar2._0_8_,auVar2._8_8_);
+  FUN_1015ac5e8(0x4014000000000000,IVar1);
+  auVar2 = FUN_101538788(param_1);
+  IVar1 = FUN_101574688(auVar2._0_8_,auVar2._8_8_);
+  FUN_1015c25a8(IVar1);
+  auVar2 = FUN_101598c48(param_1);
+  IVar1 = FUN_101574688(auVar2._0_8_,auVar2._8_8_);
+  FUN_1015ac5e8(0x4014000000000000,IVar1);
+  auVar2 = FUN_101598c48(param_1);
+  IVar1 = FUN_101574688(auVar2._0_8_,auVar2._8_8_);
+  FUN_1015c25a8(IVar1);
+  auVar2 = FUN_101595ca8(param_1);
+  IVar1 = FUN_101574688(auVar2._0_8_,auVar2._8_8_);
+  FUN_1015ac5e8(0x4014000000000000,IVar1);
+  auVar2 = FUN_101595ca8(param_1);
+  IVar1 = FUN_101574688(auVar2._0_8_,auVar2._8_8_);
+  FUN_1015c25a8(IVar1);
+  return;
+}
+
+
+
+/* VideoPlayErrorView.backSelector: | 0x1000c4474 | ev_556b2454ea080ff4efebef9e36d5935f52d8c974b3d86a4d60be4f76b9ddd8ab */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void VideoPlayErrorView::backSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_101546808(param_1,param_2,param_3);
+  FUN_1015f92c8(IVar1);
+  return;
+}
+
+
+
+/* VideoPlayErrorView.reportSelector: | 0x1000c44a4 | ev_7d3e231761709b5b8278684456f5c63718f888dc6bdb0d490276b9f07d9b92df */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void VideoPlayErrorView::reportSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_101546808(param_1,param_2,param_3);
+  FUN_1015f9308(IVar1);
+  return;
+}
+
+
+
+/* VideoPlayErrorView.retrySelector: | 0x1000c44d4 | ev_d2fe91051c7482708de6880b7b56c5b9a28cae23605c00e2776a9f0cbb53622d */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void VideoPlayErrorView::retrySelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_101546808(param_1,param_2,param_3);
+  FUN_1015f9328(IVar1);
+  return;
+}
+
+
+
+/* VideoPlayErrorView.changeSourceSelector: | 0x1000c4504 | ev_7620988d185abd64c35f8d4259998a40f18d0fe2e1c4f7e53c6ff65fc42d1070 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void VideoPlayErrorView::changeSourceSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_101546808(param_1,param_2,param_3);
+  FUN_1015f92e8(IVar1);
+  return;
+}
+
+
+
+/* VideoPlayErrorView.controlView | 0x1000c4534 | ev_87a8e88b3692b1934626e471b7871b8d1db2520f229bd6d9ce8f01fd0615f926 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID VideoPlayErrorView::controlView(ID param_1,SEL param_2)
+
+{
+  return param_1;
+}
+
+
+
+/* VideoPlayErrorView.installedControlViewToVideoPlayer: | 0x1000c4538 | ev_3c6b77c092b07d2103305e6f781b690f02b90552b4284f5152b086eab1f04b98 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void VideoPlayErrorView::installedControlViewToVideoPlayer_(ID param_1,SEL param_2,ID param_3)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x000101574af8. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_msgSend_101d78f58)(param_1,"layoutIfNeeded");
+  return;
+}
+
+
+
+/* VideoPlayErrorView.restartControlLayer | 0x1000c453c | ev_24fc82325907dccc8999c8396c3c96d69507a55ca09a2ed58db63845da16561a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void __thiscall
+VideoPlayErrorView::restartControlLayer(VideoPlayErrorView *this,ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  cfstringStruct *pcVar4;
+  double dVar5;
+  undefined1 auVar6 [16];
+  
+  this[__restarted] = (VideoPlayErrorView)0x1;
+  IVar2 = FUN_101546808((ID)this,(SEL)param_1,(ID)param_2);
+  iVar1 = FUN_1015f9348(IVar2);
+  auVar6 = FUN_101538788(this);
+  if (iVar1 == 0) {
+    FUN_1015b6fc8(auVar6._0_8_,auVar6._8_8_,1);
+    uVar3 = FUN_101598c48(this);
+    uVar3 = FUN_1015ec948(uVar3);
+    dVar5 = (double)FUN_1015fc468(uVar3);
+    uVar3 = FUN_101598c48(this);
+    FUN_1015ce268(dVar5 * 0.5 + -3.0,uVar3);
+    uVar3 = FUN_101598c48(this);
+    uVar3 = FUN_1015ec948(uVar3);
+    dVar5 = (double)FUN_1015fc468(uVar3);
+    uVar3 = FUN_101595ca8(this);
+    FUN_1015bfa48(dVar5 * 0.5 + 3.0,uVar3);
+    auVar6 = FUN_101546f88(this);
+    pcVar4 = &cf_d>eQ7Re;
+  }
+  else {
+    FUN_1015b6fc8(auVar6._0_8_,auVar6._8_8_,0);
+    uVar3 = FUN_101598c48(this);
+    uVar3 = FUN_1015ec948(uVar3);
+    dVar5 = (double)FUN_1015fc468(uVar3);
+    uVar3 = FUN_101598c48(this);
+    FUN_1015a9928(dVar5 * 0.5,uVar3);
+    uVar3 = FUN_101598c48(this);
+    dVar5 = (double)FUN_101574da8(uVar3);
+    uVar3 = FUN_101538788(this);
+    FUN_1015ce268(dVar5 + -5.0,uVar3);
+    uVar3 = FUN_101598c48(this);
+    dVar5 = (double)FUN_10159a248(uVar3);
+    uVar3 = FUN_101595ca8(this);
+    FUN_1015bfa48(dVar5 + 5.0,uVar3);
+    auVar6 = FUN_101546f88(this);
+    pcVar4 = &cf_d>eQ_RbcDnb7Re;
+  }
+  FUN_1015d6f08(auVar6._0_8_,auVar6._8_8_,pcVar4);
+  return;
+}
+
+
+
+/* VideoPlayErrorView.exitControlLayer | 0x1000c47e4 | ev_0de8c1fd7ff4bc6b43214d23f63c6a210a8d7cbb5a84522d4abcad1816555cda */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void VideoPlayErrorView::exitControlLayer(ID param_1,SEL param_2)
+
+{
+  undefined1 auVar1 [16];
+  
+  *(undefined1 *)(param_1 + (long)__restarted) = 0;
+  auVar1 = FUN_10153eca8();
+  FUN_101593bc8(auVar1._0_8_,auVar1._8_8_);
+  return;
+}
+
+
+
+/* VideoPlayErrorView.restarted | 0x1000c4820 | ev_2db5a0bf9f775e4246b6a3e4d7e0672a204ba2700fce729293ea90a3b825a826 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool VideoPlayErrorView::restarted(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__restarted);
+}
+
+
+
+/* VideoPlayErrorView.delegate | 0x1000c4830 | ev_5afc1d87e31872a6c3837ca9a1417a4f564ebbc727dadd35f2c2beaf3f89b6da */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID VideoPlayErrorView::delegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__delegate);
+}
+
+
+
+/* VideoPlayErrorView.setDelegate: | 0x1000c4850 | ev_ceb716f77006eed981e9a718f2fb3d3e2559eb587bd2f71433722907897e8012 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void VideoPlayErrorView::setDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__delegate) = param_3;
+  return;
+}
+
+
+
+/* VideoPlayErrorView.descLabel | 0x1000c4864 | ev_a892410e2ba3beb174b7dbd8d166dbae946f17a3b5eac631e5eb427196325113 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID VideoPlayErrorView::descLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__descLabel);
+}
+
+
+
+/* VideoPlayErrorView.setDescLabel: | 0x1000c4884 | ev_70c36d36bce67548c742c094dfe6dbcd8a2336cdc2e41a96d0d68d27c276e6e2 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void VideoPlayErrorView::setDescLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__descLabel) = param_3;
+  return;
+}
+
+
+
+/* VideoPlayErrorView.changeSourceButton | 0x1000c4898 | ev_ac49296a08cbabe4175d60e2ddce70e175023dad03f2a9aced7363d3f22d0a26 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID VideoPlayErrorView::changeSourceButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__changeSourceButton);
+}
+
+
+
+/* VideoPlayErrorView.setChangeSourceButton: | 0x1000c48b8 | ev_1653c436a67ab0ac25ca6fb6936f2eb6cdb45dc346bbf1e29d0aa20b82cd928c */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void VideoPlayErrorView::setChangeSourceButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__changeSourceButton) = param_3;
+  return;
+}
+
+
+
+/* VideoPlayErrorView.retryButton | 0x1000c48cc | ev_2f0f65aba3014a72a0434f1f9ed3b8769c150d4fecda90c837d748dc16c85118 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID VideoPlayErrorView::retryButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__retryButton);
+}
+
+
+
+/* VideoPlayErrorView.setRetryButton: | 0x1000c48ec | ev_36efedca0c7b7a2539423f2942e35703ae55a6e1bfcd43e1edf29d08a9f55a0f */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void VideoPlayErrorView::setRetryButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__retryButton) = param_3;
+  return;
+}
+
+
+
+/* VideoPlayErrorView.reportButton | 0x1000c4900 | ev_010c46e96cb469e86b14ea20429a5a48b83093112d7da5554f8471d62984199b */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID VideoPlayErrorView::reportButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__reportButton);
+}
+
+
+
+/* VideoPlayErrorView.setReportButton: | 0x1000c4920 | ev_80d9c34e3d1edea7f5d1983b52ca6253dfac89f93ae7b8d4d49036f0fbef1e5c */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void VideoPlayErrorView::setReportButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__reportButton) = param_3;
+  return;
+}
+
+
+
+/* VideoPlayErrorView..cxx_destruct | 0x1000c4934 | ev_7e219486de5516af371ee9fbf9016f042d3ff685ac403dae6da0171aab9e8d47 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void VideoPlayErrorView::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + (long)__reportButton);
+  _objc_destroyWeak(param_1 + (long)__retryButton);
+  _objc_destroyWeak(param_1 + (long)__changeSourceButton);
+  _objc_destroyWeak(param_1 + (long)__descLabel);
+  _objc_destroyWeak(param_1 + (long)__delegate);
+  return;
+}
+
+

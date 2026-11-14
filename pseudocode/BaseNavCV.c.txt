@@ -1,0 +1,228 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* BaseNavCV.preferredStatusBarStyle | 0x1000d0664 | ev_f447c5cf08de57e1b0a70f2b5d93f7e1798c45e39bd4a57d64adfabde73cd339 */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long BaseNavCV::preferredStatusBarStyle(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  
+  iVar1 = FUN_1014eab94(2,0xd,0,0);
+  return (ulong)(iVar1 != 0);
+}
+
+
+
+/* BaseNavCV.shouldAutorotate | 0x1000d0690 | ev_39cd7665619581e1a22407df20f8f29d48c1ceac20f6db2f2850860fb6f95e05 */
+
+/* Function Stack Size: 0x10 bytes */
+
+bool BaseNavCV::shouldAutorotate(ID param_1,SEL param_2)
+
+{
+  return 0;
+}
+
+
+
+/* BaseNavCV.supportedInterfaceOrientations | 0x1000d0698 | ev_b9061020182c2cc9b489d40ee564dfc253db0a9cb29f68dc6ef63f4bd9df44c8 */
+
+/* Function Stack Size: 0x10 bytes */
+
+unsigned_long_long BaseNavCV::supportedInterfaceOrientations(ID param_1,SEL param_2)
+
+{
+  return 2;
+}
+
+
+
+/* BaseNavCV.preferredInterfaceOrientationForPresentation | 0x1000d06a0 | ev_7ff91f708c9f67bc8b75ae0145758034ca5fbb5fbc5ca2f17094f8ad759623f7 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+long_long BaseNavCV::preferredInterfaceOrientationForPresentation(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  long_long lVar4;
+  undefined1 auVar5 [16];
+  
+  auVar5 = FUN_101542aa8(&_OBJC_CLASS___UIDevice);
+  iVar1 = FUN_101598088(auVar5._0_8_,auVar5._8_8_,"userInterfaceIdiom");
+  if (iVar1 == 0) {
+    lVar4 = 1;
+  }
+  else {
+    uVar2 = FUN_101542aa8(&_OBJC_CLASS___UIDevice);
+    auVar5 = FUN_1015f7488(uVar2);
+    if (auVar5._0_8_ == 0) {
+      lVar4 = 1;
+    }
+    else {
+      IVar3 = FUN_1015f1028(param_1,auVar5._8_8_);
+      lVar4 = FUN_10158d0c8(IVar3);
+    }
+  }
+  return lVar4;
+}
+
+
+
+/* BaseNavCV.viewDidLoad | 0x1000d0754 | ev_a4e0b6e21d54a972d0aeb6a6ad77af8af51a314c95d61fbc61dc25595f591bea */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void BaseNavCV::viewDidLoad(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::BaseNavCV;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"viewDidLoad");
+  FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1,&cf_myTextColor);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_00);
+  FUN_1015a5908(IVar1);
+  return;
+}
+
+
+
+/* BaseNavCV.pushViewController:animated: | 0x1000d07e0 | ev_11e9a7495ffda9bc8f4f6e725de41fe9e2d93ffae08a759bba12678ee82e9684 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x1c bytes */
+
+void BaseNavCV::pushViewController_animated_(ID param_1,SEL param_2,ID param_3,bool param_4)
+
+{
+  undefined8 uVar1;
+  undefined1 auVar2 [16];
+  ID local_50;
+  class_t *pcStack_48;
+  
+  uVar1 = FUN_10155fc28();
+  auVar2 = FUN_1015806c8(param_1);
+  FUN_1015a5e68(auVar2._0_8_,auVar2._8_8_,uVar1);
+  pcStack_48 = &objc::class_t::BaseNavCV;
+  local_50 = param_1;
+  _objc_msgSendSuper2(&local_50,"pushViewController:animated:",param_3,param_4);
+  return;
+}
+
+
+
+/* BaseNavCV.popViewControllerAnimated: | 0x1000d088c | ev_ac27fc3418f6b398a0eaa2ed5ea4f6c28190b80fed7c6c0d5fca61028311dd0c */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x14 bytes */
+
+ID BaseNavCV::popViewControllerAnimated_(ID param_1,SEL param_2,bool param_3)
+
+{
+  undefined8 uVar1;
+  ulong uVar2;
+  undefined8 uVar3;
+  ID IVar4;
+  undefined1 auVar5 [16];
+  ID local_60;
+  class_t *pcStack_58;
+  
+  uVar1 = FUN_1015fa288();
+  uVar2 = FUN_10153f908(uVar1);
+  if (1 < uVar2) {
+    uVar1 = FUN_1015fa288(param_1);
+    uVar3 = FUN_1015fa288(param_1);
+    auVar5 = FUN_10153f908(uVar3);
+    uVar1 = FUN_101583328(uVar1,auVar5._8_8_,auVar5._0_8_ + -2);
+    uVar1 = FUN_10155fc28(uVar1);
+    auVar5 = FUN_1015806c8(param_1);
+    FUN_1015a5e68(auVar5._0_8_,auVar5._8_8_,uVar1);
+  }
+  pcStack_58 = &objc::class_t::BaseNavCV;
+  local_60 = param_1;
+  IVar4 = _objc_msgSendSuper2(&local_60,"popViewControllerAnimated:",param_3);
+  return IVar4;
+}
+
+
+
+/* BaseNavCV.popToViewController:animated: | 0x1000d09b4 | ev_0d42b7e2d4d07390054acfa7d655ca2dff6d6e8bbe26a6df718389acea7b0be3 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x1c bytes */
+
+ID BaseNavCV::popToViewController_animated_(ID param_1,SEL param_2,ID param_3,bool param_4)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined1 auVar3 [16];
+  ID local_50;
+  class_t *pcStack_48;
+  
+  uVar1 = FUN_10155fc28();
+  auVar3 = FUN_1015806c8(param_1);
+  FUN_1015a5e68(auVar3._0_8_,auVar3._8_8_,uVar1);
+  pcStack_48 = &objc::class_t::BaseNavCV;
+  local_50 = param_1;
+  IVar2 = _objc_msgSendSuper2(&local_50,"popToViewController:animated:",param_3,param_4);
+  return IVar2;
+}
+
+
+
+/* BaseNavCV.popToRootViewControllerAnimated: | 0x1000d0a70 | ev_c3d038919fca2a221b6346db5c54b0d6057f8f620f6e5ba0271708a70906b842 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x14 bytes */
+
+ID BaseNavCV::popToRootViewControllerAnimated_(ID param_1,SEL param_2,bool param_3)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined1 auVar3 [16];
+  ID local_50;
+  class_t *pcStack_48;
+  
+  uVar1 = FUN_1015fa288();
+  uVar1 = FUN_1015532e8(uVar1);
+  uVar1 = FUN_10155fc28(uVar1);
+  auVar3 = FUN_1015806c8(param_1);
+  FUN_1015a5e68(auVar3._0_8_,auVar3._8_8_,uVar1);
+  pcStack_48 = &objc::class_t::BaseNavCV;
+  local_50 = param_1;
+  IVar2 = _objc_msgSendSuper2(&local_50,"popToRootViewControllerAnimated:",param_3);
+  return IVar2;
+}
+
+

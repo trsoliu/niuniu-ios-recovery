@@ -1,0 +1,1639 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCHistoryViewController.backButtonAction | 0x100056140 | ev_9155d3af4b0967769b99c6704e09e9568e3bb20ec91f588c6b72d52e59e056a6 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCHistoryViewController::backButtonAction(ID param_1,SEL param_2)
+
+{
+  undefined8 extraout_x1;
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_101580708();
+  FUN_10158c568(auVar1._0_8_,auVar1._8_8_,1);
+  FUN_101549e68(param_1,extraout_x1,1,&UNK_101d7c8d8);
+  return;
+}
+
+
+
+/* NNCHistoryViewController.viewDidLoad | 0x100056198 | ev_0b7c3d984fa85d9244b35330447156b938af3d285ceec978e65c657e2e3aecf0 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCHistoryViewController::viewDidLoad(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  SEL extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined1 auVar3 [16];
+  ID local_88;
+  class_t *pcStack_80;
+  undefined8 local_78;
+  undefined8 local_70;
+  undefined8 local_68;
+  undefined8 local_60;
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  pcStack_80 = &objc::class_t::NNCHistoryViewController;
+  local_88 = param_1;
+  _objc_msgSendSuper2(&local_88,"viewDidLoad");
+  FUN_1015d7e08(param_1,extraout_x1,&cf_d>eU_);
+  uVar1 = FUN_101560a48(&_OBJC_CLASS___UIImage,extraout_x1_00,&cf_fanhuiImae);
+  auVar3 = _objc_alloc(&_OBJC_CLASS___UIBarButtonItem);
+  uVar1 = FUN_1015656a8(auVar3._0_8_,auVar3._8_8_,uVar1,0,param_1,"backButtonAction");
+  auVar3 = FUN_101580748(param_1);
+  FUN_1015bfaa8(auVar3._0_8_,auVar3._8_8_,uVar1);
+  FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_01,&cf_myTextColor);
+  IVar2 = FUN_1015fa0a8(param_1,extraout_x1_02);
+  FUN_1015a5908(IVar2);
+  FUN_1015bb0a8(param_1,extraout_x1_03,0);
+  uVar1 = _objc_alloc(&_OBJC_CLASS___UIBarButtonItem);
+  auVar3 = FUN_101559c08(param_1);
+  auVar3 = FUN_101567b68(uVar1,auVar3._8_8_,auVar3._0_8_,2,param_1,"nncchangeEditMode");
+  FUN_1015ce368(param_1,auVar3._8_8_,auVar3._0_8_);
+  local_78 = *(undefined8 *)PTR__NSForegroundColorAttributeName_101d78300;
+  local_68 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_04,&cf_myBgColor);
+  local_70 = *(undefined8 *)PTR__NSFontAttributeName_101d782f8;
+  auVar3 = FUN_1015ed768(0x4030000000000000,&_OBJC_CLASS___UIFont);
+  local_60 = auVar3._0_8_;
+  uVar1 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar3._8_8_,&local_68,&local_78,2);
+  auVar3 = FUN_10159a368(param_1);
+  FUN_1015d8028(auVar3._0_8_,auVar3._8_8_,uVar1,0);
+  uVar1 = FUN_10159a368(param_1);
+  auVar3 = FUN_101580748(param_1);
+  FUN_1015ce2e8(auVar3._0_8_,auVar3._8_8_,uVar1);
+  _objc_alloc(&_OBJC_CLASS___NSDateFormatter);
+  auVar3 = FUN_101561e88();
+  FUN_1015ae728(param_1,auVar3._8_8_,auVar3._0_8_);
+  auVar3 = FUN_101544cc8(param_1);
+  FUN_1015ae748(auVar3._0_8_,auVar3._8_8_,&cf_yyyy_MM_dd);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_58) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCHistoryViewController.nncchangeEditMode | 0x1000564b0 | ev_7b10cf4964695da96aaef9e31621a282d0b933cb3205465eaf68233d0fe3f3c6 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCHistoryViewController::nncchangeEditMode(ID param_1,SEL param_2)
+
+{
+  uint uVar1;
+  int iVar2;
+  undefined8 uVar3;
+  ID IVar4;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  double dVar5;
+  double dVar6;
+  undefined1 auVar7 [16];
+  
+  uVar1 = FUN_10156d208();
+  FUN_1015bb0a8(param_1,extraout_x1,uVar1 ^ 1);
+  uVar3 = FUN_101559c08(param_1);
+  auVar7 = FUN_10159a368(param_1);
+  FUN_1015d7e08(auVar7._0_8_,auVar7._8_8_,uVar3);
+  iVar2 = FUN_10156d208(param_1);
+  auVar7 = FUN_101581ec8(param_1);
+  if (iVar2 == 0) {
+    FUN_1015b6fc8(auVar7._0_8_,auVar7._8_8_,1);
+    auVar7 = FUN_10153eca8(param_1);
+  }
+  else {
+    FUN_1015b6fc8(auVar7._0_8_,auVar7._8_8_,0);
+    auVar7 = FUN_10153eca8(param_1);
+  }
+  FUN_1015b6fc8(auVar7._0_8_,auVar7._8_8_,iVar2 != 0);
+  uVar3 = FUN_101581ec8(param_1);
+  dVar5 = (double)FUN_1015f0ce8(uVar3);
+  IVar4 = FUN_1015edca8(param_1,extraout_x1_00);
+  dVar6 = (double)FUN_1015f0ce8(IVar4);
+  IVar4 = FUN_1015edca8(param_1,extraout_x1_01);
+  FUN_1015b6f28((dVar5 + -10.0) - dVar6,IVar4);
+  IVar4 = FUN_1015edca8(param_1,extraout_x1_02);
+  FUN_101592d08(IVar4);
+  return;
+}
+
+
+
+/* NNCHistoryViewController.getRightTitle | 0x10005663c | ev_c209e9cd11c44faeeb6f1780a9fdfad762cee75191f3f730af14f07f7293bb23 */
+
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryViewController::getRightTitle(ID param_1,SEL param_2)
+
+{
+  cfstringStruct *pcVar1;
+  int iVar2;
+  
+  iVar2 = FUN_10156d208();
+  pcVar1 = &cf__b;
+  if (iVar2 == 0) {
+    pcVar1 = &cfstringStruct_101de1500;
+  }
+  return (ID)pcVar1;
+}
+
+
+
+/* NNCHistoryViewController.viewDidLayoutSubviews | 0x100056668 | ev_41061c63f6db31f56461624448e0f39e04a525cb88ae8e46e81730ce5f83d4f1 */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCHistoryViewController::viewDidLayoutSubviews(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  ID IVar2;
+  SEL extraout_x1;
+  undefined8 extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  SEL extraout_x1_03;
+  SEL extraout_x1_04;
+  SEL extraout_x1_05;
+  SEL extraout_x1_06;
+  SEL extraout_x1_07;
+  SEL extraout_x1_08;
+  SEL extraout_x1_09;
+  SEL extraout_x1_10;
+  SEL extraout_x1_11;
+  undefined8 extraout_x1_12;
+  undefined8 extraout_x1_13;
+  SEL extraout_x1_14;
+  undefined8 extraout_x1_15;
+  SEL extraout_x1_16;
+  SEL extraout_x1_17;
+  undefined8 extraout_x1_18;
+  undefined8 extraout_x1_19;
+  SEL extraout_x1_20;
+  SEL extraout_x1_21;
+  SEL extraout_x1_22;
+  SEL extraout_x1_23;
+  undefined8 extraout_x1_24;
+  SEL extraout_x1_25;
+  SEL extraout_x1_26;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  double dVar5;
+  double dVar6;
+  undefined1 auVar7 [16];
+  undefined1 auVar8 [16];
+  ID local_a0;
+  class_t *pcStack_98;
+  
+  pcStack_98 = &objc::class_t::NNCHistoryViewController;
+  local_a0 = param_1;
+  _objc_msgSendSuper2(&local_a0,"viewDidLayoutSubviews");
+  auVar7 = FUN_101581c88(param_1);
+  if ((auVar7._0_8_ & 1) == 0) {
+    FUN_1015c5a08(param_1,auVar7._8_8_,1);
+    uVar3 = *(undefined8 *)PTR____NSArray0___101d78908;
+    auVar7 = FUN_10157e1c8(uVar3);
+    FUN_1015c5a28(param_1,auVar7._8_8_,auVar7._0_8_);
+    auVar7 = FUN_10157e1c8(uVar3);
+    FUN_1015ae568(param_1,auVar7._8_8_,auVar7._0_8_);
+    auVar7 = FUN_10157e1c8(uVar3);
+    FUN_1015d04c8(param_1,auVar7._8_8_,auVar7._0_8_);
+    auVar7 = _objc_alloc(&_OBJC_CLASS___UITableView);
+    IVar2 = FUN_1015fa0a8(param_1,auVar7._8_8_);
+    uVar3 = FUN_1015fc468(IVar2);
+    IVar2 = FUN_1015fa0a8(param_1,extraout_x1);
+    uVar4 = FUN_10155e568(IVar2);
+    auVar7 = FUN_101565388(0,0,uVar3,uVar4,auVar7._0_8_,extraout_x1_00,1);
+    FUN_1015d62e8(param_1,auVar7._8_8_,auVar7._0_8_);
+    FUN_10153a2e8(&_OBJC_CLASS___UIColor);
+    IVar2 = FUN_1015edca8(param_1,extraout_x1_01);
+    FUN_1015a5908(IVar2);
+    IVar2 = FUN_1015edca8(param_1,extraout_x1_02);
+    FUN_1015ae568(IVar2);
+    IVar2 = FUN_1015edca8(param_1,extraout_x1_03);
+    FUN_1015aeee8(IVar2,extraout_x1_04,param_1);
+    IVar2 = FUN_1015edca8(param_1,extraout_x1_05);
+    FUN_1015d2308(IVar2);
+    IVar2 = FUN_1015edca8(param_1,extraout_x1_06);
+    FUN_1015d0928(IVar2);
+    IVar2 = FUN_1015fa0a8(param_1,extraout_x1_07);
+    FUN_1015edca8(param_1,extraout_x1_08);
+    FUN_101527148(IVar2);
+    auVar7 = _objc_alloc(&_OBJC_CLASS___UIView);
+    IVar2 = FUN_1015fa0a8(param_1,auVar7._8_8_);
+    dVar5 = (double)FUN_10155e568(IVar2);
+    IVar2 = FUN_1015fa0a8(param_1,extraout_x1_09);
+    uVar3 = FUN_1015fc468(IVar2);
+    auVar7 = FUN_101564e08(0,dVar5 + -80.0,uVar3,0x4044000000000000,auVar7._0_8_);
+    FUN_1015c5a68(param_1,auVar7._8_8_,auVar7._0_8_);
+    uVar3 = _objc_alloc(&_OBJC_CLASS___UIView);
+    auVar7 = FUN_101581ec8(param_1);
+    FUN_101554148(auVar7._0_8_,auVar7._8_8_);
+    auVar7 = FUN_101564e08(uVar3);
+    FUN_1015ac348(param_1,auVar7._8_8_,auVar7._0_8_);
+    IVar2 = FUN_1015fa0a8(param_1,extraout_x1_10);
+    auVar7 = FUN_101581ec8(param_1);
+    FUN_101527148(IVar2,auVar7._8_8_,auVar7._0_8_);
+    IVar2 = FUN_1015fa0a8(param_1,extraout_x1_11);
+    auVar7 = FUN_10153eca8(param_1);
+    FUN_101527148(IVar2,auVar7._8_8_,auVar7._0_8_);
+    auVar7 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1_12,0);
+    FUN_1015c5a48(param_1,auVar7._8_8_,auVar7._0_8_);
+    uVar3 = FUN_101581ea8(param_1);
+    FUN_1015b4b08(0,0,0x4054000000000000,0x4044000000000000,uVar3);
+    auVar7 = FUN_101581ea8(param_1);
+    FUN_1015d7e48(auVar7._0_8_,auVar7._8_8_,&cf_hQ,0);
+    uVar3 = FUN_101531668(0x402c000000000000,&_OBJC_CLASS___UIFont);
+    uVar4 = FUN_101581ea8(param_1);
+    auVar7 = FUN_1015f0328(uVar4);
+    FUN_1015b4788(auVar7._0_8_,auVar7._8_8_,uVar3);
+    auVar7 = FUN_101581ea8(param_1);
+    auVar8 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar7._8_8_,&cf_myBgColor);
+    FUN_1015d7ea8(auVar7._0_8_,auVar8._8_8_,auVar8._0_8_,0);
+    auVar7 = FUN_101581ea8(param_1);
+    FUN_101527248(auVar7._0_8_,auVar7._8_8_,param_1,"selectAllSelector:",0x40);
+    uVar3 = FUN_101581ec8(param_1);
+    auVar7 = FUN_101581ea8(param_1);
+    FUN_101527148(uVar3,auVar7._8_8_,auVar7._0_8_);
+    auVar7 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1_13,0);
+    FUN_1015a0d68(param_1,auVar7._8_8_,auVar7._0_8_);
+    IVar2 = FUN_1015fa0a8(param_1,extraout_x1_14);
+    dVar5 = (double)FUN_1015fc468(IVar2);
+    dVar5 = dVar5 + -90.0 + -15.0;
+    uVar3 = FUN_101522b08(param_1);
+    FUN_1015b4b08(0x4056800000000000,0,dVar5,0x4044000000000000,uVar3);
+    auVar7 = FUN_101522b08(param_1);
+    FUN_1015d7e48(auVar7._0_8_,auVar7._8_8_,&cf_Rd,0);
+    uVar3 = FUN_101531668(0x402c000000000000,&_OBJC_CLASS___UIFont);
+    uVar4 = FUN_101522b08(param_1);
+    auVar7 = FUN_1015f0328(uVar4);
+    FUN_1015b4788(auVar7._0_8_,auVar7._8_8_,uVar3);
+    auVar7 = FUN_101522b08(param_1);
+    auVar8 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar7._8_8_,&cf_myBgColor);
+    FUN_1015d7ea8(auVar7._0_8_,auVar8._8_8_,auVar8._0_8_,0);
+    auVar7 = FUN_101522b08(param_1);
+    IVar2 = FUN_101574688(auVar7._0_8_,auVar7._8_8_);
+    FUN_1015ac5e8(0x4014000000000000,IVar2);
+    auVar7 = FUN_101522b08(param_1);
+    IVar2 = FUN_101574688(auVar7._0_8_,auVar7._8_8_);
+    FUN_1015c25a8(IVar2);
+    auVar7 = FUN_101522b08(param_1);
+    auVar8 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar7._8_8_,0xf85056);
+    FUN_1015a5908(auVar7._0_8_,auVar8._8_8_,auVar8._0_8_);
+    auVar7 = FUN_101522b08(param_1);
+    FUN_101527248(auVar7._0_8_,auVar7._8_8_,param_1,"actionSeletor:",0x40);
+    uVar3 = FUN_101581ec8(param_1);
+    auVar7 = FUN_101522b08(param_1);
+    FUN_101527148(uVar3,auVar7._8_8_,auVar7._0_8_);
+    auVar7 = FUN_101581ec8(param_1);
+    FUN_1015b6fc8(auVar7._0_8_,auVar7._8_8_,1);
+    auVar7 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1_15,0);
+    FUN_1015b09a8(param_1,auVar7._8_8_,auVar7._0_8_);
+    auVar7 = FUN_10154ac88(param_1);
+    FUN_1015d7e48(auVar7._0_8_,auVar7._8_8_,&cf_Tek0R_g_g,0);
+    auVar7 = FUN_10154ac88(param_1);
+    auVar8 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar7._8_8_,&cf_myBgColor);
+    FUN_1015d7ea8(auVar7._0_8_,auVar8._8_8_,auVar8._0_8_,0);
+    uVar3 = FUN_101531668(0x402c000000000000,&_OBJC_CLASS___UIFont);
+    uVar4 = FUN_10154ac88(param_1);
+    auVar7 = FUN_1015f0328(uVar4);
+    FUN_1015b4788(auVar7._0_8_,auVar7._8_8_,uVar3);
+    auVar7 = FUN_10154ac88(param_1);
+    FUN_101527248(auVar7._0_8_,auVar7._8_8_,param_1,"downloadSelector:",0x40);
+    IVar2 = FUN_1015fa0a8(param_1,extraout_x1_16);
+    FUN_101554148(IVar2,extraout_x1_17);
+    dVar5 = (dVar5 + -40.0) * 0.5;
+    uVar3 = FUN_10154ac88(param_1);
+    FUN_1015b4b08(0x402e000000000000,0,dVar5,0x4044000000000000,uVar3);
+    auVar7 = FUN_10154ac88(param_1);
+    IVar2 = FUN_101574688(auVar7._0_8_,auVar7._8_8_);
+    FUN_1015ac5e8(0x4014000000000000,IVar2);
+    auVar7 = FUN_10154ac88(param_1);
+    IVar2 = FUN_101574688(auVar7._0_8_,auVar7._8_8_);
+    FUN_1015a7628(0x3ff0000000000000,IVar2);
+    uVar3 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_18,&cf_myBgColor);
+    _objc_retainAutorelease(uVar3);
+    FUN_1014fe4c8();
+    auVar7 = FUN_10154ac88(param_1);
+    IVar2 = FUN_101574688(auVar7._0_8_,auVar7._8_8_);
+    FUN_1015a7548(IVar2);
+    uVar3 = FUN_10153eca8(param_1);
+    auVar7 = FUN_10154ac88(param_1);
+    FUN_101527148(uVar3,auVar7._8_8_,auVar7._0_8_);
+    auVar7 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1_19,0);
+    FUN_1015da648(param_1,auVar7._8_8_,auVar7._0_8_);
+    auVar7 = FUN_1015f6428(param_1);
+    FUN_1015d7e48(auVar7._0_8_,auVar7._8_8_,&cf_Tek0RgRhV,0);
+    auVar7 = FUN_1015f6428(param_1);
+    auVar8 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar7._8_8_,&cf_myBgColor);
+    FUN_1015d7ea8(auVar7._0_8_,auVar8._8_8_,auVar8._0_8_,0);
+    uVar3 = FUN_101531668(0x402c000000000000,&_OBJC_CLASS___UIFont);
+    uVar4 = FUN_1015f6428(param_1);
+    auVar7 = FUN_1015f0328(uVar4);
+    FUN_1015b4788(auVar7._0_8_,auVar7._8_8_,uVar3);
+    auVar7 = FUN_1015f6428(param_1);
+    FUN_101527248(auVar7._0_8_,auVar7._8_8_,param_1,"uploadSelector:",0x40);
+    IVar2 = FUN_1015fa0a8(param_1,extraout_x1_20);
+    FUN_101554148(IVar2,extraout_x1_21);
+    dVar5 = (dVar5 + -40.0) * 0.5;
+    uVar3 = FUN_1015f6428(param_1);
+    FUN_1015b4b08(0x402e000000000000,0,dVar5,0x4044000000000000,uVar3);
+    IVar2 = FUN_1015fa0a8(param_1,extraout_x1_22);
+    FUN_101554148(IVar2,extraout_x1_23);
+    dVar6 = dVar5 + -15.0;
+    uVar3 = FUN_1015f6428(param_1);
+    FUN_1015ce268(dVar6,uVar3);
+    auVar7 = FUN_1015f6428(param_1);
+    IVar2 = FUN_101574688(auVar7._0_8_,auVar7._8_8_);
+    FUN_1015ac5e8(0x4014000000000000,IVar2);
+    auVar7 = FUN_1015f6428(param_1);
+    IVar2 = FUN_101574688(auVar7._0_8_,auVar7._8_8_);
+    FUN_1015a7628(0x3ff0000000000000,IVar2);
+    uVar3 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_24,&cf_myBgColor);
+    _objc_retainAutorelease(uVar3);
+    FUN_1014fe4c8();
+    auVar7 = FUN_1015f6428(param_1);
+    IVar2 = FUN_101574688(auVar7._0_8_,auVar7._8_8_);
+    FUN_1015a7548(IVar2);
+    uVar3 = FUN_10153eca8(param_1);
+    auVar7 = FUN_1015f6428(param_1);
+    FUN_101527148(uVar3,auVar7._8_8_,auVar7._0_8_);
+    auVar7 = FUN_101581be8(param_1);
+    if ((auVar7._0_8_ & 1) == 0) {
+      auVar7 = FUN_101581d08(&objc::class_t::NNCGGManager,auVar7._8_8_,&cf_historyAd);
+      FUN_1015c59c8(param_1,auVar7._8_8_,auVar7._0_8_);
+      iVar1 = FUN_101581be8(param_1);
+      if (iVar1 != 0) {
+        auVar7 = FUN_1015813c8(&_OBJC_CLASS___UIView);
+        FUN_1015c5988(param_1,auVar7._8_8_,auVar7._0_8_);
+        uVar3 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+        FUN_101531d88(uVar3);
+        uVar3 = FUN_101581948(param_1);
+        FUN_1015b4b08(0,0,dVar5,0,uVar3);
+        auVar7 = FUN_1015813c8(&objc::class_t::NNCGGManager);
+        FUN_1015a1908(param_1,auVar7._8_8_,auVar7._0_8_);
+        auVar7 = FUN_101523d48(param_1);
+        FUN_1015aeee8(auVar7._0_8_,auVar7._8_8_,param_1);
+        uVar3 = FUN_101523d48(param_1);
+        auVar7 = FUN_101581948(param_1);
+        FUN_1015e2428(uVar3,auVar7._8_8_,&cf_historyAd,auVar7._0_8_,param_1);
+      }
+    }
+    uVar3 = FUN_101581ec8(param_1);
+    dVar5 = (double)FUN_1015f0ce8(uVar3);
+    IVar2 = FUN_1015edca8(param_1,extraout_x1_25);
+    dVar6 = (double)FUN_1015f0ce8(IVar2);
+    IVar2 = FUN_1015edca8(param_1,extraout_x1_26);
+    FUN_1015b6f28((dVar5 + -10.0) - dVar6,IVar2);
+    uVar3 = FUN_101581dc8(param_1);
+    uVar4 = FUN_1015e11a8(&objc::class_t::NNCFileHistoryManager);
+    auVar7 = FUN_101558348(uVar4);
+    FUN_101526548(uVar3,auVar7._8_8_,auVar7._0_8_);
+    FUN_101581a28(param_1);
+  }
+  return;
+}
+
+
+
+/* NNCHistoryViewController.downloadSelector: | 0x1000576b0 | ev_a0cf8fd68359c67e26ee13211a90785d9b8323eccaf06eb468e3ccb77e4f2615 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::downloadSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined *puVar1;
+  int iVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 extraout_x0;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined1 auVar5 [16];
+  undefined1 auVar6 [16];
+  undefined *local_a8;
+  undefined8 local_a0;
+  code *local_98;
+  undefined *puStack_90;
+  undefined1 auStack_88 [8];
+  undefined *local_80;
+  undefined8 local_78;
+  code *local_70;
+  undefined *puStack_68;
+  undefined1 auStack_60 [8];
+  undefined1 auStack_58 [8];
+  
+  uVar3 = FUN_101543648(&objc::class_t::NNCProfileUser);
+  iVar2 = FUN_10156ed08(uVar3);
+  if (iVar2 == 0) {
+    auVar5 = _objc_alloc(&objc::class_t::NNCLoginViewController);
+    auVar5 = FUN_1015665e8(auVar5._0_8_,auVar5._8_8_,&cf_NNCLoginViewController,0);
+    FUN_10155fc48(auVar5._0_8_,auVar5._8_8_,1);
+    auVar6 = _objc_alloc(&objc::class_t::BaseNavCV);
+    auVar5 = FUN_101567168(auVar6._0_8_,auVar6._8_8_,auVar5._0_8_);
+    FUN_1015c3c28(auVar5._0_8_,auVar5._8_8_,0);
+    auVar6 = FUN_101580708(param_1);
+    FUN_10158dbc8(auVar6._0_8_,auVar6._8_8_,auVar5._0_8_,1,&UNK_101d7c8f8);
+  }
+  else {
+    FUN_1015e2a68(0xbf800000,&objc::class_t::SVProgressHUD);
+    FUN_101557508(&objc::class_t::NNCRequestDo);
+    uVar3 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf___history);
+    uVar4 = *(undefined8 *)PTR____NSDictionary0___101d78910;
+    _objc_initWeak(auStack_58,param_1);
+    FUN_101596288((ID)&objc::class_t::NNCBIZRequest,extraout_x1_00);
+    puVar1 = PTR___NSConcreteStackBlock_101d78760;
+    local_80 = PTR___NSConcreteStackBlock_101d78760;
+    local_78 = 0xc2000000;
+    local_70 = FUN_100057924;
+    puStack_68 = &UNK_101d7b990;
+    _objc_copyWeak(auStack_60,auStack_58);
+    local_a8 = puVar1;
+    local_a0 = 0xc2000000;
+    local_98 = FUN_100057b7c;
+    puStack_90 = &UNK_101d7b9c0;
+    _objc_copyWeak(auStack_88,auStack_58);
+    FUN_101596fa8(extraout_x0,extraout_x1_01,uVar3,uVar4,&local_80,&local_a8);
+    _objc_destroyWeak(auStack_88);
+    _objc_destroyWeak(auStack_60);
+    _objc_destroyWeak(auStack_58);
+  }
+  return;
+}
+
+
+
+/* NNCHistoryViewController.uploadSelector: | 0x100057c60 | ev_cdc48697cca4d2c841d76e4c2a1b79903b174b0de32a96cf8d5ee5148ceaaaac */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::uploadSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x0;
+  _Unwind_Exception *exception_object;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 uVar4;
+  SEL extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined1 *unaff_x25;
+  long lVar5;
+  long lVar6;
+  long lVar7;
+  undefined1 auVar8 [16];
+  undefined1 auVar9 [16];
+  undefined *local_170;
+  undefined8 local_168;
+  code *local_160;
+  undefined *puStack_158;
+  undefined1 auStack_150 [8];
+  undefined1 auStack_148 [8];
+  undefined8 local_140;
+  long lStack_138;
+  long *local_130;
+  undefined8 uStack_128;
+  undefined8 local_120;
+  undefined8 uStack_118;
+  undefined8 uStack_110;
+  undefined8 uStack_108;
+  cfstringStruct *local_100;
+  undefined8 uStack_f8;
+  undefined1 auStack_f0 [128];
+  long local_70;
+  
+  local_70 = *(long *)PTR____stack_chk_guard_101d78938;
+  uVar2 = FUN_101543648(&objc::class_t::NNCProfileUser);
+  iVar1 = FUN_10156ed08(uVar2);
+  if (iVar1 == 0) {
+    auVar8 = _objc_alloc(&objc::class_t::NNCLoginViewController);
+    auVar8 = FUN_1015665e8(auVar8._0_8_,auVar8._8_8_,&cf_NNCLoginViewController,0);
+    FUN_10155fc48(auVar8._0_8_,auVar8._8_8_,1);
+    auVar9 = _objc_alloc(&objc::class_t::BaseNavCV);
+    auVar8 = FUN_101567168(auVar9._0_8_,auVar9._8_8_,auVar8._0_8_);
+    FUN_1015c3c28(auVar8._0_8_,auVar8._8_8_,0);
+    auVar9 = FUN_101580708(param_1);
+    FUN_10158dbc8(auVar9._0_8_,auVar9._8_8_,auVar8._0_8_,1,&UNK_101d7c938);
+  }
+  else {
+    auVar8 = FUN_1015e11a8(&objc::class_t::NNCInitManager);
+    uVar2 = FUN_101558388(auVar8._0_8_,auVar8._8_8_,100,0);
+    auVar8 = FUN_10153f908(uVar2);
+    if (auVar8._0_8_ == 0) {
+      FUN_1015e25c8(&objc::class_t::SVProgressHUD,auVar8._8_8_,0,&cf_lgd>eU_);
+    }
+    else {
+      FUN_1015e2a68(0xbf800000);
+      FUN_101557508(&objc::class_t::NNCRequestDo);
+      uVar3 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf___history);
+      auVar8 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+      lStack_138 = 0;
+      local_140 = 0;
+      uStack_128 = 0;
+      local_130 = (long *)0x0;
+      uStack_118 = 0;
+      local_120 = 0;
+      uStack_108 = 0;
+      uStack_110 = 0;
+      auVar9 = FUN_10153f948(uVar2,auVar8._8_8_,&local_140,auStack_f0,0x10);
+      uVar4 = auVar9._8_8_;
+      lVar5 = auVar9._0_8_;
+      if (lVar5 != 0) {
+        lVar6 = *local_130;
+        do {
+          lVar7 = 0;
+          do {
+            if (*local_130 != lVar6) {
+              _objc_enumerationMutation(uVar2);
+            }
+            auVar9 = FUN_1015f06c8(*(undefined8 *)(lStack_138 + lVar7 * 8));
+            FUN_101526528(auVar8._0_8_,auVar9._8_8_,auVar9._0_8_);
+            lVar7 = lVar7 + 1;
+          } while (lVar5 != lVar7);
+          auVar9 = FUN_10153f948(uVar2,extraout_x1_00,&local_140,auStack_f0,0x10);
+          uVar4 = auVar9._8_8_;
+          lVar5 = auVar9._0_8_;
+        } while (lVar5 != 0);
+      }
+      local_100 = &cf_list;
+      uStack_f8 = auVar8._0_8_;
+      uVar2 = FUN_101548208(&_OBJC_CLASS___NSDictionary,uVar4,&uStack_f8,&local_100,1);
+      _objc_initWeak(auStack_148,param_1);
+      FUN_101596288((ID)&objc::class_t::NNCBIZRequest,extraout_x1_01);
+      local_170 = PTR___NSConcreteStackBlock_101d78760;
+      local_168 = 0xc2000000;
+      local_160 = FUN_10005802c;
+      puStack_158 = &UNK_101d7b9c0;
+      unaff_x25 = auStack_150;
+      _objc_copyWeak(unaff_x25,auStack_148);
+      FUN_101597068(extraout_x0,extraout_x1_02,uVar3,uVar2,&UNK_101d7c918,&local_170);
+      _objc_destroyWeak(unaff_x25);
+      _objc_destroyWeak(auStack_148);
+    }
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_70) {
+    exception_object = (_Unwind_Exception *)FUN_100ab8e90(0);
+    _objc_destroyWeak(unaff_x25);
+    _objc_destroyWeak(auStack_148);
+                    /* WARNING: Subroutine does not return */
+    __Unwind_Resume(exception_object);
+  }
+  return;
+}
+
+
+
+/* NNCHistoryViewController.nncdealSource | 0x100058110 | ev_d30cfab3d4482dbe0df9a686a81ab680e2159f382d891462fa15e17719bb5e7d */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCHistoryViewController::nncdealSource(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  undefined8 uVar6;
+  undefined8 uVar7;
+  long lVar8;
+  undefined8 uVar9;
+  long lVar10;
+  ID IVar11;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  SEL extraout_x1_03;
+  cfstringStruct *pcVar13;
+  long lVar14;
+  undefined8 uVar15;
+  undefined8 uVar16;
+  long lVar17;
+  double dVar18;
+  undefined1 auVar19 [16];
+  undefined8 local_140;
+  long lStack_138;
+  long *local_130;
+  undefined8 uStack_128;
+  undefined8 local_120;
+  undefined8 uStack_118;
+  undefined8 uStack_110;
+  undefined8 uStack_108;
+  undefined1 auStack_100 [128];
+  long local_80;
+  undefined8 uVar12;
+  
+  local_80 = *(long *)PTR____stack_chk_guard_101d78938;
+  uVar2 = FUN_101544588();
+  FUN_101593248(uVar2);
+  uVar2 = FUN_10159e988(param_1);
+  FUN_101593248(uVar2);
+  uVar2 = FUN_101544cc8(param_1);
+  auVar19 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+  uVar2 = FUN_1015ebb28(uVar2,auVar19._8_8_,auVar19._0_8_);
+  uVar3 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+  dVar18 = (double)FUN_1015ef888(uVar3);
+  uVar3 = FUN_101544cc8(param_1);
+  auVar19 = FUN_101544de8(dVar18 + -86400.0,&_OBJC_CLASS___NSDate);
+  uVar3 = FUN_1015ebb28(uVar3,auVar19._8_8_,auVar19._0_8_);
+  uVar4 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+  dVar18 = (double)FUN_1015ef888(uVar4);
+  uVar15 = *(undefined8 *)PTR____NSArray0___101d78908;
+  uVar4 = FUN_10157e1c8(uVar15);
+  uVar5 = FUN_10157e1c8(uVar15);
+  uVar6 = FUN_10157e1c8(uVar15);
+  uVar15 = FUN_10157e1c8(uVar15);
+  lStack_138 = 0;
+  local_140 = 0;
+  uStack_128 = 0;
+  local_130 = (long *)0x0;
+  uStack_118 = 0;
+  local_120 = 0;
+  uStack_108 = 0;
+  uStack_110 = 0;
+  auVar19 = FUN_101581dc8(param_1);
+  uVar7 = auVar19._0_8_;
+  lVar8 = FUN_10153f948(uVar7,auVar19._8_8_,&local_140,auStack_100,0x10);
+  if (lVar8 != 0) {
+    lVar17 = *local_130;
+    do {
+      lVar14 = 0;
+      do {
+        if (*local_130 != lVar17) {
+          _objc_enumerationMutation(uVar7);
+        }
+        uVar16 = *(undefined8 *)(lStack_138 + lVar14 * 8);
+        uVar9 = FUN_101544cc8(param_1);
+        lVar10 = FUN_101569348(uVar16);
+        auVar19 = FUN_101544de8((double)((float)lVar10 / 1000.0),&_OBJC_CLASS___NSDate);
+        auVar19 = FUN_1015ebb28(uVar9,auVar19._8_8_,auVar19._0_8_);
+        iVar1 = FUN_10156d5e8(uVar2,auVar19._8_8_,auVar19._0_8_);
+        if (iVar1 == 0) {
+          iVar1 = FUN_10156d5e8(uVar3,extraout_x1,auVar19._0_8_);
+          if (iVar1 == 0) {
+            lVar10 = FUN_101569348(uVar16);
+            auVar19 = FUN_1015813c8(&objc::class_t::NNCHistoryModel);
+            uVar9 = auVar19._0_8_;
+            FUN_1015bdfc8(uVar9,auVar19._8_8_,uVar16);
+            if ((long)(dVar18 * 1000.0) - lVar10 < 0x240c8400) {
+              auVar19 = FUN_10153f908(uVar6);
+              uVar12 = auVar19._8_8_;
+              uVar16 = uVar6;
+              if (auVar19._0_8_ == 0) {
+                pcVar13 = &::cf___;
+LAB_1000584ac:
+                FUN_1015d7e08(uVar9,uVar12,pcVar13);
+                uVar12 = extraout_x1_01;
+              }
+            }
+            else {
+              auVar19 = FUN_10153f908(uVar15);
+              uVar12 = auVar19._8_8_;
+              uVar16 = uVar15;
+              if (auVar19._0_8_ == 0) {
+                pcVar13 = &cf_feMR;
+                goto LAB_1000584ac;
+              }
+            }
+          }
+          else {
+            auVar19 = FUN_1015813c8(&objc::class_t::NNCHistoryModel);
+            uVar9 = auVar19._0_8_;
+            FUN_1015bdfc8(uVar9,auVar19._8_8_,uVar16);
+            auVar19 = FUN_10153f908(uVar5);
+            uVar12 = auVar19._8_8_;
+            uVar16 = uVar5;
+            if (auVar19._0_8_ == 0) {
+              pcVar13 = &cf__f_Y;
+              goto LAB_1000584ac;
+            }
+          }
+        }
+        else {
+          auVar19 = FUN_1015813c8(&objc::class_t::NNCHistoryModel);
+          uVar9 = auVar19._0_8_;
+          FUN_1015bdfc8(uVar9,auVar19._8_8_,uVar16);
+          auVar19 = FUN_10153f908(uVar4);
+          uVar12 = auVar19._8_8_;
+          uVar16 = uVar4;
+          if (auVar19._0_8_ == 0) {
+            FUN_1015d7e08(uVar9,uVar12,&cf_N_Y);
+            uVar12 = extraout_x1_00;
+          }
+        }
+        FUN_101526528(uVar16,uVar12,uVar9);
+        lVar14 = lVar14 + 1;
+      } while (lVar8 != lVar14);
+      lVar8 = FUN_10153f948(uVar7,extraout_x1_02,&local_140,auStack_100,0x10);
+    } while (lVar8 != 0);
+  }
+  auVar19 = FUN_101544588(param_1);
+  FUN_101526548(auVar19._0_8_,auVar19._8_8_,uVar4);
+  auVar19 = FUN_101544588(param_1);
+  FUN_101526548(auVar19._0_8_,auVar19._8_8_,uVar5);
+  auVar19 = FUN_101544588(param_1);
+  FUN_101526548(auVar19._0_8_,auVar19._8_8_,uVar6);
+  auVar19 = FUN_101544588(param_1);
+  FUN_101526548(auVar19._0_8_,auVar19._8_8_,uVar15);
+  IVar11 = FUN_1015edca8(param_1,extraout_x1_03);
+  FUN_101592d08(IVar11);
+  uVar2 = FUN_101544588(param_1);
+  auVar19 = FUN_10153f908(uVar2);
+  if (auVar19._0_8_ == 0) {
+    IVar11 = FUN_1015fa0a8(param_1,auVar19._8_8_);
+    FUN_1015e2888(IVar11);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_80) {
+    FUN_100ab8e90(0);
+    return;
+  }
+  return;
+}
+
+
+
+/* NNCHistoryViewController.selectAllSelector: | 0x100058694 | ev_6124b2aaf859cccd0b9b5cdbb67b9317e8d6928a7263f925920bd07d72c7d49e */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::selectAllSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  SEL extraout_x1;
+  undefined1 auVar3 [16];
+  
+  uVar1 = FUN_10159e988();
+  FUN_101593248(uVar1);
+  uVar1 = FUN_10159e988(param_1);
+  auVar3 = FUN_101544588(param_1);
+  FUN_101526548(uVar1,auVar3._8_8_,auVar3._0_8_);
+  IVar2 = FUN_1015edca8(param_1,extraout_x1);
+  FUN_101592d08(IVar2);
+  return;
+}
+
+
+
+/* NNCHistoryViewController.actionSeletor: | 0x100058734 | ev_43e3e2d775b3986acac5d4983d915d25e57c710b7e1440a28805c01c19b59ead */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::actionSeletor_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  long lVar3;
+  undefined8 uVar4;
+  undefined8 extraout_x1;
+  undefined8 uVar5;
+  long lVar6;
+  long lVar7;
+  undefined1 auVar8 [16];
+  undefined8 local_130;
+  long lStack_128;
+  long *local_120;
+  undefined8 uStack_118;
+  undefined8 local_110;
+  undefined8 uStack_108;
+  undefined8 uStack_100;
+  undefined8 uStack_f8;
+  undefined1 auStack_e8 [128];
+  long local_68;
+  
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  uVar1 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+  lStack_128 = 0;
+  local_130 = 0;
+  uStack_118 = 0;
+  local_120 = (long *)0x0;
+  uStack_108 = 0;
+  local_110 = 0;
+  uStack_f8 = 0;
+  uStack_100 = 0;
+  auVar8 = FUN_10159e988(param_1);
+  uVar2 = auVar8._0_8_;
+  lVar3 = FUN_10153f948(uVar2,auVar8._8_8_,&local_130,auStack_e8,0x10);
+  if (lVar3 != 0) {
+    lVar6 = *local_120;
+    do {
+      lVar7 = 0;
+      do {
+        if (*local_120 != lVar6) {
+          _objc_enumerationMutation(uVar2);
+        }
+        uVar5 = *(undefined8 *)(lStack_128 + lVar7 * 8);
+        auVar8 = FUN_1015725e8(uVar5);
+        FUN_101526528(uVar1,auVar8._8_8_,auVar8._0_8_);
+        uVar4 = FUN_101581dc8(param_1);
+        auVar8 = FUN_1015725e8(uVar5);
+        FUN_1015941c8(uVar4,auVar8._8_8_,auVar8._0_8_);
+        lVar7 = lVar7 + 1;
+      } while (lVar3 != lVar7);
+      lVar3 = FUN_10153f948(uVar2,extraout_x1,&local_130,auStack_e8,0x10);
+    } while (lVar3 != 0);
+  }
+  FUN_101581a28(param_1);
+  auVar8 = FUN_1015e11a8(&objc::class_t::NNCFileHistoryManager);
+  FUN_101546ae8(auVar8._0_8_,auVar8._8_8_,uVar1);
+  FUN_1015819c8(param_1);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_68) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCHistoryViewController.tableView:numberOfRowsInSection: | 0x1000588f8 | ev_18e49fb372ee3090a91181b0bfe2784c50dbba91849bd8aed9bce7fa86e8d296 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+long_long NNCHistoryViewController::tableView_numberOfRowsInSection_
+                    (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  undefined8 uVar1;
+  long_long lVar2;
+  
+  uVar1 = FUN_101544588();
+  lVar2 = FUN_10153f908(uVar1);
+  return lVar2;
+}
+
+
+
+/* NNCHistoryViewController.tableView:cellForRowAtIndexPath: | 0x100058934 | ev_06de881a45f2eeca7d4a1d4e0966f70abe531cfe743db613caa6709cbc540b8b */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID NNCHistoryViewController::tableView_cellForRowAtIndexPath_
+             (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined1 auVar3 [16];
+  
+  IVar1 = FUN_101546e68(param_3,param_2,&cf_HistoryCell);
+  if (IVar1 == 0) {
+    IVar1 = FUN_101538148(&objc::class_t::NNCHistoryCell);
+  }
+  uVar2 = FUN_101544588(param_1);
+  auVar3 = FUN_10159ad88(param_4);
+  uVar2 = FUN_101583328(uVar2,auVar3._8_8_,auVar3._0_8_);
+  auVar3 = FUN_10156d208(param_1);
+  FUN_1015bb0a8(IVar1,auVar3._8_8_,auVar3._0_8_);
+  auVar3 = FUN_10159e988(param_1);
+  auVar3 = FUN_10153e4a8(auVar3._0_8_,auVar3._8_8_,uVar2);
+  FUN_1015bbb68(IVar1,auVar3._8_8_,auVar3._0_8_);
+  FUN_1015b8d68(IVar1,extraout_x1,uVar2);
+  return IVar1;
+}
+
+
+
+/* NNCHistoryViewController.tableView:heightForRowAtIndexPath: | 0x100058a4c | ev_b67b0420a645b7756934e1bdf0494f36fbeb385c3986e02f1f561b63e60fb85d */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+double NNCHistoryViewController::tableView_heightForRowAtIndexPath_
+                 (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  undefined8 uVar1;
+  double dVar2;
+  undefined1 auVar3 [16];
+  
+  uVar1 = FUN_101544588(param_1);
+  auVar3 = FUN_10159ad88(param_4);
+  auVar3 = FUN_101583328(uVar1,auVar3._8_8_,auVar3._0_8_);
+  dVar2 = (double)FUN_1015819a8(&objc::class_t::NNCHistoryCell,auVar3._8_8_,auVar3._0_8_);
+  return dVar2;
+}
+
+
+
+/* NNCHistoryViewController.tableView:viewForHeaderInSection: | 0x100058aec | ev_4451c4722cd14b9e514cc4b416e6533dae40458cb33e36aa18af2b3e7b1cecca */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID NNCHistoryViewController::tableView_viewForHeaderInSection_
+             (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  long lVar3;
+  ID IVar4;
+  
+  iVar1 = FUN_101581be8();
+  if (iVar1 != 0) {
+    uVar2 = FUN_101544588(param_1);
+    lVar3 = FUN_10153f908(uVar2);
+    if (lVar3 != 0) {
+      IVar4 = FUN_101581948(param_1);
+      return IVar4;
+    }
+  }
+  IVar4 = FUN_1015813c8(&_OBJC_CLASS___UIView);
+  return IVar4;
+}
+
+
+
+/* NNCHistoryViewController.tableView:heightForHeaderInSection: | 0x100058b60 | ev_e40a11d887d1dd80979107ac65c3684ddf31190ce2141fc38732cc9b9a1f6356 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+double NNCHistoryViewController::tableView_heightForHeaderInSection_
+                 (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  long lVar3;
+  double dVar4;
+  
+  iVar1 = FUN_101581be8();
+  if (iVar1 != 0) {
+    uVar2 = FUN_101544588(param_1);
+    lVar3 = FUN_10153f908(uVar2);
+    if (lVar3 != 0) {
+      uVar2 = FUN_101581948(param_1);
+      dVar4 = (double)FUN_10155e568(uVar2);
+      return dVar4;
+    }
+  }
+  return 0.01;
+}
+
+
+
+/* NNCHistoryViewController.tableView:viewForFooterInSection: | 0x100058bf0 | ev_48ca09ba5639f535f5592fe3c4203141c2b5a78c99b5cea29a8fd255f43f0903 */
+
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID NNCHistoryViewController::tableView_viewForFooterInSection_
+             (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_1015813c8(&_OBJC_CLASS___UIView);
+  return IVar1;
+}
+
+
+
+/* NNCHistoryViewController.tableView:heightForFooterInSection: | 0x100058c0c | ev_57c951f573d5009b15cf4ba27d3e26dfa1eb00a3151ca41d14761990e2e50f52 */
+
+/* Function Stack Size: 0x20 bytes */
+
+double NNCHistoryViewController::tableView_heightForFooterInSection_
+                 (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  return 0.009999999776482582;
+}
+
+
+
+/* NNCHistoryViewController.tableView:didSelectRowAtIndexPath: | 0x100058c18 | ev_eb8bd478886d0a9ce8ec04aa0a009d20fe15aa676d5241c55a32d09a2f268165 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCHistoryViewController::tableView_didSelectRowAtIndexPath_
+               (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x1;
+  undefined1 auVar4 [16];
+  
+  FUN_101547188(param_3,param_2,param_4,0);
+  uVar2 = FUN_101544588(param_1);
+  auVar4 = FUN_10159ad88(param_4);
+  uVar2 = FUN_101583328(uVar2,auVar4._8_8_,auVar4._0_8_);
+  iVar1 = FUN_10156d208(param_1);
+  if (iVar1 == 0) {
+    auVar4 = _objc_alloc(&objc::class_t::NNCDetailViewController);
+    uVar3 = FUN_1015665e8(auVar4._0_8_,auVar4._8_8_,&cf_NNCDetailViewController,0);
+    uVar2 = FUN_1015725e8(uVar2);
+    auVar4 = FUN_1015f8fe8(uVar2);
+    FUN_1015dc188(uVar3,auVar4._8_8_,auVar4._0_8_);
+    FUN_10155fc48(uVar3,extraout_x1,1);
+    auVar4 = FUN_101580708(param_1);
+    FUN_10158f2e8(auVar4._0_8_,auVar4._8_8_,uVar3,1);
+  }
+  else {
+    auVar4 = FUN_10159e988(param_1);
+    iVar1 = FUN_10153e4a8(auVar4._0_8_,auVar4._8_8_,uVar2);
+    auVar4 = FUN_10159e988(param_1);
+    if (iVar1 == 0) {
+      FUN_101526528(auVar4._0_8_,auVar4._8_8_,uVar2);
+    }
+    else {
+      FUN_1015941c8();
+    }
+    FUN_101592d08(param_3);
+  }
+  return;
+}
+
+
+
+/* NNCHistoryViewController.nnconAdSizeChanged: | 0x100058dbc | ev_366e39a857e46853dd1162f56cca13f424a2dc89d413d43e140c762149aae28b */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCHistoryViewController::nnconAdSizeChanged_(ID param_1,SEL param_2,CGSize param_3)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_1015edca8(param_1,param_2);
+  FUN_101592d08(IVar1);
+  return;
+}
+
+
+
+/* NNCHistoryViewController.preferredStatusBarStyle | 0x100058dec | ev_8ad4fed04a9fd053da75d812cc397bb134cfdb52fa0a94e33b806f537ec6eecb */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long NNCHistoryViewController::preferredStatusBarStyle(ID param_1,SEL param_2)
+
+{
+  return 1;
+}
+
+
+
+/* NNCHistoryViewController.isEditMode | 0x100058df4 | ev_ac701097353be558a3b546959eeb67fe9a5a0b527fb95a2026befa191e5f9010 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCHistoryViewController::isEditMode(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__isEditMode);
+}
+
+
+
+/* NNCHistoryViewController.setIsEditMode: | 0x100058e04 | ev_d8d652e7001959c25d2cac69f6aa2da3e571f1ff3d13b881d628da223a8c114a */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCHistoryViewController::setIsEditMode_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__isEditMode) = (char)param_3;
+  return;
+}
+
+
+
+/* NNCHistoryViewController.rightItem | 0x100058e14 | ev_bfe595d62e72de0a8f3aa973c7fbfe3ea1aa4ed1a824d915ddb5ba214cdc2e68 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryViewController::rightItem(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__rightItem);
+}
+
+
+
+/* NNCHistoryViewController.setRightItem: | 0x100058e24 | ev_3adf66fad685a5d6eb3ed15f50fb2a09ab5ef475b6f53e90c9cd16e7243d0450 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::setRightItem_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__rightItem) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryViewController.nncoriginDataSource | 0x100058e38 | ev_25a6fe37ebedb9ac561b506b1760463186aee2218bd8c09ff59ca0568c9e2b51 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryViewController::nncoriginDataSource(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nncoriginDataSource);
+}
+
+
+
+/* NNCHistoryViewController.setNncoriginDataSource: | 0x100058e48 | ev_c3a73ea5e07903d9bcd14d3fe892c5b4fc8dbc1b91e1262f65e0c1b729045c69 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::setNncoriginDataSource_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nncoriginDataSource) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryViewController.dataSource | 0x100058e5c | ev_5e06df615d6edc9384d80559d0a0fd49eff33845cb466cd71660ef7172bb2a48 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryViewController::dataSource(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__dataSource);
+}
+
+
+
+/* NNCHistoryViewController.setDataSource: | 0x100058e6c | ev_1392d5b2f13e9323294d355966db2d1d816204c11b6732d94a776b0d686c9509 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::setDataSource_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__dataSource) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryViewController.selectedItemSource | 0x100058e80 | ev_7b0f19f8be2587909bbd81002dbbd59ec1fd458dfd346dec7e58dc07c29e0031 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryViewController::selectedItemSource(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__selectedItemSource);
+}
+
+
+
+/* NNCHistoryViewController.setSelectedItemSource: | 0x100058e90 | ev_a85f2ef58d81d1e6c08276a10e4e2f25739a5a3649e32ce2178c3d465f7596fc */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::setSelectedItemSource_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__selectedItemSource) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryViewController.tableView | 0x100058ea4 | ev_9d788f1ecde1fee6049bdd6e0a769c8f5a965d60c4b08db20aa5285d2333da7d */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryViewController::tableView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__tableView);
+}
+
+
+
+/* NNCHistoryViewController.setTableView: | 0x100058eb4 | ev_15bcbf5fb1b858e21689dbd0d2e64be0d42dc2dd654988c7273a1f0e4913284a */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::setTableView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__tableView) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryViewController.nncselectView | 0x100058ec8 | ev_ae5a4a0b31f7fc71e4d682f2d71b782d7c340cc52ab9ce1de5e7529b9bba1b5b */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryViewController::nncselectView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nncselectView);
+}
+
+
+
+/* NNCHistoryViewController.setNncselectView: | 0x100058ed8 | ev_f57fde7beb5096fa5f3cddda4b7279ab9a8a02eb27531fb30200c78f520e11c2 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::setNncselectView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nncselectView) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryViewController.nncselectAllButton | 0x100058eec | ev_caa19c5279682e550ac3490e6729824ce3f745109473318c0123e7cdc2eda9e6 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryViewController::nncselectAllButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nncselectAllButton);
+}
+
+
+
+/* NNCHistoryViewController.setNncselectAllButton: | 0x100058efc | ev_582d072eddaa17b93b897f82c236c39dc950d7f94c6d48a11d33f866a7932cd1 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::setNncselectAllButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nncselectAllButton) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryViewController.actionButton | 0x100058f10 | ev_37ec04fb11afb9f5de248837bf6affb48c0e8d308e7db8a8b0b6a799c4fffa9a */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryViewController::actionButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__actionButton);
+}
+
+
+
+/* NNCHistoryViewController.setActionButton: | 0x100058f20 | ev_addc7bc364f947c8da70c6b4a2663348bb0b9105f0b285e85ecf4d372d05354d */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::setActionButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__actionButton) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryViewController.controlView | 0x100058f34 | ev_78a1d40f9bb12499ca118ef1eba4e40988049de0e8821749efcb167868d82f9f */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryViewController::controlView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__controlView);
+}
+
+
+
+/* NNCHistoryViewController.setControlView: | 0x100058f44 | ev_58e969268a7bf8f393b904f444910d648d71739c86e91e4cb00bcfd4ef3f67e3 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::setControlView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__controlView) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryViewController.downloadButton | 0x100058f58 | ev_238a819915f6073f8f5d7ce7e29241e4f8513827d82c5629cb8318b7e33bbf8b */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryViewController::downloadButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__downloadButton);
+}
+
+
+
+/* NNCHistoryViewController.setDownloadButton: | 0x100058f68 | ev_318ce81a95ed29fb0824beac71aee1d993967023a3bae4b16bf84aa355072fdd */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::setDownloadButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__downloadButton) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryViewController.uploadButton | 0x100058f7c | ev_7b23607b1a44d573c0cafb48bce052d00f3ea922193a59a10f8a117bbc0e2369 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryViewController::uploadButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__uploadButton);
+}
+
+
+
+/* NNCHistoryViewController.setUploadButton: | 0x100058f8c | ev_7db572091624879615220677174df0e9fa43de5e82e9663967f55ff7200a14e8 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::setUploadButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__uploadButton) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryViewController.nncadView | 0x100058fa0 | ev_5854e3065c9d4c1bda22846943d9735ba0ba825b6714760720dae8901b7de0fd */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryViewController::nncadView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nncadView);
+}
+
+
+
+/* NNCHistoryViewController.setNncadView: | 0x100058fb0 | ev_2a22f6a5036a6bf4a3d5f5426d772130a9fb3def5bf0b0ea2d150e95707effe9 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::setNncadView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nncadView) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryViewController.adManager | 0x100058fc4 | ev_4557314d590543ba4daedd8ad1cd3c48ada5aa42452945d49844a2f7c217fa1b */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryViewController::adManager(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__adManager);
+}
+
+
+
+/* NNCHistoryViewController.setAdManager: | 0x100058fd4 | ev_1b2ce6f76e449c306d349f16a321ae97625c86891ea86b7fe651211cbe3de276 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::setAdManager_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__adManager) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryViewController.nnchasAd | 0x100058fe8 | ev_2cfc38281a0ea65f22f20a232acabdf993276c71b650555b842f65cd488a7a79 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCHistoryViewController::nnchasAd(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__nnchasAd);
+}
+
+
+
+/* NNCHistoryViewController.setNnchasAd: | 0x100058ff8 | ev_ab21a6e47233fa419b5e612fdf78b68c353f5af5bde0b3eebe7bd781b48dda61 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCHistoryViewController::setNnchasAd_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__nnchasAd) = (char)param_3;
+  return;
+}
+
+
+
+/* NNCHistoryViewController.dateForamtter | 0x100059008 | ev_e8105ab3122855db02196eed8538b832caa4c513c3706d8bfbe10c410acbeef8 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryViewController::dateForamtter(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__dateForamtter);
+}
+
+
+
+/* NNCHistoryViewController.setDateForamtter: | 0x100059018 | ev_bf6144aea34206a4eaad4cf9bf6a0815cce24d5a56cfe7c6554fe51495215b34 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryViewController::setDateForamtter_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__dateForamtter) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryViewController..cxx_destruct | 0x10005902c | ev_512a82b35b91f76e700e08b426a1adbd73366bbcd817988afd9b40b8f103b858 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCHistoryViewController::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__dateForamtter) = 0;
+  *(undefined8 *)(param_1 + (long)__adManager) = 0;
+  *(undefined8 *)(param_1 + (long)__nncadView) = 0;
+  *(undefined8 *)(param_1 + (long)__uploadButton) = 0;
+  *(undefined8 *)(param_1 + (long)__downloadButton) = 0;
+  *(undefined8 *)(param_1 + (long)__controlView) = 0;
+  *(undefined8 *)(param_1 + (long)__actionButton) = 0;
+  *(undefined8 *)(param_1 + (long)__nncselectAllButton) = 0;
+  *(undefined8 *)(param_1 + (long)__nncselectView) = 0;
+  *(undefined8 *)(param_1 + (long)__tableView) = 0;
+  *(undefined8 *)(param_1 + (long)__selectedItemSource) = 0;
+  *(undefined8 *)(param_1 + (long)__dataSource) = 0;
+  *(undefined8 *)(param_1 + (long)__nncoriginDataSource) = 0;
+  *(undefined8 *)(param_1 + (long)__rightItem) = 0;
+  return;
+}
+
+

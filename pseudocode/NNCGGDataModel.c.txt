@@ -1,0 +1,200 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCGGDataModel.modelWithDict: | 0x1000dde18 | ev_b804c0aecef71368a7abf218c29f91143adcdf206b95ac873d077d1980fd10ce */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCGGDataModel::modelWithDict_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  ID IVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 uVar4;
+  long lVar5;
+  long lVar6;
+  undefined1 auVar7 [16];
+  undefined1 auVar8 [16];
+  undefined8 local_130;
+  long lStack_128;
+  long *local_120;
+  undefined8 uStack_118;
+  undefined8 local_110;
+  undefined8 uStack_108;
+  undefined8 uStack_100;
+  undefined8 uStack_f8;
+  undefined1 auStack_e8 [128];
+  long local_68;
+  
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  auVar7 = FUN_1015813c8(&objc::class_t::NNCGGDataModel);
+  IVar3 = auVar7._0_8_;
+  auVar7 = FUN_1015ebae8(param_3,auVar7._8_8_,&cf_adPosition);
+  FUN_1015a1b28(IVar3,auVar7._8_8_,auVar7._0_8_);
+  uVar1 = FUN_10152baa8(param_3,extraout_x1,&cf_data);
+  auVar7 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+  FUN_1015a13e8(IVar3,auVar7._8_8_,auVar7._0_8_);
+  uStack_108 = 0;
+  local_110 = 0;
+  uStack_f8 = 0;
+  uStack_100 = 0;
+  lStack_128 = 0;
+  local_130 = 0;
+  uStack_118 = 0;
+  local_120 = (long *)0x0;
+  lVar2 = FUN_10153f948(uVar1,extraout_x1_00,&local_130,auStack_e8,0x10);
+  if (lVar2 != 0) {
+    lVar5 = *local_120;
+    do {
+      lVar6 = 0;
+      do {
+        if (*local_120 != lVar5) {
+          _objc_enumerationMutation(uVar1);
+        }
+        uVar4 = *(undefined8 *)(lStack_128 + lVar6 * 8);
+        auVar7 = FUN_101523548(IVar3);
+        auVar8 = FUN_10157cd68(&objc::class_t::NNCGGDataItemModel,auVar7._8_8_,uVar4);
+        FUN_101526528(auVar7._0_8_,auVar8._8_8_,auVar8._0_8_);
+        lVar6 = lVar6 + 1;
+      } while (lVar2 != lVar6);
+      lVar2 = FUN_10153f948(uVar1,extraout_x1_01,&local_130,auStack_e8,0x10);
+    } while (lVar2 != 0);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_68) {
+    return IVar3;
+  }
+  IVar3 = FUN_100ab8e90(0);
+  return IVar3;
+}
+
+
+
+/* NNCGGDataModel.initWithCoder: | 0x1000de000 | ev_dd0f46002a83fe27a214082086fb970691efc76006dc641a4c10a76d98ea30b9 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCGGDataModel::initWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCGGDataModel;
+  local_40 = param_1;
+  auVar2 = _objc_msgSendSuper2(&local_40,"init");
+  IVar1 = auVar2._0_8_;
+  if (IVar1 != 0) {
+    auVar2 = FUN_101545868(param_3,auVar2._8_8_,&cf_adPositionName);
+    FUN_1015a1b28(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1,&cf_adDataItemModelList);
+    FUN_1015a13e8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCGGDataModel.encodeWithCoder: | 0x1000de0c8 | ev_b319d6bf6f3a41713e9c6cb294e4af41c626516b4de59333c83aa00835b78a15 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCGGDataModel::encodeWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_101523fe8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_adPositionName);
+  auVar1 = FUN_101523548(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_adDataItemModelList);
+  return;
+}
+
+
+
+/* NNCGGDataModel.adPositionName | 0x1000de15c | ev_16e32b1c5951a6f5a84ecbb3e9f2198886d0d1249c5c9b8b2688b36424140f49 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCGGDataModel::adPositionName(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* NNCGGDataModel.setAdPositionName: | 0x1000de164 | ev_1f600d67c8e92792ec1be31a693755717489ac8b39b26189a9640854a913367b */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCGGDataModel::setAdPositionName_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCGGDataModel.adDataItemModelList | 0x1000de16c | ev_8fa4abea20441effa4cd87694d653d77c953e8f4b3a015bbfa009638081f5d05 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCGGDataModel::adDataItemModelList(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCGGDataModel.setAdDataItemModelList: | 0x1000de174 | ev_fdde3a09def90ffeeff6b3f78983cdb4a47b3542c22453153d5801d706a5af74 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCGGDataModel::setAdDataItemModelList_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCGGDataModel..cxx_destruct | 0x1000de180 | ev_68c10c674a653e782bd900043ac232175ae0b74f0a3bef58ce34580905090f40 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCGGDataModel::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

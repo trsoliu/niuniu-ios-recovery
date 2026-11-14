@@ -1,0 +1,2563 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* DetailHeaderView.heightForBean: | 0x1000a1d00 | ev_d81ecedb86e5346eb4696569cf224b1c62e1998af96f5a0f7ff5b17b9b94ad17 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+double DetailHeaderView::heightForBean_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  ulong uVar4;
+  undefined8 extraout_x1;
+  double dVar5;
+  double in_d2;
+  double dVar6;
+  undefined1 auVar7 [16];
+  
+  iVar1 = FUN_101581d08(&objc::class_t::NNCGGManager,param_2,&cf_episodeAd);
+  if (iVar1 == 0) {
+    dVar5 = 278.0;
+  }
+  else {
+    dVar5 = (double)FUN_101523928(param_1);
+    if (dVar5 == 0.0) {
+      uVar2 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+      auVar7 = FUN_101524228(uVar2);
+      uVar2 = FUN_101557e28(auVar7._0_8_,auVar7._8_8_,&cf_episodeAd);
+      uVar3 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+      FUN_101531d88(uVar3);
+      dVar5 = (double)FUN_101557e08(in_d2 + -30.0,&objc::class_t::NNCGGRootModel,extraout_x1,uVar2);
+      dVar5 = dVar5 + 20.0 + 278.0;
+    }
+    else {
+      dVar5 = (double)FUN_101523928(param_1);
+      dVar5 = dVar5 + 278.0;
+    }
+  }
+  uVar2 = FUN_1015e6768(param_3);
+  uVar4 = FUN_10153f908(uVar2);
+  dVar6 = dVar5 + 50.0;
+  if (uVar4 < 2) {
+    dVar6 = dVar5;
+  }
+  return dVar6;
+}
+
+
+
+/* DetailHeaderView.awakeFromNib | 0x1000a1e74 | ev_bed1408bb41c3624cad718544496e1003265832b0c2e80f11fc7fa854d69dcff */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void DetailHeaderView::awakeFromNib(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined8 extraout_x1_07;
+  undefined8 extraout_x1_08;
+  SEL extraout_x1_09;
+  undefined8 extraout_x1_10;
+  SEL extraout_x1_11;
+  undefined8 extraout_x1_12;
+  SEL extraout_x1_13;
+  undefined8 extraout_x1_14;
+  undefined8 extraout_x1_15;
+  undefined8 extraout_x1_16;
+  long lVar3;
+  undefined1 auVar4 [16];
+  undefined1 auVar5 [16];
+  ID local_70;
+  class_t *pcStack_68;
+  
+  pcStack_68 = &objc::class_t::DetailHeaderView;
+  local_70 = param_1;
+  _objc_msgSendSuper2(&local_70,"awakeFromNib");
+  _NSLog(&cf_d>eLub_);
+  auVar4 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1,&cf_myTextColor);
+  FUN_1015a5908(param_1,auVar4._8_8_,auVar4._0_8_);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_00,&cf_myBgColor);
+  auVar4 = FUN_10157e568(param_1);
+  FUN_1015d6fa8(auVar4._0_8_,auVar4._8_8_,uVar1);
+  uVar1 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_01,0xf5a623);
+  auVar4 = FUN_10153ac88(param_1);
+  FUN_1015d6fa8(auVar4._0_8_,auVar4._8_8_,uVar1);
+  auVar4 = FUN_101546f28(param_1);
+  auVar5 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar4._8_8_,&cf_myBgColor);
+  FUN_1015d7ea8(auVar4._0_8_,auVar5._8_8_,auVar5._0_8_,0);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_02,&cf_myBgColor);
+  auVar4 = FUN_101553668(param_1);
+  FUN_1015d6fa8(auVar4._0_8_,auVar4._8_8_,uVar1);
+  auVar4 = FUN_1015517a8(param_1);
+  auVar5 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar4._8_8_,&cf_myBgColor);
+  FUN_1015d7ea8(auVar4._0_8_,auVar5._8_8_,auVar5._0_8_,0);
+  auVar4 = FUN_101551588(param_1);
+  auVar5 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar4._8_8_,&cf_myBgColor);
+  FUN_1015d7ea8(auVar4._0_8_,auVar5._8_8_,auVar5._0_8_,0);
+  auVar4 = FUN_10154ac88(param_1);
+  auVar5 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar4._8_8_,&cf_myBgColor);
+  FUN_1015d7ea8(auVar4._0_8_,auVar5._8_8_,auVar5._0_8_,0);
+  auVar4 = FUN_1015e0da8(param_1);
+  auVar5 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar4._8_8_,&cf_myBgColor);
+  FUN_1015d7ea8(auVar4._0_8_,auVar5._8_8_,auVar5._0_8_,0);
+  auVar4 = FUN_101551588(param_1);
+  auVar5 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar4._8_8_,&cf_jianVIewImage2);
+  FUN_1015b8468(auVar4._0_8_,auVar5._8_8_,auVar5._0_8_,0);
+  auVar4 = FUN_101551588(param_1);
+  auVar5 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar4._8_8_,&cf_jianVIewImage2s);
+  FUN_1015b8468(auVar4._0_8_,auVar5._8_8_,auVar5._0_8_,4);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_03,&cf_TextBgViewColo);
+  auVar4 = FUN_101575408(param_1);
+  FUN_1015a5908(auVar4._0_8_,auVar4._8_8_,uVar1);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_04,&cf_myBgColor);
+  auVar4 = FUN_101539ae8(param_1);
+  FUN_1015d6fa8(auVar4._0_8_,auVar4._8_8_,uVar1);
+  auVar4 = FUN_1015e2828(param_1);
+  auVar5 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar4._8_8_,&cf_myBgColor);
+  FUN_1015d7ea8(auVar4._0_8_,auVar5._8_8_,auVar5._0_8_,0);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_05,&cf_TextBgViewColo);
+  auVar4 = FUN_101539b48(param_1);
+  FUN_1015a5908(auVar4._0_8_,auVar4._8_8_,uVar1);
+  auVar4 = FUN_101539b48(param_1);
+  IVar2 = FUN_101574688(auVar4._0_8_,auVar4._8_8_);
+  FUN_1015ac5e8(0x4014000000000000,IVar2);
+  auVar4 = FUN_101539b48(param_1);
+  IVar2 = FUN_101574688(auVar4._0_8_,auVar4._8_8_);
+  FUN_1015c25a8(IVar2);
+  auVar4 = _objc_alloc(&_OBJC_CLASS___UITapGestureRecognizer);
+  uVar1 = FUN_101567988(auVar4._0_8_,auVar4._8_8_,param_1,"chooseSourceSelector");
+  auVar4 = FUN_101539b48(param_1);
+  FUN_101525d08(auVar4._0_8_,auVar4._8_8_,uVar1);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_06,&cf_myBgColor);
+  auVar4 = FUN_1015e67c8(param_1);
+  FUN_1015d6fa8(auVar4._0_8_,auVar4._8_8_,uVar1);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_07,&cf_myBgColor);
+  auVar4 = FUN_10154eba8(param_1);
+  FUN_1015d6fa8(auVar4._0_8_,auVar4._8_8_,uVar1);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_08,&cf_myBgColor);
+  auVar4 = FUN_1015387a8(param_1);
+  FUN_1015d6fa8(auVar4._0_8_,auVar4._8_8_,uVar1);
+  _objc_alloc(&_OBJC_CLASS___UICollectionViewFlowLayout);
+  auVar4 = FUN_101561e88();
+  FUN_1015aaec8(param_1,auVar4._8_8_,auVar4._0_8_);
+  uVar1 = FUN_10153bd28(param_1);
+  FUN_1015be0c8(0x4061800000000000,0x4044000000000000,uVar1);
+  uVar1 = FUN_10153bd28(param_1);
+  FUN_1015c3788(0x4024000000000000,uVar1);
+  uVar1 = FUN_10153bd28(param_1);
+  FUN_1015c37c8(0x4024000000000000,uVar1);
+  auVar4 = FUN_10153bd28(param_1);
+  FUN_1015cf708(auVar4._0_8_,auVar4._8_8_,1);
+  uVar1 = _objc_alloc(&objc::class_t::NNCCustomCollectionView);
+  auVar4 = FUN_10153bd28(param_1);
+  auVar4 = FUN_101564f68(*(undefined8 *)PTR__CGRectZero_101d78140,
+                         *(undefined8 *)(PTR__CGRectZero_101d78140 + 8),
+                         *(undefined8 *)(PTR__CGRectZero_101d78140 + 0x10),
+                         *(undefined8 *)(PTR__CGRectZero_101d78140 + 0x18),uVar1,auVar4._8_8_,
+                         auVar4._0_8_);
+  FUN_1015aaee8(param_1,auVar4._8_8_,auVar4._0_8_);
+  FUN_10153a2e8(&_OBJC_CLASS___UIColor);
+  IVar2 = FUN_10153bd48(param_1,extraout_x1_09);
+  FUN_1015a5908(IVar2);
+  lVar3 = (long)__collectionView;
+  FUN_1015ae568(*(undefined8 *)(param_1 + lVar3),extraout_x1_10,param_1);
+  FUN_1015aeee8(*(ID *)(param_1 + lVar3),extraout_x1_11,param_1);
+  FUN_1015cf868(*(undefined8 *)(param_1 + lVar3));
+  FUN_1015d22c8(*(undefined8 *)(param_1 + lVar3),extraout_x1_12,0);
+  FUN_1015ac0c8(0,0,*(undefined8 *)(param_1 + lVar3));
+  IVar2 = FUN_10153bd48(param_1,extraout_x1_13);
+  auVar4 = FUN_1015818a8(&_OBJC_CLASS___UINib);
+  FUN_101592688(IVar2,auVar4._8_8_,auVar4._0_8_,&cf_NNCEpisodeCollectionCell);
+  FUN_101527148(param_1,extraout_x1_14,*(undefined8 *)(param_1 + lVar3));
+  auVar4 = FUN_1015813c8(&_OBJC_CLASS___UILabel);
+  FUN_1015cbba8(param_1,auVar4._8_8_,auVar4._0_8_);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_15,&cf_myBgColor);
+  auVar4 = FUN_101591308(param_1);
+  FUN_1015d6fa8(auVar4._0_8_,auVar4._8_8_,uVar1);
+  auVar4 = FUN_101591308(param_1);
+  FUN_1015d6f08(auVar4._0_8_,auVar4._8_8_,&cf_vsQcP);
+  auVar4 = FUN_101591308(param_1);
+  FUN_1015d6f48(auVar4._0_8_,auVar4._8_8_,0);
+  uVar1 = FUN_101531668(0x4030000000000000,&_OBJC_CLASS___UIFont);
+  auVar4 = FUN_101591308(param_1);
+  FUN_1015b4788(auVar4._0_8_,auVar4._8_8_,uVar1);
+  auVar4 = FUN_101591308(param_1);
+  FUN_101527148(param_1,auVar4._8_8_,auVar4._0_8_);
+  auVar4 = FUN_1015813c8(&_OBJC_CLASS___UIView);
+  FUN_1015c5988(param_1,auVar4._8_8_,auVar4._0_8_);
+  auVar4 = FUN_101581948(param_1);
+  IVar2 = FUN_101574688(auVar4._0_8_,auVar4._8_8_);
+  FUN_1015c2588(IVar2);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_16,&cf_myTextColor);
+  auVar4 = FUN_101581948(param_1);
+  FUN_1015a5908(auVar4._0_8_,auVar4._8_8_,uVar1);
+  auVar4 = FUN_101581948(param_1);
+  FUN_101527148(param_1,auVar4._8_8_,auVar4._0_8_);
+  return;
+}
+
+
+
+/* DetailHeaderView.setIsFav: | 0x1000a28c4 | ev_7a52775ac8a47c3f1b53b48a4b3b670f724a1af39aad4a60aa3bf3107438c5ba */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void DetailHeaderView::setIsFav_(ID param_1,SEL param_2,bool param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  *(char *)(param_1 + (long)__isFav) = (char)param_3;
+  auVar1 = FUN_101551588();
+  FUN_1015d03e8(auVar1._0_8_,auVar1._8_8_,param_3);
+  return;
+}
+
+
+
+/* DetailHeaderView.setVideoBean: | 0x1000a2908 | ev_e607255e0f8979edd67f0f2f35c5f5d5fd9cdc4ae9fc4974c1709a71576d3aba */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setVideoBean_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  long lVar3;
+  cfstringStruct *pcVar4;
+  ulong uVar5;
+  ID IVar6;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  long lVar7;
+  ID IVar8;
+  undefined1 auVar9 [16];
+  undefined1 auVar10 [16];
+  
+  lVar7 = (long)__videoBean;
+  *(ID *)(param_1 + lVar7) = param_3;
+  uVar1 = FUN_1015f91e8(param_3);
+  auVar9 = FUN_10157e568(param_1);
+  FUN_1015d6f08(auVar9._0_8_,auVar9._8_8_,uVar1);
+  uVar1 = FUN_10155f068(param_3);
+  auVar9 = FUN_101578508(uVar1);
+  uVar1 = FUN_101558408(&objc::class_t::PublicFunction,auVar9._8_8_,auVar9._0_8_);
+  auVar9 = FUN_10153ac88(param_1);
+  FUN_1015d6f08(auVar9._0_8_,auVar9._8_8_,uVar1);
+  uVar1 = FUN_1015813c8(&_OBJC_CLASS___NSMutableString);
+  uVar2 = FUN_1015ff248(param_3);
+  lVar3 = FUN_1015750a8(uVar2);
+  if (lVar3 != 0) {
+    auVar9 = FUN_1015ff248(param_3);
+    FUN_10152b108(uVar1,auVar9._8_8_,auVar9._0_8_);
+    FUN_10152b108(uVar1,extraout_x1,&cf__);
+  }
+  uVar2 = FUN_1015567c8(param_3);
+  lVar3 = FUN_1015750a8(uVar2);
+  if (lVar3 != 0) {
+    auVar9 = FUN_1015567c8(param_3);
+    FUN_10152b108(uVar1,auVar9._8_8_,auVar9._0_8_);
+    FUN_10152b108(uVar1,extraout_x1_00,&cf__);
+  }
+  uVar2 = FUN_1015f8d28(param_3);
+  lVar3 = FUN_1015750a8(uVar2);
+  if (lVar3 != 0) {
+    auVar9 = FUN_1015f8d28(param_3);
+    auVar9 = FUN_1015eb988(auVar9._0_8_,auVar9._8_8_,&cf__,&cf__);
+    FUN_10152b108(uVar1,auVar9._8_8_,auVar9._0_8_);
+  }
+  auVar9 = FUN_1015750a8(uVar1);
+  if (auVar9._0_8_ == 0) {
+    pcVar4 = &::cf___;
+  }
+  else {
+    pcVar4 = (cfstringStruct *)FUN_1015ebcc8(&_OBJC_CLASS___NSString,auVar9._8_8_,&cf____);
+  }
+  auVar9 = FUN_101553668(param_1);
+  FUN_1015d6f08(auVar9._0_8_,auVar9._8_8_,pcVar4);
+  FUN_1015578c8(param_3);
+  FUN_1015750a8();
+  auVar9 = FUN_1015e2828(param_1);
+  auVar10 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,auVar9._8_8_,&cf___>);
+  FUN_1015d7e48(auVar9._0_8_,auVar10._8_8_,auVar10._0_8_,0);
+  uVar1 = FUN_1015e6768(*(ID *)(param_1 + lVar7));
+  uVar5 = FUN_10153f908(uVar1);
+  IVar8 = (ID)(uVar5 < 2);
+  uVar1 = FUN_101539b48(param_1);
+  FUN_1015b6fc8(uVar1);
+  IVar6 = FUN_10153bd48(param_1,extraout_x1_01);
+  FUN_101592d08(IVar6);
+  FUN_1015f5188(param_1,extraout_x1_02,IVar8);
+  return;
+}
+
+
+
+/* DetailHeaderView.setSourceIndex:episodeIndex: | 0x1000a2cd0 | ev_8e4cda9294e8d6216422d28bc85910c47186a3b5819bc04a203040270232c089 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setSourceIndex_episodeIndex_(ID param_1,SEL param_2,int param_3,int param_4)
+
+{
+  int iVar1;
+  int iVar2;
+  uint uVar3;
+  undefined8 uVar4;
+  ulong uVar5;
+  undefined8 uVar6;
+  ID IVar7;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  SEL pcVar8;
+  SEL extraout_x1_03;
+  SEL extraout_x1_04;
+  long lVar9;
+  long lVar10;
+  long lVar11;
+  long lVar12;
+  undefined8 in_d2;
+  undefined1 auVar13 [16];
+  undefined8 local_140;
+  long lStack_138;
+  long *local_130;
+  undefined8 uStack_128;
+  undefined8 local_120;
+  undefined8 uStack_118;
+  undefined8 uStack_110;
+  undefined8 uStack_108;
+  undefined1 auStack_f8 [128];
+  long local_78;
+  
+  local_78 = *(long *)PTR____stack_chk_guard_101d78938;
+  FUN_1015d3688();
+  FUN_1015b2448(param_1,extraout_x1,param_4);
+  lVar12 = (long)__videoBean;
+  uVar4 = FUN_1015e6768(*(undefined8 *)(param_1 + lVar12));
+  uVar5 = FUN_10153f908(uVar4);
+  if (1 < uVar5) {
+    uVar4 = FUN_1015e6768(*(undefined8 *)(param_1 + lVar12));
+    uVar5 = FUN_10153f908(uVar4);
+    if ((ulong)(long)(int)param_3 < uVar5) {
+      uVar4 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+      auVar13 = FUN_1015e6768(*(undefined8 *)(param_1 + lVar12));
+      uVar6 = FUN_101583328(auVar13._0_8_,auVar13._8_8_,(long)(int)param_3);
+      auVar13 = FUN_10158b928(uVar6);
+      uVar4 = FUN_101559548(uVar4,auVar13._8_8_,auVar13._0_8_);
+      auVar13 = FUN_1015e67c8(param_1);
+      FUN_1015d6f08(auVar13._0_8_,auVar13._8_8_,uVar4);
+      auVar13 = FUN_1015e6768(*(undefined8 *)(param_1 + lVar12));
+      uVar4 = FUN_101583328(auVar13._0_8_,auVar13._8_8_,(long)(int)param_3);
+      uVar4 = FUN_10154eb88(uVar4);
+      FUN_10153f908(uVar4);
+      uVar4 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_00,&::cf__);
+      auVar13 = FUN_10154eba8(param_1);
+      FUN_1015d6f08(auVar13._0_8_,auVar13._8_8_,uVar4);
+    }
+    else {
+      auVar13 = FUN_1015e67c8(param_1);
+      FUN_1015d6f08(auVar13._0_8_,auVar13._8_8_,&cf__gw_);
+      auVar13 = FUN_10154eba8(param_1);
+      FUN_1015d6f08(auVar13._0_8_,auVar13._8_8_,&::cf___);
+    }
+  }
+  FUN_1015f5ca8(param_1);
+  IVar7 = FUN_10153bd48(param_1,extraout_x1_01);
+  FUN_101592d08(IVar7);
+  IVar7 = FUN_10153bd48(param_1,extraout_x1_02);
+  auVar13 = FUN_1015faa48(IVar7);
+  uVar4 = auVar13._0_8_;
+  uStack_118 = 0;
+  local_120 = 0;
+  uStack_108 = 0;
+  uStack_110 = 0;
+  lStack_138 = 0;
+  local_140 = 0;
+  uStack_128 = 0;
+  local_130 = (long *)0x0;
+  auVar13 = FUN_10153f948(uVar4,auVar13._8_8_,&local_140,auStack_f8,0x10);
+  pcVar8 = auVar13._8_8_;
+  lVar12 = auVar13._0_8_;
+  if (lVar12 != 0) {
+    lVar9 = *local_130;
+    lVar10 = (long)__episodeIndex;
+    do {
+      lVar11 = 0;
+      do {
+        if (*local_130 != lVar9) {
+          _objc_enumerationMutation(uVar4);
+        }
+        auVar13 = FUN_101561808(*(undefined8 *)(lStack_138 + lVar11 * 8));
+        pcVar8 = auVar13._8_8_;
+        if (auVar13._0_8_ == (long)*(int *)(param_1 + lVar10)) goto LAB_1000a3164;
+        lVar11 = lVar11 + 1;
+      } while (lVar12 != lVar11);
+      auVar13 = FUN_10153f948(uVar4,pcVar8,&local_140,auStack_f8,0x10);
+      pcVar8 = auVar13._8_8_;
+      lVar12 = auVar13._0_8_;
+    } while (lVar12 != 0);
+  }
+  iVar2 = FUN_1015e6728(param_1,pcVar8);
+  IVar7 = FUN_1015f8c48(param_1,extraout_x1_03);
+  uVar4 = FUN_1015e6768(IVar7);
+  auVar13 = FUN_10153f908(uVar4);
+  pcVar8 = auVar13._8_8_;
+  if ((ulong)(long)(int)iVar2 < auVar13._0_8_) {
+    iVar1 = *(int *)(param_1 + (long)__episodeIndex);
+    IVar7 = FUN_1015f8c48(param_1,pcVar8);
+    auVar13 = FUN_1015e6768(IVar7);
+    FUN_1015e6728(param_1,auVar13._8_8_);
+    uVar4 = FUN_101583328(auVar13._0_8_);
+    uVar4 = FUN_10154eb88(uVar4);
+    auVar13 = FUN_10153f908(uVar4);
+    pcVar8 = auVar13._8_8_;
+    if ((ulong)(long)iVar1 < auVar13._0_8_) {
+      IVar7 = FUN_10153bd48(param_1,pcVar8);
+      auVar13 = FUN_101561a28(&_OBJC_CLASS___NSIndexPath);
+      FUN_10159cc88(IVar7,auVar13._8_8_,auVar13._0_8_,0,0);
+      pcVar8 = extraout_x1_04;
+    }
+  }
+LAB_1000a3164:
+  uVar3 = FUN_101581d08(&objc::class_t::NNCGGManager,pcVar8,&cf_episodeAd);
+  auVar13 = FUN_101581948(param_1);
+  FUN_1015b6fc8(auVar13._0_8_,auVar13._8_8_,uVar3 ^ 1);
+  if (((uVar3 ^ 1) & 1) == 0) {
+    auVar13 = FUN_1015df368(param_1);
+    if ((auVar13._0_8_ & 1) == 0) {
+      FUN_1015d0de8(param_1,auVar13._8_8_,1);
+      uVar4 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+      FUN_101531d88(uVar4);
+      uVar4 = FUN_101581948(param_1);
+      FUN_1015b4b08(0,0,in_d2,0,uVar4);
+      auVar13 = FUN_1015813c8(&objc::class_t::NNCGGManager);
+      FUN_1015a1908(param_1,auVar13._8_8_,auVar13._0_8_);
+      auVar13 = FUN_101523d48(param_1);
+      FUN_1015aeee8(auVar13._0_8_,auVar13._8_8_,param_1);
+      uVar4 = FUN_101523d48(param_1);
+      uVar6 = FUN_101581948(param_1);
+      auVar13 = FUN_101581ee8(param_1);
+      FUN_1015e2428(uVar4,auVar13._8_8_,&cf_episodeAd,uVar6,auVar13._0_8_);
+    }
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_78) {
+    FUN_100ab8e90(0);
+    return;
+  }
+  return;
+}
+
+
+
+/* DetailHeaderView.layoutSubviews | 0x1000a330c | ev_edcd04ce471213318856bd2362c63386bfe894ac46065f8e3a923994cf0fceb5 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void DetailHeaderView::layoutSubviews(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  SEL extraout_x1;
+  double dVar2;
+  undefined8 uVar3;
+  ID local_50;
+  class_t *pcStack_48;
+  
+  pcStack_48 = &objc::class_t::DetailHeaderView;
+  local_50 = param_1;
+  _objc_msgSendSuper2(&local_50,"layoutSubviews");
+  uVar1 = FUN_101591308(param_1);
+  FUN_1015b6f28(0x4034000000000000,uVar1);
+  uVar1 = FUN_101591308(param_1);
+  FUN_1015dd9c8(0x4069000000000000,uVar1);
+  uVar1 = FUN_101591308(param_1);
+  FUN_1015bfa48(0x402e000000000000,uVar1);
+  FUN_1015f8c48(param_1,extraout_x1);
+  dVar2 = (double)FUN_10155e5a8(param_1);
+  uVar1 = FUN_101591308(param_1);
+  FUN_1015a76a8(dVar2 + -8.0,uVar1);
+  uVar1 = FUN_101591308(param_1);
+  uVar3 = FUN_1015f0ce8(uVar1);
+  uVar1 = FUN_101581948(param_1);
+  FUN_1015a76a8(uVar3,uVar1);
+  return;
+}
+
+
+
+/* DetailHeaderView.updateFrame | 0x1000a3468 | ev_2b914ac6e111e153932b0297a9fbd27ef612c68af66ca1d5f60e4fbc123c655b */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void DetailHeaderView::updateFrame(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  SEL extraout_x1_03;
+  SEL pcVar4;
+  undefined8 uVar5;
+  double dVar6;
+  double dVar7;
+  double dVar8;
+  undefined1 auVar9 [16];
+  
+  uVar2 = FUN_10153ac88();
+  FUN_1015e3aa8(uVar2);
+  uVar2 = FUN_101552ec8(param_1);
+  uVar5 = FUN_1015384e8(uVar2);
+  uVar2 = FUN_10153ac88(param_1);
+  FUN_1015a9948(uVar5,uVar2);
+  uVar2 = FUN_101552ec8(param_1);
+  dVar6 = (double)FUN_10159a248(uVar2);
+  uVar2 = FUN_10153ac88(param_1);
+  FUN_1015bfa48(dVar6 + 3.0,uVar2);
+  uVar2 = FUN_101553668(param_1);
+  FUN_1015e3aa8(uVar2);
+  uVar2 = FUN_101552ec8(param_1);
+  uVar5 = FUN_1015384e8(uVar2);
+  uVar2 = FUN_101553668(param_1);
+  FUN_1015a9948(uVar5,uVar2);
+  uVar2 = FUN_10153ac88(param_1);
+  dVar6 = (double)FUN_10159a248(uVar2);
+  uVar2 = FUN_101553668(param_1);
+  FUN_1015bfa48(dVar6 + 5.0,uVar2);
+  uVar2 = FUN_101546f28(param_1);
+  dVar6 = (double)FUN_101574da8(uVar2);
+  uVar2 = FUN_101553668(param_1);
+  dVar7 = (double)FUN_101574da8(uVar2);
+  uVar2 = FUN_101553668(param_1);
+  FUN_1015dd9c8(dVar6 - dVar7,uVar2);
+  uVar2 = FUN_101581c68(param_1);
+  auVar9 = FUN_10154ac88(param_1);
+  FUN_1015b6fc8(auVar9._0_8_,auVar9._8_8_,uVar2);
+  iVar1 = FUN_101581c68(param_1);
+  dVar6 = (double)FUN_1015fc468(param_1);
+  uVar2 = FUN_1015517a8(param_1);
+  dVar7 = (double)FUN_1015fc468(uVar2);
+  uVar2 = FUN_1015517a8(param_1);
+  FUN_1015bfa48(0x402e000000000000,uVar2);
+  uVar2 = FUN_1015517a8(param_1);
+  dVar8 = (double)FUN_10159a248(uVar2);
+  uVar2 = FUN_101551588(param_1);
+  if (iVar1 == 0) {
+    dVar7 = (dVar6 + -30.0 + -dVar7 * 4.0) / 3.0;
+    FUN_1015bfa48(dVar7 + dVar8,uVar2);
+    uVar2 = FUN_101551588(param_1);
+    dVar6 = (double)FUN_10159a248(uVar2);
+    uVar2 = FUN_10154ac88(param_1);
+    FUN_1015bfa48(dVar7 + dVar6,uVar2);
+    uVar2 = FUN_10154ac88(param_1);
+  }
+  else {
+    dVar7 = (dVar6 + -30.0 + -dVar7 * 3.0) * 0.5;
+    FUN_1015bfa48(dVar7 + dVar8,uVar2);
+    uVar2 = FUN_101551588(param_1);
+  }
+  dVar6 = (double)FUN_10159a248(uVar2);
+  uVar2 = FUN_1015e0da8(param_1);
+  FUN_1015bfa48(dVar7 + dVar6,uVar2);
+  uVar2 = FUN_1015e2828(param_1);
+  FUN_1015e3aa8(uVar2);
+  uVar2 = FUN_1015e2828(param_1);
+  FUN_1015b6f28(0x403e000000000000,uVar2);
+  uVar2 = FUN_101539ae8(param_1);
+  uVar5 = FUN_1015384e8(uVar2);
+  uVar2 = FUN_1015e2828(param_1);
+  FUN_1015a9948(uVar5,uVar2);
+  uVar2 = FUN_1015e2828(param_1);
+  dVar6 = (double)FUN_1015fc468(uVar2);
+  dVar7 = (double)FUN_1015fc468(param_1);
+  uVar2 = FUN_101539ae8(param_1);
+  dVar8 = (double)FUN_10159a248(uVar2);
+  dVar8 = (dVar7 + -15.0) - dVar8;
+  if (dVar8 <= dVar6) {
+    dVar6 = dVar8;
+  }
+  uVar2 = FUN_1015e2828(param_1);
+  FUN_1015dd9c8(dVar6,uVar2);
+  dVar6 = (double)FUN_1015fc468(param_1);
+  uVar2 = FUN_1015e2828(param_1);
+  FUN_1015ce268(dVar6 + -15.0,uVar2);
+  IVar3 = FUN_10153bd48(param_1,extraout_x1);
+  FUN_1015b6f28(0x4044000000000000,IVar3);
+  dVar6 = (double)FUN_1015fc468(param_1);
+  IVar3 = FUN_10153bd48(param_1,extraout_x1_00);
+  FUN_1015dd9c8(dVar6 + -30.0,IVar3);
+  IVar3 = FUN_10153bd48(param_1,extraout_x1_01);
+  FUN_1015bfa48(0x402e000000000000,IVar3);
+  uVar2 = FUN_101539b48(param_1);
+  iVar1 = FUN_10156e108(uVar2);
+  uVar2 = FUN_101539b48(param_1);
+  if (iVar1 == 0) {
+    dVar6 = (double)FUN_1015319c8(uVar2);
+    dVar6 = dVar6 + 10.0;
+    pcVar4 = extraout_x1_03;
+  }
+  else {
+    dVar6 = (double)FUN_1015f0ce8();
+    pcVar4 = extraout_x1_02;
+  }
+  IVar3 = FUN_10153bd48(param_1,pcVar4);
+  FUN_1015d84c8(dVar6,IVar3);
+  return;
+}
+
+
+
+/* DetailHeaderView.updateSourceFrame | 0x1000a3a64 | ev_62eaa5523aeb7842dd32dc24aafdca382ee0a765cf8de9514d27981870596a03 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void DetailHeaderView::updateSourceFrame(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  double dVar2;
+  
+  uVar1 = FUN_1015e67c8();
+  FUN_1015e3aa8(uVar1);
+  uVar1 = FUN_1015e67c8(param_1);
+  FUN_1015bfa48(0x4024000000000000,uVar1);
+  uVar1 = FUN_1015e67c8(param_1);
+  uVar1 = FUN_1015ec948(uVar1);
+  dVar2 = (double)FUN_10155e568(uVar1);
+  uVar1 = FUN_1015e67c8(param_1);
+  FUN_1015a9948(dVar2 * 0.5,uVar1);
+  uVar1 = FUN_10154eba8(param_1);
+  FUN_1015e3aa8(uVar1);
+  uVar1 = FUN_1015e67c8(param_1);
+  dVar2 = (double)FUN_10159a248(uVar1);
+  uVar1 = FUN_10154eba8(param_1);
+  FUN_1015bfa48(dVar2 + 5.0,uVar1);
+  uVar1 = FUN_10154eba8(param_1);
+  uVar1 = FUN_1015ec948(uVar1);
+  dVar2 = (double)FUN_10155e568(uVar1);
+  uVar1 = FUN_10154eba8(param_1);
+  FUN_1015a9948(dVar2 * 0.5,uVar1);
+  return;
+}
+
+
+
+/* DetailHeaderView.showMoreSelector: | 0x1000a3bfc | ev_a381089aad36970f8d5c2cb7095ad5742790704d88cca4f874297b1cab4ab6e2 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::showMoreSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_101546808(param_1,param_2,param_3);
+  FUN_1015477e8(IVar1);
+  return;
+}
+
+
+
+/* DetailHeaderView.shareSelector: | 0x1000a3c2c | ev_4390d17fad0f534ef84e48d348e4a208eff7d59cb8f849aecf316e8ee1eaff19 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::shareSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined1 auVar3 [16];
+  
+  auVar3 = _objc_alloc(&objc::class_t::NNCShareVideoViewController);
+  auVar3 = FUN_1015665e8(auVar3._0_8_,auVar3._8_8_,&cf_NNCShareVideoViewController,0);
+  uVar1 = auVar3._0_8_;
+  FUN_1015f8c48(param_1,auVar3._8_8_);
+  FUN_1015dbf48(uVar1);
+  FUN_1015b7168(uVar1,extraout_x1,1);
+  FUN_10155fc48(uVar1,extraout_x1_00,1);
+  IVar2 = FUN_1015fa108(param_1,extraout_x1_01);
+  auVar3 = FUN_101580708(IVar2);
+  FUN_10158f2e8(auVar3._0_8_,auVar3._8_8_,uVar1,1);
+  return;
+}
+
+
+
+/* DetailHeaderView.downloadSelector: | 0x1000a3cf4 | ev_df54262a91f963ac10f8945c340b7b1e6a09d9a34614f8aa8cfd70008e665248 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::downloadSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  cfstringStruct *pcVar3;
+  undefined1 auVar4 [16];
+  undefined *local_58;
+  undefined8 local_50;
+  code *local_48;
+  undefined *puStack_40;
+  ID local_38;
+  
+  uVar1 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+  uVar1 = FUN_101524228(uVar1);
+  pcVar3 = &cf_downloadAd;
+  auVar4 = FUN_101559b88(uVar1);
+  if (auVar4._0_8_ != 0) {
+    auVar4 = FUN_101528888(&_OBJC_CLASS___UIAlertController,auVar4._8_8_,&::cf___,
+                           &cf_N_Tv_R_S_WdkoNd>e_,1);
+    uVar1 = auVar4._0_8_;
+    local_58 = PTR___NSConcreteStackBlock_101d78760;
+    local_50 = 0xc2000000;
+    local_48 = FUN_1000a3eb0;
+    puStack_40 = &UNK_101d7b790;
+    local_38 = param_1;
+    auVar4 = FUN_101522d08(&_OBJC_CLASS___UIAlertAction,auVar4._8_8_,&cf_l,0,&local_58);
+    FUN_101524e28(uVar1,auVar4._8_8_,auVar4._0_8_);
+    auVar4 = FUN_101522d08(&_OBJC_CLASS___UIAlertAction,extraout_x1,&cf_NN,1,
+                           &PTR___NSConcreteGlobalBlock_101d7d658);
+    FUN_101524e28(uVar1,auVar4._8_8_,auVar4._0_8_);
+    auVar4 = FUN_101581ee8(param_1);
+    FUN_10158dbc8(auVar4._0_8_,auVar4._8_8_,uVar1,1,0);
+    return;
+  }
+  IVar2 = FUN_101546808(param_1,auVar4._8_8_,(ID)pcVar3);
+  FUN_101547848(IVar2);
+  return;
+}
+
+
+
+/* DetailHeaderView.showRewardAdWithType: | 0x1000a3ec0 | ev_e09881b254c2dfe5ddc4b7945faacbdd188df7359228e12302fbc3f6e88ac7b8 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x14 bytes */
+
+void DetailHeaderView::showRewardAdWithType_(ID param_1,SEL param_2,int param_3)
+
+{
+  cfstringStruct *pcVar1;
+  cfstringStruct *pcVar2;
+  undefined8 extraout_x0;
+  undefined8 uVar3;
+  long lVar4;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined1 auVar5 [16];
+  
+  pcVar1 = &cf_updateAd;
+  if (param_3 != 2) {
+    pcVar1 = &cf_firstPlayAd;
+  }
+  pcVar2 = &cf_downloadAd;
+  if (param_3 != 1) {
+    pcVar2 = pcVar1;
+  }
+  FUN_1015a1848();
+  FUN_1015a1ce8(param_1,extraout_x1,0);
+  FUN_101596288((ID)&objc::class_t::WindMillAdRequest,extraout_x1_00);
+  uVar3 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+  auVar5 = FUN_101524228(uVar3);
+  uVar3 = FUN_101559b88(auVar5._0_8_,auVar5._8_8_,pcVar2);
+  auVar5 = FUN_10159dca8(uVar3);
+  FUN_1015c8a08(extraout_x0,auVar5._8_8_,auVar5._0_8_);
+  lVar4 = FUN_1015995c8(param_1);
+  if (lVar4 == 0) {
+    auVar5 = _objc_alloc(&objc::class_t::WindMillRewardVideoAd);
+    auVar5 = FUN_101567008(auVar5._0_8_,auVar5._8_8_,extraout_x0);
+    FUN_1015ce028(param_1,auVar5._8_8_,auVar5._0_8_);
+  }
+  auVar5 = FUN_1015995c8(param_1);
+  FUN_1015aeee8(auVar5._0_8_,auVar5._8_8_,param_1);
+  uVar3 = FUN_1015995c8(param_1);
+  FUN_101575a28(uVar3);
+  return;
+}
+
+
+
+/* DetailHeaderView.favSelector: | 0x1000a4044 | ev_a957a24168b0f4d3c315b693d97b9f8a49bac7298f161423a6c02654a5962e37 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::favSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined *puVar1;
+  int iVar2;
+  undefined8 uVar3;
+  ID IVar4;
+  undefined8 extraout_x0;
+  _Unwind_Exception *exception_object;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined1 *puVar5;
+  undefined1 *unaff_x24;
+  undefined1 auVar6 [16];
+  undefined1 auVar7 [16];
+  undefined *local_e8;
+  undefined8 local_e0;
+  code *local_d8;
+  undefined *puStack_d0;
+  undefined1 auStack_c8 [8];
+  undefined *local_c0;
+  undefined8 local_b8;
+  code *local_b0;
+  undefined *puStack_a8;
+  undefined1 auStack_a0 [8];
+  undefined1 auStack_98 [8];
+  undefined8 local_90;
+  cfstringStruct *local_88;
+  cfstringStruct *local_80;
+  undefined8 local_78;
+  cfstringStruct *local_70;
+  long local_68;
+  
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  uVar3 = FUN_101543648(&objc::class_t::NNCProfileUser);
+  iVar2 = FUN_10156ed08(uVar3);
+  if (iVar2 == 0) {
+    auVar6 = _objc_alloc(&objc::class_t::NNCLoginViewController);
+    auVar6 = FUN_1015665e8(auVar6._0_8_,auVar6._8_8_,&cf_NNCLoginViewController,0);
+    FUN_10155fc48(auVar6._0_8_,auVar6._8_8_,1);
+    auVar7 = _objc_alloc(&objc::class_t::BaseNavCV);
+    auVar6 = FUN_101567168(auVar7._0_8_,auVar7._8_8_,auVar6._0_8_);
+    FUN_1015c3c28(auVar6._0_8_,auVar6._8_8_,0);
+    auVar7 = FUN_101581ee8(param_1);
+    puVar5 = auVar7._0_8_;
+    FUN_10158dbc8(puVar5,auVar7._8_8_,auVar6._0_8_,1,&UNK_101d7d678);
+  }
+  else {
+    FUN_101557508(&objc::class_t::NNCRequestDo);
+    auVar6 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf___fav);
+    local_88 = &cf_vod_ids;
+    IVar4 = FUN_1015f8c48(param_1,auVar6._8_8_);
+    auVar7 = FUN_1015f8fe8(IVar4);
+    local_90 = auVar7._0_8_;
+    local_78 = FUN_10152bbc8(&_OBJC_CLASS___NSArray,auVar7._8_8_,&local_90,1);
+    local_80 = &cf_opt;
+    uVar3 = FUN_101551588(param_1);
+    iVar2 = FUN_101570a08(uVar3);
+    local_70 = &cf__;
+    if (iVar2 == 0) {
+      local_70 = &cf__;
+    }
+    uVar3 = FUN_101548208(&_OBJC_CLASS___NSDictionary,extraout_x1_00,&local_78,&local_88,2);
+    _objc_initWeak(auStack_98,param_1);
+    FUN_101596288((ID)&objc::class_t::NNCBIZRequest,extraout_x1_01);
+    puVar1 = PTR___NSConcreteStackBlock_101d78760;
+    local_c0 = PTR___NSConcreteStackBlock_101d78760;
+    local_b8 = 0xc2000000;
+    local_b0 = FUN_1000a43a4;
+    puStack_a8 = &UNK_101d7b990;
+    puVar5 = auStack_a0;
+    _objc_copyWeak(puVar5,auStack_98);
+    local_e8 = puVar1;
+    local_e0 = 0xc2000000;
+    local_d8 = FUN_1000a446c;
+    puStack_d0 = &UNK_101d7b9c0;
+    unaff_x24 = auStack_c8;
+    _objc_copyWeak(unaff_x24,auStack_98);
+    FUN_101597048(extraout_x0,extraout_x1_02,auVar6._0_8_,uVar3,&local_c0,&local_e8);
+    _objc_destroyWeak(unaff_x24);
+    _objc_destroyWeak(puVar5);
+    _objc_destroyWeak(auStack_98);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_68) {
+    return;
+  }
+  exception_object = (_Unwind_Exception *)FUN_100ab8e90(0);
+  _objc_destroyWeak(unaff_x24);
+  _objc_destroyWeak(puVar5);
+  _objc_destroyWeak(auStack_98);
+                    /* WARNING: Subroutine does not return */
+  __Unwind_Resume(exception_object);
+}
+
+
+
+/* DetailHeaderView.feedSelector: | 0x1000a4550 | ev_cccca469d589e83e6b622f9636594efee121f424701b4f65847492916dceb670 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::feedSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  undefined *local_58;
+  undefined8 local_50;
+  code *local_48;
+  undefined *puStack_40;
+  ID local_38;
+  
+  uVar1 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+  auVar2 = FUN_101524228(uVar1);
+  auVar2 = FUN_101559b88(auVar2._0_8_,auVar2._8_8_,&cf_updateAd);
+  if (auVar2._0_8_ != 0) {
+    auVar2 = FUN_101528888(&_OBJC_CLASS___UIAlertController,auVar2._8_8_,&::cf___,&cf__W_efe2,1);
+    uVar1 = auVar2._0_8_;
+    local_58 = PTR___NSConcreteStackBlock_101d78760;
+    local_50 = 0xc2000000;
+    local_48 = FUN_1000a46f4;
+    puStack_40 = &UNK_101d7b790;
+    local_38 = param_1;
+    auVar2 = FUN_101522d08(&_OBJC_CLASS___UIAlertAction,auVar2._8_8_,&cf_l,0,&local_58);
+    FUN_101524e28(uVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101522d08(&_OBJC_CLASS___UIAlertAction,extraout_x1,&cf_NN,1,&UNK_101d7d698);
+    FUN_101524e28(uVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101581ee8(param_1);
+    FUN_10158dbc8(auVar2._0_8_,auVar2._8_8_,uVar1,1,0);
+    return;
+  }
+  FUN_101551848(param_1);
+  return;
+}
+
+
+
+/* DetailHeaderView.feedReport | 0x1000a4704 | ev_88831bbd0cc863856bc658d789b288071d7778a3abd83bcd36966fbeaf831b0a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void DetailHeaderView::feedReport(ID param_1,SEL param_2)
+
+{
+  undefined *puVar1;
+  ID IVar2;
+  undefined8 extraout_x0;
+  _Unwind_Exception *exception_object;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar3 [16];
+  undefined1 auVar4 [16];
+  undefined *local_e0;
+  undefined8 local_d8;
+  code *local_d0;
+  undefined *puStack_c8;
+  undefined1 auStack_c0 [8];
+  undefined *local_b8;
+  undefined8 local_b0;
+  code *local_a8;
+  undefined *puStack_a0;
+  undefined1 auStack_98 [8];
+  undefined1 auStack_90 [8];
+  cfstringStruct *local_88;
+  cfstringStruct *local_80;
+  cfstringStruct *pcStack_78;
+  undefined8 local_70;
+  cfstringStruct *pcStack_68;
+  cfstringStruct *local_60;
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  FUN_1015e25c8(&objc::class_t::SVProgressHUD,param_2,0,&cf__Pf);
+  _objc_initWeak(auStack_90,param_1);
+  FUN_101557508(&objc::class_t::NNCRequestDo);
+  auVar3 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf___report);
+  local_88 = &cf_vod_id;
+  IVar2 = FUN_1015f8c48(param_1,auVar3._8_8_);
+  auVar4 = FUN_1015f8fe8(IVar2);
+  local_70 = auVar4._0_8_;
+  pcStack_68 = &::cf___;
+  local_80 = &cf_source_id;
+  pcStack_78 = &cf_type;
+  local_60 = &cf_update;
+  auVar4 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar4._8_8_,&local_70,&local_88,3);
+  FUN_101596288((ID)&objc::class_t::NNCBIZRequest,auVar4._8_8_);
+  puVar1 = PTR___NSConcreteStackBlock_101d78760;
+  local_b8 = PTR___NSConcreteStackBlock_101d78760;
+  local_b0 = 0xc2000000;
+  local_a8 = FUN_1000a4970;
+  puStack_a0 = &UNK_101d7b990;
+  _objc_copyWeak(auStack_98,auStack_90);
+  local_e0 = puVar1;
+  local_d8 = 0xc2000000;
+  local_d0 = FUN_1000a4988;
+  puStack_c8 = &UNK_101d7b9c0;
+  _objc_copyWeak(auStack_c0,auStack_90);
+  FUN_101596fa8(extraout_x0,extraout_x1_00,auVar3._0_8_,auVar4._0_8_,&local_b8,&local_e0);
+  _objc_destroyWeak(auStack_c0);
+  _objc_destroyWeak(auStack_98);
+  _objc_destroyWeak(auStack_90);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_58) {
+    return;
+  }
+  exception_object = (_Unwind_Exception *)FUN_100ab8e90();
+  _objc_destroyWeak(auStack_c0);
+  _objc_destroyWeak(auStack_98);
+  _objc_destroyWeak(auStack_90);
+                    /* WARNING: Subroutine does not return */
+  __Unwind_Resume(exception_object);
+}
+
+
+
+/* DetailHeaderView.reportPlayError | 0x1000a49a0 | ev_c9a34c960ba670d19ba55095c02e7afaaa2d6de1a22e7af0ab565dad521faf16 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void DetailHeaderView::reportPlayError(ID param_1,SEL param_2)
+
+{
+  undefined *puVar1;
+  int iVar2;
+  undefined1 *puVar3;
+  undefined8 uVar4;
+  ID IVar5;
+  undefined8 extraout_x0;
+  _Unwind_Exception *exception_object;
+  SEL extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined1 *puVar6;
+  undefined1 auVar7 [16];
+  undefined1 auVar8 [16];
+  undefined *local_100;
+  undefined8 local_f8;
+  code *local_f0;
+  undefined *puStack_e8;
+  undefined1 auStack_e0 [8];
+  undefined *local_d8;
+  undefined8 local_d0;
+  code *local_c8;
+  undefined *puStack_c0;
+  undefined1 auStack_b8 [8];
+  undefined1 auStack_b0 [8];
+  cfstringStruct *local_a8;
+  cfstringStruct *local_a0;
+  cfstringStruct *local_98;
+  undefined8 local_90;
+  undefined8 local_88;
+  cfstringStruct *pcStack_80;
+  long local_78;
+  
+  local_78 = *(long *)PTR____stack_chk_guard_101d78938;
+  iVar2 = FUN_1015e6728(param_1,param_2);
+  puVar3 = (undefined1 *)FUN_1015f8c48(param_1,extraout_x1);
+  uVar4 = FUN_1015e6768();
+  auVar7 = FUN_10153f908(uVar4);
+  puVar6 = auVar7._0_8_;
+  uVar4 = 0;
+  if ((undefined1 *)(long)(int)iVar2 < puVar6) {
+    FUN_1015e25c8(&objc::class_t::SVProgressHUD,auVar7._8_8_,0,&cf_NbbR);
+    _objc_initWeak(auStack_b0,param_1);
+    FUN_101557508(&objc::class_t::NNCRequestDo);
+    auVar7 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_00,&cf___re__);
+    local_a8 = &cf_vod_id;
+    IVar5 = FUN_1015f8c48(param_1,auVar7._8_8_);
+    auVar8 = FUN_1015f8fe8(IVar5);
+    local_90 = auVar8._0_8_;
+    local_a0 = &cf_source_id;
+    IVar5 = FUN_1015f8c48(param_1,auVar8._8_8_);
+    auVar8 = FUN_1015e6768(IVar5);
+    FUN_1015e6728(param_1,auVar8._8_8_);
+    uVar4 = FUN_101583328(auVar8._0_8_);
+    auVar8 = FUN_10158b928(uVar4);
+    local_88 = auVar8._0_8_;
+    local_98 = &cf_type;
+    pcStack_80 = &cf_failure;
+    auVar8 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar8._8_8_,&local_90,&local_a8,3);
+    FUN_101596288((ID)&objc::class_t::NNCBIZRequest,auVar8._8_8_);
+    puVar1 = PTR___NSConcreteStackBlock_101d78760;
+    local_d8 = PTR___NSConcreteStackBlock_101d78760;
+    local_d0 = 0xc2000000;
+    local_c8 = FUN_1000a4ce0;
+    puStack_c0 = &UNK_101d7b990;
+    puVar3 = auStack_b8;
+    _objc_copyWeak(puVar3,auStack_b0);
+    local_100 = puVar1;
+    local_f8 = 0xc2000000;
+    local_f0 = FUN_1000a4cf8;
+    puStack_e8 = &UNK_101d7b9c0;
+    puVar6 = auStack_e0;
+    _objc_copyWeak(puVar6,auStack_b0);
+    FUN_101596fa8(extraout_x0,extraout_x1_01,auVar7._0_8_,auVar8._0_8_,&local_d8,&local_100);
+    _objc_destroyWeak(puVar6);
+    _objc_destroyWeak(puVar3);
+    uVar4 = _objc_destroyWeak(auStack_b0);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_78) {
+    return;
+  }
+  exception_object = (_Unwind_Exception *)FUN_100ab8e90(uVar4);
+  _objc_destroyWeak(puVar6);
+  _objc_destroyWeak(puVar3);
+  _objc_destroyWeak(auStack_b0);
+                    /* WARNING: Subroutine does not return */
+  __Unwind_Resume(exception_object);
+}
+
+
+
+/* DetailHeaderView.desSelector: | 0x1000a4d10 | ev_6f79d6ee6ce46e88c23141166637ad78001c1cadb21c21bfc155e6e566a464f1 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::desSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_101546808(param_1,param_2,param_3);
+  FUN_101547828(IVar1);
+  return;
+}
+
+
+
+/* DetailHeaderView.chooseSourceSelector | 0x1000a4d40 | ev_9e38ca243910cb810bf0c0eae8f1329fb6ac94c471a574b654f0bef4c7f18584 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void __thiscall
+DetailHeaderView::chooseSourceSelector(DetailHeaderView *this,ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_101546808((ID)this,(SEL)param_1,(ID)param_2);
+  FUN_101547808(IVar1);
+  return;
+}
+
+
+
+/* DetailHeaderView.collectionView:numberOfItemsInSection: | 0x1000a4d70 | ev_cbed3cbbfdbd044619faa91560a7ee0de48871524e66da25fb15208b0bd2154a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+long_long DetailHeaderView::collectionView_numberOfItemsInSection_
+                    (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  int iVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  long_long lVar4;
+  SEL extraout_x1;
+  undefined1 auVar5 [16];
+  
+  iVar1 = FUN_1015e6728(param_1,param_2);
+  IVar2 = FUN_1015f8c48(param_1,extraout_x1);
+  uVar3 = FUN_1015e6768(IVar2);
+  auVar5 = FUN_10153f908(uVar3);
+  if ((ulong)(long)(int)iVar1 < auVar5._0_8_) {
+    IVar2 = FUN_1015f8c48(param_1,auVar5._8_8_);
+    auVar5 = FUN_1015e6768(IVar2);
+    FUN_1015e6728(param_1,auVar5._8_8_);
+    uVar3 = FUN_101583328(auVar5._0_8_);
+    uVar3 = FUN_10154eb88(uVar3);
+    lVar4 = FUN_10153f908(uVar3);
+  }
+  else {
+    lVar4 = 0;
+  }
+  return lVar4;
+}
+
+
+
+/* DetailHeaderView.collectionView:cellForItemAtIndexPath: | 0x1000a4e70 | ev_f9900c3da0ebb69640cd4c8ac49ba8e3c0e51905845cc159fd4775f37f375efc */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID DetailHeaderView::collectionView_cellForItemAtIndexPath_
+             (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  int iVar1;
+  ID IVar2;
+  long lVar3;
+  undefined8 uVar4;
+  ID IVar5;
+  undefined8 uVar6;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  SEL pcVar7;
+  undefined1 auVar8 [16];
+  
+  IVar2 = FUN_101546ec8(param_3,param_2,&cf_NNCEpisodeCollectionCell,param_4);
+  lVar3 = FUN_1015725e8(param_4);
+  iVar1 = FUN_10154ebc8(param_1);
+  FUN_1015bad88(IVar2,extraout_x1,lVar3 == iVar1);
+  auVar8 = FUN_1015725e8(param_4);
+  FUN_1015b8ce8(IVar2,auVar8._8_8_,auVar8._0_8_);
+  iVar1 = FUN_101581c68(param_1);
+  if (iVar1 == 0) {
+    uVar6 = FUN_10154b548(param_1);
+    auVar8 = FUN_1015725e8(param_4);
+    uVar4 = FUN_101583068(&_OBJC_CLASS___NSNumber,auVar8._8_8_,auVar8._0_8_);
+    auVar8 = FUN_1015ebbe8(uVar4);
+    auVar8 = FUN_10153e4a8(uVar6,auVar8._8_8_,auVar8._0_8_);
+    FUN_1015bb048(IVar2,auVar8._8_8_,auVar8._0_8_);
+    pcVar7 = extraout_x1_02;
+  }
+  else {
+    FUN_1015bb048(IVar2,extraout_x1_00,1);
+    pcVar7 = extraout_x1_01;
+  }
+  IVar5 = FUN_1015f8c48(param_1,pcVar7);
+  auVar8 = FUN_1015e6768(IVar5);
+  FUN_1015e6728(param_1,auVar8._8_8_);
+  uVar6 = FUN_101583328(auVar8._0_8_);
+  uVar6 = FUN_10154eb88(uVar6);
+  auVar8 = FUN_1015725e8(param_4);
+  auVar8 = FUN_101583328(uVar6,auVar8._8_8_,auVar8._0_8_);
+  FUN_1015b2408(IVar2,auVar8._8_8_,auVar8._0_8_);
+  return IVar2;
+}
+
+
+
+/* DetailHeaderView.collectionView:didSelectItemAtIndexPath: | 0x1000a5058 | ev_4f46be20c18c11a378917ef2259c9268da6894dbbaa65694f9c59614b05ddac0 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void DetailHeaderView::collectionView_didSelectItemAtIndexPath_
+               (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  ID IVar1;
+  ID IVar2;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  undefined1 auVar3 [16];
+  
+  FUN_101547168(param_3,param_2,param_4,0);
+  IVar1 = FUN_10159ad88(param_4);
+  FUN_1015b2448(param_1);
+  IVar2 = FUN_10153bd48(param_1,extraout_x1);
+  FUN_101592d08(IVar2);
+  IVar1 = FUN_101546808(param_1,extraout_x1_00,IVar1);
+  auVar3 = FUN_10154ebc8(param_1);
+  FUN_1015477c8(IVar1,auVar3._8_8_,auVar3._0_8_);
+  return;
+}
+
+
+
+/* DetailHeaderView.nnconAdSizeChanged: | 0x1000a5108 | ev_9a58d171265b1d10c55213873c142fcff115d40d717e4367d4ed7ba1574c16f0 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void DetailHeaderView::nnconAdSizeChanged_(ID param_1,SEL param_2,CGSize param_3)
+
+{
+  ID IVar1;
+  undefined1 auVar2 [16];
+  
+  FUN_1015a1528(param_3.field1_0x8);
+  auVar2 = FUN_101581ee8(param_1);
+  IVar1 = FUN_1015edca8(auVar2._0_8_,auVar2._8_8_);
+  FUN_101592d08(IVar1);
+  return;
+}
+
+
+
+/* DetailHeaderView.showFirstPlayAd | 0x1000a5160 | ev_a5d97fa42c76e494c52892d7e66e12528d669161a1d1c48109b175d07ef5c064 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void DetailHeaderView::showFirstPlayAd(ID param_1,SEL param_2)
+
+{
+  FUN_1015e2b68(param_1,param_2,3);
+  return;
+}
+
+
+
+/* DetailHeaderView.rewardVideoAdDidLoad: | 0x1000a5168 | ev_ee52d5413e39a432cb3d2315e3236d4652259ff5953cb4bac4898fdec21ecb81 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::rewardVideoAdDidLoad_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  
+  _NSLog(&cf_oRR_bR);
+  uVar2 = FUN_1015995c8(param_1);
+  iVar1 = FUN_10156b508(uVar2);
+  if (iVar1 != 0) {
+    uVar2 = FUN_1015995c8(param_1);
+    auVar3 = FUN_101581ee8(param_1);
+    FUN_1015e1b48(uVar2,auVar3._8_8_,auVar3._0_8_,0);
+    return;
+  }
+  return;
+}
+
+
+
+/* DetailHeaderView.rewardVideoAdDidLoad:didFailWithError: | 0x1000a5214 | ev_6a6ce57a134c955bcad3c1e5543db9f26fef26dc51f218f7bcf8d9c57158faa1 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void DetailHeaderView::rewardVideoAdDidLoad_didFailWithError_
+               (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  
+  _NSLog(&cf_didFailWithError____);
+  FUN_1015e25c8(&objc::class_t::SVProgressHUD,extraout_x1,0,&cfstringStruct_101de61a0);
+  FUN_1015997a8(param_1,extraout_x1_00,param_3,param_4);
+  FUN_101599748(param_1,extraout_x1_01,param_3);
+  return;
+}
+
+
+
+/* DetailHeaderView.rewardVideoAd:reward: | 0x1000a52ac | ev_24d0f288ea92ff3f404bc01971ed92921957b7ad064ac18fd35b2702ea23e01a */
+
+/* Function Stack Size: 0x20 bytes */
+
+void DetailHeaderView::rewardVideoAd_reward_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  undefined8 extraout_x1;
+  
+  FUN_10156c748(param_4);
+  _NSLog(&cf_isCompeltedView_____d);
+  FUN_1015a1ce8(param_1,extraout_x1,1);
+  return;
+}
+
+
+
+/* DetailHeaderView.rewardVideoAdWillVisible: | 0x1000a52f4 | ev_e294f2b4eee02b0d2b3853db1f080c338ad52bb96887c86769cf86184b4a0105 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::rewardVideoAdWillVisible_(ID param_1,SEL param_2,ID param_3)
+
+{
+  return;
+}
+
+
+
+/* DetailHeaderView.rewardVideoAdDidVisible: | 0x1000a52f8 | ev_86666593f08625ed8a84abde5f880c041afdfa61f3b7689726e9a86a72e6fffd */
+
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::rewardVideoAdDidVisible_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  
+  iVar1 = FUN_101523c48();
+  if (iVar1 == 3) {
+    FUN_1015e8e08(&objc::class_t::NNCStampJudge);
+    return;
+  }
+  return;
+}
+
+
+
+/* DetailHeaderView.rewardVideoAdDidClick: | 0x1000a5324 | ev_618eba39a5ce80d8654bf59480ba54c76ebd39fca9bb293683c8d74a6de6745e */
+
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::rewardVideoAdDidClick_(ID param_1,SEL param_2,ID param_3)
+
+{
+  _NSLog(&cf_rewardVideoAdDidClick);
+  return;
+}
+
+
+
+/* DetailHeaderView.rewardVideoAdDidClickSkip: | 0x1000a5340 | ev_483de5f14b3cdaf4df5159140126edc3eb8fa6c5cdb55528d4e793a491cfcf06 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::rewardVideoAdDidClickSkip_(ID param_1,SEL param_2,ID param_3)
+
+{
+  _NSLog(&cf_rewardVideoAdDidClickSkip);
+  return;
+}
+
+
+
+/* DetailHeaderView.rewardVideoAdDidClose: | 0x1000a535c | ev_8a61b223005ef5da01c85200c2c21c2e428cde64819a776dd196e6ab651519e0 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::rewardVideoAdDidClose_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  ID IVar2;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  undefined1 auVar3 [16];
+  
+  _NSLog(&cf_rewardVideoAdDidClose);
+  iVar1 = FUN_1015242e8(param_1);
+  if (iVar1 != 0) {
+    iVar1 = FUN_101523c48(param_1);
+    if (iVar1 == 1) {
+      IVar2 = FUN_101546808(param_1,extraout_x1,param_3);
+      FUN_101547848(IVar2);
+    }
+    else {
+      iVar1 = FUN_101523c48(param_1);
+      if (iVar1 == 2) {
+        FUN_101551848(param_1);
+      }
+      else {
+        iVar1 = FUN_101523c48(param_1);
+        if (iVar1 == 3) {
+          FUN_1015e8e08(&objc::class_t::NNCStampJudge);
+          IVar2 = FUN_101546808(param_1,extraout_x1_00,param_3);
+          FUN_101547868(IVar2);
+        }
+      }
+    }
+  }
+  auVar3 = FUN_1015995c8(param_1);
+  FUN_1015aeee8(auVar3._0_8_,auVar3._8_8_,0);
+  FUN_1015ce028(param_1);
+  return;
+}
+
+
+
+/* DetailHeaderView.rewardVideoAdDidPlayFinish:didFailWithError: | 0x1000a5440 | ev_3782c4f2a9456078bfa1c5ec5d1d7c46e491be0e2cadae526b028e3306f3d07e */
+
+/* Function Stack Size: 0x20 bytes */
+
+void DetailHeaderView::rewardVideoAdDidPlayFinish_didFailWithError_
+               (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  undefined8 extraout_x1;
+  
+  _NSLog(&cf_rewardVideoAdDidPlayFinish);
+  FUN_1015a1ce8(param_1,extraout_x1,1);
+  return;
+}
+
+
+
+/* DetailHeaderView.nncselfController | 0x1000a5470 | ev_52d6195d9258220abdafdff7cf7da8cb4f517b217b3f46dab4d6a48033715aae */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::nncselfController(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nncselfController);
+}
+
+
+
+/* DetailHeaderView.setNncselfController: | 0x1000a5490 | ev_8755acc8de2174ef4e6a020c0141e2baf50f721eb7e02a083c964a884e78c7ac */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setNncselfController_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nncselfController) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.nncisLocalSource | 0x1000a54a4 | ev_549a4a7a20d44b8b02f07f03544c2146f2c591fe46864abb6ac99dfb308f01cc */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool DetailHeaderView::nncisLocalSource(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__nncisLocalSource);
+}
+
+
+
+/* DetailHeaderView.setNncisLocalSource: | 0x1000a54b4 | ev_764d7393559ad3c1a356ed327aa9fef236cbf3d35e9fccb6782cddf274436285 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void DetailHeaderView::setNncisLocalSource_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__nncisLocalSource) = (char)param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.isFav | 0x1000a54c4 | ev_50171f382154c606b7d806e10bbb6037fc7202eba2a7bbb829b53941103aae63 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool DetailHeaderView::isFav(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__isFav);
+}
+
+
+
+/* DetailHeaderView.videoBean | 0x1000a54d4 | ev_76c244f4478b8872a51a9a41489706e7ed9be3203e82c07434b540d2da820532 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::videoBean(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__videoBean);
+}
+
+
+
+/* DetailHeaderView.downloadedList | 0x1000a54e4 | ev_150e6ff333c4850749e0d705b06adf12def3768ec97ce05e1c7b1cfd8df7a1f3 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::downloadedList(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__downloadedList);
+}
+
+
+
+/* DetailHeaderView.setDownloadedList: | 0x1000a54f4 | ev_67786ecaf2c5df4f62ffc444e46fdedbc257396080da0af7f5f680f3009e9319 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setDownloadedList_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__downloadedList) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.delegate | 0x1000a5508 | ev_bccd42ef7966952e667a02b0a0109d60f06a41c0b763c608896461a24044e07c */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::delegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__delegate);
+}
+
+
+
+/* DetailHeaderView.setDelegate: | 0x1000a5528 | ev_eb28c4c247250c2e13d7ac5880b6947855d34751cd5ab66acf9045a94e1e3bbe */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__delegate) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.nameTv | 0x1000a553c | ev_517ef53f0d7acbc0a1689fcec6453d9c4c828ab620e598f746609345f077f35a */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::nameTv(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nameTv);
+}
+
+
+
+/* DetailHeaderView.setNameTv: | 0x1000a555c | ev_3821517e6bc11fe43e079f0b96d39364719b5eb8d9c897848e342f8c70ae7b5a */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setNameTv_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nameTv) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.clickTv | 0x1000a5570 | ev_3151b6298ab7e62cac5ebc65bd0ca5837c3ca6ffb27d90584fabe21602e4ab69 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::clickTv(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__clickTv);
+}
+
+
+
+/* DetailHeaderView.setClickTv: | 0x1000a5590 | ev_218dab7d268e5a3caa00f96241cb2ec676b5394256367fd16d50266850cfd5d5 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setClickTv_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__clickTv) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.fireIv | 0x1000a55a4 | ev_1ff51701b803096d017f1e558164dd9033b97d470301e26a5820bb2e501a080e */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::fireIv(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__fireIv);
+}
+
+
+
+/* DetailHeaderView.setFireIv: | 0x1000a55c4 | ev_3b7e53a02052793cb0e6896e1aa5a4cbaf94c83684b49b2d14064f03e4d4bc1f */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setFireIv_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__fireIv) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.desButton | 0x1000a55d8 | ev_5417fdb2aa07ff2838b9da559106804cd0aaebc20543fc3644bf7786731e1b26 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::desButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__desButton);
+}
+
+
+
+/* DetailHeaderView.setDesButton: | 0x1000a55f8 | ev_333018bc68e0fc24f206762a71127f38f2fa061f859173fb6718dd60d92ab6be */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setDesButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__desButton) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.flagTv | 0x1000a560c | ev_edba3d875f316b90b8de7371465bb0e83e942f41d6999bbd4db5ccad27f35c99 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::flagTv(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__flagTv);
+}
+
+
+
+/* DetailHeaderView.setFlagTv: | 0x1000a562c | ev_98da7307626dd99cc242827c351c95fdcd1758b0a9cad68d03b696525a40c921 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setFlagTv_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__flagTv) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.feedButton | 0x1000a5640 | ev_652f8ca293bd88179c53dd401b7e5abd2dd36cd1132021b124d52b03acc984ad */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::feedButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__feedButton);
+}
+
+
+
+/* DetailHeaderView.setFeedButton: | 0x1000a5660 | ev_aa167b1b0ca7971f4bd1db0fe4d5208c2716841f86a60bbd15c2211dc4aa5f30 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setFeedButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__feedButton) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.favButton | 0x1000a5674 | ev_5e2a53ec2d3e5a2cb1cab365108df5abd2fd1e6d731c04377f956fd11d1cbb44 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::favButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__favButton);
+}
+
+
+
+/* DetailHeaderView.setFavButton: | 0x1000a5694 | ev_6f27fafceb9637d5332e9eb86b5a1f1f06129f7d08589e78052d8925c6e998f8 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setFavButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__favButton) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.downloadButton | 0x1000a56a8 | ev_7f8fb4c6032614694d18f6e46d8822a27666fa9d6a2144ad7e1684c89c94c6d9 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::downloadButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__downloadButton);
+}
+
+
+
+/* DetailHeaderView.setDownloadButton: | 0x1000a56c8 | ev_e59f09338378dd725d107d0b7924076663397772488bcde1c091744c91f3027a */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setDownloadButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__downloadButton) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.shareButton | 0x1000a56dc | ev_926230d51e26b82ff72da620a85dd95219ff5b145ee825a1ec42596d72ec9c32 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::shareButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__shareButton);
+}
+
+
+
+/* DetailHeaderView.setShareButton: | 0x1000a56fc | ev_079602fec333ea72ba72fb9ebc1a08ea03e37023dfe1636e855169b631fc1cc7 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setShareButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__shareButton) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.line | 0x1000a5710 | ev_79618938fdfa4cc3ff123a7e19c85cf39366d878c49bbefdaefa5967ce29f904 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::line(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__line);
+}
+
+
+
+/* DetailHeaderView.setLine: | 0x1000a5730 | ev_4baeaaeca9da510ac5aead60c551a07ad8d910115dc5c2b7762e9fffedcc041f */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setLine_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__line) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.chooseEpisodeTv | 0x1000a5744 | ev_49fb9ac3d9bfe3512ffcf5f38785993972e44e029364a3b0a81cc5c35a3065da */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::chooseEpisodeTv(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__chooseEpisodeTv);
+}
+
+
+
+/* DetailHeaderView.setChooseEpisodeTv: | 0x1000a5764 | ev_c935f07d11c936304ce1a263199b93fb39a30e4f08fff5efe028dbe465ff5014 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setChooseEpisodeTv_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__chooseEpisodeTv) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.showMoreButton | 0x1000a5778 | ev_7182b362a5d9c0cd46bf09dbe72ec7481c6f42eb98df578e034b4be2d0a3091c */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::showMoreButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__showMoreButton);
+}
+
+
+
+/* DetailHeaderView.setShowMoreButton: | 0x1000a5798 | ev_24b842f6208d6274cb058c4d2f50cdeebfa8a100c727042a78e72494d5aa126c */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setShowMoreButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__showMoreButton) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.chooseSourceView | 0x1000a57ac | ev_30fe3b1b39a77b5943f04da74b81c75167b91497d4bcdf12eea7c4c296e97555 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::chooseSourceView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__chooseSourceView);
+}
+
+
+
+/* DetailHeaderView.setChooseSourceView: | 0x1000a57cc | ev_6c883fffa7e562390160ee5a040fcd541b62ae67bce10fbd0dac3675d3e6b8aa */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setChooseSourceView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__chooseSourceView) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.sourceTv | 0x1000a57e0 | ev_071f4510a39505322a6766747f6bc9e4e295029117999c1722f06324594e08f3 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::sourceTv(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__sourceTv);
+}
+
+
+
+/* DetailHeaderView.setSourceTv: | 0x1000a5800 | ev_df4df2d5781be5562328af520b3a9d6b0e6ebee47272da1b3ba172850c902fbd */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setSourceTv_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__sourceTv) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.episodeCountTv | 0x1000a5814 | ev_82e2cae40fe08f5ae214700fc45e2e2200e75a46f9cc1cc6b00e77dce5966f6b */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::episodeCountTv(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__episodeCountTv);
+}
+
+
+
+/* DetailHeaderView.setEpisodeCountTv: | 0x1000a5834 | ev_741161f5ee5cad86af44ac464951478d8794d1fcff06a6e3dcd9638fe8b1aa79 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setEpisodeCountTv_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__episodeCountTv) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.changeSourceTv | 0x1000a5848 | ev_2f809ace6cfa1c4f46162fe60684bcc8b981887d05d29fd482a99323bf43d140 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::changeSourceTv(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__changeSourceTv);
+}
+
+
+
+/* DetailHeaderView.setChangeSourceTv: | 0x1000a5868 | ev_f8feae7e036b83a65e8a6a9723bfb66a5a24f2d6dede7a23cc1c67ba86bf5be9 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setChangeSourceTv_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__changeSourceTv) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.collectionView | 0x1000a587c | ev_6be0cbf09a5329868a2d0048a1703e185b83caed17831590372aef7937387a7f */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::collectionView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__collectionView);
+}
+
+
+
+/* DetailHeaderView.setCollectionView: | 0x1000a588c | ev_ca4261bfaf5a3652b3492ca5ef3b2bf2d25a10c156114a8148d3f808b1026b55 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setCollectionView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__collectionView) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.collectionLayout | 0x1000a58a0 | ev_dfc9b61a5ae826e27fd9189fd48c46879ce06f30f92a242d4b1541a2d6aa2697 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::collectionLayout(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__collectionLayout);
+}
+
+
+
+/* DetailHeaderView.setCollectionLayout: | 0x1000a58b0 | ev_f4eb48b01aa7fa596d950cd53191c0a31580641f6b2194a0ec82ba0c6708bd24 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setCollectionLayout_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__collectionLayout) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.nncadView | 0x1000a58c4 | ev_b90fc05fec377cae8ddbbf4858d3cfd9bab1758668ccc5a6e6593bd915da57af */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::nncadView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nncadView);
+}
+
+
+
+/* DetailHeaderView.setNncadView: | 0x1000a58d4 | ev_3c7f3f582920b1918fa9eb00a1ab13cc203883135b7b5a219d45473e9784fcb7 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setNncadView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nncadView) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.recommendLabel | 0x1000a58e8 | ev_4c450767c2acf88242ecaf593014d4c6e0bd028d0bc3e2ade30b94fe8fbdb33c */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::recommendLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__recommendLabel);
+}
+
+
+
+/* DetailHeaderView.setRecommendLabel: | 0x1000a58f8 | ev_a374a0b9dd2d5adea465230484eeda804947a236518dc6dcf931b8282b818726 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setRecommendLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__recommendLabel) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.adManager | 0x1000a590c | ev_dffb5bc7a50e3a15d1712b9ede4519c67389b363a75b4b17e655d4e0828a2560 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::adManager(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__adManager);
+}
+
+
+
+/* DetailHeaderView.setAdManager: | 0x1000a591c | ev_9a936935b5ee0ae322f971bd4b2ab06cdfbec36e325631f3e1bb1818737497c4 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setAdManager_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__adManager) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.settedAd | 0x1000a5930 | ev_de1853676a6bcf7949df3067898acb561d81bdef3d79bb812cafa1469e7f6bd7 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool DetailHeaderView::settedAd(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__settedAd);
+}
+
+
+
+/* DetailHeaderView.setSettedAd: | 0x1000a5940 | ev_9499331b7f0e98abfa0ef04ab4e81f624cc5a58d224980248ba702ca0c0f0517 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void DetailHeaderView::setSettedAd_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__settedAd) = (char)param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.sourceIndex | 0x1000a5950 | ev_acf91bafe4ffe222b2bfbf610e334e1c92f9cf608f1a91dd88f5a7f6a2604507 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+int DetailHeaderView::sourceIndex(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + (long)__sourceIndex);
+}
+
+
+
+/* DetailHeaderView.setSourceIndex: | 0x1000a5960 | ev_f471c9ed817d95c6d6c0f06a5f08b70ca31651cdd08c32dba9bdf530af13f33c */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void DetailHeaderView::setSourceIndex_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + (long)__sourceIndex) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.episodeIndex | 0x1000a5970 | ev_855caa8480562827b45e2568bc9755207dea93c4cc3833fad030f715275b31f0 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+int DetailHeaderView::episodeIndex(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + (long)__episodeIndex);
+}
+
+
+
+/* DetailHeaderView.setEpisodeIndex: | 0x1000a5980 | ev_bc97c8aa1d7d0ea07ec1233e10c1f48b62c8e654ccbad78210870259401975f8 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void DetailHeaderView::setEpisodeIndex_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + (long)__episodeIndex) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.rewardVideoAd | 0x1000a5990 | ev_f51a45766d583959a2c586d3e0dc84dc1f0cfa0e91ee4593542bf32521d38d34 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID DetailHeaderView::rewardVideoAd(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__rewardVideoAd);
+}
+
+
+
+/* DetailHeaderView.setRewardVideoAd: | 0x1000a59a0 | ev_083e7c57a8094a72e0af00192de7ad6f379d2085ccbdb7ba2269937151fb4e69 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setRewardVideoAd_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__rewardVideoAd) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.adLoadType | 0x1000a59b4 | ev_197d3adb1545668c2332aea8d4e6010f0b6dc25ea4b69808bbae8158a297b3f4 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+int DetailHeaderView::adLoadType(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + (long)__adLoadType);
+}
+
+
+
+/* DetailHeaderView.setAdLoadType: | 0x1000a59c4 | ev_417538581990ef8feb9c1cc02ee2c64c85a854d55a6f56f01e919669a6bf99b8 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void DetailHeaderView::setAdLoadType_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + (long)__adLoadType) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.adShowEnough | 0x1000a59d4 | ev_462bd4b98c8e149a1324145980b590c44ed69b21c1ff4b3c3eefc68a1246b1d2 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool DetailHeaderView::adShowEnough(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__adShowEnough);
+}
+
+
+
+/* DetailHeaderView.setAdShowEnough: | 0x1000a59e4 | ev_bf5972fb749a202702f54cccfdcd6ec124051545b49339c15b275fe5e76102f1 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void DetailHeaderView::setAdShowEnough_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__adShowEnough) = (char)param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView.adHeight | 0x1000a59f4 | ev_bf2f834e577a0bd005d38ebecf7b8b61e3743222273e3cdcd6e0f8127641c59c */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+double DetailHeaderView::adHeight(ID param_1,SEL param_2)
+
+{
+  return *(double *)(param_1 + (long)__adHeight);
+}
+
+
+
+/* DetailHeaderView.setAdHeight: | 0x1000a5a04 | ev_d9fe13a7efba31f73e7dcff5defb02ce9d8b7ba2217e1c7264b91cddfef982d3 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void DetailHeaderView::setAdHeight_(ID param_1,SEL param_2,double param_3)
+
+{
+  *(double *)(param_1 + (long)__adHeight) = param_3;
+  return;
+}
+
+
+
+/* DetailHeaderView..cxx_destruct | 0x1000a5a14 | ev_64fed8b63cf115a9b8ea0a3a0e02dc88b75d84afcd12fc935f91c9e7c38da23b */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void DetailHeaderView::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__rewardVideoAd) = 0;
+  *(undefined8 *)(param_1 + (long)__adManager) = 0;
+  *(undefined8 *)(param_1 + (long)__recommendLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__nncadView) = 0;
+  *(undefined8 *)(param_1 + (long)__collectionLayout) = 0;
+  *(undefined8 *)(param_1 + (long)__collectionView) = 0;
+  _objc_destroyWeak(param_1 + (long)__changeSourceTv);
+  _objc_destroyWeak(param_1 + (long)__episodeCountTv);
+  _objc_destroyWeak(param_1 + (long)__sourceTv);
+  _objc_destroyWeak(param_1 + (long)__chooseSourceView);
+  _objc_destroyWeak(param_1 + (long)__showMoreButton);
+  _objc_destroyWeak(param_1 + (long)__chooseEpisodeTv);
+  _objc_destroyWeak(param_1 + (long)__line);
+  _objc_destroyWeak(param_1 + (long)__shareButton);
+  _objc_destroyWeak(param_1 + (long)__downloadButton);
+  _objc_destroyWeak(param_1 + (long)__favButton);
+  _objc_destroyWeak(param_1 + (long)__feedButton);
+  _objc_destroyWeak(param_1 + (long)__flagTv);
+  _objc_destroyWeak(param_1 + (long)__desButton);
+  _objc_destroyWeak(param_1 + (long)__fireIv);
+  _objc_destroyWeak(param_1 + (long)__clickTv);
+  _objc_destroyWeak(param_1 + (long)__nameTv);
+  _objc_destroyWeak(param_1 + (long)__delegate);
+  *(undefined8 *)(param_1 + (long)__downloadedList) = 0;
+  *(undefined8 *)(param_1 + (long)__videoBean) = 0;
+  _objc_destroyWeak(param_1 + (long)__nncselfController);
+  return;
+}
+
+

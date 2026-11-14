@@ -1,0 +1,106 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCSpHmSourceEpisodeModel.modelWithDict: | 0x1000265d8 | ev_ef7eea3e39645804927f27c26a65550063e849796be1d76018d88ef35e1f137e */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCSpHmSourceEpisodeModel::modelWithDict_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined1 auVar3 [16];
+  
+  auVar3 = FUN_1015813c8(&objc::class_t::NNCSpHmSourceEpisodeModel);
+  IVar1 = auVar3._0_8_;
+  uVar2 = FUN_101582d28(param_3,auVar3._8_8_,&cf_id);
+  auVar3 = FUN_1015698a8(uVar2);
+  FUN_1015d37c8(IVar1,auVar3._8_8_,auVar3._0_8_);
+  uVar2 = FUN_101582d28(param_3,extraout_x1,&cf_collection);
+  auVar3 = FUN_1015698a8(uVar2);
+  FUN_1015aaea8(IVar1,auVar3._8_8_,auVar3._0_8_);
+  return IVar1;
+}
+
+
+
+/* NNCSpHmSourceEpisodeModel.spEpisodeId | 0x100026690 | ev_afbee63e4c61232483a1f620902d9b07bb74824d90b140da65aa4c68fde9336c */
+
+/* Function Stack Size: 0x10 bytes */
+
+int NNCSpHmSourceEpisodeModel::spEpisodeId(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 8);
+}
+
+
+
+/* NNCSpHmSourceEpisodeModel.setSpEpisodeId: | 0x100026698 | ev_4f453315bab25450cca043602166365d6c81e1e741cad3e5cba0c679bcae5b1f */
+
+/* Function Stack Size: 0x14 bytes */
+
+void NNCSpHmSourceEpisodeModel::setSpEpisodeId_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCSpHmSourceEpisodeModel.vodId | 0x1000266a0 | ev_8b6db4c5209573eadbe8817c86f3ead2694f0dbbb2378c5bb867a0049899a933 */
+
+/* Function Stack Size: 0x10 bytes */
+
+int NNCSpHmSourceEpisodeModel::vodId(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 0xc);
+}
+
+
+
+/* NNCSpHmSourceEpisodeModel.setVodId: | 0x1000266a8 | ev_de1b2b8c9782baf492d131a0cc4bff0c1eb13accb9165d4a7b0ae0c5bcb3f733 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void NNCSpHmSourceEpisodeModel::setVodId_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 0xc) = param_3;
+  return;
+}
+
+
+
+/* NNCSpHmSourceEpisodeModel.collection | 0x1000266b0 | ev_00df17013edd1682609f3d7b68db5c43e0dfbd8eff0e36abcde7f2bd4fdc3aba */
+
+/* Function Stack Size: 0x10 bytes */
+
+int NNCSpHmSourceEpisodeModel::collection(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 0x10);
+}
+
+
+
+/* NNCSpHmSourceEpisodeModel.setCollection: | 0x1000266b8 | ev_e7d94cc54584f4212336bde2359ba1ebba0fd0769c62b355023031d6c5339916 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void NNCSpHmSourceEpisodeModel::setCollection_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+

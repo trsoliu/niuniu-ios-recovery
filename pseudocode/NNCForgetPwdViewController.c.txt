@@ -1,0 +1,549 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCForgetPwdViewController.backButtonAction | 0x100062404 | ev_4753c11e7bea884a79b47b4a7c7500df63ef42c25ab91740e22f910adb130a97 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCForgetPwdViewController::backButtonAction(ID param_1,SEL param_2)
+
+{
+  undefined8 extraout_x1;
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_101580708();
+  FUN_10158c568(auVar1._0_8_,auVar1._8_8_,1);
+  FUN_101549e68(param_1,extraout_x1,1,&UNK_101d7caa8);
+  return;
+}
+
+
+
+/* NNCForgetPwdViewController.createView | 0x10006245c | ev_7ebe0f71d324244961367ec834f2f62821b992d2dbd29478b572ab19cc388205 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCForgetPwdViewController::createView(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined8 in_d2;
+  undefined1 auVar2 [16];
+  
+  auVar2 = _objc_alloc(&objc::class_t::NNCBgView);
+  IVar1 = FUN_1015fa0a8(param_1,auVar2._8_8_);
+  FUN_101531d88(IVar1);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1);
+  FUN_101531d88(IVar1);
+  FUN_101564e08(0,0,in_d2,auVar2._0_8_);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_00);
+  FUN_101527148(IVar1);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_01);
+  FUN_101569288(IVar1);
+  return;
+}
+
+
+
+/* NNCForgetPwdViewController.viewDidLoad | 0x100062544 | ev_d84a0304bd50a4f073216996cafb14f846f234d256c1fc1a0218933e551140b2 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCForgetPwdViewController::viewDidLoad(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined1 auVar3 [16];
+  ID local_50;
+  class_t *pcStack_48;
+  
+  pcStack_48 = &objc::class_t::NNCForgetPwdViewController;
+  local_50 = param_1;
+  _objc_msgSendSuper2(&local_50,"viewDidLoad");
+  FUN_1015d7e08(param_1,extraout_x1,&cf___x);
+  FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_00,&cf_myTextColor);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_01);
+  FUN_1015a5908(IVar1);
+  uVar2 = FUN_101560a48(&_OBJC_CLASS___UIImage,extraout_x1_02,&cf_fanhuiImae);
+  auVar3 = _objc_alloc(&_OBJC_CLASS___UIBarButtonItem);
+  uVar2 = FUN_1015656a8(auVar3._0_8_,auVar3._8_8_,uVar2,0,param_1,"backButtonAction");
+  auVar3 = FUN_101580748(param_1);
+  FUN_1015bfaa8(auVar3._0_8_,auVar3._8_8_,uVar2);
+  uVar2 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_03,&cf_TextBgViewColo);
+  auVar3 = FUN_101589e68(param_1);
+  FUN_1015a5908(auVar3._0_8_,auVar3._8_8_,uVar2);
+  return;
+}
+
+
+
+/* NNCForgetPwdViewController.viewDidLayoutSubviews | 0x1000626b4 | ev_4a8d4b6e6049f059494f30a9e3abab3137968adab232e31073ab1405151c0028 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCForgetPwdViewController::viewDidLayoutSubviews(ID param_1,SEL param_2)
+
+{
+  undefined8 *puVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  ulong uVar4;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined8 extraout_x1_02;
+  long lVar5;
+  undefined1 auVar6 [16];
+  undefined1 auVar7 [16];
+  ID local_88;
+  class_t *pcStack_80;
+  undefined8 local_78;
+  undefined8 local_70;
+  undefined8 local_68;
+  undefined8 local_60;
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  pcStack_80 = &objc::class_t::NNCForgetPwdViewController;
+  local_88 = param_1;
+  _objc_msgSendSuper2(&local_88,"viewDidLayoutSubviews");
+  FUN_101541948(param_1);
+  auVar6 = FUN_101581c88(param_1);
+  uVar4 = auVar6._0_8_;
+  if ((uVar4 & 1) == 0) {
+    FUN_1015c5a08(param_1,auVar6._8_8_,1);
+    uVar2 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1,&cf_myBgColor);
+    auVar6 = FUN_1015f0328(param_1);
+    FUN_1015d6fa8(auVar6._0_8_,auVar6._8_8_,uVar2);
+    lVar5 = (long)__phoneBg;
+    IVar3 = FUN_101574688(*(ID *)(param_1 + lVar5),extraout_x1_00);
+    FUN_1015ac5e8(0x4020000000000000,IVar3);
+    IVar3 = FUN_101574688(*(ID *)(param_1 + lVar5),extraout_x1_01);
+    FUN_1015c25a8(IVar3);
+    auVar6 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_02,0xffffff);
+    puVar1 = (undefined8 *)(param_1 + (long)__phoneField);
+    FUN_1015d6fa8(*puVar1,auVar6._8_8_,auVar6._0_8_);
+    uVar2 = _objc_alloc(&_OBJC_CLASS___NSAttributedString);
+    auVar6 = FUN_10158a308(*puVar1);
+    local_78 = *(undefined8 *)PTR__NSForegroundColorAttributeName_101d78300;
+    local_68 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar6._8_8_,0xffffff);
+    local_70 = *(undefined8 *)PTR__NSFontAttributeName_101d782f8;
+    auVar7 = FUN_101553a08(*puVar1);
+    local_60 = auVar7._0_8_;
+    auVar7 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar7._8_8_,&local_68,&local_78,2);
+    auVar6 = FUN_101567728(uVar2,auVar7._8_8_,auVar6._0_8_,auVar7._0_8_);
+    FUN_1015a4e88(*puVar1,auVar6._8_8_,auVar6._0_8_);
+    uVar4 = 0;
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_58) {
+    return;
+  }
+  FUN_100ab8e90(uVar4);
+  return;
+}
+
+
+
+/* NNCForgetPwdViewController.viewWillDisappear: | 0x100062974 | ev_15a4c872c45a825e10b1ecf7ea4ae777030672abebceba9d301aeb031648b736 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCForgetPwdViewController::viewWillDisappear_(ID param_1,SEL param_2,bool param_3)
+
+{
+  ID IVar1;
+  SEL extraout_x1;
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCForgetPwdViewController;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"viewWillDisappear:",param_3);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1);
+  FUN_10154dd68(IVar1);
+  return;
+}
+
+
+
+/* NNCForgetPwdViewController.touchesBegan:withEvent: | 0x1000629d8 | ev_a1e40762c90a77e0348f99c7729d9e3ad96fad5db8c6664248f7478439a8edff */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCForgetPwdViewController::touchesBegan_withEvent_
+               (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_1015fa0a8(param_1,param_2);
+  FUN_10154dd68(IVar1);
+  return;
+}
+
+
+
+/* NNCForgetPwdViewController.nextSelector: | 0x100062a0c | ev_c0e088c4ef042a49d3fa2716ed00760516a794470c28ec50c2bf1e9ebd9b1cd8 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCForgetPwdViewController::nextSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined *puVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 extraout_x0;
+  _Unwind_Exception *exception_object;
+  SEL extraout_x1;
+  undefined8 extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined1 *unaff_x24;
+  undefined1 auVar5 [16];
+  undefined *local_c0;
+  undefined8 local_b8;
+  code *local_b0;
+  undefined *puStack_a8;
+  undefined1 auStack_a0 [8];
+  undefined *local_98;
+  undefined8 local_90;
+  code *local_88;
+  undefined *puStack_80;
+  undefined1 auStack_78 [8];
+  undefined1 auStack_70 [8];
+  cfstringStruct *local_68;
+  ID local_60;
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  IVar2 = FUN_1015eee68(*(ID *)(param_1 + (long)__phoneField),param_2);
+  if (IVar2 == 0) {
+    FUN_1015e2328(&objc::class_t::SVProgressHUD);
+  }
+  else {
+    IVar2 = FUN_1015fa0a8(param_1,extraout_x1);
+    FUN_10154dd68(IVar2);
+    FUN_1015e2a68(0xbf800000,&objc::class_t::SVProgressHUD);
+    FUN_101557508(&objc::class_t::NNCRequestDo);
+    uVar3 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_00,&cf___for__);
+    local_68 = &cf_phone;
+    auVar5 = FUN_101589ea8(param_1);
+    local_60 = FUN_1015eee68(auVar5._0_8_,auVar5._8_8_);
+    uVar4 = FUN_101548208(&_OBJC_CLASS___NSDictionary);
+    _objc_initWeak(auStack_70,param_1);
+    FUN_101596288((ID)&objc::class_t::NNCBIZRequest,extraout_x1_01);
+    puVar1 = PTR___NSConcreteStackBlock_101d78760;
+    local_98 = PTR___NSConcreteStackBlock_101d78760;
+    local_90 = 0xc2000000;
+    local_88 = FUN_100062cd0;
+    puStack_80 = &UNK_101d7b990;
+    param_1 = (ID)auStack_78;
+    _objc_copyWeak(param_1,auStack_70);
+    local_c0 = puVar1;
+    local_b8 = 0xc2000000;
+    local_b0 = FUN_100062d58;
+    puStack_a8 = &UNK_101d7b9c0;
+    unaff_x24 = auStack_a0;
+    _objc_copyWeak(unaff_x24,auStack_70);
+    FUN_101596fa8(extraout_x0,extraout_x1_02,uVar3,uVar4,&local_98,&local_c0);
+    _objc_destroyWeak(unaff_x24);
+    _objc_destroyWeak(param_1);
+    _objc_destroyWeak(auStack_70);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_58) {
+    return;
+  }
+  exception_object = (_Unwind_Exception *)FUN_100ab8e90(0);
+  _objc_destroyWeak(unaff_x24);
+  _objc_destroyWeak(param_1);
+  _objc_destroyWeak(auStack_70);
+                    /* WARNING: Subroutine does not return */
+  __Unwind_Resume(exception_object);
+}
+
+
+
+/* NNCForgetPwdViewController.startSetPwd: | 0x100062e38 | ev_c802636e55ee88f4fa46812669050ccc2961c563c468f6f4a908e069f8f7b57d */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCForgetPwdViewController::startSetPwd_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined1 auVar2 [16];
+  
+  _objc_alloc(&objc::class_t::NNCSetPwdViewController);
+  auVar2 = FUN_101561e88();
+  uVar1 = auVar2._0_8_;
+  FUN_1015b04c8(uVar1,auVar2._8_8_,param_1);
+  FUN_10155fc48(uVar1,extraout_x1,0);
+  FUN_1015eee68(*(ID *)(param_1 + (long)__phoneField),extraout_x1_00);
+  FUN_1015c86c8(uVar1);
+  FUN_1015cb1e8(uVar1,extraout_x1_01,param_3);
+  auVar2 = _objc_alloc(&_OBJC_CLASS___UINavigationController);
+  auVar2 = FUN_101567168(auVar2._0_8_,auVar2._8_8_,uVar1);
+  uVar1 = auVar2._0_8_;
+  FUN_1015c3c28(uVar1,auVar2._8_8_,0);
+  FUN_1015c3c28(uVar1,extraout_x1_02,0);
+  FUN_10158dbc8(param_1,extraout_x1_03,uVar1,1,0);
+  return;
+}
+
+
+
+/* NNCForgetPwdViewController.viewControllerDidDismiss:cancelled: | 0x100062f3c | ev_fb03f7b92a2b3dd3d582fb6218eb45ef473c12c99480bc0827718ce93f1beba7 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x1c bytes */
+
+void NNCForgetPwdViewController::viewControllerDidDismiss_cancelled_
+               (ID param_1,SEL param_2,ID param_3,bool param_4)
+
+{
+  int iVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_101539ca8(&objc::class_t::NNCSetPwdViewController);
+  iVar1 = FUN_10156e908(param_3,auVar2._8_8_,auVar2._0_8_);
+  if ((iVar1 != 0) && ((param_4 & 1) == 0)) {
+    auVar2 = FUN_101580708(param_1);
+    FUN_10158c568(auVar2._0_8_,auVar2._8_8_,1);
+    return;
+  }
+  return;
+}
+
+
+
+/* NNCForgetPwdViewController.preferredStatusBarStyle | 0x100062fd8 | ev_a2bd60c5c961b7f21682eaeea8d14191512d389c4418d4d83d6edba81eac143a */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long NNCForgetPwdViewController::preferredStatusBarStyle(ID param_1,SEL param_2)
+
+{
+  return 1;
+}
+
+
+
+/* NNCForgetPwdViewController.nncisShow | 0x100062fe0 | ev_5c3ccfe73b3cdd2ad4f00b5d434b20e2aa5811f436b00493bec9d6cf77ce2c2f */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCForgetPwdViewController::nncisShow(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__nncisShow);
+}
+
+
+
+/* NNCForgetPwdViewController.setNncisShow: | 0x100062ff0 | ev_d844a29c9bf801c36fbac43a95b1ba1a71f21745775271cbeaed600af60b9ef0 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCForgetPwdViewController::setNncisShow_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__nncisShow) = (char)param_3;
+  return;
+}
+
+
+
+/* NNCForgetPwdViewController.bgView | 0x100063000 | ev_e1bdb8d740fdce367753874f12d1b87fe12cf7c6bb2c641d9101f89aa2e8730a */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCForgetPwdViewController::bgView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__bgView);
+}
+
+
+
+/* NNCForgetPwdViewController.setBgView: | 0x100063020 | ev_94f25da1ed13c209646b13d6d9b691a24adcca54431776fbc43b3b1194d125ef */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCForgetPwdViewController::setBgView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__bgView) = param_3;
+  return;
+}
+
+
+
+/* NNCForgetPwdViewController.titleLabel | 0x100063034 | ev_06d4600261138969704b0578093b896598fbded8605d017b117dfcc2c4711846 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCForgetPwdViewController::titleLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__titleLabel);
+}
+
+
+
+/* NNCForgetPwdViewController.setTitleLabel: | 0x100063054 | ev_3c7b25138e485e20aecc8a36c218abece79e736a37621aa0c82cc11008013a74 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCForgetPwdViewController::setTitleLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__titleLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCForgetPwdViewController.phoneBg | 0x100063068 | ev_e86390a7623525be2341e4fa32853b7099e333c0bfc603acb8545eacc9acb50e */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCForgetPwdViewController::phoneBg(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__phoneBg);
+}
+
+
+
+/* NNCForgetPwdViewController.setPhoneBg: | 0x100063088 | ev_42d38889c79cb0c2a4ced133c54662a213e8c8407f89db5df499f43a1cde91d7 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCForgetPwdViewController::setPhoneBg_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__phoneBg) = param_3;
+  return;
+}
+
+
+
+/* NNCForgetPwdViewController.phoneField | 0x10006309c | ev_e9cc17aff9ee0bce538e35294b9310969d23fcb1218a093d8abb991073032fa7 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCForgetPwdViewController::phoneField(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__phoneField);
+}
+
+
+
+/* NNCForgetPwdViewController.setPhoneField: | 0x1000630bc | ev_74816d9e819f8798334d6a854e3aea11e5ee9a4ac7285b5e70d4311d81c4de08 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCForgetPwdViewController::setPhoneField_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__phoneField) = param_3;
+  return;
+}
+
+
+
+/* NNCForgetPwdViewController..cxx_destruct | 0x1000630d0 | ev_8448f2c5ae3842b07c452322ca0713cb06725637f53ad115c7f2bd8890d4d8c2 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCForgetPwdViewController::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + (long)__phoneField);
+  _objc_destroyWeak(param_1 + (long)__phoneBg);
+  _objc_destroyWeak(param_1 + (long)__titleLabel);
+  _objc_destroyWeak(param_1 + (long)__bgView);
+  return;
+}
+
+

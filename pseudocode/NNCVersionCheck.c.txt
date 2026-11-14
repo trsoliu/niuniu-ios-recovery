@@ -1,0 +1,187 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCVersionCheck.modelWithDict: | 0x100004000 | ev_e42d49edc8723ba0360c712bb52143b190268ed12e9d3d2b452d465fc98af02d */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCVersionCheck::modelWithDict_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_1015813c8(&objc::class_t::NNCVersionCheck);
+  IVar1 = auVar2._0_8_;
+  auVar2 = FUN_1015ebae8(param_3,auVar2._8_8_,&cf_no_new);
+  FUN_1015c5b08(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1,&cf_has_new);
+  FUN_1015b6828(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1_00,&cf_newest_ios);
+  FUN_1015c5728(IVar1,auVar2._8_8_,auVar2._0_8_);
+  return IVar1;
+}
+
+
+
+/* NNCVersionCheck.initWithCoder: | 0x1000040dc | ev_17f683db109b67437aca97e84857d2b67005a41eb010782bd6bbf511cf5527ab */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCVersionCheck::initWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar2 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCVersionCheck;
+  local_40 = param_1;
+  auVar2 = _objc_msgSendSuper2(&local_40,"init");
+  IVar1 = auVar2._0_8_;
+  if (IVar1 != 0) {
+    auVar2 = FUN_101545868(param_3,auVar2._8_8_,&cf_noNew);
+    FUN_1015c5b08(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1,&cf_hasNew);
+    FUN_1015b6828(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1_00,&cf_newestIos);
+    FUN_1015c5728(IVar1,auVar2._8_8_,auVar2._0_8_);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCVersionCheck.encodeWithCoder: | 0x1000041d4 | ev_2e1d835463177531f4a2359d15ed5359ff34671ac6203851efd351c2b3fe8e44 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVersionCheck::encodeWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_1015821e8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_noNew);
+  auVar1 = FUN_10155d9e8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_hasNew);
+  auVar1 = FUN_101581588(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_newestIos);
+  return;
+}
+
+
+
+/* NNCVersionCheck.noNew | 0x100004298 | ev_574f2441c021a116e2439c403fdcd83473d0dfefd9cac082f606072329f809aa */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVersionCheck::noNew(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* NNCVersionCheck.setNoNew: | 0x1000042a0 | ev_72ce31c2185ba671a94bcd080b61ab8d959e0b091218fac8b741a083b01845e3 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVersionCheck::setNoNew_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCVersionCheck.hasNew | 0x1000042a8 | ev_e259490829496856979a94ce931667cfa6fa05ef2ac97e72c95ae078a80d2148 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVersionCheck::hasNew(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCVersionCheck.setHasNew: | 0x1000042b0 | ev_6d44f0c845955d411d253ec3f86b956a14a7878142acbb0bc391a6ff86f266aa */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVersionCheck::setHasNew_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCVersionCheck.newestIos | 0x1000042b8 | ev_582843e575e382c3d33538adca4e37714b997f99baab31328c1580ea68f0a6b1 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVersionCheck::newestIos(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x18);
+}
+
+
+
+/* NNCVersionCheck.setNewestIos: | 0x1000042c0 | ev_552fe1720703400c83d50b040d729b22f33ba92d902e9fd01db407430c9ce08c */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVersionCheck::setNewestIos_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* NNCVersionCheck..cxx_destruct | 0x1000042c8 | ev_7caf93704c3094c48655e22417803f2815abbce1ce731c194d08d8d223744fc1 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVersionCheck::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x18) = 0;
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

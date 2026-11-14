@@ -1,0 +1,41 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCSpHmSourceIdModel.episodeModelList | 0x10005c42c | ev_0aa6cd5ccbf7358ed484b18b6624095da545914edfd71d3755a63416d7324aba */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCSpHmSourceIdModel::episodeModelList(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* NNCSpHmSourceIdModel.setEpisodeModelList: | 0x10005c434 | ev_c807a01fcf6723cf9cfc63cdbd753123a9543aae7dd2f81637d8db81d97f063f */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCSpHmSourceIdModel::setEpisodeModelList_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCSpHmSourceIdModel..cxx_destruct | 0x10005c440 | ev_0b9f581e033efd06d3ecca5aa2969097344cd7bdee43cadb1d4367bee848763f */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCSpHmSourceIdModel::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

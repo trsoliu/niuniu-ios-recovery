@@ -1,0 +1,859 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCM3U8DownloadTask.initWithTaskItem:m3u8:headers: | 0x1000b72a0 | ev_eb5efccca90613e28aa4268334a15d1c8f41fd049095d2af3dbedb8f41253f50 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x28 bytes */
+
+ID NNCM3U8DownloadTask::initWithTaskItem_m3u8_headers_
+             (ID param_1,SEL param_2,ID param_3,ID param_4,ID param_5)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined1 auVar3 [16];
+  ID local_60;
+  class_t *pcStack_58;
+  
+  pcStack_58 = &objc::class_t::NNCM3U8DownloadTask;
+  local_60 = param_1;
+  auVar3 = _objc_msgSendSuper2(&local_60,"init");
+  IVar1 = auVar3._0_8_;
+  if (IVar1 != 0) {
+    FUN_1015bdfc8(IVar1,auVar3._8_8_,param_3);
+    FUN_1015c18a8(IVar1,extraout_x1,param_4);
+    auVar3 = FUN_1015f2908(param_4);
+    FUN_1015d9228(IVar1,auVar3._8_8_,auVar3._0_8_);
+    FUN_1015b6ea8(IVar1,extraout_x1_00,param_5);
+    auVar3 = FUN_1015587a8(&objc::class_t::VideoDownloadUtils,extraout_x1_01,param_3);
+    FUN_1015cf228(IVar1,auVar3._8_8_,auVar3._0_8_);
+    auVar3 = FUN_10159bc68(IVar1);
+    auVar3 = FUN_101556008(&objc::class_t::VideoDownloadUtils,auVar3._8_8_,auVar3._0_8_);
+    FUN_1015cf208(IVar1,auVar3._8_8_,auVar3._0_8_);
+    uVar2 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_02,&cf___);
+    auVar3 = FUN_1015725e8(IVar1);
+    FUN_1015b3a08(auVar3._0_8_,auVar3._8_8_,uVar2);
+    uVar2 = FUN_10159bac8(IVar1);
+    auVar3 = FUN_1015725e8(IVar1);
+    FUN_1015cf208(auVar3._0_8_,auVar3._8_8_,uVar2);
+    uVar2 = FUN_1015f2908(IVar1);
+    uVar2 = FUN_10153f908(uVar2);
+    auVar3 = FUN_1015725e8(IVar1);
+    FUN_1015d88c8(auVar3._0_8_,auVar3._8_8_,uVar2);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCM3U8DownloadTask.initM3U8Ts | 0x1000b74f4 | ev_f3b6589a121ac8438a55c67f6715be505429b295c7fb77dde3716ce35b8f21c3 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCM3U8DownloadTask::initM3U8Ts(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  bool bVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  long lVar5;
+  undefined8 extraout_x1;
+  int iVar6;
+  long lVar7;
+  long lVar8;
+  undefined8 uVar9;
+  long lVar10;
+  undefined1 auVar11 [16];
+  undefined8 local_130;
+  long lStack_128;
+  long *local_120;
+  undefined8 uStack_118;
+  undefined8 local_110;
+  undefined8 uStack_108;
+  undefined8 uStack_100;
+  undefined8 uStack_f8;
+  undefined1 auStack_f0 [128];
+  long local_70;
+  
+  local_70 = *(long *)PTR____stack_chk_guard_101d78938;
+  lStack_128 = 0;
+  local_130 = 0;
+  uStack_118 = 0;
+  local_120 = (long *)0x0;
+  uStack_108 = 0;
+  local_110 = 0;
+  uStack_f8 = 0;
+  uStack_100 = 0;
+  auVar11 = FUN_1015f2908();
+  uVar4 = auVar11._0_8_;
+  auVar11 = FUN_10153f948(uVar4,auVar11._8_8_,&local_130,auStack_f0,0x10);
+  uVar3 = auVar11._8_8_;
+  lVar5 = auVar11._0_8_;
+  if (lVar5 == 0) {
+    iVar1 = 0;
+    lVar7 = 0;
+  }
+  else {
+    lVar7 = 0;
+    lVar10 = *local_120;
+    iVar6 = 0;
+    do {
+      lVar8 = 0;
+      iVar1 = iVar6 + (int)lVar5;
+      do {
+        if (*local_120 != lVar10) {
+          _objc_enumerationMutation(uVar4);
+        }
+        uVar9 = *(undefined8 *)(lStack_128 + lVar8 * 8);
+        uVar3 = FUN_10159bac8(param_1);
+        auVar11 = FUN_101558608(uVar9);
+        auVar11 = FUN_1015eb848(uVar3,auVar11._8_8_,auVar11._0_8_);
+        auVar11 = FUN_101557fa8(&objc::class_t::FileUtils,auVar11._8_8_,auVar11._0_8_);
+        uVar3 = auVar11._8_8_;
+        if (auVar11._0_8_ < 1) {
+          iVar1 = iVar6 + (int)lVar8;
+          goto LAB_1000b7658;
+        }
+        lVar7 = auVar11._0_8_ + lVar7;
+        lVar8 = lVar8 + 1;
+      } while (lVar5 != lVar8);
+      auVar11 = FUN_10153f948(uVar4,uVar3,&local_130,auStack_f0,0x10);
+      uVar3 = auVar11._8_8_;
+      lVar5 = auVar11._0_8_;
+      iVar6 = iVar1;
+    } while (lVar5 != 0);
+  }
+LAB_1000b7658:
+  FUN_1015ad4a8(param_1,uVar3,iVar1);
+  FUN_1015ad5a8(param_1,extraout_x1,lVar7);
+  iVar1 = FUN_101542748(param_1);
+  uVar4 = FUN_1015f2908(param_1);
+  lVar5 = FUN_10153f908(uVar4);
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_70) {
+    bVar2 = FUN_100ab8e90(0);
+    return bVar2;
+  }
+  return (bool)(lVar5 == iVar1);
+}
+
+
+
+/* NNCM3U8DownloadTask.startDownload | 0x1000b76ec | ev_a69af8edfc9e7d4b0ffa97918f459b739f7d500be795d45e313dadd06e6a4430 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCM3U8DownloadTask::startDownload(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  ulong uVar2;
+  undefined8 uVar3;
+  long lVar4;
+  undefined1 auVar5 [16];
+  
+  FUN_1015ba968(param_1,param_2,0);
+  uVar2 = FUN_101562ac8(param_1);
+  if ((uVar2 & 1) == 0) {
+    uVar3 = FUN_1015725e8(param_1);
+    iVar1 = FUN_10156c768(uVar3);
+    if (iVar1 == 0) {
+      lVar4 = FUN_10154b1a8(param_1);
+      if (lVar4 != 0) {
+        uVar3 = FUN_10154b1a8(param_1);
+        lVar4 = FUN_1015ea028(uVar3);
+        if (lVar4 == 0) {
+          auVar5 = FUN_1015725e8(param_1);
+          FUN_1015d6a68(auVar5._0_8_,auVar5._8_8_,3);
+          auVar5 = FUN_1015725e8(param_1);
+          FUN_1015c8488(auVar5._0_8_,auVar5._8_8_,0);
+          uVar3 = FUN_101575768(param_1);
+          auVar5 = FUN_1015725e8(param_1);
+          FUN_101584ce8(uVar3,auVar5._8_8_,auVar5._0_8_);
+          return;
+        }
+      }
+      auVar5 = FUN_1015725e8(param_1);
+      FUN_1015c8488(auVar5._0_8_,auVar5._8_8_,0);
+      auVar5 = FUN_1015725e8(param_1);
+      FUN_1015d6a68(auVar5._0_8_,auVar5._8_8_,3);
+      uVar3 = FUN_101575768(param_1);
+      auVar5 = FUN_1015725e8(param_1);
+      FUN_101584ce8(uVar3,auVar5._8_8_,auVar5._0_8_);
+      FUN_10154b3e8(param_1);
+      return;
+    }
+  }
+  auVar5 = FUN_1015725e8(param_1);
+  FUN_1015d6a68(auVar5._0_8_,auVar5._8_8_,5);
+  auVar5 = FUN_1015725e8(param_1);
+  FUN_1015c8488(auVar5._0_8_,auVar5._8_8_,0);
+  auVar5 = FUN_1015725e8(param_1);
+  FUN_1015ab448(auVar5._0_8_,auVar5._8_8_,1);
+  uVar3 = FUN_101575768(param_1);
+  auVar5 = FUN_1015725e8(param_1);
+  FUN_101584c68(uVar3,auVar5._8_8_,auVar5._0_8_);
+  return;
+}
+
+
+
+/* NNCM3U8DownloadTask.downloadTsAtCurrentIndex | 0x1000b7984 | ev_cc816f217eb94a10ff9d7fc65e66a1aeddde1f6c5600f8742b75ce00e84bed13 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCM3U8DownloadTask::downloadTsAtCurrentIndex(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  int iVar2;
+  undefined8 uVar3;
+  ulong uVar4;
+  undefined8 uVar5;
+  undefined8 uVar6;
+  long lVar7;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  long lVar8;
+  long lVar9;
+  undefined8 uVar10;
+  undefined1 auVar11 [16];
+  undefined1 auVar12 [16];
+  undefined *local_280;
+  undefined8 local_278;
+  code *local_270;
+  undefined *puStack_268;
+  ID local_260;
+  int local_258;
+  undefined *local_250;
+  undefined8 local_248;
+  code *local_240;
+  undefined *puStack_238;
+  ID local_230;
+  int local_228;
+  undefined8 local_220;
+  long lStack_218;
+  long *local_210;
+  undefined8 uStack_208;
+  undefined8 local_200;
+  undefined8 uStack_1f8;
+  undefined8 uStack_1f0;
+  undefined8 uStack_1e8;
+  undefined *local_1d8;
+  undefined8 local_1d0;
+  code *local_1c8;
+  undefined *puStack_1c0;
+  undefined8 local_1b8;
+  undefined8 local_1b0;
+  long lStack_1a8;
+  long *local_1a0;
+  undefined8 uStack_198;
+  undefined8 local_190;
+  undefined8 uStack_188;
+  undefined8 uStack_180;
+  undefined8 uStack_178;
+  undefined1 auStack_170 [128];
+  undefined1 auStack_f0 [128];
+  long local_70;
+  
+  local_70 = *(long *)PTR____stack_chk_guard_101d78938;
+  iVar1 = FUN_101542748();
+  uVar3 = FUN_1015f2908(param_1);
+  uVar4 = FUN_10153f908(uVar3);
+  if ((ulong)(long)iVar1 < uVar4) {
+    auVar11 = FUN_1015f2908(param_1);
+    uVar3 = FUN_101583328(auVar11._0_8_,auVar11._8_8_,(long)iVar1);
+    iVar2 = FUN_10155d848(uVar3);
+    if (iVar2 != 0) {
+      auVar11 = FUN_1015f2908(param_1);
+      uVar3 = FUN_101583328(auVar11._0_8_,auVar11._8_8_,(long)iVar1);
+      uVar3 = FUN_101559348(uVar3);
+      auVar11 = FUN_10159bac8(param_1);
+      uVar3 = FUN_1015eb848(auVar11._0_8_,auVar11._8_8_,uVar3);
+      uVar5 = FUN_1015f2908(param_1);
+      iVar2 = FUN_101542748(param_1);
+      uVar5 = FUN_101583328(uVar5,extraout_x1,(long)iVar2);
+      auVar11 = FUN_101585e28(uVar5);
+      auVar11 = FUN_1015156a8(&_OBJC_CLASS___NSURL,auVar11._8_8_,auVar11._0_8_);
+      uVar5 = FUN_1015970a8(&_OBJC_CLASS___NSMutableURLRequest,auVar11._8_8_,auVar11._0_8_);
+      uStack_188 = 0;
+      local_190 = 0;
+      uStack_178 = 0;
+      uStack_180 = 0;
+      lStack_1a8 = 0;
+      local_1b0 = 0;
+      uStack_198 = 0;
+      local_1a0 = (long *)0x0;
+      uVar6 = FUN_10155e4e8(param_1);
+      auVar11 = FUN_101528d88(uVar6);
+      uVar6 = auVar11._0_8_;
+      lVar7 = FUN_10153f948(uVar6,auVar11._8_8_,&local_1b0,auStack_f0,0x10);
+      if (lVar7 != 0) {
+        lVar8 = *local_1a0;
+        do {
+          lVar9 = 0;
+          do {
+            if (*local_1a0 != lVar8) {
+              _objc_enumerationMutation(uVar6);
+            }
+            uVar10 = *(undefined8 *)(lStack_1a8 + lVar9 * 8);
+            auVar11 = FUN_10155e4e8(param_1);
+            auVar11 = FUN_101583468(auVar11._0_8_,auVar11._8_8_,uVar10);
+            FUN_1015db848(uVar5,auVar11._8_8_,auVar11._0_8_,uVar10);
+            lVar9 = lVar9 + 1;
+          } while (lVar7 != lVar9);
+          lVar7 = FUN_10153f948(uVar6,extraout_x1_00,&local_1b0,auStack_f0,0x10);
+        } while (lVar7 != 0);
+      }
+      uVar6 = FUN_1015e11a8(&objc::class_t::VideoDownloadUtils);
+      auVar11 = FUN_101528288(uVar6);
+      local_1d8 = PTR___NSConcreteStackBlock_101d78760;
+      local_1d0 = 0xc2000000;
+      local_1c8 = FUN_1000b8160;
+      puStack_1c0 = &UNK_101d7be70;
+      local_1b8 = uVar3;
+      FUN_10154b328(auVar11._0_8_,auVar11._8_8_,uVar5,&UNK_101d7daa0,&local_1d8,&UNK_101d7dae0);
+    }
+    uVar3 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+    FUN_1015ef888(uVar3);
+    FUN_1015bef48(param_1);
+    auVar11 = FUN_10155a868(param_1);
+    auVar11 = FUN_1015156a8(&_OBJC_CLASS___NSURL,auVar11._8_8_,auVar11._0_8_);
+    uVar3 = FUN_1015970a8(&_OBJC_CLASS___NSMutableURLRequest,auVar11._8_8_,auVar11._0_8_);
+    uStack_1f8 = 0;
+    local_200 = 0;
+    uStack_1e8 = 0;
+    uStack_1f0 = 0;
+    lStack_218 = 0;
+    local_220 = 0;
+    uStack_208 = 0;
+    local_210 = (long *)0x0;
+    uVar5 = FUN_10155e4e8(param_1);
+    auVar11 = FUN_101528d88(uVar5);
+    uVar5 = auVar11._0_8_;
+    lVar7 = FUN_10153f948(uVar5,auVar11._8_8_,&local_220,auStack_170,0x10);
+    if (lVar7 != 0) {
+      lVar8 = *local_210;
+      do {
+        lVar9 = 0;
+        do {
+          if (*local_210 != lVar8) {
+            _objc_enumerationMutation(uVar5);
+          }
+          uVar6 = *(undefined8 *)(lStack_218 + lVar9 * 8);
+          auVar11 = FUN_10155e4e8(param_1);
+          auVar11 = FUN_101583468(auVar11._0_8_,auVar11._8_8_,uVar6);
+          FUN_1015db848(uVar3,auVar11._8_8_,auVar11._0_8_,uVar6);
+          lVar9 = lVar9 + 1;
+        } while (lVar7 != lVar9);
+        lVar7 = FUN_10153f948(uVar5,extraout_x1_01,&local_220,auStack_170,0x10);
+      } while (lVar7 != 0);
+    }
+    uVar5 = FUN_1015e11a8(&objc::class_t::VideoDownloadUtils);
+    auVar11 = FUN_101528288(uVar5);
+    local_250 = PTR___NSConcreteStackBlock_101d78760;
+    local_248 = 0xc2000000;
+    local_240 = FUN_1000b817c;
+    puStack_238 = &UNK_101d7db20;
+    local_280 = PTR___NSConcreteStackBlock_101d78760;
+    local_278 = 0xc2000000;
+    local_270 = FUN_1000b8258;
+    puStack_268 = &UNK_101d7db50;
+    local_260 = param_1;
+    local_258 = iVar1;
+    local_230 = param_1;
+    local_228 = iVar1;
+    auVar11 = FUN_10154b328(auVar11._0_8_,auVar11._8_8_,uVar3,&UNK_101d7db00,&local_250,&local_280);
+    FUN_1015b0ba8(param_1,auVar11._8_8_,auVar11._0_8_);
+    uVar3 = FUN_10154b1a8(param_1);
+    FUN_101598868(uVar3);
+    if (*(long *)PTR____stack_chk_guard_101d78938 == local_70) {
+      return;
+    }
+  }
+  else {
+    uVar3 = FUN_10159bac8(param_1);
+    uVar5 = FUN_10159bc68(param_1);
+    auVar11 = FUN_101578e68(param_1);
+    auVar11 = FUN_101581408(&objc::class_t::NNCMUUtils,auVar11._8_8_,uVar3,uVar5,auVar11._0_8_);
+    FUN_1015b0ba8(param_1,auVar11._8_8_,0);
+    auVar12 = FUN_1015725e8(param_1);
+    FUN_1015ab448(auVar12._0_8_,auVar12._8_8_,1);
+    uVar3 = FUN_1015725e8(param_1);
+    FUN_1015c8588(0x42c80000,uVar3);
+    auVar12 = FUN_1015725e8(param_1);
+    FUN_1015b3a48(auVar12._0_8_,auVar12._8_8_,auVar11._0_8_);
+    auVar11 = FUN_1015725e8(param_1);
+    FUN_1015d6a68(auVar11._0_8_,auVar11._8_8_,5);
+    uVar3 = FUN_101575768(param_1);
+    auVar11 = FUN_1015725e8(param_1);
+    FUN_101584c68(uVar3,auVar11._8_8_,auVar11._0_8_);
+    if (*(long *)PTR____stack_chk_guard_101d78938 == local_70) {
+      return;
+    }
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCM3U8DownloadTask.getTsRealUrl | 0x1000b8268 | ev_9d0d74ca523da75e7a2dffb826839a582b351e9f4a8c75a6786e40a13644beaf */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCM3U8DownloadTask::getTsRealUrl(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  ID IVar6;
+  undefined8 extraout_x1;
+  undefined1 auVar7 [16];
+  
+  uVar2 = FUN_1015725e8();
+  uVar2 = FUN_10158b928(uVar2);
+  uVar3 = FUN_1015725e8(param_1);
+  uVar3 = FUN_1015f69c8(uVar3);
+  uVar4 = FUN_1015725e8(param_1);
+  uVar4 = FUN_101552908(uVar4);
+  uVar5 = FUN_1015f2908(param_1);
+  iVar1 = FUN_101542748(param_1);
+  uVar5 = FUN_101583328(uVar5,extraout_x1,(long)iVar1);
+  auVar7 = FUN_1015f69c8(uVar5);
+  IVar6 = FUN_101581b68(&objc::class_t::NNCFileParser,auVar7._8_8_,uVar2,uVar3,uVar4,auVar7._0_8_);
+  return IVar6;
+}
+
+
+
+/* NNCM3U8DownloadTask.dealProgressAndResultWithIndex:error: | 0x1000b83c8 | ev_142032bd61f7f095c88dae83c82a119c36b8dab2b4ce52c9f782a8f59dd25f57 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x1c bytes */
+
+void NNCM3U8DownloadTask::dealProgressAndResultWithIndex_error_
+               (ID param_1,SEL param_2,int param_3,ID param_4)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  long lVar5;
+  ulong uVar6;
+  undefined8 uVar7;
+  undefined8 uVar8;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  double dVar9;
+  double dVar10;
+  undefined1 auVar11 [16];
+  
+  if (param_4 == 0) {
+    if (*(char *)(param_1 + (long)__isCancel) == '\0') {
+      FUN_10159bac8(param_1);
+      _NSLog(&cf_downloadTest1dealProgressAndResultWithIndex___d);
+      uVar2 = FUN_10159bac8(param_1);
+      uVar3 = FUN_1015f2908(param_1);
+      iVar1 = FUN_101542748(param_1);
+      uVar3 = FUN_101583328(uVar3,extraout_x1,(long)iVar1);
+      auVar11 = FUN_101558608(uVar3);
+      auVar11 = FUN_1015eb848(uVar2,auVar11._8_8_,auVar11._0_8_);
+      lVar5 = FUN_101557fa8(&objc::class_t::FileUtils,auVar11._8_8_,auVar11._0_8_);
+      uVar2 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+      dVar9 = (double)FUN_1015ef888(uVar2);
+      dVar10 = (double)FUN_101573f08(param_1);
+      FUN_1015bef48(dVar9,param_1);
+      auVar11 = FUN_101542968(param_1);
+      FUN_1015ad5a8(param_1,auVar11._8_8_,auVar11._0_8_ + lVar5);
+      lVar5 = (long)((double)lVar5 / (dVar9 - dVar10));
+      auVar11 = FUN_1015725e8(param_1);
+      FUN_1015c8488(auVar11._0_8_,auVar11._8_8_,0);
+      uVar2 = FUN_101542968(param_1);
+      auVar11 = FUN_1015725e8(param_1);
+      FUN_1015b0b68(auVar11._0_8_,auVar11._8_8_,uVar2);
+      uVar2 = FUN_1015725e8(param_1);
+      FUN_1015d3968((float)lVar5,uVar2);
+      auVar11 = FUN_1015725e8(param_1);
+      FUN_1015d6a68(auVar11._0_8_,auVar11._8_8_,3);
+      iVar1 = FUN_101542748(param_1);
+      uVar2 = FUN_1015f2908(param_1);
+      uVar6 = FUN_10153f908(uVar2);
+      uVar2 = FUN_101575768(param_1);
+      uVar3 = FUN_1015725e8(param_1);
+      uVar4 = FUN_101542968(param_1);
+      uVar7 = FUN_101542748(param_1);
+      uVar8 = FUN_1015f2908(param_1);
+      auVar11 = FUN_10153f908(uVar8);
+      FUN_101584ca8(((float)iVar1 * 100.0) / (float)uVar6,uVar2,auVar11._8_8_,uVar3,uVar4,uVar7,
+                    auVar11._0_8_,lVar5);
+      iVar1 = FUN_101542748(param_1);
+      FUN_1015ad4a8(param_1,extraout_x1_00,iVar1 + 1);
+      FUN_10154b3e8(param_1);
+    }
+  }
+  else {
+    FUN_1015b0ba8(param_1,param_2,0);
+    uVar2 = FUN_101546048(&_OBJC_CLASS___NSFileManager);
+    uVar3 = FUN_10159bac8(param_1);
+    auVar11 = FUN_1015f2908(param_1);
+    uVar4 = FUN_101583328(auVar11._0_8_,auVar11._8_8_,(long)(int)param_3);
+    auVar11 = FUN_101558608(uVar4);
+    auVar11 = FUN_1015eb848(uVar3,auVar11._8_8_,auVar11._0_8_);
+    FUN_101593ea8(uVar2,auVar11._8_8_,auVar11._0_8_,0);
+    if (*(char *)(param_1 + (long)__isCancel) == '\0') {
+      uVar2 = FUN_101575768(param_1);
+      auVar11 = FUN_1015725e8(param_1);
+      FUN_101584c48(uVar2,auVar11._8_8_,auVar11._0_8_,param_4);
+    }
+  }
+  return;
+}
+
+
+
+/* NNCM3U8DownloadTask.pauseDownload | 0x1000b882c | ev_9420db5cabacb5c5784d9f90943926c2d7e0db648c5a681f1c0e257aaf1998b6 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCM3U8DownloadTask::pauseDownload(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  long lVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  undefined8 extraout_x1;
+  undefined1 auVar6 [16];
+  
+  FUN_1015ba968(param_1,param_2,1);
+  lVar2 = FUN_10154b1a8(param_1);
+  if (lVar2 != 0) {
+    uVar3 = FUN_10154b1a8(param_1);
+    FUN_101537668(uVar3);
+    uVar3 = FUN_101546048(&_OBJC_CLASS___NSFileManager);
+    uVar4 = FUN_10159bac8(param_1);
+    uVar5 = FUN_1015f2908(param_1);
+    iVar1 = FUN_101542748(param_1);
+    uVar5 = FUN_101583328(uVar5,extraout_x1,(long)iVar1);
+    auVar6 = FUN_101558608(uVar5);
+    auVar6 = FUN_1015eb848(uVar4,auVar6._8_8_,auVar6._0_8_);
+    FUN_101593ea8(uVar3,auVar6._8_8_,auVar6._0_8_,0);
+    auVar6 = FUN_1015725e8(param_1);
+    FUN_1015d6a68(auVar6._0_8_,auVar6._8_8_,7);
+    auVar6 = FUN_1015725e8(param_1);
+    FUN_1015c8488(auVar6._0_8_,auVar6._8_8_,1);
+    uVar3 = FUN_101575768(param_1);
+    auVar6 = FUN_1015725e8(param_1);
+    FUN_101584c88(uVar3,auVar6._8_8_,auVar6._0_8_);
+    return;
+  }
+  return;
+}
+
+
+
+/* NNCM3U8DownloadTask.m3u8 | 0x1000b8a18 | ev_4a2593930ece67e163909ca6bec0ed19a9335a175a478184a9e98d1675bb55bd */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCM3U8DownloadTask::m3u8(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__m3u8);
+}
+
+
+
+/* NNCM3U8DownloadTask.setM3u8: | 0x1000b8a28 | ev_29a44f151ad6aef57abd13e187d259930d2355875f6651879415db1130245431 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCM3U8DownloadTask::setM3u8_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__m3u8) = param_3;
+  return;
+}
+
+
+
+/* NNCM3U8DownloadTask.saveName | 0x1000b8a3c | ev_bdb507cc3c91463be8cd13d134c4f8c52226913e0f3812ca5c087859536fad18 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCM3U8DownloadTask::saveName(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__saveName);
+}
+
+
+
+/* NNCM3U8DownloadTask.setSaveName: | 0x1000b8a4c | ev_6407a62f95e2ac336e30da5e378de9c4a4bb86d3941d5e1c7f1d675ca9410ff5 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCM3U8DownloadTask::setSaveName_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__saveName) = param_3;
+  return;
+}
+
+
+
+/* NNCM3U8DownloadTask.saveDir | 0x1000b8a58 | ev_2f0a60572b97d38d39eeb23367fdd859c7c288fbb0d8f86ffc3b68601a6ebb5f */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCM3U8DownloadTask::saveDir(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__saveDir);
+}
+
+
+
+/* NNCM3U8DownloadTask.setSaveDir: | 0x1000b8a68 | ev_0f25c55af956bc505c61e3792a05a2a56c8f75bbeb761edf6638fde2ea80a6cd */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCM3U8DownloadTask::setSaveDir_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__saveDir) = param_3;
+  return;
+}
+
+
+
+/* NNCM3U8DownloadTask.tsList | 0x1000b8a74 | ev_937bb7e0f5d78eb581b81e4f9b59dddc07a23d4fd52234325818aa84046d0c9a */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCM3U8DownloadTask::tsList(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__tsList);
+}
+
+
+
+/* NNCM3U8DownloadTask.setTsList: | 0x1000b8a84 | ev_a60006891a46400fd52ca87a11d28c594dab7f6b5d1495334072daa73cc70ee9 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCM3U8DownloadTask::setTsList_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__tsList) = param_3;
+  return;
+}
+
+
+
+/* NNCM3U8DownloadTask.curTs | 0x1000b8a98 | ev_bb7c48ac79b927339724e0f0d43a3d6564c31c4250a914182bb9c8edcfd8cb83 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+int NNCM3U8DownloadTask::curTs(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + (long)__curTs);
+}
+
+
+
+/* NNCM3U8DownloadTask.setCurTs: | 0x1000b8aa8 | ev_eb9a95d116eea33790a7cbeb5ac97d493024eb56530bb14b7f5d3e3372259c11 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCM3U8DownloadTask::setCurTs_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + (long)__curTs) = param_3;
+  return;
+}
+
+
+
+/* NNCM3U8DownloadTask.currentCachedSize | 0x1000b8ab8 | ev_e81eb6753108faffc2af504e7437e5e35ed24a10c668274c2aa3aea7566e17be */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+long_long NNCM3U8DownloadTask::currentCachedSize(ID param_1,SEL param_2)
+
+{
+  return *(long_long *)(param_1 + (long)__currentCachedSize);
+}
+
+
+
+/* NNCM3U8DownloadTask.setCurrentCachedSize: | 0x1000b8ac8 | ev_daacc384288861039c259018a64aaac27b7143ba3c3224238387eb0a0e9422b5 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCM3U8DownloadTask::setCurrentCachedSize_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  *(long_long *)(param_1 + (long)__currentCachedSize) = param_3;
+  return;
+}
+
+
+
+/* NNCM3U8DownloadTask.downloadTask | 0x1000b8ad8 | ev_2bae8034d390ffc04a723cf5295d7ecd813fd3246513e318a96a10edd4a5168e */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCM3U8DownloadTask::downloadTask(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__downloadTask);
+}
+
+
+
+/* NNCM3U8DownloadTask.setDownloadTask: | 0x1000b8ae8 | ev_a83ba8b7cfa3aea22092dc3187ed5b48344571cac0c60d073565fd733e81754e */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCM3U8DownloadTask::setDownloadTask_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__downloadTask) = param_3;
+  return;
+}
+
+
+
+/* NNCM3U8DownloadTask.lastInvokeTime | 0x1000b8afc | ev_02698127d6b153bae07f52437e6750f5e638de84f58b860c7ca90fe0a38a9bcf */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+double NNCM3U8DownloadTask::lastInvokeTime(ID param_1,SEL param_2)
+
+{
+  return *(double *)(param_1 + (long)__lastInvokeTime);
+}
+
+
+
+/* NNCM3U8DownloadTask.setLastInvokeTime: | 0x1000b8b0c | ev_e660d69387e17055a64dd7d16b651ef16a29c7ef58cdcc4d64f0e7e2cbe04dc0 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCM3U8DownloadTask::setLastInvokeTime_(ID param_1,SEL param_2,double param_3)
+
+{
+  *(double *)(param_1 + (long)__lastInvokeTime) = param_3;
+  return;
+}
+
+
+
+/* NNCM3U8DownloadTask.isCancel | 0x1000b8b1c | ev_7535472b065a7d6887c95a4c55c0baecc6fb9138861d190c323a965060887d5e */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCM3U8DownloadTask::isCancel(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__isCancel);
+}
+
+
+
+/* NNCM3U8DownloadTask.setIsCancel: | 0x1000b8b2c | ev_5949bca9b0373b9558e6342a69ac8b0e24d05d06a04dd12bb752ea93f28b053c */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCM3U8DownloadTask::setIsCancel_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__isCancel) = (char)param_3;
+  return;
+}
+
+
+
+/* NNCM3U8DownloadTask..cxx_destruct | 0x1000b8b3c | ev_f7e80772dfe833e3080d7bf6fe09613f77b0b746eee9a8663179c330826fab8d */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCM3U8DownloadTask::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__downloadTask) = 0;
+  *(undefined8 *)(param_1 + (long)__tsList) = 0;
+  *(undefined8 *)(param_1 + (long)__saveDir) = 0;
+  *(undefined8 *)(param_1 + (long)__saveName) = 0;
+  *(undefined8 *)(param_1 + (long)__m3u8) = 0;
+  return;
+}
+
+

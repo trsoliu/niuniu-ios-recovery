@@ -1,0 +1,440 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* FSTabBarController.init | 0x10006d25c | ev_472bea4d8bc0aa455df84f5c9c5f6ab50e931fcf1eb8f582cf2d9fa6c2f13557 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID FSTabBarController::init(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::FSTabBarController;
+  local_30 = param_1;
+  IVar1 = _objc_msgSendSuper2(&local_30,"init");
+  if (IVar1 != 0) {
+    FUN_10158d808(IVar1);
+  }
+  return IVar1;
+}
+
+
+
+/* FSTabBarController.prepareFSTabBar | 0x10006d2ac | ev_9aad6c58852f0f75c27472731b45884215787a1e4cf763c5333050d1f0d7505c */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void FSTabBarController::prepareFSTabBar(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined8 uVar3;
+  long lVar4;
+  undefined1 auVar5 [16];
+  
+  _objc_alloc(&objc::class_t::FSTabBar);
+  uVar1 = FUN_101561e88();
+  lVar4 = (long)__fsTabBar;
+  uVar3 = *(undefined8 *)(param_1 + lVar4);
+  *(undefined8 *)(param_1 + lVar4) = uVar1;
+  uVar1 = FUN_1015eda88(uVar3,param_1);
+  FUN_101531d88(uVar1);
+  FUN_1015b4b08(*(undefined8 *)(param_1 + lVar4));
+  FUN_1015a53a8(*(undefined8 *)(param_1 + lVar4),extraout_x1,0x12);
+  FUN_1015aeee8(*(ID *)(param_1 + lVar4),extraout_x1_00,param_1);
+  IVar2 = FUN_101574688(*(ID *)(param_1 + lVar4),extraout_x1_01);
+  FUN_1015deb28(0x47efffffe0000000,IVar2);
+  auVar5 = FUN_1015eda88(param_1);
+  FUN_101527148(auVar5._0_8_,auVar5._8_8_,*(undefined8 *)(param_1 + lVar4));
+  return;
+}
+
+
+
+/* FSTabBarController.rebuildFSTabBarItemsForViewControllers: | 0x10006d380 | ev_3d398b403db31d6ab61449712757f71deb563a3b7d362735ae309becdec82de5 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBarController::rebuildFSTabBarItemsForViewControllers_(ID param_1,SEL param_2,ID param_3)
+
+{
+  long lVar1;
+  undefined8 extraout_x1;
+  long lVar2;
+  long lVar3;
+  undefined1 auVar4 [16];
+  undefined1 auVar5 [16];
+  undefined8 local_120;
+  long lStack_118;
+  long *local_110;
+  undefined8 uStack_108;
+  undefined8 local_100;
+  undefined8 uStack_f8;
+  undefined8 uStack_f0;
+  undefined8 uStack_e8;
+  undefined1 auStack_d8 [128];
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  auVar4 = FUN_10152ba48(&_OBJC_CLASS___NSMutableArray);
+  lStack_118 = 0;
+  local_120 = 0;
+  uStack_108 = 0;
+  local_110 = (long *)0x0;
+  uStack_f8 = 0;
+  local_100 = 0;
+  uStack_e8 = 0;
+  uStack_f0 = 0;
+  lVar1 = FUN_10153f948(param_3,auVar4._8_8_,&local_120,auStack_d8,0x10);
+  if (lVar1 != 0) {
+    lVar2 = *local_110;
+    do {
+      lVar3 = 0;
+      do {
+        if (*local_110 != lVar2) {
+          _objc_enumerationMutation(param_3);
+        }
+        auVar5 = FUN_101554888(*(undefined8 *)(lStack_118 + lVar3 * 8));
+        FUN_101526528(auVar4._0_8_,auVar5._8_8_,auVar5._0_8_);
+        lVar3 = lVar3 + 1;
+      } while (lVar1 != lVar3);
+      lVar1 = FUN_10153f948(param_3,extraout_x1,&local_120,auStack_d8,0x10);
+    } while (lVar1 != 0);
+  }
+  auVar5 = FUN_101554868(param_1);
+  FUN_1015be208(auVar5._0_8_,auVar5._8_8_,auVar4._0_8_);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_58) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* FSTabBarController.viewDidAppear: | 0x10006d4f0 | ev_de0ff2f44fbd7ab902fa552be807d1369d23b83495445287e2be1f55be8574ac */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x14 bytes */
+
+void FSTabBarController::viewDidAppear_(ID param_1,SEL param_2,bool param_3)
+
+{
+  undefined8 uVar1;
+  undefined1 auVar2 [16];
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::FSTabBarController;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"viewDidAppear:",param_3);
+  uVar1 = FUN_1015eda88(param_1);
+  auVar2 = FUN_101554868(param_1);
+  FUN_1015326c8(uVar1,auVar2._8_8_,auVar2._0_8_);
+  return;
+}
+
+
+
+/* FSTabBarController.viewControllerForFSTabBarItem: | 0x10006d574 | ev_c91ad2e7977c411fc9e1b3481a0454d4b19e0078c3ddc81b5383323f2a9e2879 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID FSTabBarController::viewControllerForFSTabBarItem_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined1 auVar3 [16];
+  
+  if (param_3 == 0) {
+    IVar2 = 0;
+  }
+  else {
+    uVar1 = FUN_101554868(param_1);
+    auVar3 = FUN_1015728c8(uVar1);
+    uVar1 = FUN_1015618e8(auVar3._0_8_,auVar3._8_8_,param_3);
+    auVar3 = FUN_1015fa288(param_1);
+    IVar2 = FUN_101583308(auVar3._0_8_,auVar3._8_8_,uVar1);
+  }
+  return IVar2;
+}
+
+
+
+/* FSTabBarController.setSelectedFSTabBarItem: | 0x10006d634 | ev_860126ee49f2585d711cdc38d37cbf48ceb057e3487e42a065ff1d43f81c7a36 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBarController::setSelectedFSTabBarItem_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_101554868(param_1);
+  FUN_1015d0488(auVar1._0_8_,auVar1._8_8_,param_3);
+  return;
+}
+
+
+
+/* FSTabBarController.tabBar:didSelectFSItem: | 0x10006d684 | ev_2a16c7ec9bdef8dd184b268a4eb7bfcd8dac5fe2c5b6f1764bccd43766593a30 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void FSTabBarController::tabBar_didSelectFSItem_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  int iVar1;
+  long lVar2;
+  long lVar3;
+  undefined8 extraout_x1;
+  undefined8 uVar4;
+  undefined1 auVar5 [16];
+  
+  lVar2 = FUN_1015fa188(param_1,param_2,param_4);
+  lVar3 = FUN_10159ea08(param_1);
+  if (lVar2 != lVar3) {
+    auVar5 = FUN_101554848(param_1);
+    auVar5 = FUN_101598088(auVar5._0_8_,auVar5._8_8_,"tabBarController:shouldSelectViewController:")
+    ;
+    uVar4 = auVar5._8_8_;
+    if ((auVar5._0_8_ & 1) != 0) {
+      auVar5 = FUN_101554848(param_1);
+      iVar1 = FUN_1015edb68(auVar5._0_8_,auVar5._8_8_,param_1,lVar2);
+      uVar4 = extraout_x1;
+      if (iVar1 == 0) {
+        return;
+      }
+    }
+    FUN_1015d0548(param_1,uVar4,lVar2);
+    auVar5 = FUN_101554848(param_1);
+    iVar1 = FUN_101598088(auVar5._0_8_,auVar5._8_8_,"tabBarController:didSelectViewController:");
+    if (iVar1 != 0) {
+      auVar5 = FUN_101554848(param_1);
+      FUN_1015edb28(auVar5._0_8_,auVar5._8_8_,param_1,lVar2);
+    }
+  }
+  return;
+}
+
+
+
+/* FSTabBarController.tabBar:doubleTappedFSItem: | 0x10006d7b4 | ev_a4eed525750511e398ef3cc3ee10606297c8c3d202b0f911e73ad24ceda2971d */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void FSTabBarController::tabBar_doubleTappedFSItem_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  int iVar1;
+  long lVar2;
+  long lVar3;
+  undefined1 auVar4 [16];
+  
+  lVar2 = FUN_1015fa188(param_1,param_2,param_4);
+  lVar3 = FUN_10159ea08(param_1);
+  if (lVar2 == lVar3) {
+    auVar4 = FUN_101554848(param_1);
+    iVar1 = FUN_101598088(auVar4._0_8_,auVar4._8_8_,"tabBarController:doubleTappedViewController:");
+    if (iVar1 != 0) {
+      auVar4 = FUN_101554848(param_1);
+      FUN_1015edb48(auVar4._0_8_,auVar4._8_8_,param_1,lVar2);
+    }
+  }
+  return;
+}
+
+
+
+/* FSTabBarController.setViewControllers: | 0x10006d868 | ev_2914156768c858a535ab7078e1f007ba1271be4fb5a2baeebd59b17853b4eb09 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBarController::setViewControllers_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID local_30;
+  class_t *pcStack_28;
+  
+  FUN_101591188(param_1,param_2,param_3);
+  pcStack_28 = &objc::class_t::FSTabBarController;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"setViewControllers:",param_3);
+  return;
+}
+
+
+
+/* FSTabBarController.setViewControllers:animated: | 0x10006d8cc | ev_5fb0c7e77e9729b28a1c114a12c3b59a61645f755fb9b08125321bbfe43c6df2 */
+
+/* Function Stack Size: 0x1c bytes */
+
+void FSTabBarController::setViewControllers_animated_
+               (ID param_1,SEL param_2,ID param_3,bool param_4)
+
+{
+  ID local_20;
+  class_t *pcStack_18;
+  
+  pcStack_18 = &objc::class_t::FSTabBarController;
+  local_20 = param_1;
+  _objc_msgSendSuper2(&local_20,"setViewControllers:animated:",param_3,param_4);
+  return;
+}
+
+
+
+/* FSTabBarController.setSelectedIndex: | 0x10006d900 | ev_44783619f0c8158ef5e119f1f3c20540f0a15367209b79aa56bd5f689bd01142 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBarController::setSelectedIndex_(ID param_1,SEL param_2,unsigned_long_long param_3)
+
+{
+  undefined8 uVar1;
+  undefined1 auVar2 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::FSTabBarController;
+  local_40 = param_1;
+  _objc_msgSendSuper2(&local_40,"setSelectedIndex:");
+  uVar1 = FUN_1015eda88(param_1);
+  auVar2 = FUN_101554868(param_1);
+  FUN_1015326c8(uVar1,auVar2._8_8_,auVar2._0_8_);
+  uVar1 = FUN_101554868(param_1);
+  uVar1 = FUN_1015728c8(uVar1);
+  auVar2 = FUN_10159e948(param_1);
+  auVar2 = FUN_101583308(uVar1,auVar2._8_8_,auVar2._0_8_);
+  FUN_1015d0428(param_1,auVar2._8_8_,auVar2._0_8_);
+  return;
+}
+
+
+
+/* FSTabBarController.setSelectedViewController: | 0x10006d9f4 | ev_a35e8fc169238f2190642a6c37bba5b9e71d0b05ae2c6497eda29c033c120a07 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBarController::setSelectedViewController_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined1 auVar2 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::FSTabBarController;
+  local_40 = param_1;
+  _objc_msgSendSuper2(&local_40,"setSelectedViewController:");
+  uVar1 = FUN_1015eda88(param_1);
+  auVar2 = FUN_101554868(param_1);
+  FUN_1015326c8(uVar1,auVar2._8_8_,auVar2._0_8_);
+  uVar1 = FUN_101554868(param_1);
+  uVar1 = FUN_1015728c8(uVar1);
+  auVar2 = FUN_10159e948(param_1);
+  auVar2 = FUN_101583308(uVar1,auVar2._8_8_,auVar2._0_8_);
+  FUN_1015d0428(param_1,auVar2._8_8_,auVar2._0_8_);
+  return;
+}
+
+
+
+/* FSTabBarController.fsTabBar | 0x10006dae8 | ev_d28ec90d5ccb9f96aa23ece88c0ec008881e41f5b833943f38e059fc4e222396 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID FSTabBarController::fsTabBar(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__fsTabBar);
+}
+
+
+
+/* FSTabBarController.fsDelegate | 0x10006daf8 | ev_3a727df1cf03ffa76a36afd45e8106c6b826d9776575e990383b8fba88baad89 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID FSTabBarController::fsDelegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__fsDelegate);
+}
+
+
+
+/* FSTabBarController.setFsDelegate: | 0x10006db18 | ev_7ed3ba4759610d7efa80499eccce94e9037e11fddc0349a2cba1628aa287aff5 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBarController::setFsDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__fsDelegate) = param_3;
+  return;
+}
+
+
+
+/* FSTabBarController..cxx_destruct | 0x10006db2c | ev_83aad66f5bbfaca7f9a75ac4336f80cba0580179ac4192247985944ea1218890 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void FSTabBarController::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + (long)__fsDelegate);
+  *(undefined8 *)(param_1 + (long)__fsTabBar) = 0;
+  return;
+}
+
+

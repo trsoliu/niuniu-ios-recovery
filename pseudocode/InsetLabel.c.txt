@@ -1,0 +1,129 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* InsetLabel.init | 0x1000ae3cc | ev_3f260ce5f7ff08964d564e74605f89011c9371813e7f02764bf5e572fcde5c01 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID InsetLabel::init(ID param_1,SEL param_2)
+
+{
+  undefined8 *puVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  ID local_20;
+  class_t *pcStack_18;
+  
+  pcStack_18 = &objc::class_t::InsetLabel;
+  local_20 = param_1;
+  IVar2 = _objc_msgSendSuper2(&local_20,"init");
+  if (IVar2 != 0) {
+    puVar1 = (undefined8 *)(IVar2 + (long)__textInsets);
+    uVar3 = *(undefined8 *)PTR__UIEdgeInsetsZero_101d78610;
+    uVar5 = *(undefined8 *)(PTR__UIEdgeInsetsZero_101d78610 + 0x18);
+    uVar4 = *(undefined8 *)(PTR__UIEdgeInsetsZero_101d78610 + 0x10);
+    puVar1[1] = *(undefined8 *)(PTR__UIEdgeInsetsZero_101d78610 + 8);
+    *puVar1 = uVar3;
+    puVar1[3] = uVar5;
+    puVar1[2] = uVar4;
+  }
+  return IVar2;
+}
+
+
+
+/* InsetLabel.initWithFrame: | 0x1000ae420 | ev_60a681e46096268e69f1353cd1514743a1618ce767355cba0731ccf391b05e73 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x30 bytes */
+
+ID InsetLabel::initWithFrame_(ID param_1,SEL param_2,CGRect param_3)
+
+{
+  undefined8 *puVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  ID local_20;
+  class_t *pcStack_18;
+  
+  pcStack_18 = &objc::class_t::InsetLabel;
+  local_20 = param_1;
+  IVar2 = _objc_msgSendSuper2(param_3.field0_0x0.field0_0x0,param_3.field0_0x0.field1_0x8,
+                              param_3.field1_0x10.field0_0x0,param_3.field1_0x10.field1_0x8,
+                              &local_20,"initWithFrame:");
+  if (IVar2 != 0) {
+    puVar1 = (undefined8 *)(IVar2 + (long)__textInsets);
+    uVar3 = *(undefined8 *)PTR__UIEdgeInsetsZero_101d78610;
+    uVar5 = *(undefined8 *)(PTR__UIEdgeInsetsZero_101d78610 + 0x18);
+    uVar4 = *(undefined8 *)(PTR__UIEdgeInsetsZero_101d78610 + 0x10);
+    puVar1[1] = *(undefined8 *)(PTR__UIEdgeInsetsZero_101d78610 + 8);
+    *puVar1 = uVar3;
+    puVar1[3] = uVar5;
+    puVar1[2] = uVar4;
+  }
+  return IVar2;
+}
+
+
+
+/* InsetLabel.drawTextInRect: | 0x1000ae474 | ev_2e38f84b6fd2cd29a894fdafaad7f0ac9a0b18701af6d7d381dd669072922059 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x30 bytes */
+
+void InsetLabel::drawTextInRect_(ID param_1,SEL param_2,CGRect param_3)
+
+{
+  double *pdVar1;
+  ID local_20;
+  class_t *pcStack_18;
+  
+  pdVar1 = (double *)(param_1 + (long)__textInsets);
+  pcStack_18 = &objc::class_t::InsetLabel;
+  local_20 = param_1;
+  _objc_msgSendSuper2(param_3.field0_0x0.field0_0x0 + pdVar1[1],
+                      param_3.field0_0x0.field1_0x8 + *pdVar1,
+                      param_3.field1_0x10.field0_0x0 - (pdVar1[1] + pdVar1[3]),
+                      param_3.field1_0x10.field1_0x8 - (*pdVar1 + pdVar1[2]),&local_20,
+                      "drawTextInRect:");
+  return;
+}
+
+
+
+/* InsetLabel.textInsets | 0x1000ae4d4 | ev_28a52bc2885b67d0d4aa0dd4ed866607fd7a749d7793c4493bf7dd511691803c */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+UIEdgeInsets InsetLabel::textInsets(ID param_1,SEL param_2)
+
+{
+  return *(UIEdgeInsets *)(param_1 + (long)__textInsets);
+}
+
+
+
+/* InsetLabel.setTextInsets: | 0x1000ae4ec | ev_cef6a481407764f54b8921d89a6c06d4cabeb4f68eba88584bf4dc04e02483d3 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x30 bytes */
+
+void InsetLabel::setTextInsets_(ID param_1,SEL param_2,UIEdgeInsets param_3)
+
+{
+  double *pdVar1;
+  
+  pdVar1 = (double *)(param_1 + (long)__textInsets);
+  *pdVar1 = param_3.field0_0x0;
+  pdVar1[1] = param_3.field1_0x8;
+  pdVar1[2] = param_3.field2_0x10;
+  pdVar1[3] = param_3.field3_0x18;
+  return;
+}
+
+

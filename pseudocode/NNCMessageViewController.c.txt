@@ -1,0 +1,739 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCMessageViewController.backButtonAction | 0x1000ed4b4 | ev_257e91a6137234201800c658d6a7eedbeedfe5c95dbf2386cd1d75523b25c9c1 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCMessageViewController::backButtonAction(ID param_1,SEL param_2)
+
+{
+  undefined8 extraout_x1;
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_101580708();
+  FUN_10158c568(auVar1._0_8_,auVar1._8_8_,1);
+  FUN_101549e68(param_1,extraout_x1,1,&PTR___NSConcreteGlobalBlock_101d7e0d0);
+  return;
+}
+
+
+
+/* NNCMessageViewController.viewDidLoad | 0x1000ed50c | ev_12c935eb4097c9b58a0ddcd926a13ca5af592ee0fdb78cc8ddefb4868d63b42a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCMessageViewController::viewDidLoad(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined1 auVar3 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCMessageViewController;
+  local_40 = param_1;
+  _objc_msgSendSuper2(&local_40,"viewDidLoad");
+  FUN_1015d7e08(param_1,extraout_x1,&cf_mo_);
+  FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_00,&cf_myTextColor);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_01);
+  FUN_1015a5908(IVar1);
+  uVar2 = FUN_101560a48(&_OBJC_CLASS___UIImage,extraout_x1_02,&cf_fanhuiImae);
+  auVar3 = _objc_alloc(&_OBJC_CLASS___UIBarButtonItem);
+  uVar2 = FUN_1015656a8(auVar3._0_8_,auVar3._8_8_,uVar2,0,param_1,"backButtonAction");
+  auVar3 = FUN_101580748(param_1);
+  FUN_1015bfaa8(auVar3._0_8_,auVar3._8_8_,uVar2);
+  return;
+}
+
+
+
+/* NNCMessageViewController.viewDidLayoutSubviews | 0x1000ed62c | ev_4ca774dd47caf89d6a8daedc675cf231fe613d182b491ab865d3266e2f553472 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NNCMessageViewController::viewDidLayoutSubviews(ID param_1,SEL param_2)
+
+{
+  undefined1 auVar1 [16];
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCMessageViewController;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"viewDidLayoutSubviews");
+  auVar1 = FUN_101581c88(param_1);
+  if ((auVar1._0_8_ & 1) == 0) {
+    FUN_1015c5a08(param_1,auVar1._8_8_,1);
+    FUN_101541948(param_1);
+  }
+  return;
+}
+
+
+
+/* NNCMessageViewController.viewWillAppear: | 0x1000ed68c | ev_7a5fccaf1141cc2926a4faa74a04dc27e99c2a6c4d80255cdb8feadd5d50f19b */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCMessageViewController::viewWillAppear_(ID param_1,SEL param_2,bool param_3)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  long lVar3;
+  undefined1 auVar4 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCMessageViewController;
+  local_40 = param_1;
+  _objc_msgSendSuper2(&local_40,"viewWillAppear:",param_3);
+  lVar3 = (long)__currentIndex;
+  if (0 < *(int *)(param_1 + lVar3)) {
+    uVar2 = FUN_101543648(&objc::class_t::NNCProfileUser);
+    iVar1 = FUN_10156ed08(uVar2);
+    if (iVar1 != 0) {
+      auVar4 = FUN_10159cd48(param_1);
+      uVar2 = FUN_1015fa8c8(auVar4._0_8_,auVar4._8_8_,(long)*(int *)(param_1 + lVar3) + 200);
+      FUN_101581968(uVar2);
+    }
+  }
+  return;
+}
+
+
+
+/* NNCMessageViewController.createView | 0x1000ed758 | ev_8307cda3ed44c8fe33cdeba7a94b63138f4d8f34507611dc8b00a2fe275af10e */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCMessageViewController::createView(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  undefined8 extraout_x1_03;
+  SEL extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined8 extraout_x1_07;
+  SEL extraout_x1_08;
+  undefined8 extraout_x1_09;
+  undefined8 extraout_x1_10;
+  undefined8 extraout_x1_11;
+  undefined8 extraout_x1_12;
+  undefined8 extraout_x1_13;
+  undefined8 extraout_x1_14;
+  undefined8 extraout_x1_15;
+  undefined8 extraout_x1_16;
+  undefined8 extraout_x1_17;
+  undefined8 extraout_x1_18;
+  undefined8 extraout_x1_19;
+  undefined8 extraout_x1_20;
+  undefined8 extraout_x1_21;
+  ulong uVar3;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  undefined8 uVar6;
+  double dVar7;
+  double dVar8;
+  undefined8 uVar9;
+  undefined1 auVar10 [16];
+  undefined1 auVar11 [16];
+  cfstringStruct *local_a8;
+  cfstringStruct *pcStack_a0;
+  long local_98;
+  
+  local_98 = *(long *)PTR____stack_chk_guard_101d78938;
+  auVar10 = _objc_alloc(&_OBJC_CLASS___UIView);
+  IVar1 = FUN_1015fa0a8(param_1,auVar10._8_8_);
+  uVar4 = FUN_1015fc468(IVar1);
+  auVar10 = FUN_101564e08(0,0,uVar4,0x404e000000000000,auVar10._0_8_);
+  FUN_1015b6e88(param_1,auVar10._8_8_,auVar10._0_8_);
+  uVar4 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1,&cf_myTextColor);
+  auVar10 = FUN_10155e488(param_1);
+  FUN_1015a5908(auVar10._0_8_,auVar10._8_8_,uVar4);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_00);
+  auVar10 = FUN_10155e488(param_1);
+  FUN_101527148(IVar1,auVar10._8_8_,auVar10._0_8_);
+  uVar4 = _objc_alloc(&objc::class_t::NNCCustomScrollView);
+  uVar2 = FUN_10155e488(param_1);
+  uVar5 = FUN_1015319c8(uVar2);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_01);
+  uVar6 = FUN_1015fc468(IVar1);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_02);
+  dVar7 = (double)FUN_10155e568(IVar1);
+  uVar2 = FUN_10155e488(param_1);
+  dVar8 = (double)FUN_1015319c8(uVar2);
+  auVar10 = FUN_101564e08(0,uVar5,uVar6,dVar7 - dVar8,uVar4);
+  FUN_1015cf7c8(param_1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015ac048(auVar10._0_8_,auVar10._8_8_,2);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015a8f48(auVar10._0_8_,auVar10._8_8_,1);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015aee88(auVar10._0_8_,auVar10._8_8_,1);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015c7e08(auVar10._0_8_,auVar10._8_8_,1);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015a7808(auVar10._0_8_,auVar10._8_8_,0);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015aeee8(auVar10._0_8_,auVar10._8_8_,param_1);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015d22c8(auVar10._0_8_,auVar10._8_8_,0);
+  uVar4 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_03,0);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015a5908(auVar10._0_8_,auVar10._8_8_,uVar4);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_04);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_101527148(IVar1,auVar10._8_8_,auVar10._0_8_);
+  _objc_alloc(&_OBJC_CLASS___UIImageView);
+  auVar10 = FUN_101564e08(0,0,0x4024000000000000,0x4024000000000000);
+  FUN_1015bfbc8(param_1,auVar10._8_8_,auVar10._0_8_);
+  uVar4 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_05,0xff1924);
+  auVar10 = FUN_101574f68(param_1);
+  FUN_1015a5908(auVar10._0_8_,auVar10._8_8_,uVar4);
+  auVar10 = FUN_101574f68(param_1);
+  IVar1 = FUN_101574688(auVar10._0_8_,auVar10._8_8_);
+  FUN_1015ac5e8(0x4014000000000000,IVar1);
+  auVar10 = FUN_101574f68(param_1);
+  IVar1 = FUN_101574688(auVar10._0_8_,auVar10._8_8_);
+  FUN_1015c25a8(IVar1);
+  uVar4 = FUN_101574f68(param_1);
+  FUN_1015a9948(0x403e000000000000,uVar4);
+  auVar10 = FUN_101574f68(param_1);
+  FUN_1015b6fc8(auVar10._0_8_,auVar10._8_8_,1);
+  _objc_alloc(&_OBJC_CLASS___UIImageView);
+  auVar10 = FUN_101564e08(0,0,0x4024000000000000,0x4024000000000000);
+  FUN_1015ce448(param_1,auVar10._8_8_,auVar10._0_8_);
+  uVar4 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_06,0xff1924);
+  auVar10 = FUN_10159a468(param_1);
+  FUN_1015a5908(auVar10._0_8_,auVar10._8_8_,uVar4);
+  auVar10 = FUN_10159a468(param_1);
+  IVar1 = FUN_101574688(auVar10._0_8_,auVar10._8_8_);
+  FUN_1015ac5e8(0x4014000000000000,IVar1);
+  auVar10 = FUN_10159a468(param_1);
+  IVar1 = FUN_101574688(auVar10._0_8_,auVar10._8_8_);
+  FUN_1015c25a8(IVar1);
+  uVar4 = FUN_10159a468(param_1);
+  FUN_1015a9948(0x403e000000000000,uVar4);
+  auVar10 = FUN_10159a468(param_1);
+  FUN_1015b6fc8(auVar10._0_8_,auVar10._8_8_,1);
+  local_a8 = &cf___mo_;
+  pcStack_a0 = &cf__NNmo_;
+  uVar4 = FUN_10152bbc8(&_OBJC_CLASS___NSArray,extraout_x1_07,&local_a8,2);
+  auVar10 = FUN_10153f908();
+  uVar2 = auVar10._8_8_;
+  if (auVar10._0_8_ != 0) {
+    uVar3 = 0;
+    do {
+      auVar10 = FUN_101534f68(&_OBJC_CLASS___UIButton,uVar2,0);
+      uVar2 = auVar10._0_8_;
+      IVar1 = FUN_1015fa0a8(param_1,auVar10._8_8_);
+      dVar7 = (double)FUN_1015fc468(IVar1);
+      IVar1 = FUN_1015fa0a8(param_1,extraout_x1_08);
+      dVar8 = (double)FUN_1015fc468(IVar1);
+      uVar5 = FUN_10155e488(param_1);
+      uVar5 = FUN_10155e568(uVar5);
+      FUN_1015b4b08(dVar7 * 0.5 * (double)(int)uVar3,0,dVar8 * 0.5,uVar5,uVar2);
+      auVar10 = FUN_101583328(uVar4,extraout_x1_09,uVar3);
+      FUN_1015d7e48(uVar2,auVar10._8_8_,auVar10._0_8_,0);
+      auVar10 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_10,&cf_myBgColor);
+      FUN_1015d7ea8(uVar2,auVar10._8_8_,auVar10._0_8_,0);
+      auVar10 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_11,0xbed4fb);
+      FUN_1015d7ea8(uVar2,auVar10._8_8_,auVar10._0_8_,4);
+      uVar5 = FUN_1015ed768(0x402e000000000000,&_OBJC_CLASS___UIFont);
+      auVar10 = FUN_1015f0328(uVar2);
+      FUN_1015b4788(auVar10._0_8_,auVar10._8_8_,uVar5);
+      FUN_1015d6328(uVar2,extraout_x1_12,uVar3 + 100);
+      FUN_101527248(uVar2,extraout_x1_13,param_1,"topButtonSelected:",0x40);
+      auVar10 = FUN_10155e488(param_1);
+      FUN_101527148(auVar10._0_8_,auVar10._8_8_,uVar2);
+      FUN_1015d03e8(uVar2,extraout_x1_14,0);
+      dVar7 = (double)FUN_1015384c8(uVar2);
+      if (uVar3 == 0) {
+        uVar5 = FUN_101574f68(param_1);
+      }
+      else {
+        uVar5 = FUN_10159a468();
+      }
+      FUN_1015bfa48(dVar7 + 35.0,uVar5);
+      uVar5 = _objc_alloc(&objc::class_t::NNCMessageView);
+      uVar6 = FUN_10159cd48(param_1);
+      dVar7 = (double)FUN_1015fc468(uVar6);
+      uVar6 = FUN_10159cd48(param_1);
+      uVar9 = FUN_1015fc468(uVar6);
+      uVar6 = FUN_10159cd48(param_1);
+      uVar6 = FUN_10155e568(uVar6);
+      uVar5 = FUN_101564e08(dVar7 * (double)(int)uVar3,0,uVar9,uVar6,uVar5);
+      auVar10 = FUN_10159cd48(param_1);
+      FUN_101527148(auVar10._0_8_,auVar10._8_8_,uVar5);
+      FUN_1015d6328(uVar5,extraout_x1_15,uVar3 + 200);
+      FUN_1015d95a8(uVar5,extraout_x1_16,uVar3);
+      FUN_1015c5a88(uVar5,extraout_x1_17,param_1);
+      auVar10 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_18,&cf_myTextColor);
+      FUN_1015a5908(uVar5,auVar10._8_8_,auVar10._0_8_);
+      if (uVar3 == 0) {
+        FUN_1015d0408(param_1,extraout_x1_19,uVar2);
+        FUN_1015d03e8(uVar2,extraout_x1_20,1);
+      }
+      uVar3 = uVar3 + 1;
+      auVar10 = FUN_10153f908(uVar4);
+      uVar2 = auVar10._8_8_;
+    } while (uVar3 < auVar10._0_8_);
+  }
+  uVar4 = FUN_10155e488(param_1);
+  auVar10 = FUN_10159a468(param_1);
+  FUN_101527148(uVar4,auVar10._8_8_,auVar10._0_8_);
+  uVar4 = FUN_10155e488(param_1);
+  auVar10 = FUN_101574f68(param_1);
+  FUN_101527148(uVar4,auVar10._8_8_,auVar10._0_8_);
+  uVar4 = FUN_10159cd48(param_1);
+  dVar7 = (double)FUN_1015fc468(uVar4);
+  uVar4 = FUN_10159cd48(param_1);
+  uVar2 = FUN_10155e568(uVar4);
+  uVar4 = FUN_10159cd48(param_1);
+  FUN_1015ac108(dVar7 + dVar7,uVar2,uVar4);
+  uVar4 = _objc_alloc(&_OBJC_CLASS___UIImageView);
+  uVar2 = FUN_10155e488(param_1);
+  dVar7 = (double)FUN_10155e568(uVar2);
+  uVar2 = FUN_10155e488(param_1);
+  dVar8 = (double)FUN_1015fc468(uVar2);
+  auVar10 = FUN_101564e08(0,dVar7 + -2.0,dVar8 * 0.5,0x4000000000000000,uVar4);
+  FUN_1015d04e8(param_1,auVar10._8_8_,auVar10._0_8_);
+  uVar4 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_21,&cf_myTextColor);
+  auVar10 = FUN_10159e9a8(param_1);
+  FUN_1015a5908(auVar10._0_8_,auVar10._8_8_,uVar4);
+  auVar10 = FUN_10159e9a8(param_1);
+  IVar1 = FUN_101574688(auVar10._0_8_,auVar10._8_8_);
+  FUN_1015ac5e8(0x3ff0000000000000,IVar1);
+  auVar10 = FUN_10159e9a8(param_1);
+  IVar1 = FUN_101574688(auVar10._0_8_,auVar10._8_8_);
+  FUN_1015c25a8(IVar1);
+  uVar4 = FUN_10155e488(param_1);
+  auVar10 = FUN_10159e9a8(param_1);
+  FUN_101527148(uVar4,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_10155e488(param_1);
+  uVar4 = FUN_1015fa8c8(auVar10._0_8_,auVar10._8_8_,100);
+  uVar2 = FUN_1015384c8(uVar4);
+  uVar4 = FUN_10159e9a8(param_1);
+  FUN_1015a9928(uVar2,uVar4);
+  FUN_101582068(param_1);
+  auVar10 = FUN_10159cd48(param_1);
+  auVar10 = FUN_1015fa8c8(auVar10._0_8_,auVar10._8_8_,
+                          (long)*(int *)(param_1 + (long)__currentIndex) + 200);
+  auVar11 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar10._8_8_,&cf_myTextColor);
+  FUN_1015a5908(auVar10._0_8_,auVar11._8_8_,auVar11._0_8_);
+  FUN_101581968(auVar10._0_8_);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_98) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCMessageViewController.nncupdateRedFlag | 0x1000ee4dc | ev_54a2a0cbf67f2c20442fd77a23f93caba5c5abb8a27f40e7d250568780b358ef */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCMessageViewController::nncupdateRedFlag(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  long lVar5;
+  long lVar6;
+  undefined1 auVar7 [16];
+  
+  auVar7 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  uVar1 = FUN_101583468(auVar7._0_8_,auVar7._8_8_,&cf_nnc_n_s_l);
+  auVar7 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  uVar2 = FUN_101583468(auVar7._0_8_,auVar7._8_8_,&cf_nnc_n_s_d);
+  auVar7 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  uVar3 = FUN_101583468(auVar7._0_8_,auVar7._8_8_,&cf_nnc_n_l);
+  auVar7 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  uVar4 = FUN_101583468(auVar7._0_8_,auVar7._8_8_,&cf_nnc_n_d);
+  lVar5 = FUN_101578508(uVar1);
+  lVar6 = FUN_101578508(uVar2);
+  auVar7 = FUN_101574f68(param_1);
+  FUN_1015b6fc8(auVar7._0_8_,auVar7._8_8_,lVar5 == lVar6);
+  lVar5 = FUN_101578508(uVar3);
+  lVar6 = FUN_101578508(uVar4);
+  auVar7 = FUN_10159a468(param_1);
+  FUN_1015b6fc8(auVar7._0_8_,auVar7._8_8_,lVar5 == lVar6);
+  return;
+}
+
+
+
+/* NNCMessageViewController.topButtonSelected: | 0x1000ee680 | ev_bae8d27bd1cffea1ad2bcc5c6c5fa359e21712d00a0b41b5bface54487c25d2d */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMessageViewController::topButtonSelected_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  double dVar4;
+  undefined1 auVar5 [16];
+  
+  iVar1 = FUN_1015edd48(param_3);
+  FUN_1015ad748(param_1,extraout_x1,iVar1 + -100);
+  uVar2 = FUN_10159cd48(param_1);
+  iVar1 = FUN_101542c28(param_1);
+  uVar3 = FUN_10159cd48(param_1);
+  dVar4 = (double)FUN_1015fc468(uVar3);
+  FUN_1015ac0e8(dVar4 * (double)iVar1,0,uVar2,extraout_x1_00,1);
+  auVar5 = FUN_10159cd48(param_1);
+  uVar2 = FUN_1015fa8c8(auVar5._0_8_,auVar5._8_8_,
+                        (long)*(int *)(param_1 + (long)__currentIndex) + 200);
+  FUN_101581968(uVar2);
+  return;
+}
+
+
+
+/* NNCMessageViewController.scrollViewDidScroll: | 0x1000ee764 | ev_3f78fd5fa8b6fbbbdbde6a4280b9590e95358bce062c884ea5e9f88439fe3afe */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMessageViewController::scrollViewDidScroll_(ID param_1,SEL param_2,ID param_3)
+
+{
+  long lVar1;
+  long lVar2;
+  undefined8 uVar3;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  double dVar4;
+  double dVar5;
+  double in_d2;
+  undefined1 auVar6 [16];
+  
+  dVar4 = (double)FUN_10153e6e8();
+  FUN_101554148(param_3,extraout_x1);
+  dVar5 = in_d2 * 0.5;
+  FUN_101554148(param_3,extraout_x1_00);
+  auVar6 = FUN_10155e488(param_1);
+  lVar1 = FUN_1015fa8c8(auVar6._0_8_,auVar6._8_8_,(long)((int)((dVar4 + dVar5) / in_d2) + 100));
+  lVar2 = FUN_10159e908(param_1);
+  if (lVar1 != lVar2) {
+    auVar6 = FUN_10159e908(param_1);
+    FUN_1015d03e8(auVar6._0_8_,auVar6._8_8_,0);
+    FUN_1015d03e8(lVar1,extraout_x1_01,1);
+    FUN_1015d0408(param_1,extraout_x1_02,lVar1);
+  }
+  dVar5 = (double)FUN_10153e6e8(param_3);
+  auVar6 = FUN_10155e488(param_1);
+  uVar3 = FUN_1015fa8c8(auVar6._0_8_,auVar6._8_8_,100);
+  dVar4 = (double)FUN_1015384c8(uVar3);
+  uVar3 = FUN_10159e9a8(param_1);
+  FUN_1015a9928(dVar4 + dVar5 * 0.5,uVar3);
+  return;
+}
+
+
+
+/* NNCMessageViewController.scrollViewDidEndDecelerating: | 0x1000ee8e4 | ev_8ad81310e7615a81ef966b3759485acad04df6eb9f9e6d05824679c1595be3ab */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMessageViewController::scrollViewDidEndDecelerating_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  
+  FUN_10153e6e8();
+  FUN_101554148(param_3,extraout_x1);
+  FUN_101554148(param_3,extraout_x1_00);
+  FUN_1015ad748(param_1);
+  uVar1 = FUN_1015fa8c8(param_3,extraout_x1_01,(long)*(int *)(param_1 + (long)__currentIndex) + 200)
+  ;
+  FUN_101581968(uVar1);
+  return;
+}
+
+
+
+/* NNCMessageViewController.preferredStatusBarStyle | 0x1000ee97c | ev_8ed5fdac3742024c6d115709dfc995a45f6329092c8eca2b90dd3049912cdc3f */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long NNCMessageViewController::preferredStatusBarStyle(ID param_1,SEL param_2)
+
+{
+  return 1;
+}
+
+
+
+/* NNCMessageViewController.headerView | 0x1000ee984 | ev_c04290ae511256e80498e981ec46b555558e861772f6573db0509647af394f1e */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMessageViewController::headerView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__headerView);
+}
+
+
+
+/* NNCMessageViewController.setHeaderView: | 0x1000ee994 | ev_e9e7d51511d402e30eefcdef5244f92ac5205dbec048d40cbba9d6f650e0e878 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMessageViewController::setHeaderView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__headerView) = param_3;
+  return;
+}
+
+
+
+/* NNCMessageViewController.scrollView | 0x1000ee9a8 | ev_6aa1c6fcf5c02fe02a7820caaccf7b92d069b702e240f2fe6a5f0585ebb69bc7 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMessageViewController::scrollView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__scrollView);
+}
+
+
+
+/* NNCMessageViewController.setScrollView: | 0x1000ee9b8 | ev_fd5d2e47f8890d1d1c4a49ac52a22689493a793da846714b0c798c54ab6984d6 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMessageViewController::setScrollView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__scrollView) = param_3;
+  return;
+}
+
+
+
+/* NNCMessageViewController.selectedLine | 0x1000ee9cc | ev_7e64effb104b2f4b237a5de6b9c000ce45c309e2eeb66c11647fd205a2b5dad2 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMessageViewController::selectedLine(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__selectedLine);
+}
+
+
+
+/* NNCMessageViewController.setSelectedLine: | 0x1000ee9dc | ev_d1f4450dfabb0a28aea93098afc9b05d16932f1555aca3c56faf4b66bbe4b628 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMessageViewController::setSelectedLine_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__selectedLine) = param_3;
+  return;
+}
+
+
+
+/* NNCMessageViewController.currentIndex | 0x1000ee9f0 | ev_2d22ced1df229b626b9b06a09be3f02b9eb041920d57e74ed8f169ed6ae559c0 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+int NNCMessageViewController::currentIndex(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + (long)__currentIndex);
+}
+
+
+
+/* NNCMessageViewController.setCurrentIndex: | 0x1000eea00 | ev_f28641af98ef776718ed1097de542200df3ddbb9fabcabb15a167e4e564e3f67 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCMessageViewController::setCurrentIndex_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + (long)__currentIndex) = param_3;
+  return;
+}
+
+
+
+/* NNCMessageViewController.selectedButton | 0x1000eea10 | ev_bead91d8cc8f362a97c67a32b033bffe68801a7da42fc4aee8065276e6caea6b */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMessageViewController::selectedButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__selectedButton);
+}
+
+
+
+/* NNCMessageViewController.setSelectedButton: | 0x1000eea30 | ev_dfe73ef4ca75baceda2e408a21774b0f62586353f09c88e111f9a816c022d1c2 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMessageViewController::setSelectedButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__selectedButton) = param_3;
+  return;
+}
+
+
+
+/* NNCMessageViewController.leftRedView | 0x1000eea44 | ev_d4e4db859e0f145d3333cc5b87aecb34fff3d204e90fd8d1686a8e8440975ad3 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMessageViewController::leftRedView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__leftRedView);
+}
+
+
+
+/* NNCMessageViewController.setLeftRedView: | 0x1000eea54 | ev_dd92fed93ebb20e46cf9f2c989249296d498987aa17f782fed0844899af2a7aa */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMessageViewController::setLeftRedView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__leftRedView) = param_3;
+  return;
+}
+
+
+
+/* NNCMessageViewController.rigthRedView | 0x1000eea68 | ev_49d40bddcff5ac03beb5c74709993f180f77517ded0ab47f18ff1771c8ce95ae */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMessageViewController::rigthRedView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__rigthRedView);
+}
+
+
+
+/* NNCMessageViewController.setRigthRedView: | 0x1000eea78 | ev_e13001423f671f042f6fafa9e2f6a3f2d032012e2d2676af9f4a6c6f2aa408e0 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMessageViewController::setRigthRedView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__rigthRedView) = param_3;
+  return;
+}
+
+
+
+/* NNCMessageViewController..cxx_destruct | 0x1000eea8c | ev_ad7b2a0555fd277f9f6659ec918b88e6f308e4d00c899eec5f82e2f8c1c9839c */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCMessageViewController::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__rigthRedView) = 0;
+  *(undefined8 *)(param_1 + (long)__leftRedView) = 0;
+  _objc_destroyWeak(param_1 + (long)__selectedButton);
+  *(undefined8 *)(param_1 + (long)__selectedLine) = 0;
+  *(undefined8 *)(param_1 + (long)__scrollView) = 0;
+  *(undefined8 *)(param_1 + (long)__headerView) = 0;
+  return;
+}
+
+

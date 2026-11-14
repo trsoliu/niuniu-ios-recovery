@@ -1,0 +1,218 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCVideoToastView.initWithFrame: | 0x1000d8d14 | ev_653f6fc49e207933ab7ac495de35494d5f57539b90e2ba423de42620918c211d */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x30 bytes */
+
+ID NNCVideoToastView::initWithFrame_(ID param_1,SEL param_2,CGRect param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined1 auVar2 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCVideoToastView;
+  local_40 = param_1;
+  auVar2 = _objc_msgSendSuper2(param_3.field0_0x0.field0_0x0,param_3.field0_0x0.field1_0x8,
+                               param_3.field1_0x10.field0_0x0,param_3.field1_0x10.field1_0x8,
+                               &local_40,"initWithFrame:");
+  IVar1 = auVar2._0_8_;
+  if (IVar1 != 0) {
+    FUN_1015d6f48(IVar1,auVar2._8_8_,1);
+    FUN_1015c6148(IVar1,extraout_x1,1);
+    auVar2 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_00,0xffffff);
+    FUN_1015d6fa8(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_01,0);
+    FUN_1015a5908(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101531668(0x4026000000000000,&_OBJC_CLASS___UIFont);
+    FUN_1015b4788(IVar1,auVar2._8_8_,auVar2._0_8_);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCVideoToastView.showContent:inView: | 0x1000d8e08 | ev_6b30935776ad5d9e57d932cd2d0f6eded2bc0a465682e2baf54c4905fdabfebc */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCVideoToastView::showContent_inView_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  ID IVar1;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  double dVar4;
+  undefined1 auVar5 [16];
+  
+  FUN_1015eaa08(param_1);
+  uVar2 = FUN_101574da8(param_1);
+  uVar3 = FUN_1015319c8(param_1);
+  FUN_101593bc8(param_1,extraout_x1);
+  FUN_1015d6f08(param_1);
+  FUN_1015e3aa8(param_1);
+  dVar4 = (double)FUN_1015fc468(param_1);
+  FUN_1015dd9c8(dVar4 + 6.0,param_1);
+  dVar4 = (double)FUN_10155e568(param_1);
+  FUN_1015b6f28(dVar4 + 6.0,param_1);
+  IVar1 = FUN_101574688(param_1,extraout_x1_00);
+  FUN_1015ac5e8(0x4008000000000000,IVar1);
+  IVar1 = FUN_101574688(param_1,extraout_x1_01);
+  FUN_1015c25a8(IVar1);
+  FUN_1015a76a8(uVar3,param_1);
+  FUN_1015bfa48(uVar2,param_1);
+  FUN_101527148(param_4,extraout_x1_02,param_1);
+  auVar5 = FUN_1015eff68(0x4008000000000000,&_OBJC_CLASS___NSTimer,extraout_x1_03,param_1,
+                         "timerSelector:",0,0);
+  FUN_1015d7b88(param_1,auVar5._8_8_,auVar5._0_8_);
+  uVar2 = FUN_101543368(&_OBJC_CLASS___NSRunLoop);
+  auVar5 = FUN_1015efce8(param_1);
+  FUN_1015273c8(uVar2,auVar5._8_8_,auVar5._0_8_,*(undefined8 *)PTR__NSRunLoopCommonModes_101d783f8);
+  return;
+}
+
+
+
+/* NNCVideoToastView.nnconRotationEnd | 0x1000d8fd0 | ev_828aca4e429e938fbaf90e48c0e68e98a7b25f54ac1cd0fa02bf2a15819d893a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoToastView::nnconRotationEnd(ID param_1,SEL param_2)
+
+{
+  long lVar1;
+  undefined1 auVar2 [16];
+  
+  lVar1 = FUN_1015ec948();
+  if (lVar1 != 0) {
+    auVar2 = FUN_1015ec948(param_1);
+    FUN_1015326c8(auVar2._0_8_,auVar2._8_8_,param_1);
+    return;
+  }
+  return;
+}
+
+
+
+/* NNCVideoToastView.timerSelector: | 0x1000d9030 | ev_722acdc655b58564b060be06ade2ede0245443f88f0b2bec2d44c02613c40f1b */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoToastView::timerSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  SEL extraout_x1;
+  
+  FUN_1015eaa08();
+  FUN_101593bc8(param_1,extraout_x1);
+  return;
+}
+
+
+
+/* NNCVideoToastView.dealloc | 0x1000d9054 | ev_1c10cac7d2c59030ded26e3d23f6eb832869d42bb4fcf75feb2f040e845dfb37 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoToastView::dealloc(ID param_1,SEL param_2)
+
+{
+  ID local_30;
+  class_t *pcStack_28;
+  
+  FUN_1015eaa08();
+  pcStack_28 = &objc::class_t::NNCVideoToastView;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"dealloc");
+  return;
+}
+
+
+
+/* NNCVideoToastView.stopTimer | 0x1000d9098 | ev_795dd1983a08d48300cd9b70307ae55b0320fcc481d5a60a74975070591e2339 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoToastView::stopTimer(ID param_1,SEL param_2)
+
+{
+  long lVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  
+  lVar1 = FUN_1015efce8();
+  if (lVar1 != 0) {
+    uVar2 = FUN_1015efce8(param_1);
+    FUN_10156ad28(uVar2);
+    FUN_1015d7b88(param_1,extraout_x1,0);
+    return;
+  }
+  return;
+}
+
+
+
+/* NNCVideoToastView.timer | 0x1000d9100 | ev_a8827bd1c7fcb6fe600f411fbe265849c865e6631cb32e8782316b1c1538db57 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoToastView::timer(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__timer);
+}
+
+
+
+/* NNCVideoToastView.setTimer: | 0x1000d9110 | ev_a63503ce38e81998d5347ae266dc97afda490f45a8a69255388e52c3aa78092c */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoToastView::setTimer_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__timer) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoToastView..cxx_destruct | 0x1000d9124 | ev_09851389845211490a62bcd3a39c0f21a1cb6423d048fb2a70db76ac34a42289 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoToastView::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__timer) = 0;
+  return;
+}
+
+

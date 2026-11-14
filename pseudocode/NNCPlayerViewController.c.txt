@@ -1,0 +1,199 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCPlayerViewController.initWithUrl: | 0x1000b5708 | ev_dee5f2aa6c5fa7de68f22f3dbf7bb9ad856278df0ec6b241ac58e5aa114aec86 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCPlayerViewController::initWithUrl_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  long lVar4;
+  undefined1 auVar5 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCPlayerViewController;
+  local_40 = param_1;
+  auVar5 = _objc_msgSendSuper2(&local_40,"init");
+  IVar1 = auVar5._0_8_;
+  if (IVar1 != 0) {
+    auVar5 = FUN_1015521c8(&_OBJC_CLASS___NSURL,auVar5._8_8_,param_3);
+    uVar2 = FUN_10158bfe8(&_OBJC_CLASS___AVPlayer,auVar5._8_8_,auVar5._0_8_);
+    lVar4 = (long)__player;
+    uVar3 = *(undefined8 *)(IVar1 + lVar4);
+    *(undefined8 *)(IVar1 + lVar4) = uVar2;
+    FUN_10158a5e8(uVar3,*(undefined8 *)(IVar1 + lVar4));
+  }
+  return IVar1;
+}
+
+
+
+/* NNCPlayerViewController.shouldAutorotate | 0x1000b57d0 | ev_1ae3a7cc6215838eed5720acb3ebccc3e5986e6086b54b7fa6b67e8ebf3f09f6 */
+
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCPlayerViewController::shouldAutorotate(ID param_1,SEL param_2)
+
+{
+  return 1;
+}
+
+
+
+/* NNCPlayerViewController.viewDidLoad | 0x1000b57d8 | ev_d9f0ae816b522c564a9c16acb6eddceb600266fd1859aeb0d50533cb4dbbc6f6 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCPlayerViewController::viewDidLoad(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  long lVar2;
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCPlayerViewController;
+  local_40 = param_1;
+  _objc_msgSendSuper2(&local_40,"viewDidLoad");
+  FUN_101531348(&_OBJC_CLASS___UIColor);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1);
+  FUN_1015a5908(IVar1);
+  IVar1 = FUN_101574688((ID)&_OBJC_CLASS___AVPlayerLayer,extraout_x1_00);
+  lVar2 = (long)__playerLayer;
+  *(ID *)(param_1 + lVar2) = IVar1;
+  FUN_1015c9148(*(undefined8 *)(param_1 + lVar2));
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_01);
+  IVar1 = FUN_101574688(IVar1,extraout_x1_02);
+  FUN_1015270e8(IVar1);
+  return;
+}
+
+
+
+/* NNCPlayerViewController.viewWillLayoutSubviews | 0x1000b58e0 | ev_acd27338e6cc313e7c37eab85963762eae04da71f1e2026477f03d2b63d94ee1 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCPlayerViewController::viewWillLayoutSubviews(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  SEL extraout_x1;
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCPlayerViewController;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"viewWillLayoutSubviews");
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1);
+  FUN_101531d88(IVar1);
+  FUN_1015b4b08(*(undefined8 *)(param_1 + (long)__playerLayer));
+  return;
+}
+
+
+
+/* NNCPlayerViewController.preferredStatusBarStyle | 0x1000b5950 | ev_e8c8a7d44bfb4fb98ba84d114edad05e52da07ca9c904871d398e1e0f16bd109 */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long NNCPlayerViewController::preferredStatusBarStyle(ID param_1,SEL param_2)
+
+{
+  return 1;
+}
+
+
+
+/* NNCPlayerViewController.player | 0x1000b5958 | ev_582c3a4b23bcf8ef7e0116d1952e3f38ad0bc5ac901066891ed825d2a1990c23 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCPlayerViewController::player(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__player);
+}
+
+
+
+/* NNCPlayerViewController.setPlayer: | 0x1000b5968 | ev_93e0e6b7ddd65a9efcc4334aa585a4b7d4058a2001b2b23dd54e74514f39beb4 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCPlayerViewController::setPlayer_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__player) = param_3;
+  return;
+}
+
+
+
+/* NNCPlayerViewController.playerLayer | 0x1000b597c | ev_c1f41709b89b34310512b9246b0a47948ee8c285793e91b53ff4430eb9393d71 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCPlayerViewController::playerLayer(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__playerLayer);
+}
+
+
+
+/* NNCPlayerViewController.setPlayerLayer: | 0x1000b598c | ev_e0fba6ae3866c4902865609d279407992d423cfb5d842fd5856ef3cbb3d5d4e5 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCPlayerViewController::setPlayerLayer_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__playerLayer) = param_3;
+  return;
+}
+
+
+
+/* NNCPlayerViewController..cxx_destruct | 0x1000b59a0 | ev_ce4f505f6f01cbed31ee7ebbaaf05eccf9ebdac41574d5ba32e0f3126eccd383 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCPlayerViewController::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__playerLayer) = 0;
+  *(undefined8 *)(param_1 + (long)__player) = 0;
+  return;
+}
+
+

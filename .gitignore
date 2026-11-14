@@ -1,0 +1,23 @@
+# Source IPA, signing and device/account artifacts stay local.
+*.ipa
+*.app/
+*.dylib
+*.framework/
+*.mobileprovision
+*.provisionprofile
+*.p12
+*.pfx
+*.pem
+*.key
+*.cer
+*.xcarchive/
+*.snapshot
+.DS_Store
+__pycache__/
+node_modules/
+DerivedData*/
+.env
+.env.*
+private/
+local-tools/
+raw-logs/

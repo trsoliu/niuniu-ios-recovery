@@ -1,0 +1,415 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCFileHistoryManager.sharedInstance | 0x1000b0164 | ev_0864d182adbe2296710872b115ae39034f27c053833fb0962b6ff423c6ed6bc1 */
+
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileHistoryManager::sharedInstance(ID param_1,SEL param_2)
+
+{
+  undefined *local_38;
+  undefined8 local_30;
+  code *local_28;
+  undefined *puStack_20;
+  ID local_18;
+  
+  local_38 = PTR___NSConcreteStackBlock_101d78760;
+  local_30 = 0xc0000000;
+  local_28 = FUN_1000b01d8;
+  puStack_20 = &UNK_101d7b650;
+  if (lRam000000010243f188 != -1) {
+    local_18 = param_1;
+    _dispatch_once(0x10243f188,&local_38);
+  }
+  return IRam000000010243f180;
+}
+
+
+
+/* NNCFileHistoryManager.init | 0x1000b0214 | ev_5e54b0484c99dbf98aeb6ed06890fdd43c99bbc1c627f8188739d21f301edab3 */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileHistoryManager::init(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCFileHistoryManager;
+  local_40 = param_1;
+  IVar1 = _objc_msgSendSuper2(&local_40,"init");
+  if (IVar1 != 0) {
+    uVar2 = *(undefined8 *)PTR____NSArray0___101d78908;
+    auVar3 = FUN_10157e1c8(uVar2);
+    FUN_1015b7248(IVar1,auVar3._8_8_,auVar3._0_8_);
+    auVar3 = FUN_10157e1c8(uVar2);
+    FUN_1015a8e08(IVar1,auVar3._8_8_,auVar3._0_8_);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCFileHistoryManager.addListener: | 0x1000b02b0 | ev_bd6258c863d1847300e9fbc8dd68bbc3f814c364a679b652ad486b9f3ca9de38 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileHistoryManager::addListener_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  undefined1 auVar2 [16];
+  
+  auVar1 = FUN_1015813c8(&objc::class_t::NNCFileHistoryUpdateModel);
+  FUN_1015a8de8(auVar1._0_8_,auVar1._8_8_,param_3);
+  auVar2 = FUN_101536ac8(param_1);
+  FUN_101526528(auVar2._0_8_,auVar2._8_8_,auVar1._0_8_);
+  return;
+}
+
+
+
+/* NNCFileHistoryManager.getHistoryArrayList | 0x1000b032c | ev_20aa5b09f4b8c3a4bed598db45a3be8c30613f74910744660d209593fbbca206 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileHistoryManager::getHistoryArrayList(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  
+                    /* WARNING: Could not recover jumptable at 0x00010155ee58. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  IVar1 = (*(code *)PTR__objc_msgSend_101d78f58)(param_1,"historyArrayList");
+  return IVar1;
+}
+
+
+
+/* NNCFileHistoryManager.notifyUpdate | 0x1000b0330 | ev_ac70124c6da921d6f0bdc0fb20e94c23e679d5da53d8de5bd04c5c44f8bedffd */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCFileHistoryManager::notifyUpdate(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x1;
+  undefined8 uVar4;
+  long lVar5;
+  long lVar6;
+  undefined1 auVar7 [16];
+  undefined8 local_120;
+  long lStack_118;
+  long *local_110;
+  undefined8 uStack_108;
+  undefined8 local_100;
+  undefined8 uStack_f8;
+  undefined8 uStack_f0;
+  undefined8 uStack_e8;
+  undefined1 auStack_d8 [128];
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  lStack_118 = 0;
+  local_120 = 0;
+  uStack_108 = 0;
+  local_110 = (long *)0x0;
+  uStack_f8 = 0;
+  local_100 = 0;
+  uStack_e8 = 0;
+  uStack_f0 = 0;
+  auVar7 = FUN_101536ac8();
+  uVar1 = auVar7._0_8_;
+  lVar2 = FUN_10153f948(uVar1,auVar7._8_8_,&local_120,auStack_d8,0x10);
+  if (lVar2 != 0) {
+    lVar5 = *local_110;
+    do {
+      lVar6 = 0;
+      do {
+        if (*local_110 != lVar5) {
+          _objc_enumerationMutation(uVar1);
+        }
+        uVar4 = *(undefined8 *)(lStack_118 + lVar6 * 8);
+        auVar7 = FUN_101536a28(uVar4);
+        uVar3 = auVar7._8_8_;
+        if (auVar7._0_8_ != 0) {
+          uVar3 = FUN_101536a28(uVar4);
+          FUN_101581d68(uVar3);
+          uVar3 = extraout_x1;
+        }
+        lVar6 = lVar6 + 1;
+      } while (lVar2 != lVar6);
+      lVar2 = FUN_10153f948(uVar1,uVar3,&local_120,auStack_d8,0x10);
+    } while (lVar2 != 0);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_58) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCFileHistoryManager.updateHistory: | 0x1000b0460 | ev_57fe6e16f8a38afa509ce7775c1f9a7c2771a600f6233899af340490489012f0 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileHistoryManager::updateHistory_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_1015e11a8(&objc::class_t::NNCInitManager);
+  FUN_101581c48(auVar1._0_8_,auVar1._8_8_,param_3,0);
+  FUN_101559128(param_1);
+  return;
+}
+
+
+
+/* NNCFileHistoryManager.getSingleHistory: | 0x1000b04cc | ev_c47d2fc3a9c1341538d9f2e1a81a2d2682d535ee54eb1625934406abb2f79e61 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x14 bytes */
+
+ID NNCFileHistoryManager::getSingleHistory_(ID param_1,SEL param_2,int param_3)
+
+{
+  int iVar1;
+  ID IVar2;
+  long lVar3;
+  undefined8 extraout_x1;
+  ID IVar4;
+  long lVar5;
+  long lVar6;
+  undefined8 local_120;
+  long lStack_118;
+  long *local_110;
+  undefined8 uStack_108;
+  undefined8 local_100;
+  undefined8 uStack_f8;
+  undefined8 uStack_f0;
+  undefined8 uStack_e8;
+  undefined1 auStack_d8 [128];
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  lStack_118 = 0;
+  local_120 = 0;
+  uStack_108 = 0;
+  local_110 = (long *)0x0;
+  uStack_f8 = 0;
+  local_100 = 0;
+  uStack_e8 = 0;
+  uStack_f0 = 0;
+  IVar2 = FUN_10155ee48(param_1,param_2);
+  lVar3 = FUN_10153f948();
+  if (lVar3 != 0) {
+    lVar5 = *local_110;
+    do {
+      lVar6 = 0;
+      do {
+        if (*local_110 != lVar5) {
+          _objc_enumerationMutation(IVar2);
+        }
+        IVar4 = *(ID *)(lStack_118 + lVar6 * 8);
+        iVar1 = FUN_1015f8fe8(IVar4);
+        if (iVar1 == param_3) goto LAB_1000b05a8;
+        lVar6 = lVar6 + 1;
+      } while (lVar3 != lVar6);
+      lVar3 = FUN_10153f948(IVar2,extraout_x1,&local_120,auStack_d8,0x10);
+    } while (lVar3 != 0);
+  }
+  IVar4 = 0;
+LAB_1000b05a8:
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_58) {
+    IVar2 = FUN_100ab8e90(0);
+    return IVar2;
+  }
+  return IVar4;
+}
+
+
+
+/* NNCFileHistoryManager.deleteHistory: | 0x1000b05ec | ev_d239f80bc858e7e29f13346d39ac306c02a47b4dae87547df9e0f3aa4a910a88 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileHistoryManager::deleteHistory_(ID param_1,SEL param_2,ID param_3)
+
+{
+  long lVar1;
+  undefined8 extraout_x1;
+  undefined8 uVar2;
+  long lVar3;
+  long lVar4;
+  undefined1 auVar5 [16];
+  undefined8 local_130;
+  long lStack_128;
+  long *local_120;
+  undefined8 uStack_118;
+  undefined8 local_110;
+  undefined8 uStack_108;
+  undefined8 uStack_100;
+  undefined8 uStack_f8;
+  undefined1 auStack_e8 [128];
+  long local_68;
+  
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  lStack_128 = 0;
+  local_130 = 0;
+  uStack_118 = 0;
+  local_120 = (long *)0x0;
+  uStack_108 = 0;
+  local_110 = 0;
+  uStack_f8 = 0;
+  uStack_100 = 0;
+  lVar1 = FUN_10153f948(param_3,param_2,&local_130,auStack_e8,0x10);
+  if (lVar1 != 0) {
+    lVar3 = *local_120;
+    do {
+      lVar4 = 0;
+      do {
+        if (*local_120 != lVar3) {
+          _objc_enumerationMutation(param_3);
+        }
+        uVar2 = *(undefined8 *)(lStack_128 + lVar4 * 8);
+        auVar5 = FUN_1015e11a8(&objc::class_t::NNCInitManager);
+        FUN_101546c68(auVar5._0_8_,auVar5._8_8_,uVar2);
+        lVar4 = lVar4 + 1;
+      } while (lVar1 != lVar4);
+      lVar1 = FUN_10153f948(param_3,extraout_x1,&local_130,auStack_e8,0x10);
+    } while (lVar1 != 0);
+  }
+  FUN_101559128(param_1);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_68) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCFileHistoryManager.getNewestHistoryList | 0x1000b0718 | ev_665eafaf94a229dcdb33d5dc8d0310f7c544e7cab10a3a6713b242617a960321 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCFileHistoryManager::getNewestHistoryList(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  SEL extraout_x1;
+  undefined1 auVar2 [16];
+  
+  IVar1 = FUN_10155ee48(param_1,param_2);
+  FUN_101593248(IVar1);
+  IVar1 = FUN_10155ee48(param_1,extraout_x1);
+  auVar2 = FUN_1015e11a8(&objc::class_t::NNCInitManager);
+  auVar2 = FUN_101558368(auVar2._0_8_,auVar2._8_8_,0x32);
+  FUN_101526548(IVar1,auVar2._8_8_,auVar2._0_8_);
+  FUN_101582b28(param_1);
+  return;
+}
+
+
+
+/* NNCFileHistoryManager.historyArrayList | 0x1000b07c0 | ev_429ab77cca5c53fff39430bbb7650a40e3720fa6a681d3a2e8db92cdb362914f */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileHistoryManager::historyArrayList(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* NNCFileHistoryManager.setHistoryArrayList: | 0x1000b07c8 | ev_d4cc2a9e59cf73cd354c7a5d4333a3c64ebc22c2974e9b55eb7e2e13f2e31f8c */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileHistoryManager::setHistoryArrayList_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCFileHistoryManager.callbackArrayList | 0x1000b07d4 | ev_ffd379b5b9b16ee7a24873a3ecb0221b257b6c417d17f2f91df6d9914a9d5bf4 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileHistoryManager::callbackArrayList(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCFileHistoryManager.setCallbackArrayList: | 0x1000b07dc | ev_0836f7c4d8f6902dd6bf2ca36a8fe6e15b154726d454b1ea02dbafed452fcfde */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileHistoryManager::setCallbackArrayList_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCFileHistoryManager..cxx_destruct | 0x1000b07e8 | ev_71ac3934a61f1613ecf7c22ca35616d8dfe48c6e169cf2f6d26c3107b57e2618 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCFileHistoryManager::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

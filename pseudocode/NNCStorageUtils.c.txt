@@ -1,0 +1,32 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCStorageUtils.getSizeStr: | 0x1000049f8 | ev_5713782ad2c8f34fddcf6530cc225b357e400ccc28b36abb31358ea2fa8fd674 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCStorageUtils::getSizeStr_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  ID IVar1;
+  cfstringStruct *pcVar2;
+  
+  if ((long)param_3 < 0x400) {
+    pcVar2 = &cf___fB;
+  }
+  else if (param_3 >> 0x14 == 0) {
+    pcVar2 = &cf___fKB;
+  }
+  else if (param_3 >> 0x1e == 0) {
+    pcVar2 = &cf___1fMB;
+  }
+  else {
+    pcVar2 = &cf___1fGB;
+  }
+  IVar1 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,param_2,pcVar2);
+  return IVar1;
+}
+
+

@@ -1,0 +1,180 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCENRequest.request | 0x10003de70 | ev_5edf1e62a93f187b80f9bd1db9f837a6136399a81df67052753bff0b5b288b6f */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCENRequest::request(ID param_1,SEL param_2)
+
+{
+  if (IRam000000010243efc0 == 0) {
+    _objc_alloc(param_1);
+    IRam000000010243efc0 = FUN_101567ae8(0x4024000000000000);
+  }
+  return IRam000000010243efc0;
+}
+
+
+
+/* NNCENRequest.initWithTimeout: | 0x10003debc | ev_fd2cf981bb222c1e165be6f39381cc4a52713d6a81b5244c3602786f39df6799 */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCENRequest::initWithTimeout_(ID param_1,SEL param_2,double param_3)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar4 [16];
+  ID local_60;
+  class_t *pcStack_58;
+  
+  pcStack_58 = &objc::class_t::NNCENRequest;
+  local_60 = param_1;
+  IVar1 = _objc_msgSendSuper2(&local_60,"init");
+  if (IVar1 != 0) {
+    auVar4 = _objc_alloc(&objc::class_t::AFHTTPSessionManager);
+    auVar4 = FUN_101563ac8(auVar4._0_8_,auVar4._8_8_,0);
+    FUN_1015be568(IVar1,auVar4._8_8_,auVar4._0_8_);
+    uVar2 = FUN_10159fe68(&objc::class_t::AFJSONRequestSerializer);
+    auVar4 = FUN_101572e68(IVar1);
+    FUN_1015ccf88(auVar4._0_8_,auVar4._8_8_,uVar2);
+    uVar2 = FUN_101572e68(IVar1);
+    uVar2 = FUN_101596bc8(uVar2);
+    FUN_1015d7b48(param_3,uVar2);
+    uVar2 = FUN_1015de1c8(&_OBJC_CLASS___NSSet,extraout_x1,&cf_GET);
+    uVar3 = FUN_101572e68(IVar1);
+    auVar4 = FUN_101596bc8(uVar3);
+    FUN_1015b6268(auVar4._0_8_,auVar4._8_8_,uVar2);
+    uVar2 = FUN_10159fe68(&objc::class_t::AFHTTPResponseSerializer);
+    auVar4 = FUN_101572e68(IVar1);
+    FUN_1015cd7e8(auVar4._0_8_,auVar4._8_8_,uVar2);
+    uVar2 = FUN_1015de1c8(&_OBJC_CLASS___NSSet,extraout_x1_00,&cf_application_json);
+    uVar3 = FUN_101572e68(IVar1);
+    auVar4 = FUN_101598328(uVar3);
+    FUN_1015a0a48(auVar4._0_8_,auVar4._8_8_,uVar2);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCENRequest.requestWithGET:parameters:success:failure: | 0x10003e114 | ev_31e30a87fefe50166cbb13ceab6f332ba2e92904fc8be4240a52636aa91e95af */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x30 bytes */
+
+ID NNCENRequest::requestWithGET_parameters_success_failure_
+             (ID param_1,SEL param_2,ID param_3,ID param_4,ID param_5,uint param_6,ID param_7,
+             undefined4 param_8)
+
+{
+  ID IVar1;
+  undefined1 auVar2 [16];
+  undefined *local_90;
+  undefined8 local_88;
+  code *local_80;
+  undefined *puStack_78;
+  ulong local_70;
+  undefined *puStack_68;
+  undefined8 local_60;
+  code *local_58;
+  undefined *puStack_50;
+  ID local_48;
+  
+  auVar2 = FUN_101572e68(param_1);
+  puStack_68 = PTR___NSConcreteStackBlock_101d78760;
+  local_60 = 0xc2000000;
+  local_58 = FUN_10003e264;
+  puStack_50 = &UNK_101d7bb20;
+  local_90 = PTR___NSConcreteStackBlock_101d78760;
+  local_88 = 0xc2000000;
+  local_80 = FUN_10003e46c;
+  puStack_78 = &UNK_101d7ba90;
+  local_70 = (ulong)param_6;
+  local_48 = param_5;
+  IVar1 = FUN_101503968(auVar2._0_8_,auVar2._8_8_,param_3,param_4,0,0,&puStack_68,&local_90);
+  return IVar1;
+}
+
+
+
+/* NNCENRequest.jsonResponseManager | 0x10003e478 | ev_ce40f3c7d66e374450fa9b6ee51c6906a8969c2fe8dfc2d2282d71f45a3e730a */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCENRequest::jsonResponseManager(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* NNCENRequest.setJsonResponseManager: | 0x10003e480 | ev_8267ef4608dfe78110dd5eef849f3f51194fde10374ed10f7fc949c32cb07d21 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCENRequest::setJsonResponseManager_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCENRequest.firstJsonResponseManager | 0x10003e48c | ev_52e54684047439bc8a6434329f2cd100699829f3f93a78662fd8c4b3790f23b2 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCENRequest::firstJsonResponseManager(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCENRequest.setFirstJsonResponseManager: | 0x10003e494 | ev_d95a588eaee8d6cc5bca257b8f02e65e9cedd429f8b75446e0660fc6bcfdb253 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCENRequest::setFirstJsonResponseManager_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCENRequest..cxx_destruct | 0x10003e4a0 | ev_33d1250a4fba7ee1917606c38f3cac3f0b5a9330e39bd56502a9b314c3cffffd */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCENRequest::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

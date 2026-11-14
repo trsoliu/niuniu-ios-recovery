@@ -1,0 +1,183 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCSpSourceEpisodeModel.modelWithDict: | 0x100085fb4 | ev_b6db6851c463b5191a87ebc1b2636b3d1e180320c437e0a25c05c00590a52cf1 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCSpSourceEpisodeModel::modelWithDict_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined1 auVar3 [16];
+  
+  auVar3 = FUN_1015813c8(&objc::class_t::NNCSpSourceEpisodeModel);
+  IVar1 = auVar3._0_8_;
+  uVar2 = FUN_101582d28(param_3,auVar3._8_8_,&cf_cur_time);
+  auVar3 = FUN_101578508(uVar2);
+  FUN_1015ad468(IVar1,auVar3._8_8_,auVar3._0_8_);
+  uVar2 = FUN_101582d28(param_3,extraout_x1,&cf_id);
+  auVar3 = FUN_1015698a8(uVar2);
+  FUN_1015d37c8(IVar1,auVar3._8_8_,auVar3._0_8_);
+  uVar2 = FUN_101582d28(param_3,extraout_x1_00,&cf_vod_id);
+  auVar3 = FUN_1015698a8(uVar2);
+  FUN_1015d37e8(IVar1,auVar3._8_8_,auVar3._0_8_);
+  uVar2 = FUN_101582d28(param_3,extraout_x1_01,&cf_collection);
+  auVar3 = FUN_1015698a8(uVar2);
+  FUN_1015aaea8(IVar1,auVar3._8_8_,auVar3._0_8_);
+  auVar3 = FUN_1015ebae8(param_3,extraout_x1_02,&cf_vod_token);
+  FUN_1015dce88(IVar1,auVar3._8_8_,auVar3._0_8_);
+  return IVar1;
+}
+
+
+
+/* NNCSpSourceEpisodeModel.curTime | 0x100086100 | ev_2b1ea00666b3e86a5018caf5b44941ebbcfbefe1e7be69921dadd94d18e17fd6 */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long NNCSpSourceEpisodeModel::curTime(ID param_1,SEL param_2)
+
+{
+  return *(long_long *)(param_1 + 0x18);
+}
+
+
+
+/* NNCSpSourceEpisodeModel.setCurTime: | 0x100086108 | ev_20d9d89c06efe153db663b49a224ee87b91846227e45a39362aa91b5892d169e */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCSpSourceEpisodeModel::setCurTime_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  *(long_long *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* NNCSpSourceEpisodeModel.spEpisodeId | 0x100086110 | ev_34423e05887f7413407dd64176f9a89ffadb9b1b0d767c1c0adb3db0304552eb */
+
+/* Function Stack Size: 0x10 bytes */
+
+int NNCSpSourceEpisodeModel::spEpisodeId(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 8);
+}
+
+
+
+/* NNCSpSourceEpisodeModel.setSpEpisodeId: | 0x100086118 | ev_768fe85d87a1bd40979623f0a579db0cfb611156c7062674cbe621a1e7074d18 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void NNCSpSourceEpisodeModel::setSpEpisodeId_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCSpSourceEpisodeModel.spSourceVodId | 0x100086120 | ev_6d0f0e7c633dccc8bbcdaa9bce9e7b1581755a3da76ae25487ff871b59ee3158 */
+
+/* Function Stack Size: 0x10 bytes */
+
+int NNCSpSourceEpisodeModel::spSourceVodId(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 0xc);
+}
+
+
+
+/* NNCSpSourceEpisodeModel.setSpSourceVodId: | 0x100086128 | ev_1f1965b61c6a9eb234d27c8f258e11ab2cf3361cbe0e37f9d0f6360d10529f6e */
+
+/* Function Stack Size: 0x14 bytes */
+
+void NNCSpSourceEpisodeModel::setSpSourceVodId_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 0xc) = param_3;
+  return;
+}
+
+
+
+/* NNCSpSourceEpisodeModel.vodToken | 0x100086130 | ev_03c50fd8540e957cdba926b3f23c86ed49ce3b66ae7ab38a9bfb1525ac6c5363 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCSpSourceEpisodeModel::vodToken(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x20);
+}
+
+
+
+/* NNCSpSourceEpisodeModel.setVodToken: | 0x100086138 | ev_984cb78ddf029b120978a992062b459955915124ab59123705170f906865168d */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCSpSourceEpisodeModel::setVodToken_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x20) = param_3;
+  return;
+}
+
+
+
+/* NNCSpSourceEpisodeModel.collection | 0x100086140 | ev_6edfcb52ea0e159cb649a5226a9f5716e5f69181495a6bf79d88747bc5bae0ec */
+
+/* Function Stack Size: 0x10 bytes */
+
+int NNCSpSourceEpisodeModel::collection(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 0x10);
+}
+
+
+
+/* NNCSpSourceEpisodeModel.setCollection: | 0x100086148 | ev_a213ac10bc718f55012a31a183c3970b535efea0bd0eff801f17f13c4ba3825a */
+
+/* Function Stack Size: 0x14 bytes */
+
+void NNCSpSourceEpisodeModel::setCollection_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCSpSourceEpisodeModel..cxx_destruct | 0x100086150 | ev_85b46910233fb6b949c0c6f61a52970d6b3b4ab8164c78487a557efe4c0fa639 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCSpSourceEpisodeModel::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x20) = 0;
+  return;
+}
+
+

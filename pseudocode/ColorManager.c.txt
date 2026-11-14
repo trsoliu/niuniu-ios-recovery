@@ -1,0 +1,50 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* ColorManager.sharedManager | 0x1000a8eb0 | ev_799daa17e69a68d3a7775d0258c89693e1342cb529ee1f75ff4356a177344c7a */
+
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID ColorManager::sharedManager(ID param_1,SEL param_2)
+
+{
+  if (lRam000000010243f148 != -1) {
+    _dispatch_once(0x10243f148,&PTR___NSConcreteGlobalBlock_101d7d7d0);
+  }
+  return IRam000000010243f140;
+}
+
+
+
+/* ColorManager.bgColo | 0x1000a8f20 | ev_e210dfcf81614d6cdd44376dd8e70860e303408197964b128afea85fe264e9e9 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID ColorManager::bgColo(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_10153c088(0x3fceb851eb851eb8,0x3fe0f5c28f5c28f6,0x3feeb851eb851eb8,0x3ff0000000000000,
+                        &_OBJC_CLASS___UIColor);
+  return IVar1;
+}
+
+
+
+/* ColorManager.titleColo | 0x1000a8f48 | ev_b0fa0444926c5af8756047326241dd2946b588154d30ca05e0fddc988c2a618a */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID ColorManager::titleColo(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_10153c088(0x3fceb851eb851eb8,0x3fe0f5c28f5c28f6,0x3feeb851eb851eb8,0x3ff0000000000000,
+                        &_OBJC_CLASS___UIColor);
+  return IVar1;
+}
+
+

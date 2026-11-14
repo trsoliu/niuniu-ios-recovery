@@ -1,0 +1,215 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NetURLSchemeHandler.init | 0x100080bc4 | ev_d21b8139e3d6268d1c0da1054714ef5c922f6b718f9af79128de1d65f55e2411 */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NetURLSchemeHandler::init(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined1 auVar2 [16];
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NetURLSchemeHandler;
+  local_30 = param_1;
+  IVar1 = _objc_msgSendSuper2(&local_30,"init");
+  if (IVar1 != 0) {
+    _objc_alloc(&_OBJC_CLASS___NSHashTable);
+    auVar2 = FUN_101561e88();
+    FUN_1015b6ac8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  }
+  return IVar1;
+}
+
+
+
+/* NetURLSchemeHandler.webView:startURLSchemeTask: | 0x100080c34 | ev_026b9e2f85dd1e9375c34145a042c496313075932298d0d62575186c4199cd57 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NetURLSchemeHandler::webView_startURLSchemeTask_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined1 auVar3 [16];
+  undefined1 auVar4 [16];
+  
+  uVar2 = FUN_101542aa8(&_OBJC_CLASS___UIDevice);
+  auVar3 = FUN_1015ed908(uVar2);
+  iVar1 = FUN_10153e4c8(auVar3._0_8_,auVar3._8_8_,&cf_13_);
+  if (iVar1 != 0) {
+    uVar2 = _sel_registerName("_setLoadResourcesSerially:");
+    auVar3 = _NSClassFromString(&cf_WebView);
+    iVar1 = FUN_101598088(auVar3._0_8_,auVar3._8_8_,uVar2);
+    if (iVar1 != 0) {
+      auVar4 = FUN_101582fc8(&_OBJC_CLASS___NSNumber,extraout_x1,0);
+      FUN_101589c08(auVar3._0_8_,auVar4._8_8_,uVar2,auVar4._0_8_);
+    }
+  }
+  auVar3 = FUN_10155dfe8(param_1);
+  FUN_101526528(auVar3._0_8_,auVar3._8_8_,param_4);
+  auVar3 = FUN_1015e1268(&_OBJC_CLASS___NSURLSession);
+  FUN_101596288(param_4,auVar3._8_8_);
+  uVar2 = FUN_101544708(auVar3._0_8_);
+  FUN_101598868(uVar2);
+  return;
+}
+
+
+
+/* NetURLSchemeHandler.webView:stopURLSchemeTask: | 0x100081688 | ev_a20e155a6c468ef0efb369ace8da338257b2cc630b10528b3dce696bf43927a6 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NetURLSchemeHandler::webView_stopURLSchemeTask_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  int iVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_10155dfe8(param_1);
+  iVar1 = FUN_10153e4a8(auVar2._0_8_,auVar2._8_8_,param_4);
+  if (iVar1 != 0) {
+    auVar2 = FUN_10155dfe8(param_1);
+    FUN_1015941c8(auVar2._0_8_,auVar2._8_8_,param_4);
+  }
+  return;
+}
+
+
+
+/* NetURLSchemeHandler.hashTable | 0x10008170c | ev_8210902b6d1fc3a1fa1937933fce9fad51c13e863004b325d77d4b72aa87b597 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NetURLSchemeHandler::hashTable(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NetURLSchemeHandler.setHashTable: | 0x100081714 | ev_18c90e9ddc9fb3c83a63a9d2cc1dc3e1e1636c74ee1ecd425876d8db8b386cdb */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NetURLSchemeHandler::setHashTable_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NetURLSchemeHandler.delegate | 0x100081720 | ev_d5882f2698ae290866370dc4c4bdbab841eecc4b35b9ee60ac072060874442ee */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NetURLSchemeHandler::delegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x18);
+}
+
+
+
+/* NetURLSchemeHandler.setDelegate: | 0x100081738 | ev_76ba383046e5e1c29175bb480a7fd27cd1b7812145bcff9017448d36ebc37672 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NetURLSchemeHandler::setDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* NetURLSchemeHandler.webView | 0x100081744 | ev_52d47899924b77012fdc2926a37f93be00cca5e958927bdc849f974afe59f1d6 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NetURLSchemeHandler::webView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x20);
+}
+
+
+
+/* NetURLSchemeHandler.setWebView: | 0x10008175c | ev_25878407255de4102afa8da0cf63bce7e3a683373b8af0c8158d41dab5ed6382 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NetURLSchemeHandler::setWebView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x20) = param_3;
+  return;
+}
+
+
+
+/* NetURLSchemeHandler.type | 0x100081768 | ev_c96489e4b5f79ca933c0a602fa148ea3daaa5ab66050ce1f0903f3d5aaef29e1 */
+
+/* Function Stack Size: 0x10 bytes */
+
+int NetURLSchemeHandler::type(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 8);
+}
+
+
+
+/* NetURLSchemeHandler.setType: | 0x100081770 | ev_0236eba59d4362a2cd152b3de354824c63327e018b772e714d10f1f2d0b1a27c */
+
+/* Function Stack Size: 0x14 bytes */
+
+void NetURLSchemeHandler::setType_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NetURLSchemeHandler..cxx_destruct | 0x100081778 | ev_dbb97db12f366402bcd1490ae4c4a2a42a3ef0baff63e5b1be16581a8f7ba0b8 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NetURLSchemeHandler::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + 0x20);
+  _objc_destroyWeak(param_1 + 0x18);
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  return;
+}
+
+

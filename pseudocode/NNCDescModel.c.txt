@@ -1,0 +1,70 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCDescModel.title | 0x1000224bc | ev_e209b6c8c3f097eb93f79c07ba796936a23e9c8aee4d80279b5082850bff0cf1 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDescModel::title(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* NNCDescModel.setTitle: | 0x1000224c4 | ev_de0855f776df6bea84ed9cfee9fd071f335959cb2d7f67b46bd54b87cb74541c */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDescModel::setTitle_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCDescModel.content | 0x1000224cc | ev_091af866ad3eebb46ef10ab5e8d623403782c12aec0a900536212796628f0a5e */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDescModel::content(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCDescModel.setContent: | 0x1000224d4 | ev_8286b4ed04d44d1228d4bebc89122a05a893130371a5ea99776b8e5e0bd12986 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDescModel::setContent_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCDescModel..cxx_destruct | 0x1000224dc | ev_fb47f6b499f43ad2c9a09b1f043360895aca6a4fe17c1611b87339cd63e72dac */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDescModel::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

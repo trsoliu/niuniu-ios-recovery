@@ -1,0 +1,523 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCRankView.initWithFrame:typeModel: | 0x100053ad8 | ev_8a3f3189fe15d2724e402343c63965c20422c01086e7ed637782ed5907264f81 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x38 bytes */
+
+ID NNCRankView::initWithFrame_typeModel_(ID param_1,SEL param_2,CGRect param_3,ID param_4)
+
+{
+  ID IVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  SEL extraout_x1_03;
+  SEL extraout_x1_04;
+  SEL extraout_x1_05;
+  SEL extraout_x1_06;
+  undefined8 extraout_x1_07;
+  SEL extraout_x1_08;
+  undefined1 auVar3 [16];
+  undefined *local_a0;
+  undefined8 local_98;
+  code *local_90;
+  undefined *puStack_88;
+  undefined1 auStack_80 [8];
+  undefined1 auStack_78 [8];
+  ID local_70;
+  class_t *pcStack_68;
+  
+  pcStack_68 = &objc::class_t::NNCRankView;
+  local_70 = param_1;
+  IVar1 = _objc_msgSendSuper2(param_3.field0_0x0.field0_0x0,param_3.field0_0x0.field1_0x8,
+                              param_3.field1_0x10.field0_0x0,param_3.field1_0x10.field1_0x8,
+                              &local_70,"initWithFrame:");
+  if (IVar1 != 0) {
+    auVar3 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+    FUN_1015ae568(IVar1,auVar3._8_8_,auVar3._0_8_);
+    FUN_1015d95e8(IVar1,extraout_x1,param_4);
+    auVar3 = _objc_alloc(&_OBJC_CLASS___UITableView);
+    auVar3 = FUN_101565388(0,0,param_3.field1_0x10.field0_0x0,param_3.field1_0x10.field1_0x8,
+                           auVar3._0_8_,auVar3._8_8_,1);
+    FUN_1015d62e8(IVar1,auVar3._8_8_,auVar3._0_8_);
+    FUN_10153a2e8(&_OBJC_CLASS___UIColor);
+    IVar2 = FUN_1015edca8(IVar1,extraout_x1_00);
+    FUN_1015a5908(IVar2);
+    IVar2 = FUN_1015edca8(IVar1,extraout_x1_01);
+    FUN_1015ae568(IVar2);
+    IVar2 = FUN_1015edca8(IVar1,extraout_x1_02);
+    FUN_1015aeee8(IVar2,extraout_x1_03,IVar1);
+    IVar2 = FUN_1015edca8(IVar1,extraout_x1_04);
+    FUN_1015d2308(IVar2);
+    IVar2 = FUN_1015edca8(IVar1,extraout_x1_05);
+    FUN_1015d0928(IVar2);
+    FUN_1015edca8(IVar1,extraout_x1_06);
+    FUN_101527148(IVar1);
+    _objc_initWeak(auStack_78,IVar1);
+    local_a0 = PTR___NSConcreteStackBlock_101d78760;
+    local_98 = 0xc2000000;
+    local_90 = FUN_100053da8;
+    puStack_88 = &UNK_101d7b550;
+    _objc_copyWeak(auStack_80,auStack_78);
+    FUN_10155e4c8(&objc::class_t::MJRefreshNormalHeader,extraout_x1_07,&local_a0);
+    IVar2 = FUN_1015edca8(IVar1,extraout_x1_08);
+    FUN_1015c3a28(IVar2);
+    _objc_destroyWeak(auStack_80);
+    _objc_destroyWeak(auStack_78);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCRankView.nncappear | 0x100053dd4 | ev_e1d9a33996cf100a6c34ea4a822f253472636ac891ee4d67529e224448a78ff4 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCRankView::nncappear(ID param_1,SEL param_2)
+
+{
+  ulong uVar1;
+  undefined8 uVar2;
+  long lVar3;
+  
+  uVar1 = FUN_10156eb88();
+  if ((uVar1 & 1) == 0) {
+    uVar2 = FUN_101544588(param_1);
+    lVar3 = FUN_10153f908(uVar2);
+    if (lVar3 == 0) {
+      FUN_101575fa8(param_1);
+      return;
+    }
+  }
+  return;
+}
+
+
+
+/* NNCRankView.loadData | 0x100053e3c | ev_3b878121131011b35574d5b4422d921d3afadb4c00c9ec39a6307b1a72a0775d */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCRankView::loadData(ID param_1,SEL param_2)
+
+{
+  undefined *puVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x0;
+  _Unwind_Exception *exception_object;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  SEL extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined1 auVar4 [16];
+  undefined *local_e0;
+  undefined8 local_d8;
+  code *local_d0;
+  undefined *puStack_c8;
+  undefined1 auStack_c0 [8];
+  undefined *local_b8;
+  undefined8 local_b0;
+  code *local_a8;
+  undefined *puStack_a0;
+  undefined1 auStack_98 [8];
+  undefined1 auStack_90 [8];
+  cfstringStruct *local_88;
+  cfstringStruct *local_80;
+  undefined8 local_78;
+  undefined8 local_70;
+  long local_68;
+  
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  uVar2 = FUN_101544588();
+  auVar4 = FUN_10153f908(uVar2);
+  if (auVar4._0_8_ == 0) {
+    uVar2 = FUN_1015e90e8(param_1,auVar4._8_8_,0,0);
+    auVar4 = FUN_10153a2e8(&_OBJC_CLASS___UIColor);
+    FUN_1015a5908(uVar2,auVar4._8_8_,auVar4._0_8_);
+    uVar2 = extraout_x1_00;
+  }
+  else {
+    FUN_101593208();
+    uVar2 = extraout_x1;
+  }
+  FUN_1015bbda8(param_1,uVar2,1);
+  FUN_101557508(&objc::class_t::NNCRequestDo);
+  uVar2 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_01,&cf___ra__);
+  local_88 = &cf_type_id;
+  uVar3 = FUN_1015f2e68(param_1);
+  local_78 = FUN_1015f2e08(uVar3);
+  local_80 = &cf_order;
+  uVar3 = FUN_1015f2e68(param_1);
+  uVar3 = FUN_101550d28(uVar3);
+  auVar4 = FUN_101559928(uVar3);
+  local_70 = auVar4._0_8_;
+  uVar3 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar4._8_8_,&local_78,&local_88,2);
+  _objc_initWeak(auStack_90,param_1);
+  FUN_101596288((ID)&objc::class_t::NNCBIZRequest,extraout_x1_02);
+  puVar1 = PTR___NSConcreteStackBlock_101d78760;
+  local_b8 = PTR___NSConcreteStackBlock_101d78760;
+  local_b0 = 0xc2000000;
+  local_a8 = FUN_100054158;
+  puStack_a0 = &UNK_101d7b990;
+  _objc_copyWeak(auStack_98,auStack_90);
+  local_e0 = puVar1;
+  local_d8 = 0xc2000000;
+  local_d0 = FUN_10005440c;
+  puStack_c8 = &UNK_101d7b9c0;
+  _objc_copyWeak(auStack_c0,auStack_90);
+  FUN_101596fa8(extraout_x0,extraout_x1_03,uVar2,uVar3,&local_b8,&local_e0);
+  _objc_destroyWeak(auStack_c0);
+  _objc_destroyWeak(auStack_98);
+  _objc_destroyWeak(auStack_90);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_68) {
+    return;
+  }
+  exception_object = (_Unwind_Exception *)FUN_100ab8e90(0);
+  _objc_destroyWeak(auStack_c0);
+  _objc_destroyWeak(auStack_98);
+  _objc_destroyWeak(auStack_90);
+                    /* WARNING: Subroutine does not return */
+  __Unwind_Resume(exception_object);
+}
+
+
+
+/* NNCRankView.layoutSubviews | 0x100054558 | ev_c4d525a204591dc86601c4f8a8d17b379bb577bb566a284deca225fb3329d129 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCRankView::layoutSubviews(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  SEL extraout_x1;
+  undefined8 uVar2;
+  undefined8 in_d1;
+  undefined8 in_d2;
+  undefined8 in_d3;
+  ID local_50;
+  class_t *pcStack_48;
+  
+  pcStack_48 = &objc::class_t::NNCRankView;
+  local_50 = param_1;
+  _objc_msgSendSuper2(&local_50,"layoutSubviews");
+  uVar2 = FUN_101531d88(param_1);
+  IVar1 = FUN_1015edca8(param_1,extraout_x1);
+  FUN_1015b4b08(uVar2,in_d1,in_d2,in_d3,IVar1);
+  return;
+}
+
+
+
+/* NNCRankView.tableView:numberOfRowsInSection: | 0x1000545f0 | ev_5dccc332dd8c2343f495202b452a8984ec9f7d77fa56b7a70cc644c3de0179ea */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+long_long NNCRankView::tableView_numberOfRowsInSection_
+                    (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  undefined8 uVar1;
+  long_long lVar2;
+  
+  uVar1 = FUN_101544588();
+  lVar2 = FUN_10153f908(uVar1);
+  return lVar2;
+}
+
+
+
+/* NNCRankView.tableView:cellForRowAtIndexPath: | 0x10005462c | ev_92d5cdfcae6d54addcd6fda0783e5af3a0034613c89f34f642fa495b50a8bda5 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID NNCRankView::tableView_cellForRowAtIndexPath_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  
+  IVar1 = FUN_101546e68(param_3,param_2,&cf_VideoCell_Rank);
+  if (IVar1 == 0) {
+    IVar1 = FUN_101538148(&objc::class_t::NNCRankCell);
+  }
+  auVar3 = FUN_10159ad88(param_4);
+  FUN_1015b8ce8(IVar1,auVar3._8_8_,auVar3._0_8_);
+  uVar2 = FUN_101544588(param_1);
+  auVar3 = FUN_10159ad88(param_4);
+  auVar3 = FUN_101583328(uVar2,auVar3._8_8_,auVar3._0_8_);
+  FUN_1015b8d68(IVar1,auVar3._8_8_,auVar3._0_8_);
+  return IVar1;
+}
+
+
+
+/* NNCRankView.tableView:heightForRowAtIndexPath: | 0x10005470c | ev_4494ccff6dd020713ca0e1135e00c5031f775253da413eac5368317a062dcea5 */
+
+/* Function Stack Size: 0x20 bytes */
+
+double NNCRankView::tableView_heightForRowAtIndexPath_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  double dVar1;
+  
+  dVar1 = (double)FUN_101581988(&objc::class_t::NNCRankCell);
+  return dVar1;
+}
+
+
+
+/* NNCRankView.tableView:viewForHeaderInSection: | 0x100054718 | ev_d09308562161f50f7ef1387e3f94739fd2f5a6561aec4ecc7bc09867d830751b */
+
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID NNCRankView::tableView_viewForHeaderInSection_
+             (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_1015813c8(&_OBJC_CLASS___UIView);
+  return IVar1;
+}
+
+
+
+/* NNCRankView.tableView:heightForHeaderInSection: | 0x100054734 | ev_593ebbc9ef277d7d1fe36fc0f25e5b6de8fdcfb94a9ab0cfc343a7e22e9f4037 */
+
+/* Function Stack Size: 0x20 bytes */
+
+double NNCRankView::tableView_heightForHeaderInSection_
+                 (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  return 0.009999999776482582;
+}
+
+
+
+/* NNCRankView.tableView:viewForFooterInSection: | 0x100054740 | ev_ca17c565fe76259b5453bf916c021ea8cd857672b855ec6ee4e14014554b5174 */
+
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID NNCRankView::tableView_viewForFooterInSection_
+             (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_1015813c8(&_OBJC_CLASS___UIView);
+  return IVar1;
+}
+
+
+
+/* NNCRankView.tableView:heightForFooterInSection: | 0x10005475c | ev_1bd6e0d2d2cffa3ba919c5579f9b4ad2faf88a9b283ef73aed25dfbe778731b3 */
+
+/* Function Stack Size: 0x20 bytes */
+
+double NNCRankView::tableView_heightForFooterInSection_
+                 (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  return 0.009999999776482582;
+}
+
+
+
+/* NNCRankView.tableView:didSelectRowAtIndexPath: | 0x100054768 | ev_c25a50048f75af2083788a591db666a22bd2acd98c806afde88aae6f88bc17f7 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCRankView::tableView_didSelectRowAtIndexPath_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined1 auVar4 [16];
+  
+  FUN_101547188(param_3,param_2,param_4,0);
+  auVar4 = _objc_alloc(&objc::class_t::NNCDetailViewController);
+  uVar1 = FUN_1015665e8(auVar4._0_8_,auVar4._8_8_,&cf_NNCDetailViewController,0);
+  uVar2 = FUN_101544588(param_1);
+  auVar4 = FUN_10159ad88(param_4);
+  uVar2 = FUN_101583328(uVar2,auVar4._8_8_,auVar4._0_8_);
+  uVar2 = FUN_1015f8fe8(uVar2);
+  auVar4 = FUN_1015698a8(uVar2);
+  FUN_1015dc188(uVar1,auVar4._8_8_,auVar4._0_8_);
+  FUN_1015b7168(uVar1,extraout_x1,1);
+  FUN_10155fc48(uVar1,extraout_x1_00,1);
+  IVar3 = FUN_1015fa108(param_1,extraout_x1_01);
+  auVar4 = FUN_101580708(IVar3);
+  FUN_10158f2e8(auVar4._0_8_,auVar4._8_8_,uVar1,1);
+  return;
+}
+
+
+
+/* NNCRankView.tableView | 0x1000548a8 | ev_08532652d1d75927b2636bebb967e557665bde1610a198d94134a38a87f145cb */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRankView::tableView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__tableView);
+}
+
+
+
+/* NNCRankView.setTableView: | 0x1000548b8 | ev_85377c8046b184a01de54f74294f7209f3e119c9626345f70554163158760b19 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankView::setTableView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__tableView) = param_3;
+  return;
+}
+
+
+
+/* NNCRankView.dataSource | 0x1000548cc | ev_1e382ab2fb725953ca03d9b94a073d4b5872ae7136852c886c92768cfbcba8ae */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRankView::dataSource(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__dataSource);
+}
+
+
+
+/* NNCRankView.setDataSource: | 0x1000548dc | ev_67ea823d2e4091682485392f7a75ff141dfaad579523d10e737ba8e360f2e012 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankView::setDataSource_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__dataSource) = param_3;
+  return;
+}
+
+
+
+/* NNCRankView.isLoading | 0x1000548f0 | ev_7b9b8686bf36d6a5520fadb20f506ae3ee489108c4431a24412f31e062f81ed1 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCRankView::isLoading(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__isLoading);
+}
+
+
+
+/* NNCRankView.setIsLoading: | 0x100054900 | ev_11489c1fa37d355fae6d24ea5613e481e847d826463e2013022f992e1e79697c */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCRankView::setIsLoading_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__isLoading) = (char)param_3;
+  return;
+}
+
+
+
+/* NNCRankView.typeModel | 0x100054910 | ev_8e20b2cf2df7374f6354481eaee5a79db99d8932401e48fcf98ae2a7279557e5 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRankView::typeModel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__typeModel);
+}
+
+
+
+/* NNCRankView.setTypeModel: | 0x100054920 | ev_6108e4f236024d1384b255e06c7d044bfebd7011f9dc2fab4da2f32d2f516029 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankView::setTypeModel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__typeModel) = param_3;
+  return;
+}
+
+
+
+/* NNCRankView..cxx_destruct | 0x100054934 | ev_cc2062dc1fb439d16cee28b7fbbafe1643bab9d28706d69ce9308a6ff3e8edd1 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCRankView::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__typeModel) = 0;
+  *(undefined8 *)(param_1 + (long)__dataSource) = 0;
+  *(undefined8 *)(param_1 + (long)__tableView) = 0;
+  return;
+}
+
+

@@ -1,0 +1,69 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCHistoryModel.item | 0x1000be498 | ev_2be131eed564c619694921d3afb6b91f1f479711e82b884b9f5276e28a32291f */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryModel::item(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* NNCHistoryModel.setItem: | 0x1000be4a0 | ev_ebf2acc717aac9e991f4fefea655432691f0c4f8a55cabcf1f09ba003b056924 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryModel::setItem_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryModel.title | 0x1000be4ac | ev_69a69ec8ed584fad74a029efc3569ad7a4c119bb64b71724f14f8b91c8c5e3d0 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryModel::title(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCHistoryModel.setTitle: | 0x1000be4b4 | ev_bf1cc226e15dfef62b1e5e9ac526288ca7b089cf6beb18f4df5304eb5d4ebdc7 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryModel::setTitle_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryModel..cxx_destruct | 0x1000be4bc | ev_28fce73606040045e04e4189543ba9e770860f5787cb15ef3fb34c4ce33a03b9 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCHistoryModel::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

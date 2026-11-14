@@ -1,0 +1,518 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCChooseSourceCell.awakeFromNib | 0x1000fb1f4 | ev_93a4609a8b49fdd185844a1dbcd46d6c9b44bc198c45cf45508a60589cf819da */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCChooseSourceCell::awakeFromNib(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined1 auVar3 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCChooseSourceCell;
+  local_40 = param_1;
+  _objc_msgSendSuper2(&local_40,"awakeFromNib");
+  auVar3 = FUN_101530ac8(param_1);
+  IVar1 = FUN_101574688(auVar3._0_8_,auVar3._8_8_);
+  FUN_1015ac5e8(0x4024000000000000,IVar1);
+  auVar3 = FUN_101530ac8(param_1);
+  IVar1 = FUN_101574688(auVar3._0_8_,auVar3._8_8_);
+  FUN_1015c25a8(IVar1);
+  uVar2 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1,&cf_myTextColor);
+  auVar3 = FUN_101530ac8(param_1);
+  FUN_1015a5908(auVar3._0_8_,auVar3._8_8_,uVar2);
+  return;
+}
+
+
+
+/* NNCChooseSourceCell.cell | 0x1000fb300 | ev_cd8a591de441433ef636a096a4b0abc63ccdaff3a17baeca216d414bfa5fe491 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCChooseSourceCell::cell(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined1 auVar3 [16];
+  
+  uVar1 = FUN_1015790a8(&_OBJC_CLASS___NSBundle);
+  FUN_101539ca8(param_1);
+  auVar3 = _NSStringFromClass();
+  auVar3 = FUN_101576788(uVar1,auVar3._8_8_,auVar3._0_8_,0,0);
+  IVar2 = FUN_101583308(auVar3._0_8_,auVar3._8_8_,0);
+  return IVar2;
+}
+
+
+
+/* NNCChooseSourceCell.setInfo: | 0x1000fb3a8 | ev_a3fe9298f31cb878df1d6bacacbae3a00d4fc009ed4a9720292eebba459dc79c */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCChooseSourceCell::setInfo_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID *pIVar1;
+  undefined *puVar2;
+  int iVar3;
+  int iVar4;
+  undefined8 uVar5;
+  undefined8 uVar6;
+  undefined8 uVar7;
+  ID IVar8;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined8 extraout_x1_07;
+  undefined8 extraout_x1_08;
+  undefined8 uVar9;
+  undefined8 in_d1;
+  undefined1 auVar10 [16];
+  undefined1 auVar11 [16];
+  undefined1 auVar12 [16];
+  undefined *local_148;
+  undefined8 local_140;
+  code *local_138;
+  undefined *puStack_130;
+  undefined8 local_128;
+  undefined8 uStack_120;
+  undefined8 local_118;
+  undefined8 uStack_110;
+  undefined *local_108;
+  undefined8 local_100;
+  code *local_f8;
+  undefined *puStack_f0;
+  ID local_e8;
+  undefined *local_e0;
+  undefined8 local_d8;
+  code *local_d0;
+  undefined *puStack_c8;
+  undefined8 local_c0;
+  undefined8 uStack_b8;
+  undefined8 local_b0;
+  undefined8 local_a8;
+  long local_a0;
+  
+  local_a0 = *(long *)PTR____stack_chk_guard_101d78938;
+  pIVar1 = (ID *)(param_1 + (long)__info);
+  *pIVar1 = param_3;
+  uVar5 = FUN_10153bf08(&_OBJC_CLASS___UIColor,param_3,&cf_TextBgViewColo);
+  auVar10 = FUN_101530ac8(param_1);
+  FUN_1015a5908(auVar10._0_8_,auVar10._8_8_,uVar5);
+  iVar3 = FUN_101561808(param_1);
+  iVar4 = FUN_10159e948(param_1);
+  auVar10 = FUN_101539ac8(param_1);
+  if (iVar3 == iVar4) {
+    FUN_1015d03e8(auVar10._0_8_,auVar10._8_8_,1);
+    uVar5 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1,0xbed4fb);
+    auVar10 = FUN_101582cc8(param_1);
+    FUN_1015a5908(auVar10._0_8_,auVar10._8_8_,uVar5);
+    uVar5 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_00,0xbed4fb);
+  }
+  else {
+    FUN_1015d03e8(auVar10._0_8_,auVar10._8_8_,0);
+    in_d1 = 0x3fe6969696969697;
+    uVar5 = FUN_10153c088(0x3fe6969696969697,0x3fe6969696969697,0x3fe6969696969697,
+                          0x3ff0000000000000,&_OBJC_CLASS___UIColor);
+    auVar10 = FUN_101582cc8(param_1);
+    FUN_1015a5908(auVar10._0_8_,auVar10._8_8_,uVar5);
+    uVar5 = FUN_10153c088(0x3fe6969696969697,0x3fe6969696969697,0x3fe6969696969697,
+                          0x3ff0000000000000,&_OBJC_CLASS___UIColor);
+  }
+  auVar10 = FUN_101546f88(param_1);
+  FUN_1015a5908(auVar10._0_8_,auVar10._8_8_,uVar5);
+  uVar5 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+  uVar6 = FUN_1015e6768(*pIVar1);
+  iVar3 = FUN_101561808(param_1);
+  uVar6 = FUN_101583328(uVar6,extraout_x1_01,(long)iVar3);
+  auVar10 = FUN_10158b928(uVar6);
+  FUN_101559548(uVar5,auVar10._8_8_,auVar10._0_8_);
+  uVar5 = FUN_1015e6768(*pIVar1);
+  iVar3 = FUN_101561808(param_1);
+  uVar5 = FUN_101583328(uVar5,extraout_x1_02,(long)iVar3);
+  uVar5 = FUN_10154eb88(uVar5);
+  FUN_10153f908(uVar5);
+  uVar6 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_03,&::cf__);
+  uVar5 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+  uVar7 = FUN_1015e6768(*pIVar1);
+  iVar3 = FUN_101561808(param_1);
+  uVar7 = FUN_101583328(uVar7,extraout_x1_04,(long)iVar3);
+  auVar10 = FUN_10158b928(uVar7);
+  auVar10 = FUN_101559528(uVar5,auVar10._8_8_,auVar10._0_8_);
+  uVar5 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,auVar10._8_8_,&cf___);
+  auVar11 = FUN_1015e6748(param_1);
+  FUN_1015d6f08(auVar11._0_8_,auVar11._8_8_,uVar5);
+  auVar11 = FUN_101546f88(param_1);
+  FUN_1015d6f08(auVar11._0_8_,auVar11._8_8_,auVar10._0_8_);
+  uVar5 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_05,&cf_myBgColor);
+  auVar11 = FUN_1015e6748(param_1);
+  FUN_1015d6fa8(auVar11._0_8_,auVar11._8_8_,uVar5);
+  auVar11 = FUN_101539ac8(param_1);
+  FUN_1015d7e48(auVar11._0_8_,auVar11._8_8_,&::cf___,0);
+  auVar11 = FUN_101539ac8(param_1);
+  auVar12 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar11._8_8_,&::cf___);
+  FUN_1015b8468(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_,0);
+  auVar11 = FUN_101539ac8(param_1);
+  auVar12 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar11._8_8_,&cf_xuanzeImage);
+  FUN_1015b8468(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_,4);
+  auVar11 = FUN_101539ac8(param_1);
+  FUN_1015db108(auVar11._0_8_,auVar11._8_8_,0);
+  auVar11 = FUN_101546f88(param_1);
+  FUN_1015d6f48(auVar11._0_8_,auVar11._8_8_,1);
+  auVar11 = FUN_101582cc8(param_1);
+  FUN_1015d6f48(auVar11._0_8_,auVar11._8_8_,1);
+  local_b0 = *(undefined8 *)PTR__NSFontAttributeName_101d782f8;
+  auVar11 = FUN_1015ed768(0x402c000000000000,&_OBJC_CLASS___UIFont);
+  local_a8 = auVar11._0_8_;
+  auVar11 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar11._8_8_,&local_a8,&local_b0,1);
+  uVar9 = FUN_1015e3b28(uVar6,auVar11._8_8_,auVar11._0_8_);
+  uVar5 = in_d1;
+  uVar7 = FUN_1015ed768(0x402c000000000000,&_OBJC_CLASS___UIFont);
+  auVar12 = FUN_101582cc8(param_1);
+  FUN_1015b4788(auVar12._0_8_,auVar12._8_8_,uVar7);
+  auVar12 = FUN_101582cc8(param_1);
+  IVar8 = FUN_101574688(auVar12._0_8_,auVar12._8_8_);
+  FUN_1015ac5e8(0x4014000000000000,IVar8);
+  auVar12 = FUN_101582cc8(param_1);
+  IVar8 = FUN_101574688(auVar12._0_8_,auVar12._8_8_);
+  FUN_1015c25a8(IVar8);
+  auVar12 = FUN_101582cc8(param_1);
+  FUN_1015d6f08(auVar12._0_8_,auVar12._8_8_,uVar6);
+  auVar12 = FUN_101546f88(param_1);
+  IVar8 = FUN_101574688(auVar12._0_8_,auVar12._8_8_);
+  FUN_1015ac5e8(0x4014000000000000,IVar8);
+  auVar12 = FUN_101546f88(param_1);
+  IVar8 = FUN_101574688(auVar12._0_8_,auVar12._8_8_);
+  FUN_1015c25a8(IVar8);
+  uVar6 = FUN_1015ed768(0x402c000000000000,&_OBJC_CLASS___UIFont);
+  auVar12 = FUN_101546f88(param_1);
+  FUN_1015b4788(auVar12._0_8_,auVar12._8_8_,uVar6);
+  uVar6 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_06,0xffffff);
+  auVar12 = FUN_101546f88(param_1);
+  FUN_1015d6fa8(auVar12._0_8_,auVar12._8_8_,uVar6);
+  uVar6 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_07,0xffffff);
+  auVar12 = FUN_101582cc8(param_1);
+  FUN_1015d6fa8(auVar12._0_8_,auVar12._8_8_,uVar6);
+  auVar12 = FUN_101582cc8(param_1);
+  puVar2 = PTR___NSConcreteStackBlock_101d78760;
+  local_e0 = PTR___NSConcreteStackBlock_101d78760;
+  local_d8 = 0xc0000000;
+  local_d0 = FUN_1000fbd78;
+  puStack_c8 = &UNK_101d7e330;
+  local_c0 = uVar9;
+  uStack_b8 = in_d1;
+  FUN_101579ce8(auVar12._0_8_,auVar12._8_8_,&local_e0);
+  auVar12 = FUN_101539ac8(param_1);
+  local_108 = puVar2;
+  local_100 = 0xc2000000;
+  local_f8 = FUN_1000fbed4;
+  puStack_f0 = &UNK_101d7cc48;
+  local_e8 = param_1;
+  FUN_101579ce8(auVar12._0_8_,auVar12._8_8_,&local_108);
+  uVar6 = FUN_1015e3b28(auVar10._0_8_,extraout_x1_08,auVar11._0_8_);
+  auVar10 = FUN_101546f88(param_1);
+  local_148 = puVar2;
+  local_140 = 0xc0000000;
+  local_138 = FUN_1000fc04c;
+  puStack_130 = &UNK_101d7e350;
+  local_128 = uVar9;
+  uStack_120 = in_d1;
+  local_118 = uVar6;
+  uStack_110 = uVar5;
+  FUN_101579ce8(auVar10._0_8_,auVar10._8_8_,&local_148);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_a0) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCChooseSourceCell.setSelected:animated: | 0x1000fc1c4 | ev_c16c64adcad0ef359c0c04a35e103ef8148d216cb339a438c3e599df489111ae */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCChooseSourceCell::setSelected_animated_(ID param_1,SEL param_2,bool param_3,bool param_4)
+
+{
+  return;
+}
+
+
+
+/* NNCChooseSourceCell.setHighlighted:animated: | 0x1000fc1c8 | ev_d946a9b40427e1042b49ecf91f403795aa8bf25b7605e13072fb7ffffad205d1 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCChooseSourceCell::setHighlighted_animated_(ID param_1,SEL param_2,bool param_3,bool param_4)
+
+{
+  return;
+}
+
+
+
+/* NNCChooseSourceCell.info | 0x1000fc1cc | ev_e666da4c12c3c4fa420b108e9199b6d95f7f80b1cd05d03ce653109dd73eb6e6 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCChooseSourceCell::info(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__info);
+}
+
+
+
+/* NNCChooseSourceCell.index | 0x1000fc1dc | ev_d15611f66a088dc715f5a50cdc428889e6aabfd2c0904de8f1f9a7127efada9a */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+char * NNCChooseSourceCell::index(char *param_1,int param_2)
+
+{
+  return (char *)(ulong)*(uint *)(param_1 + __index);
+}
+
+
+
+/* NNCChooseSourceCell.setIndex: | 0x1000fc1ec | ev_62a13cfafb18be6ec7e08e4b9369564a5793ae055f8daa9cff5018d106727618 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCChooseSourceCell::setIndex_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + (long)__index) = param_3;
+  return;
+}
+
+
+
+/* NNCChooseSourceCell.selectedIndex | 0x1000fc1fc | ev_ae677e5c857f227a87da7e8d14a508a140d328eee889a5e8c98165b68e29185b */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+int NNCChooseSourceCell::selectedIndex(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + (long)__selectedIndex);
+}
+
+
+
+/* NNCChooseSourceCell.setSelectedIndex: | 0x1000fc20c | ev_b7ba73ca5526aa8767231ba2dc91dc3e6708f786eb4b620d54f9698ed1517c88 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCChooseSourceCell::setSelectedIndex_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + (long)__selectedIndex) = param_3;
+  return;
+}
+
+
+
+/* NNCChooseSourceCell.bgView | 0x1000fc21c | ev_e3b03faa530203756ab16893d6ce8de5814d286a2c79c679cb4910aaec3f22b6 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCChooseSourceCell::bgView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__bgView);
+}
+
+
+
+/* NNCChooseSourceCell.setBgView: | 0x1000fc23c | ev_c0ebe767921585fec472bb474425279264cf14a9fbd893201fbba4002ee92ea0 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCChooseSourceCell::setBgView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__bgView) = param_3;
+  return;
+}
+
+
+
+/* NNCChooseSourceCell.sourceLabel | 0x1000fc250 | ev_f2a13a2468c1737211d8842b5dff7d1a05414690d1fd51e614e0b357537a2fa6 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCChooseSourceCell::sourceLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__sourceLabel);
+}
+
+
+
+/* NNCChooseSourceCell.setSourceLabel: | 0x1000fc270 | ev_331aeee925a4d0a78c15788479e28d88d8d75f6280ecbe4b23739a1e1e80ccdb */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCChooseSourceCell::setSourceLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__sourceLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCChooseSourceCell.numLabel | 0x1000fc284 | ev_4d55732e9be05a6d58904fcdfc7f2737c806732bb55779a4ade051eaff22b8b2 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCChooseSourceCell::numLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__numLabel);
+}
+
+
+
+/* NNCChooseSourceCell.setNumLabel: | 0x1000fc2a4 | ev_ba9a0fa7b6d219cdd5676aac439568bf1dbf60ef5f22f06f82c0d1383a9e0f28 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCChooseSourceCell::setNumLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__numLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCChooseSourceCell.chooseButton | 0x1000fc2b8 | ev_c0b5716bbea61db741b952a806d646b495eb58da6e0b9c22e733dd411dbc4271 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCChooseSourceCell::chooseButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__chooseButton);
+}
+
+
+
+/* NNCChooseSourceCell.setChooseButton: | 0x1000fc2d8 | ev_08810abc75a129e2ad8d368504b853c2f27e1d187655ceee655214d295ad34ab */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCChooseSourceCell::setChooseButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__chooseButton) = param_3;
+  return;
+}
+
+
+
+/* NNCChooseSourceCell.descLabel | 0x1000fc2ec | ev_7b810ca6134c126670a265420accee56e2daecd19dc2db6965893ae6d479cfee */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCChooseSourceCell::descLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__descLabel);
+}
+
+
+
+/* NNCChooseSourceCell.setDescLabel: | 0x1000fc30c | ev_2cee0b8752ac5e151433a5132fc306e81ccbf08a868fce940002e3b5330292ed */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCChooseSourceCell::setDescLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__descLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCChooseSourceCell..cxx_destruct | 0x1000fc320 | ev_9abd6e3d1346e804ee674d4fb8e61c17ff5f13bdc39465db4618f9bcd62d14eb */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCChooseSourceCell::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + (long)__descLabel);
+  _objc_destroyWeak(param_1 + (long)__chooseButton);
+  _objc_destroyWeak(param_1 + (long)__numLabel);
+  _objc_destroyWeak(param_1 + (long)__sourceLabel);
+  _objc_destroyWeak(param_1 + (long)__bgView);
+  *(undefined8 *)(param_1 + (long)__info) = 0;
+  return;
+}
+
+

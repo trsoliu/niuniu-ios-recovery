@@ -1,0 +1,427 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCDownloadDB.database | 0x1000d469c | ev_26fe19907251003e43b8ddba1302a056e0fb4ee9ce781380501d039c44969c7a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadDB::database(ID param_1,SEL param_2)
+
+{
+  ulong uVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  
+  if (*(long *)(param_1 + 8) == 0) {
+    auVar3 = FUN_1015e0de8(&objc::class_t::JQFMDB);
+    uVar2 = *(undefined8 *)(param_1 + 8);
+    *(long *)(param_1 + 8) = auVar3._0_8_;
+    uVar1 = FUN_101572bc8(uVar2,*(undefined8 *)(param_1 + 8),auVar3._8_8_,
+                          &cf_nnc_file_download_table);
+    if ((uVar1 & 1) == 0) {
+      uVar2 = *(undefined8 *)(param_1 + 8);
+      auVar3 = FUN_101539ca8(&objc::class_t::DownloadModel);
+      FUN_101572b28(uVar2,auVar3._8_8_,&cf_nnc_file_download_table,auVar3._0_8_);
+    }
+  }
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* NNCDownloadDB.sharedInstance | 0x1000d4720 | ev_205c2577dbf8a67ba49ae86bba3799d6d3103f2591dd53ab1907195693c7dc4a */
+
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadDB::sharedInstance(ID param_1,SEL param_2)
+
+{
+  undefined *local_38;
+  undefined8 local_30;
+  code *local_28;
+  undefined *puStack_20;
+  ID local_18;
+  
+  local_38 = PTR___NSConcreteStackBlock_101d78760;
+  local_30 = 0xc0000000;
+  local_28 = FUN_1000d4794;
+  puStack_20 = &UNK_101d7b650;
+  if (lRam000000010243f210 != -1) {
+    local_18 = param_1;
+    _dispatch_once(0x10243f210,&local_38);
+  }
+  return IRam000000010243f208;
+}
+
+
+
+/* NNCDownloadDB.iOrUDownloadModel: | 0x1000d47c0 | ev_f12e07173cdccda4eb0bf870c42a6adcd4a27b7fd9af150276c40b8a358f3861 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadDB::iOrUDownloadModel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  char *pcVar1;
+  char *pcVar2;
+  undefined *local_90;
+  undefined8 local_88;
+  code *local_80;
+  undefined *puStack_78;
+  ID local_70;
+  ID local_68;
+  undefined *local_60;
+  undefined8 local_58;
+  code *local_50;
+  undefined *puStack_48;
+  ID local_40;
+  ID IStack_38;
+  
+  pcVar1 = _dispatch_queue_get_label((dispatch_queue_t)0x0);
+  pcVar2 = _dispatch_queue_get_label((dispatch_queue_t)PTR___dispatch_main_q_101d78958);
+  if (pcVar1 == pcVar2) {
+    local_60 = PTR___NSConcreteStackBlock_101d78760;
+    local_58 = 0xc2000000;
+    local_50 = FUN_1000d48b4;
+    puStack_48 = &UNK_101d7b5b0;
+    local_40 = param_1;
+    IStack_38 = param_3;
+    FUN_1000d48b4(&local_60);
+  }
+  else {
+    local_90 = PTR___NSConcreteStackBlock_101d78760;
+    local_88 = 0xc2000000;
+    local_80 = FUN_1000d4d00;
+    puStack_78 = &UNK_101d7b5b0;
+    local_70 = param_1;
+    local_68 = param_3;
+    _dispatch_async(PTR___dispatch_main_q_101d78958,&local_90);
+  }
+  return;
+}
+
+
+
+/* NNCDownloadDB.getDownloadInfos | 0x1000d514c | ev_efd75e1f355c8be7f76f0f511a887a14ad6f2d2937b0238e3750678351acdecd */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadDB::getDownloadInfos(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  ID IVar3;
+  undefined8 extraout_x1;
+  undefined8 uVar4;
+  long lVar5;
+  long lVar6;
+  undefined1 auVar7 [16];
+  undefined1 auVar8 [16];
+  undefined8 local_120;
+  long lStack_118;
+  long *local_110;
+  undefined8 uStack_108;
+  undefined8 local_100;
+  undefined8 uStack_f8;
+  undefined8 uStack_f0;
+  undefined8 uStack_e8;
+  undefined1 auStack_d8 [128];
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  uVar1 = FUN_101544a68();
+  auVar7 = FUN_101539ca8(&objc::class_t::DownloadModel);
+  auVar8 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,auVar7._8_8_,&::cf___);
+  uVar1 = FUN_101572be8(uVar1,auVar8._8_8_,&cf_nnc_file_download_table,auVar7._0_8_,auVar8._0_8_);
+  auVar7 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+  lStack_118 = 0;
+  local_120 = 0;
+  uStack_108 = 0;
+  local_110 = (long *)0x0;
+  uStack_f8 = 0;
+  local_100 = 0;
+  uStack_e8 = 0;
+  uStack_f0 = 0;
+  lVar2 = FUN_10153f948(uVar1,auVar7._8_8_,&local_120,auStack_d8,0x10);
+  if (lVar2 != 0) {
+    lVar5 = *local_110;
+    do {
+      lVar6 = 0;
+      do {
+        if (*local_110 != lVar5) {
+          _objc_enumerationMutation(uVar1);
+        }
+        uVar4 = *(undefined8 *)(lStack_118 + lVar6 * 8);
+        auVar8 = FUN_101539ca8(param_1);
+        auVar8 = FUN_1015ee4e8(auVar8._0_8_,auVar8._8_8_,uVar4);
+        FUN_101526528(auVar7._0_8_,auVar8._8_8_,auVar8._0_8_);
+        lVar6 = lVar6 + 1;
+      } while (lVar2 != lVar6);
+      lVar2 = FUN_10153f948(uVar1,extraout_x1,&local_120,auStack_d8,0x10);
+    } while (lVar2 != 0);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_58) {
+    return auVar7._0_8_;
+  }
+  IVar3 = FUN_100ab8e90(0);
+  return IVar3;
+}
+
+
+
+/* NNCDownloadDB.getItemByVidString:playerId:episodeIndex:episodeTitle: | 0x1000d5304 | ev_ae086a46175f94de2e54a89afadf1a5a51fd9fe73001a998698d20e318210db5 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x28 bytes */
+
+ID NNCDownloadDB::getItemByVidString_playerId_episodeIndex_episodeTitle_
+             (ID param_1,SEL param_2,int param_3,ID param_4,int param_5,ID param_6)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined1 auVar3 [16];
+  undefined1 auVar4 [16];
+  
+  auVar3 = FUN_101539ca8(param_1);
+  FUN_10155ad48(auVar3._0_8_,auVar3._8_8_,param_3,param_4,param_5,param_6);
+  uVar1 = FUN_101544a68(param_1);
+  auVar3 = FUN_101539ca8(&objc::class_t::DownloadModel);
+  auVar4 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,auVar3._8_8_,&cf_whereVIDEO_ID_STRING_____);
+  uVar1 = FUN_101572be8(uVar1,auVar4._8_8_,&cf_nnc_file_download_table,auVar3._0_8_,auVar4._0_8_);
+  auVar3 = FUN_10153f908(uVar1);
+  if (auVar3._0_8_ == 0) {
+    IVar2 = 0;
+  }
+  else {
+    uVar1 = FUN_101583328(uVar1,auVar3._8_8_,0);
+    auVar3 = FUN_101539ca8(param_1);
+    IVar2 = FUN_1015ee4e8(auVar3._0_8_,auVar3._8_8_,uVar1);
+  }
+  return IVar2;
+}
+
+
+
+/* NNCDownloadDB.deleteDownloadItemByUrl: | 0x1000d5474 | ev_99d90e04b30f4091d0b8da2bfd99135b65fab6c13077911bef872692ffed1be7 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadDB::deleteDownloadItemByUrl_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  undefined1 auVar2 [16];
+  
+  auVar1 = FUN_101539ca8(param_1);
+  FUN_101557f68(auVar1._0_8_,auVar1._8_8_,param_3);
+  auVar1 = FUN_101544a68(param_1);
+  auVar2 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,auVar1._8_8_,&cf_whereVIDEO_ID_STRING_____);
+  FUN_101572b68(auVar1._0_8_,auVar2._8_8_,&cf_nnc_file_download_table,auVar2._0_8_);
+  return;
+}
+
+
+
+/* NNCDownloadDB.taskItemByDownloadModel: | 0x1000d5530 | ev_e5f729bfb52f2be81b5084dc63ff04b2b2fd28638abef16827d77d082a7fc162 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCDownloadDB::taskItemByDownloadModel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 uVar3;
+  undefined4 *puVar4;
+  float fVar5;
+  undefined1 auVar6 [16];
+  
+  IVar2 = FUN_1015813c8(&objc::class_t::NNCFileTaskItem);
+  auVar6 = FUN_101516b28(param_3);
+  FUN_1015da848(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_101509748(param_3);
+  FUN_1015c35e8(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_101500668(param_3);
+  FUN_1015b0a08(IVar2,auVar6._8_8_,auVar6._0_8_);
+  FUN_10150dfc8(param_3);
+  FUN_1015c8588(IVar2);
+  auVar6 = FUN_101512968(param_3);
+  FUN_1015d6a68(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_101516b08(param_3);
+  FUN_1015dc588(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_1014fe1e8(param_3);
+  FUN_1015b0b68(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_101512ca8(param_3);
+  FUN_1015d8868(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_1014fe208(param_3);
+  FUN_1015ad4a8(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_101512cc8(param_3);
+  FUN_1015d88c8(IVar2,auVar6._8_8_,auVar6._0_8_);
+  iVar1 = FUN_1014fe668(param_3);
+  FUN_1015ab448(IVar2,extraout_x1,iVar1 == 1);
+  auVar6 = FUN_101502588(param_3);
+  FUN_1015b3a08(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_1015025a8(param_3);
+  FUN_1015b3a48(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_1014fe688(param_3);
+  FUN_1015acb68(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_101516ae8(param_3);
+  FUN_1015d7e08(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_101503a48(param_3);
+  FUN_1015b5f28(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_101516ac8(param_3);
+  FUN_1015dc188(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_10150e3a8(param_3);
+  FUN_1015c9328(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_101501b88(param_3);
+  FUN_1015b2448(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_101501ba8(param_3);
+  FUN_1015b24a8(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_1014fbbc8(param_3);
+  FUN_1015a6488(IVar2,auVar6._8_8_,auVar6._0_8_);
+  auVar6 = FUN_10150f9e8(param_3);
+  FUN_1015cdac8(IVar2,auVar6._8_8_,auVar6._0_8_);
+  iVar1 = FUN_1015ee5e8(IVar2);
+  if (((iVar1 != 3) && (iVar1 = FUN_1015ee5e8(IVar2), iVar1 != 2)) ||
+     (fVar5 = (float)FUN_1015e6a88(IVar2), 0.001 <= ABS(fVar5))) {
+    iVar1 = FUN_1015ee5e8(IVar2);
+    if (iVar1 != 1) {
+      return IVar2;
+    }
+    puVar4 = (undefined4 *)&UNK_1019bdf14;
+    uVar3 = extraout_x1_01;
+  }
+  else {
+    puVar4 = (undefined4 *)&UNK_1019bdf2c;
+    uVar3 = extraout_x1_00;
+  }
+  FUN_1015d6a68(IVar2,uVar3,*puVar4);
+  return IVar2;
+}
+
+
+
+/* NNCDownloadDB.getFileIdStringWithItem: | 0x1000d58a0 | ev_c2ee691868a446c7565898fdcf5966018dd995916a5d1fbff0b5927bd7c450bc */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCDownloadDB::getFileIdStringWithItem_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  
+  FUN_1015f8fe8();
+  FUN_10158b928(param_3);
+  FUN_10154ebc8(param_3);
+  FUN_10154ec48(param_3);
+  IVar1 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf__d_____d___);
+  return IVar1;
+}
+
+
+
+/* NNCDownloadDB.getVideoIdStringWithModel: | 0x1000d5960 | ev_7755559c18bb381ed0143ff76e1f7c7ccce713578dd2dc57ec9281a1db4460ef */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCDownloadDB::getVideoIdStringWithModel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  
+  FUN_101516ac8();
+  FUN_10150e3a8(param_3);
+  FUN_101501b88(param_3);
+  FUN_101501ba8(param_3);
+  IVar1 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf__d_____d___);
+  return IVar1;
+}
+
+
+
+/* NNCDownloadDB.getVideoIdString:playerId:episodeIndex:episodeTitle: | 0x1000d5a20 | ev_fd3ee26fbfb222594abecb7b7308b188593269b984da8e2f5d83eb09d0a7a25c */
+
+/* Function Stack Size: 0x28 bytes */
+
+ID NNCDownloadDB::getVideoIdString_playerId_episodeIndex_episodeTitle_
+             (ID param_1,SEL param_2,int param_3,ID param_4,int param_5,ID param_6)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,param_2,&cf__d_____d___);
+  return IVar1;
+}
+
+
+
+/* NNCDownloadDB.setDatabase: | 0x1000d5a54 | ev_02f709150771bdc4305db6dcce2ca12454dad5a4516045e4efaaf206154abcac */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadDB::setDatabase_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadDB..cxx_destruct | 0x1000d5a60 | ev_ab1feda0b6306005e43ea208b8e5c04a31e73dcac1b8da6bccdc4e255aea92a2 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDownloadDB::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

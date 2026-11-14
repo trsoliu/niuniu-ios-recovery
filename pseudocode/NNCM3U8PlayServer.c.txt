@@ -1,0 +1,281 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCM3U8PlayServer.sharedInstance | 0x1000074fc | ev_f8b37d6e8344857774c184d37ad74986a816b4cfc2814e3d039e62847859a2c0 */
+
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCM3U8PlayServer::sharedInstance(ID param_1,SEL param_2)
+
+{
+  undefined *local_38;
+  undefined8 local_30;
+  code *local_28;
+  undefined *puStack_20;
+  ID local_18;
+  
+  local_38 = PTR___NSConcreteStackBlock_101d78760;
+  local_30 = 0xc0000000;
+  local_28 = FUN_100007570;
+  puStack_20 = &UNK_101d7b650;
+  if (lRam000000010243ef68 != -1) {
+    local_18 = param_1;
+    _dispatch_once(0x10243ef68,&local_38);
+  }
+  return IRam000000010243ef60;
+}
+
+
+
+/* NNCM3U8PlayServer.init | 0x10000759c | ev_2aca10b2440bd2dd212cce676bc3c5ec632f10160a30bfb62d9711abe89de677 */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCM3U8PlayServer::init(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCM3U8PlayServer;
+  local_40 = param_1;
+  IVar1 = _objc_msgSendSuper2(&local_40,"init");
+  if (IVar1 != 0) {
+    *(undefined2 *)(IVar1 + 8) = 0x3484;
+    auVar3 = FUN_1015813c8(&objc::class_t::HTTPServer);
+    uVar2 = *(undefined8 *)(IVar1 + 0x10);
+    *(long *)(IVar1 + 0x10) = auVar3._0_8_;
+    FUN_1015d95a8(uVar2,*(undefined8 *)(IVar1 + 0x10),auVar3._8_8_,&cf__http__tcp_);
+    FUN_1015c9c68(*(undefined8 *)(IVar1 + 0x10),extraout_x1,*(undefined2 *)(IVar1 + 8));
+    uVar2 = *(undefined8 *)(IVar1 + 0x10);
+    auVar3 = FUN_101557b68(&objc::class_t::VideoDownloadUtils);
+    FUN_1015b0728(uVar2,auVar3._8_8_,auVar3._0_8_);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCM3U8PlayServer.getLocalPUrlByUrl: | 0x10000765c | ev_81278a2be3b9772dc9b5ff33d1277a29d4f2461847d2d85f4b7fbe1f404cdbec */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCM3U8PlayServer::getLocalPUrlByUrl_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  cfstringStruct *pcVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar3 [16];
+  
+  auVar3 = FUN_101557b68(&objc::class_t::VideoDownloadUtils);
+  auVar3 = FUN_10158fcc8(param_3,auVar3._8_8_,auVar3._0_8_);
+  if (auVar3._0_8_ == 0x7fffffffffffffff) {
+    pcVar2 = &::cf___;
+  }
+  else {
+    auVar3 = FUN_1015ec3a8(param_3,auVar3._8_8_,auVar3._0_8_ + auVar3._8_8_);
+    iVar1 = FUN_10155db28(auVar3._0_8_,auVar3._8_8_,&cf__);
+    if (iVar1 != 0) {
+      FUN_1015ec3a8(auVar3._0_8_,extraout_x1,1);
+    }
+    FUN_10158c6a8(*(undefined8 *)(param_1 + 0x10));
+    pcVar2 = (cfstringStruct *)
+             FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_00,&cf_http___127_0_0_1__d___);
+  }
+  return (ID)pcVar2;
+}
+
+
+
+/* NNCM3U8PlayServer.isServerRunning | 0x10000777c | ev_b439ed06f5afbf2e137deb6f4443628c12d1e2cdc7343a2f96191f771ae12366 */
+
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCM3U8PlayServer::isServerRunning(ID param_1,SEL param_2)
+
+{
+  bool bVar1;
+  
+  bVar1 = FUN_1015707e8(*(undefined8 *)(param_1 + 0x10));
+  return bVar1;
+}
+
+
+
+/* NNCM3U8PlayServer.start | 0x100007784 | ev_e86f46e3c3b3df1d3ac64dc73bf625c91a81e8ce22baab359426d545d8e29613 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCM3U8PlayServer::start(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  u_int32_t uVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 uVar3;
+  int iVar4;
+  undefined1 auVar5 [16];
+  
+  FUN_101520628();
+  iVar4 = 10;
+  uVar3 = extraout_x1;
+  do {
+    iVar1 = FUN_101520488(param_1,uVar3,0);
+    if (iVar1 != 0) {
+      auVar5 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_00,&cf_http___127_0_0_1__d);
+      uVar3 = FUN_1015156a8(&_OBJC_CLASS___NSURL,auVar5._8_8_,auVar5._0_8_);
+      *(undefined8 *)(param_1 + 0x18) = uVar3;
+      return;
+    }
+    uVar3 = *(undefined8 *)(param_1 + 0x10);
+    uVar2 = _arc4random();
+    *(short *)(param_1 + 8) = *(short *)(param_1 + 8) + (short)(uVar2 % 1000) + 1;
+    FUN_1015c9c68(uVar3);
+    iVar4 = iVar4 + -1;
+    uVar3 = extraout_x1_01;
+  } while (iVar4 != 0);
+  return;
+}
+
+
+
+/* NNCM3U8PlayServer.stop | 0x100007884 | ev_e996a36f4a832df9f9063b276a33e0b95a6e92ed4f123eb584febe78f9288a02 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NNCM3U8PlayServer::stop(ID param_1,SEL param_2)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x000101520638. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_msgSend_101d78f58)(param_1,"_stop");
+  return;
+}
+
+
+
+/* NNCM3U8PlayServer._start: | 0x100007888 | ev_e1602ee313e83e2fe00dc07c38a6de3cba1b3d055bbc373c088f9f9c983e3b3b */
+
+/* Function Stack Size: 0x18 bytes */
+
+bool NNCM3U8PlayServer::_start_(ID param_1,SEL param_2,ID *param_3)
+
+{
+  bool bVar1;
+  
+  bVar1 = FUN_1015e8608(*(undefined8 *)(param_1 + 0x10));
+  return bVar1;
+}
+
+
+
+/* NNCM3U8PlayServer._stop | 0x100007890 | ev_de68ace27b1caacf629c29c45d9e37e9fc9b520c3ef25b4002ce98be1de97298 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NNCM3U8PlayServer::_stop(ID param_1,SEL param_2)
+
+{
+  FUN_1015ea3c8(*(undefined8 *)(param_1 + 0x10));
+  return;
+}
+
+
+
+/* NNCM3U8PlayServer.httpServer | 0x100007898 | ev_fa9df2856e43c0f034b3e138f1d1f1657c62181e132510dc0809731d65d5193f */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCM3U8PlayServer::httpServer(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCM3U8PlayServer.port | 0x1000078a0 | ev_2ec8a7cb14bb86c927d61c4cdad1d3d56288831ed2188390a0e0386d968d34ab */
+
+/* Function Stack Size: 0x10 bytes */
+
+unsigned_short NNCM3U8PlayServer::port(ID param_1,SEL param_2)
+
+{
+  return *(unsigned_short *)(param_1 + 8);
+}
+
+
+
+/* NNCM3U8PlayServer.setPort: | 0x1000078a8 | ev_617b4e3c3722a4a3a10f0c68c98fa53c5a9e24e8516d8cdca1a81c7204562705 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void NNCM3U8PlayServer::setPort_(ID param_1,SEL param_2,unsigned_short param_3)
+
+{
+  *(unsigned_short *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCM3U8PlayServer.serverURL | 0x1000078b0 | ev_365cfc1400ca81b17b73d00026bd0a3dff01599b29f1cd9d092afcbb3ae51662 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCM3U8PlayServer::serverURL(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x18);
+}
+
+
+
+/* NNCM3U8PlayServer.setServerURL: | 0x1000078b8 | ev_5993d37baf43b46e12a593a48313fa8c84ec5884d5292d56d113f8ff101ea0dd */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCM3U8PlayServer::setServerURL_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* NNCM3U8PlayServer..cxx_destruct | 0x1000078c4 | ev_dd508ee215edbe3d513186c723df473a87f625ed15d36f064e5c466974ba60e2 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCM3U8PlayServer::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x18) = 0;
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  return;
+}
+
+

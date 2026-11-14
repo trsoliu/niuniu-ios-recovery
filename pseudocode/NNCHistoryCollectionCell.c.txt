@@ -1,0 +1,221 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCHistoryCollectionCell.awakeFromNib | 0x1000a7984 | ev_373e9db0c55634e5beb9daa1d6fbaf82d721526a924a40863291f3ea562ad714 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCHistoryCollectionCell::awakeFromNib(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar3 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCHistoryCollectionCell;
+  local_40 = param_1;
+  _objc_msgSendSuper2(&local_40,"awakeFromNib");
+  auVar3 = FUN_1015401e8(param_1);
+  IVar1 = FUN_101574688(auVar3._0_8_,auVar3._8_8_);
+  FUN_1015c25a8(IVar1);
+  auVar3 = FUN_1015401e8(param_1);
+  IVar1 = FUN_101574688(auVar3._0_8_,auVar3._8_8_);
+  FUN_1015ac5e8(0x4018000000000000,IVar1);
+  uVar2 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1,&cf_myBgColor);
+  auVar3 = FUN_10157e548(param_1);
+  FUN_1015d6fa8(auVar3._0_8_,auVar3._8_8_,uVar2);
+  auVar3 = FUN_1015ef928(param_1);
+  IVar1 = FUN_101574688(auVar3._0_8_,auVar3._8_8_);
+  FUN_1015c25a8(IVar1);
+  uVar2 = FUN_10153c008(0x3f000000,&_OBJC_CLASS___UIColor,extraout_x1_00,0);
+  auVar3 = FUN_1015ef928(param_1);
+  FUN_1015a5908(auVar3._0_8_,auVar3._8_8_,uVar2);
+  return;
+}
+
+
+
+/* NNCHistoryCollectionCell.setHistoryInfo: | 0x1000a7b14 | ev_bd773d3ed4a0abce6d0aca73f4e224e1a5657e7279af1fcd67dcbd78687bd12a */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryCollectionCell::setHistoryInfo_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  double dVar3;
+  undefined1 auVar4 [16];
+  
+  *(ID *)(param_1 + (long)__historyInfo) = param_3;
+  uVar1 = FUN_1015401e8(param_1);
+  auVar4 = FUN_1015f8e28(param_3);
+  auVar4 = FUN_1015156a8(&_OBJC_CLASS___NSURL,auVar4._8_8_,auVar4._0_8_);
+  FUN_10159db08(uVar1,auVar4._8_8_,auVar4._0_8_);
+  FUN_1015f91e8(param_3);
+  FUN_10154ec28(param_3);
+  uVar1 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf_____);
+  auVar4 = FUN_10157e548(param_1);
+  FUN_1015d6f08(auVar4._0_8_,auVar4._8_8_,uVar1);
+  auVar4 = FUN_10158c7c8(param_3);
+  uVar1 = FUN_1015efaa8(&objc::class_t::PublicFunction,auVar4._8_8_,auVar4._0_8_ / 1000);
+  auVar4 = FUN_1015ef928(param_1);
+  FUN_1015d6f08(auVar4._0_8_,auVar4._8_8_,uVar1);
+  uVar1 = FUN_1015ef928(param_1);
+  FUN_1015e3aa8(uVar1);
+  uVar1 = FUN_1015ef928(param_1);
+  dVar3 = (double)FUN_1015fc468(uVar1);
+  uVar1 = FUN_1015ef928(param_1);
+  FUN_1015dd9c8(dVar3 + 4.0,uVar1);
+  dVar3 = (double)FUN_1015fc468(param_1);
+  uVar1 = FUN_1015ef928(param_1);
+  FUN_1015ce268(dVar3 + -3.0,uVar1);
+  uVar1 = FUN_1015ef928(param_1);
+  dVar3 = (double)FUN_10155e568(uVar1);
+  uVar1 = FUN_1015ef928(param_1);
+  FUN_1015b6f28(dVar3 + 4.0,uVar1);
+  uVar1 = FUN_1015401e8(param_1);
+  dVar3 = (double)FUN_1015319c8(uVar1);
+  uVar1 = FUN_1015ef928(param_1);
+  FUN_1015a76a8(dVar3 + -2.0,uVar1);
+  auVar4 = FUN_1015ef928(param_1);
+  IVar2 = FUN_101574688(auVar4._0_8_,auVar4._8_8_);
+  FUN_1015ac5e8(0x4008000000000000,IVar2);
+  return;
+}
+
+
+
+/* NNCHistoryCollectionCell.historyInfo | 0x1000a7e4c | ev_c250b029c8a509c777929c858f38527e370e65dda07db2d5da35b93aabb32f5d */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryCollectionCell::historyInfo(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__historyInfo);
+}
+
+
+
+/* NNCHistoryCollectionCell.coverView | 0x1000a7e5c | ev_ada11df28734954af07c30e002206aff7e63cfad4ee05ed36162e0a11cf49039 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryCollectionCell::coverView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__coverView);
+}
+
+
+
+/* NNCHistoryCollectionCell.setCoverView: | 0x1000a7e7c | ev_2dc07d73759e7156942c78e30fe0b344e3e9c7a4b7a40c695ad893c77e84d0d5 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryCollectionCell::setCoverView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__coverView) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryCollectionCell.timeLabel | 0x1000a7e90 | ev_992b61108a55394b580efb08c21af2ed742e340dc4fb27a48f926c5f502b6c71 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryCollectionCell::timeLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__timeLabel);
+}
+
+
+
+/* NNCHistoryCollectionCell.setTimeLabel: | 0x1000a7eb0 | ev_2d583fc2531c6c5c66887c1dd0e6655e3186c3c78e5d458962988e732f88faee */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryCollectionCell::setTimeLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__timeLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryCollectionCell.nameLabel | 0x1000a7ec4 | ev_bcb27994557ff1536b596059204e9c02244a33028a43631436226fd2d1b3deb7 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryCollectionCell::nameLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nameLabel);
+}
+
+
+
+/* NNCHistoryCollectionCell.setNameLabel: | 0x1000a7ee4 | ev_97fb6977f963a569cc33bc7a870639e9cf8a225c24686229d4cffd11665ae9a2 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryCollectionCell::setNameLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nameLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryCollectionCell..cxx_destruct | 0x1000a7ef8 | ev_001d4d7d97b94b69b48a0d566c844db9a1ec6f516fee1888f897978928778a91 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCHistoryCollectionCell::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + (long)__nameLabel);
+  _objc_destroyWeak(param_1 + (long)__timeLabel);
+  _objc_destroyWeak(param_1 + (long)__coverView);
+  *(undefined8 *)(param_1 + (long)__historyInfo) = 0;
+  return;
+}
+
+

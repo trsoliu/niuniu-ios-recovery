@@ -1,0 +1,151 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* Share.modelWithDict: | 0x1000eeb18 | ev_08d2888a0d5449578981561804ff007403259ebc49657bea4a756215b73b2881 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID Share::modelWithDict_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_1015813c8(&objc::class_t::Share);
+  IVar1 = auVar2._0_8_;
+  auVar2 = FUN_1015ebae8(param_3,auVar2._8_8_,&cf_content);
+  FUN_1015d1668(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1,&cf_url);
+  FUN_1015d16c8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  return IVar1;
+}
+
+
+
+/* Share.initWithCoder: | 0x1000eebc4 | ev_223d03452b9ad698a838296fe36e953c34479338179c2b4cb0be7014dbae695c */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID Share::initWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::Share;
+  local_40 = param_1;
+  auVar2 = _objc_msgSendSuper2(&local_40,"init");
+  IVar1 = auVar2._0_8_;
+  if (IVar1 != 0) {
+    auVar2 = FUN_101545868(param_3,auVar2._8_8_,&cf_shareContent);
+    FUN_1015d1668(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1,&cf_shareUrl);
+    FUN_1015d16c8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  }
+  return IVar1;
+}
+
+
+
+/* Share.encodeWithCoder: | 0x1000eec8c | ev_e1684feee908330950d263e4ade801995c7a9e44260d7fb91c395a1d487d4c4a */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void Share::encodeWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_1015e0dc8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_shareContent);
+  auVar1 = FUN_1015e0ec8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_shareUrl);
+  return;
+}
+
+
+
+/* Share.shareContent | 0x1000eed20 | ev_4a50f06a1f979674e5c321d8c87a6bce25a08d8330af6fdd1ef451ee8cd4fa28 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID Share::shareContent(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* Share.setShareContent: | 0x1000eed28 | ev_2a6d22c7901f6ca43f14cdb1539f8d9d2b39e6806b10f23af78e9239d13013f8 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void Share::setShareContent_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* Share.shareUrl | 0x1000eed30 | ev_a10178489e79f634d33cc3b06706a60044af61f8474c1987f787123f9776a2ba */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID Share::shareUrl(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* Share.setShareUrl: | 0x1000eed38 | ev_fec1e485bd85880e9e06e0ad4b79bcd4e19352c4c5c5575cd7657951efad1d0b */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void Share::setShareUrl_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* Share..cxx_destruct | 0x1000eed40 | ev_c2f00630582a7ca9d5f098b3e87bf197e8cdcb5949cde17637420f45cc5ce2f7 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void Share::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

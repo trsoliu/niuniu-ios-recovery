@@ -1,0 +1,94 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCSpSourceIdModel.playerId | 0x1000a7460 | ev_5e39d039edc21fc8e684ad12e9027559899271e83827274a0f01838140ca4bff */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCSpSourceIdModel::playerId(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCSpSourceIdModel.setPlayerId: | 0x1000a7468 | ev_018caaaadc46869619e05a0dd2ec9e353211f3940e0a04425f536410f450a5c6 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCSpSourceIdModel::setPlayerId_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCSpSourceIdModel.thirdVodId | 0x1000a7470 | ev_2b1ad240b5b6da95ea4848662b99550b6f3a8e13fe3c0e4ebd74548c57462447 */
+
+/* Function Stack Size: 0x10 bytes */
+
+int NNCSpSourceIdModel::thirdVodId(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 8);
+}
+
+
+
+/* NNCSpSourceIdModel.setThirdVodId: | 0x1000a7478 | ev_3262cb519dffbb5145d1e63041fbb5f47c48468cd5b0c8d97a5c33c107c9bb5d */
+
+/* Function Stack Size: 0x14 bytes */
+
+void NNCSpSourceIdModel::setThirdVodId_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCSpSourceIdModel.episodeModelList | 0x1000a7480 | ev_535c44d224ea0b6aba2cea6aade1f1f36f9d10853579a60bf17a1f990d9f2a6a */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCSpSourceIdModel::episodeModelList(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x18);
+}
+
+
+
+/* NNCSpSourceIdModel.setEpisodeModelList: | 0x1000a7488 | ev_2126891bb4eaae7ffc1cd5eb1ca6f5fb3f5018bc61b8a60e7db7c507c4d85138 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCSpSourceIdModel::setEpisodeModelList_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* NNCSpSourceIdModel..cxx_destruct | 0x1000a7494 | ev_95d9b75eb5d4d47ebd18604c6085551e5af07282be660234d22acb5b2a011d93 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCSpSourceIdModel::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x18) = 0;
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  return;
+}
+
+

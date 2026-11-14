@@ -1,0 +1,329 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCDownloadItemViewController.viewDidLoad | 0x100097f14 | ev_f81998f253b285f3bf4ab9558e50cf171a4e409754e0a9659ee8cdd00dfd2c63 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDownloadItemViewController::viewDidLoad(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined1 auVar3 [16];
+  ID local_68;
+  class_t *pcStack_60;
+  undefined8 local_58;
+  undefined8 local_50;
+  undefined8 local_48;
+  undefined8 local_40;
+  long local_38;
+  
+  local_38 = *(long *)PTR____stack_chk_guard_101d78938;
+  pcStack_60 = &objc::class_t::NNCDownloadItemViewController;
+  local_68 = param_1;
+  _objc_msgSendSuper2(&local_68,"viewDidLoad");
+  auVar3 = FUN_1015f0448(param_1);
+  FUN_1015d7e08(param_1,auVar3._8_8_,auVar3._0_8_);
+  FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1,0);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_00);
+  FUN_1015a5908(IVar1);
+  FUN_1015bb0a8(param_1,extraout_x1_01,0);
+  uVar2 = _objc_alloc(&_OBJC_CLASS___UIBarButtonItem);
+  auVar3 = FUN_101559c08(param_1);
+  auVar3 = FUN_101567b68(uVar2,auVar3._8_8_,auVar3._0_8_,2,param_1,"nncchangeEditMode");
+  FUN_1015ce368(param_1,auVar3._8_8_,auVar3._0_8_);
+  local_58 = *(undefined8 *)PTR__NSForegroundColorAttributeName_101d78300;
+  local_48 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_02,0xffffff);
+  local_50 = *(undefined8 *)PTR__NSFontAttributeName_101d782f8;
+  auVar3 = FUN_1015ed768(0x4030000000000000,&_OBJC_CLASS___UIFont);
+  local_40 = auVar3._0_8_;
+  uVar2 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar3._8_8_,&local_48,&local_58,2);
+  auVar3 = FUN_10159a368(param_1);
+  FUN_1015d8028(auVar3._0_8_,auVar3._8_8_,uVar2,0);
+  uVar2 = FUN_10159a368(param_1);
+  auVar3 = FUN_101580748(param_1);
+  FUN_1015ce2e8(auVar3._0_8_,auVar3._8_8_,uVar2);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_38) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCDownloadItemViewController.viewDidLayoutSubviews | 0x100098164 | ev_748a330a157b9c59f293782fd5036facacecbdd276ea0db3120604241e470b18 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDownloadItemViewController::viewDidLayoutSubviews(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined1 auVar4 [16];
+  ID local_50;
+  class_t *pcStack_48;
+  
+  pcStack_48 = &objc::class_t::NNCDownloadItemViewController;
+  local_50 = param_1;
+  _objc_msgSendSuper2(&local_50,"viewDidLayoutSubviews");
+  auVar4 = FUN_101581c88(param_1);
+  if ((auVar4._0_8_ & 1) == 0) {
+    FUN_1015c5a08(param_1,auVar4._8_8_,1);
+    auVar4 = _objc_alloc(&objc::class_t::NNCDownloadView);
+    IVar1 = FUN_1015fa0a8(param_1,auVar4._8_8_);
+    uVar2 = FUN_1015fc468(IVar1);
+    IVar1 = FUN_1015fa0a8(param_1,extraout_x1);
+    uVar3 = FUN_10155e568(IVar1);
+    auVar4 = FUN_101564e08(0,0,uVar2,uVar3,auVar4._0_8_);
+    FUN_1015b0d08(param_1,auVar4._8_8_,auVar4._0_8_);
+    auVar4 = FUN_10154b568(param_1);
+    FUN_1015d95a8(auVar4._0_8_,auVar4._8_8_,2);
+    uVar2 = FUN_1015f8fe8(param_1);
+    auVar4 = FUN_10154b568(param_1);
+    FUN_1015dc188(auVar4._0_8_,auVar4._8_8_,uVar2);
+    IVar1 = FUN_1015fa0a8(param_1,extraout_x1_00);
+    auVar4 = FUN_10154b568(param_1);
+    FUN_101527148(IVar1,auVar4._8_8_,auVar4._0_8_);
+    uVar2 = FUN_10156d208(param_1);
+    auVar4 = FUN_10154b568(param_1);
+    FUN_1015bb0a8(auVar4._0_8_,auVar4._8_8_,uVar2);
+    uVar2 = FUN_10154b568(param_1);
+    FUN_101591aa8(uVar2);
+  }
+  return;
+}
+
+
+
+/* NNCDownloadItemViewController.nncchangeEditMode | 0x100098338 | ev_815ca445d6c3d77bc8dbf924a1b856e3d9fcbcaf70e8f69d8a73ab71bf46f163 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDownloadItemViewController::nncchangeEditMode(ID param_1,SEL param_2)
+
+{
+  uint uVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined1 auVar3 [16];
+  
+  uVar1 = FUN_10156d208();
+  FUN_1015bb0a8(param_1,extraout_x1,uVar1 ^ 1);
+  uVar2 = FUN_101559c08(param_1);
+  auVar3 = FUN_10159a368(param_1);
+  FUN_1015d7e08(auVar3._0_8_,auVar3._8_8_,uVar2);
+  uVar2 = FUN_10156d208(param_1);
+  auVar3 = FUN_10154b568(param_1);
+  FUN_1015bb0a8(auVar3._0_8_,auVar3._8_8_,uVar2);
+  return;
+}
+
+
+
+/* NNCDownloadItemViewController.getRightTitle | 0x1000983d8 | ev_cb86b07326a91584e8fadfa55ca0fb4c33210cce01690d073f469b05304316cf */
+
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadItemViewController::getRightTitle(ID param_1,SEL param_2)
+
+{
+  cfstringStruct *pcVar1;
+  int iVar2;
+  
+  iVar2 = FUN_10156d208();
+  pcVar1 = &cf__b;
+  if (iVar2 == 0) {
+    pcVar1 = &cfstringStruct_101de1500;
+  }
+  return (ID)pcVar1;
+}
+
+
+
+/* NNCDownloadItemViewController.preferredStatusBarStyle | 0x100098404 | ev_256a3483e27859d82996eed6cd36116fa851e38c30e49d897404bfa81d218d3e */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long NNCDownloadItemViewController::preferredStatusBarStyle(ID param_1,SEL param_2)
+
+{
+  return 1;
+}
+
+
+
+/* NNCDownloadItemViewController.titleString | 0x10009840c | ev_3d18e8e7dbe1a7383fe4f2a8f21eafdb83365783fbff24ac8ff0908b92d44471 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadItemViewController::titleString(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__titleString);
+}
+
+
+
+/* NNCDownloadItemViewController.setTitleString: | 0x10009841c | ev_53fea293cc1e1a444dc1d9ae81214d51b22eb2cc99161efca544ed9a43de6fd4 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadItemViewController::setTitleString_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__titleString) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadItemViewController.videoId | 0x100098428 | ev_0fbe5ba223fb1d3a219f77624756eadc0a9bd64107b5a60973f3c8fb2f0b872c */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+int NNCDownloadItemViewController::videoId(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + (long)__videoId);
+}
+
+
+
+/* NNCDownloadItemViewController.setVideoId: | 0x100098438 | ev_756461e717ed21f6a8428d4a591d18f33899f1cde52585002e137f490f13aeb4 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCDownloadItemViewController::setVideoId_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + (long)__videoId) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadItemViewController.isEditMode | 0x100098448 | ev_194de490d26d7f610057f2ab33bee3b072471fed726ca061f6d5c6ff54d86119 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCDownloadItemViewController::isEditMode(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__isEditMode);
+}
+
+
+
+/* NNCDownloadItemViewController.setIsEditMode: | 0x100098458 | ev_d29515ac9db8e6d7f97b0ec2b45a234fd67a3137cab5ee344227c9aa81316153 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCDownloadItemViewController::setIsEditMode_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__isEditMode) = (char)param_3;
+  return;
+}
+
+
+
+/* NNCDownloadItemViewController.rightItem | 0x100098468 | ev_dedeed0290a1258d633ffc6dad4005b3b2b71699ba7aa0bb6e8a00559116ff86 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadItemViewController::rightItem(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__rightItem);
+}
+
+
+
+/* NNCDownloadItemViewController.setRightItem: | 0x100098478 | ev_7d7b179c99cfc63f0d7bdd0643e9f94c052b4e5175b56bcff812b03d211170a6 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadItemViewController::setRightItem_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__rightItem) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadItemViewController.downloadedView | 0x10009848c | ev_34948938f5bd09fbe18b890b27e9f23dcdf73241537e765eca41a0e5428a5b04 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadItemViewController::downloadedView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__downloadedView);
+}
+
+
+
+/* NNCDownloadItemViewController.setDownloadedView: | 0x10009849c | ev_7440e4ec15c8d66cf36f300ef17fa1f4b5362c241c12fdd4434e3f2c77fa1f97 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadItemViewController::setDownloadedView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__downloadedView) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadItemViewController..cxx_destruct | 0x1000984b0 | ev_9575f48326e70cf77e4e5f5202efffa4b5d772c1dc46e7aedf087ed2e9511429 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDownloadItemViewController::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__downloadedView) = 0;
+  *(undefined8 *)(param_1 + (long)__rightItem) = 0;
+  *(undefined8 *)(param_1 + (long)__titleString) = 0;
+  return;
+}
+
+

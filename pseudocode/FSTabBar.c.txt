@@ -1,0 +1,761 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* FSTabBar.init | 0x100098738 | ev_503f91cc30799ec499bb586a1361396a34213a7c025b441d109e53145670bf96 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID FSTabBar::init(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  ID local_20;
+  class_t *pcStack_18;
+  
+  pcStack_18 = &objc::class_t::FSTabBar;
+  local_20 = param_1;
+  IVar1 = _objc_msgSendSuper2(&local_20,"init");
+  return IVar1;
+}
+
+
+
+/* FSTabBar.setItems: | 0x10009876c | ev_c91757168150f664eea3b8fc096cd495b5141c32d706f9dc351bc2c009b50c9d */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBar::setItems_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 uVar1;
+  undefined8 uVar2;
+  long lVar3;
+  long lVar4;
+  undefined1 auVar5 [16];
+  undefined1 auVar6 [16];
+  undefined1 auVar7 [16];
+  undefined8 local_130;
+  long lStack_128;
+  long *local_120;
+  undefined8 uStack_118;
+  undefined8 local_110;
+  undefined8 uStack_108;
+  undefined8 uStack_100;
+  undefined8 uStack_f8;
+  undefined1 auStack_e8 [128];
+  long local_68;
+  
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  *(ID *)(param_1 + (long)__items) = param_3;
+  auVar5 = FUN_10152ba48(&_OBJC_CLASS___NSMutableArray);
+  lStack_128 = 0;
+  local_130 = 0;
+  uStack_118 = 0;
+  local_120 = (long *)0x0;
+  uStack_108 = 0;
+  local_110 = 0;
+  uStack_f8 = 0;
+  uStack_100 = 0;
+  auVar6 = FUN_10153f948(param_3,auVar5._8_8_,&local_130,auStack_e8,0x10);
+  uVar1 = auVar6._8_8_;
+  if (auVar6._0_8_ != 0) {
+    lVar3 = *local_120;
+    do {
+      uVar1 = auVar6._8_8_;
+      lVar4 = 0;
+      do {
+        if (*local_120 != lVar3) {
+          _objc_enumerationMutation(param_3);
+          uVar1 = extraout_x1;
+        }
+        uVar2 = *(undefined8 *)(lStack_128 + lVar4 * 8);
+        auVar7 = FUN_101541708(uVar2,uVar1,param_1);
+        FUN_1015d6208(uVar2,auVar7._8_8_,auVar7._0_8_);
+        auVar7 = FUN_1015edae8(uVar2);
+        FUN_101526528(auVar5._0_8_,auVar7._8_8_,auVar7._0_8_);
+        lVar4 = lVar4 + 1;
+        uVar1 = extraout_x1_00;
+      } while (auVar6._0_8_ != lVar4);
+      auVar6 = FUN_10153f948(param_3,extraout_x1_00,&local_130,auStack_e8,0x10);
+      uVar1 = auVar6._8_8_;
+    } while (auVar6._0_8_ != 0);
+  }
+  FUN_1015a8328(param_1,uVar1,auVar5._0_8_);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_68) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* FSTabBar.setButtonItems: | 0x100098914 | ev_e561c6d977c4c99fb4e1107b0f28fba4b1ff4d20afd2ac38af5601b482fa272d */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBar::setButtonItems_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  long lVar2;
+  SEL extraout_x1;
+  undefined8 uVar3;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  long lVar4;
+  long lVar5;
+  undefined8 uVar6;
+  ID IVar7;
+  long lVar8;
+  undefined1 auVar9 [16];
+  undefined8 local_1f0;
+  long lStack_1e8;
+  long *local_1e0;
+  undefined8 uStack_1d8;
+  undefined8 local_1d0;
+  undefined8 uStack_1c8;
+  undefined8 uStack_1c0;
+  undefined8 uStack_1b8;
+  undefined8 local_1b0;
+  long lStack_1a8;
+  long *local_1a0;
+  undefined8 uStack_198;
+  undefined8 local_190;
+  undefined8 uStack_188;
+  undefined8 uStack_180;
+  undefined8 uStack_178;
+  undefined1 auStack_170 [128];
+  undefined1 auStack_f0 [128];
+  long local_70;
+  
+  local_70 = *(long *)PTR____stack_chk_guard_101d78938;
+  lStack_1a8 = 0;
+  local_1b0 = 0;
+  uStack_198 = 0;
+  local_1a0 = (long *)0x0;
+  uStack_188 = 0;
+  local_190 = 0;
+  uStack_178 = 0;
+  uStack_180 = 0;
+  lVar4 = (long)__buttonItems;
+  IVar1 = *(ID *)(param_1 + lVar4);
+  lVar2 = FUN_10153f948(IVar1,param_2,&local_1b0,auStack_f0,0x10);
+  if (lVar2 != 0) {
+    lVar8 = *local_1a0;
+    do {
+      lVar5 = 0;
+      do {
+        if (*local_1a0 != lVar8) {
+          _objc_enumerationMutation(IVar1);
+        }
+        IVar7 = *(ID *)(lStack_1a8 + lVar5 * 8);
+        FUN_101594908(IVar7);
+        FUN_101593bc8(IVar7,extraout_x1);
+        lVar5 = lVar5 + 1;
+      } while (lVar2 != lVar5);
+      lVar2 = FUN_10153f948(IVar1);
+    } while (lVar2 != 0);
+  }
+  *(ID *)(param_1 + lVar4) = param_3;
+  uStack_1c8 = 0;
+  local_1d0 = 0;
+  uStack_1b8 = 0;
+  uStack_1c0 = 0;
+  lStack_1e8 = 0;
+  local_1f0 = 0;
+  uStack_1d8 = 0;
+  local_1e0 = (long *)0x0;
+  auVar9 = FUN_10153f948(param_3,param_3,&local_1f0,auStack_170,0x10);
+  if (auVar9._0_8_ != 0) {
+    lVar2 = *local_1e0;
+    do {
+      uVar3 = auVar9._8_8_;
+      lVar4 = 0;
+      do {
+        if (*local_1e0 != lVar2) {
+          _objc_enumerationMutation(param_3);
+          uVar3 = extraout_x1_00;
+        }
+        uVar6 = *(undefined8 *)(lStack_1e8 + lVar4 * 8);
+        FUN_101527148(param_1,uVar3,uVar6);
+        FUN_101527248(uVar6,extraout_x1_01,param_1,"touchDown:",1);
+        FUN_101527248(uVar6,extraout_x1_02,param_1,"touchUpInside:",0x40);
+        FUN_101527248(uVar6,extraout_x1_03,param_1,"touchUpOutside:",0x80);
+        lVar4 = lVar4 + 1;
+        uVar3 = extraout_x1_04;
+      } while (auVar9._0_8_ != lVar4);
+      auVar9 = FUN_10153f948(param_3,extraout_x1_04,&local_1f0,auStack_170,0x10);
+    } while (auVar9._0_8_ != 0);
+  }
+  FUN_1015c5148(param_1);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_70) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* FSTabBar.setSelectedItem: | 0x100098b58 | ev_04ebfce627a4c1975cd44bd5844148f08cd9cf92414666a52ee4ecdd8ad2397c */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBar::setSelectedItem_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  undefined1 auVar3 [16];
+  
+  lVar2 = (long)__selectedItem;
+  if (*(ID *)(param_1 + lVar2) != param_3) {
+    auVar3 = FUN_1015edae8(*(ID *)(param_1 + lVar2));
+    FUN_1015d03e8(auVar3._0_8_,auVar3._8_8_,0);
+    auVar3 = FUN_1015edae8(param_3);
+    FUN_1015d03e8(auVar3._0_8_,auVar3._8_8_,1);
+    uVar1 = FUN_1015edae8(*(undefined8 *)(param_1 + lVar2));
+    auVar3 = FUN_1015ee088(param_1);
+    FUN_101593c08(uVar1,auVar3._8_8_,auVar3._0_8_);
+    uVar1 = FUN_1015edae8(param_3);
+    auVar3 = FUN_1015ee088(param_1);
+    FUN_101525d08(uVar1,auVar3._8_8_,auVar3._0_8_);
+    *(ID *)(param_1 + lVar2) = param_3;
+  }
+  return;
+}
+
+
+
+/* FSTabBar.touchDown: | 0x100098c80 | ev_bbb9600d93b3b04c26e3995b2d1db3424d697ffd0e1b8911a3439907afd43cd6 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBar::touchDown_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar2 [16];
+  
+  uVar1 = FUN_1015784a8(param_1);
+  FUN_10156ad28(uVar1);
+  FUN_1015d8928(param_1,extraout_x1,param_3);
+  auVar2 = FUN_10159c608(0x3fd3333340000000,&_OBJC_CLASS___NSTimer,extraout_x1_00,param_1,
+                         "longPressTimerDidFire:",0,0);
+  FUN_1015c1308(param_1,auVar2._8_8_,auVar2._0_8_);
+  return;
+}
+
+
+
+/* FSTabBar.touchUpInside: | 0x100098d28 | ev_3b4607842ec4577a8c58cef9648dcd35cb7f73ff24dd7c62e804d844b04a228f */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBar::touchUpInside_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  
+  uVar1 = FUN_1015784a8(param_1);
+  FUN_10156ad28(uVar1);
+  FUN_101534d48(param_1,extraout_x1,param_3);
+  return;
+}
+
+
+
+/* FSTabBar.touchUpOutside: | 0x100098d88 | ev_34ee79e1d8d6520a101a85b8bf03fe81a06e57ccfc2968b962f0f485cc7fd127 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBar::touchUpOutside_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  
+  uVar1 = FUN_1015784a8(param_1);
+  FUN_10156ad28(uVar1);
+  FUN_101534d48(param_1,extraout_x1,param_3);
+  return;
+}
+
+
+
+/* FSTabBar.buttonClicked: | 0x100098de8 | ev_53a39b090e36ddf80485be363caff0b1de995f9306be831ef0b0e9faa6a03c3b */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBar::buttonClicked_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  ID IVar2;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  char *pcVar3;
+  
+  IVar2 = FUN_1015618e8(*(undefined8 *)(param_1 + (long)__buttonItems));
+  FUN_101583308(*(undefined8 *)(param_1 + (long)__items));
+  IVar2 = FUN_101546808(param_1,extraout_x1,IVar2);
+  pcVar3 = "tabBar:didSelectFSItem:";
+  iVar1 = FUN_101598088(IVar2);
+  if (iVar1 != 0) {
+    IVar2 = FUN_101546808(param_1,extraout_x1_00,(ID)pcVar3);
+    FUN_1015edaa8(IVar2);
+  }
+  return;
+}
+
+
+
+/* FSTabBar.multipleTapped: | 0x100098e98 | ev_26032ef495083ba85515a5fcc82940125ce0e9a75dbf9cf266438a6600f8d8f0 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBar::multipleTapped_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  ID IVar2;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  char *pcVar3;
+  
+  FUN_1015fa0a8(param_3,param_2);
+  IVar2 = FUN_1015618e8(*(undefined8 *)(param_1 + (long)__buttonItems));
+  FUN_101583308(*(undefined8 *)(param_1 + (long)__items));
+  IVar2 = FUN_101546808(param_1,extraout_x1,IVar2);
+  pcVar3 = "tabBar:doubleTappedFSItem:";
+  iVar1 = FUN_101598088(IVar2);
+  if (iVar1 != 0) {
+    IVar2 = FUN_101546808(param_1,extraout_x1_00,(ID)pcVar3);
+    FUN_1015edac8(IVar2);
+  }
+  return;
+}
+
+
+
+/* FSTabBar.longPressTimerDidFire: | 0x100098f70 | ev_771a023ade17bd3b968586a1d4acc53c5cef288ae3618533d493f1d1c008e194 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBar::longPressTimerDidFire_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_1015f14a8();
+  FUN_101534d48(param_1,auVar1._8_8_,auVar1._0_8_);
+  return;
+}
+
+
+
+/* FSTabBar.tapGesture | 0x100098fac | ev_4cb3dde31c62fce6b2b646a52b82df3a613919bf63ede9e35a6163c744ffbb6c */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID FSTabBar::tapGesture(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  long lVar3;
+  undefined1 auVar4 [16];
+  
+  lVar3 = (long)__tapGesture;
+  IVar1 = *(ID *)(param_1 + lVar3);
+  if (IVar1 == 0) {
+    auVar4 = _objc_alloc(&_OBJC_CLASS___UITapGestureRecognizer);
+    auVar4 = FUN_101567988(auVar4._0_8_,auVar4._8_8_,param_1,"multipleTapped:");
+    uVar2 = *(undefined8 *)(param_1 + lVar3);
+    *(long *)(param_1 + lVar3) = auVar4._0_8_;
+    FUN_1015c61a8(uVar2,*(undefined8 *)(param_1 + lVar3),auVar4._8_8_,2);
+    IVar1 = *(ID *)(param_1 + lVar3);
+  }
+  return IVar1;
+}
+
+
+
+/* FSTabBar.backgroundView | 0x100099014 | ev_9cf21e77f79a579260ed99afd4a4c504a9aa911fbf0528039446b48b0930246d */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID FSTabBar::backgroundView(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  long lVar3;
+  undefined1 auVar4 [16];
+  
+  lVar3 = (long)__backgroundView;
+  IVar1 = *(ID *)(param_1 + lVar3);
+  if (IVar1 == 0) {
+    uVar2 = _objc_alloc(&_OBJC_CLASS___UIView);
+    FUN_101531d88(param_1);
+    auVar4 = FUN_101564e08(uVar2);
+    uVar2 = *(undefined8 *)(param_1 + lVar3);
+    *(long *)(param_1 + lVar3) = auVar4._0_8_;
+    FUN_1015a53a8(uVar2,*(undefined8 *)(param_1 + lVar3),auVar4._8_8_,0x12);
+    auVar4 = FUN_10153c088(0x3fef1f1f20000000,0x3fef1f1f20000000,0x3fef1f1f20000000,
+                           0x3ff0000000000000,&_OBJC_CLASS___UIColor);
+    FUN_1015a5908(*(undefined8 *)(param_1 + lVar3),auVar4._8_8_,auVar4._0_8_);
+    FUN_101569288(param_1,extraout_x1,*(undefined8 *)(param_1 + lVar3),0);
+    IVar1 = *(ID *)(param_1 + lVar3);
+  }
+  return IVar1;
+}
+
+
+
+/* FSTabBar.topBorderView | 0x1000990d8 | ev_ced3bd844db732d51ad625eb636468c53180a5d426588ff9abf83bc0a138f0b9 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID FSTabBar::topBorderView(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  long lVar3;
+  double dVar4;
+  undefined1 auVar5 [16];
+  
+  lVar3 = (long)__topBorderView;
+  IVar1 = *(ID *)(param_1 + lVar3);
+  if (IVar1 == 0) {
+    uVar2 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+    dVar4 = (double)FUN_10159c0e8(uVar2);
+    uVar2 = _objc_alloc(&_OBJC_CLASS___UIView);
+    FUN_101531d88(param_1);
+    auVar5 = FUN_101564e08(0,(double)-(float)(1.0 / dVar4),uVar2);
+    uVar2 = *(undefined8 *)(param_1 + lVar3);
+    *(long *)(param_1 + lVar3) = auVar5._0_8_;
+    FUN_1015a53a8(uVar2,*(undefined8 *)(param_1 + lVar3),auVar5._8_8_,0x22);
+    auVar5 = FUN_10153c088(0x3fe6565660000000,0x3fe6565660000000,0x3fe6565660000000,
+                           0x3ff0000000000000,&_OBJC_CLASS___UIColor);
+    FUN_1015a5908(*(undefined8 *)(param_1 + lVar3),auVar5._8_8_,auVar5._0_8_);
+    FUN_101569268(param_1,extraout_x1,*(undefined8 *)(param_1 + lVar3),
+                  *(undefined8 *)(param_1 + (long)__backgroundView));
+    IVar1 = *(ID *)(param_1 + lVar3);
+  }
+  return IVar1;
+}
+
+
+
+/* FSTabBar.layoutSubviews | 0x1000991f0 | ev_84a9646222140ae60908185f61161b34a07dae8cfe4e23a2b92ae8088f60f14e */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void FSTabBar::layoutSubviews(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ulong uVar2;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  ulong uVar3;
+  long lVar4;
+  undefined8 uVar5;
+  double dVar6;
+  undefined8 in_d1;
+  double in_d2;
+  undefined8 in_d3;
+  double dVar7;
+  float fVar8;
+  undefined1 auVar9 [16];
+  undefined1 auVar10 [16];
+  ID local_70;
+  class_t *pcStack_68;
+  
+  pcStack_68 = &objc::class_t::FSTabBar;
+  local_70 = param_1;
+  _objc_msgSendSuper2(&local_70,"layoutSubviews");
+  uVar5 = FUN_101531d88(param_1);
+  uVar1 = FUN_10152d728(param_1);
+  FUN_1015b4b08(uVar5,in_d1,in_d2,in_d3,uVar1);
+  uVar1 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+  dVar6 = (double)FUN_10159c0e8(uVar1);
+  FUN_101531d88(param_1);
+  dVar7 = (double)(float)(1.0 / dVar6);
+  uVar1 = FUN_1015f0d88(param_1);
+  FUN_1015b4b08(0,(double)-(float)(1.0 / dVar6),in_d2,dVar7,uVar1);
+  FUN_101554148(param_1,extraout_x1);
+  FUN_101554148(param_1,extraout_x1_00);
+  lVar4 = (long)__buttonItems;
+  dVar6 = in_d2;
+  auVar9 = FUN_10153f908(*(undefined8 *)(param_1 + lVar4));
+  FUN_101554148(param_1,auVar9._8_8_);
+  uVar2 = FUN_10153f908(*(undefined8 *)(param_1 + lVar4));
+  auVar10 = FUN_10153f908(*(undefined8 *)(param_1 + lVar4));
+  uVar1 = auVar10._8_8_;
+  if (auVar10._0_8_ != 0) {
+    uVar3 = 0;
+    fVar8 = (float)(double)(long)(in_d2 / (double)auVar9._0_8_);
+    do {
+      uVar1 = FUN_101583308(*(undefined8 *)(param_1 + lVar4),uVar1,uVar3);
+      FUN_1015b4b08((double)((float)(double)(long)((dVar6 - (double)(fVar8 * (float)uVar2)) * 0.5) +
+                            (float)(int)uVar3 * fVar8),0x3ff0000000000000,(double)fVar8,
+                    (double)(float)(dVar7 + -1.0),uVar1);
+      uVar3 = uVar3 + 1;
+      auVar9 = FUN_10153f908(*(undefined8 *)(param_1 + lVar4));
+      uVar1 = auVar9._8_8_;
+    } while (uVar3 < auVar9._0_8_);
+  }
+  return;
+}
+
+
+
+/* FSTabBar.delegate | 0x1000993f8 | ev_cdaa5c733d62a949185c6bdba50eb09c7daed7c71c8932c8eb0ce03cea364bb1 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID FSTabBar::delegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__delegate);
+}
+
+
+
+/* FSTabBar.setDelegate: | 0x100099418 | ev_ba99ad08aa44a442d8a4e17121b5b49e94f8e434776360808e93921109341eb4 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBar::setDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__delegate) = param_3;
+  return;
+}
+
+
+
+/* FSTabBar.items | 0x10009942c | ev_a12a7f16ef35363fca2ef585b9ff27a1051c2c85e6f8a43c8cb45c72c582e7fb */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID FSTabBar::items(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__items);
+}
+
+
+
+/* FSTabBar.selectedItem | 0x10009943c | ev_3d472a1b772541d6485c486c9c4a648cfef7acee10390b11f8f9119e359faeb8 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID FSTabBar::selectedItem(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__selectedItem);
+}
+
+
+
+/* FSTabBar.setTopBorderView: | 0x10009944c | ev_a0a8313e2321abfac7879d511c220531deea5ed78c38db46853d50c2b03fa106 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBar::setTopBorderView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__topBorderView) = param_3;
+  return;
+}
+
+
+
+/* FSTabBar.setBackgroundView: | 0x100099460 | ev_574d798cddfe7299b1be1f146932314538b1b855d71c67344b61017d4e2e39af */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBar::setBackgroundView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__backgroundView) = param_3;
+  return;
+}
+
+
+
+/* FSTabBar.longPressTimer | 0x100099474 | ev_4d4d31615a0ad97a6168003c193a5f7e44e79e27eb2a02d55be65fe7526ebf87 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID FSTabBar::longPressTimer(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__longPressTimer);
+}
+
+
+
+/* FSTabBar.setLongPressTimer: | 0x100099484 | ev_d4fe706937ae82582fa4c0b43162e8e005600bbdfcc8a9de243ed50bf499f564 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBar::setLongPressTimer_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__longPressTimer) = param_3;
+  return;
+}
+
+
+
+/* FSTabBar.touchButton | 0x100099498 | ev_cc3b7b11cea1d6fa95baf6d31cc1312a577dcf79fd0f91ef59d207ac88495642 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID FSTabBar::touchButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__touchButton);
+}
+
+
+
+/* FSTabBar.setTouchButton: | 0x1000994a8 | ev_2d5cc9eb2197f362dd20613bf838b04bc13c48c9e573ce74ce278eaec6f28fb0 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBar::setTouchButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__touchButton) = param_3;
+  return;
+}
+
+
+
+/* FSTabBar.setTapGesture: | 0x1000994bc | ev_7acb789634ab18dd7bd27bdf8f10b7af95647e387b723ff4668f14136012bbff */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void FSTabBar::setTapGesture_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__tapGesture) = param_3;
+  return;
+}
+
+
+
+/* FSTabBar..cxx_destruct | 0x1000994d0 | ev_fafac9895a3fca96d5d624fd5ed03fd941d03787ca5fc0a15ca56e5623e2afc0 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void FSTabBar::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__tapGesture) = 0;
+  *(undefined8 *)(param_1 + (long)__touchButton) = 0;
+  *(undefined8 *)(param_1 + (long)__longPressTimer) = 0;
+  *(undefined8 *)(param_1 + (long)__backgroundView) = 0;
+  *(undefined8 *)(param_1 + (long)__topBorderView) = 0;
+  _objc_destroyWeak(param_1 + (long)__delegate);
+  *(undefined8 *)(param_1 + (long)__buttonItems) = 0;
+  *(undefined8 *)(param_1 + (long)__items) = 0;
+  return;
+}
+
+

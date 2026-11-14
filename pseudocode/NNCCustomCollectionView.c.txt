@@ -1,0 +1,35 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCCustomCollectionView.gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer: | 0x1000f2320 | ev_a7706536efa10fb1ba0ff0598b352fef2890558ba6445c82d08f7f16cd63ff2d */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+bool NNCCustomCollectionView::gestureRecognizer_shouldRecognizeSimultaneouslyWithGestureRecognizer_
+               (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  int iVar1;
+  ID IVar2;
+  long lVar3;
+  bool bVar4;
+  double dVar5;
+  undefined1 auVar6 [16];
+  
+  IVar2 = FUN_1015fa0a8(param_4,param_2);
+  auVar6 = _NSClassFromString(&cf_UILayoutContainerView);
+  iVar1 = FUN_10156e908(IVar2,auVar6._8_8_,auVar6._0_8_);
+  if (((iVar1 == 0) || (lVar3 = FUN_1015ea028(param_4), lVar3 != 1)) ||
+     (dVar5 = (double)FUN_10153e6e8(param_1), dVar5 != 0.0)) {
+    bVar4 = 0;
+  }
+  else {
+    bVar4 = 1;
+  }
+  return bVar4;
+}
+
+

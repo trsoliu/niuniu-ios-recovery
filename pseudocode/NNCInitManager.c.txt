@@ -1,0 +1,811 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCInitManager.sharedInstance | 0x1000ec244 | ev_def832673416be86237ff112609d8ab3ffad25ce3370ab020c733611d75bc4fd */
+
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCInitManager::sharedInstance(ID param_1,SEL param_2)
+
+{
+  undefined *local_38;
+  undefined8 local_30;
+  code *local_28;
+  undefined *puStack_20;
+  ID local_18;
+  
+  local_38 = PTR___NSConcreteStackBlock_101d78760;
+  local_30 = 0xc0000000;
+  local_28 = FUN_1000ec2b8;
+  puStack_20 = &UNK_101d7b650;
+  if (lRam000000010243f270 != -1) {
+    local_18 = param_1;
+    _dispatch_once(0x10243f270,&local_38);
+  }
+  return IRam000000010243f268;
+}
+
+
+
+/* NNCInitManager.allocWithZone: | 0x1000ec2e4 | ev_92e7e4511780a3546ce86c5f98695401239b7215d02eb04c5081b71659866a0e */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCInitManager::allocWithZone_(ID param_1,SEL param_2,_NSZone *param_3)
+
+{
+  ID IVar1;
+  ID IVar2;
+  ID local_40;
+  class_t *pcStack_38;
+  
+  _objc_sync_enter();
+  if (IRam000000010243f268 == 0) {
+    pcStack_38 = &objc::class_t::NNCInitManager;
+    local_40 = param_1;
+    IVar2 = _objc_msgSendSuper2(&local_40,"allocWithZone:",param_3);
+    IVar1 = IRam000000010243f268;
+    IRam000000010243f268 = IVar2;
+  }
+  else {
+    IVar2 = 0;
+    IVar1 = IRam000000010243f268;
+  }
+  _objc_sync_exit(IVar1,param_1);
+  return IVar2;
+}
+
+
+
+/* NNCInitManager.destroyInstance | 0x1000ec394 | ev_4740ba458bd1a6f48b6e598a7b71423ed77e36bbc988751cb8adbd41d3aac534 */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCInitManager::destroyInstance(ID param_1,SEL param_2)
+
+{
+  uRam000000010243f268 = 0;
+  return;
+}
+
+
+
+/* NNCInitManager.init | 0x1000ec3a4 | ev_7e3bf31bcc7f283c01a35bf9a2eca8eea96adb76a49f68f55d40d44563adaeae */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCInitManager::init(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCInitManager;
+  local_30 = param_1;
+  IVar1 = _objc_msgSendSuper2(&local_30,"init");
+  if (IVar1 != 0) {
+    FUN_1015df468(IVar1);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCInitManager.dealloc | 0x1000ec3f4 | ev_41240533a1568c905b5c715cd195c82c9febd7ef8a295338a9cd198bbfa67c55 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCInitManager::dealloc(ID param_1,SEL param_2)
+
+{
+  undefined1 auVar1 [16];
+  ID local_30;
+  class_t *pcStack_28;
+  
+  auVar1 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+  FUN_101594388(auVar1._0_8_,auVar1._8_8_,param_1);
+  pcStack_28 = &objc::class_t::NNCInitManager;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"dealloc");
+  return;
+}
+
+
+
+/* NNCInitManager.setup | 0x1000ec45c | ev_419d88f41e507319cba3b288484348fd307d2d8eabe75fded868c58177e8cac4 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCInitManager::setup(ID param_1,SEL param_2)
+
+{
+  undefined1 auVar1 [16];
+  
+  FUN_1015e0088(param_1,param_2,0);
+  auVar1 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+  FUN_1015265c8(auVar1._0_8_,auVar1._8_8_,param_1,"statusBarOrientationChange:",
+                *(undefined8 *)PTR__UIApplicationDidChangeStatusBarOrientationNotification_101d78578
+                ,0);
+  FUN_1015df5a8(param_1);
+  _objc_alloc(&_OBJC_CLASS___NSDateFormatter);
+  auVar1 = FUN_101561e88();
+  FUN_1015ae728(param_1,auVar1._8_8_,auVar1._0_8_);
+  auVar1 = FUN_101544cc8(param_1);
+  FUN_1015ae748(auVar1._0_8_,auVar1._8_8_,&cf_yyyy_MM_dd);
+  _objc_alloc(&_OBJC_CLASS___NSDateFormatter);
+  auVar1 = FUN_101561e88();
+  FUN_1015ae708(param_1,auVar1._8_8_,auVar1._0_8_);
+  auVar1 = FUN_101544ce8(param_1);
+  FUN_1015ae748(auVar1._0_8_,auVar1._8_8_,&cf_yyyy_MM_ddHH_mm);
+  return;
+}
+
+
+
+/* NNCInitManager.setupAppearance | 0x1000ec568 | ev_3b0c8086b63ac21491c0f22ec72dcf3c7e5e69aff10b819a6b13e67e95d1144c */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCInitManager::setupAppearance(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  undefined8 uVar6;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined8 extraout_x1_07;
+  undefined8 extraout_x1_08;
+  undefined8 extraout_x1_09;
+  undefined8 extraout_x1_10;
+  undefined8 extraout_x1_11;
+  undefined8 extraout_x1_12;
+  undefined8 extraout_x1_13;
+  undefined8 extraout_x1_14;
+  undefined8 extraout_x1_15;
+  undefined8 extraout_x1_16;
+  undefined8 extraout_x1_17;
+  undefined8 extraout_x1_18;
+  undefined1 auVar7 [16];
+  undefined1 auVar8 [16];
+  undefined8 local_70;
+  long local_68;
+  
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  auVar7 = FUN_1015e0f48(&_OBJC_CLASS___UIApplication);
+  FUN_1015d4b88(auVar7._0_8_,auVar7._8_8_,1);
+  uVar2 = FUN_101548088(&_OBJC_CLASS___NSMutableDictionary);
+  _objc_alloc(&_OBJC_CLASS___NSShadow);
+  uVar3 = FUN_101561e88();
+  FUN_1015d0f08(*(undefined8 *)PTR__CGSizeZero_101d78148,
+                *(undefined8 *)(PTR__CGSizeZero_101d78148 + 8));
+  auVar7 = FUN_10153a2e8(&_OBJC_CLASS___UIColor);
+  FUN_1015d0ec8(uVar3,auVar7._8_8_,auVar7._0_8_);
+  FUN_1015c6468(uVar2,extraout_x1,uVar3,*(undefined8 *)PTR__NSShadowAttributeName_101d78408);
+  auVar7 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_00,0xffffff);
+  FUN_1015c6468(uVar2,auVar7._8_8_,auVar7._0_8_,
+                *(undefined8 *)PTR__NSForegroundColorAttributeName_101d78300);
+  auVar7 = FUN_101553b88(0x4032000000000000,&_OBJC_CLASS___UIFont,extraout_x1_01,
+                         &cf_PingFangSC_Medium);
+  FUN_1015c6468(uVar2,auVar7._8_8_,auVar7._0_8_,*(undefined8 *)PTR__NSFontAttributeName_101d782f8);
+  auVar7 = FUN_101560a48(&_OBJC_CLASS___UIImage,extraout_x1_02,&cf_nnc_back_normal);
+  uVar3 = FUN_101560f68(auVar7._0_8_,auVar7._8_8_,1);
+  _objc_alloc(&_OBJC_CLASS___UIImage);
+  auVar7 = FUN_101561e88();
+  uVar4 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar7._8_8_,0);
+  auVar8 = FUN_101539ca8(&objc::class_t::BaseNavCV);
+  local_70 = auVar8._0_8_;
+  auVar8 = FUN_10152bbc8(&_OBJC_CLASS___NSArray,auVar8._8_8_,&local_70,1);
+  uVar5 = FUN_10152ace8(&_OBJC_CLASS___UINavigationBar,auVar8._8_8_,auVar8._0_8_);
+  iVar1 = FUN_1014eab94(2,0xd,0,0);
+  if (iVar1 == 0) {
+    FUN_1015a5768(uVar5,extraout_x1_03,uVar3);
+    FUN_1015a57a8(uVar5,extraout_x1_11,uVar3);
+    FUN_1015d8008(uVar5,extraout_x1_12,uVar2);
+    FUN_1015a5e68(uVar5,extraout_x1_13,uVar4);
+    FUN_1015d0ee8(uVar5,extraout_x1_14,auVar7._0_8_);
+    uVar2 = extraout_x1_15;
+  }
+  else {
+    _objc_alloc(&_OBJC_CLASS___UINavigationBarAppearance);
+    auVar8 = FUN_101561e88();
+    uVar6 = auVar8._0_8_;
+    FUN_1015a5788(uVar6,auVar8._8_8_,uVar3,uVar3);
+    FUN_1015d8008(uVar6,extraout_x1_04,uVar2);
+    FUN_1015a5908(uVar6,extraout_x1_05,uVar4);
+    FUN_1015d0ee8(uVar6,extraout_x1_06,auVar7._0_8_);
+    FUN_1015d42c8(uVar5,extraout_x1_07,uVar6);
+    FUN_1015cf748(uVar5,extraout_x1_08,uVar6);
+    FUN_1015a5908(uVar5,extraout_x1_09,uVar4);
+    uVar2 = extraout_x1_10;
+  }
+  auVar7 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,uVar2,0x333333);
+  FUN_1015d7d88(uVar5,auVar7._8_8_,auVar7._0_8_);
+  FUN_1015d8f48(uVar5,extraout_x1_16,0);
+  auVar7 = FUN_10152acc8(&_OBJC_CLASS___UIButton);
+  FUN_1015a24a8(auVar7._0_8_,auVar7._8_8_,0);
+  uVar2 = FUN_10152acc8(&_OBJC_CLASS___UITableView);
+  FUN_1015b26c8(0,uVar2);
+  uVar2 = FUN_10152acc8(&_OBJC_CLASS___UITableView);
+  FUN_1015b2708(0,uVar2);
+  uVar2 = FUN_10152acc8(&_OBJC_CLASS___UITableView);
+  FUN_1015b26e8(0,uVar2);
+  auVar7 = FUN_10152acc8(&_OBJC_CLASS___UIScrollView);
+  FUN_1015ac048(auVar7._0_8_,auVar7._8_8_,2);
+  FUN_1015aec08(&objc::class_t::SVProgressHUD,extraout_x1_17,2);
+  FUN_1015aebc8(&objc::class_t::SVProgressHUD,extraout_x1_18,2);
+  FUN_1015c3748(0x3ff3333333333333,&objc::class_t::SVProgressHUD);
+  auVar7 = FUN_10153c0c8(0,0x3fe999999999999a,&_OBJC_CLASS___UIColor);
+  FUN_1015a5908(&objc::class_t::SVProgressHUD,auVar7._8_8_,auVar7._0_8_);
+  auVar7 = FUN_1015fc2a8(&_OBJC_CLASS___UIColor);
+  FUN_1015b49a8(&objc::class_t::SVProgressHUD,auVar7._8_8_,auVar7._0_8_);
+  FUN_1015c2bc8(*(double *)PTR__UIWindowLevelStatusBar_101d78740 + 100.0,
+                &objc::class_t::SVProgressHUD);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_68) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCInitManager.statusBarOrientationChange: | 0x1000eca58 | ev_a21a670b085a5d2fd71fb00044ea3e6d138b78c3e2c5de4df6b54d8cd1d12622 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCInitManager::statusBarOrientationChange_(ID param_1,SEL param_2,ID param_3)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x0001015e0098. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_msgSend_101d78f58)(param_1,"setupTopHeight:");
+  return;
+}
+
+
+
+/* NNCInitManager.setupTopHeight: | 0x1000eca5c | ev_c8b8c80403d58459fc9c7a95b8e07ffbabbf516030fea15e84dfe147a6b58c96 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void __thiscall
+NNCInitManager::setupTopHeight_(NNCInitManager *this,ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  double in_d2;
+  double in_d3;
+  double dVar2;
+  
+  uVar1 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+  FUN_101531d88(uVar1);
+  dVar2 = in_d3;
+  uVar1 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+  FUN_101531d88(uVar1);
+  dRam00000001024978d0 = 44.0;
+  if (in_d3 <= in_d2) {
+    dRam00000001024978d0 = 32.0;
+  }
+  uVar1 = FUN_1015e0f48(&_OBJC_CLASS___UIApplication);
+  FUN_1015ea1e8(uVar1);
+  if (dRam00000001024978c8 <= dVar2) {
+    dRam00000001024978c8 = dVar2;
+  }
+  dRam00000001024978d8 = dRam00000001024978d0 + dRam00000001024978c8;
+  uRam00000001024978e0 = dRam00000001024978c8 == 44.0;
+  return;
+}
+
+
+
+/* NNCInitManager.database | 0x1000ecb48 | ev_63d6420eeec18b5e11a5c57feede0837b628541d7a8eedfe13944d5a354cb52b */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCInitManager::database(ID param_1,SEL param_2)
+
+{
+  ulong uVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  
+  if (*(long *)(param_1 + 0x20) == 0) {
+    auVar3 = FUN_1015e0de8(&objc::class_t::JQFMDB);
+    uVar2 = *(undefined8 *)(param_1 + 0x20);
+    *(long *)(param_1 + 0x20) = auVar3._0_8_;
+    uVar1 = FUN_101572bc8(uVar2,*(undefined8 *)(param_1 + 0x20),auVar3._8_8_,&cf_nnc_vc_db_table);
+    if ((uVar1 & 1) == 0) {
+      uVar2 = *(undefined8 *)(param_1 + 0x20);
+      auVar3 = FUN_101539ca8(&objc::class_t::NNCFileNetHistory);
+      FUN_101572b28(uVar2,auVar3._8_8_,&cf_nnc_vc_db,auVar3._0_8_);
+    }
+  }
+  return *(ID *)(param_1 + 0x20);
+}
+
+
+
+/* NNCInitManager.getStoreVideoCount | 0x1000ecbcc | ev_279cd4505152fb449cfc9e7963e58bf4d19a19f035468f758f8775e3e917e76a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+int NNCInitManager::getStoreVideoCount(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_101544a68();
+  iVar1 = FUN_101572c08(auVar2._0_8_,auVar2._8_8_,&cf_nnc_vc_db);
+  return iVar1;
+}
+
+
+
+/* NNCInitManager.getItemByVid: | 0x1000ecc10 | ev_882e8dd2ef3a91dfabc3972a2d5fc62439e9568d21e39ebc3364da704ce6140f */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCInitManager::getItemByVid_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined1 auVar3 [16];
+  undefined1 auVar4 [16];
+  
+  uVar1 = FUN_101544a68();
+  auVar3 = FUN_101539ca8(&objc::class_t::NNCFileNetHistory);
+  auVar4 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,auVar3._8_8_,&cf_wherevideoId__zd);
+  uVar1 = FUN_101572be8(uVar1,auVar4._8_8_,&cf_nnc_vc_db,auVar3._0_8_,auVar4._0_8_);
+  auVar3 = FUN_10153f908(uVar1);
+  if (auVar3._0_8_ == 0) {
+    IVar2 = 0;
+  }
+  else {
+    IVar2 = FUN_101583328(uVar1,auVar3._8_8_,0);
+  }
+  return IVar2;
+}
+
+
+
+/* NNCInitManager.deleteSingle: | 0x1000eccec | ev_cf41d11f6d4c421c933fd0a74e592a202ea9702738d3af8842b2ed91997d61f0 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCInitManager::deleteSingle_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  
+  uVar1 = FUN_101544a68(param_1);
+  FUN_1015f8fe8(param_3);
+  auVar2 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf_wherevideoId__d);
+  FUN_101572b68(uVar1,auVar2._8_8_,&cf_nnc_vc_db,auVar2._0_8_);
+  return;
+}
+
+
+
+/* NNCInitManager.nncinsertOrUpdateVideo:useOriInsertTime: | 0x1000ecd94 | ev_50457ea1ecd8a99d156f07c28cdbcd955a5a84bf3a2ac191fc56e1240b38d652 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x1c bytes */
+
+void NNCInitManager::nncinsertOrUpdateVideo_useOriInsertTime_
+               (ID param_1,SEL param_2,ID param_3,bool param_4)
+
+{
+  int iVar1;
+  long lVar2;
+  long lVar3;
+  long lVar4;
+  undefined8 uVar5;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 uVar6;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  double dVar7;
+  undefined1 auVar8 [16];
+  undefined1 auVar9 [16];
+  undefined8 local_120;
+  long lStack_118;
+  long *local_110;
+  undefined8 uStack_108;
+  undefined8 local_100;
+  undefined8 uStack_f8;
+  undefined8 uStack_f0;
+  undefined8 uStack_e8;
+  undefined1 auStack_d8 [128];
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  iVar1 = FUN_1015f8fe8();
+  lVar2 = FUN_101558788(param_1,extraout_x1,(long)iVar1);
+  lVar3 = lVar2;
+  if (lVar2 == 0) {
+    lVar3 = FUN_1015813c8(&objc::class_t::NNCFileNetHistory);
+  }
+  auVar8 = FUN_1015f8fe8(param_3);
+  FUN_1015dc188(lVar3,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_1015f91e8(param_3);
+  FUN_1015dc328(lVar3,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_1015f8e28(param_3);
+  FUN_1015dc088(lVar3,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_10158b928(param_3);
+  FUN_1015c9328(lVar3,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_10154ebc8(param_3);
+  FUN_1015b2448(lVar3,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_10154ec28(param_3);
+  FUN_1015b2488(lVar3,auVar8._8_8_,auVar8._0_8_);
+  lVar4 = FUN_10158c7c8(param_3);
+  if (0 < lVar4) {
+    auVar8 = FUN_10158c7c8(param_3);
+    FUN_1015c9e08(lVar3,auVar8._8_8_,auVar8._0_8_);
+  }
+  lVar4 = FUN_10154bf08(param_3);
+  if (0 < lVar4) {
+    auVar8 = FUN_10154bf08(param_3);
+    FUN_1015b1188(lVar3,auVar8._8_8_,auVar8._0_8_);
+  }
+  auVar8 = FUN_101592ee8(param_3);
+  FUN_1015cc2e8(lVar3,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_10156b628(param_3);
+  FUN_1015ba188(lVar3,auVar8._8_8_,auVar8._0_8_);
+  if (param_4 == 0) {
+    uVar5 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+    dVar7 = (double)FUN_1015ef888(uVar5);
+    FUN_1015b9248(lVar3,extraout_x1_00,(long)(dVar7 * 1000.0));
+  }
+  else {
+    auVar8 = FUN_101569348(param_3);
+    FUN_1015b9248(lVar3,auVar8._8_8_,auVar8._0_8_);
+  }
+  auVar8 = FUN_101544a68(param_1);
+  if (lVar2 == 0) {
+    FUN_101572ba8(auVar8._0_8_,auVar8._8_8_,&cf_nnc_vc_db,lVar3);
+  }
+  else {
+    FUN_1015f8fe8(param_3);
+    auVar9 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_01,&cf_wherevideoId__d);
+    FUN_101572c28(auVar8._0_8_,auVar9._8_8_,&cf_nnc_vc_db,lVar3,auVar9._0_8_);
+  }
+  iVar1 = FUN_10155a3c8(param_1);
+  if (0x32 < iVar1) {
+    uVar5 = FUN_101544a68(param_1);
+    auVar8 = FUN_101539ca8(&objc::class_t::NNCFileNetHistory);
+    auVar9 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,auVar8._8_8_,
+                           &cf_wherevideoId>_1ORDERBYinsertTimeASCLIMIT_d);
+    auVar8 = FUN_101572be8(uVar5,auVar9._8_8_,&cf_nnc_vc_db,auVar8._0_8_,auVar9._0_8_);
+    uVar5 = auVar8._0_8_;
+    uStack_f8 = 0;
+    local_100 = 0;
+    uStack_e8 = 0;
+    uStack_f0 = 0;
+    lStack_118 = 0;
+    local_120 = 0;
+    uStack_108 = 0;
+    local_110 = (long *)0x0;
+    auVar8 = FUN_10153f948(uVar5,auVar8._8_8_,&local_120,auStack_d8,0x10);
+    if (auVar8._0_8_ != 0) {
+      lVar3 = *local_110;
+      do {
+        uVar6 = auVar8._8_8_;
+        lVar2 = 0;
+        do {
+          if (*local_110 != lVar3) {
+            _objc_enumerationMutation(uVar5);
+            uVar6 = extraout_x1_02;
+          }
+          FUN_101546c68(param_1,uVar6,*(undefined8 *)(lStack_118 + lVar2 * 8));
+          lVar2 = lVar2 + 1;
+          uVar6 = extraout_x1_03;
+        } while (auVar8._0_8_ != lVar2);
+        auVar8 = FUN_10153f948(uVar5,extraout_x1_03,&local_120,auStack_d8,0x10);
+      } while (auVar8._0_8_ != 0);
+    }
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_58) {
+    FUN_100ab8e90(0);
+    return;
+  }
+  return;
+}
+
+
+
+/* NNCInitManager.getHistoryList: | 0x1000ed1a8 | ev_289200e456933e336edd88827296f8c58d6345943a3f520f1c743117bfd05ca3 */
+
+/* Function Stack Size: 0x14 bytes */
+
+ID NNCInitManager::getHistoryList_(ID param_1,SEL param_2,int param_3)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_101558388(param_1,param_2,param_3,1);
+  return IVar1;
+}
+
+
+
+/* NNCInitManager.getHistoryList:judgeTeen: | 0x1000ed1b0 | ev_a2970d4937478ae30d3d8b0eef7cbefd4bc4f991a77295a0dfcc7f5ef5d507a2 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCInitManager::getHistoryList_judgeTeen_(ID param_1,SEL param_2,int param_3,bool param_4)
+
+{
+  cfstringStruct *pcVar1;
+  uint uVar2;
+  undefined8 uVar3;
+  ID IVar4;
+  undefined1 auVar5 [16];
+  undefined1 auVar6 [16];
+  
+  uVar2 = FUN_101571548(&objc::class_t::NNCYoungConfig);
+  uVar3 = FUN_101544a68(param_1);
+  auVar5 = FUN_101539ca8(&objc::class_t::NNCFileNetHistory);
+  pcVar1 = &cf_whereisAdultOnly_0ORDERBYinsertTimeDESCLIMIT_d;
+  if ((uVar2 & param_4) == 0) {
+    pcVar1 = &cf_wherevideoId>_1ORDERBYinsertTimeDESCLIMIT_d;
+  }
+  auVar6 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,auVar5._8_8_,pcVar1);
+  IVar4 = FUN_101572be8(uVar3,auVar6._8_8_,&cf_nnc_vc_db,auVar5._0_8_,auVar6._0_8_);
+  return IVar4;
+}
+
+
+
+/* NNCInitManager.setTimerCloseEnum: | 0x1000ed28c | ev_4caf2d35775fcf4bb1d501b6f3397f6d6babb1113799c5630bab7a7e07a08f03 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCInitManager::setTimerCloseEnum_(ID param_1,SEL param_2,unsigned_long_long param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  
+  *(unsigned_long_long *)(param_1 + 8) = param_3;
+  FUN_1015eaa08();
+  if (param_3 - 2 < 3) {
+    auVar2 = FUN_1015eff68(*(undefined8 *)(&UNK_1019bdef8 + (param_3 - 2) * 8),
+                           &_OBJC_CLASS___NSTimer,extraout_x1,param_1,"timerSelector:",0,0);
+    FUN_1015d4ce8(param_1,auVar2._8_8_,auVar2._0_8_);
+    uVar1 = FUN_101543368(&_OBJC_CLASS___NSRunLoop);
+    auVar2 = FUN_1015ea808(param_1);
+    FUN_1015273c8(uVar1,auVar2._8_8_,auVar2._0_8_,*(undefined8 *)PTR__NSRunLoopCommonModes_101d783f8
+                 );
+    return;
+  }
+  return;
+}
+
+
+
+/* NNCInitManager.stopTimer | 0x1000ed368 | ev_f84efd04ee3abef320fff4cb8913be4f6deaad0ad9dc67b60e37fc6ef5cf21e3 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCInitManager::stopTimer(ID param_1,SEL param_2)
+
+{
+  long lVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  
+  lVar1 = FUN_1015ea808();
+  if (lVar1 != 0) {
+    uVar2 = FUN_1015ea808(param_1);
+    FUN_10156ad28(uVar2);
+    FUN_1015d4ce8(param_1,extraout_x1,0);
+    return;
+  }
+  return;
+}
+
+
+
+/* NNCInitManager.timerSelector: | 0x1000ed3d0 | ev_fd6372f40afb5d3e1cb3e24767ac42bdbe5ada4a44f46e3e0772257d5e87617e */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCInitManager::timerSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  FUN_1015d7ba8(param_1,param_2,0);
+  auVar1 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+  FUN_10158ca48(auVar1._0_8_,auVar1._8_8_,&cf_TIMER_STOP_PLAYING_VIDEO_NOTIFICATION,0);
+  return;
+}
+
+
+
+/* NNCInitManager.timerCloseEnum | 0x1000ed41c | ev_fa064f716514a3a3044f3c2fbdb388b60facbd0c0deb59a94d7766d0611a0fbe */
+
+/* Function Stack Size: 0x10 bytes */
+
+unsigned_long_long NNCInitManager::timerCloseEnum(ID param_1,SEL param_2)
+
+{
+  return *(unsigned_long_long *)(param_1 + 8);
+}
+
+
+
+/* NNCInitManager.dateForamtter | 0x1000ed424 | ev_a16f45c137b067b69c1db72eb589f1a0203abd68153ca53ed6f94c50aae4caff */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCInitManager::dateForamtter(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCInitManager.setDateForamtter: | 0x1000ed42c | ev_910beba5b8cd3786d86c51b57f815927fc2d20b86e52e96103a626c94275b872 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCInitManager::setDateForamtter_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCInitManager.dateForamtter2 | 0x1000ed438 | ev_ec6c236bdec9231becca878d9b1fcf75da97fe0573972d1b78e19334544c9e4a */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCInitManager::dateForamtter2(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x18);
+}
+
+
+
+/* NNCInitManager.setDateForamtter2: | 0x1000ed440 | ev_337b6812b7412a20d5d93d80be593ed4a60fdb520244ad0de92230c435ea1073 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCInitManager::setDateForamtter2_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* NNCInitManager.setDatabase: | 0x1000ed44c | ev_34eaaa827d01dd2449da4fc6d8a0da903b217fcf13ad6162e3b00bd26eed55c1 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCInitManager::setDatabase_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x20) = param_3;
+  return;
+}
+
+
+
+/* NNCInitManager.stopPlayTimer | 0x1000ed458 | ev_d8d13a4878e2748b9086e8f853bb4054d8e285f171308366f590519a7c1acf7d */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCInitManager::stopPlayTimer(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x28);
+}
+
+
+
+/* NNCInitManager.setStopPlayTimer: | 0x1000ed460 | ev_4b59fda68e566729438bb94dbd21c3508b21833d73f2d90a6e69f3c40266d407 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCInitManager::setStopPlayTimer_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x28) = param_3;
+  return;
+}
+
+
+
+/* NNCInitManager..cxx_destruct | 0x1000ed46c | ev_08fc600c7a6a12524aaf2edc91d98c26e6a7493824b3a6ee2c0d1a554f8d231c */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCInitManager::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x28) = 0;
+  *(undefined8 *)(param_1 + 0x20) = 0;
+  *(undefined8 *)(param_1 + 0x18) = 0;
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  return;
+}
+
+

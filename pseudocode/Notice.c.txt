@@ -1,0 +1,401 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* Notice.modelWithDict: | 0x1000b1038 | ev_4eb2ca549148c908ac7e9577cb4c04f0086aebeb1cbd90f4e11809b2245c6d72 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID Notice::modelWithDict_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_1015813c8(&objc::class_t::Notice);
+  IVar1 = auVar2._0_8_;
+  auVar2 = FUN_1015ebae8(param_3,auVar2._8_8_,&cf_url);
+  FUN_1015da848(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1,&cf_download_url);
+  FUN_1015b0c88(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1_00,&cf_title);
+  FUN_1015d7e08(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1_01,&cf_content);
+  FUN_1015abee8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1_02,&cf_negative);
+  FUN_1015c5208(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1_03,&cf_positive);
+  FUN_1015c9e48(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1_04,&cf_ios_version);
+  FUN_1015dbcc8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_101582d28(param_3,extraout_x1_05,&cf_perday);
+  FUN_1015c8568(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_101582d28(param_3,extraout_x1_06,&cf_enable);
+  FUN_1015b17c8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  return IVar1;
+}
+
+
+
+/* Notice.initWithCoder: | 0x1000b1234 | ev_cc24436b781eed4ca13676da15d2e33d98f78a5cddec7c9ba4a00f16fa746b2e */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID Notice::initWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined1 auVar2 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::Notice;
+  local_40 = param_1;
+  auVar2 = _objc_msgSendSuper2(&local_40,"init");
+  IVar1 = auVar2._0_8_;
+  if (IVar1 != 0) {
+    auVar2 = FUN_101545868(param_3,auVar2._8_8_,&cf_url);
+    FUN_1015da848(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1,&cf_title);
+    FUN_1015d7e08(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1_00,&cf_content);
+    FUN_1015abee8(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1_01,&cf_negative);
+    FUN_1015c5208(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1_02,&cf_positive);
+    FUN_1015c9e48(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1_03,&cf_version);
+    FUN_1015dbcc8(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1_04,&cf_downloadUrl);
+    FUN_1015b0c88(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1_05,&cf_perDay);
+    FUN_1015c8568(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1_06,&cf_enable);
+    FUN_1015b17c8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  }
+  return IVar1;
+}
+
+
+
+/* Notice.encodeWithCoder: | 0x1000b144c | ev_b665851a631e7216f97cc631c99ecaab221242d7854b2010a04027465380c0c0 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void Notice::encodeWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_1015f69c8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_url);
+  auVar1 = FUN_1015f01e8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_title);
+  auVar1 = FUN_10153e528(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_content);
+  auVar1 = FUN_101580cc8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_negative);
+  auVar1 = FUN_10158c8e8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_positive);
+  auVar1 = FUN_1015f86a8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_version);
+  auVar1 = FUN_10154b428(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_downloadUrl);
+  auVar1 = FUN_101589a68(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_perDay);
+  auVar1 = FUN_10154cd48(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_enable);
+  return;
+}
+
+
+
+/* Notice.url | 0x1000b1630 | ev_f6a71182110806f4b1a7731b7709c9983e04ec58ab326436d9ca3ae88c031182 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID Notice::url(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* Notice.setUrl: | 0x1000b1638 | ev_2f6267277865d1a247fe2e93abe01c39fba71e28fba84cc6b334b4cbe040d241 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void Notice::setUrl_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* Notice.downloadUrl | 0x1000b1640 | ev_42fa0ada707278b97b568237ccb2a45699efecd1cbfc6c881aed672a708aca1d */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID Notice::downloadUrl(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* Notice.setDownloadUrl: | 0x1000b1648 | ev_f19fc99ae3dd0a3e7287a1be6c414f707fc7aee3cb5beb4bdfe7d80a0e1968af */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void Notice::setDownloadUrl_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* Notice.title | 0x1000b1650 | ev_d20ff493494074dc5326b8bb49a73607345c8f93fa4f682ab744bd1066b8a5e0 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID Notice::title(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x18);
+}
+
+
+
+/* Notice.setTitle: | 0x1000b1658 | ev_e6911d881c4062064b4eb6803a7fd3ded6c827ddeb78de26c9bf6d335a117d07 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void Notice::setTitle_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* Notice.content | 0x1000b1660 | ev_0a732196754e7ac49f04489147bb9c75cd4f33553a821d21536fdade8b4d2154 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID Notice::content(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x20);
+}
+
+
+
+/* Notice.setContent: | 0x1000b1668 | ev_4649932f453dad6f7325f48874f9060daf9091e54e5b1dc5bf751d2bc61e6ecf */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void Notice::setContent_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x20) = param_3;
+  return;
+}
+
+
+
+/* Notice.negative | 0x1000b1670 | ev_3e7f2d0762ede999836d02406b4d0bd544aacd3d60f93c302a7708af226a1c6e */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID Notice::negative(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x28);
+}
+
+
+
+/* Notice.setNegative: | 0x1000b1678 | ev_f0d8558b7f2c9de058977f16aac3a65f4b63ae7d3f6cb33e72387fb10010a60e */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void Notice::setNegative_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x28) = param_3;
+  return;
+}
+
+
+
+/* Notice.positive | 0x1000b1680 | ev_c64f0f913458bc0a157d0df2deb6826cd652bb489c5ce0c9846950133f978161 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID Notice::positive(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x30);
+}
+
+
+
+/* Notice.setPositive: | 0x1000b1688 | ev_1dd436a7452500e97ea4daa2fb54fa2bba4aa7ed8d73e0fc12bb767e1363314e */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void Notice::setPositive_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x30) = param_3;
+  return;
+}
+
+
+
+/* Notice.version | 0x1000b1690 | ev_965ec291abb6ab282338f77af7de0d9493987d6cfc3dbd93de00964b36b10e71 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID Notice::version(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x38);
+}
+
+
+
+/* Notice.setVersion: | 0x1000b1698 | ev_fb8dac4a716fefdb3e70792e6314d72fab97a0e172a42d40094eb1e7700eef43 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void Notice::setVersion_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x38) = param_3;
+  return;
+}
+
+
+
+/* Notice.perDay | 0x1000b16a0 | ev_701176800157e0e5a404fa1da83a52df3569060a40a60dce435638fe81419765 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID Notice::perDay(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x40);
+}
+
+
+
+/* Notice.setPerDay: | 0x1000b16a8 | ev_bcb164eef6cd191084167367e21e190236f11db753dc4730bc6c2aaa023e6f28 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void Notice::setPerDay_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x40) = param_3;
+  return;
+}
+
+
+
+/* Notice.enable | 0x1000b16b4 | ev_23a3991e51721238b00156bb4b9c59ac44b3811a7e544d5bdacf6d36e962b429 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID Notice::enable(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x48);
+}
+
+
+
+/* Notice.setEnable: | 0x1000b16bc | ev_9f90991f1edb0f8adae7efe68a4157613e1232a83179b18077eff3a17ee1c5f8 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void Notice::setEnable_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x48) = param_3;
+  return;
+}
+
+
+
+/* Notice..cxx_destruct | 0x1000b16c8 | ev_48b9d8ad7b84e5f88ddfd958de36ae9ffd22dfc1144c0d4375edafeb4596d29c */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void Notice::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x48) = 0;
+  *(undefined8 *)(param_1 + 0x40) = 0;
+  *(undefined8 *)(param_1 + 0x38) = 0;
+  *(undefined8 *)(param_1 + 0x30) = 0;
+  *(undefined8 *)(param_1 + 0x28) = 0;
+  *(undefined8 *)(param_1 + 0x20) = 0;
+  *(undefined8 *)(param_1 + 0x18) = 0;
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

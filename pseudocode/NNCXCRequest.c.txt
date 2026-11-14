@@ -1,0 +1,1631 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCXCRequest.request: | 0x10001d58c | ev_09ea8043bae4a5a9adde101d5fc06fe3c3f0970e959233d22763dd577b44da2c */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x14 bytes */
+
+ID NNCXCRequest::request_(ID param_1,SEL param_2,bool param_3)
+
+{
+  ID IVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined8 extraout_x1_07;
+  cfstringStruct *pcVar3;
+  undefined8 uVar4;
+  cfstringStruct *pcVar5;
+  cfstringStruct *pcVar6;
+  cfstringStruct *pcVar7;
+  cfstringStruct *pcVar8;
+  ID *pIVar9;
+  undefined1 auVar10 [16];
+  
+  if (param_3 == 0) {
+    if (IRam000000010243ef78 != 0) {
+      return IRam000000010243ef78;
+    }
+    _objc_alloc();
+    IVar2 = FUN_101567ae8(0x402e000000000000);
+    IVar1 = IRam000000010243ef78;
+    pIVar9 = (ID *)0x10243ef78;
+    IRam000000010243ef78 = IVar2;
+    FUN_1015be968(IVar1,0,IVar2);
+    uVar4 = *(undefined8 *)PTR____NSArray0___101d78908;
+    auVar10 = FUN_10157e1c8(uVar4);
+    FUN_1015b5868(IRam000000010243ef78,auVar10._8_8_,auVar10._0_8_);
+    auVar10 = FUN_10157e1c8(uVar4);
+    FUN_1015b5848(IRam000000010243ef78,auVar10._8_8_,auVar10._0_8_);
+    FUN_1015bcc08(IRam000000010243ef78,extraout_x1_02,0);
+    pcVar5 = &cf_XC_DEVICE_RANDOM_MODEL;
+    pcVar6 = &cf_XC_DEVICE_RANDOM_MFR;
+    pcVar7 = &cf_nnc_XC_T;
+    pcVar8 = &cf_nnc_XC_D_ID_STAMP;
+    pcVar3 = &cf_nnc_XC_D_ID;
+    uVar4 = extraout_x1_03;
+  }
+  else {
+    if (IRam000000010243ef80 != 0) {
+      return IRam000000010243ef80;
+    }
+    _objc_alloc();
+    IVar2 = FUN_101567ae8(0x402e000000000000);
+    IVar1 = IRam000000010243ef80;
+    pIVar9 = (ID *)0x10243ef80;
+    IRam000000010243ef80 = IVar2;
+    FUN_1015be968(IVar1,0,IVar2);
+    uVar4 = *(undefined8 *)PTR____NSArray0___101d78908;
+    auVar10 = FUN_10157e1c8(uVar4);
+    FUN_1015b5868(IRam000000010243ef80,auVar10._8_8_,auVar10._0_8_);
+    auVar10 = FUN_10157e1c8(uVar4);
+    FUN_1015b5848(IRam000000010243ef80,auVar10._8_8_,auVar10._0_8_);
+    FUN_1015bcc08(IRam000000010243ef80,extraout_x1,0);
+    FUN_1015bace8(IRam000000010243ef80,extraout_x1_00,1);
+    pcVar5 = &cf_XC2_DEVICE_RANDOM_MODEL;
+    pcVar6 = &cf_XC2_DEVICE_RANDOM_MFR;
+    pcVar7 = &cf_nnc_XC2_T;
+    pcVar8 = &cf_nnc_XC2_D_ID_STAMP;
+    pcVar3 = &cf_nnc_XC2_D_ID;
+    uVar4 = extraout_x1_01;
+  }
+  FUN_1015d4e48(*pIVar9,uVar4,pcVar3);
+  FUN_1015d4fe8(*pIVar9,extraout_x1_04,pcVar8);
+  FUN_1015d5008(*pIVar9,extraout_x1_05,pcVar7);
+  FUN_1015d4f28(*pIVar9,extraout_x1_06,pcVar6);
+  FUN_1015d4f48(*pIVar9,extraout_x1_07,pcVar5);
+  return *pIVar9;
+}
+
+
+
+/* NNCXCRequest.getSrc | 0x10001d780 | ev_0eebe758bb0e09bb0d4f2187d06e0d6757b6f6d075468d8b090332b54edd1122 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::getSrc(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  
+  iVar1 = FUN_10156c928();
+  uVar2 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+  if (iVar1 == 0) {
+    IVar3 = FUN_1015e8008(uVar2);
+  }
+  else {
+    IVar3 = FUN_1015e80c8();
+  }
+  return IVar3;
+}
+
+
+
+/* NNCXCRequest.initWithTimeout: | 0x10001d7e8 | ev_f59f1772af6bdea157bbc6b29290175689d3023a3b805018a8c87b175c08157b */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCXCRequest::initWithTimeout_(ID param_1,SEL param_2,double param_3)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar4 [16];
+  ID local_60;
+  class_t *pcStack_58;
+  
+  pcStack_58 = &objc::class_t::NNCXCRequest;
+  local_60 = param_1;
+  IVar1 = _objc_msgSendSuper2(&local_60,"init");
+  auVar4 = _objc_alloc(&objc::class_t::AFHTTPSessionManager);
+  auVar4 = FUN_101563ac8(auVar4._0_8_,auVar4._8_8_,0);
+  FUN_1015cd788(IVar1,auVar4._8_8_,auVar4._0_8_);
+  uVar2 = FUN_10159fe68(&objc::class_t::AFHTTPRequestSerializer);
+  auVar4 = FUN_1015982a8(IVar1);
+  FUN_1015ccf88(auVar4._0_8_,auVar4._8_8_,uVar2);
+  uVar2 = FUN_1015982a8(IVar1);
+  uVar2 = FUN_101596bc8(uVar2);
+  FUN_1015d7b48(param_3,uVar2);
+  uVar2 = FUN_1015de1c8(&_OBJC_CLASS___NSSet,extraout_x1,&cf_GET);
+  uVar3 = FUN_1015982a8(IVar1);
+  auVar4 = FUN_101596bc8(uVar3);
+  FUN_1015b6268(auVar4._0_8_,auVar4._8_8_,uVar2);
+  uVar2 = FUN_10159fe68(&objc::class_t::AFHTTPResponseSerializer);
+  auVar4 = FUN_1015982a8(IVar1);
+  FUN_1015cd7e8(auVar4._0_8_,auVar4._8_8_,uVar2);
+  uVar2 = FUN_1015de1c8(&_OBJC_CLASS___NSSet,extraout_x1_00,&cf_application_json);
+  uVar3 = FUN_1015982a8(IVar1);
+  auVar4 = FUN_101598328(uVar3);
+  FUN_1015a0a48(auVar4._0_8_,auVar4._8_8_,uVar2);
+  return IVar1;
+}
+
+
+
+/* NNCXCRequest.nncgetXcEpisodeList:success:failure: | 0x10001da50 | ev_c8486bb48fa90aae2324457f5828925d9e7046c1cc093bc8f17d35dd6230fc69 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x24 bytes */
+
+void NNCXCRequest::nncgetXcEpisodeList_success_failure_
+               (ID param_1,SEL param_2,int param_3,ID param_4,uint param_5,ID param_6,
+               undefined4 param_7)
+
+{
+  undefined *local_a8;
+  undefined8 local_a0;
+  code *local_98;
+  undefined *puStack_90;
+  ulong local_88;
+  undefined *local_80;
+  undefined8 local_78;
+  code *local_70;
+  undefined *puStack_68;
+  ID local_60;
+  ID local_58;
+  ulong local_50;
+  int local_48;
+  
+  local_88 = (ulong)param_5;
+  local_80 = PTR___NSConcreteStackBlock_101d78760;
+  local_78 = 0xc2000000;
+  local_70 = FUN_10001db48;
+  puStack_68 = &UNK_101d7bac0;
+  local_a8 = PTR___NSConcreteStackBlock_101d78760;
+  local_a0 = 0xc2000000;
+  local_98 = FUN_10001e1d8;
+  puStack_90 = &UNK_101d7baf0;
+  local_60 = param_1;
+  local_58 = param_4;
+  local_50 = local_88;
+  local_48 = param_3;
+  FUN_10155b128(param_1,param_2,&local_80,&local_a8,local_88,param_6,param_7);
+  return;
+}
+
+
+
+/* NNCXCRequest.NNCgetXCEpisodeUrl:episodeId:vodToken:curTime:success:failure: | 0x10001e230 | ev_078a2967aa177fbe5e9a29744fff2c7cbbfbdb0df21a28f7ae2cdb498c0e67d4 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x38 bytes */
+
+void NNCXCRequest::NNCgetXCEpisodeUrl_episodeId_vodToken_curTime_success_failure_
+               (ID param_1,SEL param_2,int param_3,int param_4,ID param_5,long_long param_6,
+               ID param_7,uint param_8,ID param_9,undefined4 param_10)
+
+{
+  undefined *local_d8;
+  undefined8 local_d0;
+  code *local_c8;
+  undefined *puStack_c0;
+  ulong local_b8;
+  undefined *local_b0;
+  undefined8 local_a8;
+  code *local_a0;
+  undefined *puStack_98;
+  ID local_90;
+  ID local_88;
+  ID local_80;
+  ulong local_78;
+  long_long local_70;
+  int local_68;
+  int iStack_64;
+  
+  local_b8 = (ulong)param_8;
+  local_b0 = PTR___NSConcreteStackBlock_101d78760;
+  local_a8 = 0xc2000000;
+  local_a0 = FUN_10001e374;
+  puStack_98 = &UNK_101d7bb50;
+  local_d8 = PTR___NSConcreteStackBlock_101d78760;
+  local_d0 = 0xc2000000;
+  local_c8 = FUN_10001e984;
+  puStack_c0 = &UNK_101d7baf0;
+  local_90 = param_1;
+  local_88 = param_5;
+  local_80 = param_7;
+  local_78 = local_b8;
+  local_70 = param_6;
+  local_68 = param_4;
+  iStack_64 = param_3;
+  FUN_10155b128(param_1,param_2,&local_b0,&local_d8);
+  return;
+}
+
+
+
+/* NNCXCRequest.getXm3u8TokenWithSuccess:failure: | 0x10001e9dc | ev_c9a24f68dbef16b1c03c4ef8ea20e46276aa9eadcd4f77b00324c987b971f00b */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainBlock replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCXCRequest::getXm3u8TokenWithSuccess_failure_
+               (ID param_1,SEL param_2,ID param_3,uint param_4,ID param_5,undefined4 param_6)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  long lVar3;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  ID IVar6;
+  code *pcVar7;
+  double dVar8;
+  undefined1 auVar9 [16];
+  undefined *local_a0;
+  undefined8 local_98;
+  code *local_90;
+  undefined *puStack_88;
+  ID local_80;
+  undefined *puStack_78;
+  undefined8 local_70;
+  code *local_68;
+  undefined *puStack_60;
+  ID local_58;
+  
+  IVar6 = (ID)param_4;
+  uVar2 = FUN_10155a228(param_1);
+  lVar3 = FUN_1015750a8(uVar2);
+  if (lVar3 == 0) {
+    uVar2 = FUN_10155a328(param_1);
+    uVar2 = FUN_10154cd48(uVar2);
+    iVar1 = FUN_1015698a8(uVar2);
+    if (iVar1 != 0) {
+      auVar9 = FUN_10155a768(param_1);
+      FUN_101526528(auVar9._0_8_,auVar9._8_8_,param_3);
+      auVar9 = FUN_10155a748(param_1);
+      FUN_101526528(auVar9._0_8_,auVar9._8_8_,IVar6);
+      auVar9 = FUN_1015705c8(param_1);
+      if ((auVar9._0_8_ & 1) != 0) {
+        return;
+      }
+      FUN_1015bcc08(param_1,auVar9._8_8_,1);
+      uVar2 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+      dVar8 = (double)FUN_1015ef888(uVar2);
+      uVar2 = FUN_1015582e8(param_1,extraout_x1,(long)(dVar8 * 1000.0));
+      auVar9 = FUN_10157e1c8(*(undefined8 *)PTR____NSDictionary0___101d78910);
+      uVar4 = auVar9._0_8_;
+      FUN_1015c6468(uVar4,auVar9._8_8_,&::cf___,&cf_invited_by);
+      FUN_1015c6468(uVar4,extraout_x1_00,&cf_1,&cf_is_install);
+      _NSLog(&cf_0804testgetXm3u8Token);
+      uVar5 = FUN_10155a328(param_1);
+      auVar9 = FUN_1015f0b68(uVar5);
+      puStack_78 = PTR___NSConcreteStackBlock_101d78760;
+      local_70 = 0xc2000000;
+      local_68 = FUN_10001eca4;
+      puStack_60 = &UNK_101d7bb80;
+      local_a0 = PTR___NSConcreteStackBlock_101d78760;
+      local_98 = 0xc2000000;
+      local_90 = FUN_10001ef64;
+      puStack_88 = &UNK_101d7bbb0;
+      local_80 = param_1;
+      local_58 = param_1;
+      FUN_101597028(param_1,auVar9._8_8_,auVar9._0_8_,uVar2,uVar4,&puStack_78,&local_a0);
+      return;
+    }
+    pcVar7 = *(code **)(IVar6 + 0x10);
+  }
+  else {
+    pcVar7 = *(code **)(param_3 + 0x10);
+    IVar6 = param_3;
+  }
+  (*pcVar7)(IVar6);
+  return;
+}
+
+
+
+/* NNCXCRequest.postXm3u8AdWithSuccess:failure: | 0x10001f0ac | ev_8ee1cd0ca38bca06502368c598d51634f0842559db8d04c980ee83b4a15b2bee */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCXCRequest::postXm3u8AdWithSuccess_failure_
+               (ID param_1,SEL param_2,ID param_3,uint param_4,ID param_5,undefined4 param_6)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 extraout_x1;
+  undefined8 uVar5;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  long lVar6;
+  long lVar7;
+  undefined8 uVar8;
+  double dVar9;
+  undefined1 auVar10 [16];
+  undefined1 auVar11 [16];
+  undefined1 auVar12 [16];
+  undefined *local_180;
+  undefined8 local_178;
+  code *local_170;
+  undefined *puStack_168;
+  ulong local_160;
+  undefined *puStack_158;
+  undefined8 local_150;
+  code *local_148;
+  undefined *puStack_140;
+  ID local_138;
+  undefined8 local_130;
+  long lStack_128;
+  long *local_120;
+  undefined8 uStack_118;
+  undefined8 local_110;
+  undefined8 uStack_108;
+  undefined8 uStack_100;
+  undefined8 uStack_f8;
+  undefined1 auStack_f0 [128];
+  long local_70;
+  
+  local_70 = *(long *)PTR____stack_chk_guard_101d78938;
+  uVar2 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+  dVar9 = (double)FUN_1015ef888(uVar2);
+  uVar2 = FUN_1015582e8(param_1,extraout_x1,(long)(dVar9 * 1000.0));
+  uVar3 = FUN_10157e1c8(*(undefined8 *)PTR____NSDictionary0___101d78910);
+  uVar4 = FUN_10155a328(param_1);
+  auVar10 = FUN_101523248(uVar4);
+  auVar10 = FUN_10153d0c8(auVar10._0_8_,auVar10._8_8_,&cf__);
+  uVar4 = auVar10._0_8_;
+  uStack_108 = 0;
+  local_110 = 0;
+  uStack_f8 = 0;
+  uStack_100 = 0;
+  lStack_128 = 0;
+  local_130 = 0;
+  uStack_118 = 0;
+  local_120 = (long *)0x0;
+  auVar10 = FUN_10153f948(uVar4,auVar10._8_8_,&local_130,auStack_f0,0x10);
+  if (auVar10._0_8_ != 0) {
+    lVar6 = *local_120;
+    do {
+      uVar5 = auVar10._8_8_;
+      lVar7 = 0;
+      do {
+        if (*local_120 != lVar6) {
+          _objc_enumerationMutation(uVar4);
+          uVar5 = extraout_x1_00;
+        }
+        uVar8 = *(undefined8 *)(lStack_128 + lVar7 * 8);
+        iVar1 = FUN_10153e4c8(uVar8,uVar5,&cf__);
+        uVar5 = extraout_x1_01;
+        if (iVar1 != 0) {
+          auVar11 = FUN_10158fcc8(uVar8,extraout_x1_01,&cf__);
+          auVar11 = FUN_1015ec3a8(uVar8,auVar11._8_8_,auVar11._0_8_ + 1);
+          auVar12 = FUN_10158fcc8(uVar8,auVar11._8_8_,&cf__);
+          auVar12 = FUN_1015ec3c8(uVar8,auVar12._8_8_,auVar12._0_8_);
+          FUN_1015c6468(uVar3,auVar12._8_8_,auVar11._0_8_,auVar12._0_8_);
+          uVar5 = extraout_x1_02;
+        }
+        lVar7 = lVar7 + 1;
+      } while (auVar10._0_8_ != lVar7);
+      auVar10 = FUN_10153f948(uVar4,uVar5,&local_130,auStack_f0,0x10);
+    } while (auVar10._0_8_ != 0);
+  }
+  uVar4 = FUN_10155a328(param_1);
+  auVar10 = FUN_1015246a8(uVar4);
+  puStack_158 = PTR___NSConcreteStackBlock_101d78760;
+  local_150 = 0xc2000000;
+  local_148 = FUN_10001f3ec;
+  puStack_140 = &UNK_101d7bb20;
+  local_180 = PTR___NSConcreteStackBlock_101d78760;
+  local_178 = 0xc2000000;
+  local_170 = FUN_10001f3f8;
+  puStack_168 = &UNK_101d7ba90;
+  local_160 = (ulong)param_4;
+  local_138 = param_3;
+  FUN_101597028(param_1,auVar10._8_8_,auVar10._0_8_,uVar2,uVar3,&puStack_158,&local_180);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_70) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCXCRequest.requestWithGET:headers:parameters:success:failure: | 0x10001f404 | ev_cf28346c31f944323574246c192b93fd309173936dcc402da30113156de8eb16 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x38 bytes */
+
+ID NNCXCRequest::requestWithGET_headers_parameters_success_failure_
+             (ID param_1,SEL param_2,ID param_3,ID param_4,ID param_5,ID param_6,uint param_7,
+             ID param_8,undefined4 param_9)
+
+{
+  ID IVar1;
+  undefined1 auVar2 [16];
+  undefined *local_c0;
+  undefined8 local_b8;
+  code *local_b0;
+  undefined *puStack_a8;
+  ulong local_a0;
+  undefined *local_98;
+  undefined8 local_90;
+  code *local_88;
+  undefined *puStack_80;
+  ID local_78;
+  ID local_70;
+  ulong local_68;
+  
+  auVar2 = FUN_1015982a8(param_1);
+  local_98 = PTR___NSConcreteStackBlock_101d78760;
+  local_90 = 0xc2000000;
+  local_88 = FUN_10001f590;
+  puStack_80 = &UNK_101d7bbe0;
+  local_c0 = PTR___NSConcreteStackBlock_101d78760;
+  local_b8 = 0xc2000000;
+  local_b0 = FUN_10001f5a8;
+  puStack_a8 = &UNK_101d7ba90;
+  local_a0 = (ulong)param_7;
+  local_78 = param_1;
+  local_70 = param_6;
+  local_68 = (ulong)param_7;
+  IVar1 = FUN_101503968(auVar2._0_8_,auVar2._8_8_,param_3,param_5,param_4,0,&local_98,&local_c0);
+  return IVar1;
+}
+
+
+
+/* NNCXCRequest.requestWithPOST:headers:parameters:success:failure: | 0x10001f5b4 | ev_dc98937be11ffbbf3c7763ae90a920a90801f7761481cdbe3d248f53820b9d42 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x38 bytes */
+
+ID NNCXCRequest::requestWithPOST_headers_parameters_success_failure_
+             (ID param_1,SEL param_2,ID param_3,ID param_4,ID param_5,ID param_6,uint param_7,
+             ID param_8,undefined4 param_9)
+
+{
+  ID IVar1;
+  undefined1 auVar2 [16];
+  undefined *local_c0;
+  undefined8 local_b8;
+  code *local_b0;
+  undefined *puStack_a8;
+  ulong local_a0;
+  undefined *local_98;
+  undefined8 local_90;
+  code *local_88;
+  undefined *puStack_80;
+  ID local_78;
+  ID local_70;
+  ulong local_68;
+  
+  auVar2 = FUN_1015982a8(param_1);
+  local_98 = PTR___NSConcreteStackBlock_101d78760;
+  local_90 = 0xc2000000;
+  local_88 = FUN_10001f740;
+  puStack_80 = &UNK_101d7bbe0;
+  local_c0 = PTR___NSConcreteStackBlock_101d78760;
+  local_b8 = 0xc2000000;
+  local_b0 = FUN_10001f758;
+  puStack_a8 = &UNK_101d7ba90;
+  local_a0 = (ulong)param_7;
+  local_78 = param_1;
+  local_70 = param_6;
+  local_68 = (ulong)param_7;
+  IVar1 = FUN_10150e3e8(auVar2._0_8_,auVar2._8_8_,param_3,param_5,param_4,0,&local_98,&local_c0);
+  return IVar1;
+}
+
+
+
+/* NNCXCRequest.dealSuccessWithTask:responseObject:success:failure: | 0x10001f764 | ev_c5731f875d1dfe94e1abb4c4a028831ea5298aaaa5e8c4e1f5a485f684e474b5 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x30 bytes */
+
+void NNCXCRequest::dealSuccessWithTask_responseObject_success_failure_
+               (ID param_1,SEL param_2,ID param_3,ID param_4,ID param_5,uint param_6,ID param_7,
+               undefined4 param_8)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 extraout_x1;
+  ulong uVar5;
+  undefined1 auVar6 [16];
+  long local_90;
+  cfstringStruct *local_88;
+  cfstringStruct *pcStack_80;
+  cfstringStruct *local_78;
+  cfstringStruct *pcStack_70;
+  long local_68;
+  
+  uVar5 = (ulong)param_6;
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  auVar6 = FUN_101539ca8(&_OBJC_CLASS___NSDictionary);
+  iVar1 = FUN_10156e908(param_4,auVar6._8_8_,auVar6._0_8_);
+  if (iVar1 == 0) {
+    uVar2 = FUN_101539ca8(param_1);
+    uVar3 = FUN_10155a328(param_1);
+    uVar3 = FUN_1015730e8(uVar3);
+    uVar4 = FUN_10155a328(param_1);
+    auVar6 = FUN_1015729c8(uVar4);
+    uVar2 = FUN_1014f92a8(uVar2,auVar6._8_8_,param_4,uVar3,auVar6._0_8_);
+    auVar6 = FUN_1015750a8(uVar2);
+    if (auVar6._0_8_ == 0) {
+      local_78 = &cf_msg;
+      pcStack_70 = &cf__1Y_;
+      auVar6 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar6._8_8_,&pcStack_70,&local_78,1);
+      uVar2 = FUN_10154f008(&_OBJC_CLASS___NSError,auVar6._8_8_,&cf_NNCERRORDOMAIN,
+                            0xffffffffffffff9c,auVar6._0_8_);
+      (**(code **)(uVar5 + 0x10))(uVar5,param_3,uVar2);
+    }
+    else {
+      auVar6 = FUN_101544828(uVar2,auVar6._8_8_,4);
+      local_90 = 0;
+      auVar6 = FUN_1015074c8(&_OBJC_CLASS___NSJSONSerialization,auVar6._8_8_,auVar6._0_8_,0,
+                             &local_90);
+      if ((local_90 == 0) && (auVar6._0_8_ != 0)) {
+        FUN_1015452c8(param_1,auVar6._8_8_,param_3,auVar6._0_8_,param_5,uVar5);
+      }
+      else {
+        local_88 = &cf_msg;
+        pcStack_80 = &cf_g1Y_;
+        auVar6 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar6._8_8_,&pcStack_80,&local_88,1);
+        uVar2 = FUN_10154f008(&_OBJC_CLASS___NSError,auVar6._8_8_,&cf_NNCERRORDOMAIN,
+                              0xffffffffffffff9b,auVar6._0_8_);
+        (**(code **)(uVar5 + 0x10))(uVar5,param_3,uVar2);
+      }
+    }
+  }
+  else {
+    FUN_1015452c8(param_1,extraout_x1,param_3,param_4,param_5,uVar5);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_68) {
+    FUN_100ab8e90(0);
+    return;
+  }
+  return;
+}
+
+
+
+/* NNCXCRequest.dealDecryptedResponse:responseObject:success:failure: | 0x10001fac0 | ev_3bd75396dfed292f749b59699dd2acb41d95305bfdbc0d62b3964a9688ea9c47 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x30 bytes */
+
+void NNCXCRequest::dealDecryptedResponse_responseObject_success_failure_
+               (ID param_1,SEL param_2,ID param_3,ID param_4,ID param_5,uint param_6,ID param_7,
+               undefined4 param_8)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  code *pcVar3;
+  undefined1 auVar4 [16];
+  cfstringStruct *local_78;
+  cfstringStruct *local_70;
+  long local_68;
+  
+  IVar2 = (ID)param_6;
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  auVar4 = FUN_101528d88(param_4);
+  auVar4 = FUN_10153e4a8(auVar4._0_8_,auVar4._8_8_,&cf_code);
+  uVar1 = auVar4._8_8_;
+  if ((auVar4._0_8_ & 1) == 0) {
+LAB_10001fbf8:
+    uVar1 = FUN_101582d28(param_4,uVar1,&cf_status);
+    uVar1 = FUN_101569908(uVar1);
+    local_78 = &cf_message;
+    auVar4 = FUN_1015ebae8(param_4);
+    local_70 = &::cf___;
+    if (auVar4._0_8_ != (cfstringStruct *)0x0) {
+      local_70 = auVar4._0_8_;
+    }
+    auVar4 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar4._8_8_,&local_70,&local_78,1);
+    param_4 = FUN_10154f008(&_OBJC_CLASS___NSError,auVar4._8_8_,&cf_NNCERRORDOMAIN,uVar1,
+                            auVar4._0_8_);
+    pcVar3 = *(code **)(IVar2 + 0x10);
+  }
+  else {
+    uVar1 = FUN_101582d28(param_4,uVar1,&cf_code);
+    auVar4 = FUN_101569908(uVar1);
+    uVar1 = auVar4._8_8_;
+    if (auVar4._0_8_ != 10000) goto LAB_10001fbf8;
+    auVar4 = FUN_101528d88(param_4);
+    auVar4 = FUN_10153e4a8(auVar4._0_8_,auVar4._8_8_,&cf_result);
+    if ((auVar4._0_8_ & 1) != 0) {
+      uVar1 = FUN_101583468(param_4,auVar4._8_8_,&cf_result);
+      (**(code **)(param_5 + 0x10))(param_5,param_3,uVar1);
+      goto LAB_10001fccc;
+    }
+    pcVar3 = *(code **)(param_5 + 0x10);
+    IVar2 = param_5;
+  }
+  (*pcVar3)(IVar2,param_3,param_4);
+LAB_10001fccc:
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_68) {
+    FUN_100ab8e90(0);
+    return;
+  }
+  return;
+}
+
+
+
+/* NNCXCRequest.getHeaders: | 0x10001fd44 | ev_cd8a2ccadd05255a1a246c5def05f709820d5c60dd953e62d471d6e1b756fb3d */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCXCRequest::getHeaders_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  undefined8 uVar3;
+  ID IVar4;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined8 extraout_x1_07;
+  undefined8 extraout_x1_08;
+  undefined8 extraout_x1_09;
+  undefined8 extraout_x1_10;
+  undefined8 uVar5;
+  long lVar6;
+  long lVar7;
+  undefined1 auVar8 [16];
+  undefined8 local_130;
+  long lStack_128;
+  long *local_120;
+  undefined8 uStack_118;
+  undefined8 local_110;
+  undefined8 uStack_108;
+  undefined8 uStack_100;
+  undefined8 uStack_f8;
+  undefined1 auStack_e8 [128];
+  long local_68;
+  
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  auVar8 = FUN_10157e1c8(*(undefined8 *)PTR____NSDictionary0___101d78910);
+  IVar4 = auVar8._0_8_;
+  FUN_1015c6468(IVar4,auVar8._8_8_,&cf_Iamthelogrequestheader_,&cf_log_header);
+  FUN_1015c6468(IVar4,extraout_x1,&cf_muxingshipin,&cf_app_id);
+  FUN_1015c6468(IVar4,extraout_x1_00,&cf_mxsp_sp01,&cf_channel_code);
+  uVar1 = FUN_101583088(&_OBJC_CLASS___NSNumber,extraout_x1_01,param_3);
+  auVar8 = FUN_1015ebbe8(uVar1);
+  FUN_1015c6468(IVar4,auVar8._8_8_,auVar8._0_8_,&cf_cur_time);
+  auVar8 = FUN_101557968(param_1);
+  FUN_1015c6468(IVar4,auVar8._8_8_,auVar8._0_8_,&cf_device_id);
+  auVar8 = FUN_10157c1c8(param_1);
+  FUN_1015c6468(IVar4,auVar8._8_8_,auVar8._0_8_,&cf_mob_mfr);
+  auVar8 = FUN_10157ca68(param_1);
+  FUN_1015c6468(IVar4,auVar8._8_8_,auVar8._0_8_,&cf_mobmodel);
+  FUN_1015c6468(IVar4,extraout_x1_02,&cf_com_hfgr_zhongde_mx,&cf_package_name);
+  FUN_1015c6468(IVar4,extraout_x1_03,&cf_2,&cf_sys_platform);
+  FUN_1015c6468(IVar4,extraout_x1_04,&cf_10,&cf_sysrelease);
+  FUN_1015c6468(IVar4,extraout_x1_05,&cf_31100,&cf_version);
+  FUN_1015c6468(IVar4,extraout_x1_06,&cf_application_x_www_form_urlencoded,&cf_Content_Type);
+  FUN_1015c6468(IVar4,extraout_x1_07,&cf_okhttp_3_10_0,&cf_User_Agent);
+  uVar1 = FUN_10155a328(param_1);
+  FUN_10159b768(uVar1);
+  FUN_101557968(param_1);
+  uVar1 = FUN_101583088(&_OBJC_CLASS___NSNumber,extraout_x1_08,param_3);
+  FUN_1015ebbe8(uVar1);
+  uVar1 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_09,&cf_______);
+  uVar1 = FUN_10157b008(uVar1);
+  auVar8 = FUN_1015f6948(uVar1);
+  FUN_1015c6468(IVar4,auVar8._8_8_,auVar8._0_8_,&cf_sign);
+  uStack_108 = 0;
+  local_110 = 0;
+  uStack_f8 = 0;
+  uStack_100 = 0;
+  lStack_128 = 0;
+  local_130 = 0;
+  uStack_118 = 0;
+  local_120 = (long *)0x0;
+  uVar1 = FUN_10155a328(param_1);
+  auVar8 = FUN_10155e4e8(uVar1);
+  uVar1 = auVar8._0_8_;
+  lVar2 = FUN_10153f948(uVar1,auVar8._8_8_,&local_130,auStack_e8,0x10);
+  if (lVar2 != 0) {
+    lVar6 = *local_120;
+    do {
+      lVar7 = 0;
+      do {
+        if (*local_120 != lVar6) {
+          _objc_enumerationMutation(uVar1);
+        }
+        uVar5 = *(undefined8 *)(lStack_128 + lVar7 * 8);
+        uVar3 = FUN_1015f7f68(uVar5);
+        auVar8 = FUN_1015730e8(uVar5);
+        FUN_1015c6468(IVar4,auVar8._8_8_,uVar3,auVar8._0_8_);
+        lVar7 = lVar7 + 1;
+      } while (lVar2 != lVar7);
+      lVar2 = FUN_10153f948(uVar1,extraout_x1_10,&local_130,auStack_e8,0x10);
+    } while (lVar2 != 0);
+  }
+  auVar8 = FUN_10155a228(param_1);
+  FUN_1015c6468(IVar4,auVar8._8_8_,auVar8._0_8_,&cf_token);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_68) {
+    return IVar4;
+  }
+  IVar4 = FUN_100ab8e90(0);
+  return IVar4;
+}
+
+
+
+/* NNCXCRequest.AES128Decrypt:key:iv: | 0x1000201b0 | ev_4e01b51148c7e843888932e19e04c9d49a97d313a31108253ffbe606b0d004bc */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x28 bytes */
+
+ID NNCXCRequest::AES128Decrypt_key_iv_(ID param_1,SEL param_2,ID param_3,ID param_4,ID param_5)
+
+{
+  CCCryptorStatus CVar1;
+  undefined8 uVar2;
+  long lVar3;
+  void *dataOut;
+  undefined8 uVar4;
+  void *key;
+  size_t keyLength;
+  void *iv;
+  void *dataIn;
+  size_t dataInLength;
+  ID IVar5;
+  undefined1 auVar6 [16];
+  undefined1 auVar7 [16];
+  size_t local_68;
+  
+  auVar6 = _objc_alloc(&_OBJC_CLASS___NSString);
+  uVar2 = FUN_1015644e8(auVar6._0_8_,auVar6._8_8_,param_3,4);
+  auVar6 = _objc_alloc(&_OBJC_CLASS___NSData);
+  auVar6 = FUN_101563a68(auVar6._0_8_,auVar6._8_8_,uVar2,0);
+  auVar7 = FUN_101544828(param_4,auVar6._8_8_,4);
+  uVar2 = FUN_101544828(param_5,auVar7._8_8_,4);
+  lVar3 = FUN_1015750a8(auVar6._0_8_);
+  dataOut = _malloc(lVar3 + 0x10U);
+  local_68 = 0;
+  uVar4 = _objc_retainAutorelease(auVar7._0_8_);
+  key = (void *)FUN_1015353e8();
+  keyLength = FUN_1015750a8(uVar4);
+  _objc_retainAutorelease(uVar2);
+  iv = (void *)FUN_1015353e8();
+  uVar2 = _objc_retainAutorelease(auVar6._0_8_);
+  dataIn = (void *)FUN_1015353e8();
+  dataInLength = FUN_1015750a8(uVar2);
+  CVar1 = _CCCrypt(1,0,1,key,keyLength,iv,dataIn,dataInLength,dataOut,lVar3 + 0x10U,&local_68);
+  if (CVar1 == 0) {
+    uVar2 = FUN_101544888(&_OBJC_CLASS___NSData);
+    auVar6 = _objc_alloc(&_OBJC_CLASS___NSString);
+    IVar5 = FUN_1015644e8(auVar6._0_8_,auVar6._8_8_,uVar2,4);
+  }
+  else {
+    _free(dataOut);
+    IVar5 = 0;
+  }
+  return IVar5;
+}
+
+
+
+/* NNCXCRequest.shouldRefreshToken | 0x1000203b8 | ev_65c6dd1641ed4ae21debe66d84aa15299e6cdfbab07b42dc498e1591cb00faeb */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCXCRequest::shouldRefreshToken(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  double dVar2;
+  double dVar3;
+  
+  uVar1 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+  dVar2 = (double)FUN_1015ef888(uVar1);
+  dVar3 = (double)FUN_101507a88(param_1);
+  if (3600.0 <= dVar2 - dVar3) {
+    FUN_1015be968(dVar2,param_1);
+  }
+  return (bool)(3600.0 <= dVar2 - dVar3);
+}
+
+
+
+/* NNCXCRequest.getDeviceId | 0x10002043c | ev_11e4daa142f105084ddcaf3ca9953e854e56af74d7af28b346066f57643bca8d */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::getDeviceId(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  ID IVar5;
+  undefined1 auVar6 [16];
+  
+  uVar1 = FUN_101500648();
+  lVar2 = FUN_1015750a8(uVar1);
+  if (lVar2 == 0) {
+    uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+    auVar6 = FUN_1015eae88(param_1);
+    auVar6 = FUN_101583468(uVar1,auVar6._8_8_,auVar6._0_8_);
+    FUN_1015ae2e8(param_1,auVar6._8_8_,auVar6._0_8_);
+    uVar1 = FUN_101500648(param_1);
+    lVar2 = FUN_1015750a8(uVar1);
+    if (lVar2 == 0) {
+      uVar1 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+      FUN_1015ef888(uVar1);
+      uVar1 = FUN_101583008(&_OBJC_CLASS___NSNumber);
+      uVar3 = FUN_1015ebbe8(uVar1);
+      auVar6 = FUN_10157b008(uVar3);
+      uVar3 = FUN_1015ec3e8(auVar6._0_8_,auVar6._8_8_,8,0x10);
+      auVar6 = FUN_101578a48(uVar3);
+      FUN_1015ae2e8(param_1,auVar6._8_8_,auVar6._0_8_);
+      uVar3 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+      uVar4 = FUN_101500648(param_1);
+      auVar6 = FUN_1015eae88(param_1);
+      FUN_1015c6468(uVar3,auVar6._8_8_,uVar4,auVar6._0_8_);
+      uVar3 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+      auVar6 = FUN_1015eb148(param_1);
+      FUN_1015c6468(uVar3,auVar6._8_8_,uVar1,auVar6._0_8_);
+      uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+      FUN_1015ed5e8(uVar1);
+    }
+  }
+  IVar5 = FUN_101500648(param_1);
+  return IVar5;
+}
+
+
+
+/* NNCXCRequest.getSourceToken | 0x1000206b4 | ev_f2653cda9230085a47eb1738c179049cdd496ba10dcaccd1115a1ff447f35df6 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::getSourceToken(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  ID IVar3;
+  undefined1 auVar4 [16];
+  
+  uVar1 = FUN_101512c88();
+  lVar2 = FUN_1015750a8(uVar1);
+  if (lVar2 == 0) {
+    uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+    auVar4 = FUN_1015eb188(param_1);
+    auVar4 = FUN_101583468(uVar1,auVar4._8_8_,auVar4._0_8_);
+    FUN_1015d6128(param_1,auVar4._8_8_,auVar4._0_8_);
+    uVar1 = FUN_101512c88(param_1);
+    auVar4 = FUN_1015750a8(uVar1);
+    if (auVar4._0_8_ == 0) {
+      FUN_1015d6128(param_1,auVar4._8_8_,&::cf___);
+    }
+  }
+  IVar3 = FUN_101512c88(param_1);
+  return IVar3;
+}
+
+
+
+/* NNCXCRequest.setSourceToken: | 0x1000207a0 | ev_1705696831e466452c77be0680b5fc4e8d492713b086135ac4d05e2d38dc1299 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setSourceToken_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  
+  FUN_1015d6128();
+  uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  uVar2 = FUN_101512c88(param_1);
+  auVar3 = FUN_1015eb188(param_1);
+  FUN_1015c6468(uVar1,auVar3._8_8_,uVar2,auVar3._0_8_);
+  uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  FUN_1015ed5e8(uVar1);
+  return;
+}
+
+
+
+/* NNCXCRequest.cleanDeviceIdAndToken | 0x10002084c | ev_bcb7a279e1d059bdabf3e987893c48f8dfa9b2344138572d87d9d77a39cbed0a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCXCRequest::cleanDeviceIdAndToken(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  
+  FUN_1015d6128(param_1,param_2,&::cf___);
+  FUN_1015ae2e8(param_1,extraout_x1,&::cf___);
+  FUN_1015be968(0,param_1);
+  uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  auVar2 = FUN_1015eae88(param_1);
+  FUN_1015c6468(uVar1,auVar2._8_8_,&::cf___,auVar2._0_8_);
+  uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  auVar2 = FUN_1015eb188(param_1);
+  FUN_1015c6468(uVar1,auVar2._8_8_,&::cf___,auVar2._0_8_);
+  uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  auVar2 = FUN_1015eb148(param_1);
+  FUN_1015c6468(uVar1,auVar2._8_8_,0,auVar2._0_8_);
+  uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  auVar2 = FUN_1015eafe8(param_1);
+  FUN_1015c6468(uVar1,auVar2._8_8_,&::cf___,auVar2._0_8_);
+  uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  auVar2 = FUN_1015eb008(param_1);
+  FUN_1015c6468(uVar1,auVar2._8_8_,&::cf___,auVar2._0_8_);
+  uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  FUN_1015ed5e8(uVar1);
+  return;
+}
+
+
+
+/* NNCXCRequest.mfr | 0x100020a28 | ev_e6876f57edd8737b4eaf16a09262920e1e47ed18cbb2319b9370f733d965f8e3 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::mfr(ID param_1,SEL param_2)
+
+{
+  ulong uVar1;
+  long lVar2;
+  undefined8 uVar3;
+  ulong uVar4;
+  undefined8 uVar5;
+  double dVar6;
+  undefined1 auVar7 [16];
+  
+  lVar2 = FUN_1015750a8(*(undefined8 *)(param_1 + 0x80));
+  if (lVar2 == 0) {
+    uVar3 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+    auVar7 = FUN_1015eafe8(param_1);
+    uVar3 = FUN_101583468(uVar3,auVar7._8_8_,auVar7._0_8_);
+    lVar2 = FUN_1015750a8(uVar3);
+    if (lVar2 == 0) {
+      uVar3 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+      dVar6 = (double)FUN_1015ef888(uVar3);
+      uVar3 = FUN_101558ec8(&objc::class_t::NNCHMRequest);
+      uVar4 = FUN_10153f908(uVar3);
+      uVar1 = 0;
+      if (uVar4 != 0) {
+        uVar1 = (ulong)(long)(dVar6 * 1000.0) / uVar4;
+      }
+      auVar7 = FUN_101558ec8(&objc::class_t::NNCHMRequest);
+      uVar3 = FUN_101583328(auVar7._0_8_,auVar7._8_8_,(long)(dVar6 * 1000.0) - uVar1 * uVar4);
+      uVar5 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+      auVar7 = FUN_1015eafe8(param_1);
+      FUN_1015c6468(uVar5,auVar7._8_8_,uVar3,auVar7._0_8_);
+      uVar5 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+      FUN_1015ed5e8(uVar5);
+    }
+    *(undefined8 *)(param_1 + 0x80) = uVar3;
+  }
+  return *(ID *)(param_1 + 0x80);
+}
+
+
+
+/* NNCXCRequest.model | 0x100020bd4 | ev_f8d8424cf9146838ca0906fa2a19b2ae798c17c0e5933773166f7ee7bc861ac9 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::model(ID param_1,SEL param_2)
+
+{
+  ulong uVar1;
+  long lVar2;
+  undefined8 uVar3;
+  ulong uVar4;
+  undefined8 uVar5;
+  double dVar6;
+  undefined1 auVar7 [16];
+  
+  lVar2 = FUN_1015750a8(*(undefined8 *)(param_1 + 0x88));
+  if (lVar2 == 0) {
+    uVar3 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+    auVar7 = FUN_1015eb008(param_1);
+    uVar3 = FUN_101583468(uVar3,auVar7._8_8_,auVar7._0_8_);
+    lVar2 = FUN_1015750a8(uVar3);
+    if (lVar2 == 0) {
+      uVar3 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+      dVar6 = (double)FUN_1015ef888(uVar3);
+      uVar3 = FUN_101558ee8(&objc::class_t::NNCHMRequest);
+      uVar4 = FUN_10153f908(uVar3);
+      uVar1 = 0;
+      if (uVar4 != 0) {
+        uVar1 = (ulong)(long)(dVar6 * 1000.0) / uVar4;
+      }
+      auVar7 = FUN_101558ee8(&objc::class_t::NNCHMRequest);
+      uVar3 = FUN_101583328(auVar7._0_8_,auVar7._8_8_,(long)(dVar6 * 1000.0) - uVar1 * uVar4);
+      uVar5 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+      auVar7 = FUN_1015eb008(param_1);
+      FUN_1015c6468(uVar5,auVar7._8_8_,uVar3,auVar7._0_8_);
+      uVar5 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+      FUN_1015ed5e8(uVar5);
+    }
+    *(undefined8 *)(param_1 + 0x88) = uVar3;
+  }
+  return *(ID *)(param_1 + 0x88);
+}
+
+
+
+/* NNCXCRequest.responseManager | 0x100020d80 | ev_69992bbfbb80eb52406481adec4f23a02ff5df11e29638c256ddfda84428694b */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::responseManager(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCXCRequest.setResponseManager: | 0x100020d88 | ev_62a52e97cbf6168de4e2b1647f9f594cc2449c01babc70c8206395381e3698dc */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setResponseManager_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.DEVICE_ID | 0x100020d94 | ev_5332ec940ecd0779f5c87d1aa0c7d0e6909ce9e1f3adfffcdba4b2ab8d5fb4dc */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::DEVICE_ID(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x18);
+}
+
+
+
+/* NNCXCRequest.setDEVICE_ID: | 0x100020d9c | ev_711cce25f3d8a15de583e59419973bc3eff19e9782e1b2412e243582b30fa699 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setDEVICE_ID_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.TOKEN | 0x100020da4 | ev_d91327cedeb2fd67ed0fc2b912036b7d10d757adddff5ba14ddd39722a3dfd51 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::TOKEN(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x20);
+}
+
+
+
+/* NNCXCRequest.setTOKEN: | 0x100020dac | ev_e102fc852d01080f99b43fe9729077efb0654deb55895b69f3058bee8a0df15c */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setTOKEN_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x20) = param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.sceneId | 0x100020db4 | ev_1683b02de01832ca56fafd95d556d085f2e309312bb61aff489a05edd12a1199 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::sceneId(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x28);
+}
+
+
+
+/* NNCXCRequest.setSceneId: | 0x100020dbc | ev_e2f413f9ea88277b45e2e52f6333ae8bcab97c0d6c0f0c94f1cf7797f46f7691 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setSceneId_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x28) = param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.certifyId | 0x100020dc4 | ev_ff5c1f24e1eebd8f8ef8074316001dc26beed4796099f9b2844875a22b4a0caf */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::certifyId(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x30);
+}
+
+
+
+/* NNCXCRequest.setCertifyId: | 0x100020dcc | ev_63cd15f3da1bf9509c9b035a6352323d81e1a29c99570775e3563dcd06711e31 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setCertifyId_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x30) = param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.deviceToken | 0x100020dd4 | ev_b7cd758a8f3a8a2d9bd9897a2cd2e78478d7f9205fa6a75c93bf5715409c3c2b */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::deviceToken(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x38);
+}
+
+
+
+/* NNCXCRequest.setDeviceToken: | 0x100020ddc | ev_e256a38e638b647997144f30d413e4fccc0931d90684fbf368ee5735ce92dc31 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setDeviceToken_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x38) = param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.storeDeviceIdKey | 0x100020de4 | ev_493ec9c7c535c07045ce09705501ccc61f476ed3e6e22f40aef90f853faa207e */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::storeDeviceIdKey(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x40);
+}
+
+
+
+/* NNCXCRequest.setStoreDeviceIdKey: | 0x100020dec | ev_b5a02c95aaafb131cda618885821a7ca5cc8bab2900c0f6000075200a56a5960 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setStoreDeviceIdKey_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x40) = param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.storeTimeStampKey | 0x100020df4 | ev_e4f862e4f4be7ae93722380b76af438a0f087fa141ea9d2875f191ba7987a78f */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::storeTimeStampKey(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x48);
+}
+
+
+
+/* NNCXCRequest.setStoreTimeStampKey: | 0x100020dfc | ev_ad6f193b02d80e4fcbc8345456b466de92e21128173d6803cf9502858b2fa77a */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setStoreTimeStampKey_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x48) = param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.storeTokenKey | 0x100020e04 | ev_6633c8502826bcd163188ba5604b2c7a743386470195830cd8eac163a9fdad01 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::storeTokenKey(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x50);
+}
+
+
+
+/* NNCXCRequest.setStoreTokenKey: | 0x100020e0c | ev_7eab0e3011416f131113a0f1887a36ac58687cb48ba53853d9719d67af39be46 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setStoreTokenKey_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x50) = param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.storeMfrKey | 0x100020e14 | ev_120d753f20eaf00021d15f918f66288ffe0f09d7c0cee67701d433e8083b33ce */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::storeMfrKey(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x58);
+}
+
+
+
+/* NNCXCRequest.setStoreMfrKey: | 0x100020e1c | ev_0316376219ede1a237a225db1d27e759b280c5d0dd566ad7141cfb0e0e3730bd */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setStoreMfrKey_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x58) = param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.storeModelKey | 0x100020e24 | ev_005f54183f512fb0c8e998cc468c5e65667877b7b9a3de48a878539e6603a7eb */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::storeModelKey(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x60);
+}
+
+
+
+/* NNCXCRequest.setStoreModelKey: | 0x100020e2c | ev_68e686542c7cb7541d2d40e90f451dbda29261eb0d8fa4efd075ea902d7ebe79 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setStoreModelKey_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x60) = param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.LAST_REFRESH_TOKEN_STAMP | 0x100020e34 | ev_e4304cf6e66d531ae1d9deacdc63a2bd08c7a03631e3afda33ff4b22c2856b4c */
+
+/* Function Stack Size: 0x10 bytes */
+
+double NNCXCRequest::LAST_REFRESH_TOKEN_STAMP(ID param_1,SEL param_2)
+
+{
+  return *(double *)(param_1 + 0x68);
+}
+
+
+
+/* NNCXCRequest.setLAST_REFRESH_TOKEN_STAMP: | 0x100020e3c | ev_faf9beec0732682357f2a570cb6f0d1bdc6353aabdc2f84fb5de4d62e99657ed */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setLAST_REFRESH_TOKEN_STAMP_(ID param_1,SEL param_2,double param_3)
+
+{
+  *(double *)(param_1 + 0x68) = param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.getTokenSuccessArray | 0x100020e44 | ev_0fc6de63452c5f31a334f63c968b5613f19db42dfdc98140a3f3efbcff93850d */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::getTokenSuccessArray(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x70);
+}
+
+
+
+/* NNCXCRequest.setGetTokenSuccessArray: | 0x100020e4c | ev_55d46b628188e5d27ac274140b63cd4f3cc2638f6975157b250dd25737b0d9e6 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setGetTokenSuccessArray_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x70) = param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.getTokenFailedArray | 0x100020e58 | ev_78151b620ec1b7f78349a609c5d71320fe2049aaf2f0ba7a712dd15de068c286 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCXCRequest::getTokenFailedArray(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x78);
+}
+
+
+
+/* NNCXCRequest.setGetTokenFailedArray: | 0x100020e60 | ev_12baf2e519a4478d33e6eb0f792d4e22cc87d3b8702a6a9b249ca3ba321b8825 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setGetTokenFailedArray_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x78) = param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.isRequestingToken | 0x100020e6c | ev_3bf8527b32e536ddc2811b91d2b60226f58ed91a094fcfa5e1d03d2ea00483a4 */
+
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCXCRequest::isRequestingToken(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + 8);
+}
+
+
+
+/* NNCXCRequest.setIsRequestingToken: | 0x100020e74 | ev_7b15af3c9ef5c99d365c7f118dedb44ebfa04021bd34340a08a5526f3dbe5aea */
+
+/* Function Stack Size: 0x14 bytes */
+
+void NNCXCRequest::setIsRequestingToken_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + 8) = (char)param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.isCopy | 0x100020e7c | ev_2c5589f24485df287fbf19fb28a0a79168b65b4b4c805f448ad927e232dc2279 */
+
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCXCRequest::isCopy(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + 9);
+}
+
+
+
+/* NNCXCRequest.setIsCopy: | 0x100020e84 | ev_7c1d01f2746e3e9a23bba13a64f2af7fb1853797ceeec1547c04b61b6f4833a1 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void NNCXCRequest::setIsCopy_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + 9) = (char)param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.setMfr: | 0x100020e8c | ev_f2b41548098458c41b70de5d3a22ef6fa2591ebcf5f414c2a55acfe8dd2b6155 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setMfr_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x80) = param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest.setModel: | 0x100020e94 | ev_aa8d8abfdb2cdd28ffbb12dcbcaa8b051e8677913fa7be2c3b8f7925a5077795 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCXCRequest::setModel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x88) = param_3;
+  return;
+}
+
+
+
+/* NNCXCRequest..cxx_destruct | 0x100020e9c | ev_2fdb04dee13df60cf595ffd4f9b642b6b9e557f51e76a2a915ddb2152182adb1 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCXCRequest::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x88) = 0;
+  *(undefined8 *)(param_1 + 0x80) = 0;
+  *(undefined8 *)(param_1 + 0x78) = 0;
+  *(undefined8 *)(param_1 + 0x70) = 0;
+  *(undefined8 *)(param_1 + 0x60) = 0;
+  *(undefined8 *)(param_1 + 0x58) = 0;
+  *(undefined8 *)(param_1 + 0x50) = 0;
+  *(undefined8 *)(param_1 + 0x48) = 0;
+  *(undefined8 *)(param_1 + 0x40) = 0;
+  *(undefined8 *)(param_1 + 0x38) = 0;
+  *(undefined8 *)(param_1 + 0x30) = 0;
+  *(undefined8 *)(param_1 + 0x28) = 0;
+  *(undefined8 *)(param_1 + 0x20) = 0;
+  *(undefined8 *)(param_1 + 0x18) = 0;
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  return;
+}
+
+

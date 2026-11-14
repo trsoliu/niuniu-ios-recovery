@@ -1,0 +1,670 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* FSViewController.init | 0x1000ca5e4 | ev_de74a24093b358f69f7e9d29ef72db13217c1fa713645f9cb23c199e79532de9 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID FSViewController::init(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::FSViewController;
+  local_30 = param_1;
+  auVar2 = _objc_msgSendSuper2(&local_30,"init");
+  IVar1 = auVar2._0_8_;
+  if (IVar1 != 0) {
+    FUN_1015b0468(IVar1,auVar2._8_8_,1);
+    FUN_1015bc0a8(IVar1,extraout_x1,0);
+  }
+  return IVar1;
+}
+
+
+
+/* FSViewController.initWithCoder: | 0x1000ca644 | ev_ffd2910ed1705971148f47f5b792751ccdad60ccfd225f4a374aa3e7c4ac1720 */
+
+/* Function Stack Size: 0x18 bytes */
+
+ID FSViewController::initWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::FSViewController;
+  local_30 = param_1;
+  auVar2 = _objc_msgSendSuper2(&local_30,"initWithCoder:");
+  IVar1 = auVar2._0_8_;
+  if (IVar1 != 0) {
+    FUN_1015b0468(IVar1,auVar2._8_8_,1);
+    FUN_1015bc0a8(IVar1,extraout_x1,0);
+  }
+  return IVar1;
+}
+
+
+
+/* FSViewController.initWithNibName:bundle: | 0x1000ca6a4 | ev_45c829f501b5010022e31a3703c05222d32e1f7b031930a2d549555123891749 */
+
+/* Function Stack Size: 0x20 bytes */
+
+ID FSViewController::initWithNibName_bundle_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::FSViewController;
+  local_30 = param_1;
+  auVar2 = _objc_msgSendSuper2(&local_30,"initWithNibName:bundle:");
+  IVar1 = auVar2._0_8_;
+  if (IVar1 != 0) {
+    FUN_1015b0468(IVar1,auVar2._8_8_,1);
+    FUN_1015bc0a8(IVar1,extraout_x1,0);
+  }
+  return IVar1;
+}
+
+
+
+/* FSViewController.dealloc | 0x1000ca704 | ev_d4b233a3b8e6f6c719b01243b6ac040fa9b6f01e637fce761cf294faa4250fad */
+
+/* Function Stack Size: 0x10 bytes */
+
+void FSViewController::dealloc(ID param_1,SEL param_2)
+
+{
+  ID local_30;
+  class_t *pcStack_28;
+  
+  FUN_1015a5388(param_1,param_2,0);
+  pcStack_28 = &objc::class_t::FSViewController;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"dealloc");
+  return;
+}
+
+
+
+/* FSViewController.viewDidLoad | 0x1000ca74c | ev_a59664ecaa9b8f63333462519e8b9e647ad64d845099d6a5211f4da6da82cb1b */
+
+/* Function Stack Size: 0x10 bytes */
+
+void FSViewController::viewDidLoad(ID param_1,SEL param_2)
+
+{
+  ID local_20;
+  class_t *pcStack_18;
+  
+  pcStack_18 = &objc::class_t::FSViewController;
+  local_20 = param_1;
+  _objc_msgSendSuper2(&local_20,"viewDidLoad");
+  return;
+}
+
+
+
+/* FSViewController.viewWillAppear: | 0x1000ca780 | ev_f66c59001f62de18268821378fba054ada672e7e49bea80caf6501f3bd4708e9 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void FSViewController::viewWillAppear_(ID param_1,SEL param_2,bool param_3)
+
+{
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::FSViewController;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"viewWillAppear:",param_3);
+  *(undefined1 *)(param_1 + (long)__isViewAppearing) = 1;
+  return;
+}
+
+
+
+/* FSViewController.viewDidDisappear: | 0x1000ca7d0 | ev_fc77fd16fe64f3b9d711fcdf52578c41f43b76cb67576991d7906f6b7324788b */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void FSViewController::viewDidDisappear_(ID param_1,SEL param_2,bool param_3)
+
+{
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::FSViewController;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"viewDidDisappear:",param_3);
+  *(undefined1 *)(param_1 + (long)__isViewAppearing) = 0;
+  return;
+}
+
+
+
+/* FSViewController.didReceiveMemoryWarning | 0x1000ca81c | ev_39685e47b77bfe9b949af61f13884ec9f3023c4dda83908ccb75c4e4dfb2fbe5 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void FSViewController::didReceiveMemoryWarning(ID param_1,SEL param_2)
+
+{
+  ID local_20;
+  class_t *pcStack_18;
+  
+  pcStack_18 = &objc::class_t::FSViewController;
+  local_20 = param_1;
+  _objc_msgSendSuper2(&local_20,"didReceiveMemoryWarning");
+  return;
+}
+
+
+
+/* FSViewController.dismissWithCancelled: | 0x1000ca850 | ev_deb0f6fc2b2d2a6fc7aaa9a0e086ea2ad58f0beaa47f89e54d48e127116861b9 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void FSViewController::dismissWithCancelled_(ID param_1,SEL param_2,bool param_3)
+
+{
+  undefined8 *puVar1;
+  int iVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined1 auVar4 [16];
+  
+  puVar1 = (undefined8 *)(param_1 + (long)__dismissDelegate);
+  iVar2 = FUN_101598088(*puVar1,param_2,"viewControllerWillDismiss:cancelled:");
+  if (iVar2 != 0) {
+    FUN_1015fa248(*puVar1,extraout_x1,param_1,param_3);
+  }
+  if (*(char *)(param_1 + (long)__isModalView) == '\0') {
+    uVar3 = FUN_101580708(param_1);
+    auVar4 = FUN_101549be8(param_1);
+    FUN_10158c568(uVar3,auVar4._8_8_,auVar4._0_8_);
+    uVar3 = extraout_x1_01;
+  }
+  else {
+    auVar4 = FUN_101549be8(param_1);
+    FUN_101549e68(param_1,auVar4._8_8_,auVar4._0_8_,0);
+    uVar3 = extraout_x1_00;
+  }
+  iVar2 = FUN_101598088(*puVar1,uVar3,"viewControllerDidDismiss:cancelled:");
+  if (iVar2 != 0) {
+    FUN_1015fa148(*puVar1,extraout_x1_02,param_1,param_3);
+    return;
+  }
+  return;
+}
+
+
+
+/* FSViewController.done | 0x1000ca990 | ev_88e2fff78c2e6a843be64fc22aee65538cc14e0cce2693b52b0bff30e05a2f20 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void FSViewController::done(ID param_1,SEL param_2)
+
+{
+  FUN_101549ea8(param_1,param_2,0);
+  return;
+}
+
+
+
+/* FSViewController.cancel | 0x1000ca998 | ev_a4ce38812a82df041de2631808ad8ad103b3fd176a26447d68cceede29b3f3bd */
+
+/* Function Stack Size: 0x10 bytes */
+
+void FSViewController::cancel(ID param_1,SEL param_2)
+
+{
+  FUN_101549ea8(param_1,param_2,1);
+  return;
+}
+
+
+
+/* FSViewController.setAutoresizesForKeyboard: | 0x1000ca9a0 | ev_63ba47d05cebbac710d0c2bc32e7322759e1190295d81ab1196719a2652267a8 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void FSViewController::setAutoresizesForKeyboard_(ID param_1,SEL param_2,bool param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  if (*(byte *)(param_1 + (long)__autoresizesForKeyboard) == param_3) {
+    return;
+  }
+  *(char *)(param_1 + (long)__autoresizesForKeyboard) = (char)param_3;
+  auVar1 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+  if (param_3 == 0) {
+    FUN_1015943e8(auVar1._0_8_,auVar1._8_8_,param_1,
+                  *(undefined8 *)PTR__UIKeyboardWillShowNotification_101d786e8,0);
+    auVar1 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+    FUN_1015943e8(auVar1._0_8_,auVar1._8_8_,param_1,
+                  *(undefined8 *)PTR__UIKeyboardWillHideNotification_101d786e0,0);
+    auVar1 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+    FUN_1015943e8(auVar1._0_8_,auVar1._8_8_,param_1,
+                  *(undefined8 *)PTR__UIKeyboardDidShowNotification_101d786c0,0);
+    auVar1 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+    FUN_1015943e8(auVar1._0_8_,auVar1._8_8_,param_1,
+                  *(undefined8 *)PTR__UIKeyboardDidHideNotification_101d786b8,0);
+  }
+  else {
+    FUN_1015265c8(auVar1._0_8_,auVar1._8_8_,param_1,"keyboardWillShow:",
+                  *(undefined8 *)PTR__UIKeyboardWillShowNotification_101d786e8,0);
+    auVar1 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+    FUN_1015265c8(auVar1._0_8_,auVar1._8_8_,param_1,"keyboardWillHide:",
+                  *(undefined8 *)PTR__UIKeyboardWillHideNotification_101d786e0,0);
+    auVar1 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+    FUN_1015265c8(auVar1._0_8_,auVar1._8_8_,param_1,"keyboardDidShow:",
+                  *(undefined8 *)PTR__UIKeyboardDidShowNotification_101d786c0,0);
+    auVar1 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+    FUN_1015265c8(auVar1._0_8_,auVar1._8_8_,param_1,"keyboardDidHide:",
+                  *(undefined8 *)PTR__UIKeyboardDidHideNotification_101d786b8,0);
+  }
+  return;
+}
+
+
+
+/* FSViewController.keyboardWillShow: | 0x1000caba4 | ev_62c97305fdd1aef80fcff784ab49bddc04e240f0e297c30b001e87f67bf262f8 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void FSViewController::keyboardWillShow_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 extraout_x1;
+  
+  iVar1 = FUN_101571f88(param_1);
+  if (iVar1 != 0) {
+    FUN_101597ce8(param_1,extraout_x1,param_3,1);
+  }
+  return;
+}
+
+
+
+/* FSViewController.keyboardDidShow: | 0x1000cabec | ev_a6c7d208c972bae9cacf2e23b458fb170232a22f8fd998583af0d0416d308f0f */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void FSViewController::keyboardDidShow_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 extraout_x1;
+  
+  iVar1 = FUN_101571f88(param_1);
+  if (iVar1 != 0) {
+    FUN_101597ca8(param_1,extraout_x1,param_3,1);
+  }
+  return;
+}
+
+
+
+/* FSViewController.keyboardWillHide: | 0x1000cac34 | ev_d9b3f182ffe6a39578f0f11304f6de0d220c5a640af555916c51627daf76f2d3 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void FSViewController::keyboardWillHide_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 extraout_x1;
+  
+  iVar1 = FUN_101571f88(param_1);
+  if (iVar1 != 0) {
+    FUN_101597ce8(param_1,extraout_x1,param_3,0);
+  }
+  return;
+}
+
+
+
+/* FSViewController.keyboardDidHide: | 0x1000cac7c | ev_d4312cc44042596f3e5fb8cc0db9c013c4014855a0028f6dc1e5e88659583155 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void FSViewController::keyboardDidHide_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 extraout_x1;
+  
+  iVar1 = FUN_101571f88(param_1);
+  if (iVar1 != 0) {
+    FUN_101597ca8(param_1,extraout_x1,param_3,0);
+  }
+  return;
+}
+
+
+
+/* FSViewController.resizedForKeyboard:appearing: | 0x1000cacc4 | ev_13d0e041d39742bb87e961165d09c52c674fd18252eb2c29e432703eb511fb87 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x1c bytes */
+
+void FSViewController::resizedForKeyboard_appearing_(ID param_1,SEL param_2,ID param_3,bool param_4)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  SEL extraout_x1;
+  undefined8 uVar4;
+  undefined8 in_d1;
+  undefined8 in_d2;
+  undefined8 uVar5;
+  undefined8 in_d3;
+  undefined8 uVar6;
+  
+  IVar1 = FUN_1015f73c8(param_3,param_2);
+  uVar2 = FUN_101583468(IVar1);
+  uVar4 = FUN_1014fe5c8(uVar2);
+  uVar2 = in_d1;
+  uVar5 = in_d2;
+  uVar6 = in_d3;
+  IVar1 = FUN_1015f73c8(param_3,extraout_x1);
+  uVar3 = FUN_101583468(IVar1);
+  uVar3 = FUN_1014fe5c8(uVar3);
+  if (param_4 != 0) {
+    FUN_101573328();
+    return;
+  }
+  FUN_101573348(uVar4,in_d1,in_d2,in_d3,uVar3,uVar2,uVar5,uVar6,param_1);
+  return;
+}
+
+
+
+/* FSViewController.resizingForKeyboard:appearing: | 0x1000cae1c | ev_3beab85ff25c66922aacc17a40db1855c372228f5fae5768fc1fe62c2fd37e37 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x1c bytes */
+
+void FSViewController::resizingForKeyboard_appearing_
+               (ID param_1,SEL param_2,ID param_3,bool param_4)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  undefined8 in_d1;
+  undefined8 in_d2;
+  undefined8 uVar6;
+  undefined8 in_d3;
+  undefined8 uVar7;
+  undefined1 auVar8 [16];
+  
+  IVar1 = FUN_1015f73c8(param_3,param_2);
+  uVar2 = FUN_101583468(IVar1);
+  uVar4 = FUN_1014fe5c8(uVar2);
+  uVar2 = in_d1;
+  uVar6 = in_d2;
+  uVar7 = in_d3;
+  IVar1 = FUN_1015f73c8(param_3,extraout_x1);
+  uVar3 = FUN_101583468(IVar1);
+  uVar5 = FUN_1014fe5c8(uVar3);
+  IVar1 = FUN_1015f73c8(param_3,extraout_x1_00);
+  uVar3 = FUN_101583468(IVar1);
+  FUN_10154ab08(uVar3);
+  IVar1 = FUN_1015f73c8(param_3,extraout_x1_01);
+  uVar3 = FUN_101583468(IVar1);
+  auVar8 = FUN_101569908(uVar3);
+  if (param_4 == 0) {
+    FUN_1015733a8(uVar4,in_d1,in_d2,in_d3,uVar5,uVar2,uVar6,uVar7,param_1,auVar8._8_8_,auVar8._0_8_)
+    ;
+  }
+  else {
+    FUN_101573388(uVar4,in_d1,in_d2,in_d3,uVar5,uVar2,uVar6,uVar7,param_1,auVar8._8_8_,auVar8._0_8_)
+    ;
+  }
+  return;
+}
+
+
+
+/* FSViewController.keyboardWillAppearWithBeginFrame:endFrame:animationDuration:animationCurve: | 0x1000cb028 | ev_9ffb68a92e6c85c9631d9dd16055d9a2d37223c7a6108b0a9b37dcd8e66bdbfc */
+
+/* Function Stack Size: 0x60 bytes */
+
+void FSViewController::keyboardWillAppearWithBeginFrame_endFrame_animationDuration_animationCurve_
+               (ID param_1,SEL param_2,CGRect param_3,CGRect param_4,double param_5,
+               long_long param_6)
+
+{
+  return;
+}
+
+
+
+/* FSViewController.keyboardDidAppearWithBeginFrame:endFrame: | 0x1000cb02c | ev_2df509bbcf23dbf20e26ec6ab3fa47c47f210ec78ae0e0548a4db48e7c922bbc */
+
+/* Function Stack Size: 0x50 bytes */
+
+void FSViewController::keyboardDidAppearWithBeginFrame_endFrame_
+               (ID param_1,SEL param_2,CGRect param_3,CGRect param_4)
+
+{
+  return;
+}
+
+
+
+/* FSViewController.keyboardWillDisappearWithBeginFrame:endFrame:animationDuration:animationCurve: | 0x1000cb030 | ev_8063f635372aa056a153c7e72e15210ba3c7cda9604cf6ba6c8a3aaf507ac88c */
+
+/* Function Stack Size: 0x60 bytes */
+
+void FSViewController::
+     keyboardWillDisappearWithBeginFrame_endFrame_animationDuration_animationCurve_
+               (ID param_1,SEL param_2,CGRect param_3,CGRect param_4,double param_5,
+               long_long param_6)
+
+{
+  return;
+}
+
+
+
+/* FSViewController.keyboardDidDisappearWithBeginFrame:endFrame: | 0x1000cb034 | ev_c2c1fd7113a6ed2db52893d2eaab7a2e5abe46542569aebf7471d99fb1d5cea1 */
+
+/* Function Stack Size: 0x50 bytes */
+
+void FSViewController::keyboardDidDisappearWithBeginFrame_endFrame_
+               (ID param_1,SEL param_2,CGRect param_3,CGRect param_4)
+
+{
+  return;
+}
+
+
+
+/* FSViewController.shouldAutorotateToInterfaceOrientation: | 0x1000cb038 | ev_fa4cbed588874933f409a511f59972d3448d7c8256f0c05130db66ba000d6cbe */
+
+/* Function Stack Size: 0x18 bytes */
+
+bool FSViewController::shouldAutorotateToInterfaceOrientation_
+               (ID param_1,SEL param_2,long_long param_3)
+
+{
+  return (bool)(param_3 == 1);
+}
+
+
+
+/* FSViewController.dismissDelegate | 0x1000cb044 | ev_47b5a048a3ebb8a3b45ff15bd288c6e0dc3a0cced25f8bfe3a34ac4deb5966e8 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID FSViewController::dismissDelegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__dismissDelegate);
+}
+
+
+
+/* FSViewController.setDismissDelegate: | 0x1000cb064 | ev_431cac279f6f57e154e94cb16683e6d9a36b6c4964453dd3f9f3a71ea99db158 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void FSViewController::setDismissDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__dismissDelegate) = param_3;
+  return;
+}
+
+
+
+/* FSViewController.isModalView | 0x1000cb078 | ev_3ad5a4ad746f16bf685949cc3040068d704eab58d462f362ab6424c7884a5e96 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool FSViewController::isModalView(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__isModalView);
+}
+
+
+
+/* FSViewController.setIsModalView: | 0x1000cb088 | ev_21f0ee3b6750f557d3160a2808ef39c22fe809ba77e898dee599b80b678600df */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void FSViewController::setIsModalView_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__isModalView) = (char)param_3;
+  return;
+}
+
+
+
+/* FSViewController.dismissAnimated | 0x1000cb098 | ev_8dfaca7c75b79d5657587946a9ba4e28c3b4a66b80d8cbb03dc981116a743a21 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool FSViewController::dismissAnimated(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__dismissAnimated);
+}
+
+
+
+/* FSViewController.setDismissAnimated: | 0x1000cb0a8 | ev_57e86b09840ed25f5568360d136d2284386f17a6441d9ec2607444a00be2b337 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void FSViewController::setDismissAnimated_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__dismissAnimated) = (char)param_3;
+  return;
+}
+
+
+
+/* FSViewController.isViewAppearing | 0x1000cb0b8 | ev_738d5eb805ff3b69270a3865a0d538c7a2a813093d4a38b5314c134d0b9ede1c */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool FSViewController::isViewAppearing(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__isViewAppearing);
+}
+
+
+
+/* FSViewController.autoresizesForKeyboard | 0x1000cb0c8 | ev_4f81e462b058d584d6b1e51704a22c68a334a859eb85da398dc8ffc6a715f173 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool FSViewController::autoresizesForKeyboard(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__autoresizesForKeyboard);
+}
+
+
+
+/* FSViewController..cxx_destruct | 0x1000cb0d8 | ev_a098ab3c424b13138dbd06ee2b13e30701c25deb82e672a5bf5ec3d793b57ab6 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void FSViewController::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + (long)__dismissDelegate);
+  return;
+}
+
+

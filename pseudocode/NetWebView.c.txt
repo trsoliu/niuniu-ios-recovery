@@ -1,0 +1,88 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NetWebView.load | 0x1000817ac | ev_86322d87925ce9e80b9417174a9c3d8c7ea0c50f2ae618ba2d8d4fb44ca2b3fc */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NetWebView::load(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  
+  uVar1 = _class_getClassMethod(param_1,"handlesURLScheme:");
+  uVar2 = _class_getClassMethod(param_1,"bbhandlesURLScheme:");
+  _method_exchangeImplementations(uVar1,uVar2);
+  return;
+}
+
+
+
+/* NetWebView.bbhandlesURLScheme: | 0x1000817f0 | ev_331295be895ed40daffbcd27c5ebd95b919661d8921b0648f45f29df339035a5 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+bool NetWebView::bbhandlesURLScheme_(ID param_1,SEL param_2,ID param_3)
+
+{
+  bool bVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_10156d5e8(param_3,param_2,&cf_http);
+  if (((auVar2._0_8_ & 1) == 0) &&
+     (auVar2 = FUN_10156d5e8(param_3,auVar2._8_8_,&cf_https), (auVar2._0_8_ & 1) == 0)) {
+    bVar1 = FUN_10152eaa8(param_1,auVar2._8_8_,param_3);
+  }
+  else {
+    bVar1 = 0;
+  }
+  return bVar1;
+}
+
+
+
+/* NetWebView.delegate | 0x100081860 | ev_cda971367d3748d674470148f91e5649f75948a7df9a32f919a3f02f20bb9f2d */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NetWebView::delegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__delegate);
+}
+
+
+
+/* NetWebView.setDelegate: | 0x100081880 | ev_c2fbbd0c1a1a794f415038a13498bd1f9b26134f3f25837091fd27bd347f45fe */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NetWebView::setDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__delegate) = param_3;
+  return;
+}
+
+
+
+/* NetWebView..cxx_destruct | 0x100081894 | ev_fcd95a232890bb12a6cd68e8d8ead437d2657aa53f269804a5cff287a2ebbf9a */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NetWebView::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + (long)__delegate);
+  return;
+}
+
+

@@ -1,0 +1,3579 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* PublicFunction.getImageViewWithView: | 0x1000078f4 | ev_c74a2ad2c414590172742ff470cec9b23fb1b3a92ddb82079eba487a4001d6d4 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::getImageViewWithView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined8 in_d2;
+  undefined8 in_d3;
+  
+  FUN_101554148(param_3,param_2);
+  _UIGraphicsBeginImageContext(in_d2,in_d3);
+  FUN_101531d88(param_3);
+  FUN_10154bd68(param_3,extraout_x1,0);
+  IVar1 = _UIGraphicsGetImageFromCurrentImageContext(0);
+  _UIGraphicsEndImageContext();
+  return IVar1;
+}
+
+
+
+/* PublicFunction.blurryImage:withBlurLevel: | 0x10000795c | ev_35efdfdfb7ea53e76c05a43898c709e452a8b429a2520b5a52dc0084d7668880 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID PublicFunction::blurryImage_withBlurLevel_(ID param_1,SEL param_2,ID param_3,double param_4)
+
+{
+  int iVar1;
+  uint uVar2;
+  uint uVar3;
+  bool bVar4;
+  undefined8 uVar5;
+  undefined8 uVar6;
+  long lVar7;
+  long lVar8;
+  void *pvVar9;
+  undefined8 uVar10;
+  ID IVar11;
+  undefined1 auVar12 [16];
+  undefined8 in_stack_ffffffffffffff70;
+  undefined4 uVar13;
+  void *local_80;
+  undefined8 local_78;
+  undefined8 local_70;
+  undefined8 local_68;
+  undefined8 local_60;
+  undefined8 local_58;
+  undefined8 local_50;
+  undefined8 local_48;
+  
+  uVar13 = (undefined4)((ulong)in_stack_ffffffffffffff70 >> 0x20);
+  bVar4 = true;
+  if ((param_4 <= 1.0) && (bVar4 = false, !NAN(param_4))) {
+    bVar4 = param_4 < 0.0;
+  }
+  uVar3 = 0x32;
+  if (!bVar4) {
+    uVar3 = (int)(param_4 * 100.0);
+  }
+  uVar2 = -(uVar3 & 1);
+  if (-1 < (int)uVar3) {
+    uVar2 = uVar3 & 1;
+  }
+  iVar1 = (uVar3 - uVar2) + 1;
+  _objc_retainAutorelease(param_3);
+  uVar5 = FUN_1014fe4e8();
+  _CGImageGetDataProvider();
+  uVar6 = _CGDataProviderCopyData();
+  local_50 = _CGImageGetWidth(uVar5);
+  local_58 = _CGImageGetHeight(uVar5);
+  local_48 = _CGImageGetBytesPerRow(uVar5);
+  local_60 = _CFDataGetBytePtr(uVar6);
+  lVar7 = _CGImageGetBytesPerRow(uVar5);
+  lVar8 = _CGImageGetHeight(uVar5);
+  pvVar9 = _malloc(lVar8 * lVar7);
+  if (pvVar9 == (void *)0x0) {
+    _NSLog(&cf_Nopixelbuffer);
+  }
+  local_80 = pvVar9;
+  local_70 = _CGImageGetWidth(uVar5);
+  local_78 = _CGImageGetHeight(uVar5);
+  local_68 = _CGImageGetBytesPerRow(uVar5);
+  lVar7 = _vImageBoxConvolve_ARGB8888(&local_60,&local_80,0,0,0,iVar1,iVar1,0,CONCAT44(uVar13,8));
+  if (lVar7 != 0) {
+    _NSLog(&cf_errorfromconvolution_ld);
+  }
+  uVar5 = _CGColorSpaceCreateDeviceRGB();
+  uVar10 = _CGBitmapContextCreate(local_80,local_70,local_78,8,local_68,uVar5,5);
+  auVar12 = _CGBitmapContextCreateImage();
+  IVar11 = FUN_101560e08(&_OBJC_CLASS___UIImage,auVar12._8_8_,auVar12._0_8_);
+  _CGContextRelease(uVar10);
+  _CGColorSpaceRelease(uVar5);
+  _free(pvVar9);
+  _CFRelease(uVar6);
+  _CGColorSpaceRelease(uVar5);
+  _CGImageRelease(auVar12._0_8_);
+  return IVar11;
+}
+
+
+
+/* PublicFunction.setupRoundedCornersWithView:cutCorners:cornersRadio:borderColor:borderWidth:viewColor: | 0x100007b28 | ev_24bd42eea77839a814f923505df5ba64a8cc25303e9fc4b8f1c710e9d673b1dd */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x40 bytes */
+
+void PublicFunction::
+     setupRoundedCornersWithView_cutCorners_cornersRadio_borderColor_borderWidth_viewColor_
+               (ID param_1,SEL param_2,ID param_3,unsigned_long_long param_4,double param_5,
+               ID param_6,double param_7,ID param_8)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined1 auVar3 [16];
+  
+  IVar1 = FUN_101574688((ID)&_OBJC_CLASS___CAShapeLayer,param_2);
+  FUN_101531d88(param_3);
+  uVar2 = FUN_1015308a8(&_OBJC_CLASS___UIBezierPath,extraout_x1,param_4);
+  _objc_retainAutorelease(uVar2);
+  auVar3 = FUN_1014fe588();
+  FUN_1015c8288(IVar1,auVar3._8_8_,auVar3._0_8_);
+  FUN_101531d88(param_3);
+  FUN_1015b4b08(IVar1);
+  IVar1 = FUN_101574688(param_3,extraout_x1_00);
+  FUN_1015c2468(IVar1);
+  return;
+}
+
+
+
+/* PublicFunction.imageWithOriginalImage: | 0x100007c10 | ev_944420fda52e754887efaf79f79ad345c89164cca669148263cba8e42145f436 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::imageWithOriginalImage_(ID param_1,SEL param_2,ID param_3)
+
+{
+  bool bVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 uVar3;
+  double dVar4;
+  double dVar5;
+  double in_d1;
+  double dVar6;
+  double dVar7;
+  
+  dVar4 = (double)FUN_1015e3988();
+  FUN_1015e3988(param_3);
+  dVar6 = in_d1;
+  dVar5 = (double)FUN_1015e3988(param_3);
+  dVar7 = 1080.0;
+  if ((dVar5 < 1080.0) && (FUN_1015e3988(param_3), dVar6 < 1080.0)) {
+    return param_3;
+  }
+  dVar4 = dVar4 / in_d1;
+  dVar5 = (double)FUN_1015e3988(param_3);
+  uVar3 = extraout_x1;
+  if ((dVar5 <= 1080.0) || (FUN_1015e3988(param_3), uVar3 = extraout_x1_00, dVar6 <= 1080.0)) {
+    bVar1 = true;
+    if ((dVar4 <= 2.0) && (bVar1 = false, !NAN(dVar4))) {
+      bVar1 = dVar4 < 0.5;
+    }
+    if (bVar1) {
+      return param_3;
+    }
+    if (dVar4 <= 1.0) {
+      dVar6 = dVar4 * 1080.0;
+      goto LAB_100007d04;
+    }
+  }
+  else if ((2.0 < dVar4) || ((0.5 <= dVar4 && (dVar4 <= 1.0)))) {
+    dVar7 = 1080.0;
+    dVar6 = dVar4 * 1080.0;
+    goto LAB_100007d04;
+  }
+  dVar6 = 1080.0;
+  dVar7 = 1080.0 / dVar4;
+LAB_100007d04:
+  IVar2 = FUN_101560668(dVar7,dVar6,param_1,uVar3,param_3);
+  return IVar2;
+}
+
+
+
+/* PublicFunction.imageCompressWithImage:targetHeight:targetWidth: | 0x100007d54 | ev_27ba00c80e39cfe0804c3b7d69b05631ee7e13e3d8abef6d2d266456c0aefec8 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x28 bytes */
+
+ID PublicFunction::imageCompressWithImage_targetHeight_targetWidth_
+             (ID param_1,SEL param_2,ID param_3,double param_4,double param_5)
+
+{
+  ID IVar1;
+  
+  _UIGraphicsBeginImageContext(param_5,param_4);
+  FUN_10154bc08(0,0,param_5,param_4,param_3);
+  IVar1 = _UIGraphicsGetImageFromCurrentImageContext(0);
+  _UIGraphicsEndImageContext();
+  return IVar1;
+}
+
+
+
+/* PublicFunction.compressImage:withMaxLength: | 0x100007dcc | ev_7c731aad893c7b2c097ae9dffb42fe9aa79f3c72ab97fdb79fcdc9b9e18c4c94 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID PublicFunction::compressImage_withMaxLength_
+             (ID param_1,SEL param_2,ID param_3,unsigned_long_long param_4)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  ulong uVar3;
+  undefined8 uVar4;
+  double dVar5;
+  
+  uVar1 = FUN_101560f48();
+  IVar2 = _UIImageJPEGRepresentation(0x3ff0000000000000,uVar1);
+  uVar3 = FUN_1015750a8();
+  if (0x40000 < uVar3) {
+    uVar3 = FUN_1015750a8(IVar2);
+    if (uVar3 < 0x80001) {
+      uVar4 = 0x3fecccccc0000000;
+    }
+    else {
+      uVar3 = FUN_1015750a8(IVar2);
+      if (0x100000 < uVar3) {
+        IVar2 = _UIImageJPEGRepresentation(0x3fe3333340000000,uVar1);
+        uVar3 = FUN_1015750a8(IVar2);
+        if (uVar3 < 0x200001) {
+          return IVar2;
+        }
+        dVar5 = 0.48000001907348633;
+        uVar4 = _UIImageJPEGRepresentation(0x3fdeb85200000000,uVar1);
+        uVar3 = FUN_1015750a8(uVar4);
+        if (0x1fffff < uVar3) {
+          dVar5 = 0.48000001907348633;
+          do {
+            dVar5 = dVar5 * 0.800000011920929;
+            uVar4 = _UIImageJPEGRepresentation(dVar5,uVar1);
+            uVar3 = FUN_1015750a8(uVar4);
+          } while (uVar3 >> 0x15 != 0);
+        }
+        IVar2 = _UIImageJPEGRepresentation(dVar5,uVar1);
+        return IVar2;
+      }
+      uVar4 = 0x3fe99999a0000000;
+    }
+    IVar2 = _UIImageJPEGRepresentation(uVar4,uVar1);
+  }
+  return IVar2;
+}
+
+
+
+/* PublicFunction.isVideoUrlString: | 0x100007f84 | ev_c7fcef93b129d9cbcdd0c9388fdf0ff53412f1f2324ba53a3503d5b285540983 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+bool PublicFunction::isVideoUrlString_(ID param_1,SEL param_2,ID param_3)
+
+{
+  bool bVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_10155ddc8(param_3,param_2,&cf__MP4);
+  if ((auVar2._0_8_ & 1) == 0) {
+    bVar1 = FUN_10155ddc8(param_3,auVar2._8_8_,&cf__mp4);
+  }
+  else {
+    bVar1 = 1;
+  }
+  return bVar1;
+}
+
+
+
+/* PublicFunction.isSameDay:date2: | 0x100007fe0 | ev_23f2c7c83f5235f15afbb1112bf898f6ab99e3ab4159aaa6761f1bb414eb8b31 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+bool PublicFunction::isSameDay_date2_(ID param_1,SEL param_2,double param_3,double param_4)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  long lVar3;
+  long lVar4;
+  undefined1 auVar5 [16];
+  
+  uVar1 = FUN_101542988(&_OBJC_CLASS___NSCalendar);
+  auVar5 = FUN_1015efb28(param_3,param_1);
+  uVar2 = FUN_10153d008(uVar1,auVar5._8_8_,0x1c,auVar5._0_8_);
+  auVar5 = FUN_1015efb28(param_4,param_1);
+  uVar1 = FUN_10153d008(uVar1,auVar5._8_8_,0x1c,auVar5._0_8_);
+  lVar3 = FUN_101544e48(uVar2);
+  lVar4 = FUN_101544e48(uVar1);
+  if (lVar3 == lVar4) {
+    lVar3 = FUN_10157d2e8(uVar2);
+    lVar4 = FUN_10157d2e8(uVar1);
+    if (lVar3 == lVar4) {
+      lVar3 = FUN_1015ff248(uVar2);
+      lVar4 = FUN_1015ff248(uVar1);
+      return (uint)(lVar3 == lVar4);
+    }
+  }
+  return 0;
+}
+
+
+
+/* PublicFunction.timeToDate: | 0x10000811c | ev_b05803349b0600c26f32e7e59b5065e8a712b8c5ac41797c7ff8904cef1852fd */
+
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::timeToDate_(ID param_1,SEL param_2,double param_3)
+
+{
+  ID IVar1;
+  double dVar2;
+  
+  dVar2 = param_3 / 1000.0;
+  if (param_3 <= 13848256220.0) {
+    dVar2 = param_3;
+  }
+  IVar1 = FUN_101544de8(dVar2,&_OBJC_CLASS___NSDate);
+  return IVar1;
+}
+
+
+
+/* PublicFunction.thousandDivideString: | 0x100008144 | ev_46316733f759392223b1311b054cb809b6a7b04706256a7781a988e7b689b5d7 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::thousandDivideString_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ulong uVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 uVar4;
+  int iVar5;
+  long lVar6;
+  uint uVar7;
+  undefined1 auVar8 [16];
+  
+  auVar8 = FUN_1015783a8();
+  lVar6 = auVar8._0_8_;
+  iVar5 = 0;
+  if (lVar6 != 0) {
+    do {
+      iVar5 = iVar5 + 1;
+      uVar1 = lVar6 + 9;
+      lVar6 = lVar6 / 10;
+    } while (0x12 < uVar1);
+  }
+  uVar2 = FUN_1015ebd08(&_OBJC_CLASS___NSMutableString,auVar8._8_8_,param_3);
+  auVar8 = FUN_1015eb7c8(&_OBJC_CLASS___NSMutableString);
+  uVar4 = auVar8._8_8_;
+  IVar3 = auVar8._0_8_;
+  if (3 < iVar5) {
+    uVar7 = iVar5 + 3;
+    do {
+      auVar8 = FUN_1015750a8(uVar2);
+      lVar6 = auVar8._0_8_ + -3;
+      auVar8 = FUN_1015ec3e8(uVar2,auVar8._8_8_,lVar6,3);
+      FUN_101569228(IVar3,auVar8._8_8_,auVar8._0_8_,0);
+      FUN_101569228(IVar3,extraout_x1,&cf__,0);
+      FUN_1015469e8(uVar2,extraout_x1_00,lVar6,3);
+      uVar7 = uVar7 - 3;
+      uVar4 = extraout_x1_01;
+    } while (6 < uVar7);
+  }
+  FUN_101569228(IVar3,uVar4,uVar2,0);
+  return IVar3;
+}
+
+
+
+/* PublicFunction.orderCharsString1:string2: | 0x100008284 | ev_92a1d04b4b28e3f6280f976839faaffa0af238cc70fde25b00083ef17699f274 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+long_long PublicFunction::orderCharsString1_string2_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  uint uVar1;
+  uint uVar2;
+  ulong uVar3;
+  undefined8 uVar4;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  long_long lVar5;
+  undefined1 auVar6 [16];
+  
+  uVar3 = FUN_1015750a8(param_3);
+  auVar6 = FUN_1015750a8(param_4);
+  uVar4 = auVar6._8_8_;
+  if (auVar6._0_8_ <= uVar3) {
+    uVar3 = auVar6._0_8_;
+  }
+  if (uVar3 == 0) {
+    lVar5 = 1;
+  }
+  else {
+    while( true ) {
+      uVar3 = uVar3 - 1;
+      uVar1 = FUN_101538b28(param_3,uVar4,0);
+      uVar2 = FUN_101538b28(param_4,extraout_x1,0);
+      if (uVar1 < uVar2) break;
+      if (uVar2 < uVar1) {
+        return 1;
+      }
+      uVar4 = extraout_x1_00;
+      if (uVar3 == 0) {
+        return 1;
+      }
+    }
+    lVar5 = 0xffffffffffffffff;
+  }
+  return lVar5;
+}
+
+
+
+/* PublicFunction.pinyinString: | 0x10000834c | ev_628d85db4c29cb3a5aa8dc9461cf82fd88a481398dbc95a633fae2ae5422fc31 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::pinyinString_(ID param_1,SEL param_2,ID param_3)
+
+{
+  uint uVar1;
+  int iVar2;
+  cfstringStruct *pcVar3;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  undefined8 uVar6;
+  undefined1 auVar7 [16];
+  
+  auVar7 = FUN_1015750a8();
+  if (auVar7._0_8_ == 0) {
+    pcVar3 = &::cf___;
+  }
+  else {
+    auVar7 = FUN_1015ec3e8(param_3,auVar7._8_8_,0,1);
+    uVar1 = FUN_101538b28(auVar7._0_8_,auVar7._8_8_,0);
+    if ((((uVar1 < 0x80) || (iVar2 = ___maskrune(uVar1,0x1000), iVar2 != 0)) ||
+        (iVar2 = ___maskrune(uVar1,0x8000), iVar2 != 0)) || (0x28 < uVar1 - 0x4e00 >> 9)) {
+      pcVar3 = (cfstringStruct *)FUN_1015eb888(&::cf___);
+    }
+    else {
+      uVar5 = *(undefined8 *)PTR__kCFStringTransformMandarinLatin_101d78cb0;
+      uVar6 = *(undefined8 *)PTR__kCFStringTransformStripDiacritics_101d78cb8;
+      uVar4 = FUN_1015ebd08(&_OBJC_CLASS___NSMutableString);
+      _CFStringTransform(uVar4,0,uVar5,0);
+      _CFStringTransform(uVar4,0,uVar6,0);
+      auVar7 = FUN_1015f6948(uVar4);
+      pcVar3 = (cfstringStruct *)FUN_1015eb888(&::cf___,auVar7._8_8_,auVar7._0_8_);
+    }
+  }
+  return (ID)pcVar3;
+}
+
+
+
+/* PublicFunction.isAllChineseCharacters: | 0x1000084f4 | ev_d64bdfd9a812d43bdd4259a1f0f888d7004a91e28cfca8fb10d2c92455e7f1a8 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+bool PublicFunction::isAllChineseCharacters_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  long lVar2;
+  undefined8 uVar3;
+  ulong uVar4;
+  bool bVar5;
+  undefined1 auVar6 [16];
+  
+  lVar2 = FUN_1015750a8();
+  if (lVar2 == 0) {
+    bVar5 = 0;
+  }
+  else {
+    auVar6 = FUN_1015750a8(param_3);
+    uVar3 = auVar6._8_8_;
+    if (auVar6._0_8_ == 0) {
+      bVar5 = 1;
+    }
+    else {
+      uVar4 = 0;
+      do {
+        iVar1 = FUN_101538b28(param_3,uVar3,uVar4);
+        if (0x51fd < iVar1 - 0x4e01U) {
+          return 0;
+        }
+        uVar4 = uVar4 + 1;
+        auVar6 = FUN_1015750a8(param_3);
+        uVar3 = auVar6._8_8_;
+        bVar5 = 1;
+      } while (uVar4 < auVar6._0_8_);
+    }
+  }
+  return bVar5;
+}
+
+
+
+/* PublicFunction.isPwdFormat: | 0x100008594 | ev_79812028f9f16c4d9467c1d791e96415e566382d39b740d4032f1ca1b5400fe1 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+bool PublicFunction::isPwdFormat_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  ulong uVar2;
+  undefined1 auVar3 [16];
+  
+  if (param_3 != 0) {
+    auVar3 = FUN_101539ca8(&_OBJC_CLASS___NSString);
+    iVar1 = FUN_10156e908(param_3,auVar3._8_8_,auVar3._0_8_);
+    if (((iVar1 != 0) && (uVar2 = FUN_1015750a8(param_3), 5 < uVar2)) &&
+       (uVar2 = FUN_1015750a8(param_3), uVar2 < 0xf)) {
+      return 1;
+    }
+  }
+  return 0;
+}
+
+
+
+/* PublicFunction.tenThousand: | 0x100008610 | ev_55fa5c5cb40b9249887858cba69b5eda33a7cf7107e6effeec389b1028d6cc91 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::tenThousand_(ID param_1,SEL param_2,unsigned_long_long param_3)
+
+{
+  ID IVar1;
+  cfstringStruct *pcVar2;
+  
+  if (param_3 >> 4 < 0x271) {
+    pcVar2 = &cf__zd;
+  }
+  else {
+    pcVar2 = &::cf__;
+  }
+  IVar1 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,param_2,pcVar2);
+  return IVar1;
+}
+
+
+
+/* PublicFunction.limitTextFieldLength:length: | 0x100008684 | ev_9d1177b14e143cc7599a550adba0f1e4e7b37c65690070252101c82761130706 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void PublicFunction::limitTextFieldLength_length_
+               (ID param_1,SEL param_2,ID param_3,unsigned_long_long param_4)
+
+{
+  ID IVar1;
+  long lVar2;
+  long extraout_x1;
+  ID IVar3;
+  undefined1 auVar4 [16];
+  
+  IVar3 = param_3;
+  IVar1 = FUN_1015eee68(param_3,param_2);
+  auVar4 = FUN_101579a28(param_3);
+  FUN_1015e85e8(auVar4._0_8_,auVar4._8_8_,IVar3);
+  lVar2 = FUN_10158c7e8(param_3);
+  if (((auVar4._0_8_ == 0) || (lVar2 == 0)) &&
+     (auVar4 = FUN_1015750a8(IVar1), param_4 < auVar4._0_8_)) {
+    FUN_10158fc68(IVar1,auVar4._8_8_,param_4);
+    if (extraout_x1 == 1) {
+      auVar4 = FUN_1015ec3c8(IVar1,1,param_4);
+    }
+    else {
+      auVar4 = FUN_10158fc88(IVar1,extraout_x1,0,param_4);
+      auVar4 = FUN_1015ec3e8(IVar1,auVar4._8_8_,auVar4._0_8_,auVar4._8_8_);
+    }
+    FUN_1015d6f08(param_3,auVar4._8_8_,auVar4._0_8_);
+  }
+  return;
+}
+
+
+
+/* PublicFunction.isPhoneNum: | 0x1000087b0 | ev_f6459f3cc36949af91a0ebc5a319c444b476cd3535a10d3159cfe4fb90549c9d */
+
+/* Function Stack Size: 0x18 bytes */
+
+bool PublicFunction::isPhoneNum_(ID param_1,SEL param_2,ID param_3)
+
+{
+  long lVar1;
+  
+  lVar1 = FUN_1015750a8(param_3);
+  return (bool)(lVar1 != 0);
+}
+
+
+
+/* PublicFunction.isWechatString: | 0x1000087d0 | ev_a1997d70a820089ea1754fee3fd83ec67621a574daec573d80a6d9e0e4b94fef */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+bool PublicFunction::isWechatString_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  bool bVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 uVar3;
+  undefined1 auVar4 [16];
+  
+  auVar4 = FUN_1015750a8();
+  if (auVar4._0_8_ != 0) {
+    auVar4 = FUN_10158fcc8(param_3,auVar4._8_8_,&cf__);
+    if (auVar4._0_8_ != 0) {
+      auVar4 = FUN_10158fcc8(param_3,auVar4._8_8_,&cf__);
+      if (auVar4._0_8_ != 0) {
+        iVar1 = FUN_10153e4c8(param_3,auVar4._8_8_,&cf__);
+        uVar3 = extraout_x1;
+        if (iVar1 != 0) {
+          do {
+            auVar4 = FUN_1015eb988(param_3,uVar3,&cf__,&cf_1);
+            param_3 = auVar4._0_8_;
+            auVar4 = FUN_10153e4c8(param_3,auVar4._8_8_,&cf__);
+            uVar3 = auVar4._8_8_;
+          } while ((auVar4._0_8_ & 1) != 0);
+        }
+        iVar1 = FUN_10153e4c8(param_3,uVar3,&cf__);
+        uVar3 = extraout_x1_00;
+        if (iVar1 != 0) {
+          do {
+            auVar4 = FUN_1015eb988(param_3,uVar3,&cf__,&cf_1);
+            param_3 = auVar4._0_8_;
+            auVar4 = FUN_10153e4c8(param_3,auVar4._8_8_,&cf__);
+            uVar3 = auVar4._8_8_;
+          } while ((auVar4._0_8_ & 1) != 0);
+        }
+        auVar4 = FUN_10158cfa8(&_OBJC_CLASS___NSPredicate,uVar3,&cf_SELFMATCHES__);
+        bVar2 = FUN_10154f3e8(auVar4._0_8_,auVar4._8_8_,param_3);
+        return bVar2;
+      }
+    }
+  }
+  return 0;
+}
+
+
+
+/* PublicFunction.isPassword: | 0x100008950 | ev_26a0590254c2a8ca185a29697c460e5f2c535a803156e8433b774274837d0125 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+bool PublicFunction::isPassword_(ID param_1,SEL param_2,ID param_3)
+
+{
+  bool bVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_1015750a8();
+  if (auVar2._0_8_ < 6) {
+    bVar1 = 0;
+  }
+  else {
+    bVar1 = FUN_10156c8c8(param_1,auVar2._8_8_,param_3);
+  }
+  return bVar1;
+}
+
+
+
+/* PublicFunction.isContainsLetterAndNumber: | 0x1000089a8 | ev_ed5ce139dccf4d0c365010e98f36736ec91545d2a48afc3784c5ea176fdf1caf */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+bool PublicFunction::isContainsLetterAndNumber_(ID param_1,SEL param_2,ID param_3)
+
+{
+  bool bVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_1015750a8();
+  if (auVar2._0_8_ == 0) {
+    bVar1 = 0;
+  }
+  else {
+    auVar2 = FUN_10158cfa8(&_OBJC_CLASS___NSPredicate,auVar2._8_8_,&cf_SELFMATCHES__);
+    bVar1 = FUN_10154f3e8(auVar2._0_8_,auVar2._8_8_,param_3);
+  }
+  return bVar1;
+}
+
+
+
+/* PublicFunction.isValidateEmail: | 0x100008a38 | ev_fe1728453ab978bd2e6c64b420a167951fbc3d75b5f3af17e7db82a0140c6787 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+bool PublicFunction::isValidateEmail_(ID param_1,SEL param_2,ID param_3)
+
+{
+  bool bVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_10158cfa8(&_OBJC_CLASS___NSPredicate,param_2,&cf_SELFMATCHES__);
+  bVar1 = FUN_10154f3e8(auVar2._0_8_,auVar2._8_8_,param_3);
+  return bVar1;
+}
+
+
+
+/* PublicFunction.verifyIDCardNumber: | 0x100008abc | ev_0f105116e9b2bc34d743f19de85a5f7d5277ecb9fb450b937c3a41c14d7a0ca2 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+bool PublicFunction::verifyIDCardNumber_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  int iVar2;
+  int iVar3;
+  int iVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  int iVar9;
+  int iVar10;
+  int iVar11;
+  int iVar12;
+  int iVar13;
+  int iVar14;
+  int iVar15;
+  int iVar16;
+  int iVar17;
+  bool bVar18;
+  undefined8 uVar19;
+  undefined8 uVar20;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined8 extraout_x1_07;
+  undefined8 extraout_x1_08;
+  undefined8 extraout_x1_09;
+  undefined8 extraout_x1_10;
+  undefined8 extraout_x1_11;
+  undefined8 extraout_x1_12;
+  undefined8 extraout_x1_13;
+  undefined8 extraout_x1_14;
+  undefined8 extraout_x1_15;
+  undefined8 extraout_x1_16;
+  undefined8 extraout_x1_17;
+  undefined8 extraout_x1_18;
+  undefined8 extraout_x1_19;
+  undefined8 extraout_x1_20;
+  undefined1 auVar21 [16];
+  undefined1 auVar22 [16];
+  
+  auVar21 = FUN_1015fc348(&_OBJC_CLASS___NSCharacterSet);
+  uVar19 = FUN_1015eba08(param_3,auVar21._8_8_,auVar21._0_8_);
+  auVar21 = FUN_1015750a8(uVar19);
+  if (auVar21._0_8_ == 0x12) {
+    FUN_1015ebcc8(&_OBJC_CLASS___NSString,auVar21._8_8_,&cf_____);
+    FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf_____);
+    FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_00,&cf_________________);
+    FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_01,&cf_______);
+    auVar21 = FUN_10158cfa8(&_OBJC_CLASS___NSPredicate,extraout_x1_02,&cf_SELFMATCHES__);
+    iVar1 = FUN_10154f3e8(auVar21._0_8_,auVar21._8_8_,uVar19);
+    if (iVar1 == 0) {
+      bVar18 = 0;
+    }
+    else {
+      FUN_1015ec3e8(uVar19,extraout_x1_03,0,1);
+      iVar1 = FUN_1015698a8();
+      FUN_1015ec3e8(uVar19,extraout_x1_04,10,1);
+      iVar2 = FUN_1015698a8();
+      FUN_1015ec3e8(uVar19,extraout_x1_05,1,1);
+      iVar3 = FUN_1015698a8();
+      FUN_1015ec3e8(uVar19,extraout_x1_06,0xb,1);
+      iVar4 = FUN_1015698a8();
+      FUN_1015ec3e8(uVar19,extraout_x1_07,2,1);
+      iVar5 = FUN_1015698a8();
+      FUN_1015ec3e8(uVar19,extraout_x1_08,0xc,1);
+      iVar6 = FUN_1015698a8();
+      FUN_1015ec3e8(uVar19,extraout_x1_09,3,1);
+      iVar7 = FUN_1015698a8();
+      FUN_1015ec3e8(uVar19,extraout_x1_10,0xd,1);
+      iVar8 = FUN_1015698a8();
+      FUN_1015ec3e8(uVar19,extraout_x1_11,4,1);
+      iVar9 = FUN_1015698a8();
+      FUN_1015ec3e8(uVar19,extraout_x1_12,0xe,1);
+      iVar10 = FUN_1015698a8();
+      uVar20 = FUN_1015ec3e8(uVar19,extraout_x1_13,5,1);
+      iVar11 = FUN_1015698a8(uVar20);
+      uVar20 = FUN_1015ec3e8(uVar19,extraout_x1_14,0xf,1);
+      iVar12 = FUN_1015698a8(uVar20);
+      uVar20 = FUN_1015ec3e8(uVar19,extraout_x1_15,6,1);
+      iVar13 = FUN_1015698a8(uVar20);
+      uVar20 = FUN_1015ec3e8(uVar19,extraout_x1_16,0x10,1);
+      iVar14 = FUN_1015698a8(uVar20);
+      uVar20 = FUN_1015ec3e8(uVar19,extraout_x1_17,7,1);
+      iVar15 = FUN_1015698a8(uVar20);
+      uVar20 = FUN_1015ec3e8(uVar19,extraout_x1_18,8,1);
+      iVar16 = FUN_1015698a8(uVar20);
+      uVar20 = FUN_1015ec3e8(uVar19,extraout_x1_19,9,1);
+      iVar17 = FUN_1015698a8(uVar20);
+      auVar21 = FUN_1015ec3e8(&cf_10X98765432,extraout_x1_20,
+                              (long)(((iVar4 + iVar3) * 9 + (iVar2 + iVar1) * 7 +
+                                      (iVar6 + iVar5) * 10 + (iVar8 + iVar7) * 5 +
+                                      (iVar10 + iVar9) * 8 + (iVar12 + iVar11) * 4 +
+                                      (iVar14 + iVar13) * 2 + iVar15 + iVar16 * 6 + iVar17 * 3) %
+                                    0xb),1);
+      uVar19 = FUN_1015ec3e8(uVar19,auVar21._8_8_,0x11,1);
+      auVar22 = FUN_1015f6948(uVar19);
+      bVar18 = FUN_10156d5e8(auVar21._0_8_,auVar22._8_8_,auVar22._0_8_);
+    }
+  }
+  else {
+    bVar18 = 0;
+  }
+  return bVar18;
+}
+
+
+
+/* PublicFunction.phoneFormat: | 0x100009070 | ev_9180053944221efc2777c3237059b2d979753c802526446121682c85d81e5904 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::phoneFormat_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  
+  iVar1 = FUN_10156fa28(param_1,param_2,param_3);
+  if (iVar1 != 0) {
+    FUN_1015ec3e8(param_3,extraout_x1,0,3);
+    FUN_1015ec3e8(param_3,extraout_x1_00,3,4);
+    FUN_1015ec3e8(param_3,extraout_x1_01,7,4);
+    param_3 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_02,&cf_______);
+  }
+  return param_3;
+}
+
+
+
+/* PublicFunction.customfont: | 0x100009174 | ev_2d20f1522e768b9dd63a96222e8aeb48b00c492418548518c115b0c2ee59abe8 */
+
+/* Function Stack Size: 0x14 bytes */
+
+ID PublicFunction::customfont_(ID param_1,SEL param_2,float param_3)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_1015ed768((double)param_3,&_OBJC_CLASS___UIFont);
+  return IVar1;
+}
+
+
+
+/* PublicFunction.byteArrayToShort:index: | 0x100009184 | ev_15b736c1dfc111d07725765cf7856b73da317c976e0f29c12e24c178f1dad06b */
+
+/* Function Stack Size: 0x1c bytes */
+
+short PublicFunction::byteArrayToShort_index_(ID param_1,SEL param_2,char *param_3,int param_4)
+
+{
+  return *(ushort *)(param_3 + (int)param_4) >> 8 | *(ushort *)(param_3 + (int)param_4) << 8;
+}
+
+
+
+/* PublicFunction.byteArrayToUnsigenShort:index: | 0x100009194 | ev_ec3ee26ce165d1e89204bd53fe45cb09ebf579afcd600c501d0430074d5d3725 */
+
+/* Function Stack Size: 0x1c bytes */
+
+short PublicFunction::byteArrayToUnsigenShort_index_
+                (ID param_1,SEL param_2,char *param_3,int param_4)
+
+{
+  return *(ushort *)(param_3 + (int)param_4) >> 8 | *(ushort *)(param_3 + (int)param_4) << 8;
+}
+
+
+
+/* PublicFunction.byteArrayTolong:index: | 0x1000091a4 | ev_2b10fd7037864473dd4211ce299b4e8db59840f2ab305cc3bc20f7415b2e432a */
+
+/* Function Stack Size: 0x1c bytes */
+
+long_long PublicFunction::byteArrayTolong_index_(ID param_1,SEL param_2,char *param_3,int param_4)
+
+{
+  ulong uVar1;
+  long lVar2;
+  
+  lVar2 = 0;
+  uVar1 = 0;
+  do {
+    uVar1 = (ulong)(byte)param_3[lVar2 + (int)param_4] | uVar1 << 8;
+    lVar2 = lVar2 + 1;
+  } while (lVar2 != 8);
+  return uVar1;
+}
+
+
+
+/* PublicFunction.byteArrayToInt:index: | 0x1000091cc | ev_06773a507b64948b54611032ab48a738c5b61e6370f8d25ed865b09ab814ff47 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x1c bytes */
+
+int PublicFunction::byteArrayToInt_index_(ID param_1,SEL param_2,char *param_3,int param_4)
+
+{
+  undefined1 uVar1;
+  undefined4 uVar2;
+  undefined1 auVar3 [16];
+  
+  uVar2 = *(undefined4 *)(param_3 + (int)param_4);
+  uVar1 = (undefined1)((uint)uVar2 >> 8);
+  auVar3._6_2_ = 0;
+  auVar3._0_6_ = (uint6)CONCAT14(uVar1,(uint)CONCAT12(uVar1,(ushort)(byte)uVar2)) & 0xffff0000ffff;
+  auVar3[8] = (char)((uint)uVar2 >> 0x10);
+  auVar3._9_3_ = 0;
+  auVar3[0xc] = (char)((uint)uVar2 >> 0x18);
+  auVar3._13_3_ = 0;
+  auVar3 = NEON_ushl(auVar3,_UNK_1019bd730,4);
+  return auVar3._0_4_ + auVar3._4_4_ + auVar3._8_4_ + auVar3._12_4_;
+}
+
+
+
+/* PublicFunction.time:format: | 0x1000091f0 | ev_8afe3dd3cb1032d6fb83b67e29e450313f928f1fa560086447100e77828f0ec8 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID PublicFunction::time_format_(ID param_1,SEL param_2,long_long param_3,ID param_4)
+
+{
+  long_long lVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  undefined8 extraout_x1;
+  undefined1 auVar4 [16];
+  
+  lVar1 = param_3 / 1000;
+  if ((long)param_3 < 0x12a05f201) {
+    lVar1 = param_3;
+  }
+  uVar2 = FUN_101544de8((double)(long)lVar1,&_OBJC_CLASS___NSDate);
+  _objc_alloc(&_OBJC_CLASS___NSDateFormatter);
+  auVar4 = FUN_101561e88();
+  FUN_1015ae748(auVar4._0_8_,auVar4._8_8_,param_4);
+  IVar3 = FUN_1015ebb28(auVar4._0_8_,extraout_x1,uVar2);
+  return IVar3;
+}
+
+
+
+/* PublicFunction.time: | 0x1000092c8 | ev_a925fca2590b6af9febcde468f92dbcb2309f1a4ed84a36b9e9df4dc207111e2 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::time_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  long_long lVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  undefined8 extraout_x1;
+  undefined1 auVar4 [16];
+  
+  lVar1 = param_3 / 1000;
+  if ((long)param_3 < 0x12a05f201) {
+    lVar1 = param_3;
+  }
+  uVar2 = FUN_101544de8((double)(long)lVar1,&_OBJC_CLASS___NSDate);
+  _objc_alloc(&_OBJC_CLASS___NSDateFormatter);
+  auVar4 = FUN_101561e88();
+  FUN_1015ae748(auVar4._0_8_,auVar4._8_8_,&cf_M);
+  IVar3 = FUN_1015ebb28(auVar4._0_8_,extraout_x1,uVar2);
+  return IVar3;
+}
+
+
+
+/* PublicFunction.openTime: | 0x100009380 | ev_c01d8c27c4433af623652fe0c42802e8ae705fd133d91573c9223145d0ed3bd7 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::openTime_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  long_long lVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  undefined8 extraout_x1;
+  undefined1 auVar4 [16];
+  
+  lVar1 = param_3 / 1000;
+  if ((long)param_3 < 0x12a05f201) {
+    lVar1 = param_3;
+  }
+  uVar2 = FUN_101544de8((double)(long)lVar1,&_OBJC_CLASS___NSDate);
+  _objc_alloc(&_OBJC_CLASS___NSDateFormatter);
+  auVar4 = FUN_101561e88();
+  FUN_1015ae748(auVar4._0_8_,auVar4._8_8_,&cf_M);
+  IVar3 = FUN_1015ebb28(auVar4._0_8_,extraout_x1,uVar2);
+  return IVar3;
+}
+
+
+
+/* PublicFunction.getNSUUID | 0x100009438 | ev_c8ccd3b4ea2622c175a2f3241eae994ffdd099c10497bcdb98320cd9a978813a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID PublicFunction::getNSUUID(ID param_1,SEL param_2)
+
+{
+  long lVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  undefined1 auVar4 [16];
+  
+  auVar4 = FUN_1015588c8(&objc::class_t::PublicFunction,param_2,&cf_nsuuid);
+  IVar3 = auVar4._0_8_;
+  if ((IVar3 == 0) || (lVar1 = FUN_10153c788(IVar3,auVar4._8_8_,&::cf___), lVar1 == 0)) {
+    uVar2 = FUN_101515a28(&_OBJC_CLASS___NSUUID);
+    auVar4 = FUN_101515a48(uVar2);
+    IVar3 = auVar4._0_8_;
+    FUN_1015be6c8(&objc::class_t::PublicFunction,auVar4._8_8_,&cf_nsuuid,IVar3);
+  }
+  return IVar3;
+}
+
+
+
+/* PublicFunction.setKV:values: | 0x1000094e4 | ev_7c051ea5d42629b199a23dc688c19f0fe48a2f609c0a10ed359fd05380fde937 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void PublicFunction::setKV_values_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  FUN_1015db868(auVar1._0_8_,auVar1._8_8_,param_4,param_3);
+  return;
+}
+
+
+
+/* PublicFunction.getKValue: | 0x10000955c | ev_e8aae7cfbba6b62f32b6a01c93792566c0b19a2a14498e95785c044148de75e9 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::getKValue_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  IVar1 = FUN_1015ebae8(auVar2._0_8_,auVar2._8_8_,param_3);
+  return IVar1;
+}
+
+
+
+/* PublicFunction.getTextSize:font:maxSize: | 0x1000095cc | ev_0390d8ecbec4ef545ca7f3e4f66c3b940fae28d0a8cf9c2000cfc7ffd7e7fdac */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x2c bytes */
+
+CGSize PublicFunction::getTextSize_font_maxSize_
+                 (ID param_1,SEL param_2,ID param_3,int param_4,CGSize param_5)
+
+{
+  double dVar1;
+  double in_d2;
+  double in_d3;
+  undefined1 auVar2 [16];
+  CGSize CVar3;
+  CGSize CVar4;
+  undefined8 local_68;
+  undefined8 local_60;
+  long local_58;
+  
+  dVar1 = param_5.field1_0x8;
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  local_68 = *(undefined8 *)PTR__NSFontAttributeName_101d782f8;
+  auVar2 = FUN_1015ed768((double)(int)param_4,&_OBJC_CLASS___UIFont);
+  local_60 = auVar2._0_8_;
+  auVar2 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar2._8_8_,&local_60,&local_68,1);
+  FUN_101531d48(param_5.field0_0x0,param_3,auVar2._8_8_,1,auVar2._0_8_,0);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_58) {
+    CVar3.field1_0x8 = in_d3;
+    CVar3.field0_0x0 = in_d2;
+    return CVar3;
+  }
+  CVar4.field0_0x0 = (double)FUN_100ab8e90(0);
+  CVar4.field1_0x8 = dVar1;
+  return CVar4;
+}
+
+
+
+/* PublicFunction.getWeekDay: | 0x1000096e4 | ev_2a38dbf66c1212c736ebb0fe5763cc1f24105a8d9c7ec3f8b1d45153b3546362 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::getWeekDay_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  long_long lVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  undefined1 auVar4 [16];
+  
+  lVar1 = param_3 / 1000;
+  if ((long)param_3 < 0x12a05f201) {
+    lVar1 = param_3;
+  }
+  uVar2 = FUN_101544de8((double)(long)lVar1,&_OBJC_CLASS___NSDate);
+  auVar4 = _objc_alloc(&_OBJC_CLASS___NSCalendar);
+  auVar4 = FUN_101563e08(auVar4._0_8_,auVar4._8_8_,*(undefined8 *)PTR__NSGregorianCalendar_101d78320
+                        );
+  uVar2 = FUN_10153d008(auVar4._0_8_,auVar4._8_8_,0x200,uVar2);
+  uVar2 = FUN_1015fc1e8(uVar2);
+  _objc_alloc(&_OBJC_CLASS___NSArray);
+  auVar4 = FUN_1015666c8();
+  IVar3 = FUN_101583308(auVar4._0_8_,auVar4._8_8_,uVar2);
+  return IVar3;
+}
+
+
+
+/* PublicFunction.getSurplusTime: | 0x100009838 | ev_de36815d621df67c820daaa43024f769fea311592fd4f8812dfb294e01a445ed */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::getSurplusTime_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  ID IVar1;
+  cfstringStruct *pcVar2;
+  
+  if ((long)param_3 < 1) {
+    pcVar2 = &cf_lN;
+  }
+  else if (param_3 < 0x3d) {
+    pcVar2 = &::cf__;
+  }
+  else if (param_3 < 0xe11) {
+    pcVar2 = &::cf__;
+  }
+  else if (param_3 < 0x15181) {
+    pcVar2 = &::cf__;
+  }
+  else {
+    pcVar2 = &::cf__;
+  }
+  IVar1 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,param_2,pcVar2);
+  return IVar1;
+}
+
+
+
+/* PublicFunction.getFactorial: | 0x100009978 | ev_ec949a270043b3778477892a0c69813f3fa47279c0179eca9ea35adcb17b3fe3 */
+
+/* Function Stack Size: 0x14 bytes */
+
+int PublicFunction::getFactorial_(ID param_1,SEL param_2,int param_3)
+
+{
+  int iVar1;
+  
+  if ((int)param_3 < 2) {
+    return 1;
+  }
+  iVar1 = FUN_101557d88(param_1,param_2,param_3 - 1);
+  return iVar1 * param_3;
+}
+
+
+
+/* PublicFunction.getSecretSubStr: | 0x1000099b0 | ev_61cbc7c27d003ef07c2f934d0e82a1adbb82d0b28a16d08c07d0f0226becc9fa */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::getSecretSubStr_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 extraout_x1_02;
+  long lVar5;
+  long lVar6;
+  cfstringStruct *pcVar7;
+  undefined1 auVar8 [16];
+  undefined1 auVar9 [16];
+  undefined8 local_1f0;
+  undefined8 uStack_1e8;
+  long *local_1e0;
+  undefined8 uStack_1d8;
+  undefined8 local_1d0;
+  undefined8 uStack_1c8;
+  undefined8 uStack_1c0;
+  undefined8 uStack_1b8;
+  undefined8 local_1b0;
+  long lStack_1a8;
+  long *local_1a0;
+  undefined8 uStack_198;
+  undefined8 local_190;
+  undefined8 uStack_188;
+  undefined8 uStack_180;
+  undefined8 uStack_178;
+  undefined1 auStack_170 [128];
+  undefined1 auStack_f0 [128];
+  long local_70;
+  
+  local_70 = *(long *)PTR____stack_chk_guard_101d78938;
+  uVar1 = FUN_10152ba48(&_OBJC_CLASS___NSMutableArray);
+  lStack_1a8 = 0;
+  local_1b0 = 0;
+  uStack_198 = 0;
+  local_1a0 = (long *)0x0;
+  uStack_188 = 0;
+  local_190 = 0;
+  uStack_178 = 0;
+  uStack_180 = 0;
+  auVar8 = FUN_101528d88(param_3);
+  uVar4 = auVar8._0_8_;
+  auVar8 = FUN_10153f948(uVar4,auVar8._8_8_,&local_1b0,auStack_f0,0x10);
+  uVar3 = auVar8._8_8_;
+  if (auVar8._0_8_ != 0) {
+    lVar5 = *local_1a0;
+    do {
+      uVar3 = auVar8._8_8_;
+      lVar6 = 0;
+      do {
+        if (*local_1a0 != lVar5) {
+          _objc_enumerationMutation(uVar4);
+          uVar3 = extraout_x1;
+        }
+        auVar9 = FUN_1015ebae8(param_3,uVar3,*(undefined8 *)(lStack_1a8 + lVar6 * 8));
+        FUN_10154d808(&_OBJC_CLASS___NSString,auVar9._8_8_,auVar9._0_8_);
+        auVar9 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_00,&cf_____);
+        FUN_101526528(uVar1,auVar9._8_8_,auVar9._0_8_);
+        lVar6 = lVar6 + 1;
+        uVar3 = extraout_x1_01;
+      } while (auVar8._0_8_ != lVar6);
+      auVar8 = FUN_10153f948(uVar4,extraout_x1_01,&local_1b0,auStack_f0,0x10);
+      uVar3 = auVar8._8_8_;
+    } while (auVar8._0_8_ != 0);
+  }
+  auVar8 = FUN_1015e6388(&_OBJC_CLASS___NSSortDescriptor,uVar3,0,1);
+  auVar8 = FUN_10152bb88(&_OBJC_CLASS___NSArray,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_1015e6508(uVar1,auVar8._8_8_,auVar8._0_8_);
+  uVar1 = auVar8._0_8_;
+  uStack_1e8 = 0;
+  local_1f0 = 0;
+  uStack_1d8 = 0;
+  local_1e0 = (long *)0x0;
+  uStack_1c8 = 0;
+  local_1d0 = 0;
+  uStack_1b8 = 0;
+  uStack_1c0 = 0;
+  auVar8 = FUN_10153f948(uVar1,auVar8._8_8_,&local_1f0,auStack_170,0x10);
+  if (auVar8._0_8_ == 0) {
+    pcVar7 = &::cf___;
+  }
+  else {
+    lVar5 = *local_1e0;
+    do {
+      uVar4 = auVar8._8_8_;
+      lVar6 = 0;
+      do {
+        if (*local_1e0 != lVar5) {
+          _objc_enumerationMutation(uVar1);
+          uVar4 = extraout_x1_02;
+        }
+        auVar9 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,uVar4,&cf_____);
+        uVar4 = auVar9._8_8_;
+        pcVar7 = auVar9._0_8_;
+        lVar6 = lVar6 + 1;
+      } while (auVar8._0_8_ != lVar6);
+      auVar8 = FUN_10153f948(uVar1,uVar4,&local_1f0,auStack_170,0x10);
+    } while (auVar8._0_8_ != 0);
+  }
+  auVar8 = FUN_1015ebb68(pcVar7);
+  IVar2 = FUN_1015ec3e8(auVar8._0_8_,auVar8._8_8_,7,10);
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_70) {
+    IVar2 = FUN_100ab8e90(0);
+    return IVar2;
+  }
+  return IVar2;
+}
+
+
+
+/* PublicFunction.getSecretSubStr:appendStr: | 0x100009cd0 | ev_954cba4d687c9bbe175b7c27676fbffb1a373c1254842bb273b2ecda518a73d1 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID PublicFunction::getSecretSubStr_appendStr_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  long lVar5;
+  long lVar6;
+  undefined1 auVar7 [16];
+  undefined1 auVar8 [16];
+  undefined8 local_1f0;
+  undefined8 uStack_1e8;
+  long *local_1e0;
+  undefined8 uStack_1d8;
+  undefined8 local_1d0;
+  undefined8 uStack_1c8;
+  undefined8 uStack_1c0;
+  undefined8 uStack_1b8;
+  undefined8 local_1b0;
+  long lStack_1a8;
+  long *local_1a0;
+  undefined8 uStack_198;
+  undefined8 local_190;
+  undefined8 uStack_188;
+  undefined8 uStack_180;
+  undefined8 uStack_178;
+  undefined1 auStack_170 [128];
+  undefined1 auStack_f0 [128];
+  long local_70;
+  
+  local_70 = *(long *)PTR____stack_chk_guard_101d78938;
+  uVar1 = FUN_10152ba48(&_OBJC_CLASS___NSMutableArray);
+  lStack_1a8 = 0;
+  local_1b0 = 0;
+  uStack_198 = 0;
+  local_1a0 = (long *)0x0;
+  uStack_188 = 0;
+  local_190 = 0;
+  uStack_178 = 0;
+  uStack_180 = 0;
+  auVar7 = FUN_101528d88(param_3);
+  uVar4 = auVar7._0_8_;
+  auVar7 = FUN_10153f948(uVar4,auVar7._8_8_,&local_1b0,auStack_f0,0x10);
+  uVar3 = auVar7._8_8_;
+  if (auVar7._0_8_ != 0) {
+    lVar5 = *local_1a0;
+    do {
+      uVar3 = auVar7._8_8_;
+      lVar6 = 0;
+      do {
+        if (*local_1a0 != lVar5) {
+          _objc_enumerationMutation(uVar4);
+          uVar3 = extraout_x1;
+        }
+        auVar8 = FUN_1015ebae8(param_3,uVar3,*(undefined8 *)(lStack_1a8 + lVar6 * 8));
+        FUN_10154d808(&_OBJC_CLASS___NSString,auVar8._8_8_,auVar8._0_8_);
+        auVar8 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_00,&cf_____);
+        FUN_101526528(uVar1,auVar8._8_8_,auVar8._0_8_);
+        lVar6 = lVar6 + 1;
+        uVar3 = extraout_x1_01;
+      } while (auVar7._0_8_ != lVar6);
+      auVar7 = FUN_10153f948(uVar4,extraout_x1_01,&local_1b0,auStack_f0,0x10);
+      uVar3 = auVar7._8_8_;
+    } while (auVar7._0_8_ != 0);
+  }
+  auVar7 = FUN_1015e6388(&_OBJC_CLASS___NSSortDescriptor,uVar3,0,1);
+  auVar7 = FUN_10152bb88(&_OBJC_CLASS___NSArray,auVar7._8_8_,auVar7._0_8_);
+  auVar7 = FUN_1015e6508(uVar1,auVar7._8_8_,auVar7._0_8_);
+  uVar1 = auVar7._0_8_;
+  uStack_1e8 = 0;
+  local_1f0 = 0;
+  uStack_1d8 = 0;
+  local_1e0 = (long *)0x0;
+  uStack_1c8 = 0;
+  local_1d0 = 0;
+  uStack_1b8 = 0;
+  uStack_1c0 = 0;
+  auVar7 = FUN_10153f948(uVar1,auVar7._8_8_,&local_1f0,auStack_170,0x10);
+  uVar4 = auVar7._8_8_;
+  if (auVar7._0_8_ != 0) {
+    lVar5 = *local_1e0;
+    do {
+      uVar4 = auVar7._8_8_;
+      lVar6 = 0;
+      do {
+        if (*local_1e0 != lVar5) {
+          _objc_enumerationMutation(uVar1);
+          uVar4 = extraout_x1_02;
+        }
+        FUN_1015ebcc8(&_OBJC_CLASS___NSString,uVar4,&cf_____);
+        lVar6 = lVar6 + 1;
+        uVar4 = extraout_x1_03;
+      } while (auVar7._0_8_ != lVar6);
+      auVar7 = FUN_10153f948(uVar1,extraout_x1_03,&local_1f0,auStack_170,0x10);
+      uVar4 = auVar7._8_8_;
+    } while (auVar7._0_8_ != 0);
+  }
+  uVar1 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,uVar4,&cf_____);
+  auVar7 = FUN_1015ebb68(uVar1);
+  IVar2 = FUN_1015ec3e8(auVar7._0_8_,auVar7._8_8_,7,10);
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_70) {
+    IVar2 = FUN_100ab8e90(0);
+    return IVar2;
+  }
+  return IVar2;
+}
+
+
+
+/* PublicFunction.timeToString: | 0x10000a034 | ev_21f9f17e23ce3e156b86bb007dabb001fcdb51d9be9019d77f7920209dd37dd6 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::timeToString_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  cfstringStruct *pcVar4;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined8 extraout_x1_07;
+  undefined8 extraout_x1_08;
+  double dVar5;
+  double dVar6;
+  undefined1 auVar7 [16];
+  
+  if (param_3 == 0) {
+    pcVar4 = &::cf___;
+  }
+  else {
+    uVar1 = FUN_101542988(&_OBJC_CLASS___NSCalendar);
+    _objc_alloc(&_OBJC_CLASS___NSDateComponents);
+    FUN_101561e88();
+    auVar7 = FUN_10153d008(uVar1,extraout_x1,0x2fc,param_3);
+    uVar2 = auVar7._0_8_;
+    FUN_1015b7748(uVar2,auVar7._8_8_,0);
+    FUN_1015c3908(uVar2,extraout_x1_00,0);
+    FUN_1015cfe08(uVar2,extraout_x1_01,0);
+    uVar1 = FUN_101544d28(uVar1,extraout_x1_02,uVar2);
+    uVar2 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+    auVar7 = _objc_alloc(&_OBJC_CLASS___NSCalendar);
+    uVar3 = FUN_101563e08(auVar7._0_8_,auVar7._8_8_,
+                          *(undefined8 *)PTR__NSCalendarIdentifierGregorian_101d78220);
+    _objc_alloc(&_OBJC_CLASS___NSDateComponents);
+    FUN_101561e88();
+    auVar7 = FUN_10153d008(uVar3,extraout_x1_03,0x2fc,uVar2);
+    uVar2 = auVar7._0_8_;
+    FUN_1015b7748(uVar2,auVar7._8_8_,0);
+    FUN_1015c3908(uVar2,extraout_x1_04,0);
+    FUN_1015cfe08(uVar2,extraout_x1_05,0);
+    uVar2 = FUN_101544d28(uVar3,extraout_x1_06,uVar2);
+    dVar5 = (double)FUN_1015ef888(uVar2);
+    dVar6 = (double)FUN_1015ef888(uVar1);
+    dVar5 = dVar5 - dVar6;
+    if (dVar5 == 0.0) {
+      uVar1 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+      FUN_1015ef888(uVar1);
+      FUN_1015ef888(param_3);
+      pcVar4 = &::cf__;
+      uVar1 = extraout_x1_08;
+    }
+    else {
+      if (dVar5 <= 0.0) {
+        return (ID)&::cf___;
+      }
+      if (604800.0 < dVar5) {
+        return (ID)&::cf___;
+      }
+      pcVar4 = &::cf__;
+      uVar1 = extraout_x1_07;
+    }
+    pcVar4 = (cfstringStruct *)FUN_1015ebcc8(&_OBJC_CLASS___NSString,uVar1,pcVar4);
+  }
+  return (ID)pcVar4;
+}
+
+
+
+/* PublicFunction.msgTimeToString: | 0x10000a2e4 | ev_99a033384032ee138f688ea6f0340961443a971de496b3555dc3e6df5a5ff20a */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::msgTimeToString_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  ID IVar5;
+  long lVar6;
+  long lVar7;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined8 extraout_x1_07;
+  undefined8 extraout_x1_08;
+  cfstringStruct *pcVar8;
+  double dVar9;
+  double dVar10;
+  undefined1 auVar11 [16];
+  
+  if (param_3 == 0) {
+    return (ID)&::cf___;
+  }
+  uVar1 = FUN_101542988(&_OBJC_CLASS___NSCalendar);
+  _objc_alloc(&_OBJC_CLASS___NSDateComponents);
+  FUN_101561e88();
+  auVar11 = FUN_10153d008(uVar1,extraout_x1,0x2fc,param_3);
+  uVar2 = auVar11._0_8_;
+  FUN_1015b7748(uVar2,auVar11._8_8_,0);
+  FUN_1015c3908(uVar2,extraout_x1_00,0);
+  FUN_1015cfe08(uVar2,extraout_x1_01,0);
+  uVar1 = FUN_101544d28(uVar1,extraout_x1_02,uVar2);
+  uVar3 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+  auVar11 = _objc_alloc(&_OBJC_CLASS___NSCalendar);
+  uVar4 = FUN_101563e08(auVar11._0_8_,auVar11._8_8_,
+                        *(undefined8 *)PTR__NSCalendarIdentifierGregorian_101d78220);
+  _objc_alloc(&_OBJC_CLASS___NSDateComponents);
+  FUN_101561e88();
+  auVar11 = FUN_10153d008(uVar4,extraout_x1_03,0x2fc,uVar3);
+  uVar3 = auVar11._0_8_;
+  FUN_1015b7748(uVar3,auVar11._8_8_,0);
+  FUN_1015c3908(uVar3,extraout_x1_04,0);
+  FUN_1015cfe08(uVar3,extraout_x1_05,0);
+  uVar4 = FUN_101544d28(uVar4,extraout_x1_06,uVar3);
+  dVar9 = (double)FUN_1015ef888(uVar4);
+  dVar10 = (double)FUN_1015ef888(uVar1);
+  dVar9 = dVar9 - dVar10;
+  if (dVar9 == 0.0) {
+    uVar1 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+    dVar10 = (double)FUN_1015ef888(uVar1);
+    dVar9 = (double)FUN_1015ef888(param_3);
+    if ((float)(dVar10 - dVar9) < 60.0) {
+      return (ID)&cf_RMb;
+    }
+    uVar1 = extraout_x1_08;
+    if (3600.0 <= (float)(dVar10 - dVar9)) {
+      pcVar8 = &::cf__;
+    }
+    else {
+      pcVar8 = &::cf__;
+    }
+  }
+  else {
+    if ((0.0 < dVar9) && (dVar9 <= 86400.0)) {
+      return (ID)&cf__f_Y;
+    }
+    if ((0.0 < dVar9) && (dVar9 <= 172800.0)) {
+      return (ID)&cf_MR_Y;
+    }
+    if ((dVar9 <= 0.0) || (604800.0 < dVar9)) {
+      lVar6 = FUN_1015ff248(uVar2);
+      lVar7 = FUN_1015ff248(uVar3);
+      if (lVar6 == lVar7) {
+        IVar5 = FUN_101553f48(uVar1);
+        return IVar5;
+      }
+      IVar5 = FUN_101553e88(uVar1);
+      return IVar5;
+    }
+    pcVar8 = &::cf__;
+    uVar1 = extraout_x1_07;
+  }
+  IVar5 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,uVar1,pcVar8);
+  return IVar5;
+}
+
+
+
+/* PublicFunction.week: | 0x10000a664 | ev_1dc3f34991ab9d962a1260c46ae001c8680e08d2c7e25c5ae7214072b855ad17 */
+
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::week_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  if (param_3 - 1 < 7) {
+    return (ID)(&PTR_cf_fg_Y_101d7b670)[param_3 - 1];
+  }
+  return 0;
+}
+
+
+
+/* PublicFunction.shortWeek: | 0x10000a688 | ev_ffeb53ffc0633dd7003838a9685fe0dde479f388a4ab082c7d480b3e9c2dbbe2 */
+
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::shortWeek_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  if (param_3 - 1 < 7) {
+    return (ID)(&PTR_cf_hT_101d7b6a8)[param_3 - 1];
+  }
+  return 0;
+}
+
+
+
+/* PublicFunction.publishTimeToString: | 0x10000a6ac | ev_e37dad121e4a4d5872b4b0c40c740bb252994e2b1e9fd792134baaa0a4b5d930 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::publishTimeToString_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  cfstringStruct *pcVar3;
+  double dVar4;
+  double dVar5;
+  undefined1 auVar6 [16];
+  
+  uVar1 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+  dVar4 = (double)FUN_1015ef888(uVar1);
+  dVar5 = (double)FUN_1015ef888(param_3);
+  dVar4 = dVar4 - dVar5;
+  if (dVar4 <= 60.0) {
+    pcVar3 = &::cf__;
+  }
+  else if (dVar4 <= 3600.0) {
+    pcVar3 = &::cf__;
+  }
+  else {
+    if (86400.0 < dVar4) {
+      _objc_alloc(&_OBJC_CLASS___NSDateFormatter);
+      auVar6 = FUN_101561e88();
+      FUN_1015ae748(auVar6._0_8_,auVar6._8_8_,&cf_yyyy_MM_ddHH_mm);
+      IVar2 = FUN_1015ebb28(auVar6._0_8_,extraout_x1_00,param_3);
+      return IVar2;
+    }
+    pcVar3 = &::cf__;
+  }
+  IVar2 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,pcVar3);
+  return IVar2;
+}
+
+
+
+/* PublicFunction.subTimeToString: | 0x10000a850 | ev_7b165ff098dcf8e52ed001ef29dac7c4011aa1c60b91203906dff87dc1c37be5 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::subTimeToString_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  
+  _objc_alloc(&_OBJC_CLASS___NSDateFormatter);
+  auVar2 = FUN_101561e88();
+  FUN_1015ae748(auVar2._0_8_,auVar2._8_8_,&cf_M);
+  IVar1 = FUN_1015ebb28(auVar2._0_8_,extraout_x1,param_3);
+  return IVar1;
+}
+
+
+
+/* PublicFunction.completeTimeToString: | 0x10000a8cc | ev_6460eb4aebb21d627c24df11cd84ce951fbee02a713ff19291a56c7de8089d2b */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::completeTimeToString_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  
+  _objc_alloc(&_OBJC_CLASS___NSDateFormatter);
+  auVar2 = FUN_101561e88();
+  FUN_1015ae748(auVar2._0_8_,auVar2._8_8_,&cf_yyy_MM_ddHH_mm_ss);
+  IVar1 = FUN_1015ebb28(auVar2._0_8_,extraout_x1,param_3);
+  return IVar1;
+}
+
+
+
+/* PublicFunction.getMD5WithData: | 0x10000a948 | ev_7bb2f387004c1cb34c52394e5a0b39c4871e777f89a5b9ce333b925b3320b7d7 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::getMD5WithData_(ID param_1,SEL param_2,ID param_3)
+
+{
+  CC_LONG len;
+  undefined8 uVar1;
+  void *data;
+  ID IVar2;
+  uchar local_48 [10];
+  undefined1 local_3e;
+  long local_38;
+  
+  local_38 = *(long *)PTR____stack_chk_guard_101d78938;
+  uVar1 = _objc_retainAutorelease(param_3);
+  data = (void *)FUN_1015353e8();
+  len = FUN_1015750a8(uVar1);
+  _CC_MD5(data,len,local_48);
+  IVar2 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,local_3e,
+                        &cf__02x_02x_02x_02x_02x_02x_02x_02x_02x_02x_02x_02x_02x_02x_02x_02x);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_38) {
+    return IVar2;
+  }
+  IVar2 = FUN_100ab8e90();
+  return IVar2;
+}
+
+
+
+/* PublicFunction.subStringForUnicodeLenght:origin: | 0x10000aa58 | ev_162cbc6989fd1919e5c95a8d73fb48ca18289ff87f63ec383b07507ee119771b */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID PublicFunction::subStringForUnicodeLenght_origin_
+             (ID param_1,SEL param_2,long_long param_3,ID param_4)
+
+{
+  long lVar1;
+  uint uVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x1;
+  ulong uVar4;
+  ID IVar5;
+  ulong uVar6;
+  undefined1 auVar7 [16];
+  
+  auVar7 = FUN_1015750a8();
+  uVar3 = auVar7._8_8_;
+  if (auVar7._0_8_ == 0) {
+    IVar5 = 0;
+  }
+  else {
+    IVar5 = 0;
+    uVar4 = 0;
+    uVar6 = 0;
+    do {
+      uVar2 = FUN_101538b28(param_4,uVar3,uVar4);
+      lVar1 = 1;
+      if (0x7f < uVar2) {
+        lVar1 = 2;
+      }
+      uVar6 = lVar1 + uVar6;
+      if (param_3 < (uVar6 & 1) + (uVar6 >> 1)) {
+        return IVar5;
+      }
+      uVar4 = uVar4 + 1;
+      IVar5 = FUN_1015ec3c8(param_4,extraout_x1,uVar4);
+      auVar7 = FUN_1015750a8(param_4);
+      uVar3 = auVar7._8_8_;
+    } while (uVar4 < auVar7._0_8_);
+  }
+  return IVar5;
+}
+
+
+
+/* PublicFunction.subStringForUnicodeLenght:textField: | 0x10000ab2c | ev_6ed30653665bb4b2a9d22cc2bc4503cec2a6631a02bffd3144c0ed07a13911d9 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void PublicFunction::subStringForUnicodeLenght_textField_
+               (ID param_1,SEL param_2,long_long param_3,ID param_4)
+
+{
+  ID IVar1;
+  long lVar2;
+  long extraout_x1;
+  long_long lVar3;
+  undefined1 auVar4 [16];
+  
+  lVar3 = param_3;
+  IVar1 = FUN_1015eee68(param_4,param_2);
+  auVar4 = FUN_101579a28(param_4);
+  FUN_1015e85e8(auVar4._0_8_,auVar4._8_8_,lVar3);
+  lVar2 = FUN_10158c7e8(param_4);
+  if (((auVar4._0_8_ == 0) || (lVar2 == 0)) &&
+     (auVar4 = FUN_1015750a8(IVar1), param_3 < auVar4._0_8_)) {
+    FUN_10158fc68(IVar1,auVar4._8_8_,param_3);
+    if (extraout_x1 == 1) {
+      auVar4 = FUN_1015ec3c8(IVar1,1,param_3);
+    }
+    else {
+      auVar4 = FUN_10158fc88(IVar1,extraout_x1,0,param_3);
+      auVar4 = FUN_1015ec3e8(IVar1,auVar4._8_8_,auVar4._0_8_,auVar4._8_8_);
+    }
+    FUN_1015d6f08(param_4,auVar4._8_8_,auVar4._0_8_);
+  }
+  return;
+}
+
+
+
+/* PublicFunction.getMacAddress | 0x10000ac58 | ev_54afd2dca7f3676f2e053a91a22db929790043771408e56ceef674d33a79ef73 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID PublicFunction::getMacAddress(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  void *pvVar2;
+  undefined8 uVar3;
+  ID IVar4;
+  char *pcVar5;
+  size_t local_48;
+  int local_40 [6];
+  long local_28;
+  
+  local_28 = *(long *)PTR____stack_chk_guard_101d78938;
+  local_40[2] = 0;
+  local_40[3] = 0x12;
+  local_40[0] = 4;
+  local_40[1] = 0x11;
+  local_40[4] = 3;
+  local_40[5] = _if_nametoindex("en0");
+  if (local_40[5] == 0) {
+    pcVar5 = "Error: if_nametoindex error/n";
+  }
+  else {
+    iVar1 = _sysctl(local_40,6,(void *)0x0,&local_48,(void *)0x0,0);
+    if (iVar1 < 0) {
+      pcVar5 = "Error: sysctl, take 1/n";
+    }
+    else {
+      pvVar2 = _malloc(local_48);
+      if (pvVar2 == (void *)0x0) {
+        iVar1 = _printf("Could not allocate memory. error!/n");
+        IVar4 = 0;
+        goto LAB_10000ad9c;
+      }
+      iVar1 = _sysctl(local_40,6,pvVar2,&local_48,(void *)0x0,0);
+      if (-1 < iVar1) {
+        uVar3 = FUN_1015ebcc8(&_OBJC_CLASS___NSString);
+        _free(pvVar2);
+        IVar4 = FUN_1015f6948(uVar3);
+        iVar1 = 0;
+        goto LAB_10000ad9c;
+      }
+      pcVar5 = "Error: sysctl, take 2";
+    }
+  }
+  iVar1 = _printf(pcVar5);
+  IVar4 = 0;
+LAB_10000ad9c:
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_28) {
+    return IVar4;
+  }
+  IVar4 = FUN_100ab8e90(iVar1);
+  return IVar4;
+}
+
+
+
+/* PublicFunction.getOrderStr:appendStr: | 0x10000adcc | ev_a768025964c40c3545e48cb5bef1ddb908121e341f3ecf8720ffc8ddbb2d0555 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID PublicFunction::getOrderStr_appendStr_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  cfstringStruct *pcVar3;
+  ID IVar4;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 uVar5;
+  undefined8 uVar6;
+  long lVar7;
+  long lVar8;
+  undefined1 auVar9 [16];
+  undefined1 auVar10 [16];
+  undefined8 local_1f0;
+  long lStack_1e8;
+  long *local_1e0;
+  undefined8 uStack_1d8;
+  undefined8 local_1d0;
+  undefined8 uStack_1c8;
+  undefined8 uStack_1c0;
+  undefined8 uStack_1b8;
+  undefined8 local_1b0;
+  long lStack_1a8;
+  long *local_1a0;
+  undefined8 uStack_198;
+  undefined8 local_190;
+  undefined8 uStack_188;
+  undefined8 uStack_180;
+  undefined8 uStack_178;
+  undefined1 auStack_170 [128];
+  undefined1 auStack_f0 [128];
+  long local_70;
+  
+  local_70 = *(long *)PTR____stack_chk_guard_101d78938;
+  uVar2 = FUN_10152ba48(&_OBJC_CLASS___NSMutableArray);
+  lStack_1a8 = 0;
+  local_1b0 = 0;
+  uStack_198 = 0;
+  local_1a0 = (long *)0x0;
+  uStack_188 = 0;
+  local_190 = 0;
+  uStack_178 = 0;
+  uStack_180 = 0;
+  auVar9 = FUN_101528d88(param_3);
+  uVar5 = auVar9._0_8_;
+  auVar9 = FUN_10153f948(uVar5,auVar9._8_8_,&local_1b0,auStack_f0,0x10);
+  uVar6 = auVar9._8_8_;
+  if (auVar9._0_8_ != 0) {
+    lVar8 = *local_1a0;
+    do {
+      uVar6 = auVar9._8_8_;
+      lVar7 = 0;
+      do {
+        if (*local_1a0 != lVar8) {
+          _objc_enumerationMutation(uVar5);
+          uVar6 = extraout_x1;
+        }
+        FUN_1015ebae8(param_3,uVar6,*(undefined8 *)(lStack_1a8 + lVar7 * 8));
+        auVar10 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_00,&cf______);
+        FUN_101526528(uVar2,auVar10._8_8_,auVar10._0_8_);
+        lVar7 = lVar7 + 1;
+        uVar6 = extraout_x1_01;
+      } while (auVar9._0_8_ != lVar7);
+      auVar9 = FUN_10153f948(uVar5,extraout_x1_01,&local_1b0,auStack_f0,0x10);
+      uVar6 = auVar9._8_8_;
+    } while (auVar9._0_8_ != 0);
+  }
+  auVar9 = FUN_1015e6388(&_OBJC_CLASS___NSSortDescriptor,uVar6,0,1);
+  FUN_10152bb88(&_OBJC_CLASS___NSArray,auVar9._8_8_,auVar9._0_8_);
+  auVar9 = FUN_1015e6508(uVar2);
+  uVar2 = auVar9._0_8_;
+  lStack_1e8 = 0;
+  local_1f0 = 0;
+  uStack_1d8 = 0;
+  local_1e0 = (long *)0x0;
+  uStack_1c8 = 0;
+  local_1d0 = 0;
+  uStack_1b8 = 0;
+  uStack_1c0 = 0;
+  auVar9 = FUN_10153f948(uVar2,auVar9._8_8_,&local_1f0,auStack_170,0x10);
+  uVar5 = auVar9._8_8_;
+  if (auVar9._0_8_ != 0) {
+    lVar8 = *local_1e0;
+    pcVar3 = &::cf___;
+    do {
+      auVar10._8_8_ = auVar9._8_8_;
+      auVar10._0_8_ = pcVar3;
+      lVar7 = 0;
+      do {
+        uVar5 = auVar10._8_8_;
+        if (*local_1e0 != lVar8) {
+          _objc_enumerationMutation(uVar2);
+          uVar5 = extraout_x1_02;
+        }
+        uVar6 = *(undefined8 *)(lStack_1e8 + lVar7 * 8);
+        iVar1 = FUN_10156d5e8(auVar10._0_8_,uVar5,&::cf___);
+        auVar10._8_8_ = extraout_x1_03;
+        auVar10._0_8_ = uVar6;
+        if (iVar1 == 0) {
+          auVar10 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_03,&cf______);
+        }
+        pcVar3 = auVar10._0_8_;
+        lVar7 = lVar7 + 1;
+      } while (auVar9._0_8_ != lVar7);
+      auVar9 = FUN_10153f948(uVar2,auVar10._8_8_,&local_1f0,auStack_170,0x10);
+      uVar5 = auVar9._8_8_;
+    } while (auVar9._0_8_ != 0);
+  }
+  IVar4 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,uVar5,&cf_____);
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_70) {
+    IVar4 = FUN_100ab8e90(0);
+    return IVar4;
+  }
+  return IVar4;
+}
+
+
+
+/* PublicFunction.sha256: | 0x10000b0f8 | ev_fd9ede830f6c46e3f4c8af3afa0f0167315232e871ac4a7f06ccb65453f53a78 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::sha256_(ID param_1,SEL param_2,ID param_3)
+
+{
+  CC_LONG len;
+  undefined8 uVar1;
+  void *data;
+  ID IVar2;
+  undefined8 extraout_x1;
+  long lVar3;
+  undefined1 auVar4 [16];
+  uchar local_68 [32];
+  long local_48;
+  
+  local_48 = *(long *)PTR____stack_chk_guard_101d78938;
+  auVar4 = _objc_retainAutorelease(param_3);
+  uVar1 = FUN_1015355c8(auVar4._0_8_,auVar4._8_8_,4);
+  auVar4 = FUN_1015750a8(auVar4._0_8_);
+  uVar1 = FUN_101544868(&_OBJC_CLASS___NSData,auVar4._8_8_,uVar1,auVar4._0_8_);
+  uVar1 = _objc_retainAutorelease(uVar1);
+  data = (void *)FUN_1015353e8();
+  len = FUN_1015750a8(uVar1);
+  _CC_SHA256(data,len,local_68);
+  auVar4 = FUN_1015ebc28(&_OBJC_CLASS___NSMutableString);
+  uVar1 = auVar4._8_8_;
+  lVar3 = 0;
+  do {
+    FUN_10152ae88(auVar4._0_8_,uVar1,&cf__02x);
+    lVar3 = lVar3 + 1;
+    uVar1 = extraout_x1;
+  } while (lVar3 != 0x20);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_48) {
+    return auVar4._0_8_;
+  }
+  IVar2 = FUN_100ab8e90(0);
+  return IVar2;
+}
+
+
+
+/* PublicFunction.convertTime: | 0x10000b220 | ev_c42486b5e8d124b07e915074e232dc6526bd84578550132e18648cbc59d72353 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::convertTime_(ID param_1,SEL param_2,double param_3)
+
+{
+  cfstringStruct *pcVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  undefined8 extraout_x1;
+  undefined1 auVar4 [16];
+  
+  uVar2 = FUN_101544de8(&_OBJC_CLASS___NSDate);
+  _objc_alloc(&_OBJC_CLASS___NSDateFormatter);
+  auVar4 = FUN_101561e88();
+  pcVar1 = &cf_mm_ss;
+  if (1.0 <= param_3 / 3600.0) {
+    pcVar1 = &cf_HH_mm_ss;
+  }
+  FUN_1015ae748(auVar4._0_8_,auVar4._8_8_,pcVar1);
+  IVar3 = FUN_1015ebb28(auVar4._0_8_,extraout_x1,uVar2);
+  return IVar3;
+}
+
+
+
+/* PublicFunction.stringToColor: | 0x10000b2d0 | ev_5b42203cfdc2690e0ece4ec557a6c354704d1477614e1c431f8e77e0c78cab61 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::stringToColor_(ID param_1,SEL param_2,ID param_3)
+
+{
+  long lVar1;
+  undefined8 uVar2;
+  char *pcVar3;
+  ID IVar4;
+  undefined8 extraout_x1;
+  undefined1 auVar5 [16];
+  
+  lVar1 = FUN_1015750a8();
+  if (lVar1 == 0) {
+    IVar4 = 0;
+  }
+  else {
+    auVar5 = FUN_1015750a8(param_3);
+    FUN_1015ec3a8(param_3,auVar5._8_8_,auVar5._0_8_ + -6);
+    uVar2 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf_0x__);
+    _objc_retainAutorelease(uVar2);
+    pcVar3 = (char *)FUN_1015159c8();
+    _strtoul(pcVar3,(char **)0x0,0);
+    IVar4 = FUN_10153bfe8(&_OBJC_CLASS___UIColor);
+  }
+  return IVar4;
+}
+
+
+
+/* PublicFunction.isPureInt: | 0x10000b3ac | ev_5dbb5077591bcc449786ebead328d19f59dba8a21d83c197092cdf739dea505f */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+bool PublicFunction::isPureInt_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  bool bVar2;
+  undefined1 auVar3 [16];
+  undefined1 auStack_24 [4];
+  
+  auVar3 = FUN_10159c408(&_OBJC_CLASS___NSScanner);
+  iVar1 = FUN_10159c308(auVar3._0_8_,auVar3._8_8_,auStack_24);
+  if (iVar1 == 0) {
+    bVar2 = 0;
+  }
+  else {
+    bVar2 = FUN_10156bbc8(auVar3._0_8_);
+  }
+  return bVar2;
+}
+
+
+
+/* PublicFunction.ballContent: | 0x10000b410 | ev_aa5edb77ed25d391c63fa2f7d40e17f6e8bba1976bcd40a2a34c43bfdc2c2741 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::ballContent_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined1 auVar2 [16];
+  
+  iVar1 = FUN_10156ff28(&objc::class_t::PublicFunction,param_2,param_3);
+  if (iVar1 != 0) {
+    auVar2 = FUN_1015750a8(param_3);
+    if (auVar2._0_8_ < 2) {
+      param_3 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,auVar2._8_8_,&cf_0__);
+    }
+  }
+  return param_3;
+}
+
+
+
+/* PublicFunction.cSmall:Big: | 0x10000b49c | ev_5a8d6d2ef7c192011e3bde6eb889c3ad56dc7408f174f896cdaee1f4472299e8 */
+
+/* Function Stack Size: 0x20 bytes */
+
+unsigned_long_long
+PublicFunction::cSmall_Big_
+          (ID param_1,SEL param_2,unsigned_long_long param_3,unsigned_long_long param_4)
+
+{
+  ulong uVar1;
+  ulong uVar2;
+  ulong uVar3;
+  
+  uVar1 = param_4 - param_3;
+  if (param_4 < param_3) {
+    return 0;
+  }
+  uVar2 = uVar1;
+  if (uVar1 <= param_3) {
+    uVar2 = param_3;
+  }
+  if (param_3 <= uVar1) {
+    uVar1 = param_3;
+  }
+  uVar3 = 1;
+  for (; uVar2 < param_4; param_4 = param_4 - 1) {
+    uVar3 = param_4 * uVar3;
+  }
+  for (; uVar1 != 0; uVar1 = uVar1 - 1) {
+    uVar2 = 0;
+    if (uVar1 != 0) {
+      uVar2 = uVar3 / uVar1;
+    }
+    uVar3 = uVar2;
+  }
+  return uVar3;
+}
+
+
+
+/* PublicFunction.totalPermutation:perCount: | 0x10000b4e8 | ev_3d0f27d4fb14d527c1b0ae8a15a181bbfdda0c3d93d01da34868f7214e075eb4 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID PublicFunction::totalPermutation_perCount_
+             (ID param_1,SEL param_2,ID param_3,unsigned_long_long param_4)
+
+{
+  ulong uVar1;
+  unsigned_long_long uVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  long lVar5;
+  long lVar6;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 uVar7;
+  long lVar8;
+  ID IVar9;
+  long lVar10;
+  long lVar11;
+  long lVar12;
+  undefined1 auVar13 [16];
+  undefined1 auVar14 [16];
+  undefined1 auVar15 [16];
+  undefined8 local_200;
+  long lStack_1f8;
+  long *local_1f0;
+  undefined8 uStack_1e8;
+  undefined8 local_1e0;
+  undefined8 uStack_1d8;
+  undefined8 uStack_1d0;
+  undefined8 uStack_1c8;
+  undefined8 local_1c0;
+  long lStack_1b8;
+  long *local_1b0;
+  undefined8 uStack_1a8;
+  undefined8 local_1a0;
+  undefined8 uStack_198;
+  undefined8 uStack_190;
+  undefined8 uStack_188;
+  undefined1 auStack_178 [128];
+  undefined1 auStack_f8 [128];
+  undefined8 local_78;
+  long local_70;
+  
+  local_70 = *(long *)PTR____stack_chk_guard_101d78938;
+  uVar1 = FUN_10153f908();
+  if (uVar1 < param_4) {
+    IVar9 = 0;
+  }
+  else {
+    uVar2 = FUN_10153f908(param_3);
+    if (uVar2 == param_4) {
+      auVar13 = FUN_10153f708(param_3);
+      local_78 = auVar13._0_8_;
+      IVar9 = FUN_10152bbc8(&_OBJC_CLASS___NSArray,auVar13._8_8_,&local_78,1);
+    }
+    else {
+      uVar7 = *(undefined8 *)PTR____NSArray0___101d78908;
+      uVar3 = FUN_10157e1c8(uVar7);
+      auVar13 = FUN_10157e1c8(uVar7);
+      uVar4 = auVar13._8_8_;
+      if (param_4 != 0) {
+        uVar2 = 0;
+        do {
+          auVar14 = FUN_101583068(&_OBJC_CLASS___NSNumber,uVar4,uVar2);
+          FUN_101526528(auVar13._0_8_,auVar14._8_8_,auVar14._0_8_);
+          uVar2 = uVar2 + 1;
+          uVar4 = extraout_x1;
+        } while (param_4 != uVar2);
+      }
+      auVar13 = FUN_10153f708(auVar13._0_8_);
+      FUN_101526528(uVar3,auVar13._8_8_,auVar13._0_8_);
+      uVar4 = FUN_1015532e8(uVar3);
+      auVar13 = FUN_10153f908(param_3);
+      FUN_1015f1208(param_1,auVar13._8_8_,uVar3,uVar4,auVar13._0_8_);
+      auVar13 = FUN_10157e1c8(uVar7);
+      lStack_1b8 = 0;
+      local_1c0 = 0;
+      uStack_1a8 = 0;
+      local_1b0 = (long *)0x0;
+      uStack_198 = 0;
+      local_1a0 = 0;
+      uStack_188 = 0;
+      uStack_190 = 0;
+      lVar5 = FUN_10153f948(uVar3,auVar13._8_8_,&local_1c0,auStack_f8,0x10);
+      if (lVar5 != 0) {
+        lVar8 = *local_1b0;
+        do {
+          lVar11 = 0;
+          do {
+            if (*local_1b0 != lVar8) {
+              _objc_enumerationMutation(uVar3);
+            }
+            uVar4 = *(undefined8 *)(lStack_1b8 + lVar11 * 8);
+            auVar14 = FUN_10157e1c8(uVar7);
+            lStack_1f8 = 0;
+            local_200 = 0;
+            uStack_1e8 = 0;
+            local_1f0 = (long *)0x0;
+            uStack_1d8 = 0;
+            local_1e0 = 0;
+            uStack_1c8 = 0;
+            uStack_1d0 = 0;
+            lVar6 = FUN_10153f948(uVar4,auVar14._8_8_,&local_200,auStack_178,0x10);
+            if (lVar6 != 0) {
+              lVar10 = *local_1f0;
+              do {
+                lVar12 = 0;
+                do {
+                  if (*local_1f0 != lVar10) {
+                    _objc_enumerationMutation(uVar4);
+                  }
+                  auVar15 = FUN_101569908(*(undefined8 *)(lStack_1f8 + lVar12 * 8));
+                  auVar15 = FUN_101583328(param_3,auVar15._8_8_,auVar15._0_8_);
+                  FUN_101526528(auVar14._0_8_,auVar15._8_8_,auVar15._0_8_);
+                  lVar12 = lVar12 + 1;
+                } while (lVar6 != lVar12);
+                lVar6 = FUN_10153f948(uVar4,extraout_x1_00,&local_200,auStack_178,0x10);
+              } while (lVar6 != 0);
+            }
+            auVar14 = FUN_10153f708(auVar14._0_8_);
+            FUN_101526528(auVar13._0_8_,auVar14._8_8_,auVar14._0_8_);
+            lVar11 = lVar11 + 1;
+          } while (lVar11 != lVar5);
+          lVar5 = FUN_10153f948(uVar3,extraout_x1_01,&local_1c0,auStack_f8,0x10);
+        } while (lVar5 != 0);
+      }
+      IVar9 = FUN_10153f708(auVar13._0_8_);
+    }
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_70) {
+    IVar9 = FUN_100ab8e90(0);
+    return IVar9;
+  }
+  return IVar9;
+}
+
+
+
+/* PublicFunction.totalIndexPermutation:currentIndex:totalCount: | 0x10000b84c | ev_1623feea829c2ed42e0d279b370e4cd16465bdf50b7587a96b81509bf7225795 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x28 bytes */
+
+void PublicFunction::totalIndexPermutation_currentIndex_totalCount_
+               (ID param_1,SEL param_2,ID param_3,ID param_4,long_long param_5)
+
+{
+  long lVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_101581688(param_1,param_2,param_4,param_5);
+  lVar1 = auVar2._0_8_;
+  if (lVar1 != 0) {
+    FUN_101526528(param_3,auVar2._8_8_,lVar1);
+    FUN_1015f1208(param_1,extraout_x1,param_3,lVar1,param_5);
+  }
+  return;
+}
+
+
+
+/* PublicFunction.nextIndexArrayWithIndexArray:totalCount: | 0x10000b8d0 | ev_e11b37fa445c4b968fd8822d53620d373e23039141e8522546b87e9cca0f0661 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID PublicFunction::nextIndexArrayWithIndexArray_totalCount_
+             (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  ulong uVar1;
+  ulong uVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  long lVar5;
+  undefined8 uVar6;
+  ID IVar7;
+  undefined8 extraout_x1;
+  ulong uVar8;
+  long lVar9;
+  undefined1 auVar10 [16];
+  
+  uVar2 = FUN_10153f908();
+  uVar3 = FUN_10157e1c8(param_3);
+  if (uVar2 != 0) {
+    lVar9 = -1;
+    uVar8 = 0;
+    do {
+      auVar10 = FUN_10153f908(uVar3);
+      uVar4 = FUN_101583328(uVar3,auVar10._8_8_,auVar10._0_8_ + lVar9);
+      lVar5 = FUN_101569908(uVar4);
+      uVar1 = uVar8 + 1;
+      if ((long)(uVar1 + lVar5) < (long)param_4) {
+        auVar10 = FUN_101569908(uVar4);
+        uVar6 = FUN_101583068(&_OBJC_CLASS___NSNumber,auVar10._8_8_,auVar10._0_8_ + 1);
+        auVar10 = FUN_10153f908(uVar3);
+        FUN_1015c6448(uVar3,auVar10._8_8_,uVar6,~uVar8 + auVar10._0_8_);
+        lVar9 = FUN_101569908(uVar4);
+        auVar10 = FUN_10153f908(uVar3);
+        uVar4 = auVar10._8_8_;
+        uVar8 = auVar10._0_8_ - uVar8;
+        if (uVar8 < uVar2) {
+          lVar9 = lVar9 + 2;
+          do {
+            auVar10 = FUN_101583068(&_OBJC_CLASS___NSNumber,uVar4,lVar9);
+            FUN_1015c6448(uVar3,auVar10._8_8_,auVar10._0_8_,uVar8);
+            lVar9 = lVar9 + 1;
+            uVar8 = uVar8 + 1;
+            uVar4 = extraout_x1;
+          } while (uVar8 < uVar2);
+        }
+        IVar7 = FUN_10153f708(uVar3);
+        return IVar7;
+      }
+      lVar9 = lVar9 + -1;
+      uVar8 = uVar1;
+    } while (uVar2 != uVar1);
+  }
+  return 0;
+}
+
+
+
+/* PublicFunction.factorial: | 0x10000ba5c | ev_bb973287c57d738e302331eef3db9d64fb77073d47b53faa9bd148cc4511c627 */
+
+/* Function Stack Size: 0x18 bytes */
+
+long_long PublicFunction::factorial_(ID param_1,SEL param_2,unsigned_long_long param_3)
+
+{
+  long_long lVar1;
+  unsigned_long_long uVar2;
+  
+  if (param_3 < 2) {
+    return 1;
+  }
+  uVar2 = 0;
+  lVar1 = 1;
+  do {
+    uVar2 = uVar2 + 1;
+    lVar1 = uVar2 * lVar1;
+  } while (param_3 != uVar2);
+  return lVar1;
+}
+
+
+
+/* PublicFunction.numArrayToString: | 0x10000ba88 | ev_8ceb6277162956dc854babf48da58c5bf917f9f3ec56e6f90ac1cb177930de81 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::numArrayToString_(ID param_1,SEL param_2,ID param_3)
+
+{
+  long lVar1;
+  undefined8 uVar2;
+  cfstringStruct *pcVar3;
+  ID IVar4;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  long lVar5;
+  long lVar6;
+  undefined1 auVar7 [16];
+  undefined8 local_120;
+  long lStack_118;
+  long *local_110;
+  undefined8 uStack_108;
+  undefined8 local_100;
+  undefined8 uStack_f8;
+  undefined8 uStack_f0;
+  undefined8 uStack_e8;
+  undefined1 auStack_d8 [128];
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  lVar1 = FUN_10153f908();
+  if (lVar1 == 0) {
+    pcVar3 = &::cf___;
+  }
+  else {
+    auVar7 = FUN_1015eb7c8(&_OBJC_CLASS___NSMutableString);
+    uVar2 = auVar7._0_8_;
+    lStack_118 = 0;
+    local_120 = 0;
+    uStack_108 = 0;
+    local_110 = (long *)0x0;
+    uStack_f8 = 0;
+    local_100 = 0;
+    uStack_e8 = 0;
+    uStack_f0 = 0;
+    lVar1 = FUN_10153f948(param_3,auVar7._8_8_,&local_120,auStack_d8,0x10);
+    if (lVar1 != 0) {
+      lVar5 = *local_110;
+      do {
+        lVar6 = 0;
+        do {
+          if (*local_110 != lVar5) {
+            _objc_enumerationMutation(param_3);
+          }
+          FUN_101569908(*(undefined8 *)(lStack_118 + lVar6 * 8));
+          FUN_10152ae88(uVar2,extraout_x1,&cf__zd_);
+          lVar6 = lVar6 + 1;
+        } while (lVar1 != lVar6);
+        lVar1 = FUN_10153f948(param_3,extraout_x1_00,&local_120,auStack_d8,0x10);
+      } while (lVar1 != 0);
+    }
+    auVar7 = FUN_1015750a8(uVar2);
+    pcVar3 = (cfstringStruct *)FUN_1015ec3e8(uVar2,auVar7._8_8_,0,auVar7._0_8_ + -1);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_58) {
+    return (ID)pcVar3;
+  }
+  IVar4 = FUN_100ab8e90(0);
+  return IVar4;
+}
+
+
+
+/* PublicFunction.stringArrayToString: | 0x10000bc04 | ev_a791b9591c5e36916826b06e7a43d7b5de25664952eb95d4a756bf306f59da8b */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::stringArrayToString_(ID param_1,SEL param_2,ID param_3)
+
+{
+  long lVar1;
+  undefined8 uVar2;
+  cfstringStruct *pcVar3;
+  ID IVar4;
+  undefined8 uVar5;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  long lVar6;
+  undefined1 auVar7 [16];
+  undefined8 local_120;
+  undefined8 uStack_118;
+  long *local_110;
+  undefined8 uStack_108;
+  undefined8 local_100;
+  undefined8 uStack_f8;
+  undefined8 uStack_f0;
+  undefined8 uStack_e8;
+  undefined1 auStack_d8 [128];
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  lVar1 = FUN_10153f908();
+  if (lVar1 == 0) {
+    pcVar3 = &::cf___;
+  }
+  else {
+    auVar7 = FUN_1015eb7c8(&_OBJC_CLASS___NSMutableString);
+    uVar2 = auVar7._0_8_;
+    uStack_118 = 0;
+    local_120 = 0;
+    uStack_108 = 0;
+    local_110 = (long *)0x0;
+    uStack_f8 = 0;
+    local_100 = 0;
+    uStack_e8 = 0;
+    uStack_f0 = 0;
+    auVar7 = FUN_10153f948(param_3,auVar7._8_8_,&local_120,auStack_d8,0x10);
+    if (auVar7._0_8_ != 0) {
+      lVar1 = *local_110;
+      do {
+        uVar5 = auVar7._8_8_;
+        lVar6 = 0;
+        do {
+          if (*local_110 != lVar1) {
+            _objc_enumerationMutation(param_3);
+            uVar5 = extraout_x1;
+          }
+          FUN_10152ae88(uVar2,uVar5,&cf____);
+          lVar6 = lVar6 + 1;
+          uVar5 = extraout_x1_00;
+        } while (auVar7._0_8_ != lVar6);
+        auVar7 = FUN_10153f948(param_3,extraout_x1_00,&local_120,auStack_d8,0x10);
+      } while (auVar7._0_8_ != 0);
+    }
+    auVar7 = FUN_1015750a8(uVar2);
+    pcVar3 = (cfstringStruct *)FUN_1015ec3e8(uVar2,auVar7._8_8_,0,auVar7._0_8_ + -1);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_58) {
+    return (ID)pcVar3;
+  }
+  IVar4 = FUN_100ab8e90(0);
+  return IVar4;
+}
+
+
+
+/* PublicFunction.isNum: | 0x10000bd7c | ev_f383aadeb090e0557668bccac622f70438e4223298f1fc718b547117a02c7a17 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+bool PublicFunction::isNum_(ID param_1,SEL param_2,ID param_3)
+
+{
+  bool bVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_10158cfa8(&_OBJC_CLASS___NSPredicate,param_2,&cf_SELFMATCHES__);
+  bVar1 = FUN_10154f3e8(auVar2._0_8_,auVar2._8_8_,param_3);
+  return bVar1;
+}
+
+
+
+/* PublicFunction.getSpaceHeight | 0x10000be00 | ev_b86513427dae789e706ddeeefab561adc3f02438463fab244fbe88c1e2246676 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+float PublicFunction::getSpaceHeight(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  double in_d2;
+  double in_d3;
+  
+  uVar1 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+  FUN_101531d88(uVar1);
+  if (in_d3 < 736.0) {
+    uVar1 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+    FUN_101531d88(uVar1);
+    if (in_d2 < 736.0) {
+      uVar1 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+      FUN_101531d88(uVar1);
+      if (in_d3 != 480.0) {
+        uVar1 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+        FUN_101531d88(uVar1);
+        if (in_d2 != 480.0) {
+          return 80.0;
+        }
+      }
+      return 70.0;
+    }
+  }
+  return 80.0;
+}
+
+
+
+/* PublicFunction.dictionaryToJson: | 0x10000bf18 | ev_8b3ad2acb54dfb2008e9666bbe143c1d019185be5ba7d39a7ef486edf8e1835e */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::dictionaryToJson_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined1 auVar3 [16];
+  
+  uVar1 = FUN_1015449e8(&_OBJC_CLASS___NSJSONSerialization,param_2,param_3,0,0);
+  auVar3 = _objc_alloc(&_OBJC_CLASS___NSString);
+  IVar2 = FUN_1015644e8(auVar3._0_8_,auVar3._8_8_,uVar1,4);
+  return IVar2;
+}
+
+
+
+/* PublicFunction.moneyStringWithCount: | 0x10000bf78 | ev_0e7c207360ce996527f7480b01706bd234b96fda1e3a2ba8c52c44cbfd0a6a06 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::moneyStringWithCount_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  ulong uVar2;
+  cfstringStruct *pcVar3;
+  long lVar4;
+  long lVar5;
+  float fVar6;
+  undefined1 auVar7 [16];
+  undefined1 auVar8 [16];
+  
+  auVar7 = FUN_101569908(param_3);
+  fVar6 = (float)auVar7._0_8_;
+  lVar4 = (long)(fVar6 / 1e+08);
+  if (lVar4 == 0) {
+    pcVar3 = &::cf___;
+  }
+  else {
+    FUN_1015ec008(param_1,auVar7._8_8_,lVar4);
+    auVar8 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&::cf__);
+    auVar8 = FUN_1015eb888(&::cf___,auVar8._8_8_,auVar8._0_8_);
+    pcVar3 = auVar8._0_8_;
+    uVar2 = auVar7._0_8_ + lVar4 * -100000000;
+    auVar7._8_8_ = auVar8._8_8_;
+    auVar7._0_8_ = uVar2;
+    fVar6 = (float)uVar2;
+  }
+  lVar4 = auVar7._0_8_;
+  lVar5 = (long)(fVar6 / 10000.0);
+  if (lVar5 != 0) {
+    FUN_1015ec008(param_1,auVar7._8_8_,lVar5);
+    auVar7 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_00,&::cf__);
+    auVar7 = FUN_1015eb888(pcVar3,auVar7._8_8_,auVar7._0_8_);
+    pcVar3 = auVar7._0_8_;
+    auVar7._8_8_ = auVar7._8_8_;
+    auVar7._0_8_ = lVar4 + lVar5 * -10000;
+  }
+  auVar8._8_8_ = auVar7._8_8_;
+  auVar8._0_8_ = pcVar3;
+  if (auVar7._0_8_ != 0) {
+    FUN_1015ec008(param_1,auVar7._8_8_,auVar7._0_8_);
+    auVar7 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_01,&cf___);
+    auVar8 = FUN_1015eb888(pcVar3,auVar7._8_8_,auVar7._0_8_);
+  }
+  IVar1 = FUN_1015eb888(auVar8._0_8_,auVar8._8_8_,&cf_CQte);
+  return IVar1;
+}
+
+
+
+/* PublicFunction.subMoneyStringWithCount: | 0x10000c17c | ev_5d6202481e5f81ae786ab9e412b9898f3636f22f304aa5ab6917a2862afbee15 */
+
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::subMoneyStringWithCount_(ID param_1,SEL param_2,unsigned_long_long param_3)
+
+{
+  ID IVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  cfstringStruct *pcVar3;
+  long lVar4;
+  ulong uVar5;
+  undefined1 auVar6 [16];
+  undefined1 auVar7 [16];
+  cfstringStruct *local_a8;
+  cfstringStruct *pcStack_a0;
+  cfstringStruct *local_98;
+  cfstringStruct *pcStack_90;
+  cfstringStruct *local_88;
+  cfstringStruct *pcStack_80;
+  cfstringStruct *local_78;
+  cfstringStruct *pcStack_70;
+  cfstringStruct *local_68;
+  cfstringStruct *pcStack_60;
+  long local_58;
+  undefined8 uVar1;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  if (param_3 >> 4 < 0x271) {
+    local_a8 = &cf__;
+    pcStack_a0 = &cf_X;
+    local_98 = &cf_0;
+    pcStack_90 = &cf_S;
+    local_88 = &cf__;
+    pcStack_80 = &cf_O;
+    local_78 = &cf_F;
+    pcStack_70 = &cf_g;
+    local_68 = &cf_Lc;
+    pcStack_60 = &::cf_s;
+    auVar6 = FUN_10152bbc8(&_OBJC_CLASS___NSArray,param_2,&local_a8,10);
+    uVar1 = auVar6._0_8_;
+    lVar4 = (long)((float)param_3 / 1000.0);
+    if (lVar4 == 0) {
+      auVar6._8_8_ = auVar6._8_8_;
+      auVar6._0_8_ = &::cf___;
+    }
+    else {
+      FUN_101583328(uVar1,auVar6._8_8_,lVar4);
+      auVar6 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&::cf__);
+      auVar6 = FUN_1015eb888(&::cf___,auVar6._8_8_,auVar6._0_8_);
+    }
+    uVar5 = param_3 + lVar4 * -1000;
+    lVar4 = (long)((float)uVar5 / 100.0);
+    if (lVar4 != 0) {
+      FUN_101583328(uVar1,auVar6._8_8_,lVar4);
+      auVar7 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_00,&::cf__);
+      auVar6 = FUN_1015eb888(auVar6._0_8_,auVar7._8_8_,auVar7._0_8_);
+    }
+    uVar5 = uVar5 + lVar4 * -100;
+    lVar4 = (long)((float)uVar5 / 10.0);
+    if (lVar4 != 0) {
+      FUN_101583328(uVar1,auVar6._8_8_,lVar4);
+      auVar7 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_01,&::cf__);
+      auVar6 = FUN_1015eb888(auVar6._0_8_,auVar7._8_8_,auVar7._0_8_);
+    }
+    if (uVar5 + lVar4 * -10 != 0) {
+      FUN_101583328(uVar1);
+      auVar7 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_02,&cf___);
+      auVar6 = FUN_1015eb888(auVar6._0_8_,auVar7._8_8_,auVar7._0_8_);
+    }
+    param_2 = auVar6._8_8_;
+    pcVar3 = auVar6._0_8_;
+    param_1 = 0;
+  }
+  else {
+    pcVar3 = &::cf___;
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_58) {
+    return (ID)pcVar3;
+  }
+  IVar2 = FUN_100ab8e90(param_1,param_2);
+  return IVar2;
+}
+
+
+
+/* PublicFunction.random:fromRange: | 0x10000c4b0 | ev_2276183e5efe83859fba6365eea3f844b37a190fa7a54dc34583423261720987 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID PublicFunction::random_fromRange_
+             (ID param_1,SEL param_2,unsigned_long_long param_3,unsigned_long_long param_4)
+
+{
+  u_int32_t uVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  ID IVar4;
+  unsigned_long_long uVar5;
+  undefined1 auVar6 [16];
+  
+  IVar4 = *(ID *)PTR____NSArray0___101d78908;
+  if (param_3 <= param_4) {
+    auVar6 = FUN_10157e1c8(IVar4);
+    uVar3 = auVar6._8_8_;
+    uVar2 = auVar6._0_8_;
+    if (param_4 != 0) {
+      uVar5 = 0;
+      do {
+        auVar6 = FUN_101583148(&_OBJC_CLASS___NSNumber,uVar3,uVar5);
+        FUN_101526528(uVar2,auVar6._8_8_,auVar6._0_8_);
+        uVar5 = uVar5 + 1;
+        uVar3 = extraout_x1;
+      } while (param_4 != uVar5);
+    }
+    uVar3 = FUN_10157e1c8(IVar4);
+    for (; param_3 != 0; param_3 = param_3 - 1) {
+      uVar1 = FUN_10153f908(uVar2);
+      uVar1 = _arc4random_uniform(uVar1);
+      auVar6 = FUN_101583328(uVar2);
+      FUN_101526528(uVar3,auVar6._8_8_,auVar6._0_8_);
+      FUN_101594208(uVar2,extraout_x1_00,uVar1);
+    }
+    IVar4 = FUN_10153f708(uVar3);
+  }
+  return IVar4;
+}
+
+
+
+/* PublicFunction.getNetWorkStates | 0x10000c5dc | ev_f954799b54a44c46ee45a87f1e82146292d03acae4ed5b9ed9f4065c05e009bd */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID PublicFunction::getNetWorkStates(ID param_1,SEL param_2)
+
+{
+  cfstringStruct *pcVar1;
+  uint uVar2;
+  int iVar3;
+  undefined8 uVar4;
+  undefined1 auVar5 [16];
+  
+  uVar4 = FUN_1015e11e8(&objc::class_t::AFNetworkReachabilityManager);
+  uVar2 = FUN_101570048(uVar4);
+  uVar4 = FUN_1015e11e8(&objc::class_t::AFNetworkReachabilityManager);
+  iVar3 = FUN_101570028(uVar4);
+  pcVar1 = &cf_WIFI;
+  if (uVar2 == 0) {
+    pcVar1 = &cf_NULL;
+  }
+  if ((uVar2 & 1) != 0) {
+    return (ID)pcVar1;
+  }
+  if (iVar3 == 0) {
+    return (ID)pcVar1;
+  }
+  _objc_alloc(&_OBJC_CLASS___CTTelephonyNetworkInfo);
+  FUN_101561e88();
+  auVar5 = FUN_101543288();
+  uVar4 = auVar5._0_8_;
+  auVar5 = FUN_10156d5e8(uVar4,auVar5._8_8_,&cf_CTRadioAccessTechnologyGPRS);
+  if ((auVar5._0_8_ & 1) == 0) {
+    auVar5 = FUN_10156d5e8(uVar4,auVar5._8_8_,&cf_CTRadioAccessTechnologyEdge);
+    if ((auVar5._0_8_ & 1) == 0) {
+      auVar5 = FUN_10156d5e8(uVar4,auVar5._8_8_,&cf_CTRadioAccessTechnologyWCDMA);
+      if ((auVar5._0_8_ & 1) == 0) {
+        auVar5 = FUN_10156d5e8(uVar4,auVar5._8_8_,&cf_CTRadioAccessTechnologyHSDPA);
+        if ((auVar5._0_8_ & 1) == 0) {
+          auVar5 = FUN_10156d5e8(uVar4,auVar5._8_8_,&cf_CTRadioAccessTechnologyHSUPA);
+          if ((auVar5._0_8_ & 1) == 0) {
+            auVar5 = FUN_10156d5e8(uVar4,auVar5._8_8_,&cf_CTRadioAccessTechnologyCDMA1x);
+            if ((auVar5._0_8_ & 1) != 0) goto LAB_10000c6a0;
+            auVar5 = FUN_10156d5e8(uVar4,auVar5._8_8_,&cf_CTRadioAccessTechnologyCDMAEVDORev0);
+            if ((auVar5._0_8_ & 1) == 0) {
+              auVar5 = FUN_10156d5e8(uVar4,auVar5._8_8_,&cf_CTRadioAccessTechnologyCDMAEVDORevA);
+              if ((auVar5._0_8_ & 1) == 0) {
+                auVar5 = FUN_10156d5e8(uVar4,auVar5._8_8_,&cf_CTRadioAccessTechnologyCDMAEVDORevB);
+                if ((auVar5._0_8_ & 1) == 0) {
+                  auVar5 = FUN_10156d5e8(uVar4,auVar5._8_8_,&cf_CTRadioAccessTechnologyeHRPD);
+                  if ((auVar5._0_8_ & 1) != 0) {
+                    return (ID)&::cf___;
+                  }
+                  iVar3 = FUN_10156d5e8(uVar4,auVar5._8_8_,&cf_CTRadioAccessTechnologyLTE);
+                  if (iVar3 != 0) {
+                    return (ID)&cf_4G;
+                  }
+                  return (ID)&cf_NULL;
+                }
+              }
+            }
+          }
+        }
+      }
+      return (ID)&cf_3G;
+    }
+  }
+LAB_10000c6a0:
+  return (ID)&cf_2G;
+}
+
+
+
+/* PublicFunction.buttonRelayout:isTextLeft:middleMargin: | 0x10000c7a8 | ev_050c42dd3f30c5c0599596c6af65b074e3aee41d54bbd86706c390bf93671c53 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x24 bytes */
+
+void PublicFunction::buttonRelayout_isTextLeft_middleMargin_
+               (ID param_1,SEL param_2,ID param_3,bool param_4,double param_5)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  double dVar4;
+  double dVar5;
+  double dVar6;
+  double dVar7;
+  double dVar8;
+  undefined1 auVar9 [16];
+  undefined8 local_88;
+  undefined8 local_80;
+  undefined8 local_78;
+  undefined8 local_70;
+  long local_68;
+  
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  if ((param_4 & 1) == 0) {
+    FUN_1015d7ec8(0,param_5,0,0);
+    iVar1 = FUN_101570a08(param_3);
+    uVar2 = 4;
+    if (iVar1 == 0) {
+      uVar2 = 0;
+    }
+    uVar2 = FUN_1015f02e8(param_3,extraout_x1_03,uVar2);
+    local_78 = *(undefined8 *)PTR__NSFontAttributeName_101d782f8;
+    uVar3 = FUN_1015f0328(param_3);
+    auVar9 = FUN_101553a08(uVar3);
+    local_70 = auVar9._0_8_;
+    auVar9 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar9._8_8_,&local_70,&local_78,1);
+    dVar4 = (double)FUN_1015e3b28(uVar2,auVar9._8_8_,auVar9._0_8_);
+    uVar2 = FUN_1015607a8(param_3,extraout_x1_04,0);
+    dVar5 = (double)FUN_1015e3988(uVar2);
+    dVar6 = (double)FUN_1015fc468(param_3);
+    dVar5 = (((dVar6 - dVar4) - dVar5) - param_5) * 0.5;
+    FUN_1015b8608(0,dVar5,0,dVar4 + dVar5 + param_5,param_3);
+  }
+  else {
+    iVar1 = FUN_101570a08();
+    uVar2 = 4;
+    if (iVar1 == 0) {
+      uVar2 = 0;
+    }
+    uVar2 = FUN_1015f02e8(param_3,extraout_x1,uVar2);
+    local_88 = *(undefined8 *)PTR__NSFontAttributeName_101d782f8;
+    uVar3 = FUN_1015f0328(param_3);
+    auVar9 = FUN_101553a08(uVar3);
+    local_80 = auVar9._0_8_;
+    auVar9 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar9._8_8_,&local_80,&local_88,1);
+    dVar4 = (double)FUN_1015e3b28(uVar2,auVar9._8_8_,auVar9._0_8_);
+    uVar2 = FUN_1015607a8(param_3,extraout_x1_00,0);
+    dVar5 = (double)FUN_1015e3988(uVar2);
+    dVar7 = 0.0;
+    FUN_1015d7ec8(0,dVar5 * -2.0 - param_5,0,0,param_3);
+    FUN_101554148(param_3,extraout_x1_01);
+    dVar8 = dVar4 + dVar7;
+    uVar2 = FUN_1015607a8(param_3);
+    dVar5 = (double)FUN_1015e3988(uVar2);
+    FUN_101554148(param_3,extraout_x1_02);
+    uVar2 = FUN_1015607a8(param_3);
+    dVar6 = (double)FUN_1015e3988(uVar2);
+    FUN_1015b8608(0,((dVar8 - dVar5) + param_5) * 0.5,0,(((dVar7 - dVar4) - dVar6) - param_5) * 0.5,
+                  param_3);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_68) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* PublicFunction.image:scaleToSize: | 0x10000cae0 | ev_e104f8e74aa88f5cd0e0662eb09f5c98a34096f816773c89922b99a56a9499d0 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x28 bytes */
+
+ID __thiscall
+PublicFunction::image_scaleToSize_
+          (PublicFunction *this,ID param_1,SEL param_2,ID param_3,CGSize param_4)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  
+  uVar1 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+  uVar1 = FUN_10159c0e8(uVar1);
+  _UIGraphicsBeginImageContextWithOptions(param_4.field0_0x0,param_4.field1_0x8,uVar1,0);
+  FUN_10154bc08(0,0,param_4.field0_0x0,param_4.field1_0x8,param_2);
+  IVar2 = _UIGraphicsGetImageFromCurrentImageContext(0);
+  _UIGraphicsEndImageContext();
+  return IVar2;
+}
+
+
+
+/* PublicFunction.cityStringShort: | 0x10000cb88 | ev_87ae71e5aeb09524293dc89d6983c07426862386395c02844f10079fdb3efea5 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::cityStringShort_(ID param_1,SEL param_2,ID param_3)
+
+{
+  long lVar1;
+  long lVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  ID IVar5;
+  long lVar6;
+  long extraout_x1;
+  long extraout_x1_00;
+  undefined8 uVar7;
+  long lVar8;
+  undefined1 auVar9 [16];
+  undefined1 auVar10 [16];
+  undefined8 local_1f0;
+  long lStack_1e8;
+  long *local_1e0;
+  undefined8 uStack_1d8;
+  undefined8 local_1d0;
+  undefined8 uStack_1c8;
+  undefined8 uStack_1c0;
+  undefined8 uStack_1b8;
+  undefined1 auStack_1b0 [128];
+  cfstringStruct *local_130;
+  cfstringStruct *pcStack_128;
+  cfstringStruct *local_120;
+  cfstringStruct *pcStack_118;
+  cfstringStruct *local_110;
+  cfstringStruct *pcStack_108;
+  cfstringStruct *local_100;
+  cfstringStruct *pcStack_f8;
+  cfstringStruct *local_f0;
+  cfstringStruct *pcStack_e8;
+  cfstringStruct *local_e0;
+  cfstringStruct *pcStack_d8;
+  cfstringStruct *local_d0;
+  cfstringStruct *pcStack_c8;
+  cfstringStruct *local_c0;
+  cfstringStruct *pcStack_b8;
+  cfstringStruct *local_b0;
+  cfstringStruct *pcStack_a8;
+  cfstringStruct *local_a0;
+  cfstringStruct *pcStack_98;
+  cfstringStruct *local_90;
+  cfstringStruct *pcStack_88;
+  cfstringStruct *local_80;
+  cfstringStruct *pcStack_78;
+  long local_70;
+  
+  local_70 = *(long *)PTR____stack_chk_guard_101d78938;
+  lVar2 = FUN_1015750a8();
+  if (lVar2 != 0) {
+    auVar9 = _objc_alloc(&_OBJC_CLASS___NSMutableString);
+    auVar9 = FUN_101567708(auVar9._0_8_,auVar9._8_8_,param_3);
+    uVar3 = auVar9._0_8_;
+    local_130 = &cf__;
+    pcStack_128 = &cf_0W_S;
+    local_120 = &cf_g_S;
+    pcStack_118 = &cf_v;
+    local_110 = &cf_gel_;
+    pcStack_108 = &cf_W_eel_;
+    local_100 = &cf_elS;
+    pcStack_f8 = &cf_eelS;
+    local_f0 = &cfstringStruct_101ddec20;
+    pcStack_e8 = &cf_el_;
+    local_e0 = &cf___el_;
+    pcStack_d8 = &cf_Xeel_;
+    local_d0 = &cf_Pel_;
+    pcStack_c8 = &cf__vel_;
+    local_c0 = &cf_ofel_;
+    pcStack_b8 = &cf_PPel_;
+    local_b0 = &cf_Vel_;
+    pcStack_a8 = &cf_Seel_;
+    local_a0 = &cf_Sl_;
+    pcStack_98 = &cf_T_KQl_;
+    local_90 = &cf__Oeel_;
+    pcStack_88 = &cf_eOel_;
+    local_80 = &cf_l_;
+    pcStack_78 = &cf_S;
+    auVar9 = FUN_10152bbc8(&_OBJC_CLASS___NSArray,auVar9._8_8_,&local_130,0x18);
+    uVar4 = auVar9._0_8_;
+    lStack_1e8 = 0;
+    local_1f0 = 0;
+    uStack_1d8 = 0;
+    local_1e0 = (long *)0x0;
+    uStack_1c8 = 0;
+    local_1d0 = 0;
+    uStack_1b8 = 0;
+    uStack_1c0 = 0;
+    auVar9 = FUN_10153f948(uVar4,auVar9._8_8_,&local_1f0,auStack_1b0,0x10);
+    if (auVar9._0_8_ != 0) {
+      lVar2 = *local_1e0;
+      do {
+        lVar6 = auVar9._8_8_;
+        lVar8 = 0;
+        do {
+          if (*local_1e0 != lVar2) {
+            _objc_enumerationMutation(uVar4);
+            lVar6 = extraout_x1;
+          }
+          uVar7 = *(undefined8 *)(lStack_1e8 + lVar8 * 8);
+          auVar10 = FUN_10158fcc8(uVar3,lVar6,uVar7);
+          lVar6 = auVar10._8_8_;
+          if (auVar10._0_8_ != 0x7fffffffffffffff) {
+            lVar1 = auVar10._0_8_ + lVar6;
+            auVar10 = FUN_1015750a8(uVar3);
+            lVar6 = auVar10._8_8_;
+            if (lVar1 == auVar10._0_8_) {
+              auVar10 = FUN_1015750a8(uVar3);
+              FUN_1015959c8(uVar3,auVar10._8_8_,uVar7,&::cf___,2,0,auVar10._0_8_);
+              lVar6 = extraout_x1_00;
+            }
+          }
+          lVar8 = lVar8 + 1;
+        } while (auVar9._0_8_ != lVar8);
+        auVar9 = FUN_10153f948(uVar4,lVar6,&local_1f0,auStack_1b0,0x10);
+      } while (auVar9._0_8_ != 0);
+    }
+    param_3 = FUN_10153f708(uVar3);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_70) {
+    IVar5 = FUN_100ab8e90(0);
+    return IVar5;
+  }
+  return param_3;
+}
+
+
+
+/* PublicFunction.int2Time: | 0x10000ce44 | ev_7e30d9ef24c8dd2392166ce3bd46372ebf5a654e7ad7cb096b7bdefa91a7bd26 */
+
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::int2Time_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,param_2,&cf__02ld__02ld);
+  return IVar1;
+}
+
+
+
+/* PublicFunction.cityString | 0x10000ce94 | ev_60d4628253d4a0f5f4ac623d6b0f73c5748ab0ec044852ec68c505e628ad01a9 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID PublicFunction::cityString(ID param_1,SEL param_2)
+
+{
+  return 0x101ddee40;
+}
+
+
+
+/* PublicFunction.getHotString: | 0x10000cea0 | ev_40304e328cdf4b23fd9c4300ca5cb64d2b7b8e61e79a8be4fa48f514776c9180 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::getHotString_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  ID IVar1;
+  cfstringStruct *pcVar2;
+  
+  if ((long)param_3 < 1000) {
+    pcVar2 = &cf__ld;
+  }
+  else {
+    pcVar2 = &cf___1fK;
+  }
+  IVar1 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,param_2,pcVar2);
+  return IVar1;
+}
+
+
+
+/* PublicFunction.getPlayingGif | 0x10000cf0c | ev_31d53b2d5cc9df2765f37496522e082379f6310e67768b3bc9024c0cf81b6940 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID PublicFunction::getPlayingGif(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  long lVar2;
+  undefined1 auVar3 [16];
+  undefined1 auVar4 [16];
+  
+  if (IRam000000010243ef70 == 0) {
+    auVar3 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+    uVar1 = auVar3._8_8_;
+    lVar2 = 1;
+    do {
+      auVar4 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,uVar1,&cf_nncloading__zd);
+      auVar4 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar4._8_8_,auVar4._0_8_);
+      FUN_101526528(auVar3._0_8_,auVar4._8_8_,auVar4._0_8_);
+      lVar2 = lVar2 + 1;
+      uVar1 = extraout_x1;
+    } while (lVar2 != 0x3d);
+    IRam000000010243ef70 = FUN_10153f708(auVar3._0_8_);
+  }
+  return IRam000000010243ef70;
+}
+
+
+
+/* PublicFunction.timeString: | 0x10000cffc | ev_1b64d05e3168749ccbf287088162c3a5cd582416e544591fd94000e0569fa46a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID PublicFunction::timeString_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  ID IVar1;
+  cfstringStruct *pcVar2;
+  
+  if ((long)param_3 < 0xe10) {
+    pcVar2 = &cf__02ld__02ld;
+  }
+  else {
+    pcVar2 = &cf__zd__02ld__02ld;
+  }
+  IVar1 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,param_2,pcVar2);
+  return IVar1;
+}
+
+

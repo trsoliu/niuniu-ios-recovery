@@ -1,0 +1,1263 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* AppDelegate.applicationWillTerminate: | 0x10003a36c | ev_bebced5b3761b63e655f42959730a7432ba2ff6da0a5f350dd3bc50ea33575c2 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::applicationWillTerminate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  
+  uVar1 = FUN_1015e0ee8(&objc::class_t::SJMediaCacheServer);
+  FUN_1015932c8(uVar1);
+  return;
+}
+
+
+
+/* AppDelegate.application:didFinishLaunchingWithOptions: | 0x10003a3a4 | ev_819fdb6b45033d65b44806e41f11fa7d9bc2ee5de1f526be4a7be9e484b09ac7 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+bool AppDelegate::application_didFinishLaunchingWithOptions_
+               (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 uVar4;
+  undefined1 auVar5 [16];
+  
+  uVar2 = FUN_1015e0fe8(&objc::class_t::SDImageWebPCoder);
+  auVar5 = FUN_1015e11e8(&objc::class_t::SDImageCodersManager);
+  FUN_1015253a8(auVar5._0_8_,auVar5._8_8_,uVar2);
+  FUN_101563868(&objc::class_t::UMConfigure,extraout_x1,&cf_64ee99f78efadc41dccf1cb6,0);
+  FUN_1015e11a8(&objc::class_t::NNCInitManager);
+  uVar2 = _objc_alloc(&_OBJC_CLASS___UIWindow);
+  uVar3 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+  FUN_101531d88(uVar3);
+  auVar5 = FUN_101564e08(uVar2);
+  FUN_1015de068(param_1,auVar5._8_8_,auVar5._0_8_);
+  uVar2 = FUN_101531348(&_OBJC_CLASS___UIColor);
+  auVar5 = FUN_1015fd648(param_1);
+  FUN_1015a5908(auVar5._0_8_,auVar5._8_8_,uVar2);
+  FUN_1015621a8(&objc::class_t::NNCRequestDo,extraout_x1_00,1,1);
+  FUN_101581f28(param_1);
+  FUN_101581e08(param_1);
+  _objc_alloc(&objc::class_t::NNCRootViewController);
+  uVar2 = FUN_101561e88();
+  auVar5 = FUN_1015fd648(param_1);
+  FUN_1015ce7c8(auVar5._0_8_,auVar5._8_8_,uVar2);
+  uVar2 = FUN_1015fd648(param_1);
+  FUN_101579508(uVar2);
+  auVar5 = FUN_1015e0ee8(&objc::class_t::SJMediaCacheServer);
+  FUN_1015c29c8(auVar5._0_8_,auVar5._8_8_,0x40000000);
+  auVar5 = FUN_1015e0ee8(&objc::class_t::SJMediaCacheServer);
+  FUN_1015cd3c8(auVar5._0_8_,auVar5._8_8_,0x40000000);
+  uVar2 = FUN_1015e0ee8(&objc::class_t::SJMediaCacheServer);
+  FUN_1015932c8(uVar2);
+  FUN_101581c08(param_1);
+  auVar5 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+  FUN_1015265c8(auVar5._0_8_,auVar5._8_8_,param_1,"handleNotification:",&cf_CustomNotificationName,0
+               );
+  auVar5 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  uVar2 = FUN_101583468(auVar5._0_8_,auVar5._8_8_,&cf_myStringKey);
+  _NSLog(&cf_SvW___2N_);
+  iVar1 = FUN_10156d5e8(uVar2,extraout_x1_01,&cf_2);
+  if (iVar1 == 0) {
+    FUN_10156d5e8(uVar2,extraout_x1_02,&cf_1);
+    uVar2 = FUN_1015e0f48(&_OBJC_CLASS___UIApplication);
+    uVar2 = FUN_1015fd6e8(uVar2);
+    uVar2 = FUN_1015532e8(uVar2);
+    iVar1 = FUN_1014eab94(2,0xd,0,0);
+    if (iVar1 == 0) {
+      return 1;
+    }
+    uVar4 = 1;
+    uVar3 = extraout_x1_04;
+  }
+  else {
+    uVar2 = FUN_1015e0f48(&_OBJC_CLASS___UIApplication);
+    uVar2 = FUN_1015fd6e8(uVar2);
+    uVar2 = FUN_1015532e8(uVar2);
+    iVar1 = FUN_1014eab94(2,0xd,0,0);
+    if (iVar1 == 0) {
+      return 1;
+    }
+    uVar4 = 2;
+    uVar3 = extraout_x1_03;
+  }
+  FUN_1015c7788(uVar2,uVar3,uVar4);
+  return 1;
+}
+
+
+
+/* AppDelegate.handleNotification: | 0x10003a77c | ev_eed8e3fd3d217a96b17cab056f423415da336c17b1fcd8b9e42fc66576f2fda9 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::handleNotification_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined1 auVar5 [16];
+  
+  IVar2 = FUN_1015f73c8(param_3,param_2);
+  uVar3 = FUN_1015834e8(IVar2);
+  _NSLog(&cf_c6e0Rw1);
+  auVar5 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  FUN_1015c6468(auVar5._0_8_,auVar5._8_8_,uVar3,&cf_myStringKey);
+  uVar4 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  FUN_1015ed5e8(uVar4);
+  uVar4 = FUN_1015e0f48(&_OBJC_CLASS___UIApplication);
+  uVar4 = FUN_1015fd6e8(uVar4);
+  auVar5 = FUN_1015532e8(uVar4);
+  iVar1 = FUN_10156d5e8(uVar3,auVar5._8_8_,&cf_1);
+  if (iVar1 == 0) {
+    iVar1 = FUN_10156d5e8(uVar3,extraout_x1,&cf_2);
+    if (iVar1 == 0) {
+      return;
+    }
+    uVar4 = 2;
+    iVar1 = FUN_1014eab94(2,0xd,0,0);
+    uVar3 = extraout_x1_01;
+    if (iVar1 != 0) goto LAB_10003a8cc;
+  }
+  iVar1 = FUN_1014eab94(2,0xd,0,0);
+  if (iVar1 == 0) {
+    return;
+  }
+  uVar4 = 1;
+  uVar3 = extraout_x1_00;
+LAB_10003a8cc:
+  FUN_1015c7788(auVar5._0_8_,uVar3,uVar4);
+  return;
+}
+
+
+
+/* AppDelegate.getNNCConfig | 0x10003a904 | ev_174ae25eb0e018ec9e5483a94f4d9205fb81713689d07d1b861b4130c8f2bed0 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void AppDelegate::getNNCConfig(ID param_1,SEL param_2)
+
+{
+  SEL extraout_x1;
+  
+  FUN_1015ebcc8(&_OBJC_CLASS___NSString,param_2,&cf_https_________);
+  FUN_101596288((ID)&objc::class_t::NNCENRequest,extraout_x1);
+  FUN_101596fa8();
+  return;
+}
+
+
+
+/* AppDelegate.application:supportedInterfaceOrientationsForWindow: | 0x10003ab2c | ev_fc40d0d2de2edbfc5bbbc6587726ee271bf34b64e9c4c6927caf83ce9178e2eb */
+
+/* Function Stack Size: 0x20 bytes */
+
+unsigned_long_long
+AppDelegate::application_supportedInterfaceOrientationsForWindow_
+          (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  unsigned_long_long uVar1;
+  
+  uVar1 = FUN_1015ecd48(&objc::class_t::SJRotationManager,param_2,param_4);
+  return uVar1;
+}
+
+
+
+/* AppDelegate.applicationDidBecomeActive: | 0x10003ab3c | ev_cd91a5320f0b9c632b096b4e99ec723241320fbfb3467b1d4bf0d9865865f8d4 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::applicationDidBecomeActive_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 extraout_x1;
+  
+  iVar1 = FUN_1014eab94(2,0xe,5,0);
+  if (iVar1 != 0) {
+    FUN_101596e08(&_OBJC_CLASS___ATTrackingManager,extraout_x1,&UNK_101d7c000);
+    return;
+  }
+  return;
+}
+
+
+
+/* AppDelegate.nncinitAd | 0x10003ab80 | ev_5405d799021ff2f813009e8247fc6a3e32eeb8ae205f715f53d8ed060fd0d891 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void AppDelegate::nncinitAd(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar3 [16];
+  
+  uVar1 = _objc_alloc(&_OBJC_CLASS___UIView);
+  uVar2 = FUN_1015fd648(param_1);
+  FUN_101531d88(uVar2);
+  auVar3 = FUN_101564e08(uVar1);
+  FUN_1015bf648(param_1,auVar3._8_8_,auVar3._0_8_);
+  uVar1 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1,0);
+  auVar3 = FUN_101574668(param_1);
+  FUN_1015a5908(auVar3._0_8_,auVar3._8_8_,uVar1);
+  uVar1 = FUN_1015fd648(param_1);
+  auVar3 = FUN_101574668(param_1);
+  FUN_101527148(uVar1,auVar3._8_8_,auVar3._0_8_);
+  _NSLog(&cf_whitepagenncinitAd);
+  uVar1 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+  uVar1 = FUN_101524228(uVar1);
+  auVar3 = FUN_101523208(uVar1);
+  FUN_1015dfda8(&objc::class_t::WindMillAds,auVar3._8_8_,auVar3._0_8_);
+  FUN_101581f88(param_1,extraout_x1_00,1);
+  return;
+}
+
+
+
+/* AppDelegate.nncshowSplashAd: | 0x10003ad00 | ev_a0c239eff9ebf52ba18b56a916bb4a47253c15dc065540cdeb4904aa67c67d0b */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x14 bytes */
+
+void AppDelegate::nncshowSplashAd_(ID param_1,SEL param_2,bool param_3)
+
+{
+  undefined *puVar1;
+  undefined *puVar2;
+  int iVar3;
+  undefined8 uVar4;
+  long lVar5;
+  undefined8 uVar6;
+  ID IVar7;
+  ID IVar8;
+  dispatch_time_t dVar9;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  SEL extraout_x1_07;
+  SEL extraout_x1_08;
+  undefined8 extraout_x1_09;
+  double dVar10;
+  undefined1 auVar11 [16];
+  undefined *local_110;
+  undefined8 local_108;
+  code *local_100;
+  undefined *puStack_f8;
+  ID local_f0;
+  undefined *local_e8;
+  undefined8 local_e0;
+  code *local_d8;
+  undefined *puStack_d0;
+  ID local_c8;
+  undefined *local_c0;
+  undefined8 local_b8;
+  code *local_b0;
+  undefined *puStack_a8;
+  ID local_a0;
+  undefined *local_98;
+  undefined8 local_90;
+  code *local_88;
+  undefined *puStack_80;
+  ID local_78;
+  
+  uVar4 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+  uVar4 = FUN_101524228(uVar4);
+  lVar5 = FUN_10155a2e8(uVar4);
+  _NSLog(&cf_whitepagenncshowSplashAd__);
+  if (lVar5 != 0) {
+    iVar3 = FUN_101570948(lVar5);
+    if (iVar3 == 0) {
+      FUN_1015c48e8(param_1,extraout_x1,lVar5);
+      uVar4 = _objc_alloc(&_OBJC_CLASS___UIImageView);
+      uVar6 = FUN_101574668(param_1);
+      FUN_101531d88(uVar6);
+      auVar11 = FUN_101564e08(uVar4);
+      uVar4 = auVar11._0_8_;
+      FUN_1015db108(uVar4,auVar11._8_8_,1);
+      FUN_1015ac0a8(uVar4,extraout_x1_02,0);
+      auVar11 = _objc_alloc(&_OBJC_CLASS___UITapGestureRecognizer);
+      auVar11 = FUN_101567988(auVar11._0_8_,auVar11._8_8_,param_1,"nncnativeSplashTapped:");
+      FUN_101525d08(uVar4,auVar11._8_8_,auVar11._0_8_);
+      uVar6 = FUN_10157ec88(param_1);
+      auVar11 = FUN_101540108(uVar6);
+      auVar11 = FUN_1015156a8(&_OBJC_CLASS___NSURL,auVar11._8_8_,auVar11._0_8_);
+      FUN_10159db08(uVar4,auVar11._8_8_,auVar11._0_8_);
+      auVar11 = FUN_101574668(param_1);
+      FUN_101527148(auVar11._0_8_,auVar11._8_8_,uVar4);
+      auVar11 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1_03,0);
+      IVar7 = auVar11._0_8_;
+      FUN_1015d7e48(IVar7,auVar11._8_8_,&cfstringStruct_101de1e00,0);
+      uVar4 = FUN_101531668(0x402a000000000000,&_OBJC_CLASS___UIFont);
+      auVar11 = FUN_1015f0328(IVar7);
+      FUN_1015b4788(auVar11._0_8_,auVar11._8_8_,uVar4);
+      auVar11 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_04,0xffffff);
+      FUN_1015d7ea8(IVar7,auVar11._8_8_,auVar11._0_8_,0);
+      uVar4 = FUN_1015fd648(param_1);
+      dVar10 = (double)FUN_1015fc468(uVar4);
+      FUN_1015b4b08(dVar10 + -90.0,dRam00000001024978c8 + 10.0,0x4054000000000000,0x403a000000000000
+                    ,IVar7);
+      FUN_101527248(IVar7,extraout_x1_05,param_1,"nncskipNativeAdSelector",0x40);
+      uVar4 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_06,0);
+      auVar11 = FUN_10153bfa8(0x3fe0000000000000,uVar4);
+      FUN_1015a5908(IVar7,auVar11._8_8_,auVar11._0_8_);
+      IVar8 = FUN_101574688(IVar7,extraout_x1_07);
+      FUN_1015ac5e8(0x402a000000000000,IVar8);
+      IVar8 = FUN_101574688(IVar7,extraout_x1_08);
+      FUN_1015c25a8(IVar8);
+      FUN_1015b6fc8(IVar7,extraout_x1_09,1);
+      auVar11 = FUN_101574668(param_1);
+      FUN_101527148(auVar11._0_8_,auVar11._8_8_,IVar7);
+      dVar9 = _dispatch_time(0,1000000000);
+      puVar2 = PTR___dispatch_main_q_101d78958;
+      puVar1 = PTR___NSConcreteStackBlock_101d78760;
+      local_98 = PTR___NSConcreteStackBlock_101d78760;
+      local_90 = 0xc2000000;
+      local_88 = FUN_10003b304;
+      puStack_80 = &UNK_101d7b580;
+      local_78 = IVar7;
+      _dispatch_after(dVar9,PTR___dispatch_main_q_101d78958,&local_98);
+      dVar9 = _dispatch_time(0,2000000000);
+      local_c0 = puVar1;
+      local_b8 = 0xc2000000;
+      local_b0 = FUN_10003b33c;
+      puStack_a8 = &UNK_101d7b580;
+      local_a0 = IVar7;
+      _dispatch_after(dVar9,puVar2,&local_c0);
+      dVar9 = _dispatch_time(0,3000000000);
+      local_e8 = puVar1;
+      local_e0 = 0xc2000000;
+      local_d8 = FUN_10003b374;
+      puStack_d0 = &UNK_101d7b580;
+      local_c8 = IVar7;
+      _dispatch_after(dVar9,puVar2,&local_e8);
+      dVar9 = _dispatch_time(0,4000000000);
+      local_110 = puVar1;
+      local_108 = 0xc2000000;
+      local_100 = FUN_10003b3ac;
+      puStack_f8 = &UNK_101d7b580;
+      local_f0 = param_1;
+      _dispatch_after(dVar9,puVar2,&local_110);
+      return;
+    }
+    if (param_3 != 0) {
+      auVar11 = FUN_10159dca8(lVar5);
+      FUN_101582028(param_1,auVar11._8_8_,auVar11._0_8_);
+      return;
+    }
+  }
+  uVar4 = _objc_alloc(&_OBJC_CLASS___UIImageView);
+  uVar6 = FUN_101574668(param_1);
+  FUN_101531d88(uVar6);
+  auVar11 = FUN_101564e08(uVar4);
+  IVar7 = auVar11._0_8_;
+  FUN_1015ac0a8(IVar7,auVar11._8_8_,0);
+  auVar11 = FUN_101560a48(&_OBJC_CLASS___UIImage,extraout_x1_00,&cf_Launch);
+  FUN_1015b8428(IVar7,auVar11._8_8_,auVar11._0_8_);
+  FUN_1015d6328(IVar7);
+  auVar11 = FUN_101574668(param_1);
+  FUN_101527148(auVar11._0_8_,auVar11._8_8_,IVar7);
+  FUN_101581fc8(param_1,extraout_x1_01,0);
+  return;
+}
+
+
+
+/* AppDelegate.nncnativeSplashTapped: | 0x10003b3b8 | ev_afe9d56fe0c333440fea0f3563678f471f4c337e1c55a4ddd5467a103fe01c94 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::nncnativeSplashTapped_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  long lVar4;
+  undefined8 uVar5;
+  undefined8 extraout_x1;
+  undefined1 auVar6 [16];
+  
+  IVar2 = FUN_1015fa0a8(param_3,param_2);
+  FUN_1015db108(IVar2);
+  uVar3 = FUN_10157ec88(param_1);
+  auVar6 = FUN_1015f2d68(uVar3);
+  iVar1 = FUN_10156d5e8(&cf_web,auVar6._8_8_,auVar6._0_8_);
+  uVar3 = FUN_10157ec88(param_1);
+  if (iVar1 == 0) {
+    auVar6 = FUN_1015f2d68(uVar3);
+    iVar1 = FUN_10156d5e8(&cf_native,auVar6._8_8_,auVar6._0_8_);
+    if (iVar1 != 0) {
+      uVar3 = FUN_10157ec88(param_1);
+      uVar3 = FUN_1015f8fe8(uVar3);
+      lVar4 = FUN_101569908(uVar3);
+      if (0 < lVar4) {
+        auVar6 = _objc_alloc(&objc::class_t::NNCDetailViewController);
+        auVar6 = FUN_1015665e8(auVar6._0_8_,auVar6._8_8_,&cf_NNCDetailViewController,0);
+        uVar3 = auVar6._0_8_;
+        FUN_1015b7168(uVar3,auVar6._8_8_,1);
+        FUN_10155fc48(uVar3,extraout_x1,1);
+        uVar5 = FUN_10157ec88(param_1);
+        uVar5 = FUN_1015f8fe8(uVar5);
+        auVar6 = FUN_1015698a8(uVar5);
+        FUN_1015dc188(uVar3,auVar6._8_8_,auVar6._0_8_);
+        auVar6 = FUN_1015fd648(param_1);
+        IVar2 = FUN_10159a908(auVar6._0_8_,auVar6._8_8_);
+        FUN_1015e8ac8(IVar2);
+        return;
+      }
+    }
+  }
+  else {
+    auVar6 = FUN_101573028();
+    FUN_10156d5e8(&cf_inApp,auVar6._8_8_,auVar6._0_8_);
+    uVar3 = FUN_10157ec88(param_1);
+    uVar3 = FUN_101580508(uVar3);
+    lVar4 = FUN_1015750a8(uVar3);
+    if (lVar4 != 0) {
+      uVar3 = FUN_10157ec88(param_1);
+      auVar6 = FUN_101580508(uVar3);
+      uVar3 = FUN_1015156a8(&_OBJC_CLASS___NSURL,auVar6._8_8_,auVar6._0_8_);
+      auVar6 = FUN_1015e0f48(&_OBJC_CLASS___UIApplication);
+      iVar1 = FUN_101537188(auVar6._0_8_,auVar6._8_8_,uVar3);
+      if (iVar1 != 0) {
+        auVar6 = FUN_1015e0f48(&_OBJC_CLASS___UIApplication);
+        FUN_101585588(auVar6._0_8_,auVar6._8_8_,uVar3,
+                      *(undefined8 *)PTR____NSDictionary0___101d78910,&UNK_101d7c040);
+      }
+      return;
+    }
+  }
+  return;
+}
+
+
+
+/* AppDelegate.nncclickedNativeAd:navi: | 0x10003b6d4 | ev_e3f7046f7ac0a14dce61384847dcf05983678a1dffc4ed1bd47f9464fd48ee69 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void AppDelegate::nncclickedNativeAd_navi_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  long lVar3;
+  undefined8 uVar4;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar5 [16];
+  
+  auVar5 = FUN_1015f2d68(param_3);
+  iVar1 = FUN_10156d5e8(&cf_web,auVar5._8_8_,auVar5._0_8_);
+  if (iVar1 == 0) {
+    auVar5 = FUN_1015f2d68(param_3);
+    iVar1 = FUN_10156d5e8(&cf_native,auVar5._8_8_,auVar5._0_8_);
+    if (iVar1 != 0) {
+      uVar2 = FUN_1015f8fe8(param_3);
+      lVar3 = FUN_101569908(uVar2);
+      if (0 < lVar3) {
+        auVar5 = _objc_alloc(&objc::class_t::NNCDetailViewController);
+        auVar5 = FUN_1015665e8(auVar5._0_8_,auVar5._8_8_,&cf_NNCDetailViewController,0);
+        uVar2 = auVar5._0_8_;
+        FUN_1015b7168(uVar2,auVar5._8_8_,1);
+        FUN_10155fc48(uVar2,extraout_x1,1);
+        uVar4 = FUN_1015f8fe8(param_3);
+        auVar5 = FUN_1015698a8(uVar4);
+        FUN_1015dc188(uVar2,auVar5._8_8_,auVar5._0_8_);
+        FUN_10158f2e8(param_4,extraout_x1_00,uVar2,1);
+      }
+    }
+  }
+  else {
+    auVar5 = FUN_101573028();
+    FUN_10156d5e8(&cf_inApp,auVar5._8_8_,auVar5._0_8_);
+    uVar2 = FUN_101580508(param_3);
+    lVar3 = FUN_1015750a8(uVar2);
+    if (lVar3 != 0) {
+      auVar5 = FUN_101580508(param_3);
+      uVar2 = FUN_1015156a8(&_OBJC_CLASS___NSURL,auVar5._8_8_,auVar5._0_8_);
+      auVar5 = FUN_1015e0f48(&_OBJC_CLASS___UIApplication);
+      iVar1 = FUN_101537188(auVar5._0_8_,auVar5._8_8_,uVar2);
+      if (iVar1 != 0) {
+        auVar5 = FUN_1015e0f48(&_OBJC_CLASS___UIApplication);
+        FUN_101585588(auVar5._0_8_,auVar5._8_8_,uVar2,
+                      *(undefined8 *)PTR____NSDictionary0___101d78910,&UNK_101d7c060);
+      }
+    }
+  }
+  return;
+}
+
+
+
+/* AppDelegate.nncskipNativeAdSelector | 0x10003b92c | ev_5cdf41f22a39cf7d146144d0fc49e6f1bac413c4d1eb5241adf199a74506ca12 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void AppDelegate::nncskipNativeAdSelector(ID param_1,SEL param_2)
+
+{
+  FUN_101581fc8(param_1,param_2,0);
+  return;
+}
+
+
+
+/* AppDelegate.nncskipNativeAdWithForce: | 0x10003b934 | ev_b51e4e6cd2481773893f33ce4e9d6815787c8869afd9cabed20587946d6b13a3 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x14 bytes */
+
+void AppDelegate::nncskipNativeAdWithForce_(ID param_1,SEL param_2,bool param_3)
+
+{
+  ulong uVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  dispatch_time_t dVar4;
+  long lVar5;
+  undefined8 extraout_x1;
+  ID IVar6;
+  long lVar7;
+  long lVar8;
+  undefined1 auVar9 [16];
+  undefined *local_148;
+  undefined8 local_140;
+  code *local_138;
+  undefined *puStack_130;
+  ID local_128;
+  undefined8 local_120;
+  long lStack_118;
+  long *local_110;
+  undefined8 uStack_108;
+  undefined8 local_100;
+  undefined8 uStack_f8;
+  undefined8 uStack_f0;
+  undefined8 uStack_e8;
+  undefined1 auStack_d8 [128];
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  _NSLog(&cf_whitepagenncskipNativeAdWithForce_d);
+  uVar1 = FUN_10156de48(&objc::class_t::NNCRequestDo);
+  auVar9 = FUN_101574668(param_1);
+  uVar2 = auVar9._8_8_;
+  if (((uVar1 & 1) == 0) && (param_3 == 0)) {
+    if (auVar9._0_8_ != 0) {
+      uStack_f8 = 0;
+      local_100 = 0;
+      uStack_e8 = 0;
+      uStack_f0 = 0;
+      lStack_118 = 0;
+      local_120 = 0;
+      uStack_108 = 0;
+      local_110 = (long *)0x0;
+      uVar2 = FUN_101574668(param_1);
+      auVar9 = FUN_1015ec548(uVar2);
+      uVar3 = auVar9._0_8_;
+      auVar9 = FUN_10153f948(uVar3,auVar9._8_8_,&local_120,auStack_d8,0x10);
+      uVar2 = auVar9._8_8_;
+      lVar5 = auVar9._0_8_;
+      if (lVar5 != 0) {
+        lVar7 = *local_110;
+        do {
+          lVar8 = 0;
+          do {
+            if (*local_110 != lVar7) {
+              _objc_enumerationMutation(uVar3);
+            }
+            IVar6 = *(ID *)(lStack_118 + lVar8 * 8);
+            auVar9 = FUN_1015edd48(IVar6);
+            if (auVar9._0_8_ != 0xdbe) {
+              FUN_101593bc8(IVar6,auVar9._8_8_);
+            }
+            lVar8 = lVar8 + 1;
+          } while (lVar5 != lVar8);
+          auVar9 = FUN_10153f948(uVar3);
+          uVar2 = auVar9._8_8_;
+          lVar5 = auVar9._0_8_;
+        } while (lVar5 != 0);
+      }
+    }
+    FUN_1015baf28(param_1,uVar2,1);
+    dVar4 = _dispatch_time(0,3000000000);
+    local_148 = PTR___NSConcreteStackBlock_101d78760;
+    local_140 = 0xc2000000;
+    local_138 = FUN_10003bc04;
+    puStack_130 = &UNK_101d7b580;
+    local_128 = param_1;
+    uVar1 = _dispatch_after(dVar4,PTR___dispatch_main_q_101d78958,&local_148);
+  }
+  else {
+    _NSLog(&cf_whitepagenncskipNativeAdWithForcelaunchView__);
+    lVar5 = FUN_101574668(param_1);
+    uVar1 = 0;
+    if (lVar5 != 0) {
+      auVar9 = FUN_101574668(param_1);
+      FUN_101593bc8(auVar9._0_8_,auVar9._8_8_);
+      FUN_1015bf648(param_1);
+      FUN_1015c48e8(param_1,extraout_x1,0);
+      auVar9 = FUN_101579308(param_1);
+      uVar1 = auVar9._0_8_;
+      if ((uVar1 & 1) == 0) {
+        FUN_1015c1e88(param_1,auVar9._8_8_,1);
+        auVar9 = FUN_1015fd648(param_1);
+        IVar6 = FUN_10159a908(auVar9._0_8_,auVar9._8_8_);
+        uVar1 = FUN_101581fe8(IVar6);
+        if (*(long *)PTR____stack_chk_guard_101d78938 == local_58) {
+          return;
+        }
+        goto LAB_10003bc00;
+      }
+    }
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_58) {
+    return;
+  }
+LAB_10003bc00:
+  FUN_100ab8e90(uVar1);
+  return;
+}
+
+
+
+/* AppDelegate.nnconGetDomainSuccess | 0x10003bc34 | ev_875788cb9ec9c2786d259167c40471ac47c69c30c1c9959cb2e4fac36608939a */
+
+/* Function Stack Size: 0x10 bytes */
+
+void AppDelegate::nnconGetDomainSuccess(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  undefined8 extraout_x1;
+  
+  iVar1 = FUN_10156cc28();
+  if (iVar1 != 0) {
+    FUN_101581fc8(param_1,extraout_x1,1);
+    return;
+  }
+  return;
+}
+
+
+
+/* AppDelegate.nncstartSplash_new: | 0x10003bc6c | ev_b2077be86a4e417f66e63e8e1b456d9c4e63b554ff132f4105736919cc7cb465 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::nncstartSplash_new_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 extraout_x0;
+  ID IVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  
+  FUN_101596288((ID)&objc::class_t::WindMillAdRequest,param_2);
+  FUN_1015c8a08();
+  auVar3 = _objc_alloc(&objc::class_t::WindMillSplashAd);
+  auVar3 = FUN_101567088(auVar3._0_8_,auVar3._8_8_,extraout_x0,
+                         *(undefined8 *)PTR____NSDictionary0___101d78910);
+  FUN_1015d3a48(param_1,auVar3._8_8_,auVar3._0_8_);
+  auVar3 = FUN_1015e6ca8(param_1);
+  FUN_1015aeee8(auVar3._0_8_,auVar3._8_8_,param_1);
+  auVar3 = FUN_1015fd648(param_1);
+  IVar1 = FUN_10159a908(auVar3._0_8_,auVar3._8_8_);
+  auVar3 = FUN_1015e6ca8(param_1);
+  FUN_1015ce7c8(auVar3._0_8_,auVar3._8_8_,IVar1);
+  uVar2 = FUN_1015e6ca8(param_1);
+  FUN_1015759a8(uVar2);
+  return;
+}
+
+
+
+/* AppDelegate.onSplashAdDidLoad: | 0x10003bda8 | ev_03b4b5a9e9db59e9a42ffec1f668600d74fa4fb6b7e5df7d88886105cd6ae3ae */
+
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::onSplashAdDidLoad_(ID param_1,SEL param_2,ID param_3)
+
+{
+  return;
+}
+
+
+
+/* AppDelegate.onSplashAdLoadFail:error: | 0x10003bdac | ev_766748945e21b25cba2f961b9d4d4946eba1e225fc7dc7a26b763a5cd361730f */
+
+/* Function Stack Size: 0x20 bytes */
+
+void AppDelegate::onSplashAdLoadFail_error_(ID param_1,SEL param_2,ID param_3)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x00010153b578. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_msgSend_101d78f58)(param_1,"closeSplashView");
+  return;
+}
+
+
+
+/* AppDelegate.onSplashAdSuccessPresentScreen: | 0x10003bdb0 | ev_02989378389542774ad22f635565d2911ca2ad53485fbd68a1cb577672b2f10a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::onSplashAdSuccessPresentScreen_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_101574668();
+  FUN_101593bc8(auVar1._0_8_,auVar1._8_8_);
+  FUN_1015bf648(param_1);
+  return;
+}
+
+
+
+/* AppDelegate.onSplashAdFailToPresent:withError: | 0x10003bdf0 | ev_95db76f75c7282bca0f1219f64c5185cf08a5cc414e4a013bcd2ea0d866fa08f */
+
+/* Function Stack Size: 0x20 bytes */
+
+void AppDelegate::onSplashAdFailToPresent_withError_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  SEL extraout_x1;
+  
+  _NSLog(&cf_onSplashAdFailToPresent_____);
+  FUN_10153b568(param_1,extraout_x1,param_3);
+  return;
+}
+
+
+
+/* AppDelegate.onSplashAdClicked: | 0x10003be28 | ev_55daaae60b59de82fe93cfac457c200393cba1305c655989267196c630d73346 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::onSplashAdClicked_(ID param_1,SEL param_2,ID param_3)
+
+{
+  return;
+}
+
+
+
+/* AppDelegate.onSplashAdSkiped: | 0x10003be2c | ev_a221885353a2811370a132f2de4f0ae4c5a048bd1a8a055ed440c4121b09481c */
+
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::onSplashAdSkiped_(ID param_1,SEL param_2,ID param_3)
+
+{
+  return;
+}
+
+
+
+/* AppDelegate.onSplashAdWillClosed: | 0x10003be30 | ev_056778567709224c2b08c213b2f15db26fc65bca247f2dd4d363d49fe4b5e445 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::onSplashAdWillClosed_(ID param_1,SEL param_2,ID param_3)
+
+{
+  return;
+}
+
+
+
+/* AppDelegate.onSplashAdClosed: | 0x10003be34 | ev_631d978ab880d1749823f69b2fe3dc8767d23d9db0d7f0a84a7995ff367491e0 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::onSplashAdClosed_(ID param_1,SEL param_2,ID param_3)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x00010153b578. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_msgSend_101d78f58)(param_1,"closeSplashView");
+  return;
+}
+
+
+
+/* AppDelegate.onSplashZoomOutViewAdDidClick: | 0x10003be38 | ev_e670f553ee9cfddfda44d0dcb322a36aaf588ee1407a3f630f255717a0856505 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::onSplashZoomOutViewAdDidClick_(ID param_1,SEL param_2,ID param_3)
+
+{
+  return;
+}
+
+
+
+/* AppDelegate.onSplashZoomOutViewAdDidClose: | 0x10003be3c | ev_7bef7665f05462a7c24f6f1f8cf1dcd0059b79da9e4cbcd3423e486c23cf35dc */
+
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::onSplashZoomOutViewAdDidClose_(ID param_1,SEL param_2,ID param_3)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x00010153b578. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_msgSend_101d78f58)(param_1,"closeSplashView");
+  return;
+}
+
+
+
+/* AppDelegate.closeSplashView | 0x10003be40 | ev_06f3635d738c315b086ff13d73d1b01a9460f8b2a24fd1c20f856f91876385d8 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void AppDelegate::closeSplashView(ID param_1,SEL param_2)
+
+{
+  long lVar1;
+  ID IVar2;
+  undefined1 auVar3 [16];
+  
+  auVar3 = FUN_1015e6ca8();
+  FUN_1015aeee8(auVar3._0_8_,auVar3._8_8_,0);
+  FUN_1015d3a48(param_1);
+  lVar1 = FUN_101574668(param_1);
+  if (lVar1 != 0) {
+    auVar3 = FUN_101574668(param_1);
+    FUN_101593bc8(auVar3._0_8_,auVar3._8_8_);
+    FUN_1015bf648(param_1);
+  }
+  auVar3 = FUN_101579308(param_1);
+  if ((auVar3._0_8_ & 1) != 0) {
+    return;
+  }
+  FUN_1015c1e88(param_1,auVar3._8_8_,1);
+  auVar3 = FUN_1015fd648(param_1);
+  IVar2 = FUN_10159a908(auVar3._0_8_,auVar3._8_8_);
+  FUN_101581fe8(IVar2);
+  return;
+}
+
+
+
+/* AppDelegate.nncsetupSignin | 0x10003bf2c | ev_b37c1d2a3e2073fc95fa93256e6bdcd3cf8b0c69789c032695595c6adcfc33c8 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void AppDelegate::nncsetupSignin(ID param_1,SEL param_2)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_101588d68(&_OBJC_CLASS___NSString);
+  auVar1 = FUN_1015eb848(auVar1._0_8_,auVar1._8_8_,&cf_user);
+  auVar1 = FUN_1015f3f68(&_OBJC_CLASS___NSKeyedUnarchiver,auVar1._8_8_,auVar1._0_8_);
+  if (auVar1._0_8_ == 0) {
+    auVar1 = FUN_1015813c8(&objc::class_t::NNCProfileUser);
+  }
+  FUN_1015add48(&objc::class_t::NNCProfileUser,auVar1._8_8_,auVar1._0_8_);
+  return;
+}
+
+
+
+/* AppDelegate.nncrequestConfig | 0x10003bfcc | ev_0e25b67977b0ca1c5870b5c36b38da1ae8334b4348976869fa3e78cbeedbeab4 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void AppDelegate::nncrequestConfig(ID param_1,SEL param_2)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x000101572ff8. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_msgSend_101d78f58)(param_1,"judgeUpdateConfig");
+  return;
+}
+
+
+
+/* AppDelegate.requestToken | 0x10003bfd0 | ev_f10ddbf8eb572432abcd7f81747e07449f6e2db2ddad6a7dbfa775e4b0956fc2 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void AppDelegate::requestToken(ID param_1,SEL param_2)
+
+{
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_1015962a8(&objc::class_t::NNCXCRequest,param_2,1);
+  FUN_10155b128(auVar1._0_8_,auVar1._8_8_,&UNK_101d7c080,&UNK_101d7c0a0);
+  auVar1 = FUN_1015962a8(&objc::class_t::NNCXCRequest,extraout_x1,0);
+  FUN_10155b128(auVar1._0_8_,auVar1._8_8_,&UNK_101d7c0c0,&UNK_101d7c0e0);
+  FUN_101596288((ID)&objc::class_t::NNCHMRequest,extraout_x1_00);
+  FUN_1015582a8();
+  return;
+}
+
+
+
+/* AppDelegate.nncrequestAppConfig | 0x10003c09c | ev_0680e0944d65ad34d2cb77fd164df478a4f20acbf6f28e45202b9a7e619bce5c */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void AppDelegate::nncrequestAppConfig(ID param_1,SEL param_2)
+
+{
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  
+  FUN_101557508(&objc::class_t::NNCRequestDo);
+  FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf___config);
+  FUN_101596288((ID)&objc::class_t::NNCBIZRequest,extraout_x1_00);
+  FUN_101596fa8();
+  return;
+}
+
+
+
+/* AppDelegate.judgeUpdateConfig | 0x10003cc38 | ev_94852c3bc2fe735e6c5b1448be41a91d92e9b130d25159e5a58480f296dc75d6 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void AppDelegate::judgeUpdateConfig(ID param_1,SEL param_2)
+
+{
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  
+  FUN_101557508(&objc::class_t::NNCRequestDo);
+  FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf___config_check_1);
+  FUN_101596288((ID)&objc::class_t::NNCBIZRequest,extraout_x1_00);
+  FUN_101596fa8();
+  return;
+}
+
+
+
+/* AppDelegate.nncrequestMainPageConfig | 0x10003cf14 | ev_46391b3f1f7940da86355483c563f7355bb436d6e6b55cc1ea82c222f66ef86b */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void AppDelegate::nncrequestMainPageConfig(ID param_1,SEL param_2)
+
+{
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  
+  FUN_101557508(&objc::class_t::NNCRequestDo);
+  FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf___ty__);
+  FUN_101596288((ID)&objc::class_t::NNCBIZRequest,extraout_x1_00);
+  FUN_101596fa8();
+  return;
+}
+
+
+
+/* AppDelegate.window | 0x10003d0e0 | ev_c0bfeb08729e78173d03c89c411472677029b19e37349c0819bebac4c6eb1dc6 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID AppDelegate::window(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__window);
+}
+
+
+
+/* AppDelegate.setWindow: | 0x10003d0f0 | ev_ae4f83840ea0c44167fe4217a4fc34c8ea206a6e7a284e9b71a67a0edc111de1 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::setWindow_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__window) = param_3;
+  return;
+}
+
+
+
+/* AppDelegate.launchView | 0x10003d104 | ev_49b44d14a255f1bcd05a60027fd1437ca47ba868a31a79e2771e9876af6da781 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID AppDelegate::launchView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__launchView);
+}
+
+
+
+/* AppDelegate.setLaunchView: | 0x10003d114 | ev_7f8fb0b44a76d0d10a51854fc4be1dd664283315112fb94ccdd197f9b85f86ae */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::setLaunchView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__launchView) = param_3;
+  return;
+}
+
+
+
+/* AppDelegate.nativeAdItemModel | 0x10003d128 | ev_4148d086cc794484829ae90227a2747c1553bee185b181a8f9d5df96f6383291 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID AppDelegate::nativeAdItemModel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nativeAdItemModel);
+}
+
+
+
+/* AppDelegate.setNativeAdItemModel: | 0x10003d138 | ev_163e1a4f0d0479437e932c106baf71affe0fd4a899a881d910e3e8f77ec97b69 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::setNativeAdItemModel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nativeAdItemModel) = param_3;
+  return;
+}
+
+
+
+/* AppDelegate.isDelayRemoveAd | 0x10003d14c | ev_1755863abef11727fcce2d5f90419892e018768fe7142ef5f0c90fcabdd5846b */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool AppDelegate::isDelayRemoveAd(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__isDelayRemoveAd);
+}
+
+
+
+/* AppDelegate.setIsDelayRemoveAd: | 0x10003d15c | ev_ce77c2b0dd54d755fb17fa17e0eaa458408029a942a4c0af3b642fb2d39071c0 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void AppDelegate::setIsDelayRemoveAd_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__isDelayRemoveAd) = (char)param_3;
+  return;
+}
+
+
+
+/* AppDelegate.mainPageLoad | 0x10003d16c | ev_68442af88967342c788454fad30dd272c3097929db0bdde844e3d1e64c5ed486 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool AppDelegate::mainPageLoad(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__mainPageLoad);
+}
+
+
+
+/* AppDelegate.setMainPageLoad: | 0x10003d17c | ev_c925f84f1ef8a55ced1278e9010c6ceac74ef85053437f30012c62f5b72bd1be */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void AppDelegate::setMainPageLoad_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__mainPageLoad) = (char)param_3;
+  return;
+}
+
+
+
+/* AppDelegate.splashAd | 0x10003d18c | ev_03b3cbf092bbf4ceecadbb18ce1f1f423084d70b3d6ea47a50be624de7f21772 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID AppDelegate::splashAd(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__splashAd);
+}
+
+
+
+/* AppDelegate.setSplashAd: | 0x10003d19c | ev_69e48aac14ba82ca8a7c070b91cd415b37778a90a82dd4d4baa0e9b61a59b9cd */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void AppDelegate::setSplashAd_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__splashAd) = param_3;
+  return;
+}
+
+
+
+/* AppDelegate.didAfterConfigRequest | 0x10003d1b0 | ev_922832b9cb3a2808749b6aadd1d4f22103d883cefd39c57f147a0d5cf3b88c87 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool AppDelegate::didAfterConfigRequest(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__didAfterConfigRequest);
+}
+
+
+
+/* AppDelegate.setDidAfterConfigRequest: | 0x10003d1c0 | ev_89cc7aea1547efb33c3f562c50968231d95bce7602379666564c65bac172fb88 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void AppDelegate::setDidAfterConfigRequest_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__didAfterConfigRequest) = (char)param_3;
+  return;
+}
+
+
+
+/* AppDelegate..cxx_destruct | 0x10003d1d0 | ev_f33bb023c12fae1fb4ed07ce1fe7bb5f63e9883dc92d236e6aa038e19fb28453 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void AppDelegate::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__splashAd) = 0;
+  *(undefined8 *)(param_1 + (long)__nativeAdItemModel) = 0;
+  *(undefined8 *)(param_1 + (long)__launchView) = 0;
+  *(undefined8 *)(param_1 + (long)__window) = 0;
+  return;
+}
+
+

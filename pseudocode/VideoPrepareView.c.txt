@@ -1,0 +1,188 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* VideoPrepareView.awakeFromNib | 0x10003a128 | ev_591e33f91f811d04956b18b4f604f44d4b798a283cc413f165a87373eea0807e */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void VideoPrepareView::awakeFromNib(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  double dVar3;
+  undefined1 auVar4 [16];
+  ID local_50;
+  class_t *pcStack_48;
+  
+  pcStack_48 = &objc::class_t::VideoPrepareView;
+  local_50 = param_1;
+  _objc_msgSendSuper2(&local_50,"awakeFromNib");
+  uVar1 = FUN_10158a708(param_1);
+  dVar3 = (double)FUN_10155e568(uVar1);
+  auVar4 = FUN_10158a708(param_1);
+  IVar2 = FUN_101574688(auVar4._0_8_,auVar4._8_8_);
+  FUN_1015ac5e8(dVar3 * 0.5,IVar2);
+  auVar4 = FUN_10158a708(param_1);
+  IVar2 = FUN_101574688(auVar4._0_8_,auVar4._8_8_);
+  FUN_1015c25a8(IVar2);
+  uVar1 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1,0x283130);
+  auVar4 = FUN_10158a708(param_1);
+  FUN_1015a5908(auVar4._0_8_,auVar4._8_8_,uVar1);
+  return;
+}
+
+
+
+/* VideoPrepareView.controlView | 0x10003a264 | ev_bd804d227211e46b568f2b88758285e92adb90ad323d06423ddce04e9b503c5a */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID VideoPrepareView::controlView(ID param_1,SEL param_2)
+
+{
+  return param_1;
+}
+
+
+
+/* VideoPrepareView.installedControlViewToVideoPlayer: | 0x10003a268 | ev_3fbd365b4b786bd2b0769c6b8badaebc20b295ef92feef99f866134451f8ba96 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void VideoPrepareView::installedControlViewToVideoPlayer_(ID param_1,SEL param_2,ID param_3)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x000101574af8. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_msgSend_101d78f58)(param_1,"layoutIfNeeded");
+  return;
+}
+
+
+
+/* VideoPrepareView.restartControlLayer | 0x10003a26c | ev_24434c16158557716f0dc9831d3f2725435b3c9cc2e8ac4ae6ae793c5aad5e45 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void VideoPrepareView::restartControlLayer(ID param_1,SEL param_2)
+
+{
+  *(undefined1 *)(param_1 + (long)__restarted) = 1;
+  return;
+}
+
+
+
+/* VideoPrepareView.exitControlLayer | 0x10003a280 | ev_5c7c2daf27d2f3f96c9c68e6bc9cd9ca87c8516b3ea1556a4a54cea666722336 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void VideoPrepareView::exitControlLayer(ID param_1,SEL param_2)
+
+{
+  undefined1 auVar1 [16];
+  
+  *(undefined1 *)(param_1 + (long)__restarted) = 0;
+  auVar1 = FUN_10153eca8();
+  FUN_101593bc8(auVar1._0_8_,auVar1._8_8_);
+  return;
+}
+
+
+
+/* VideoPrepareView.restarted | 0x10003a2bc | ev_bc2ddb217ea1c2c4e8a05c4d2ac7202c680104f7fba9c6d8111c6e48135eb8a2 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool VideoPrepareView::restarted(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__restarted);
+}
+
+
+
+/* VideoPrepareView.playButton | 0x10003a2cc | ev_207ceb5be0442084599f03de986884d04396fada93de6f13592c98fa74c8fb2b */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID VideoPrepareView::playButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__playButton);
+}
+
+
+
+/* VideoPrepareView.setPlayButton: | 0x10003a2ec | ev_3cc6af9c965c4bc3bb9cba1007b902b77bc90e861b65d27399aabb4cc93a4ed0 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void VideoPrepareView::setPlayButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__playButton) = param_3;
+  return;
+}
+
+
+
+/* VideoPrepareView.backButton | 0x10003a300 | ev_da7fea04272a9fcfadccb08a8311d833d36155a73a0adfdb54e53a8ab632ec47 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID VideoPrepareView::backButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__backButton);
+}
+
+
+
+/* VideoPrepareView.setBackButton: | 0x10003a320 | ev_acec72705b394f9d3a03ae1d1382fdea6f99ca4a59482c3baf2c6c564a4ada4b */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void VideoPrepareView::setBackButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__backButton) = param_3;
+  return;
+}
+
+
+
+/* VideoPrepareView..cxx_destruct | 0x10003a334 | ev_b9cd11885efc7f308c22672ba4193221af22afe376ddeb229e4296aecc9a2359 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void VideoPrepareView::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + (long)__backButton);
+  _objc_destroyWeak(param_1 + (long)__playButton);
+  return;
+}
+
+

@@ -1,0 +1,1399 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCFileDownloadManager.sharedInstance | 0x100095964 | ev_deef359cbeb6ea375f67e33f4ea1fd7bde0a80db6c0c9c8159fcf222777c4450 */
+
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileDownloadManager::sharedInstance(ID param_1,SEL param_2)
+
+{
+  undefined *local_38;
+  undefined8 local_30;
+  code *local_28;
+  undefined *puStack_20;
+  ID local_18;
+  
+  local_38 = PTR___NSConcreteStackBlock_101d78760;
+  local_30 = 0xc0000000;
+  local_28 = FUN_1000959d8;
+  puStack_20 = &UNK_101d7b650;
+  if (lRam000000010243f0f0 != -1) {
+    local_18 = param_1;
+    _dispatch_once(0x10243f0f0,&local_38);
+  }
+  return IRam000000010243f0e8;
+}
+
+
+
+/* NNCFileDownloadManager.init | 0x100095a04 | ev_6937008fca0ba41c801602df07b19960231b190dc223354aba04b0165a94db60 */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileDownloadManager::init(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCFileDownloadManager;
+  local_40 = param_1;
+  IVar1 = _objc_msgSendSuper2(&local_40,"init");
+  if (IVar1 != 0) {
+    uVar2 = *(undefined8 *)PTR____NSDictionary0___101d78910;
+    auVar3 = FUN_10157e1c8(uVar2);
+    FUN_1015d69c8(IVar1,auVar3._8_8_,auVar3._0_8_);
+    auVar3 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+    FUN_1015b0d68(IVar1,auVar3._8_8_,auVar3._0_8_);
+    auVar3 = FUN_10157e1c8(uVar2);
+    FUN_1015b0bc8(IVar1,auVar3._8_8_,auVar3._0_8_);
+    FUN_1015bbd48(IVar1,extraout_x1,0);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCFileDownloadManager.getAllDownloadInfos | 0x100095ad4 | ev_a648b438003956ff43ea5a1382575e61a61a8e6185c636e524dedebd0290cc18 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileDownloadManager::getAllDownloadInfos(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  ID IVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 uVar4;
+  long lVar5;
+  long lVar6;
+  undefined1 auVar7 [16];
+  undefined1 auVar8 [16];
+  undefined8 local_1f0;
+  long lStack_1e8;
+  long *local_1e0;
+  undefined8 uStack_1d8;
+  undefined8 local_1d0;
+  undefined8 uStack_1c8;
+  undefined8 uStack_1c0;
+  undefined8 uStack_1b8;
+  undefined8 local_1b0;
+  long lStack_1a8;
+  long *local_1a0;
+  undefined8 uStack_198;
+  undefined8 local_190;
+  undefined8 uStack_188;
+  undefined8 uStack_180;
+  undefined8 uStack_178;
+  undefined1 auStack_168 [128];
+  undefined1 auStack_e8 [128];
+  long local_68;
+  
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  auVar7 = FUN_10156eb08();
+  if ((auVar7._0_8_ & 1) == 0) {
+    FUN_1015bbd48(param_1,auVar7._8_8_,1);
+    uVar1 = FUN_1015e11a8(&objc::class_t::NNCDownloadDB);
+    auVar7 = FUN_101557b48(uVar1);
+    uVar1 = auVar7._0_8_;
+    uStack_188 = 0;
+    local_190 = 0;
+    uStack_178 = 0;
+    uStack_180 = 0;
+    lStack_1a8 = 0;
+    local_1b0 = 0;
+    uStack_198 = 0;
+    local_1a0 = (long *)0x0;
+    lVar2 = FUN_10153f948(uVar1,auVar7._8_8_,&local_1b0,auStack_e8,0x10);
+    if (lVar2 != 0) {
+      lVar5 = *local_1a0;
+      do {
+        lVar6 = 0;
+        do {
+          if (*local_1a0 != lVar5) {
+            _objc_enumerationMutation(uVar1);
+          }
+          uVar4 = *(undefined8 *)(lStack_1a8 + lVar6 * 8);
+          auVar7 = FUN_1015ee508(param_1);
+          auVar8 = FUN_101557f68(&objc::class_t::NNCDownloadDB,auVar7._8_8_,uVar4);
+          FUN_1015c6468(auVar7._0_8_,auVar8._8_8_,uVar4,auVar8._0_8_);
+          lVar6 = lVar6 + 1;
+        } while (lVar2 != lVar6);
+        lVar2 = FUN_10153f948(uVar1,extraout_x1,&local_1b0,auStack_e8,0x10);
+      } while (lVar2 != 0);
+    }
+  }
+  IVar3 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+  lStack_1e8 = 0;
+  local_1f0 = 0;
+  uStack_1d8 = 0;
+  local_1e0 = (long *)0x0;
+  uStack_1c8 = 0;
+  local_1d0 = 0;
+  uStack_1b8 = 0;
+  uStack_1c0 = 0;
+  uVar1 = FUN_1015ee508(param_1);
+  auVar7 = FUN_101528d88(uVar1);
+  uVar1 = auVar7._0_8_;
+  lVar2 = FUN_10153f948(uVar1,auVar7._8_8_,&local_1f0,auStack_168,0x10);
+  if (lVar2 != 0) {
+    lVar5 = *local_1e0;
+    do {
+      lVar6 = 0;
+      do {
+        if (*local_1e0 != lVar5) {
+          _objc_enumerationMutation(uVar1);
+        }
+        uVar4 = *(undefined8 *)(lStack_1e8 + lVar6 * 8);
+        auVar7 = FUN_1015ee508(param_1);
+        auVar7 = FUN_101583468(auVar7._0_8_,auVar7._8_8_,uVar4);
+        FUN_101526528(IVar3,auVar7._8_8_,auVar7._0_8_);
+        lVar6 = lVar6 + 1;
+      } while (lVar2 != lVar6);
+      lVar2 = FUN_10153f948(uVar1,extraout_x1_00,&local_1f0,auStack_168,0x10);
+    } while (lVar2 != 0);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_68) {
+    IVar3 = FUN_100ab8e90(0);
+    return IVar3;
+  }
+  return IVar3;
+}
+
+
+
+/* NNCFileDownloadManager.startDownload: | 0x100095d74 | ev_b1f5a5df732983c6ca6b333a1bc181b14aaf684cd8dd1fbd6199cc2cb8201c9e */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileDownloadManager::startDownload_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  ID IVar4;
+  double dVar5;
+  undefined1 auVar6 [16];
+  undefined1 auVar7 [16];
+  
+  auVar6 = FUN_1015ee508(param_1);
+  auVar7 = FUN_101557f68(&objc::class_t::NNCDownloadDB,auVar6._8_8_,param_3);
+  auVar6 = FUN_101583468(auVar6._0_8_,auVar7._8_8_,auVar7._0_8_);
+  uVar3 = auVar6._8_8_;
+  IVar2 = auVar6._0_8_;
+  IVar4 = IVar2;
+  if (IVar2 == 0) {
+    FUN_1015c8488(param_3,uVar3,0);
+    uVar3 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+    dVar5 = (double)FUN_1015ef888(uVar3);
+    FUN_1015b0a08(param_3,extraout_x1,(long)dVar5);
+    auVar6 = FUN_1015ee508(param_1);
+    auVar7 = FUN_101557f68(&objc::class_t::NNCDownloadDB,auVar6._8_8_,param_3);
+    FUN_1015c6468(auVar6._0_8_,auVar7._8_8_,param_3,auVar7._0_8_);
+    uVar3 = extraout_x1_00;
+    IVar4 = param_3;
+  }
+  FUN_1015d6a68(IVar4,uVar3,0xffffffff);
+  _NSLog(&cf_downloadTeststartDownloadNNC_FILE_TaskState_PENDING);
+  FUN_10159bde8(param_1,extraout_x1_01,IVar4);
+  FUN_1015828a8(param_1);
+  iVar1 = FUN_101559c68(param_1);
+  FUN_1015434e8(&_OBJC_CLASS___NSThread);
+  FUN_10154ec48(param_3);
+  _NSLog(&cf_downloadTest1111_d____);
+  if (iVar1 < 1) {
+    FUN_1015d6a68(IVar4,extraout_x1_02,1);
+    _NSLog(&cf_downloadTeststartDownloadNNC_FILE_TaskState_PREPARE);
+    FUN_10159bde8(param_1,extraout_x1_03,IVar4);
+    FUN_1015828a8(param_1);
+    FUN_1015e9388(param_1,extraout_x1_04,IVar4,IVar2 == 0);
+  }
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.startParseTaskItem:isNewTask: | 0x100095f9c | ev_0d4f82b60bcb031ff3aa81e726833c472c78c487b06e603c954b4de49916a2cf */
+
+/* Function Stack Size: 0x1c bytes */
+
+void NNCFileDownloadManager::startParseTaskItem_isNewTask_
+               (ID param_1,SEL param_2,ID param_3,bool param_4)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x000101588758. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_msgSend_101d78f58)(param_1,"parseNewTaskItem:",param_3,param_4);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.parseNewTaskItem: | 0x100095fa0 | ev_4bfc10eb385f8245fca108c7fadd0af986803fdbc0f24013ca54f243b230738d */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileDownloadManager::parseNewTaskItem_(ID param_1,SEL param_2,ID param_3)
+
+{
+  FUN_1015885a8(&objc::class_t::NNCFileInfoParserManager,param_2,param_3,param_1);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.parseLocalM3U8TaskItem: | 0x100095fb0 | ev_5de9b228fe765296da263bf5d886c3ff8c878c1eb550cdb303a0fc4bf2fa1171 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileDownloadManager::parseLocalM3U8TaskItem_(ID param_1,SEL param_2,ID param_3)
+
+{
+  FUN_1015886e8(&objc::class_t::NNCFileInfoParserManager,param_2,param_3,param_1);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.startNormalDownloadTask:headers: | 0x100095fc0 | ev_82f747cfdfbd370565932e2762ddffee514e80388dda06af1226a772ae842e62 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCFileDownloadManager::startNormalDownloadTask_headers_
+               (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined1 auVar3 [16];
+  undefined1 auVar4 [16];
+  
+  FUN_10159bde8(param_1,param_2,param_3);
+  FUN_1015828a8(param_1);
+  auVar3 = FUN_10154b5c8(param_1);
+  FUN_101526528(auVar3._0_8_,auVar3._8_8_,param_3);
+  uVar1 = FUN_101557f68(&objc::class_t::NNCDownloadDB,extraout_x1,param_3);
+  auVar3 = FUN_10154b248(param_1);
+  auVar3 = FUN_101583468(auVar3._0_8_,auVar3._8_8_,uVar1);
+  lVar2 = auVar3._0_8_;
+  if (lVar2 == 0) {
+    auVar3 = _objc_alloc(&objc::class_t::NNCNormalDownloadTask);
+    lVar2 = FUN_101567a28(auVar3._0_8_,auVar3._8_8_,param_3,param_4);
+    auVar3 = FUN_10154b248(param_1);
+    auVar4 = FUN_101557f68(&objc::class_t::NNCDownloadDB,auVar3._8_8_,param_3);
+    FUN_1015c6468(auVar3._0_8_,auVar4._8_8_,lVar2,auVar4._0_8_);
+    FUN_10159bde8(param_1,extraout_x1_01,param_3);
+    uVar1 = extraout_x1_02;
+  }
+  else {
+    FUN_1015b6ea8(lVar2,auVar3._8_8_,param_4);
+    auVar3 = FUN_101552908(param_3);
+    FUN_1015b3e68(lVar2,auVar3._8_8_,auVar3._0_8_);
+    uVar1 = extraout_x1_00;
+  }
+  FUN_1015e8c88(param_1,uVar1,lVar2);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.startM3U8VideoDownloadTask:m3u8:headers: | 0x10009616c | ev_81d3af5bb8cb5d83bda077cda3b9f1bf474add8759dd45b739b28d46ed1fb32f */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x28 bytes */
+
+void NNCFileDownloadManager::startM3U8VideoDownloadTask_m3u8_headers_
+               (ID param_1,SEL param_2,ID param_3,ID param_4,ID param_5)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined1 auVar3 [16];
+  undefined1 auVar4 [16];
+  
+  FUN_10159bde8(param_1,param_2,param_3);
+  FUN_1015828a8(param_1);
+  auVar3 = FUN_10154b5c8(param_1);
+  FUN_101526528(auVar3._0_8_,auVar3._8_8_,param_3);
+  uVar1 = FUN_101557f68(&objc::class_t::NNCDownloadDB,extraout_x1,param_3);
+  auVar3 = FUN_10154b248(param_1);
+  auVar3 = FUN_101583468(auVar3._0_8_,auVar3._8_8_,uVar1);
+  lVar2 = auVar3._0_8_;
+  if (lVar2 == 0) {
+    auVar3 = _objc_alloc(&objc::class_t::NNCM3U8DownloadTask);
+    lVar2 = FUN_101567a48(auVar3._0_8_,auVar3._8_8_,param_3,param_4,param_5);
+    auVar3 = FUN_10154b248(param_1);
+    auVar4 = FUN_101557f68(&objc::class_t::NNCDownloadDB,auVar3._8_8_,param_3);
+    FUN_1015c6468(auVar3._0_8_,auVar4._8_8_,lVar2,auVar4._0_8_);
+    FUN_10159bde8(param_1,extraout_x1_01,param_3);
+    uVar1 = extraout_x1_02;
+  }
+  else {
+    FUN_1015b6ea8(lVar2,auVar3._8_8_,param_5);
+    uVar1 = extraout_x1_00;
+  }
+  FUN_1015e8c88(param_1,uVar1,lVar2);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.startDownloadTask: | 0x10009630c | ev_08e70dee8a12cc06c9c9f0f0aebe2662d0247d8a9d9979781aa575ea77ef785d */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileDownloadManager::startDownloadTask_(ID param_1,SEL param_2,ID param_3)
+
+{
+  FUN_1015c0508(param_3,param_2,param_1);
+  FUN_1015e8c08(param_3);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.saveTaskItem: | 0x100096348 | ev_794d38fd314ed1a8a8a4f57bedba294997de09f5260c9dd3538cf2d5f3a3b797 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileDownloadManager::saveTaskItem_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_1015e11a8(&objc::class_t::NNCDownloadDB);
+  FUN_10155fca8(auVar1._0_8_,auVar1._8_8_,param_3);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.notifyChange | 0x10009639c | ev_96b15af608c68000f0cf28d7cdf702f0a4123e403bbea84d248e2b24d373381c */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCFileDownloadManager::notifyChange(ID param_1,SEL param_2)
+
+{
+  char *pcVar1;
+  char *pcVar2;
+  undefined *local_70;
+  undefined8 local_68;
+  code *local_60;
+  undefined *puStack_58;
+  ID local_50;
+  undefined *local_48;
+  undefined8 local_40;
+  code *local_38;
+  undefined *puStack_30;
+  ID local_28;
+  
+  pcVar1 = _dispatch_queue_get_label((dispatch_queue_t)0x0);
+  pcVar2 = _dispatch_queue_get_label((dispatch_queue_t)PTR___dispatch_main_q_101d78958);
+  if (pcVar1 == pcVar2) {
+    local_48 = PTR___NSConcreteStackBlock_101d78760;
+    local_40 = 0xc2000000;
+    local_38 = FUN_100096460;
+    puStack_30 = &UNK_101d7b580;
+    local_28 = param_1;
+    FUN_100096460(&local_48);
+  }
+  else {
+    local_70 = PTR___NSConcreteStackBlock_101d78760;
+    local_68 = 0xc2000000;
+    local_60 = FUN_100096500;
+    puStack_58 = &UNK_101d7b580;
+    local_50 = param_1;
+    _dispatch_async(PTR___dispatch_main_q_101d78958,&local_70);
+  }
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.getRunningTaskCount | 0x1000965a0 | ev_b1eef443a64ca0f64777f1dbae3c37232628dd6070451c9a42845201d7395cd1 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+int NNCFileDownloadManager::getRunningTaskCount(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  int iVar2;
+  undefined8 uVar3;
+  long lVar4;
+  undefined8 uVar5;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 uVar6;
+  long lVar7;
+  long lVar8;
+  undefined1 auVar9 [16];
+  undefined8 local_130;
+  long lStack_128;
+  long *local_120;
+  undefined8 uStack_118;
+  undefined8 local_110;
+  undefined8 uStack_108;
+  undefined8 uStack_100;
+  undefined8 uStack_f8;
+  undefined1 auStack_f0 [128];
+  long local_70;
+  
+  local_70 = *(long *)PTR____stack_chk_guard_101d78938;
+  lStack_128 = 0;
+  local_130 = 0;
+  uStack_118 = 0;
+  local_120 = (long *)0x0;
+  uStack_108 = 0;
+  local_110 = 0;
+  uStack_f8 = 0;
+  uStack_100 = 0;
+  uVar3 = FUN_1015ee508();
+  auVar9 = FUN_101528d88(uVar3);
+  uVar3 = auVar9._0_8_;
+  lVar4 = FUN_10153f948(uVar3,auVar9._8_8_,&local_130,auStack_f0,0x10);
+  if (lVar4 == 0) {
+    iVar2 = 0;
+  }
+  else {
+    iVar2 = 0;
+    lVar7 = *local_120;
+    do {
+      lVar8 = 0;
+      do {
+        if (*local_120 != lVar7) {
+          _objc_enumerationMutation(uVar3);
+        }
+        uVar6 = *(undefined8 *)(lStack_128 + lVar8 * 8);
+        auVar9 = FUN_1015ee508(param_1);
+        uVar5 = FUN_101583468(auVar9._0_8_,auVar9._8_8_,uVar6);
+        iVar1 = FUN_1015ee5e8(uVar5);
+        uVar6 = extraout_x1;
+        if (((iVar1 == 2) || (iVar1 = FUN_1015ee5e8(uVar5), uVar6 = extraout_x1_00, iVar1 == 3)) ||
+           (iVar1 = FUN_1015ee5e8(uVar5), uVar6 = extraout_x1_01, iVar1 == 1)) {
+          iVar2 = iVar2 + 1;
+        }
+        lVar8 = lVar8 + 1;
+      } while (lVar4 != lVar8);
+      lVar4 = FUN_10153f948(uVar3,uVar6,&local_130,auStack_f0,0x10);
+    } while (lVar4 != 0);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_70) {
+    iVar2 = FUN_100ab8e90(0);
+    return iVar2;
+  }
+  return iVar2;
+}
+
+
+
+/* NNCFileDownloadManager.pauseAllTaskItem | 0x100096764 | ev_2aa7452c827dd79a3c15d9696b238eaa43a320661ac5dd0de679c3151ff25d22 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCFileDownloadManager::pauseAllTaskItem(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  long lVar3;
+  undefined8 uVar4;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  long lVar5;
+  undefined8 uVar6;
+  long lVar7;
+  undefined1 auVar8 [16];
+  undefined8 local_130;
+  long lStack_128;
+  long *local_120;
+  undefined8 uStack_118;
+  undefined8 local_110;
+  undefined8 uStack_108;
+  undefined8 uStack_100;
+  undefined8 uStack_f8;
+  undefined1 auStack_f0 [128];
+  long local_70;
+  
+  local_70 = *(long *)PTR____stack_chk_guard_101d78938;
+  lStack_128 = 0;
+  local_130 = 0;
+  uStack_118 = 0;
+  local_120 = (long *)0x0;
+  uStack_108 = 0;
+  local_110 = 0;
+  uStack_f8 = 0;
+  uStack_100 = 0;
+  uVar2 = FUN_1015ee508();
+  auVar8 = FUN_101528d88(uVar2);
+  uVar2 = auVar8._0_8_;
+  lVar3 = FUN_10153f948(uVar2,auVar8._8_8_,&local_130,auStack_f0,0x10);
+  if (lVar3 != 0) {
+    lVar7 = *local_120;
+    do {
+      lVar5 = 0;
+      do {
+        if (*local_120 != lVar7) {
+          _objc_enumerationMutation(uVar2);
+        }
+        uVar6 = *(undefined8 *)(lStack_128 + lVar5 * 8);
+        auVar8 = FUN_1015ee508(param_1);
+        uVar4 = FUN_101583468(auVar8._0_8_,auVar8._8_8_,uVar6);
+        auVar8 = FUN_10156c768(uVar4);
+        uVar6 = auVar8._8_8_;
+        if ((((auVar8._0_8_ & 1) == 0) &&
+            (iVar1 = FUN_1015ee5e8(uVar4), uVar6 = extraout_x1, iVar1 != 6)) &&
+           (iVar1 = FUN_1015ee5e8(uVar4), uVar6 = extraout_x1_00, iVar1 != 5)) {
+          FUN_1015c8488(uVar4,extraout_x1_00,1);
+          FUN_1015d6a68(uVar4,extraout_x1_01,7);
+          auVar8 = FUN_10154b5c8(param_1);
+          FUN_1015941c8(auVar8._0_8_,auVar8._8_8_,uVar4);
+          uVar6 = FUN_101557f68(&objc::class_t::NNCDownloadDB,extraout_x1_02,uVar4);
+          auVar8 = FUN_10154b248(param_1);
+          auVar8 = FUN_101583468(auVar8._0_8_,auVar8._8_8_,uVar6);
+          uVar6 = auVar8._8_8_;
+          if (auVar8._0_8_ != 0) {
+            FUN_101589008(auVar8._0_8_);
+            uVar6 = extraout_x1_03;
+          }
+          FUN_10159bde8(param_1,uVar6,uVar4);
+          uVar6 = extraout_x1_04;
+        }
+        lVar5 = lVar5 + 1;
+      } while (lVar3 != lVar5);
+      lVar3 = FUN_10153f948(uVar2,uVar6,&local_130,auStack_f0,0x10);
+    } while (lVar3 != 0);
+  }
+  FUN_1015828a8(param_1);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_70) {
+    return;
+  }
+  FUN_100ab8e90();
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.pauseTaskItem: | 0x1000969d0 | ev_e52879acc98738434bce9df702bc2a99be3d7b7fb43dc11bdaf6177ebc8ed0f7 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileDownloadManager::pauseTaskItem_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  long lVar3;
+  ulong uVar4;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined1 auVar5 [16];
+  
+  uVar2 = FUN_101557f68(&objc::class_t::NNCDownloadDB);
+  auVar5 = FUN_1015ee508(param_1);
+  lVar3 = FUN_101583468(auVar5._0_8_,auVar5._8_8_,uVar2);
+  if ((lVar3 != 0) && (uVar4 = FUN_10156c768(lVar3), (uVar4 & 1) == 0)) {
+    iVar1 = FUN_1015ee5e8(lVar3);
+    if (iVar1 != 6) {
+      iVar1 = FUN_1015ee5e8(lVar3);
+      if (iVar1 != 5) {
+        FUN_1015c8488(lVar3,extraout_x1,1);
+        FUN_1015d6a68(lVar3,extraout_x1_00,7);
+        auVar5 = FUN_10154b5c8(param_1);
+        FUN_1015941c8(auVar5._0_8_,auVar5._8_8_,lVar3);
+        uVar2 = FUN_101557f68(&objc::class_t::NNCDownloadDB,extraout_x1_01,lVar3);
+        auVar5 = FUN_10154b248(param_1);
+        auVar5 = FUN_101583468(auVar5._0_8_,auVar5._8_8_,uVar2);
+        uVar2 = auVar5._8_8_;
+        if (auVar5._0_8_ != 0) {
+          FUN_101589008(auVar5._0_8_);
+          uVar2 = extraout_x1_02;
+        }
+        FUN_10159bde8(param_1,uVar2,lVar3);
+        FUN_1015828a8(param_1);
+      }
+    }
+  }
+  FUN_101572f88(param_1);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.deleteTaskItemList: | 0x100096b5c | ev_a6376e2552fb072dc739bb017b33d217ae1f3d030f70ba31c2a68286d9698242 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileDownloadManager::deleteTaskItemList_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  long lVar3;
+  cfstringStruct *pcVar4;
+  undefined8 uVar5;
+  undefined8 uVar6;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  long lVar7;
+  long lVar8;
+  undefined8 uVar9;
+  undefined1 auVar10 [16];
+  long local_140;
+  undefined8 local_130;
+  long lStack_128;
+  long *local_120;
+  undefined8 uStack_118;
+  undefined8 local_110;
+  undefined8 uStack_108;
+  undefined8 uStack_100;
+  undefined8 uStack_f8;
+  undefined1 auStack_f0 [128];
+  long local_70;
+  
+  local_70 = *(long *)PTR____stack_chk_guard_101d78938;
+  lStack_128 = 0;
+  local_130 = 0;
+  uStack_118 = 0;
+  local_120 = (long *)0x0;
+  uStack_108 = 0;
+  local_110 = 0;
+  uStack_f8 = 0;
+  uStack_100 = 0;
+  local_140 = FUN_10153f948(param_3,param_2,&local_130,auStack_f0,0x10);
+  if (local_140 != 0) {
+    lVar7 = *local_120;
+    do {
+      lVar8 = 0;
+      do {
+        if (*local_120 != lVar7) {
+          _objc_enumerationMutation(param_3);
+        }
+        uVar9 = *(undefined8 *)(lStack_128 + lVar8 * 8);
+        auVar10 = FUN_10154b5c8(param_1);
+        FUN_1015941c8(auVar10._0_8_,auVar10._8_8_,uVar9);
+        uVar2 = FUN_101557f68(&objc::class_t::NNCDownloadDB,extraout_x1,uVar9);
+        auVar10 = FUN_10154b248(param_1);
+        lVar3 = FUN_101583468(auVar10._0_8_,auVar10._8_8_,uVar2);
+        if (lVar3 == 0) {
+          FUN_1015434e8(&_OBJC_CLASS___NSThread);
+          pcVar4 = &cf_downloadTest1removeTasknotask__;
+        }
+        else {
+          FUN_101589008(lVar3);
+          auVar10 = FUN_10154b248(param_1);
+          FUN_101594248(auVar10._0_8_,auVar10._8_8_,uVar2);
+          FUN_1015434e8(&_OBJC_CLASS___NSThread);
+          pcVar4 = &cf_downloadTest1removeTask____;
+        }
+        _NSLog(pcVar4);
+        auVar10 = FUN_1015ee508(param_1);
+        uVar5 = FUN_101583468(auVar10._0_8_,auVar10._8_8_,uVar2);
+        uVar6 = FUN_10159bac8(uVar5);
+        auVar10 = FUN_1015750a8(uVar6);
+        uVar6 = auVar10._8_8_;
+        if (auVar10._0_8_ != 0) {
+          uVar6 = FUN_101546048(&_OBJC_CLASS___NSFileManager);
+          auVar10 = FUN_10159bac8(uVar5);
+          iVar1 = FUN_101551e08(uVar6,auVar10._8_8_,auVar10._0_8_);
+          uVar6 = extraout_x1_00;
+          if (iVar1 != 0) {
+            FUN_10159bac8(uVar5);
+            _NSLog(&cf_downloadTest1downloadFile__);
+            uVar6 = FUN_101546048(&_OBJC_CLASS___NSFileManager);
+            auVar10 = FUN_10159bac8(uVar5);
+            FUN_101593ea8(uVar6,auVar10._8_8_,auVar10._0_8_,0);
+            uVar6 = extraout_x1_01;
+          }
+        }
+        auVar10 = FUN_1015587a8(&objc::class_t::VideoDownloadUtils,uVar6,uVar5);
+        uVar6 = FUN_101556028(&objc::class_t::VideoDownloadUtils,auVar10._8_8_,auVar10._0_8_);
+        auVar10 = FUN_101546048(&_OBJC_CLASS___NSFileManager);
+        iVar1 = FUN_101551e08(auVar10._0_8_,auVar10._8_8_,uVar6);
+        if (iVar1 != 0) {
+          _NSLog(&cf_downloadTest1downloadFileV2__);
+          auVar10 = FUN_101546048(&_OBJC_CLASS___NSFileManager);
+          FUN_101593ea8(auVar10._0_8_,auVar10._8_8_,uVar6,0);
+        }
+        auVar10 = FUN_1015ee508(param_1);
+        FUN_101594248(auVar10._0_8_,auVar10._8_8_,uVar2);
+        auVar10 = FUN_1015e11a8(&objc::class_t::NNCDownloadDB);
+        FUN_101546a48(auVar10._0_8_,auVar10._8_8_,uVar9);
+        lVar8 = lVar8 + 1;
+      } while (local_140 != lVar8);
+      local_140 = FUN_10153f948(param_3,extraout_x1_02,&local_130,auStack_f0,0x10);
+    } while (local_140 != 0);
+  }
+  FUN_1015828a8(param_1);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_70) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.judgeShouldStartNextTask | 0x100096f98 | ev_5c7aa7ceb6ca819657cd357d7146c779bb76142d835c50fe2d22136bf2937e63 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCFileDownloadManager::judgeShouldStartNextTask(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  undefined1 auVar2 [16];
+  
+  _objc_sync_enter();
+  iVar1 = FUN_101559c68(param_1);
+  _NSLog(&cf_downloadTestjudgeShouldStartNextTask_d);
+  if (iVar1 == 0) {
+    auVar2 = FUN_101559148(param_1);
+    if (auVar2._0_8_ != 0) {
+      FUN_1015e8c28(param_1,auVar2._8_8_,auVar2._0_8_);
+    }
+  }
+  _objc_sync_exit(param_1);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.getNextDownloadableTaskItem | 0x100097034 | ev_9f33820b4e7905339a44153a146126b05e8b59022575e838bc9a37c9616f16d3 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileDownloadManager::getNextDownloadableTaskItem(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  long lVar3;
+  ID IVar4;
+  undefined8 extraout_x1;
+  undefined8 uVar5;
+  long lVar6;
+  long lVar7;
+  undefined1 auVar8 [16];
+  undefined8 local_130;
+  long lStack_128;
+  long *local_120;
+  undefined8 uStack_118;
+  undefined8 local_110;
+  undefined8 uStack_108;
+  undefined8 uStack_100;
+  undefined8 uStack_f8;
+  undefined1 auStack_e8 [128];
+  long local_68;
+  
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  lStack_128 = 0;
+  local_130 = 0;
+  uStack_118 = 0;
+  local_120 = (long *)0x0;
+  uStack_108 = 0;
+  local_110 = 0;
+  uStack_f8 = 0;
+  uStack_100 = 0;
+  uVar2 = FUN_1015ee508();
+  auVar8 = FUN_101528d88(uVar2);
+  uVar2 = auVar8._0_8_;
+  lVar3 = FUN_10153f948(uVar2,auVar8._8_8_,&local_130,auStack_e8,0x10);
+  if (lVar3 != 0) {
+    lVar6 = *local_120;
+    do {
+      lVar7 = 0;
+      do {
+        if (*local_120 != lVar6) {
+          _objc_enumerationMutation(uVar2);
+        }
+        uVar5 = *(undefined8 *)(lStack_128 + lVar7 * 8);
+        auVar8 = FUN_1015ee508(param_1);
+        IVar4 = FUN_101583468(auVar8._0_8_,auVar8._8_8_,uVar5);
+        iVar1 = FUN_1015ee5e8(IVar4);
+        if (iVar1 == -1) goto LAB_100097164;
+        lVar7 = lVar7 + 1;
+      } while (lVar3 != lVar7);
+      lVar3 = FUN_10153f948(uVar2,extraout_x1,&local_130,auStack_e8,0x10);
+    } while (lVar3 != 0);
+  }
+  IVar4 = 0;
+LAB_100097164:
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_68) {
+    return IVar4;
+  }
+  IVar4 = FUN_100ab8e90(0);
+  return IVar4;
+}
+
+
+
+/* NNCFileDownloadManager.onBaseVideoInfoFailed:error: | 0x1000971ac | ev_2f224966f24b19932d2bc860446f017aab456a568afe2ed829481e9d7af11732 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCFileDownloadManager::onBaseVideoInfoFailed_error_
+               (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  undefined8 extraout_x1;
+  
+  FUN_1015d6a68(param_3,param_2,6);
+  FUN_10159bde8(param_1,extraout_x1,param_3);
+  FUN_1015828a8(param_1);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.onBaseVideoInfoSuccess:headers: | 0x100097208 | ev_12974fe36930ddfd0c468f308965841e223d5b1884cb0bf234f1d3d3cb835da0 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCFileDownloadManager::onBaseVideoInfoSuccess_headers_
+               (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  int iVar1;
+  undefined8 extraout_x1;
+  
+  iVar1 = FUN_1015ee5e8(param_3);
+  if (iVar1 != 7) {
+    FUN_1015e92e8(param_1,extraout_x1,param_3,param_4);
+  }
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.onM3U8InfoFailed:error: | 0x100097280 | ev_b75f1d9c7b502330aa6da395ea9b287bc0be4fb2d5670e8189d85f7c370b1f99 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCFileDownloadManager::onM3U8InfoFailed_error_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  undefined8 extraout_x1;
+  
+  FUN_1015d6a68(param_3,param_2,6);
+  FUN_10159bde8(param_1,extraout_x1,param_3);
+  FUN_1015828a8(param_1);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.onM3U8InfoSuccess:m3u8:headers: | 0x1000972dc | ev_4c2ca6f9b973b3da8b07e9999eadb4630a79e55589264b2c9041ebbc09f7f706 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x28 bytes */
+
+void NNCFileDownloadManager::onM3U8InfoSuccess_m3u8_headers_
+               (ID param_1,SEL param_2,ID param_3,ID param_4,ID param_5)
+
+{
+  int iVar1;
+  undefined8 extraout_x1;
+  
+  iVar1 = FUN_1015ee5e8(param_3);
+  if (iVar1 != 7) {
+    FUN_1015e9188(param_1,extraout_x1,param_3,param_4,param_5);
+  }
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.onM3U8FileParseFailed:error: | 0x100097370 | ev_75bb9c55062233abc215ed794880e01e0dea7c8285c16334942c0178af9f25a0 */
+
+/* Function Stack Size: 0x20 bytes */
+
+void NNCFileDownloadManager::onM3U8FileParseFailed_error_
+               (ID param_1,SEL param_2,ID param_3,bool param_4)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x000101588758. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_msgSend_101d78f58)(param_1,"parseNewTaskItem:",param_3,param_4);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.onM3U8FileParseSuccess:m3u8: | 0x100097374 | ev_ce707fe7a99275c2a08eaf4a33f4698bd57d20902ff9e33a18d6ddc568ad0793 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCFileDownloadManager::onM3U8FileParseSuccess_m3u8_
+               (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  undefined8 uVar1;
+  undefined1 auVar2 [16];
+  undefined *local_f8;
+  undefined8 local_f0;
+  code *local_e8;
+  undefined *puStack_e0;
+  ID local_d8;
+  ID IStack_d0;
+  undefined *local_c8;
+  undefined8 local_c0;
+  code *local_b8;
+  undefined *puStack_b0;
+  ID local_a8;
+  ID IStack_a0;
+  undefined *local_98;
+  undefined8 local_90;
+  code *local_88;
+  undefined *puStack_80;
+  ID local_78;
+  ID IStack_70;
+  ID local_68;
+  
+  uVar1 = FUN_1015f69c8(param_3);
+  auVar2 = FUN_10158b928(param_3);
+  local_98 = PTR___NSConcreteStackBlock_101d78760;
+  local_90 = 0xc2000000;
+  local_88 = FUN_1000974fc;
+  puStack_80 = &UNK_101d7d3e8;
+  local_c8 = PTR___NSConcreteStackBlock_101d78760;
+  local_c0 = 0xc2000000;
+  local_b8 = FUN_100097598;
+  puStack_b0 = &UNK_101d7d388;
+  local_f8 = PTR___NSConcreteStackBlock_101d78760;
+  local_f0 = 0xc2000000;
+  local_e8 = FUN_1000975d4;
+  puStack_e0 = &UNK_101d7d388;
+  local_d8 = param_3;
+  IStack_d0 = param_1;
+  local_a8 = param_3;
+  IStack_a0 = param_1;
+  local_78 = param_3;
+  IStack_70 = param_1;
+  local_68 = param_4;
+  FUN_1015889a8(&objc::class_t::NNCFileParser,auVar2._8_8_,uVar1,&::cf___,auVar2._0_8_,0,&local_98,
+                &local_c8,&local_f8);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.onTaskStart: | 0x100097610 | ev_e199f88dd7101bf2a6d584648845d39efc6c00c593f0930737920d363a9ad9c4 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileDownloadManager::onTaskStart_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 extraout_x1;
+  
+  FUN_1015d6a68(param_3,param_2,2);
+  FUN_10159bde8(param_1,extraout_x1,param_3);
+  FUN_1015828a8(param_1);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.onTaskFailed:error: | 0x10009766c | ev_6e52008b5cb85a7d970086c749efa53908e9d8fe9db96dca51cc51dfb78ba668 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCFileDownloadManager::onTaskFailed_error_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  undefined8 extraout_x1;
+  
+  FUN_1015d6a68(param_3,param_2,6);
+  FUN_10159bde8(param_1,extraout_x1,param_3);
+  FUN_1015828a8(param_1);
+  FUN_101572f88(param_1);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.onTaskFinished: | 0x1000976d0 | ev_c436a00c63b8049444c95071c3980d4e2f370ceab874439aeacb565744129685 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileDownloadManager::onTaskFinished_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined1 auVar1 [16];
+  
+  FUN_1015434e8(&_OBJC_CLASS___NSThread);
+  _NSLog(&cf_downloadTestonTaskFinished__);
+  FUN_1015d6a68(param_3,extraout_x1,5);
+  auVar1 = FUN_1015f1348(param_3);
+  FUN_1015b0b68(param_3,auVar1._8_8_,auVar1._0_8_);
+  FUN_1015ab448(param_3,extraout_x1_00,1);
+  FUN_1015c8588(0x42c80000,param_3);
+  FUN_10159bde8(param_1,extraout_x1_01,param_3);
+  FUN_1015828a8(param_1);
+  FUN_101572f88(param_1);
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.onTaskPaused: | 0x1000977a0 | ev_3bb78ac0f9cf67dd829eb0c56dcc18b39524394ed5bf948b906156015e6d2a5d */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileDownloadManager::onTaskPaused_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar3 [16];
+  undefined1 auVar4 [16];
+  
+  FUN_1015d6a68(param_3,param_2,7);
+  FUN_1015c8488(param_3,extraout_x1,1);
+  uVar2 = FUN_1015ee508(param_1);
+  auVar3 = FUN_101528d88(uVar2);
+  auVar4 = FUN_101557f68(&objc::class_t::NNCDownloadDB,auVar3._8_8_,param_3);
+  iVar1 = FUN_10153e4a8(auVar3._0_8_,auVar4._8_8_,auVar4._0_8_);
+  if (iVar1 != 0) {
+    FUN_10159bde8(param_1,extraout_x1_00,param_3);
+    FUN_1015828a8(param_1);
+  }
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.onTaskProgressForM3U8WithItem:percent:cachedSize:curTs:totalTs:speed: | 0x100097878 | ev_2ae7d3e5c57ac433856cec30de6f684ba30b64f10393bcc8655be54dfbeaaef3 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x34 bytes */
+
+void NNCFileDownloadManager::onTaskProgressForM3U8WithItem_percent_cachedSize_curTs_totalTs_speed_
+               (ID param_1,SEL param_2,ID param_3,float param_4,long_long param_5,int param_6,
+               int param_7,long_long param_8)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  double dVar2;
+  undefined1 auVar3 [16];
+  
+  uVar1 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+  dVar2 = (double)FUN_1015ef888(uVar1);
+  auVar3 = FUN_101574348(param_3);
+  if (1.5 < dVar2 - (double)auVar3._0_8_) {
+    FUN_1015bf328(param_3,auVar3._8_8_,(long)dVar2);
+    FUN_1015d6a68(param_3,extraout_x1,3);
+    FUN_1015c8588(param_4,param_3);
+    FUN_1015d3968((float)(long)param_8,param_3);
+    FUN_1015b0b68(param_3,extraout_x1_00,param_5);
+    FUN_1015ad4a8(param_3,extraout_x1_01,param_6);
+    FUN_1015d88c8(param_3,extraout_x1_02,param_7);
+    FUN_10159bde8(param_1,extraout_x1_03,param_3);
+    FUN_1015828a8(param_1);
+  }
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.onTaskProgressWithItem:percent:cachedSize:totalSize:speed: | 0x10009798c | ev_af4e4ff64bc510d256991503578012387568ee723ece876fef836d51e0c7ebdc */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x34 bytes */
+
+void NNCFileDownloadManager::onTaskProgressWithItem_percent_cachedSize_totalSize_speed_
+               (ID param_1,SEL param_2,ID param_3,float param_4,long_long param_5,long_long param_6,
+               long_long param_7)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  double dVar2;
+  undefined1 auVar3 [16];
+  
+  uVar1 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+  dVar2 = (double)FUN_1015ef888(uVar1);
+  auVar3 = FUN_101574348(param_3);
+  if (1.5 < dVar2 - (double)auVar3._0_8_) {
+    FUN_1015bf328(param_3,auVar3._8_8_,(long)dVar2);
+    FUN_1015d6a68(param_3,extraout_x1,3);
+    FUN_1015c8588(param_4,param_3);
+    FUN_1015d3968((float)(long)param_7,param_3);
+    FUN_1015b0b68(param_3,extraout_x1_00,param_5);
+    FUN_1015d8868(param_3,extraout_x1_01,param_6);
+    FUN_10159bde8(param_1,extraout_x1_02,param_3);
+    FUN_1015828a8(param_1);
+  }
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.delegate | 0x100097a88 | ev_24381ca525c67e2b42f5c94444a718a14f4d31f603520c3f783aace34d332fbf */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileDownloadManager::delegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCFileDownloadManager.setDelegate: | 0x100097aa0 | ev_3ae8c9db8d99afe9855d57ff5a3a2602a059fa1a027dcbad5d5440af06a1c0f9 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileDownloadManager::setDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.taskItemDict | 0x100097aac | ev_8406d1e82a4bad27c8bd4d71e7d129ee44e7474114c2bec6572d1fe7d8d77e0a */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileDownloadManager::taskItemDict(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x18);
+}
+
+
+
+/* NNCFileDownloadManager.setTaskItemDict: | 0x100097ab4 | ev_2bcf017a3276a5277f671291cbb588c77e24ba30e257d26c815a7eeb57babb44 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileDownloadManager::setTaskItemDict_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.downloadingTaskArray | 0x100097ac0 | ev_ccdff8cec869b47d0deb35445287eab52f7b724cfed2faf43721b29466ce1477 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileDownloadManager::downloadingTaskArray(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x20);
+}
+
+
+
+/* NNCFileDownloadManager.setDownloadingTaskArray: | 0x100097ac8 | ev_b500f3cc41f97aac26d8596f8b2822b6bd3149c7a582c86966b4d4f019d27b7c */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileDownloadManager::setDownloadingTaskArray_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x20) = param_3;
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.downloadTaskDict | 0x100097ad4 | ev_1db07ed5a5360f8ea25487777b41d3bfb68c6e4d2c2f6c73afdbcc40fdbf20b3 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileDownloadManager::downloadTaskDict(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x28);
+}
+
+
+
+/* NNCFileDownloadManager.setDownloadTaskDict: | 0x100097adc | ev_42690b3c9e3ba9ca9e241216e0570b54af9a1a35b4607b6728acc74ff6535dbd */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileDownloadManager::setDownloadTaskDict_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x28) = param_3;
+  return;
+}
+
+
+
+/* NNCFileDownloadManager.isLoadFromDb | 0x100097ae8 | ev_c41364bca6b8896edae5b4d5d60d0dfbc46936fb6355fe4d3895cdb901aa0e01 */
+
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCFileDownloadManager::isLoadFromDb(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + 8);
+}
+
+
+
+/* NNCFileDownloadManager.setIsLoadFromDb: | 0x100097af0 | ev_11a167c9231ace50580b553b53e2ceefdd293c5385ab1157ec0e0ba132d89d18 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void NNCFileDownloadManager::setIsLoadFromDb_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + 8) = (char)param_3;
+  return;
+}
+
+
+
+/* NNCFileDownloadManager..cxx_destruct | 0x100097af8 | ev_893ec9b0722ed9b60f874465323769d0002156214fc6a09c050a8d5aec0f42d8 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCFileDownloadManager::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x28) = 0;
+  *(undefined8 *)(param_1 + 0x20) = 0;
+  *(undefined8 *)(param_1 + 0x18) = 0;
+  _objc_destroyWeak(param_1 + 0x10);
+  return;
+}
+
+

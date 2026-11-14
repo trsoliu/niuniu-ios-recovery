@@ -1,0 +1,225 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* VideoDownloadUtils.sharedInstance | 0x1000e21c8 | ev_d0b9c2230273f9ea526df07b82a75b415159e3e3713cbf53f6602a78de6a386d */
+
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID VideoDownloadUtils::sharedInstance(ID param_1,SEL param_2)
+
+{
+  undefined *local_38;
+  undefined8 local_30;
+  code *local_28;
+  undefined *puStack_20;
+  ID local_18;
+  
+  local_38 = PTR___NSConcreteStackBlock_101d78760;
+  local_30 = 0xc0000000;
+  local_28 = FUN_1000e223c;
+  puStack_20 = &UNK_101d7b650;
+  if (lRam000000010243f248 != -1) {
+    local_18 = param_1;
+    _dispatch_once(0x10243f248,&local_38);
+  }
+  return IRam000000010243f240;
+}
+
+
+
+/* VideoDownloadUtils.init | 0x1000e2268 | ev_fc5433b0651c5da174b59804f4edf2b6e50c4e9ce64f61c8c487d6acf454f282 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID VideoDownloadUtils::init(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined1 auVar2 [16];
+  undefined1 auVar3 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::VideoDownloadUtils;
+  local_40 = param_1;
+  IVar1 = _objc_msgSendSuper2(&local_40,"init");
+  if (IVar1 != 0) {
+    auVar2 = _objc_alloc(&objc::class_t::AFURLSessionManager);
+    auVar3 = FUN_10152d648(&_OBJC_CLASS___NSURLSessionConfiguration,auVar2._8_8_,&cf__r_rck_WN_);
+    auVar2 = FUN_101567388(auVar2._0_8_,auVar3._8_8_,auVar3._0_8_);
+    FUN_1015a2928(IVar1,auVar2._8_8_,auVar2._0_8_);
+  }
+  return IVar1;
+}
+
+
+
+/* VideoDownloadUtils.getSuffixName: | 0x1000e2314 | ev_a9444b1e020969c142b2d5e8ae60885b7aa6824a672a6d3e16f55387ba60f6ce */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID VideoDownloadUtils::getSuffixName_(ID param_1,SEL param_2,ID param_3)
+
+{
+  cfstringStruct *pcVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_1015750a8();
+  if ((auVar2._0_8_ == 0) ||
+     (auVar2 = FUN_10158fce8(param_3,auVar2._8_8_,&cf__,4), auVar2._0_8_ == 0x7fffffffffffffff)) {
+    pcVar1 = &::cf___;
+  }
+  else {
+    pcVar1 = (cfstringStruct *)FUN_1015ec3a8(param_3,auVar2._8_8_,auVar2._0_8_ + 1);
+  }
+  return (ID)pcVar1;
+}
+
+
+
+/* VideoDownloadUtils.getDownloadRootDir | 0x1000e2390 | ev_ea396b9fc85e3212de0de8f0d7f8e6997f36bb66ab3e5a672d105f81cf133cf0 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID VideoDownloadUtils::getDownloadRootDir(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined1 auVar2 [16];
+  undefined1 auVar3 [16];
+  
+  auVar2 = FUN_101588d48(&_OBJC_CLASS___NSString);
+  IVar1 = FUN_1015eb848(auVar2._0_8_,auVar2._8_8_,&cf_nnc_file_download);
+  auVar2 = FUN_101546048(&_OBJC_CLASS___NSFileManager);
+  auVar3 = FUN_101551e08(auVar2._0_8_,auVar2._8_8_,IVar1);
+  if ((auVar3._0_8_ & 1) == 0) {
+    FUN_101540e08(auVar2._0_8_,auVar3._8_8_,IVar1,1,0,0);
+  }
+  return IVar1;
+}
+
+
+
+/* VideoDownloadUtils.getItemDirName: | 0x1000e2428 | ev_9bf67419da085dcabeb561fa5a7a621b8720557bb90b8c44306ce13fa9e6ba15 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID VideoDownloadUtils::getItemDirName_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  
+  uVar1 = FUN_101557f68(&objc::class_t::NNCDownloadDB);
+  IVar2 = FUN_10157b008(uVar1);
+  return IVar2;
+}
+
+
+
+/* VideoDownloadUtils.getAbsoulteDir: | 0x1000e2474 | ev_a15ef48043f27e45b30cefeee9e6767fedacb2c4655ff846e2981966f43b3fd3 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID VideoDownloadUtils::getAbsoulteDir_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined1 auVar2 [16];
+  undefined1 auVar3 [16];
+  
+  auVar2 = FUN_101557b68(param_1);
+  IVar1 = FUN_1015eb848(auVar2._0_8_,auVar2._8_8_,param_3);
+  auVar2 = FUN_101546048(&_OBJC_CLASS___NSFileManager);
+  auVar3 = FUN_101551e08(auVar2._0_8_,auVar2._8_8_,IVar1);
+  if ((auVar3._0_8_ & 1) == 0) {
+    FUN_101540e08(auVar2._0_8_,auVar3._8_8_,IVar1,1,0,0);
+  }
+  return IVar1;
+}
+
+
+
+/* VideoDownloadUtils.getAbsoulteDirNotCreate: | 0x1000e2524 | ev_c5c5fc90046e035e187e622f992eb57c3a619f4cd8caa05876da1534c88bc490 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID VideoDownloadUtils::getAbsoulteDirNotCreate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_101557b68(param_1);
+  IVar1 = FUN_1015eb848(auVar2._0_8_,auVar2._8_8_,param_3);
+  return IVar1;
+}
+
+
+
+/* VideoDownloadUtils.afDownloadManager | 0x1000e2590 | ev_1a824d3db0878c33e8eba638033b1e0fad016309867a78d951b0783871ceff99 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID VideoDownloadUtils::afDownloadManager(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* VideoDownloadUtils.setAfDownloadManager: | 0x1000e2598 | ev_8ef452ebe2b6eb656d11331a0c3f625a66c57a70b31e942649b7d0b8ed504a71 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void VideoDownloadUtils::setAfDownloadManager_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* VideoDownloadUtils..cxx_destruct | 0x1000e25a4 | ev_533de538a3c6717f246568d54f7aa95ca537dba3033d9887cca1b91c03cb2d91 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void VideoDownloadUtils::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

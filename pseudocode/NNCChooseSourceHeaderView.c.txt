@@ -1,0 +1,640 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCChooseSourceHeaderView.initWithFrame: | 0x1000d2b54 | ev_73266bbe322582e804e757290fca3e941f47ec566e23f3741608b99565fd7e23 */
+
+/* Function Stack Size: 0x30 bytes */
+
+ID NNCChooseSourceHeaderView::initWithFrame_(ID param_1,SEL param_2,CGRect param_3)
+
+{
+  ID IVar1;
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCChooseSourceHeaderView;
+  local_30 = param_1;
+  IVar1 = _objc_msgSendSuper2(param_3.field0_0x0.field0_0x0,param_3.field0_0x0.field1_0x8,
+                              param_3.field1_0x10.field0_0x0,param_3.field1_0x10.field1_0x8,
+                              &local_30,"initWithFrame:");
+  if (IVar1 != 0) {
+    FUN_101541948(IVar1);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCChooseSourceHeaderView.createView | 0x1000d2ba4 | ev_55f865064aeb48361beb6ab6b79980add5997e91d8f332bdf7972a5def65f1d7 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCChooseSourceHeaderView::createView(ID param_1,SEL param_2)
+
+{
+  undefined *puVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  SEL extraout_x1_03;
+  SEL extraout_x1_04;
+  undefined8 extraout_x1_05;
+  SEL extraout_x1_06;
+  undefined8 extraout_x1_07;
+  undefined8 extraout_x1_08;
+  SEL extraout_x1_09;
+  SEL extraout_x1_10;
+  SEL extraout_x1_11;
+  SEL extraout_x1_12;
+  SEL extraout_x1_13;
+  SEL extraout_x1_14;
+  undefined8 extraout_x1_15;
+  SEL extraout_x1_16;
+  SEL extraout_x1_17;
+  SEL extraout_x1_18;
+  SEL extraout_x1_19;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  undefined8 uVar6;
+  undefined8 uVar7;
+  undefined1 auVar8 [16];
+  undefined1 auVar9 [16];
+  undefined *local_d8;
+  undefined8 local_d0;
+  code *local_c8;
+  undefined *puStack_c0;
+  undefined1 auStack_b8 [8];
+  undefined *local_b0;
+  undefined8 local_a8;
+  code *local_a0;
+  undefined *puStack_98;
+  undefined1 auStack_90 [8];
+  undefined1 auStack_88 [8];
+  
+  auVar8 = FUN_10153a2e8(&_OBJC_CLASS___UIColor);
+  FUN_1015a5908(param_1,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1,0);
+  FUN_1015a6a88(param_1,auVar8._8_8_,auVar8._0_8_);
+  uVar2 = FUN_10153c008(0x3e99999a,&_OBJC_CLASS___UIColor,extraout_x1_00,0);
+  auVar8 = FUN_101530968(param_1);
+  FUN_1015a5908(auVar8._0_8_,auVar8._8_8_,uVar2);
+  _objc_initWeak(auStack_88,param_1);
+  uVar2 = FUN_101530968(param_1);
+  puVar1 = PTR___NSConcreteStackBlock_101d78760;
+  local_b0 = PTR___NSConcreteStackBlock_101d78760;
+  local_a8 = 0xc2000000;
+  local_a0 = FUN_1000d3224;
+  puStack_98 = &UNK_101d7ba30;
+  _objc_copyWeak(auStack_90,auStack_88);
+  FUN_1015a70e8(uVar2,extraout_x1_01,0x40,&local_b0);
+  auVar8 = FUN_101530968(param_1);
+  FUN_101527148(param_1,auVar8._8_8_,auVar8._0_8_);
+  _objc_alloc(&_OBJC_CLASS___UIView);
+  uVar4 = *(undefined8 *)PTR__CGRectZero_101d78140;
+  uVar5 = *(undefined8 *)(PTR__CGRectZero_101d78140 + 8);
+  uVar6 = *(undefined8 *)(PTR__CGRectZero_101d78140 + 0x10);
+  uVar7 = *(undefined8 *)(PTR__CGRectZero_101d78140 + 0x18);
+  auVar8 = FUN_101564e08(uVar4,uVar5,uVar6,uVar7);
+  FUN_1015abde8(param_1,auVar8._8_8_,auVar8._0_8_);
+  FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_02,&cf_TextBgViewColo);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_03);
+  FUN_1015a5908(IVar3);
+  FUN_10153e288(param_1,extraout_x1_04);
+  FUN_101527148(param_1);
+  auVar8 = FUN_1015813c8(&_OBJC_CLASS___UILabel);
+  FUN_1015d7f48(param_1,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_1015f0328(param_1);
+  FUN_1015d6f48(auVar8._0_8_,auVar8._8_8_,1);
+  uVar2 = FUN_101531668(0x4032000000000000,&_OBJC_CLASS___UIFont);
+  auVar8 = FUN_1015f0328(param_1);
+  FUN_1015b4788(auVar8._0_8_,auVar8._8_8_,uVar2);
+  uVar2 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_05,&cf_myBgColor);
+  auVar8 = FUN_1015f0328(param_1);
+  FUN_1015d6fa8(auVar8._0_8_,auVar8._8_8_,uVar2);
+  auVar8 = FUN_1015f0328(param_1);
+  FUN_1015d6f08(auVar8._0_8_,auVar8._8_8_,&cf_RbcDn);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_06);
+  auVar8 = FUN_1015f0328(param_1);
+  FUN_101527148(IVar3,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1_07,0);
+  FUN_1015aa708(param_1,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_10153b128(param_1);
+  auVar9 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar8._8_8_,&cf_nnc_ic_close);
+  FUN_1015b8468(auVar8._0_8_,auVar9._8_8_,auVar9._0_8_,0);
+  uVar2 = FUN_10153b128(param_1);
+  local_d8 = puVar1;
+  local_d0 = 0xc2000000;
+  local_c8 = FUN_1000d3250;
+  puStack_c0 = &UNK_101d7ba30;
+  _objc_copyWeak(auStack_b8,auStack_88);
+  FUN_1015a70e8(uVar2,extraout_x1_08,0x40,&local_d8);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_09);
+  auVar8 = FUN_10153b128(param_1);
+  FUN_101527148(IVar3,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = _objc_alloc(&_OBJC_CLASS___UITableView);
+  auVar8 = FUN_101565388(uVar4,uVar5,uVar6,uVar7,auVar8._0_8_,auVar8._8_8_,1);
+  FUN_1015d62e8(param_1,auVar8._8_8_,auVar8._0_8_);
+  IVar3 = FUN_1015edca8(param_1,extraout_x1_10);
+  FUN_1015aeee8(IVar3,extraout_x1_11,param_1);
+  IVar3 = FUN_1015edca8(param_1,extraout_x1_12);
+  FUN_1015ae568(IVar3);
+  IVar3 = FUN_1015edca8(param_1,extraout_x1_13);
+  FUN_1015d2308(IVar3);
+  IVar3 = FUN_1015edca8(param_1,extraout_x1_14);
+  FUN_1015d0928(IVar3);
+  FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_15,&cf_myTextColor);
+  IVar3 = FUN_1015edca8(param_1,extraout_x1_16);
+  FUN_1015a5908(IVar3);
+  IVar3 = FUN_1015edca8(param_1,extraout_x1_17);
+  FUN_1015ac048(IVar3);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_18);
+  FUN_1015edca8(param_1,extraout_x1_19);
+  FUN_101527148(IVar3);
+  _objc_destroyWeak(auStack_b8);
+  _objc_destroyWeak(auStack_90);
+  _objc_destroyWeak(auStack_88);
+  return;
+}
+
+
+
+/* NNCChooseSourceHeaderView.tableView:numberOfRowsInSection: | 0x1000d327c | ev_d709724f37e5036583ec382e3d3b69889507b1b4be8774893755b6264b628d79 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+long_long NNCChooseSourceHeaderView::tableView_numberOfRowsInSection_
+                    (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  long_long lVar3;
+  
+  IVar1 = FUN_1015f8c48(param_1,param_2);
+  uVar2 = FUN_1015e6768(IVar1);
+  lVar3 = FUN_10153f908(uVar2);
+  return lVar3;
+}
+
+
+
+/* NNCChooseSourceHeaderView.tableView:cellForRowAtIndexPath: | 0x1000d32d8 | ev_85a4189fe1036e395dca99adcedae38aa584a42b0f52569af5c97413eb46014e */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID NNCChooseSourceHeaderView::tableView_cellForRowAtIndexPath_
+             (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  ID IVar1;
+  SEL extraout_x1;
+  undefined1 auVar2 [16];
+  
+  IVar1 = FUN_101546e68(param_3,param_2,&cf_NNCChooseSourceCell);
+  if (IVar1 == 0) {
+    IVar1 = FUN_101538148(&objc::class_t::NNCChooseSourceCell);
+  }
+  auVar2 = FUN_10159ad88(param_4);
+  FUN_1015b8ce8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_101542c28(param_1);
+  FUN_1015d0468(IVar1,auVar2._8_8_,auVar2._0_8_);
+  FUN_1015f8c48(param_1,extraout_x1);
+  FUN_1015b8d68(IVar1);
+  auVar2 = FUN_10153a2e8(&_OBJC_CLASS___UIColor);
+  FUN_1015a5908(IVar1,auVar2._8_8_,auVar2._0_8_);
+  return IVar1;
+}
+
+
+
+/* NNCChooseSourceHeaderView.tableView:heightForRowAtIndexPath: | 0x1000d33cc | ev_d5024e7cd232b11865978dbdd65a7d79b5ed850cf60c6565ff16528997fcc734 */
+
+/* Function Stack Size: 0x20 bytes */
+
+double NNCChooseSourceHeaderView::tableView_heightForRowAtIndexPath_
+                 (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  return 110.0;
+}
+
+
+
+/* NNCChooseSourceHeaderView.tableView:viewForHeaderInSection: | 0x1000d33d8 | ev_8982e961db11029e975d9f51cf3f72b4715414ffb3c0001944ecdb286b771715 */
+
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID NNCChooseSourceHeaderView::tableView_viewForHeaderInSection_
+             (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_1015813c8(&_OBJC_CLASS___UIView);
+  return IVar1;
+}
+
+
+
+/* NNCChooseSourceHeaderView.tableView:heightForHeaderInSection: | 0x1000d33f4 | ev_867c6c17fc4006a3fbea91581981e7df2b7f6f14e05068ee31e45aee75ba192b */
+
+/* Function Stack Size: 0x20 bytes */
+
+double NNCChooseSourceHeaderView::tableView_heightForHeaderInSection_
+                 (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  return 10.0;
+}
+
+
+
+/* NNCChooseSourceHeaderView.tableView:viewForFooterInSection: | 0x1000d33fc | ev_50a3d5fcdd30436d4fcc419284e00a25f23201f1e05eaf1e266c56f89a0bb0e9 */
+
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID NNCChooseSourceHeaderView::tableView_viewForFooterInSection_
+             (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_1015813c8(&_OBJC_CLASS___UIView);
+  return IVar1;
+}
+
+
+
+/* NNCChooseSourceHeaderView.tableView:heightForFooterInSection: | 0x1000d3418 | ev_079e034bcd4e09e0dbc7dc8d6fd1fcb6a82658791941c5f6b62810250bdb60a6 */
+
+/* Function Stack Size: 0x20 bytes */
+
+double NNCChooseSourceHeaderView::tableView_heightForFooterInSection_
+                 (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  return 0.009999999776482582;
+}
+
+
+
+/* NNCChooseSourceHeaderView.tableView:didSelectRowAtIndexPath: | 0x1000d3424 | ev_98421e0faa789fa7e568149c23ed380383806db192d971163ce92859749c21a7 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCChooseSourceHeaderView::tableView_didSelectRowAtIndexPath_
+               (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  long lVar1;
+  undefined8 uVar2;
+  SEL extraout_x1;
+  SEL pcVar3;
+  undefined1 auVar4 [16];
+  
+  auVar4 = FUN_10159ad88(param_4);
+  FUN_1015ad748(param_1,auVar4._8_8_,auVar4._0_8_);
+  auVar4 = FUN_101539b28(param_1);
+  pcVar3 = auVar4._8_8_;
+  if (auVar4._0_8_ != 0) {
+    lVar1 = FUN_101539b28(param_1);
+    uVar2 = FUN_101542c28(param_1);
+    (**(code **)(lVar1 + 0x10))(lVar1,uVar2);
+    pcVar3 = extraout_x1;
+  }
+  FUN_101593bc8(param_1,pcVar3);
+  return;
+}
+
+
+
+/* NNCChooseSourceHeaderView.layoutSubviews | 0x1000d34a8 | ev_764bde792b22dfb29a963706f6a6a6a7cb2ddf1c5b33702cc9507d4fb34835f2 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCChooseSourceHeaderView::layoutSubviews(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  SEL extraout_x1_03;
+  undefined8 uVar3;
+  double dVar4;
+  double dVar5;
+  undefined8 in_d1;
+  undefined8 in_d2;
+  undefined8 in_d3;
+  double dVar6;
+  ID local_70;
+  class_t *pcStack_68;
+  
+  pcStack_68 = &objc::class_t::NNCChooseSourceHeaderView;
+  local_70 = param_1;
+  _objc_msgSendSuper2(&local_70,"layoutSubviews");
+  uVar3 = FUN_101531d88(param_1);
+  uVar1 = FUN_101530968(param_1);
+  FUN_1015b4b08(uVar3,in_d1,in_d2,in_d3,uVar1);
+  dVar4 = (double)FUN_1015fc468(param_1);
+  dVar6 = dRam00000001024978c8 + dVar4 * 9.0 * 0.0625;
+  uVar1 = FUN_1015fc468(param_1);
+  dVar4 = (double)FUN_10155e568(param_1);
+  dVar5 = (double)FUN_1015fc468(param_1);
+  dVar5 = dRam00000001024978c8 + dVar5 * 9.0 * 0.0625;
+  IVar2 = FUN_10153e288(param_1,extraout_x1);
+  FUN_1015b4b08(0,dVar6,uVar1,dVar4 - dVar5,IVar2);
+  uVar3 = FUN_1015fc468(param_1);
+  uVar1 = FUN_1015f0328(param_1);
+  FUN_1015b4b08(0,0x4024000000000000,uVar3,0x4044000000000000,uVar1);
+  uVar1 = FUN_10153b128(param_1);
+  FUN_1015b4b08(0,0x4014000000000000,0x4049000000000000,0x4049000000000000,uVar1);
+  dVar4 = (double)FUN_1015fc468(param_1);
+  uVar1 = FUN_10153b128(param_1);
+  FUN_1015ce268(dVar4 + -10.0,uVar1);
+  uVar1 = FUN_10153b128(param_1);
+  FUN_1015b8608(0x4030000000000000,0x4030000000000000,0x4030000000000000,0x4030000000000000,uVar1);
+  uVar1 = FUN_1015f0328(param_1);
+  dVar4 = (double)FUN_1015319c8(uVar1);
+  uVar1 = FUN_1015fc468(param_1);
+  IVar2 = FUN_1015edca8(param_1,extraout_x1_00);
+  FUN_1015b4b08(0,dVar4 + 10.0,uVar1,0,IVar2);
+  IVar2 = FUN_10153e288(param_1,extraout_x1_01);
+  dVar4 = (double)FUN_10155e568(IVar2);
+  IVar2 = FUN_1015edca8(param_1,extraout_x1_02);
+  dVar5 = (double)FUN_1015f0ce8(IVar2);
+  IVar2 = FUN_1015edca8(param_1,extraout_x1_03);
+  FUN_1015b6f28((dVar4 + -10.0) - dVar5,IVar2);
+  return;
+}
+
+
+
+/* NNCChooseSourceHeaderView.videoBean | 0x1000d3788 | ev_a08e2dd81f542ea48eadd927c2ea79cdf9b8c5c63f5d7d08454454324e7b5571 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCChooseSourceHeaderView::videoBean(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__videoBean);
+}
+
+
+
+/* NNCChooseSourceHeaderView.setVideoBean: | 0x1000d3798 | ev_b4b79c6f3247b95efde0485200d6ae423a731dfd94442c20f037bd44f3552f23 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCChooseSourceHeaderView::setVideoBean_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__videoBean) = param_3;
+  return;
+}
+
+
+
+/* NNCChooseSourceHeaderView.currentIndex | 0x1000d37ac | ev_1107a528ae523ec014f6565a54cf39f43d103f8a83150e5ebb5bbedb8d989823 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+int NNCChooseSourceHeaderView::currentIndex(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + (long)__currentIndex);
+}
+
+
+
+/* NNCChooseSourceHeaderView.setCurrentIndex: | 0x1000d37bc | ev_2904f10ebfd88ad5a1abcd11f6217df14c4c13d2d256c2de0cf9c55a268429b9 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCChooseSourceHeaderView::setCurrentIndex_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + (long)__currentIndex) = param_3;
+  return;
+}
+
+
+
+/* NNCChooseSourceHeaderView.tableView | 0x1000d37cc | ev_4d2e3b91bc047132d7ba6ffec65a28b4c65dcba5e2f3ec7c37e4d3d4e98085a0 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCChooseSourceHeaderView::tableView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__tableView);
+}
+
+
+
+/* NNCChooseSourceHeaderView.setTableView: | 0x1000d37dc | ev_55967e18257a6a2176a84499cf471b3a53a119c60b8f68e5ddc8c110260c5015 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCChooseSourceHeaderView::setTableView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__tableView) = param_3;
+  return;
+}
+
+
+
+/* NNCChooseSourceHeaderView.chooseSourceBlock | 0x1000d37f0 | ev_a8bab867acec45aa1fe4c9fe935a21145cf41323205b3b83659f95449369efe7 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCChooseSourceHeaderView::chooseSourceBlock(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__chooseSourceBlock);
+}
+
+
+
+/* NNCChooseSourceHeaderView.setChooseSourceBlock: | 0x1000d3800 | ev_6db7a9a7e78f054ddf06086f482513bf03de675d1bba10c80593136cc1a46152 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCChooseSourceHeaderView::setChooseSourceBlock_
+               (ID param_1,SEL param_2,ID param_3,undefined4 param_4)
+
+{
+  *(ID *)(param_1 + (long)__chooseSourceBlock) = param_3;
+  return;
+}
+
+
+
+/* NNCChooseSourceHeaderView.bgButton | 0x1000d380c | ev_c258e5bf558329d39a64102292b2762359c61c5af6e95f56495af2df689fda17 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCChooseSourceHeaderView::bgButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__bgButton);
+}
+
+
+
+/* NNCChooseSourceHeaderView.setBgButton: | 0x1000d381c | ev_70adaf4d071f9859d2f65f31bb0ca065d666ee9add87a78c0d1aad1786cd0b7e */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCChooseSourceHeaderView::setBgButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__bgButton) = param_3;
+  return;
+}
+
+
+
+/* NNCChooseSourceHeaderView.containerView | 0x1000d3830 | ev_7faa22a9632bbd02871b0f16c204325f45026ee64d899cc1626fa60e05a8b18c */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCChooseSourceHeaderView::containerView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__containerView);
+}
+
+
+
+/* NNCChooseSourceHeaderView.setContainerView: | 0x1000d3840 | ev_7b179f6dc83069728a112435ba91e5db7af7842753c9b2ff59144cca979366ae */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCChooseSourceHeaderView::setContainerView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__containerView) = param_3;
+  return;
+}
+
+
+
+/* NNCChooseSourceHeaderView.titleLabel | 0x1000d3854 | ev_5e286a90084e741ee978cc6c5172cd2bdd44becaca198e04bf3d55ebe033fe49 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCChooseSourceHeaderView::titleLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__titleLabel);
+}
+
+
+
+/* NNCChooseSourceHeaderView.setTitleLabel: | 0x1000d3864 | ev_2a9157a9c84113d908212138991369f830a5b1513bbccd1831320f56aa9c7e98 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCChooseSourceHeaderView::setTitleLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__titleLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCChooseSourceHeaderView.closeButton | 0x1000d3878 | ev_32dad1318290ef138bd2400b74270b70647d10d7522c2d10135395866e2b85e7 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCChooseSourceHeaderView::closeButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__closeButton);
+}
+
+
+
+/* NNCChooseSourceHeaderView.setCloseButton: | 0x1000d3888 | ev_b239f8acca6884351346e7769ec0f196c7e1ad337f6e597f1699ad037a89bd76 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCChooseSourceHeaderView::setCloseButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__closeButton) = param_3;
+  return;
+}
+
+
+
+/* NNCChooseSourceHeaderView..cxx_destruct | 0x1000d389c | ev_47f22f91b94f8b6ad7bf8bd0890967bbc923da8463f99004e5a933e7eb9dffeb */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCChooseSourceHeaderView::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__closeButton) = 0;
+  *(undefined8 *)(param_1 + (long)__titleLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__containerView) = 0;
+  *(undefined8 *)(param_1 + (long)__bgButton) = 0;
+  *(undefined8 *)(param_1 + (long)__chooseSourceBlock) = 0;
+  *(undefined8 *)(param_1 + (long)__tableView) = 0;
+  *(undefined8 *)(param_1 + (long)__videoBean) = 0;
+  return;
+}
+
+

@@ -1,0 +1,476 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCVideoCell.awakeFromNib | 0x10003d4a0 | ev_f99b4af0a1eec29767735bcb430295dd48994986438ceaf005d47b513bb0ab7f */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoCell::awakeFromNib(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined1 auVar3 [16];
+  ID local_50;
+  class_t *pcStack_48;
+  
+  pcStack_48 = &objc::class_t::NNCVideoCell;
+  local_50 = param_1;
+  _objc_msgSendSuper2(&local_50,"awakeFromNib");
+  uVar1 = FUN_1015790a8(&_OBJC_CLASS___NSBundle);
+  FUN_101539ca8(&objc::class_t::VideoItemView);
+  auVar3 = _NSStringFromClass();
+  auVar3 = FUN_101576788(uVar1,auVar3._8_8_,auVar3._0_8_,0,0);
+  auVar3 = FUN_101583308(auVar3._0_8_,auVar3._8_8_,0);
+  FUN_1015be108(param_1,auVar3._8_8_,auVar3._0_8_);
+  IVar2 = FUN_10153e7e8(param_1,extraout_x1);
+  auVar3 = FUN_101572868(param_1);
+  FUN_101527148(IVar2,auVar3._8_8_,auVar3._0_8_);
+  uVar1 = FUN_1015790a8(&_OBJC_CLASS___NSBundle);
+  FUN_101539ca8(&objc::class_t::VideoItemView);
+  auVar3 = _NSStringFromClass();
+  auVar3 = FUN_101576788(uVar1,auVar3._8_8_,auVar3._0_8_,0,0);
+  auVar3 = FUN_101583308(auVar3._0_8_,auVar3._8_8_,0);
+  FUN_1015be128(param_1,auVar3._8_8_,auVar3._0_8_);
+  IVar2 = FUN_10153e7e8(param_1,extraout_x1_00);
+  auVar3 = FUN_101572888(param_1);
+  FUN_101527148(IVar2,auVar3._8_8_,auVar3._0_8_);
+  uVar1 = FUN_1015790a8(&_OBJC_CLASS___NSBundle);
+  FUN_101539ca8(&objc::class_t::VideoItemView);
+  auVar3 = _NSStringFromClass();
+  auVar3 = FUN_101576788(uVar1,auVar3._8_8_,auVar3._0_8_,0,0);
+  auVar3 = FUN_101583308(auVar3._0_8_,auVar3._8_8_,0);
+  FUN_1015be148(param_1,auVar3._8_8_,auVar3._0_8_);
+  IVar2 = FUN_10153e7e8(param_1,extraout_x1_01);
+  auVar3 = FUN_1015728a8(param_1);
+  FUN_101527148(IVar2,auVar3._8_8_,auVar3._0_8_);
+  return;
+}
+
+
+
+/* NNCVideoCell.cell | 0x10003d774 | ev_7ede35ccb3ef6c325ff5727f92d35cb1aab611cccf4c4343fee7742acef5a11a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoCell::cell(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined1 auVar3 [16];
+  
+  uVar1 = FUN_1015790a8(&_OBJC_CLASS___NSBundle);
+  FUN_101539ca8(param_1);
+  auVar3 = _NSStringFromClass();
+  auVar3 = FUN_101576788(uVar1,auVar3._8_8_,auVar3._0_8_,0,0);
+  IVar2 = FUN_101583308(auVar3._0_8_,auVar3._8_8_,0);
+  return IVar2;
+}
+
+
+
+/* NNCVideoCell.setType: | 0x10003d81c | ev_257906d24f3442095d82f392339c575db4c73169660a3274275c6d2eaf4dcf86 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCVideoCell::setType_(ID param_1,SEL param_2,int param_3)
+
+{
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  
+  *(int *)(param_1 + (long)__type) = param_3;
+  FUN_1015d95a8(*(undefined8 *)(param_1 + (long)__itemView0));
+  FUN_1015d95a8(*(undefined8 *)(param_1 + (long)__itemView1),extraout_x1,param_3);
+  FUN_1015d95a8(*(undefined8 *)(param_1 + (long)__itemView2),extraout_x1_00,param_3);
+  return;
+}
+
+
+
+/* NNCVideoCell.setDelegate: | 0x10003d87c | ev_410dcb09b1afa7f2e1962236ef9b2e825cccc787211eab66fe93e9db2088aa6a */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoCell::setDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  
+  *(ID *)(param_1 + (long)__delegate) = param_3;
+  FUN_1015aeee8(*(ID *)(param_1 + (long)__itemView0),(SEL)param_3,param_3);
+  FUN_1015aeee8(*(ID *)(param_1 + (long)__itemView1),extraout_x1,param_3);
+  FUN_1015aeee8(*(ID *)(param_1 + (long)__itemView2),extraout_x1_00,param_3);
+  return;
+}
+
+
+
+/* NNCVideoCell.setVideoBeans: | 0x10003d904 | ev_5d7a030852e536bf5d14b60178c4a25d08d20c0bec6e2545c59f5bb69103aa92 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoCell::setVideoBeans_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID *pIVar1;
+  undefined1 auVar2 [16];
+  
+  pIVar1 = (ID *)(param_1 + (long)__videoBeans);
+  *pIVar1 = param_3;
+  auVar2 = FUN_10153f908(*pIVar1);
+  if (auVar2._0_8_ != 0) {
+    auVar2 = FUN_101583328(param_3,auVar2._8_8_,0);
+    FUN_1015dbf48(*(undefined8 *)(param_1 + (long)__itemView0),auVar2._8_8_,auVar2._0_8_);
+  }
+  auVar2 = FUN_10153f908(*pIVar1);
+  if (1 < auVar2._0_8_) {
+    auVar2 = FUN_101583328(param_3,auVar2._8_8_,1);
+    FUN_1015dbf48(*(undefined8 *)(param_1 + (long)__itemView1),auVar2._8_8_,auVar2._0_8_);
+  }
+  auVar2 = FUN_10153f908(*pIVar1);
+  if (2 < auVar2._0_8_) {
+    auVar2 = FUN_101583328(param_3,auVar2._8_8_,2);
+    FUN_1015dbf48(*(undefined8 *)(param_1 + (long)__itemView2),auVar2._8_8_,auVar2._0_8_);
+  }
+  FUN_101574ba8(param_1);
+  return;
+}
+
+
+
+/* NNCVideoCell.setIsThreeItem: | 0x10003da24 | ev_a2cb300eaa7061ad2de21ecdb73904feaf562e4fd2b285d2bfaa85b719a4cd0f */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCVideoCell::setIsThreeItem_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__isThreeItem) = (char)param_3;
+  FUN_101574ba8();
+  return;
+}
+
+
+
+/* NNCVideoCell.layoutSubviews | 0x10003da34 | ev_3e5fb3c423f04c803339118053b1f25d5fcc5312e2edeea5166fe51cd7c6444e */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoCell::layoutSubviews(ID param_1,SEL param_2)
+
+{
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCVideoCell;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"layoutSubviews");
+  FUN_101574ba8(param_1);
+  return;
+}
+
+
+
+/* NNCVideoCell.layoutPosition | 0x10003da7c | ev_e08f2d2c6023dd4b342941c015203b7e3a237ba69038709a37b2fa77eb0da6c1 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoCell::layoutPosition(ID param_1,SEL param_2)
+
+{
+  char cVar1;
+  bool bVar2;
+  bool bVar3;
+  long lVar4;
+  ulong uVar5;
+  undefined8 uVar6;
+  long lVar7;
+  long lVar8;
+  double dVar9;
+  double dVar10;
+  undefined8 uVar11;
+  double dVar12;
+  undefined1 auVar13 [16];
+  
+  dVar9 = (double)FUN_1015fc468();
+  lVar7 = (long)__isThreeItem;
+  cVar1 = *(char *)(param_1 + lVar7);
+  lVar8 = (long)__videoBeans;
+  lVar4 = FUN_10153f908(*(undefined8 *)(param_1 + lVar8));
+  auVar13 = FUN_101572868(param_1);
+  FUN_1015b6fc8(auVar13._0_8_,auVar13._8_8_,lVar4 == 0);
+  uVar5 = FUN_10153f908(*(undefined8 *)(param_1 + lVar8));
+  auVar13 = FUN_101572888(param_1);
+  FUN_1015b6fc8(auVar13._0_8_,auVar13._8_8_,uVar5 < 2);
+  uVar5 = FUN_10153f908(*(undefined8 *)(param_1 + lVar8));
+  if (uVar5 < 3) {
+    bVar2 = true;
+  }
+  else {
+    bVar2 = *(char *)(param_1 + lVar7) == '\0';
+  }
+  bVar3 = cVar1 != '\0';
+  dVar12 = 1.0;
+  if (bVar3) {
+    dVar12 = 2.0;
+  }
+  dVar10 = 2.0;
+  if (bVar3) {
+    dVar10 = 3.0;
+  }
+  dVar10 = ((dVar9 + -30.0) - dVar12 * 12.0) / dVar10;
+  auVar13 = FUN_1015728a8(param_1);
+  FUN_1015b6fc8(auVar13._0_8_,auVar13._8_8_,bVar2);
+  uVar11 = FUN_10155e568(param_1);
+  uVar6 = FUN_101572868(param_1);
+  FUN_1015b4b08(0x402e000000000000,0,dVar10,uVar11,uVar6);
+  uVar6 = FUN_101572868(param_1);
+  dVar9 = (double)FUN_10159a248(uVar6);
+  uVar11 = FUN_10155e568(param_1);
+  uVar6 = FUN_101572888(param_1);
+  FUN_1015b4b08(dVar9 + 12.0,0,dVar10,uVar11,uVar6);
+  uVar6 = FUN_101572888(param_1);
+  dVar9 = (double)FUN_10159a248(uVar6);
+  uVar11 = FUN_10155e568(param_1);
+  uVar6 = FUN_1015728a8(param_1);
+  FUN_1015b4b08(dVar9 + 12.0,0,dVar10,uVar11,uVar6);
+  return;
+}
+
+
+
+/* NNCVideoCell.setSelected:animated: | 0x10003dca8 | ev_5af2232f2565a71ddada9eebdce5ad2fdd1140b528d8d8d1865bb4dacceee5b7 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoCell::setSelected_animated_(ID param_1,SEL param_2,bool param_3,bool param_4)
+
+{
+  return;
+}
+
+
+
+/* NNCVideoCell.setHighlighted:animated: | 0x10003dcac | ev_521d4190ef1d6c854148d238edd40d805a7993983b9aeff3e4512fd6d3b096cd */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoCell::setHighlighted_animated_(ID param_1,SEL param_2,bool param_3,bool param_4)
+
+{
+  return;
+}
+
+
+
+/* NNCVideoCell.nnccellHeight: | 0x10003dcb0 | ev_9f0b16de971399c444b59b90cfcf6dccddf583dcd76df910fca7b78c32699e73 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x14 bytes */
+
+double NNCVideoCell::nnccellHeight_(ID param_1,SEL param_2,bool param_3)
+
+{
+  undefined8 uVar1;
+  double dVar2;
+  double in_d2;
+  
+  if (param_3 == 0) {
+    dVar2 = 140.0;
+  }
+  else {
+    uVar1 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+    FUN_101531d88(uVar1);
+    dVar2 = (((in_d2 + -30.0 + -24.0) / 3.0) * 130.0) / 93.0 + 30.0;
+  }
+  return dVar2;
+}
+
+
+
+/* NNCVideoCell.type | 0x10003dd3c | ev_b419de9e9ec28dc9330e1b668e05e6d9bb662761827bab5a289a817634632d8d */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+int NNCVideoCell::type(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + (long)__type);
+}
+
+
+
+/* NNCVideoCell.isThreeItem | 0x10003dd4c | ev_a6cbde25d20e9424a8479d6e105280fcc0e0c1ec98b027839c0ffc42a810afdd */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCVideoCell::isThreeItem(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__isThreeItem);
+}
+
+
+
+/* NNCVideoCell.videoBeans | 0x10003dd5c | ev_8ca2fbabfcfd03d34f5ecd0438d47b1643d8a225552f6c32cce5ec113ab44a33 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoCell::videoBeans(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__videoBeans);
+}
+
+
+
+/* NNCVideoCell.delegate | 0x10003dd6c | ev_ab7c4ea19c05d678e6dd6ec04cb73405622f1ad85df90536ade3ca11a2ff23e1 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoCell::delegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__delegate);
+}
+
+
+
+/* NNCVideoCell.itemView0 | 0x10003dd8c | ev_fcfc4c246f7abd7ba8e2d9532214c4d8a0bbdb4fca9b31de47321e0e3fa6c3b5 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoCell::itemView0(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__itemView0);
+}
+
+
+
+/* NNCVideoCell.setItemView0: | 0x10003dd9c | ev_080f588f72992f9ed79542bf38763050a86f714f00eb55bdfc225e405aad5660 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoCell::setItemView0_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__itemView0) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoCell.itemView1 | 0x10003ddb0 | ev_f9eb4746a9e7c0dfedd0b3dc37cb3cba1ce7076fe1943747e86f59a8060272bb */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoCell::itemView1(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__itemView1);
+}
+
+
+
+/* NNCVideoCell.setItemView1: | 0x10003ddc0 | ev_cd7d46dca5f428637028b600d3d33611c577632ef01d38240e241a74710a99fa */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoCell::setItemView1_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__itemView1) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoCell.itemView2 | 0x10003ddd4 | ev_936451d507e6403f17124c3f5b60edb3d070d53fe79b56ec718df7add58f3bfd */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoCell::itemView2(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__itemView2);
+}
+
+
+
+/* NNCVideoCell.setItemView2: | 0x10003dde4 | ev_8c322a3f428aacd5fbb60738dcd03332af4972cf02503b22a4ba42946a91e510 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoCell::setItemView2_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__itemView2) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoCell..cxx_destruct | 0x10003ddf8 | ev_a14db81410e1ad6812747efdfec528448b9ea34d45870981bd8fa406f34ce8b1 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoCell::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__itemView2) = 0;
+  *(undefined8 *)(param_1 + (long)__itemView1) = 0;
+  *(undefined8 *)(param_1 + (long)__itemView0) = 0;
+  _objc_destroyWeak(param_1 + (long)__delegate);
+  *(undefined8 *)(param_1 + (long)__videoBeans) = 0;
+  return;
+}
+
+

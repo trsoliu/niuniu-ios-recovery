@@ -1,0 +1,204 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCFileEpisodeBean.modelWithDict: | 0x10005aa9c | ev_68cfddb9ecaa90541018d07e797107f5ed5502c568f6b4ba5f9e81228330a9cf */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCFileEpisodeBean::modelWithDict_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_1015813c8(&objc::class_t::NNCFileEpisodeBean);
+  IVar1 = auVar2._0_8_;
+  auVar2 = FUN_1015ebae8(param_3,auVar2._8_8_,&cf_name);
+  FUN_1015d7e08(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1,&cf_url);
+  FUN_1015da848(IVar1,auVar2._8_8_,auVar2._0_8_);
+  return IVar1;
+}
+
+
+
+/* NNCFileEpisodeBean.initWithCoder: | 0x10005ab48 | ev_c835dd64c61e3fbcba472c0b1e4a651158928953e8cffb92312853235bae028a */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCFileEpisodeBean::initWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCFileEpisodeBean;
+  local_40 = param_1;
+  auVar2 = _objc_msgSendSuper2(&local_40,"init");
+  IVar1 = auVar2._0_8_;
+  if (IVar1 != 0) {
+    auVar2 = FUN_101545868(param_3,auVar2._8_8_,&cf_title);
+    FUN_1015d7e08(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1,&cf_url);
+    FUN_1015da848(IVar1,auVar2._8_8_,auVar2._0_8_);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCFileEpisodeBean.encodeWithCoder: | 0x10005ac10 | ev_0f28ed9cdbfe21c2f6f46faca75eaedfe86d1c0f44172be74026f10cc7fa2dda */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileEpisodeBean::encodeWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_1015f01e8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_title);
+  auVar1 = FUN_1015f69c8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_url);
+  return;
+}
+
+
+
+/* NNCFileEpisodeBean.title | 0x10005aca4 | ev_7edaf2869926634b974883a06ba71be161e93a07ef965dbe5bf299684b721cfa */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileEpisodeBean::title(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCFileEpisodeBean.setTitle: | 0x10005acac | ev_b528fbec37691e80c63ee6be0e2c6914da81802762971f2bb91efdf4e2cf4c0b */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileEpisodeBean::setTitle_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCFileEpisodeBean.url | 0x10005acb4 | ev_e7d30b7befd297c8f65ad01ca86cbd840f5a56370b488c882995ddf110d8addd */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileEpisodeBean::url(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x18);
+}
+
+
+
+/* NNCFileEpisodeBean.setUrl: | 0x10005acbc | ev_432483b814622377c5688dbf82d1ab64cac87b685cdbe9d2f7ba04b2d1edf998 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileEpisodeBean::setUrl_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* NNCFileEpisodeBean.index | 0x10005acc4 | ev_5e55e0be3a9d2d67dd3a0a0da56dc20f5a0fe45a486eb899e7538612967cbfb6 */
+
+/* Function Stack Size: 0x10 bytes */
+
+char * NNCFileEpisodeBean::index(char *param_1,int param_2)
+
+{
+  return (char *)(ulong)*(uint *)(param_1 + 8);
+}
+
+
+
+/* NNCFileEpisodeBean.setIndex: | 0x10005accc | ev_fdc8329e7267a4502f8e5eb9e5a5cbcb757c0c45ab1b87ded6cc22f4703c66d6 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void NNCFileEpisodeBean::setIndex_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCFileEpisodeBean.localPath | 0x10005acd4 | ev_38551bea2e0c4bafa20f0fe38f3be7359d03898711b9ef043e78aaac76c470d2 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileEpisodeBean::localPath(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x20);
+}
+
+
+
+/* NNCFileEpisodeBean.setLocalPath: | 0x10005acdc | ev_56b0565354483c275cbb926399cb6d4c98e9c099c381120159bb9d4f7da2d3d5 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileEpisodeBean::setLocalPath_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x20) = param_3;
+  return;
+}
+
+
+
+/* NNCFileEpisodeBean..cxx_destruct | 0x10005ace4 | ev_75b50c056b3129e6eb654bdd99513177dd51c8fb74cb49c5b12cd46e8112736c */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCFileEpisodeBean::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x20) = 0;
+  *(undefined8 *)(param_1 + 0x18) = 0;
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  return;
+}
+
+

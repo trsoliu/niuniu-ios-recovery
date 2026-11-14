@@ -1,0 +1,331 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* BannerItemView.awakeFromNib | 0x100020f68 | ev_b051384a9043bfb506ab696d65864b89bb1ee7ed2bb5297d576d9af5c4cd5e17 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void BannerItemView::awakeFromNib(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined1 auVar3 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::BannerItemView;
+  local_40 = param_1;
+  _objc_msgSendSuper2(&local_40,"awakeFromNib");
+  IVar1 = FUN_101574688(param_1,extraout_x1);
+  FUN_1015ac5e8(0x4018000000000000,IVar1);
+  IVar1 = FUN_101574688(param_1,extraout_x1_00);
+  FUN_1015c25a8(IVar1);
+  uVar2 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_01,0xf5f5f5);
+  auVar3 = FUN_101539d28(param_1);
+  FUN_1015d6fa8(auVar3._0_8_,auVar3._8_8_,uVar2);
+  auVar3 = FUN_101539d28(param_1);
+  IVar1 = FUN_101574688(auVar3._0_8_,auVar3._8_8_);
+  FUN_1015c25a8(IVar1);
+  uVar2 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_02,0xf5a623);
+  auVar3 = FUN_101539d28(param_1);
+  FUN_1015a5908(auVar3._0_8_,auVar3._8_8_,uVar2);
+  uVar2 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_03,0xf5f5f5);
+  auVar3 = FUN_101553648(param_1);
+  FUN_1015d6fa8(auVar3._0_8_,auVar3._8_8_,uVar2);
+  return;
+}
+
+
+
+/* BannerItemView.refresh | 0x100021110 | ev_1afb2476888bbfe6eef40b774339b565657d79081457e69f69f1e887de668f87 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+int __thiscall BannerItemView::refresh(BannerItemView *this)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  
+  uVar1 = FUN_101530ac8();
+  uVar2 = FUN_101523528(this);
+  auVar3 = FUN_101540108(uVar2);
+  auVar3 = FUN_1015156a8(&_OBJC_CLASS___NSURL,auVar3._8_8_,auVar3._0_8_);
+  FUN_10159db08(uVar1,auVar3._8_8_,auVar3._0_8_);
+  return 0;
+}
+
+
+
+/* BannerItemView.setAdDataItemModel: | 0x1000211b0 | ev_160c8a8b42a34bf31ad0f9b27c8d3ea2421a7772393d8772e4c90cdc93d9ec6f */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void BannerItemView::setAdDataItemModel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  ID IVar4;
+  ulong uVar5;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  double dVar6;
+  undefined8 uVar7;
+  undefined1 auVar8 [16];
+  
+  *(ID *)(param_1 + (long)__adDataItemModel) = param_3;
+  uVar2 = FUN_101530ac8(param_1);
+  auVar8 = FUN_101540108(param_3);
+  auVar8 = FUN_1015156a8(&_OBJC_CLASS___NSURL,auVar8._8_8_,auVar8._0_8_);
+  FUN_10159db08(uVar2,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_1015f2d68(param_3);
+  iVar1 = FUN_10156d5e8(&cf_native,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_1015f0328(param_1);
+  if (iVar1 == 0) {
+    FUN_1015b6fc8(auVar8._0_8_,auVar8._8_8_,1);
+    auVar8 = FUN_101539d28(param_1);
+    FUN_1015b6fc8(auVar8._0_8_,auVar8._8_8_,1);
+    auVar8 = FUN_101553648(param_1);
+    FUN_1015b6fc8(auVar8._0_8_,auVar8._8_8_,1);
+  }
+  else {
+    FUN_1015b6fc8(auVar8._0_8_,auVar8._8_8_,0);
+    uVar2 = FUN_10157e4a8(param_3);
+    auVar8 = FUN_1015f0328(param_1);
+    FUN_1015d6f08(auVar8._0_8_,auVar8._8_8_,uVar2);
+    auVar8 = FUN_10153ba08(param_3);
+    uVar2 = FUN_10153d0c8(auVar8._0_8_,auVar8._8_8_,&cf__);
+    auVar8 = FUN_10153f908(uVar2);
+    if (auVar8._0_8_ == 0) {
+      auVar8 = FUN_101539d28(param_1);
+      FUN_1015b6fc8(auVar8._0_8_,auVar8._8_8_,1);
+    }
+    else {
+      uVar3 = FUN_101583328(uVar2,auVar8._8_8_,0);
+      auVar8 = FUN_101539d28(param_1);
+      FUN_1015d6f08(auVar8._0_8_,auVar8._8_8_,uVar3);
+      auVar8 = FUN_101539d28(param_1);
+      FUN_1015b6fc8(auVar8._0_8_,auVar8._8_8_,0);
+      uVar3 = FUN_101539d28(param_1);
+      FUN_1015e3aa8(uVar3);
+      uVar3 = FUN_101539d28(param_1);
+      dVar6 = (double)FUN_1015fc468(uVar3);
+      uVar3 = FUN_101539d28(param_1);
+      FUN_1015dd9c8(dVar6 + 4.0,uVar3);
+      uVar3 = FUN_101539d28(param_1);
+      dVar6 = (double)FUN_10155e568(uVar3);
+      uVar3 = FUN_101539d28(param_1);
+      FUN_1015b6f28(dVar6 + 2.0,uVar3);
+      uVar3 = FUN_1015f0328(param_1);
+      uVar7 = FUN_101574da8(uVar3);
+      uVar3 = FUN_101539d28(param_1);
+      FUN_1015bfa48(uVar7,uVar3);
+      dVar6 = (double)FUN_10155e568(param_1);
+      uVar3 = FUN_101539d28(param_1);
+      FUN_1015a76a8(dVar6 + -40.0,uVar3);
+      auVar8 = FUN_101539d28(param_1);
+      IVar4 = FUN_101574688(auVar8._0_8_,auVar8._8_8_);
+      FUN_1015ac5e8(0x4000000000000000,IVar4);
+    }
+    uVar5 = FUN_10153f908(uVar2);
+    auVar8 = FUN_101553648(param_1);
+    if (uVar5 < 2) {
+      FUN_1015b6fc8(auVar8._0_8_,auVar8._8_8_,1);
+    }
+    else {
+      FUN_1015b6fc8(auVar8._0_8_,auVar8._8_8_,0);
+      auVar8 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+      uVar3 = auVar8._0_8_;
+      FUN_101526548(uVar3,auVar8._8_8_,uVar2);
+      FUN_101594208(uVar3,extraout_x1,0);
+      uVar2 = FUN_10153d068(uVar3,extraout_x1_00,&cf__);
+      auVar8 = FUN_101553648(param_1);
+      FUN_1015d6f08(auVar8._0_8_,auVar8._8_8_,uVar2);
+      uVar2 = FUN_101553648(param_1);
+      FUN_1015e3aa8(uVar2);
+      uVar2 = FUN_101539d28(param_1);
+      dVar6 = (double)FUN_10159a248(uVar2);
+      uVar2 = FUN_101553648(param_1);
+      FUN_1015bfa48(dVar6 + 5.0,uVar2);
+      uVar2 = FUN_101539d28(param_1);
+      uVar3 = FUN_1015384e8(uVar2);
+      uVar2 = FUN_101553648(param_1);
+      FUN_1015a9948(uVar3,uVar2);
+    }
+  }
+  return;
+}
+
+
+
+/* BannerItemView.adDataItemModel | 0x100021720 | ev_d9524dba2dbdadd0be2bdffea948b8d71ebab773918bdc3b7ed63df981924c0c */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID BannerItemView::adDataItemModel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__adDataItemModel);
+}
+
+
+
+/* BannerItemView.bgView | 0x100021730 | ev_c76e7b52e1125294734f8549a1a6935f9badabe1d2977f549e789fdf2e8b8c67 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID BannerItemView::bgView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__bgView);
+}
+
+
+
+/* BannerItemView.setBgView: | 0x100021750 | ev_e365d2b18a26ddf8f55c6b9772574bdfe9ddd0cbdb2cbb379bc12b56ed7abd35 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void BannerItemView::setBgView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__bgView) = param_3;
+  return;
+}
+
+
+
+/* BannerItemView.classLabel | 0x100021764 | ev_9d03a954a9408b408aa47ebc2d73b13b53b97386ac55f97f13125f5737adc6e3 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID BannerItemView::classLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__classLabel);
+}
+
+
+
+/* BannerItemView.setClassLabel: | 0x100021784 | ev_705bb8db93e4ad323db4cdc0deba9e66a4d66a2fb428132adbd30ca5933f9c2e */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void BannerItemView::setClassLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__classLabel) = param_3;
+  return;
+}
+
+
+
+/* BannerItemView.flagLabel | 0x100021798 | ev_e5868858e19af2be3b472caf2ddd7ffa7c14aa7fb5ce150c072df4264838dfed */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID BannerItemView::flagLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__flagLabel);
+}
+
+
+
+/* BannerItemView.setFlagLabel: | 0x1000217b8 | ev_43967b8fdbb8608043d67db5137fe99c687b50737af4118658744b4d854c9434 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void BannerItemView::setFlagLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__flagLabel) = param_3;
+  return;
+}
+
+
+
+/* BannerItemView.titleLabel | 0x1000217cc | ev_ce7d57c63c8e8af75ae1f63f3450263689cdbf75a95c22cec3f7decd9d2f20e2 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID BannerItemView::titleLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__titleLabel);
+}
+
+
+
+/* BannerItemView.setTitleLabel: | 0x1000217ec | ev_ea4f1f0635168e81830190a71ac84568ab4c8f922f42b84e0ede730b7f70e444 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void BannerItemView::setTitleLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__titleLabel) = param_3;
+  return;
+}
+
+
+
+/* BannerItemView..cxx_destruct | 0x100021800 | ev_9d509a16ffb911594f595ade5f8c988b3e1fd3769dfcf95cf8b17b69f66a9327 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void BannerItemView::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + (long)__titleLabel);
+  _objc_destroyWeak(param_1 + (long)__flagLabel);
+  _objc_destroyWeak(param_1 + (long)__classLabel);
+  _objc_destroyWeak(param_1 + (long)__bgView);
+  *(undefined8 *)(param_1 + (long)__adDataItemModel) = 0;
+  return;
+}
+
+

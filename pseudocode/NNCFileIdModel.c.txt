@@ -1,0 +1,175 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCFileIdModel.isEqual: | 0x10003f238 | ev_fc04f8b07cd904ff38ff3649ba201d6022d4276b1ac93a8fca9cbe50d46cd833 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+bool NNCFileIdModel::isEqual_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  int iVar2;
+  undefined8 uVar3;
+  bool bVar4;
+  undefined1 auVar5 [16];
+  
+  auVar5 = FUN_101539ca8(&objc::class_t::NNCFileIdModel);
+  iVar1 = FUN_10156e908(param_3,auVar5._8_8_,auVar5._0_8_);
+  if (iVar1 == 0) {
+    bVar4 = 0;
+  }
+  else {
+    iVar1 = FUN_1015f8fe8(param_1);
+    iVar2 = FUN_1015f8fe8(param_3);
+    if (iVar1 == iVar2) {
+      uVar3 = FUN_10158b928(param_3);
+      auVar5 = FUN_10158b928(param_1);
+      iVar1 = FUN_10156d5e8(uVar3,auVar5._8_8_,auVar5._0_8_);
+      if (iVar1 == 0) {
+        bVar4 = 0;
+      }
+      else {
+        uVar3 = FUN_10154ec48(param_3);
+        auVar5 = FUN_10154ec48(param_1);
+        iVar1 = FUN_10156d5e8(uVar3,auVar5._8_8_,auVar5._0_8_);
+        if (iVar1 == 0) {
+          bVar4 = 0;
+        }
+        else {
+          iVar1 = FUN_10154ebc8(param_1);
+          iVar2 = FUN_10154ebc8(param_3);
+          bVar4 = (bool)(iVar1 == iVar2);
+        }
+      }
+    }
+    else {
+      bVar4 = 0;
+    }
+  }
+  return bVar4;
+}
+
+
+
+/* NNCFileIdModel.episodeTitle | 0x10003f39c | ev_00d7924d73b97821b8bf80867df051dc4201e7a5d4f74195ec8e497387902d45 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileIdModel::episodeTitle(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCFileIdModel.setEpisodeTitle: | 0x10003f3a4 | ev_a3ca18d438f3e7d866b305c2d847303c2b1af156959107a73c5864032675c624 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileIdModel::setEpisodeTitle_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCFileIdModel.playerId | 0x10003f3ac | ev_54a794dceadc0e97613f48f9e95518f91144fcb9c87610863161375f147ac3a5 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileIdModel::playerId(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x18);
+}
+
+
+
+/* NNCFileIdModel.setPlayerId: | 0x10003f3b4 | ev_3525704624512850b3dec7f6efd88bda50a975a69022fb241f698b2a4ebd264f */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileIdModel::setPlayerId_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* NNCFileIdModel.videoId | 0x10003f3bc | ev_3f6fbdf75b8bb87d6dc4dbeccc350bb21c492b025768f7a78053b86ffa876797 */
+
+/* Function Stack Size: 0x10 bytes */
+
+int NNCFileIdModel::videoId(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 8);
+}
+
+
+
+/* NNCFileIdModel.setVideoId: | 0x10003f3c4 | ev_c9cf895f446ee6ff0492b4d390873b0a63eee7206ec6bd1ff3d26a60108c9ef7 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void NNCFileIdModel::setVideoId_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCFileIdModel.episodeIndex | 0x10003f3cc | ev_3777b5e3228bea2d406d6aa4bd4fd62e2c1133aea23b4631d91d807e8d893a60 */
+
+/* Function Stack Size: 0x10 bytes */
+
+int NNCFileIdModel::episodeIndex(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 0xc);
+}
+
+
+
+/* NNCFileIdModel.setEpisodeIndex: | 0x10003f3d4 | ev_416ad717318587a2d10b870624db32f757a139ae388d476d1fa3592f3f8b95a0 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void NNCFileIdModel::setEpisodeIndex_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 0xc) = param_3;
+  return;
+}
+
+
+
+/* NNCFileIdModel..cxx_destruct | 0x10003f3dc | ev_96af62bc7f67db6272dbc004a23c72f09aab113bfc950294c60fc885eeaea2c0 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCFileIdModel::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x18) = 0;
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  return;
+}
+
+

@@ -1,0 +1,68 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCMulitDownloadItem.item | 0x1000623ac | ev_061a5904e3371635f0308d703e6783f45c07984ccb57fa522d56f5dc1812a424 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMulitDownloadItem::item(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* NNCMulitDownloadItem.setItem: | 0x1000623b4 | ev_148fcfa6b7c30111fe3cfa508b3d2716cd6ff8c43a0f996b26925e7147b9bd9b */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMulitDownloadItem::setItem_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCMulitDownloadItem.allItemList | 0x1000623c0 | ev_bca32cd1690f37af951afda9b8f573be79116a23b25301da7bb8d801e207c096 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMulitDownloadItem::allItemList(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCMulitDownloadItem.setAllItemList: | 0x1000623c8 | ev_54ad950890aa2e0919f0f48fe0e5f8219e67c713983d5d5116f3f16864ad29ba */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMulitDownloadItem::setAllItemList_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCMulitDownloadItem..cxx_destruct | 0x1000623d4 | ev_c7f6691c5732f05c5e63689fd6e69981a888871188880faabf01d3ddf977e915 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCMulitDownloadItem::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

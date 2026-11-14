@@ -1,0 +1,1553 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCVideoSettingView.initWithFrame: | 0x100063128 | ev_771038c5209642a52655f44d533170dcec3ac7ac26d6e34b435bdc2c0c298102 */
+
+/* Function Stack Size: 0x30 bytes */
+
+ID NNCVideoSettingView::initWithFrame_(ID param_1,SEL param_2,CGRect param_3)
+
+{
+  ID IVar1;
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCVideoSettingView;
+  local_30 = param_1;
+  IVar1 = _objc_msgSendSuper2(param_3.field0_0x0.field0_0x0,param_3.field0_0x0.field1_0x8,
+                              param_3.field1_0x10.field0_0x0,param_3.field1_0x10.field1_0x8,
+                              &local_30,"initWithFrame:");
+  if (IVar1 != 0) {
+    FUN_101541948(IVar1);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCVideoSettingView.createView | 0x100063178 | ev_77f86a42dc8970e2697322cd6afab3570f3e6825750969b26f33836c0cb98083 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoSettingView::createView(ID param_1,SEL param_2)
+
+{
+  undefined *puVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  ID IVar4;
+  _Unwind_Exception *exception_object;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  SEL extraout_x1_03;
+  SEL extraout_x1_04;
+  undefined8 extraout_x1_05;
+  SEL extraout_x1_06;
+  undefined8 extraout_x1_07;
+  undefined8 extraout_x1_08;
+  SEL extraout_x1_09;
+  SEL extraout_x1_10;
+  SEL extraout_x1_11;
+  SEL extraout_x1_12;
+  undefined8 extraout_x1_13;
+  undefined8 extraout_x1_14;
+  undefined8 extraout_x1_15;
+  undefined8 extraout_x1_16;
+  undefined8 extraout_x1_17;
+  undefined8 extraout_x1_18;
+  undefined8 extraout_x1_19;
+  undefined8 extraout_x1_20;
+  SEL extraout_x1_21;
+  undefined8 extraout_x1_22;
+  SEL extraout_x1_23;
+  SEL extraout_x1_24;
+  SEL extraout_x1_25;
+  undefined8 extraout_x1_26;
+  undefined8 extraout_x1_27;
+  undefined8 extraout_x1_28;
+  undefined8 extraout_x1_29;
+  undefined8 extraout_x1_30;
+  undefined8 extraout_x1_31;
+  undefined8 extraout_x1_32;
+  undefined8 extraout_x1_33;
+  SEL extraout_x1_34;
+  undefined8 extraout_x1_35;
+  undefined8 extraout_x1_36;
+  SEL extraout_x1_37;
+  undefined8 extraout_x1_38;
+  SEL extraout_x1_39;
+  SEL extraout_x1_40;
+  SEL extraout_x1_41;
+  SEL extraout_x1_42;
+  undefined8 extraout_x1_43;
+  undefined8 extraout_x1_44;
+  undefined8 extraout_x1_45;
+  undefined8 extraout_x1_46;
+  undefined8 extraout_x1_47;
+  undefined8 extraout_x1_48;
+  undefined8 extraout_x1_49;
+  undefined8 extraout_x1_50;
+  SEL extraout_x1_51;
+  undefined8 extraout_x1_52;
+  undefined8 extraout_x1_53;
+  undefined8 extraout_x1_54;
+  SEL extraout_x1_55;
+  undefined8 extraout_x1_56;
+  undefined8 extraout_x1_57;
+  undefined8 extraout_x1_58;
+  undefined8 extraout_x1_59;
+  undefined8 extraout_x1_60;
+  undefined8 extraout_x1_61;
+  SEL extraout_x1_62;
+  undefined8 extraout_x1_63;
+  undefined8 uVar5;
+  ulong uVar6;
+  long lVar7;
+  long lVar8;
+  undefined8 uVar9;
+  double dVar10;
+  double dVar11;
+  double dVar12;
+  double dVar13;
+  undefined1 auVar14 [16];
+  undefined1 auVar15 [16];
+  undefined8 local_2e0;
+  long lStack_2d8;
+  long *local_2d0;
+  undefined8 uStack_2c8;
+  undefined8 local_2c0;
+  undefined8 uStack_2b8;
+  undefined8 uStack_2b0;
+  undefined8 uStack_2a8;
+  undefined8 local_2a0;
+  long lStack_298;
+  long *local_290;
+  undefined8 uStack_288;
+  undefined8 local_280;
+  undefined8 uStack_278;
+  undefined8 uStack_270;
+  undefined8 uStack_268;
+  undefined *local_260;
+  undefined8 local_258;
+  code *local_250;
+  undefined *puStack_248;
+  undefined1 auStack_240 [8];
+  undefined *local_238;
+  undefined8 local_230;
+  code *local_228;
+  undefined *puStack_220;
+  undefined1 auStack_218 [8];
+  undefined1 auStack_210 [8];
+  undefined1 auStack_208 [128];
+  undefined8 local_188;
+  undefined8 local_180;
+  undefined8 local_178;
+  undefined8 local_170;
+  undefined1 auStack_168 [128];
+  undefined8 local_e8;
+  undefined8 local_e0;
+  undefined8 local_d8;
+  undefined8 local_d0;
+  undefined8 local_c8;
+  undefined8 local_c0;
+  undefined8 local_b8;
+  long local_b0;
+  
+  local_b0 = *(long *)PTR____stack_chk_guard_101d78938;
+  auVar14 = FUN_10153a2e8(&_OBJC_CLASS___UIColor);
+  FUN_1015a5908(param_1,auVar14._8_8_,auVar14._0_8_);
+  auVar14 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1,0);
+  FUN_1015a6a88(param_1,auVar14._8_8_,auVar14._0_8_);
+  uVar2 = FUN_10153c008(0x3e99999a,&_OBJC_CLASS___UIColor,extraout_x1_00,0);
+  auVar14 = FUN_101530968(param_1);
+  FUN_1015a5908(auVar14._0_8_,auVar14._8_8_,uVar2);
+  _objc_initWeak(auStack_210,param_1);
+  uVar2 = FUN_101530968(param_1);
+  puVar1 = PTR___NSConcreteStackBlock_101d78760;
+  local_238 = PTR___NSConcreteStackBlock_101d78760;
+  local_230 = 0xc2000000;
+  local_228 = FUN_100064d10;
+  puStack_220 = &UNK_101d7ba30;
+  _objc_copyWeak(auStack_218,auStack_210);
+  FUN_1015a70e8(uVar2,extraout_x1_01,0x40,&local_238);
+  auVar14 = FUN_101530968(param_1);
+  FUN_101527148(param_1,auVar14._8_8_,auVar14._0_8_);
+  _objc_alloc(&_OBJC_CLASS___UIView);
+  dVar11 = *(double *)(PTR__CGRectZero_101d78140 + 0x10);
+  auVar14 = FUN_101564e08(*(undefined8 *)PTR__CGRectZero_101d78140,
+                          *(undefined8 *)(PTR__CGRectZero_101d78140 + 8),dVar11,
+                          *(undefined8 *)(PTR__CGRectZero_101d78140 + 0x18));
+  FUN_1015abde8(param_1,auVar14._8_8_,auVar14._0_8_);
+  FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_02,&cf_myTextColor);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_03);
+  FUN_1015a5908(IVar3);
+  FUN_10153e288(param_1,extraout_x1_04);
+  FUN_101527148(param_1);
+  auVar14 = FUN_1015813c8(&_OBJC_CLASS___UILabel);
+  FUN_1015d7f48(param_1,auVar14._8_8_,auVar14._0_8_);
+  auVar14 = FUN_1015f0328(param_1);
+  FUN_1015d6f48(auVar14._0_8_,auVar14._8_8_,1);
+  uVar2 = FUN_101531668(0x4032000000000000,&_OBJC_CLASS___UIFont);
+  auVar14 = FUN_1015f0328(param_1);
+  FUN_1015b4788(auVar14._0_8_,auVar14._8_8_,uVar2);
+  uVar2 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_05,&cf_myBgColor);
+  auVar14 = FUN_1015f0328(param_1);
+  FUN_1015d6fa8(auVar14._0_8_,auVar14._8_8_,uVar2);
+  auVar14 = FUN_1015f0328(param_1);
+  FUN_1015d6f08(auVar14._0_8_,auVar14._8_8_,&cfstringStruct_101de3a20);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_06);
+  auVar14 = FUN_1015f0328(param_1);
+  FUN_101527148(IVar3,auVar14._8_8_,auVar14._0_8_);
+  auVar14 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1_07,0);
+  FUN_1015aa708(param_1,auVar14._8_8_,auVar14._0_8_);
+  auVar14 = FUN_10153b128(param_1);
+  auVar15 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar14._8_8_,&cf_nnc_ic_close);
+  FUN_1015b8468(auVar14._0_8_,auVar15._8_8_,auVar15._0_8_,0);
+  uVar2 = FUN_10153b128(param_1);
+  local_260 = puVar1;
+  local_258 = 0xc2000000;
+  local_250 = FUN_100064d3c;
+  puStack_248 = &UNK_101d7ba30;
+  _objc_copyWeak(auStack_240,auStack_210);
+  FUN_1015a70e8(uVar2,extraout_x1_08,0x40,&local_260);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_09);
+  auVar14 = FUN_10153b128(param_1);
+  FUN_101527148(IVar3,auVar14._8_8_,auVar14._0_8_);
+  uVar2 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+  FUN_101531d88(uVar2);
+  _objc_alloc(&_OBJC_CLASS___UILabel);
+  auVar14 = FUN_101564e08(0x402e000000000000,0x404e000000000000,0x4051800000000000,
+                          0x4050400000000000);
+  FUN_1015a7b08(param_1,auVar14._8_8_,auVar14._0_8_);
+  _objc_alloc(&_OBJC_CLASS___UISlider);
+  dVar13 = dVar11 + -70.0;
+  auVar14 = FUN_101564e08(0x4055400000000000,0,dVar13 + -30.0,0x4050400000000000);
+  FUN_1015a7b28(param_1,auVar14._8_8_,auVar14._0_8_);
+  uVar2 = FUN_1015325e8(param_1);
+  FUN_1015c38a8(0,uVar2);
+  uVar2 = FUN_1015325e8(param_1);
+  FUN_1015c2e08(0x3f800000,uVar2);
+  uVar2 = FUN_1015325c8(param_1);
+  uVar9 = FUN_1015384e8(uVar2);
+  uVar2 = FUN_1015325e8(param_1);
+  FUN_1015a9948(uVar9,uVar2);
+  _objc_alloc(&_OBJC_CLASS___UILabel);
+  auVar14 = FUN_101564e08(0x402e000000000000,0x405f400000000000,0x4051800000000000,
+                          0x4050400000000000);
+  FUN_1015dd008(param_1,auVar14._8_8_,auVar14._0_8_);
+  _objc_alloc(&_OBJC_CLASS___UISlider);
+  auVar14 = FUN_101564e08(0x4055400000000000,0,dVar13 + -30.0,0x4050400000000000);
+  FUN_1015dd028(param_1,auVar14._8_8_,auVar14._0_8_);
+  uVar2 = FUN_1015fae48(param_1);
+  FUN_1015c38a8(0,uVar2);
+  uVar2 = FUN_1015fae48(param_1);
+  FUN_1015c2e08(0x3f800000,uVar2);
+  uVar2 = FUN_1015fae28(param_1);
+  uVar9 = FUN_1015384e8(uVar2);
+  uVar2 = FUN_1015fae48(param_1);
+  FUN_1015a9948(uVar9,uVar2);
+  _objc_alloc(&_OBJC_CLASS___UILabel);
+  auVar14 = FUN_101564e08(0x402e000000000000,0x4067c00000000000,0x4051800000000000,
+                          0x4050400000000000);
+  FUN_1015d39a8(param_1,auVar14._8_8_,auVar14._0_8_);
+  auVar14 = FUN_1015e6ac8(param_1);
+  FUN_1015d6f08(auVar14._0_8_,auVar14._8_8_,&cf_Pd>e);
+  _objc_alloc(&_OBJC_CLASS___UIView);
+  dVar12 = dVar13 + -5.0 + -30.0;
+  auVar14 = FUN_101564e08(0x4056800000000000,0x4069700000000000,dVar12,0x4043000000000000);
+  IVar3 = auVar14._0_8_;
+  auVar14 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar14._8_8_,0);
+  FUN_1015a5908(IVar3,auVar14._8_8_,auVar14._0_8_);
+  IVar4 = FUN_101574688(IVar3,extraout_x1_10);
+  FUN_1015ac5e8(0x4014000000000000,IVar4);
+  IVar4 = FUN_101574688(IVar3,extraout_x1_11);
+  FUN_1015c25a8(IVar4);
+  IVar4 = FUN_10153e288(param_1,extraout_x1_12);
+  FUN_101527148(IVar4);
+  dVar10 = (double)FUN_1015fc468(IVar3);
+  uVar6 = 0;
+  dVar10 = dVar10 / 6.0;
+  uVar2 = extraout_x1_13;
+  do {
+    uVar9 = FUN_101534f68(&_OBJC_CLASS___UIButton,uVar2,0);
+    FUN_1015b4b08(dVar10 * (double)(long)uVar6 + 90.0,0x4069700000000000,dVar10,0x4043000000000000);
+    FUN_1015d6328(uVar9,extraout_x1_14,uVar6 + 400);
+    auVar14 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_15,&cf_myBgColor);
+    FUN_1015d7ea8(uVar9,auVar14._8_8_,auVar14._0_8_,0);
+    uVar2 = FUN_1015ed768(0x4028000000000000,&_OBJC_CLASS___UIFont);
+    auVar14 = FUN_1015f0328(uVar9);
+    FUN_1015b4788(auVar14._0_8_,auVar14._8_8_,uVar2);
+    uVar2 = extraout_x1_16;
+    if (uVar6 < 6) {
+      FUN_1015d7e48(uVar9,extraout_x1_16,(&PTR_cf_0_5X_101d7cac8)[uVar6],0);
+      uVar2 = extraout_x1_17;
+    }
+    auVar14 = FUN_10153bf08(&_OBJC_CLASS___UIColor,uVar2,&cf_TextBgViewColo);
+    FUN_1015a5908(uVar9,auVar14._8_8_,auVar14._0_8_);
+    auVar14 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_18,&cf_TextBgViewColo);
+    auVar14 = FUN_101560e88(&_OBJC_CLASS___UIImage,auVar14._8_8_,auVar14._0_8_);
+    FUN_1015a5968(uVar9,auVar14._8_8_,auVar14._0_8_,0);
+    auVar14 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_19,0xbed4fb);
+    auVar14 = FUN_101560e88(&_OBJC_CLASS___UIImage,auVar14._8_8_,auVar14._0_8_);
+    FUN_1015a5968(uVar9,auVar14._8_8_,auVar14._0_8_,4);
+    FUN_101527248(uVar9,extraout_x1_20,param_1,"speedSelector:",0x40);
+    IVar3 = FUN_10153e288(param_1,extraout_x1_21);
+    FUN_101527148(IVar3);
+    uVar6 = uVar6 + 1;
+    uVar2 = extraout_x1_22;
+  } while (uVar6 != 6);
+  _objc_alloc(&_OBJC_CLASS___UILabel);
+  auVar14 = FUN_101564e08(0x402e000000000000,0x406fe00000000000,0x4051800000000000,
+                          0x4050400000000000);
+  FUN_1015c12a8(param_1,auVar14._8_8_,auVar14._0_8_);
+  auVar14 = FUN_101578428(param_1);
+  FUN_1015d6f08(auVar14._0_8_,auVar14._8_8_,&cfstringStruct_101de3b40);
+  _objc_alloc(&_OBJC_CLASS___UIView);
+  auVar14 = FUN_101564e08(0x4056800000000000,0x4070c80000000000,dVar10 * 3.0,0x4043000000000000);
+  IVar3 = auVar14._0_8_;
+  auVar14 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar14._8_8_,0);
+  FUN_1015a5908(IVar3,auVar14._8_8_,auVar14._0_8_);
+  IVar4 = FUN_101574688(IVar3,extraout_x1_23);
+  FUN_1015ac5e8(0x4014000000000000,IVar4);
+  IVar3 = FUN_101574688(IVar3,extraout_x1_24);
+  FUN_1015c25a8(IVar3);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_25);
+  FUN_101527148(IVar3);
+  uVar6 = 0;
+  uVar2 = extraout_x1_26;
+  do {
+    uVar9 = FUN_101534f68(&_OBJC_CLASS___UIButton,uVar2,0);
+    FUN_1015b4b08(dVar10 * (double)(long)uVar6 + 90.0,0x4070c80000000000,dVar10,0x4043000000000000);
+    FUN_1015d6328(uVar9,extraout_x1_27,uVar6 + 500);
+    auVar14 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_28,&cf_myBgColor);
+    FUN_1015d7ea8(uVar9,auVar14._8_8_,auVar14._0_8_,0);
+    uVar2 = FUN_1015ed768(0x4028000000000000,&_OBJC_CLASS___UIFont);
+    auVar14 = FUN_1015f0328(uVar9);
+    FUN_1015b4788(auVar14._0_8_,auVar14._8_8_,uVar2);
+    uVar2 = extraout_x1_29;
+    if (uVar6 < 3) {
+      FUN_1015d7e48(uVar9,extraout_x1_29,(&PTR_cf_1_25X_101d7caf8)[uVar6],0);
+      uVar2 = extraout_x1_30;
+    }
+    auVar14 = FUN_10153bf08(&_OBJC_CLASS___UIColor,uVar2,&cf_TextBgViewColo);
+    FUN_1015a5908(uVar9,auVar14._8_8_,auVar14._0_8_);
+    auVar14 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_31,&cf_TextBgViewColo);
+    auVar14 = FUN_101560e88(&_OBJC_CLASS___UIImage,auVar14._8_8_,auVar14._0_8_);
+    FUN_1015a5968(uVar9,auVar14._8_8_,auVar14._0_8_,0);
+    auVar14 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_32,0xbed4fb);
+    auVar14 = FUN_101560e88(&_OBJC_CLASS___UIImage,auVar14._8_8_,auVar14._0_8_);
+    FUN_1015a5968(uVar9,auVar14._8_8_,auVar14._0_8_,4);
+    FUN_101527248(uVar9,extraout_x1_33,param_1,"longPressSpeedSelector:",0x40);
+    IVar3 = FUN_10153e288(param_1,extraout_x1_34);
+    FUN_101527148(IVar3);
+    uVar6 = uVar6 + 1;
+    uVar2 = extraout_x1_35;
+  } while (uVar6 != 3);
+  _objc_alloc(&_OBJC_CLASS___UILabel);
+  auVar14 = FUN_101564e08(0x402e000000000000,0x4074000000000000,0x4051800000000000,
+                          0x4050400000000000);
+  FUN_1015d2a88(param_1,auVar14._8_8_,auVar14._0_8_);
+  auVar14 = FUN_1015e4608(param_1);
+  FUN_1015d6f08(auVar14._0_8_,auVar14._8_8_,&cf_Gr4Y);
+  _objc_alloc(&_OBJC_CLASS___UISlider);
+  dVar13 = dVar13 + -60.0 + -30.0;
+  auVar14 = FUN_101564e08(0x4055400000000000,0,dVar13,0x4050400000000000);
+  FUN_1015d2ac8(param_1,auVar14._8_8_,auVar14._0_8_);
+  uVar2 = FUN_1015e4648(param_1);
+  FUN_1015c38a8(0,uVar2);
+  uVar2 = FUN_1015e4648(param_1);
+  FUN_1015c2e08(0x43960000,uVar2);
+  uVar2 = FUN_1015e4608(param_1);
+  uVar9 = FUN_1015384e8(uVar2);
+  uVar2 = FUN_1015e4648(param_1);
+  FUN_1015a9948(uVar9,uVar2);
+  _objc_alloc(&_OBJC_CLASS___UILabel);
+  dVar10 = dVar11 + -60.0 + -15.0;
+  auVar14 = FUN_101564e08(dVar10,0x4074000000000000,0x404e000000000000,0x4050400000000000);
+  FUN_1015d2a68(param_1,auVar14._8_8_,auVar14._0_8_);
+  uVar2 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_36,0xffffff);
+  auVar14 = FUN_1015e45e8(param_1);
+  FUN_1015d6fa8(auVar14._0_8_,auVar14._8_8_,uVar2);
+  uVar2 = FUN_101531668(0x402a000000000000,&_OBJC_CLASS___UIFont);
+  auVar14 = FUN_1015e45e8(param_1);
+  FUN_1015b4788(auVar14._0_8_,auVar14._8_8_,uVar2);
+  auVar14 = FUN_1015e45e8(param_1);
+  FUN_1015d6f48(auVar14._0_8_,auVar14._8_8_,1);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_37);
+  auVar14 = FUN_1015e45e8(param_1);
+  FUN_101527148(IVar3,auVar14._8_8_,auVar14._0_8_);
+  _objc_alloc(&_OBJC_CLASS___UILabel);
+  auVar14 = FUN_101564e08(0x402e000000000000,0x4078100000000000,0x4051800000000000,
+                          0x4050400000000000);
+  FUN_1015d2988(param_1,auVar14._8_8_,auVar14._0_8_);
+  auVar14 = FUN_1015e4488(param_1);
+  FUN_1015d6f08(auVar14._0_8_,auVar14._8_8_,&cf_Gr>_);
+  _objc_alloc(&_OBJC_CLASS___UISlider);
+  auVar14 = FUN_101564e08(0x4055400000000000,0,dVar13,0x4050400000000000);
+  FUN_1015d29c8(param_1,auVar14._8_8_,auVar14._0_8_);
+  uVar2 = FUN_1015e44c8(param_1);
+  FUN_1015c38a8(0,uVar2);
+  uVar2 = FUN_1015e44c8(param_1);
+  FUN_1015c2e08(0x43960000,uVar2);
+  uVar2 = FUN_1015e4488(param_1);
+  uVar9 = FUN_1015384e8(uVar2);
+  uVar2 = FUN_1015e44c8(param_1);
+  FUN_1015a9948(uVar9,uVar2);
+  _objc_alloc(&_OBJC_CLASS___UILabel);
+  auVar14 = FUN_101564e08(dVar10,0x4078100000000000,0x404e000000000000,0x4050400000000000);
+  FUN_1015d2968(param_1,auVar14._8_8_,auVar14._0_8_);
+  uVar2 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_38,0xffffff);
+  auVar14 = FUN_1015e4468(param_1);
+  FUN_1015d6fa8(auVar14._0_8_,auVar14._8_8_,uVar2);
+  uVar2 = FUN_101531668(0x402a000000000000,&_OBJC_CLASS___UIFont);
+  auVar14 = FUN_1015e4468(param_1);
+  FUN_1015b4788(auVar14._0_8_,auVar14._8_8_,uVar2);
+  auVar14 = FUN_1015e4468(param_1);
+  FUN_1015d6f48(auVar14._0_8_,auVar14._8_8_,1);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_39);
+  auVar14 = FUN_1015e4468(param_1);
+  FUN_101527148(IVar3,auVar14._8_8_,auVar14._0_8_);
+  _objc_alloc(&_OBJC_CLASS___UILabel);
+  auVar14 = FUN_101564e08(0x402e000000000000,0x407c200000000000,0x4051800000000000,
+                          0x4050400000000000);
+  FUN_1015d7bc8(param_1,auVar14._8_8_,auVar14._0_8_);
+  auVar14 = FUN_1015efd88(param_1);
+  FUN_1015d6f08(auVar14._0_8_,auVar14._8_8_,&cf__esQ);
+  _objc_alloc(&_OBJC_CLASS___UIView);
+  auVar14 = FUN_101564e08(0x4056800000000000,0x407cf80000000000,dVar12,0x4043000000000000);
+  IVar3 = auVar14._0_8_;
+  auVar14 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar14._8_8_,0);
+  FUN_1015a5908(IVar3,auVar14._8_8_,auVar14._0_8_);
+  IVar4 = FUN_101574688(IVar3,extraout_x1_40);
+  FUN_1015ac5e8(0x4014000000000000,IVar4);
+  IVar4 = FUN_101574688(IVar3,extraout_x1_41);
+  FUN_1015c25a8(IVar4);
+  IVar4 = FUN_10153e288(param_1,extraout_x1_42);
+  FUN_101527148(IVar4);
+  dVar10 = (double)FUN_1015fc468(IVar3);
+  uVar6 = 0;
+  uVar2 = extraout_x1_43;
+  do {
+    uVar9 = FUN_101534f68(&_OBJC_CLASS___UIButton,uVar2,0);
+    FUN_1015b4b08((dVar10 / 5.0) * (double)(long)uVar6 + 90.0,0x407cf80000000000,dVar10 / 5.0,
+                  0x4043000000000000);
+    FUN_1015d6328(uVar9,extraout_x1_44,uVar6 + 300);
+    auVar14 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_45,&cf_myBgColor);
+    FUN_1015d7ea8(uVar9,auVar14._8_8_,auVar14._0_8_,0);
+    uVar2 = FUN_1015ed768(0x4028000000000000,&_OBJC_CLASS___UIFont);
+    auVar14 = FUN_1015f0328(uVar9);
+    FUN_1015b4788(auVar14._0_8_,auVar14._8_8_,uVar2);
+    uVar2 = extraout_x1_46;
+    if (uVar6 < 5) {
+      FUN_1015d7e48(uVar9,extraout_x1_46,(&PTR_cf_N_101d7cb10)[uVar6],0);
+      uVar2 = extraout_x1_47;
+    }
+    auVar14 = FUN_10153bf08(&_OBJC_CLASS___UIColor,uVar2,&cf_TextBgViewColo);
+    FUN_1015a5908(uVar9,auVar14._8_8_,auVar14._0_8_);
+    auVar14 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_48,&cf_TextBgViewColo);
+    auVar14 = FUN_101560e88(&_OBJC_CLASS___UIImage,auVar14._8_8_,auVar14._0_8_);
+    FUN_1015a5968(uVar9,auVar14._8_8_,auVar14._0_8_,0);
+    auVar14 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_49,0xbed4fb);
+    auVar14 = FUN_101560e88(&_OBJC_CLASS___UIImage,auVar14._8_8_,auVar14._0_8_);
+    FUN_1015a5968(uVar9,auVar14._8_8_,auVar14._0_8_,4);
+    FUN_101527248(uVar9,extraout_x1_50,param_1,"onTimerCloseSelector:",0x40);
+    IVar3 = FUN_10153e288(param_1,extraout_x1_51);
+    FUN_101527148(IVar3);
+    uVar6 = uVar6 + 1;
+    uVar2 = extraout_x1_52;
+  } while (uVar6 != 5);
+  local_e8 = FUN_1015325c8(param_1);
+  local_e0 = FUN_1015fae28(param_1);
+  local_d8 = FUN_1015e6ac8(param_1);
+  local_d0 = FUN_101578428(param_1);
+  local_c8 = FUN_1015efd88(param_1);
+  local_c0 = FUN_1015e4608(param_1);
+  auVar14 = FUN_1015e4488(param_1);
+  local_b8 = auVar14._0_8_;
+  auVar14 = FUN_10152bbc8(&_OBJC_CLASS___NSArray,auVar14._8_8_,&local_e8,7);
+  uVar2 = auVar14._0_8_;
+  uStack_278 = 0;
+  local_280 = 0;
+  uStack_268 = 0;
+  uStack_270 = 0;
+  lStack_298 = 0;
+  local_2a0 = 0;
+  uStack_288 = 0;
+  local_290 = (long *)0x0;
+  auVar14 = FUN_10153f948(uVar2,auVar14._8_8_,&local_2a0,auStack_168,0x10);
+  if (auVar14._0_8_ != 0) {
+    lVar7 = *local_290;
+    do {
+      uVar9 = auVar14._8_8_;
+      lVar8 = 0;
+      do {
+        if (*local_290 != lVar7) {
+          _objc_enumerationMutation(uVar2);
+          uVar9 = extraout_x1_53;
+        }
+        uVar5 = *(undefined8 *)(lStack_298 + lVar8 * 8);
+        auVar15 = FUN_10153bf08(&_OBJC_CLASS___UIColor,uVar9,&cf_myBgColor);
+        FUN_1015d6fa8(uVar5,auVar15._8_8_,auVar15._0_8_);
+        auVar15 = FUN_101531668(0x402e000000000000,&_OBJC_CLASS___UIFont);
+        FUN_1015b4788(uVar5,auVar15._8_8_,auVar15._0_8_);
+        FUN_1015d6f48(uVar5,extraout_x1_54,0);
+        IVar3 = FUN_10153e288(param_1,extraout_x1_55);
+        FUN_101527148(IVar3);
+        lVar8 = lVar8 + 1;
+        uVar9 = extraout_x1_56;
+      } while (auVar14._0_8_ != lVar8);
+      auVar14 = FUN_10153f948(uVar2,extraout_x1_56,&local_2a0,auStack_168,0x10);
+    } while (auVar14._0_8_ != 0);
+  }
+  local_188 = FUN_1015325e8(param_1);
+  local_180 = FUN_1015fae48(param_1);
+  local_178 = FUN_1015e4648(param_1);
+  auVar14 = FUN_1015e44c8(param_1);
+  local_170 = auVar14._0_8_;
+  auVar14 = FUN_10152bbc8(&_OBJC_CLASS___NSArray,auVar14._8_8_,&local_188,4);
+  uVar2 = auVar14._0_8_;
+  uStack_2b8 = 0;
+  local_2c0 = 0;
+  uStack_2a8 = 0;
+  uStack_2b0 = 0;
+  lStack_2d8 = 0;
+  local_2e0 = 0;
+  uStack_2c8 = 0;
+  local_2d0 = (long *)0x0;
+  auVar14 = FUN_10153f948(uVar2,auVar14._8_8_,&local_2e0,auStack_208,0x10);
+  if (auVar14._0_8_ != 0) {
+    lVar7 = *local_2d0;
+    do {
+      uVar9 = auVar14._8_8_;
+      lVar8 = 0;
+      do {
+        if (*local_2d0 != lVar7) {
+          _objc_enumerationMutation(uVar2);
+          uVar9 = extraout_x1_57;
+        }
+        uVar5 = *(undefined8 *)(lStack_2d8 + lVar8 * 8);
+        auVar15 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,uVar9,0xbed4fb);
+        FUN_1015d77c8(uVar5,auVar15._8_8_,auVar15._0_8_);
+        auVar15 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_58,0xf2f2f2);
+        FUN_1015c2de8(uVar5,auVar15._8_8_,auVar15._0_8_);
+        auVar15 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_59,0xbed4fb);
+        FUN_1015c3888(uVar5,auVar15._8_8_,auVar15._0_8_);
+        FUN_101527248(uVar5,extraout_x1_60,param_1,"sliderValueChange:",0x1000);
+        FUN_101527248(uVar5,extraout_x1_61,param_1,"sliderEndDragging:",0x40);
+        IVar3 = FUN_10153e288(param_1,extraout_x1_62);
+        FUN_101527148(IVar3);
+        lVar8 = lVar8 + 1;
+        uVar9 = extraout_x1_63;
+      } while (auVar14._0_8_ != lVar8);
+      auVar14 = FUN_10153f948(uVar2,extraout_x1_63,&local_2e0,auStack_208,0x10);
+    } while (auVar14._0_8_ != 0);
+  }
+  _objc_destroyWeak(auStack_240);
+  _objc_destroyWeak(auStack_218);
+  _objc_destroyWeak(auStack_210);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_b0) {
+    return;
+  }
+  exception_object = (_Unwind_Exception *)FUN_100ab8e90();
+  _objc_destroyWeak(auStack_240);
+  _objc_destroyWeak(auStack_218);
+  _objc_destroyWeak(auStack_210);
+                    /* WARNING: Subroutine does not return */
+  __Unwind_Resume(exception_object);
+}
+
+
+
+/* NNCVideoSettingView.refreshData | 0x100064d68 | ev_8e6614020dd8c045838494c760ee6f19145996132f2e0b091c727f3f3f2c3645 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoSettingView::refreshData(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  int iVar2;
+  ID IVar3;
+  undefined8 uVar4;
+  ID IVar5;
+  long lVar6;
+  undefined8 uVar7;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  SEL extraout_x1_02;
+  undefined8 extraout_x1_03;
+  SEL extraout_x1_04;
+  undefined8 extraout_x1_05;
+  SEL extraout_x1_06;
+  SEL extraout_x1_07;
+  SEL extraout_x1_08;
+  SEL extraout_x1_09;
+  SEL extraout_x1_10;
+  SEL pcVar8;
+  SEL extraout_x1_11;
+  long lVar9;
+  undefined4 uVar10;
+  float fVar11;
+  undefined1 auVar12 [16];
+  
+  IVar3 = FUN_10158b568(param_1,param_2);
+  uVar4 = FUN_101547ea8(IVar3);
+  uVar10 = FUN_101532588(uVar4);
+  uVar4 = FUN_1015325e8(param_1);
+  FUN_1015db7c8(uVar10,uVar4);
+  uVar4 = FUN_1015325e8(param_1);
+  FUN_1015f7f68(uVar4);
+  uVar4 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf_N_);
+  auVar12 = FUN_1015325c8(param_1);
+  FUN_1015d6f08(auVar12._0_8_,auVar12._8_8_,uVar4);
+  IVar3 = FUN_10158b568(param_1,extraout_x1_00);
+  uVar4 = FUN_101547ea8(IVar3);
+  uVar10 = FUN_1015fad88(uVar4);
+  uVar4 = FUN_1015fae48(param_1);
+  FUN_1015db7c8(uVar10,uVar4);
+  uVar4 = FUN_1015fae48(param_1);
+  FUN_1015f7f68(uVar4);
+  IVar3 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_01,&cf_format_s_);
+  uVar4 = FUN_1015fae28(param_1);
+  FUN_1015d6f08(uVar4);
+  IVar3 = FUN_101546808(param_1,extraout_x1_02,IVar3);
+  iVar1 = FUN_10155a148(IVar3);
+  uVar4 = FUN_1015e4648(param_1);
+  FUN_1015db7c8((float)iVar1,uVar4);
+  uVar4 = FUN_1015e4648(param_1);
+  fVar11 = (float)FUN_1015f7f68(uVar4);
+  IVar3 = FUN_1015697e8(param_1,extraout_x1_03,(long)fVar11);
+  uVar4 = FUN_1015e45e8(param_1);
+  FUN_1015d6f08(uVar4);
+  IVar3 = FUN_101546808(param_1,extraout_x1_04,IVar3);
+  iVar1 = FUN_10155a128(IVar3);
+  uVar4 = FUN_1015e44c8(param_1);
+  FUN_1015db7c8((float)iVar1,uVar4);
+  uVar4 = FUN_1015e44c8(param_1);
+  fVar11 = (float)FUN_1015f7f68(uVar4);
+  IVar3 = FUN_1015697e8(param_1,extraout_x1_05,(long)fVar11);
+  uVar4 = FUN_1015e4468(param_1);
+  FUN_1015d6f08(uVar4);
+  IVar5 = FUN_101546808(param_1,extraout_x1_06,IVar3);
+  iVar1 = FUN_1015fa508(IVar5);
+  IVar3 = FUN_101546808(param_1,extraout_x1_07,IVar3);
+  iVar2 = FUN_1015fa4c8(IVar3);
+  lVar9 = 400;
+  pcVar8 = extraout_x1_08;
+  do {
+    IVar3 = FUN_10153e288(param_1,pcVar8);
+    uVar4 = FUN_1015fa8c8(IVar3);
+    auVar12 = FUN_1015edd48(uVar4);
+    FUN_1015d03e8(uVar4,auVar12._8_8_,auVar12._0_8_ + -400 == (long)iVar1);
+    lVar9 = lVar9 + 1;
+    pcVar8 = extraout_x1_09;
+  } while (lVar9 != 0x196);
+  lVar9 = 500;
+  do {
+    IVar3 = FUN_10153e288(param_1,pcVar8);
+    uVar4 = FUN_1015fa8c8(IVar3);
+    auVar12 = FUN_1015edd48(uVar4);
+    FUN_1015d03e8(uVar4,auVar12._8_8_,auVar12._0_8_ + -500 == (long)iVar2);
+    lVar9 = lVar9 + 1;
+    pcVar8 = extraout_x1_10;
+  } while (lVar9 != 0x1f7);
+  lVar9 = 300;
+  do {
+    IVar3 = FUN_10153e288(param_1,pcVar8);
+    uVar4 = FUN_1015fa8c8(IVar3);
+    lVar6 = FUN_1015edd48(uVar4);
+    uVar7 = FUN_1015e11a8(&objc::class_t::NNCInitManager);
+    auVar12 = FUN_1015efd68(uVar7);
+    FUN_1015d03e8(uVar4,auVar12._8_8_,lVar6 + -300 == auVar12._0_8_);
+    lVar9 = lVar9 + 1;
+    pcVar8 = extraout_x1_11;
+  } while (lVar9 != 0x131);
+  return;
+}
+
+
+
+/* NNCVideoSettingView.layoutSubviews | 0x100065254 | ev_5b8218502f3bc6e804889f84c93423d6638db41665b1cb6551e0d3bd29c4c5dc */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoSettingView::layoutSubviews(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  SEL extraout_x1;
+  undefined8 uVar3;
+  double dVar4;
+  double dVar5;
+  undefined8 in_d1;
+  undefined8 in_d2;
+  undefined8 in_d3;
+  ID local_50;
+  class_t *pcStack_48;
+  
+  pcStack_48 = &objc::class_t::NNCVideoSettingView;
+  local_50 = param_1;
+  _objc_msgSendSuper2(&local_50,"layoutSubviews");
+  uVar3 = FUN_101531d88(param_1);
+  uVar1 = FUN_101530968(param_1);
+  FUN_1015b4b08(uVar3,in_d1,in_d2,in_d3,uVar1);
+  dVar4 = (double)FUN_10155e568(param_1);
+  dVar5 = (double)FUN_1015fc468(param_1);
+  dVar4 = dVar4 - (dRam00000001024978c8 + dVar5 * 9.0 * 0.0625);
+  if (dVar4 <= 530.0) {
+    dVar4 = 530.0;
+  }
+  dVar5 = (double)FUN_10155e568(param_1);
+  uVar1 = FUN_1015fc468(param_1);
+  IVar2 = FUN_10153e288(param_1,extraout_x1);
+  FUN_1015b4b08(0,dVar5 - dVar4,uVar1,dVar4,IVar2);
+  uVar3 = FUN_1015fc468(param_1);
+  uVar1 = FUN_1015f0328(param_1);
+  FUN_1015b4b08(0,0x4024000000000000,uVar3,0x4044000000000000,uVar1);
+  uVar1 = FUN_10153b128(param_1);
+  FUN_1015b4b08(0,0x4014000000000000,0x4049000000000000,0x4049000000000000,uVar1);
+  dVar4 = (double)FUN_1015fc468(param_1);
+  uVar1 = FUN_10153b128(param_1);
+  FUN_1015ce268(dVar4 + -10.0,uVar1);
+  uVar1 = FUN_10153b128(param_1);
+  FUN_1015b8608(0x4030000000000000,0x4030000000000000,0x4030000000000000,0x4030000000000000,uVar1);
+  return;
+}
+
+
+
+/* NNCVideoSettingView.sliderValueChange: | 0x100065454 | ev_b895e7cb5e0b1a64f2475bb6f9d3f539120222af5935081daef87205eb6ba253 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::sliderValueChange_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  SEL extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  float fVar3;
+  undefined4 uVar4;
+  undefined1 auVar5 [16];
+  
+  IVar1 = FUN_1015fae48(param_1);
+  if (IVar1 == param_3) {
+    uVar4 = FUN_1015f7f68(param_3);
+    IVar1 = FUN_10158b568(param_1,extraout_x1_00);
+    uVar2 = FUN_101547ea8(IVar1);
+    FUN_1015dcf88(uVar4,uVar2);
+    uVar2 = FUN_1015fae48(param_1);
+    FUN_1015f7f68(uVar2);
+    uVar2 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_01,&cf_format_s_);
+    auVar5 = FUN_1015fae28(param_1);
+  }
+  else {
+    IVar1 = FUN_1015325e8(param_1);
+    if (IVar1 == param_3) {
+      uVar4 = FUN_1015f7f68(param_3);
+      IVar1 = FUN_10158b568(param_1,extraout_x1_02);
+      uVar2 = FUN_101547ea8(IVar1);
+      FUN_1015a7ac8(uVar4,uVar2);
+      uVar2 = FUN_1015325e8(param_1);
+      FUN_1015f7f68(uVar2);
+      uVar2 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_03,&cf_N_);
+      auVar5 = FUN_1015325c8(param_1);
+    }
+    else {
+      IVar1 = FUN_1015e4648(param_1);
+      if (IVar1 == param_3) {
+        uVar2 = FUN_1015e4648(param_1);
+        fVar3 = (float)FUN_1015f7f68(uVar2);
+        uVar2 = FUN_1015697e8(param_1,extraout_x1_04,(long)fVar3);
+        auVar5 = FUN_1015e45e8(param_1);
+      }
+      else {
+        IVar1 = FUN_1015e44c8();
+        if (IVar1 != param_3) {
+          return;
+        }
+        uVar2 = FUN_1015e44c8(param_1);
+        fVar3 = (float)FUN_1015f7f68(uVar2);
+        uVar2 = FUN_1015697e8(param_1,extraout_x1,(long)fVar3);
+        auVar5 = FUN_1015e4468(param_1);
+      }
+    }
+  }
+  FUN_1015d6f08(auVar5._0_8_,auVar5._8_8_,uVar2);
+  return;
+}
+
+
+
+/* NNCVideoSettingView.sliderEndDragging: | 0x100065714 | ev_ff49443c227dcc12372f6ff7dade0eb1732eea79bea8de7cb0f5c07f6b724b45 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::sliderEndDragging_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  ID IVar2;
+  SEL extraout_x1;
+  undefined8 extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined8 extraout_x1_02;
+  char *pcVar3;
+  float fVar4;
+  undefined1 auVar5 [16];
+  
+  IVar2 = param_3;
+  auVar5 = FUN_1015e4648(param_1);
+  if (auVar5._0_8_ == param_3) {
+    IVar2 = FUN_101546808(param_1,auVar5._8_8_,IVar2);
+    pcVar3 = "onSkipStartSecondChanged:";
+    iVar1 = FUN_101598088(IVar2);
+    if (iVar1 != 0) {
+      IVar2 = FUN_101546808(param_1,extraout_x1_01,(ID)pcVar3);
+      fVar4 = (float)FUN_1015f7f68(param_3);
+      FUN_1015848e8(IVar2,extraout_x1_02,(int)fVar4);
+    }
+  }
+  else {
+    auVar5 = FUN_1015e44c8();
+    if (auVar5._0_8_ == param_3) {
+      IVar2 = FUN_101546808(param_1,auVar5._8_8_,IVar2);
+      pcVar3 = "onSkipEndSecondChanged:";
+      iVar1 = FUN_101598088(IVar2);
+      if (iVar1 != 0) {
+        IVar2 = FUN_101546808(param_1,extraout_x1,(ID)pcVar3);
+        fVar4 = (float)FUN_1015f7f68(param_3);
+        FUN_1015848c8(IVar2,extraout_x1_00,(int)fVar4);
+      }
+    }
+  }
+  return;
+}
+
+
+
+/* NNCVideoSettingView.int2Time: | 0x100065840 | ev_5932c44bb9fa036eaf8060cbc14b0e36765e2fa6af6e7520e5f9475a46aacb44 */
+
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCVideoSettingView::int2Time_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,param_2,&cf__02ld__02ld);
+  return IVar1;
+}
+
+
+
+/* NNCVideoSettingView.onTimerCloseSelector: | 0x100065890 | ev_f0f660b719b6eb9fd2563bd9f50925a9aabe289652706113b10fcae4eb615322 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::onTimerCloseSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  long lVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  long lVar4;
+  undefined8 uVar5;
+  SEL extraout_x1;
+  SEL pcVar6;
+  SEL extraout_x1_00;
+  undefined1 auVar7 [16];
+  
+  lVar1 = FUN_1015edd48(param_3);
+  auVar7 = FUN_1015e11a8(&objc::class_t::NNCInitManager);
+  FUN_1015d7ba8(auVar7._0_8_,auVar7._8_8_,lVar1 + -300);
+  lVar1 = 300;
+  pcVar6 = extraout_x1;
+  do {
+    IVar2 = FUN_10153e288(param_1,pcVar6);
+    uVar3 = FUN_1015fa8c8(IVar2);
+    lVar4 = FUN_1015edd48(uVar3);
+    uVar5 = FUN_1015e11a8(&objc::class_t::NNCInitManager);
+    auVar7 = FUN_1015efd68(uVar5);
+    FUN_1015d03e8(uVar3,auVar7._8_8_,lVar4 + -300 == auVar7._0_8_);
+    lVar1 = lVar1 + 1;
+    pcVar6 = extraout_x1_00;
+  } while (lVar1 != 0x131);
+  return;
+}
+
+
+
+/* NNCVideoSettingView.speedSelector: | 0x100065974 | ev_980997ccd3e9df8c0cdd0f5760efa18fa92f7ac3cfd02d2beb6c74a50e3b69aa */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::speedSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  long lVar4;
+  SEL extraout_x1;
+  SEL pcVar5;
+  SEL extraout_x1_00;
+  long lVar6;
+  
+  iVar1 = FUN_1015edd48(param_3);
+  lVar6 = 400;
+  pcVar5 = extraout_x1;
+  do {
+    IVar2 = FUN_10153e288(param_1,pcVar5);
+    uVar3 = FUN_1015fa8c8(IVar2);
+    lVar4 = FUN_1015edd48(uVar3);
+    IVar2 = (ID)(iVar1 == lVar4);
+    FUN_1015d03e8(uVar3);
+    lVar6 = lVar6 + 1;
+    pcVar5 = extraout_x1_00;
+  } while (lVar6 != 0x196);
+  IVar2 = FUN_101546808(param_1,extraout_x1_00,IVar2);
+  FUN_1015fa648(IVar2);
+  return;
+}
+
+
+
+/* NNCVideoSettingView.longPressSpeedSelector: | 0x100065a30 | ev_cd3f5d1090cc46a0d8bfbbc10b331aeaf4eef13fd35fa312b3afb5e93e258b52 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::longPressSpeedSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  long lVar4;
+  SEL extraout_x1;
+  SEL pcVar5;
+  SEL extraout_x1_00;
+  long lVar6;
+  
+  iVar1 = FUN_1015edd48(param_3);
+  lVar6 = 500;
+  pcVar5 = extraout_x1;
+  do {
+    IVar2 = FUN_10153e288(param_1,pcVar5);
+    uVar3 = FUN_1015fa8c8(IVar2);
+    lVar4 = FUN_1015edd48(uVar3);
+    IVar2 = (ID)(iVar1 == lVar4);
+    FUN_1015d03e8(uVar3);
+    lVar6 = lVar6 + 1;
+    pcVar5 = extraout_x1_00;
+  } while (lVar6 != 0x1f7);
+  IVar2 = FUN_101546808(param_1,extraout_x1_00,IVar2);
+  FUN_1015fa628(IVar2);
+  return;
+}
+
+
+
+/* NNCVideoSettingView.player | 0x100065aec | ev_6c82c2c489c61e4a6774a68413127e05b830e575a7b9e87a1d8082c950167b5b */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::player(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__player);
+}
+
+
+
+/* NNCVideoSettingView.setPlayer: | 0x100065b0c | ev_d1237356e4a8a3e06941bc591dcd35ec6d155428a7a93a1624ed41faff2c8c8e */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setPlayer_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__player) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.delegate | 0x100065b20 | ev_92b855efaef9774ae9d1f164c3231b976737d8483e72fcf1162605cbf63aa2f1 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::delegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__delegate);
+}
+
+
+
+/* NNCVideoSettingView.setDelegate: | 0x100065b40 | ev_27c52c7bdeb7457c0a81955f7dc7db5cc94884b9c9ad74e3f021ed5be8d4e770 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__delegate) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.bgButton | 0x100065b54 | ev_e5d03616ac6529120f630a8112c2f44b5546d39754602fa163b821f300e6dd17 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::bgButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__bgButton);
+}
+
+
+
+/* NNCVideoSettingView.setBgButton: | 0x100065b64 | ev_0fc297b117c5f14e7cfb5ca987d4965226ae173b16039d62257bfe5d63181642 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setBgButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__bgButton) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.containerView | 0x100065b78 | ev_88d1f4d1f347e6790c143063ea3ec6f86eec4e168123a1f2fb6f27ce331cbbbc */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::containerView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__containerView);
+}
+
+
+
+/* NNCVideoSettingView.setContainerView: | 0x100065b88 | ev_cefbf848e0b631dea3767d2fc92bdc7153a74c3f0a6c45794a08b020d0278ea2 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setContainerView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__containerView) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.titleLabel | 0x100065b9c | ev_4eb36cdf30e32cc038f2ea4839e45eaef7d4b9c3a9fc9582073cb8b62987ee65 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::titleLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__titleLabel);
+}
+
+
+
+/* NNCVideoSettingView.setTitleLabel: | 0x100065bac | ev_4f035c47b5087d5aafdf279ebac135d5c5323eeac303186655e57e2fe3a037a0 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setTitleLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__titleLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.closeButton | 0x100065bc0 | ev_9e15d694a9ec8e494ddde135f4354fc6a3f6ad9222a266beae0d2776354f8540 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::closeButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__closeButton);
+}
+
+
+
+/* NNCVideoSettingView.setCloseButton: | 0x100065bd0 | ev_8eae2be3edb391e995d028fbe5826a770346216f1eb9335f770767225e4098c1 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setCloseButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__closeButton) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.brightnessLabel | 0x100065be4 | ev_8fe09447bc953216165a97d992a0e7e26665ce8bdab6f2e3269f0bdf403cec94 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::brightnessLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__brightnessLabel);
+}
+
+
+
+/* NNCVideoSettingView.setBrightnessLabel: | 0x100065bf4 | ev_40b26c25b21c3a2b64178f9cd5332ca2683e05e4ebbded27ef7361ed48708764 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setBrightnessLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__brightnessLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.volumeLabel | 0x100065c08 | ev_25576d0193099d46a2cf396b8bdff0c46705ad83133a4822689829a192372519 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::volumeLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__volumeLabel);
+}
+
+
+
+/* NNCVideoSettingView.setVolumeLabel: | 0x100065c18 | ev_8a60f0e88ea7caad94321bf034d1a7c3ed0d87167e6a707ca5d4b89c985f65c6 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setVolumeLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__volumeLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.speedLabel | 0x100065c2c | ev_77399318ebdfaf68141c1c27289b8ca5ab5dd19969efd0558b2091e8ecbead09 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::speedLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__speedLabel);
+}
+
+
+
+/* NNCVideoSettingView.setSpeedLabel: | 0x100065c3c | ev_0cf07e3995c08c5f148b86e36538a2cdb27fbfc048788e078bd206bf55306994 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setSpeedLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__speedLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.longPressSpeedLabel | 0x100065c50 | ev_f6e645b4565290675ef032abbe7d30e70febcd3a0b6dbba2ce793753626127a4 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::longPressSpeedLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__longPressSpeedLabel);
+}
+
+
+
+/* NNCVideoSettingView.setLongPressSpeedLabel: | 0x100065c60 | ev_70280559b60773ac6f7509773010c09628006a3dbc1fa7aaffbd958cb7833508 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setLongPressSpeedLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__longPressSpeedLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.timerCloseLabel | 0x100065c74 | ev_54149f242b9074e719f3ee837ac272921bd2e2e64c658a2faf32564db623275a */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::timerCloseLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__timerCloseLabel);
+}
+
+
+
+/* NNCVideoSettingView.setTimerCloseLabel: | 0x100065c84 | ev_ace57cd9edcf2713e09fc8014976ac0ac0931b45e04e5be07bf405499a312f33 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setTimerCloseLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__timerCloseLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.skipStartLabel | 0x100065c98 | ev_17f600617f2566bd9fa95f299181c75cc2b49832a8c576363fcb25bb37446ae7 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::skipStartLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__skipStartLabel);
+}
+
+
+
+/* NNCVideoSettingView.setSkipStartLabel: | 0x100065ca8 | ev_4da9902688dc2584cf1a99a007a7ca8da941404823fd2cdb25288f28ffb8a059 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setSkipStartLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__skipStartLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.skipEndLabel | 0x100065cbc | ev_3a798daf1acee786d05527b073f83535ab5869ec40f5cfe73c024fad82921435 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::skipEndLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__skipEndLabel);
+}
+
+
+
+/* NNCVideoSettingView.setSkipEndLabel: | 0x100065ccc | ev_b7ac7531e3b3501e66730a4728eaf0909c4fdad83fb35b8cfa3da616337d243f */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setSkipEndLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__skipEndLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.skipStartContentLabel | 0x100065ce0 | ev_97d8b78b119e96a32a503753403ad8dd0fe86b82380b9bd9c365aecaf8fd6dc5 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::skipStartContentLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__skipStartContentLabel);
+}
+
+
+
+/* NNCVideoSettingView.setSkipStartContentLabel: | 0x100065cf0 | ev_3773fa8e4bcab427968df367f85240559b9fe163d6fef69cd13e4fc860507de3 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setSkipStartContentLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__skipStartContentLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.skipEndContentLabel | 0x100065d04 | ev_4a73302a9e5612eaf1c7932d5f85d94c120a29ca7ea2a47d019620724a8140f2 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::skipEndContentLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__skipEndContentLabel);
+}
+
+
+
+/* NNCVideoSettingView.setSkipEndContentLabel: | 0x100065d14 | ev_47f12be9aef021b33312350dfeb0f45a0d2f004821fe1413c4b483c86be4e3a8 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setSkipEndContentLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__skipEndContentLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.brightnessSlider | 0x100065d28 | ev_c87bed5eb1c30c94cf296274aae4a4fe00ae3d8da7094d5dd72390328010890d */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::brightnessSlider(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__brightnessSlider);
+}
+
+
+
+/* NNCVideoSettingView.setBrightnessSlider: | 0x100065d38 | ev_a20377fb2f4481cccf33bf9563cdd798709fdf440a22a1517015a84ed2499530 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setBrightnessSlider_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__brightnessSlider) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.volumeSlider | 0x100065d4c | ev_1dd666e628b85df1ad2b0e73ddab72ba67a7505059ec74566d4c0aa2a75d28e6 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::volumeSlider(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__volumeSlider);
+}
+
+
+
+/* NNCVideoSettingView.setVolumeSlider: | 0x100065d5c | ev_a6cc223b0c461546b5c95d3d622bf72b381c507d5b1e25b206ae64377cb780ca */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setVolumeSlider_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__volumeSlider) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.skipStartSlider | 0x100065d70 | ev_ddb8e340fb42cc4786fd05fb1e213864abec597f1001126f2e02a96d1c004b8b */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::skipStartSlider(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__skipStartSlider);
+}
+
+
+
+/* NNCVideoSettingView.setSkipStartSlider: | 0x100065d80 | ev_e3ec748bf6195626f83c3f03bd1e748e6d0a698e4b1e2b382728777f44d18e92 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setSkipStartSlider_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__skipStartSlider) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView.skipEndSlider | 0x100065d94 | ev_1b1bfff6d9e89233966dd81e42fdfd7f71ec352551a9608fa79142491a5a43f5 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSettingView::skipEndSlider(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__skipEndSlider);
+}
+
+
+
+/* NNCVideoSettingView.setSkipEndSlider: | 0x100065da4 | ev_ed9efce7f0f7571dbef3cfc21fdd7967b5b32ce95852c841703f26bec7501ffc */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSettingView::setSkipEndSlider_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__skipEndSlider) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSettingView..cxx_destruct | 0x100065db8 | ev_9ad2ba2427ce772c655c10715acfbf09fa936fe7aa3d6c6daf713dd9ab9fffef */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoSettingView::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__skipEndSlider) = 0;
+  *(undefined8 *)(param_1 + (long)__skipStartSlider) = 0;
+  *(undefined8 *)(param_1 + (long)__volumeSlider) = 0;
+  *(undefined8 *)(param_1 + (long)__brightnessSlider) = 0;
+  *(undefined8 *)(param_1 + (long)__skipEndContentLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__skipStartContentLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__skipEndLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__skipStartLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__timerCloseLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__longPressSpeedLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__speedLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__volumeLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__brightnessLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__closeButton) = 0;
+  *(undefined8 *)(param_1 + (long)__titleLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__containerView) = 0;
+  *(undefined8 *)(param_1 + (long)__bgButton) = 0;
+  _objc_destroyWeak(param_1 + (long)__delegate);
+  _objc_destroyWeak(param_1 + (long)__player);
+  return;
+}
+
+

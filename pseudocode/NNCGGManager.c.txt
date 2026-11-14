@@ -1,0 +1,539 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCGGManager.nncnnchasPostionAd: | 0x1000c97c8 | ev_fc3df5bb9dd84c3a08653c84ffa94215c6c9d41535b368d75f2ee3921029a1ac */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+bool NNCGGManager::nncnnchasPostionAd_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  undefined1 auVar3 [16];
+  
+  uVar1 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+  auVar3 = FUN_101524228(uVar1);
+  lVar2 = FUN_101557e28(auVar3._0_8_,auVar3._8_8_,param_3);
+  return (bool)(lVar2 != 0);
+}
+
+
+
+/* NNCGGManager.showFeedAd:container:controller: | 0x1000c9860 | ev_df1525d1a2e5ab900ec62ce8f00c401f25f230a84e60ed7d592187f17c4d1d86 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x28 bytes */
+
+void NNCGGManager::showFeedAd_container_controller_
+               (ID param_1,SEL param_2,ID param_3,ID param_4,ID param_5)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  undefined8 in_d2;
+  
+  uVar1 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+  FUN_101531d88(uVar1);
+  FUN_1015e2448(in_d2,param_1,extraout_x1,param_3,param_4,param_5);
+  return;
+}
+
+
+
+/* NNCGGManager.showFeedAd:container:controller:adContainerWidth: | 0x1000c990c | ev_a3684ada750a054fb05561208e178a6b1f7f2401d47665a5cda957216274edbf */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x30 bytes */
+
+void NNCGGManager::showFeedAd_container_controller_adContainerWidth_
+               (ID param_1,SEL param_2,ID param_3,ID param_4,ID param_5,double param_6)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  ID IVar4;
+  undefined8 extraout_x0;
+  long lVar5;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  SEL extraout_x1_03;
+  SEL extraout_x1_04;
+  SEL extraout_x1_05;
+  SEL extraout_x1_06;
+  SEL extraout_x1_07;
+  undefined8 extraout_x1_08;
+  SEL extraout_x1_09;
+  SEL extraout_x1_10;
+  SEL extraout_x1_11;
+  SEL extraout_x1_12;
+  SEL extraout_x1_13;
+  SEL extraout_x1_14;
+  undefined8 extraout_x1_15;
+  SEL extraout_x1_16;
+  SEL extraout_x1_17;
+  SEL extraout_x1_18;
+  undefined8 extraout_x1_19;
+  SEL extraout_x1_20;
+  SEL extraout_x1_21;
+  SEL pcVar6;
+  double dVar7;
+  double dVar8;
+  undefined8 uVar9;
+  undefined8 uVar10;
+  undefined8 uVar11;
+  undefined1 auVar12 [16];
+  
+  FUN_1015ac368(param_1,param_2,param_5);
+  FUN_1015abde8(param_1,extraout_x1,param_4);
+  FUN_1015abe48(param_6,param_1);
+  uVar2 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+  auVar12 = FUN_101524228(uVar2);
+  IVar3 = FUN_101557e28(auVar12._0_8_,auVar12._8_8_,param_3);
+  FUN_1015a1988(param_1);
+  IVar4 = FUN_101523dc8(param_1,extraout_x1_00);
+  if (IVar4 == 0) {
+    uVar2 = *(undefined8 *)PTR__CGRectZero_101d78140;
+    uVar9 = *(undefined8 *)(PTR__CGRectZero_101d78140 + 8);
+    uVar10 = *(undefined8 *)(PTR__CGRectZero_101d78140 + 0x10);
+    uVar11 = *(undefined8 *)(PTR__CGRectZero_101d78140 + 0x18);
+    IVar4 = FUN_10153e288(param_1,extraout_x1_01);
+    FUN_1015b4b08(uVar2,uVar9,uVar10,uVar11,IVar4);
+    IVar3 = FUN_101546808(param_1,extraout_x1_13,IVar3);
+    uVar9 = *(undefined8 *)PTR__CGSizeZero_101d78148;
+    uVar2 = *(undefined8 *)(PTR__CGSizeZero_101d78148 + 8);
+  }
+  else {
+    dVar7 = (double)FUN_10153e308(param_1);
+    FUN_101523dc8(param_1,extraout_x1_02);
+    dVar7 = (double)FUN_101557e08(dVar7 + -30.0,&objc::class_t::NNCGGRootModel);
+    FUN_1015abd48(dVar7 + 20.0,param_1);
+    uVar2 = FUN_10153e308(param_1);
+    IVar3 = FUN_10153e288(param_1,extraout_x1_03);
+    FUN_1015dd9c8(uVar2,IVar3);
+    uVar2 = FUN_10153e1a8(param_1);
+    IVar3 = FUN_10153e288(param_1,extraout_x1_04);
+    FUN_1015b6f28(uVar2,IVar3);
+    IVar3 = FUN_10153e288(param_1,extraout_x1_05);
+    FUN_101593328(IVar3);
+    IVar3 = FUN_101523dc8(param_1,extraout_x1_06);
+    iVar1 = FUN_101570948(IVar3);
+    if (iVar1 == 0) {
+      uVar2 = _objc_alloc(&_OBJC_CLASS___UIImageView);
+      dVar7 = (double)FUN_10153e308(param_1);
+      IVar3 = FUN_10153e288(param_1,extraout_x1_14);
+      dVar8 = (double)FUN_10155e568(IVar3);
+      auVar12 = FUN_101564e08(0x402e000000000000,0x4024000000000000,dVar7 + -30.0,dVar8 + -20.0,
+                              uVar2);
+      IVar3 = auVar12._0_8_;
+      auVar12 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar12._8_8_,0);
+      FUN_1015a5908(IVar3,auVar12._8_8_,auVar12._0_8_);
+      FUN_1015ac0a8(IVar3,extraout_x1_15,0);
+      IVar4 = FUN_101574688(IVar3,extraout_x1_16);
+      FUN_1015ac5e8(0x4000000000000000,IVar4);
+      IVar4 = FUN_101574688(IVar3,extraout_x1_17);
+      FUN_1015c25a8(IVar4);
+      IVar4 = FUN_101523dc8(param_1,extraout_x1_18);
+      auVar12 = FUN_101540108(IVar4);
+      auVar12 = FUN_1015156a8(&_OBJC_CLASS___NSURL,auVar12._8_8_,auVar12._0_8_);
+      FUN_10159db08(IVar3,auVar12._8_8_,auVar12._0_8_);
+      FUN_1015db108(IVar3,extraout_x1_19,1);
+      auVar12 = _objc_alloc(&_OBJC_CLASS___UITapGestureRecognizer);
+      auVar12 = FUN_101567988(auVar12._0_8_,auVar12._8_8_,param_1,"nativeAdTapped");
+      FUN_101525d08(IVar3,auVar12._8_8_,auVar12._0_8_);
+      IVar4 = FUN_10153e288(param_1,extraout_x1_20);
+      FUN_101527148(IVar4);
+      pcVar6 = extraout_x1_21;
+    }
+    else {
+      uVar2 = FUN_1015813c8(&_OBJC_CLASS___UIView);
+      dVar7 = (double)FUN_10153e308(param_1);
+      IVar3 = FUN_10153e288(param_1,extraout_x1_07);
+      dVar8 = (double)FUN_10155e568(IVar3);
+      FUN_1015b4b08(0x402e000000000000,0x4024000000000000,dVar7 + -30.0,dVar8 + -20.0,uVar2);
+      auVar12 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_08,0xf5f5f9);
+      FUN_1015a5908(uVar2,auVar12._8_8_,auVar12._0_8_);
+      IVar3 = FUN_10153e288(param_1,extraout_x1_09);
+      FUN_101527148(IVar3);
+      FUN_101596288((ID)&objc::class_t::WindMillAdRequest,extraout_x1_10);
+      IVar3 = FUN_101523dc8(param_1,extraout_x1_11);
+      auVar12 = FUN_10159dca8(IVar3);
+      FUN_1015c8a08(extraout_x0,auVar12._8_8_,auVar12._0_8_);
+      lVar5 = FUN_10157ecc8(param_1);
+      if (lVar5 == 0) {
+        auVar12 = _objc_alloc(&objc::class_t::WindMillNativeAdsManager);
+        auVar12 = FUN_101567008(auVar12._0_8_,auVar12._8_8_,extraout_x0);
+        FUN_1015c4928(param_1,auVar12._8_8_,auVar12._0_8_);
+      }
+      auVar12 = FUN_10157ecc8(param_1);
+      FUN_1015aeee8(auVar12._0_8_,auVar12._8_8_,param_1);
+      uVar9 = FUN_10153e308(param_1);
+      uVar10 = FUN_10153e1a8(param_1);
+      uVar2 = FUN_10157ecc8(param_1);
+      FUN_1015a1d08(uVar9,uVar10,uVar2);
+      uVar2 = FUN_10157ecc8(param_1);
+      IVar3 = 1;
+      FUN_101575ae8(uVar2);
+      pcVar6 = extraout_x1_12;
+    }
+    IVar3 = FUN_101546808(param_1,pcVar6,IVar3);
+    uVar9 = FUN_10153e308(param_1);
+    uVar2 = FUN_10153e1a8(param_1);
+  }
+  FUN_101581d28(uVar9,uVar2,IVar3);
+  return;
+}
+
+
+
+/* NNCGGManager.nativeAdTapped | 0x1000c9f44 | ev_f45c5f790506e25c3f1affc4c2d5e0c93abb65f4505696c052b8fc6d3266406f */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCGGManager::nativeAdTapped(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  
+  IVar1 = FUN_101523dc8(param_1,param_2);
+  uVar2 = FUN_10153ecc8(param_1);
+  auVar3 = FUN_101580708(uVar2);
+  FUN_101581a08(&objc::class_t::AppDelegate,auVar3._8_8_,IVar1,auVar3._0_8_);
+  return;
+}
+
+
+
+/* NNCGGManager.nativeAdsManagerSuccessToLoad: | 0x1000c9fc8 | ev_0651ad31a6462c9b5581a9a7d771c0dfa3810047e61c2a0ee76b24203ea57c33 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCGGManager::nativeAdsManagerSuccessToLoad_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  ID IVar3;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  undefined8 uVar4;
+  undefined1 auVar5 [16];
+  
+  FUN_101547068(param_3);
+  _NSLog(&cf_nativeAdsManagerSuccessToLoad______);
+  uVar1 = FUN_10157ecc8(param_1);
+  uVar1 = FUN_101556628(uVar1);
+  FUN_1015532e8(uVar1);
+  auVar5 = FUN_1015813c8(&objc::class_t::WindMillNativeAdView);
+  IVar3 = auVar5._0_8_;
+  FUN_1015aeee8(IVar3,auVar5._8_8_,param_1);
+  FUN_101591ba8(IVar3);
+  auVar5 = FUN_10153ecc8(param_1);
+  FUN_1015dc8c8(IVar3,auVar5._8_8_,auVar5._0_8_);
+  FUN_1015a1f48(param_1);
+  IVar2 = FUN_101524728(param_1,extraout_x1);
+  uVar1 = FUN_10155e568(IVar2);
+  IVar2 = FUN_10153e288(param_1,extraout_x1_00);
+  FUN_1015b6f28(uVar1,IVar2);
+  IVar2 = FUN_10153e288(param_1,extraout_x1_01);
+  FUN_101527148(IVar2);
+  IVar3 = FUN_101546808(param_1,extraout_x1_02,IVar3);
+  uVar1 = FUN_10153e308(param_1);
+  uVar4 = FUN_10153e1a8(param_1);
+  FUN_101581d28(uVar1,uVar4,IVar3);
+  return;
+}
+
+
+
+/* NNCGGManager.nativeAdView:dislikeWithReason: | 0x1000ca188 | ev_3be1a5ebc691b9bd1806485c5d4c04aca59ca95c4e50f67232221794b52c10c5 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCGGManager::nativeAdView_dislikeWithReason_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  ID IVar1;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  SEL extraout_x1_03;
+  ID IVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  
+  _NSLog(&cf_dislikeWithReason);
+  FUN_101593bc8(param_3,extraout_x1);
+  FUN_1015aeee8(param_3,extraout_x1_00,0);
+  IVar2 = 0;
+  FUN_1015a1f48(param_1);
+  IVar1 = FUN_10153e288(param_1,extraout_x1_01);
+  FUN_101593328(IVar1);
+  IVar1 = FUN_10153e288(param_1,extraout_x1_02);
+  FUN_1015b6f28(0x3f847ae147ae147b,IVar1);
+  IVar1 = FUN_101546808(param_1,extraout_x1_03,IVar2);
+  uVar3 = FUN_10153e308(param_1);
+  uVar4 = FUN_10153e1a8(param_1);
+  FUN_101581d28(uVar3,uVar4,IVar1);
+  return;
+}
+
+
+
+/* NNCGGManager.delegate | 0x1000ca270 | ev_3ce0b55fd0c69c5b514be98b5ff4a9a5ff8289011695c50095927a8a26dcd0d5 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCGGManager::delegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* NNCGGManager.setDelegate: | 0x1000ca288 | ev_852714d7f8d320256cc5ddb553caa24472f7204306cd07f1bab4aa15af4192c0 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCGGManager::setDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCGGManager.controller | 0x1000ca294 | ev_0cb08274582700e658290cb7ef40e03f94ed461283eb7e88072190d5d39c9c3f */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCGGManager::controller(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCGGManager.setController: | 0x1000ca2ac | ev_a6aa4af2cbe49dcde4c637eb520db990c19759646fd8e3635b8e0d9fbc1e4ded */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCGGManager::setController_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCGGManager.containerView | 0x1000ca2b8 | ev_9d935432c7c0a62e28b5cdb6d0c0f6c516eff889f57492d34b6006c978043737 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCGGManager::containerView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x18);
+}
+
+
+
+/* NNCGGManager.setContainerView: | 0x1000ca2d0 | ev_aba63d8693e8029fab660ab3f34c658bbb59fc997ed5902de76fd6803d30c610 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCGGManager::setContainerView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* NNCGGManager.containerWidth | 0x1000ca2dc | ev_58a06c5de7b3968c9ca859abec7d94d07a34faa9a4396a53e7c1cd3d3a61db98 */
+
+/* Function Stack Size: 0x10 bytes */
+
+double NNCGGManager::containerWidth(ID param_1,SEL param_2)
+
+{
+  return *(double *)(param_1 + 0x20);
+}
+
+
+
+/* NNCGGManager.setContainerWidth: | 0x1000ca2e4 | ev_b1392b726daa835ce9231407528d2fa8c3f9b9bebc2ae72dfadb3d9d6c4f155c */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCGGManager::setContainerWidth_(ID param_1,SEL param_2,double param_3)
+
+{
+  *(double *)(param_1 + 0x20) = param_3;
+  return;
+}
+
+
+
+/* NNCGGManager.containerHeight | 0x1000ca2ec | ev_17870e9c40b0472bf5f7d5cec79fa92595c0946270aef6178ad50b87265e4de7 */
+
+/* Function Stack Size: 0x10 bytes */
+
+double NNCGGManager::containerHeight(ID param_1,SEL param_2)
+
+{
+  return *(double *)(param_1 + 0x28);
+}
+
+
+
+/* NNCGGManager.setContainerHeight: | 0x1000ca2f4 | ev_705499050463bd6a8104045edc57a034456ca486dd441c55fb2b5408c5468ba7 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCGGManager::setContainerHeight_(ID param_1,SEL param_2,double param_3)
+
+{
+  *(double *)(param_1 + 0x28) = param_3;
+  return;
+}
+
+
+
+/* NNCGGManager.adModel | 0x1000ca2fc | ev_0c670cb9fdeacbfbb262cc01fa9a83f1790d2a4e6d0f6d4f03575aacd22e8dae */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCGGManager::adModel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x30);
+}
+
+
+
+/* NNCGGManager.setAdModel: | 0x1000ca304 | ev_a8a92e920e133b3119f791479a52a7a4e74e2917a1a54f5ada9bac85ca462acd */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCGGManager::setAdModel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x30) = param_3;
+  return;
+}
+
+
+
+/* NNCGGManager.nativeAdManager | 0x1000ca310 | ev_b5b99f73699bd902b6ba49698db57041529fdef6ce64da0d176c1fecbf96eafa */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCGGManager::nativeAdManager(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x38);
+}
+
+
+
+/* NNCGGManager.setNativeAdManager: | 0x1000ca318 | ev_6d47f93facf04efbc6842a2cb87a60adf8bc88f87eb6c98747d3d4ad0dea2396 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCGGManager::setNativeAdManager_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x38) = param_3;
+  return;
+}
+
+
+
+/* NNCGGManager.adView | 0x1000ca324 | ev_6a6e47351ad368169b9987bb27b6537871b260a68e74e4d5d6f3c056b27b43df */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCGGManager::adView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x40);
+}
+
+
+
+/* NNCGGManager.setAdView: | 0x1000ca32c | ev_f9ce3f2bdafa269cfbdcebdc2c5eab3482aae557193495b8af175fe1dc986c6e */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCGGManager::setAdView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x40) = param_3;
+  return;
+}
+
+
+
+/* NNCGGManager..cxx_destruct | 0x1000ca338 | ev_0a0409a9916984699979855698d0cc14f1693798a76002b00fa4a8a93a42640e */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCGGManager::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x40) = 0;
+  *(undefined8 *)(param_1 + 0x38) = 0;
+  *(undefined8 *)(param_1 + 0x30) = 0;
+  _objc_destroyWeak(param_1 + 0x18);
+  _objc_destroyWeak(param_1 + 0x10);
+  _objc_destroyWeak(param_1 + 8);
+  return;
+}
+
+

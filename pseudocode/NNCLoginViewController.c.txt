@@ -1,0 +1,721 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCLoginViewController.viewDidLoad | 0x100052668 | ev_3271314b7f2c7f6639060e57775e4cb7285a5a1dca07ca8905b0b080d6c5ba28 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCLoginViewController::viewDidLoad(ID param_1,SEL param_2)
+
+{
+  ID *pIVar1;
+  ID *pIVar2;
+  undefined8 *puVar3;
+  undefined8 *puVar4;
+  ID IVar5;
+  undefined8 uVar6;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  SEL extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined8 extraout_x1_07;
+  undefined8 extraout_x1_08;
+  undefined8 extraout_x1_09;
+  undefined8 extraout_x1_10;
+  undefined8 extraout_x1_11;
+  long lVar7;
+  undefined8 uVar8;
+  undefined8 uVar9;
+  undefined1 auVar10 [16];
+  undefined1 auVar11 [16];
+  ID local_b8;
+  class_t *pcStack_b0;
+  undefined8 local_a8;
+  undefined8 local_a0;
+  undefined8 uStack_98;
+  undefined8 local_90;
+  undefined8 local_88;
+  undefined8 local_80;
+  undefined8 local_78;
+  undefined8 local_70;
+  long local_68;
+  
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  pcStack_b0 = &objc::class_t::NNCLoginViewController;
+  local_b8 = param_1;
+  _objc_msgSendSuper2(&local_b8,"viewDidLoad");
+  auVar10 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1,&cf_myBgColor);
+  FUN_1015d6fa8(*(undefined8 *)(param_1 + (long)__loginLabel),auVar10._8_8_,auVar10._0_8_);
+  pIVar1 = (ID *)(param_1 + (long)__phoneBg);
+  IVar5 = FUN_101574688(*pIVar1,extraout_x1_00);
+  FUN_1015ac5e8(0x4020000000000000,IVar5);
+  IVar5 = FUN_101574688(*pIVar1,extraout_x1_01);
+  FUN_1015c25a8(IVar5);
+  pIVar2 = (ID *)(param_1 + (long)__pwdBg);
+  IVar5 = FUN_101574688(*pIVar2,extraout_x1_02);
+  FUN_1015ac5e8(0x4020000000000000,IVar5);
+  IVar5 = FUN_101574688(*pIVar2,extraout_x1_03);
+  FUN_1015c25a8(IVar5);
+  auVar10 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_04,&cf_TextBgViewColo);
+  FUN_1015a5908(*pIVar1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_05,&cf_TextBgViewColo);
+  FUN_1015a5908(*pIVar2,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_06,&cf_myBgColor);
+  puVar3 = (undefined8 *)(param_1 + (long)__phoneField);
+  FUN_1015d6fa8(*puVar3,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_07,&cf_myBgColor);
+  puVar4 = (undefined8 *)(param_1 + (long)__pwdField);
+  FUN_1015d6fa8(*puVar4,auVar10._8_8_,auVar10._0_8_);
+  uVar6 = *(undefined8 *)(param_1 + (long)__forgetButton);
+  auVar10 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_08,&cf_myBgColor);
+  FUN_1015d7ea8(uVar6,auVar10._8_8_,auVar10._0_8_,0);
+  uVar6 = *(undefined8 *)(param_1 + (long)__regButtn);
+  auVar10 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_09,&cf_myBgColor);
+  FUN_1015d7ea8(uVar6,auVar10._8_8_,auVar10._0_8_,0);
+  uVar6 = _objc_alloc(&_OBJC_CLASS___NSAttributedString);
+  auVar10 = FUN_10158a308(*puVar3);
+  uVar9 = *(undefined8 *)PTR__NSForegroundColorAttributeName_101d78300;
+  local_88 = uVar9;
+  local_78 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar10._8_8_,0xffffff);
+  uVar8 = *(undefined8 *)PTR__NSFontAttributeName_101d782f8;
+  local_80 = uVar8;
+  auVar11 = FUN_101553a08(*puVar3);
+  local_70 = auVar11._0_8_;
+  auVar11 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar11._8_8_,&local_78,&local_88,2);
+  auVar10 = FUN_101567728(uVar6,auVar11._8_8_,auVar10._0_8_,auVar11._0_8_);
+  FUN_1015a4e88(*puVar3,auVar10._8_8_,auVar10._0_8_);
+  uVar6 = _objc_alloc(&_OBJC_CLASS___NSAttributedString);
+  auVar10 = FUN_10158a308(*puVar4);
+  local_a8 = uVar9;
+  uStack_98 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar10._8_8_,0xffffff);
+  local_a0 = uVar8;
+  auVar11 = FUN_101553a08(*puVar4);
+  local_90 = auVar11._0_8_;
+  auVar11 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar11._8_8_,&uStack_98,&local_a8,2);
+  auVar10 = FUN_101567728(uVar6,auVar11._8_8_,auVar10._0_8_,auVar11._0_8_);
+  FUN_1015a4e88(*puVar4,auVar10._8_8_,auVar10._0_8_);
+  lVar7 = (long)__secureButton;
+  uVar6 = *(undefined8 *)(param_1 + lVar7);
+  auVar10 = FUN_101560a48(&_OBJC_CLASS___UIImage,extraout_x1_10,&cf_nnc_ic_pwd_on);
+  FUN_1015b8468(uVar6,auVar10._8_8_,auVar10._0_8_,0);
+  uVar6 = *(undefined8 *)(param_1 + lVar7);
+  auVar10 = FUN_101560a48(&_OBJC_CLASS___UIImage,extraout_x1_11,&cf_nnc_ic_pwd_off);
+  FUN_1015b8468(uVar6,auVar10._8_8_,auVar10._0_8_,4);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_68) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCLoginViewController.viewDidLayoutSubviews | 0x100052c98 | ev_228f00c5b406da6d62bd9a27c423f5e4fcd991a4325c8a94301cb4a6fce3db8e */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NNCLoginViewController::viewDidLayoutSubviews(ID param_1,SEL param_2)
+
+{
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCLoginViewController;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"viewDidLayoutSubviews");
+  FUN_101541948(param_1);
+  return;
+}
+
+
+
+/* NNCLoginViewController.createView | 0x100052ce0 | ev_ffd5cea577f2f7eae6eacebcb1fa6d22c0271e7e715435c58aa567dc7df68350 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCLoginViewController::createView(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined8 in_d2;
+  undefined1 auVar2 [16];
+  
+  auVar2 = _objc_alloc(&objc::class_t::NNCBgView);
+  IVar1 = FUN_1015fa0a8(param_1,auVar2._8_8_);
+  FUN_101531d88(IVar1);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1);
+  FUN_101531d88(IVar1);
+  FUN_101564e08(0,0,in_d2,auVar2._0_8_);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_00);
+  FUN_101527148(IVar1);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_01);
+  FUN_101569288(IVar1);
+  return;
+}
+
+
+
+/* NNCLoginViewController.viewWillDisappear: | 0x100052dc8 | ev_f0f847970e8cd25aa0bf1ab77af5d33b52d11cf16a957249e6a4d928ebdb789a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCLoginViewController::viewWillDisappear_(ID param_1,SEL param_2,bool param_3)
+
+{
+  ID IVar1;
+  SEL extraout_x1;
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCLoginViewController;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"viewWillDisappear:",param_3);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1);
+  FUN_10154dd68(IVar1);
+  return;
+}
+
+
+
+/* NNCLoginViewController.touchesBegan:withEvent: | 0x100052e2c | ev_5346387cbd5239dd323a5e40a8cadca44c78a2dc8110814cc2811675cdd29e7f */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCLoginViewController::touchesBegan_withEvent_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_1015fa0a8(param_1,param_2);
+  FUN_10154dd68(IVar1);
+  return;
+}
+
+
+
+/* NNCLoginViewController.regSelector: | 0x100052e60 | ev_83cf54cbce695169f02abbf79c838635f073d4b7b5631d10e8cf92f49a2cc5e1 */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCLoginViewController::regSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar2 [16];
+  
+  _objc_alloc(&objc::class_t::NNCRegViewController);
+  uVar1 = FUN_101561e88();
+  auVar2 = _objc_alloc(&_OBJC_CLASS___UINavigationController);
+  auVar2 = FUN_101567168(auVar2._0_8_,auVar2._8_8_,uVar1);
+  uVar1 = auVar2._0_8_;
+  FUN_1015c3c28(uVar1,auVar2._8_8_,0);
+  FUN_1015c3c28(uVar1,extraout_x1,0);
+  FUN_10158dbc8(param_1,extraout_x1_00,uVar1,1,0);
+  return;
+}
+
+
+
+/* NNCLoginViewController.forgetSelector: | 0x100052ee4 | ev_4c19562e4a59969f8670d77642f55360878d41ba25055e2f4f550e5888912f22 */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCLoginViewController::forgetSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar2 [16];
+  
+  _objc_alloc(&objc::class_t::NNCForgetPwdViewController);
+  uVar1 = FUN_101561e88();
+  auVar2 = _objc_alloc(&_OBJC_CLASS___UINavigationController);
+  auVar2 = FUN_101567168(auVar2._0_8_,auVar2._8_8_,uVar1);
+  uVar1 = auVar2._0_8_;
+  FUN_1015c3c28(uVar1,auVar2._8_8_,0);
+  FUN_1015c3c28(uVar1,extraout_x1,0);
+  FUN_10158dbc8(param_1,extraout_x1_00,uVar1,1,0);
+  return;
+}
+
+
+
+/* NNCLoginViewController.nextSelector: | 0x100052f68 | ev_f19efb8fa0c34e1a713c7fdbc2c3c8fb423f8f7ac0da886f0e5da70966c59b6f */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCLoginViewController::nextSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined *puVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 extraout_x0;
+  _Unwind_Exception *exception_object;
+  SEL pcVar5;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  cfstringStruct *pcVar6;
+  undefined1 *unaff_x24;
+  undefined1 auVar7 [16];
+  undefined *local_f0;
+  undefined8 local_e8;
+  code *local_e0;
+  undefined *puStack_d8;
+  undefined1 auStack_d0 [8];
+  undefined *local_c8;
+  undefined8 local_c0;
+  code *local_b8;
+  undefined *puStack_b0;
+  undefined1 auStack_a8 [8];
+  undefined1 auStack_a0 [8];
+  cfstringStruct *local_98;
+  cfstringStruct *local_90;
+  ID IStack_88;
+  undefined8 local_80;
+  long local_78;
+  
+  local_78 = *(long *)PTR____stack_chk_guard_101d78938;
+  IVar2 = FUN_1015eee68(*(ID *)(param_1 + (long)__phoneField),param_2);
+  auVar7 = FUN_1015750a8(IVar2);
+  pcVar5 = auVar7._8_8_;
+  if (auVar7._0_8_ == 0) {
+    pcVar6 = &cf_Kb_gS;
+  }
+  else {
+    IVar2 = FUN_1015eee68(*(ID *)(param_1 + (long)__pwdField),pcVar5);
+    auVar7 = FUN_1015750a8(IVar2);
+    pcVar5 = auVar7._8_8_;
+    if (5 < auVar7._0_8_) {
+      IVar2 = FUN_1015fa0a8(param_1,pcVar5);
+      FUN_10154dd68(IVar2);
+      FUN_1015e2a68(0xbf800000,&objc::class_t::SVProgressHUD);
+      FUN_101557508(&objc::class_t::NNCRequestDo);
+      uVar3 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf___login);
+      local_98 = &cf_u;
+      auVar7 = FUN_101589ea8(param_1);
+      IStack_88 = FUN_1015eee68(auVar7._0_8_,auVar7._8_8_);
+      local_90 = &cf_p;
+      auVar7 = FUN_10158f368(param_1);
+      IVar2 = FUN_1015eee68(auVar7._0_8_,auVar7._8_8_);
+      auVar7 = FUN_10157b008(IVar2);
+      local_80 = auVar7._0_8_;
+      uVar4 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar7._8_8_,&IStack_88,&local_98,2);
+      _objc_initWeak(auStack_a0,param_1);
+      FUN_101596288((ID)&objc::class_t::NNCBIZRequest,extraout_x1_00);
+      puVar1 = PTR___NSConcreteStackBlock_101d78760;
+      local_c8 = PTR___NSConcreteStackBlock_101d78760;
+      local_c0 = 0xc2000000;
+      local_b8 = FUN_1000532f0;
+      puStack_b0 = &UNK_101d7b990;
+      param_1 = (ID)auStack_a8;
+      _objc_copyWeak(param_1,auStack_a0);
+      local_f0 = puVar1;
+      local_e8 = 0xc2000000;
+      local_e0 = FUN_100053388;
+      puStack_d8 = &UNK_101d7b9c0;
+      unaff_x24 = auStack_d0;
+      _objc_copyWeak(unaff_x24,auStack_a0);
+      FUN_101596fa8(extraout_x0,extraout_x1_01,uVar3,uVar4,&local_c8,&local_f0);
+      _objc_destroyWeak(unaff_x24);
+      _objc_destroyWeak(param_1);
+      _objc_destroyWeak(auStack_a0);
+      goto LAB_10005327c;
+    }
+    pcVar6 = &cf__x__N6;
+  }
+  FUN_1015e2328(&objc::class_t::SVProgressHUD,pcVar5,pcVar6);
+LAB_10005327c:
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_78) {
+    return;
+  }
+  exception_object = (_Unwind_Exception *)FUN_100ab8e90(0);
+  _objc_destroyWeak(unaff_x24);
+  _objc_destroyWeak(param_1);
+  _objc_destroyWeak(auStack_a0);
+                    /* WARNING: Subroutine does not return */
+  __Unwind_Resume(exception_object);
+}
+
+
+
+/* NNCLoginViewController.secureSelector: | 0x100053468 | ev_8bf1e109abc527ab78d4c0eb074abda6b2c6c232c3ff58ec8891ea1f8a90a4c4 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCLoginViewController::secureSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  uint uVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  
+  uVar2 = FUN_10159e388();
+  uVar1 = FUN_101570a08(uVar2);
+  auVar3 = FUN_10159e388(param_1);
+  FUN_1015d03e8(auVar3._0_8_,auVar3._8_8_,uVar1 ^ 1);
+  uVar2 = FUN_10158f368(param_1);
+  uVar1 = FUN_1015709c8(uVar2);
+  auVar3 = FUN_10158f368(param_1);
+  FUN_1015d00e8(auVar3._0_8_,auVar3._8_8_,uVar1 ^ 1);
+  return;
+}
+
+
+
+/* NNCLoginViewController.closeSelector: | 0x100053514 | ev_a5850970370a38e11be13b7b12219500a6e5e78a2c28b7252704986f014b2e7b */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCLoginViewController::closeSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_101580708();
+  FUN_101549e68(auVar1._0_8_,auVar1._8_8_,1,&PTR___NSConcreteGlobalBlock_101d7c7e8);
+  return;
+}
+
+
+
+/* NNCLoginViewController.viewControllerDidDismiss:cancelled: | 0x100053554 | ev_26743e85f6a7384f223044825853b890253f442d9bb0d4b0351efecfc7e87e7e */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x1c bytes */
+
+void NNCLoginViewController::viewControllerDidDismiss_cancelled_
+               (ID param_1,SEL param_2,ID param_3,bool param_4)
+
+{
+  int iVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_101539ca8(&objc::class_t::NNCRegViewController);
+  iVar1 = FUN_10156e908(param_3,auVar2._8_8_,auVar2._0_8_);
+  if ((iVar1 != 0) && ((param_4 & 1) == 0)) {
+    auVar2 = FUN_101580708(param_1);
+    FUN_101549e68(auVar2._0_8_,auVar2._8_8_,0,&UNK_101d7c808);
+    return;
+  }
+  return;
+}
+
+
+
+/* NNCLoginViewController.preferredStatusBarStyle | 0x1000535f4 | ev_577e4b176ae203392765f1ac2db453a99fd9c7af0395f78107ff609ccc15918c */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long NNCLoginViewController::preferredStatusBarStyle(ID param_1,SEL param_2)
+
+{
+  return 1;
+}
+
+
+
+/* NNCLoginViewController.loginLabel | 0x1000535fc | ev_24c733fa71dbde57afc8ae70228e73034e45b80fa78373ed651ac6be3b6ceb24 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCLoginViewController::loginLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__loginLabel);
+}
+
+
+
+/* NNCLoginViewController.setLoginLabel: | 0x10005361c | ev_912375c405bc99e4577d2a136ae267dbb96a9e7413511fa4ba9603f6d270c8f4 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCLoginViewController::setLoginLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__loginLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCLoginViewController.phoneBg | 0x100053630 | ev_b899b93cc15c7bbdca7ef2eeca69f0add019b457e4136c24627cebf2d0b8d2dc */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCLoginViewController::phoneBg(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__phoneBg);
+}
+
+
+
+/* NNCLoginViewController.setPhoneBg: | 0x100053650 | ev_be8809cc8fd87753026bae75ff270390f683285a7d3286b5dccfc66729f9e4a6 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCLoginViewController::setPhoneBg_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__phoneBg) = param_3;
+  return;
+}
+
+
+
+/* NNCLoginViewController.pwdBg | 0x100053664 | ev_f8a916229ad6e8e2130d40c2ac4ee1ba143d2f130c56438238fcba457292ab79 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCLoginViewController::pwdBg(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__pwdBg);
+}
+
+
+
+/* NNCLoginViewController.setPwdBg: | 0x100053684 | ev_03f9b3f774f09de3c0694185de9cedd1a925fd7e2cf1b4683381c0918b449e73 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCLoginViewController::setPwdBg_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__pwdBg) = param_3;
+  return;
+}
+
+
+
+/* NNCLoginViewController.secureButton | 0x100053698 | ev_323533ca2b54e0197e257557ba6ec7d965d6eb4e151937cc5ee863cf40660cc1 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCLoginViewController::secureButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__secureButton);
+}
+
+
+
+/* NNCLoginViewController.setSecureButton: | 0x1000536b8 | ev_52d530fdaf14482cbf24d1ec70501cc9710e4b178906a2ef7205c47c859de909 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCLoginViewController::setSecureButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__secureButton) = param_3;
+  return;
+}
+
+
+
+/* NNCLoginViewController.forgetButton | 0x1000536cc | ev_cd0a21f17af6c3b6b0dca58e731370a868746302b86a5e1082011f9abd4d5ba0 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCLoginViewController::forgetButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__forgetButton);
+}
+
+
+
+/* NNCLoginViewController.setForgetButton: | 0x1000536ec | ev_0d3f657656cbe96aac3b3d6587f05ff6feeb114d788a10d7ff63c2b3652ca42a */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCLoginViewController::setForgetButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__forgetButton) = param_3;
+  return;
+}
+
+
+
+/* NNCLoginViewController.regButtn | 0x100053700 | ev_1773d0dcf4d8cee03df189ff603c8f58927ddb283847d0ff6306dea7e0607099 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCLoginViewController::regButtn(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__regButtn);
+}
+
+
+
+/* NNCLoginViewController.setRegButtn: | 0x100053720 | ev_7701c7d00f0201a2a7b5bf8053e5bd899abe67e14c4017b514eacfb9a99b6d42 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCLoginViewController::setRegButtn_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__regButtn) = param_3;
+  return;
+}
+
+
+
+/* NNCLoginViewController.phoneField | 0x100053734 | ev_19bde76565093978539d2a8be73997b777592d9d14fd2655983cac5158a7cdfc */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCLoginViewController::phoneField(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__phoneField);
+}
+
+
+
+/* NNCLoginViewController.setPhoneField: | 0x100053754 | ev_10731ba09609ed8f0d2ff28feea7e62c9a9eeeededaf003ffeb913d0f0a27fbc */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCLoginViewController::setPhoneField_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__phoneField) = param_3;
+  return;
+}
+
+
+
+/* NNCLoginViewController.pwdField | 0x100053768 | ev_81c6865118b31d07a87725cb3964b572ab68328d794a5095718f969e4d4e3df7 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCLoginViewController::pwdField(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__pwdField);
+}
+
+
+
+/* NNCLoginViewController.setPwdField: | 0x100053788 | ev_7b3c417d4edf2f29bcef9a998994144a1e9ffed759d1ae67b1d4a3753a206161 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCLoginViewController::setPwdField_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__pwdField) = param_3;
+  return;
+}
+
+
+
+/* NNCLoginViewController..cxx_destruct | 0x10005379c | ev_0fa2b8011e684dab6c4c30a8bcf4640d74944e6019e9e1283910626daf5695c6 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCLoginViewController::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + (long)__pwdField);
+  _objc_destroyWeak(param_1 + (long)__phoneField);
+  _objc_destroyWeak(param_1 + (long)__regButtn);
+  _objc_destroyWeak(param_1 + (long)__forgetButton);
+  _objc_destroyWeak(param_1 + (long)__secureButton);
+  _objc_destroyWeak(param_1 + (long)__pwdBg);
+  _objc_destroyWeak(param_1 + (long)__phoneBg);
+  _objc_destroyWeak(param_1 + (long)__loginLabel);
+  return;
+}
+
+

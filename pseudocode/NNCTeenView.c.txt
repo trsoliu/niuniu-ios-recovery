@@ -1,0 +1,212 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCTeenView.initWithFrame: | 0x100018550 | ev_cdaf5facdb9caf5aa6c7063fa29a0ec680f5418ce39be0cce8a43f746f99e801 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x30 bytes */
+
+ID NNCTeenView::initWithFrame_(ID param_1,SEL param_2,CGRect param_3)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  ID IVar5;
+  ID IVar6;
+  ID IVar7;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined8 extraout_x1_07;
+  undefined8 extraout_x1_08;
+  undefined8 extraout_x1_09;
+  undefined8 extraout_x1_10;
+  undefined8 extraout_x1_11;
+  undefined8 extraout_x1_12;
+  undefined8 extraout_x1_13;
+  SEL extraout_x1_14;
+  SEL extraout_x1_15;
+  undefined8 extraout_x1_16;
+  undefined8 extraout_x1_17;
+  SEL extraout_x1_18;
+  SEL extraout_x1_19;
+  undefined8 extraout_x1_20;
+  double dVar8;
+  undefined8 uVar9;
+  double dVar10;
+  double dVar11;
+  undefined1 auVar12 [16];
+  undefined1 auVar13 [16];
+  undefined *local_e0;
+  undefined8 local_d8;
+  code *local_d0;
+  undefined *puStack_c8;
+  ID local_c0;
+  ID local_b8;
+  class_t *pcStack_b0;
+  undefined8 local_a8;
+  undefined8 local_a0;
+  long local_98;
+  
+  local_98 = *(long *)PTR____stack_chk_guard_101d78938;
+  pcStack_b0 = &objc::class_t::NNCTeenView;
+  local_b8 = param_1;
+  IVar1 = _objc_msgSendSuper2(param_3.field0_0x0.field0_0x0,param_3.field0_0x0.field1_0x8,
+                              param_3.field1_0x10.field0_0x0,param_3.field1_0x10.field1_0x8,
+                              &local_b8,"initWithFrame:");
+  if (IVar1 != 0) {
+    uVar2 = _objc_alloc(&_OBJC_CLASS___UIImageView);
+    FUN_101531d88(IVar1);
+    auVar12 = FUN_101564e08(uVar2);
+    auVar13 = FUN_10153c008(0x3f000000,&_OBJC_CLASS___UIColor,auVar12._8_8_,0);
+    FUN_1015a5908(auVar12._0_8_,auVar13._8_8_,auVar13._0_8_);
+    FUN_101527148(IVar1,extraout_x1,auVar12._0_8_);
+    uVar2 = _objc_alloc(&_OBJC_CLASS___UIView);
+    dVar8 = (double)FUN_1015fc468(IVar1);
+    uVar2 = FUN_101564e08((dVar8 + -320.0) * 0.5,0x4059000000000000,0x4074000000000000,0,uVar2);
+    auVar12 = FUN_10153a2e8(&_OBJC_CLASS___UIColor);
+    FUN_1015a5908(uVar2,auVar12._8_8_,auVar12._0_8_);
+    FUN_101527148(IVar1,extraout_x1_00,uVar2);
+    auVar12 = _objc_alloc(&_OBJC_CLASS___UIImageView);
+    auVar13 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar12._8_8_,&cf_nnc_img_teen);
+    uVar3 = FUN_101565668(auVar12._0_8_,auVar13._8_8_,auVar13._0_8_);
+    FUN_1015b4b08(0,0,0x4074000000000000,0x4062400000000000,uVar3);
+    uVar4 = _objc_alloc(&_OBJC_CLASS___UIView);
+    uVar9 = FUN_1015fc468(uVar2);
+    auVar12 = FUN_101564e08(0,0x4062400000000000,uVar9,0,uVar4);
+    IVar5 = auVar12._0_8_;
+    auVar12 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar12._8_8_,&cf_myTextColor);
+    FUN_1015a5908(IVar5,auVar12._8_8_,auVar12._0_8_);
+    FUN_101527148(uVar2,extraout_x1_01,IVar5);
+    uVar4 = _objc_alloc(&_OBJC_CLASS___UILabel);
+    uVar9 = FUN_1015fc468(uVar2);
+    dVar11 = 26.0;
+    auVar12 = FUN_101564e08(0,0x403e000000000000,uVar9,0x403a000000000000,uVar4);
+    uVar4 = auVar12._0_8_;
+    FUN_1015d6f08(uVar4,auVar12._8_8_,&cf_R_t__b);
+    auVar12 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_02,&cf_myBgColor);
+    FUN_1015d6fa8(uVar4,auVar12._8_8_,auVar12._0_8_);
+    auVar12 = FUN_1015ed768(0x4034000000000000,&_OBJC_CLASS___UIFont);
+    FUN_1015b4788(uVar4,auVar12._8_8_,auVar12._0_8_);
+    FUN_1015d6f48(uVar4,extraout_x1_03,1);
+    FUN_101527148(IVar5,extraout_x1_04,uVar4);
+    local_a8 = *(undefined8 *)PTR__NSFontAttributeName_101d782f8;
+    auVar12 = FUN_1015ed768(0x402c000000000000,&_OBJC_CLASS___UIFont);
+    local_a0 = auVar12._0_8_;
+    uVar9 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar12._8_8_,&local_a0,&local_a8,1);
+    dVar8 = (double)FUN_1015fc468(uVar2);
+    FUN_101531d48(dVar8 + -40.0,0x7fefffffffffffff,&cf__r_r_8___gbt_vOb,extraout_x1_05,1,uVar9,0);
+    uVar9 = _objc_alloc(&_OBJC_CLASS___UILabel);
+    dVar8 = (double)FUN_1015319c8(uVar4);
+    dVar10 = (double)FUN_1015fc468(uVar2);
+    auVar12 = FUN_101564e08(0x4034000000000000,dVar8 + 10.0,dVar10 + -40.0,dVar11 + 1.0,uVar9);
+    uVar4 = auVar12._0_8_;
+    auVar12 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar12._8_8_,&cf_myBgColor);
+    FUN_1015d6fa8(uVar4,auVar12._8_8_,auVar12._0_8_);
+    auVar12 = FUN_1015ed768(0x402c000000000000,&_OBJC_CLASS___UIFont);
+    FUN_1015b4788(uVar4,auVar12._8_8_,auVar12._0_8_);
+    FUN_1015d6f48(uVar4,extraout_x1_06,0);
+    FUN_1015d6f08(uVar4,extraout_x1_07,&cf__r_r_8___gbt_vOb);
+    FUN_1015c6148(uVar4,extraout_x1_08,0);
+    FUN_101527148(IVar5,extraout_x1_09,uVar4);
+    IVar6 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1_10,0);
+    FUN_1015b4b08(0,0,0x405e000000000000,0x4044000000000000);
+    dVar8 = (double)FUN_1015fc468(uVar2);
+    FUN_1015a9928(dVar8 * 0.5,IVar6);
+    dVar8 = (double)FUN_1015319c8(uVar4);
+    FUN_1015d84c8(dVar8 + 20.0,IVar6);
+    auVar12 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_11,0xbed4fb);
+    FUN_1015a5908(IVar6,auVar12._8_8_,auVar12._0_8_);
+    FUN_1015d7e48(IVar6,extraout_x1_12,&cf_b_wSf,0);
+    auVar12 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_13,0xffffff);
+    FUN_1015d7ea8(IVar6,auVar12._8_8_,auVar12._0_8_,0);
+    uVar4 = FUN_101531668(0x402c000000000000,&_OBJC_CLASS___UIFont);
+    auVar12 = FUN_1015f0328(IVar6);
+    FUN_1015b4788(auVar12._0_8_,auVar12._8_8_,uVar4);
+    IVar7 = FUN_101574688(IVar6,extraout_x1_14);
+    FUN_1015ac5e8(0x4014000000000000,IVar7);
+    IVar7 = FUN_101574688(IVar6,extraout_x1_15);
+    FUN_1015c25a8(IVar7);
+    FUN_101527148(IVar5,extraout_x1_16,IVar6);
+    local_e0 = PTR___NSConcreteStackBlock_101d78760;
+    local_d8 = 0xc2000000;
+    local_d0 = FUN_100018ca8;
+    puStack_c8 = &UNK_101d7b960;
+    local_c0 = IVar1;
+    FUN_1015a70e8(IVar6,extraout_x1_17,0x40,&local_e0);
+    dVar8 = (double)FUN_1015319c8(uVar3);
+    FUN_1015d84c8(dVar8 + -10.0,IVar5);
+    dVar8 = (double)FUN_1015319c8(IVar6);
+    FUN_1015b6f28(dVar8 + 20.0,IVar5);
+    IVar6 = FUN_101574688(IVar5,extraout_x1_18);
+    FUN_1015ac5e8(0x4024000000000000,IVar6);
+    IVar6 = FUN_101574688(IVar5,extraout_x1_19);
+    FUN_1015c25a8(IVar6);
+    FUN_101527148(uVar2,extraout_x1_20,uVar3);
+    dVar8 = (double)FUN_10155e568(uVar3);
+    dVar10 = (double)FUN_10155e568(IVar5);
+    FUN_1015b6f28(dVar8 + dVar10 + -10.0,uVar2);
+    dVar8 = (double)FUN_10155e568(IVar1);
+    FUN_1015a9948(dVar8 * 0.5,uVar2);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_98) {
+    return IVar1;
+  }
+  IVar1 = FUN_100ab8e90(0);
+  return IVar1;
+}
+
+
+
+/* NNCTeenView.delegate | 0x100018d1c | ev_3fd7229745783d69e8ff67b12e43fc3a9f97e2cd7c128866acaafcafd080dae4 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCTeenView::delegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__delegate);
+}
+
+
+
+/* NNCTeenView.setDelegate: | 0x100018d3c | ev_15162deb76c483505246e2105ee2593479a688150a0462d813f183245f4508d9 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCTeenView::setDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__delegate) = param_3;
+  return;
+}
+
+
+
+/* NNCTeenView..cxx_destruct | 0x100018d50 | ev_a45e2174856580cd020b939d65398278549e93422d8c8b6dfb1740617f202f30 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCTeenView::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + (long)__delegate);
+  return;
+}
+
+

@@ -1,0 +1,42 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCFileHistoryUpdateModel.callback | 0x1000b0138 | ev_6d99a53b5fe8ded4a30f9eb0d690e266b50e446a33c803e901fc00bd0e493c65 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCFileHistoryUpdateModel::callback(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* NNCFileHistoryUpdateModel.setCallback: | 0x1000b0150 | ev_d126b74add4e2760f7430ec5bb679fcbe45dcc17571d89c2e98ca6018e052ea7 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCFileHistoryUpdateModel::setCallback_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCFileHistoryUpdateModel..cxx_destruct | 0x1000b015c | ev_b1609ca82b7eb184218c6987067860d4a7195588d08177d9c4c172c8f7095084 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NNCFileHistoryUpdateModel::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + 8);
+  return;
+}
+
+

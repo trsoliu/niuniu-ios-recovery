@@ -1,0 +1,798 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCDownloadViewController.backButtonAction | 0x100036cec | ev_58dc2425fd83846bd59855afcd0999902c68e0745fb8774ffb4aa9bea8b919d6 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDownloadViewController::backButtonAction(ID param_1,SEL param_2)
+
+{
+  undefined8 extraout_x1;
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_101580708();
+  FUN_10158c568(auVar1._0_8_,auVar1._8_8_,1);
+  FUN_101549e68(param_1,extraout_x1,1,&UNK_101d7bf00);
+  return;
+}
+
+
+
+/* NNCDownloadViewController.viewDidLoad | 0x100036d44 | ev_ac112333bab757098ad8bcc590d241fc90a586a6581dd3c6b6e913bbbc16ac18 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDownloadViewController::viewDidLoad(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined1 auVar3 [16];
+  ID local_78;
+  class_t *pcStack_70;
+  undefined8 local_68;
+  undefined8 local_60;
+  undefined8 local_58;
+  undefined8 local_50;
+  long local_48;
+  
+  local_48 = *(long *)PTR____stack_chk_guard_101d78938;
+  pcStack_70 = &objc::class_t::NNCDownloadViewController;
+  local_78 = param_1;
+  _objc_msgSendSuper2(&local_78,"viewDidLoad");
+  FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1,&cf_myTextColor);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_00);
+  FUN_1015a5908(IVar1);
+  uVar2 = FUN_101560a48(&_OBJC_CLASS___UIImage,extraout_x1_01,&cf_fanhuiImae);
+  auVar3 = _objc_alloc(&_OBJC_CLASS___UIBarButtonItem);
+  uVar2 = FUN_1015656a8(auVar3._0_8_,auVar3._8_8_,uVar2,0,param_1,"backButtonAction");
+  auVar3 = FUN_101580748(param_1);
+  FUN_1015bfaa8(auVar3._0_8_,auVar3._8_8_,uVar2);
+  FUN_1015d7e08(param_1,extraout_x1_02,&cf__g0WN_);
+  FUN_1015bb0a8(param_1,extraout_x1_03,0);
+  uVar2 = _objc_alloc(&_OBJC_CLASS___UIBarButtonItem);
+  auVar3 = FUN_101559c08(param_1);
+  auVar3 = FUN_101567b68(uVar2,auVar3._8_8_,auVar3._0_8_,2,param_1,"nncchangeEditMode");
+  FUN_1015ce368(param_1,auVar3._8_8_,auVar3._0_8_);
+  local_68 = *(undefined8 *)PTR__NSForegroundColorAttributeName_101d78300;
+  local_58 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_04,&cf_myBgColor);
+  local_60 = *(undefined8 *)PTR__NSFontAttributeName_101d782f8;
+  auVar3 = FUN_1015ed768(0x4030000000000000,&_OBJC_CLASS___UIFont);
+  local_50 = auVar3._0_8_;
+  uVar2 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar3._8_8_,&local_58,&local_68,2);
+  auVar3 = FUN_10159a368(param_1);
+  FUN_1015d8028(auVar3._0_8_,auVar3._8_8_,uVar2,0);
+  uVar2 = FUN_10159a368(param_1);
+  auVar3 = FUN_101580748(param_1);
+  FUN_1015ce2e8(auVar3._0_8_,auVar3._8_8_,uVar2);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_48) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCDownloadViewController.viewWillAppear: | 0x100037004 | ev_1dd941688916101f679137fb7102fe9f9ca9ef6d05cddfa9b8dc7cf9441c0d68 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCDownloadViewController::viewWillAppear_(ID param_1,SEL param_2,bool param_3)
+
+{
+  undefined1 auVar1 [16];
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCDownloadViewController;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"viewWillAppear:",param_3);
+  auVar1 = FUN_1015e11a8(&objc::class_t::NNCFileDownloadManager);
+  FUN_1015aeee8(auVar1._0_8_,auVar1._8_8_,param_1);
+  FUN_101581a88(param_1);
+  return;
+}
+
+
+
+/* NNCDownloadViewController.viewDidDisappear: | 0x100037074 | ev_208074fb3662f5669937276b13a8d4c3433873b10a2c42fc2539de9c1915c42b */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCDownloadViewController::viewDidDisappear_(ID param_1,SEL param_2,bool param_3)
+
+{
+  undefined1 auVar1 [16];
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCDownloadViewController;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"viewDidDisappear:",param_3);
+  auVar1 = FUN_1015e11a8(&objc::class_t::NNCFileDownloadManager);
+  FUN_1015aeee8(auVar1._0_8_,auVar1._8_8_,0);
+  return;
+}
+
+
+
+/* NNCDownloadViewController.nncchangeEditMode | 0x1000370d8 | ev_75d9c086a5072f6047c1b475e3cd6a7d250f342e3a6f48e519ee95904839800e */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDownloadViewController::nncchangeEditMode(ID param_1,SEL param_2)
+
+{
+  uint uVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined1 auVar3 [16];
+  
+  uVar1 = FUN_10156d208();
+  FUN_1015bb0a8(param_1,extraout_x1,uVar1 ^ 1);
+  uVar2 = FUN_101559c08(param_1);
+  auVar3 = FUN_10159a368(param_1);
+  FUN_1015d7e08(auVar3._0_8_,auVar3._8_8_,uVar2);
+  uVar2 = FUN_10156d208(param_1);
+  auVar3 = FUN_10154b568(param_1);
+  FUN_1015bb0a8(auVar3._0_8_,auVar3._8_8_,uVar2);
+  uVar2 = FUN_10156d208(param_1);
+  auVar3 = FUN_10154b5e8(param_1);
+  FUN_1015bb0a8(auVar3._0_8_,auVar3._8_8_,uVar2);
+  return;
+}
+
+
+
+/* NNCDownloadViewController.getRightTitle | 0x1000371a8 | ev_878030f7796c463da754628824b5ef19c7cd05cbebfed87fe886f6b6c74a4205 */
+
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadViewController::getRightTitle(ID param_1,SEL param_2)
+
+{
+  cfstringStruct *pcVar1;
+  int iVar2;
+  
+  iVar2 = FUN_10156d208();
+  pcVar1 = &cf__b;
+  if (iVar2 == 0) {
+    pcVar1 = &cfstringStruct_101de1500;
+  }
+  return (ID)pcVar1;
+}
+
+
+
+/* NNCDownloadViewController.viewDidLayoutSubviews | 0x1000371d4 | ev_04154f80dbbe440ee2dfdfa25650e39a407e92efa7b1e4972eaee8920788b987 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDownloadViewController::viewDidLayoutSubviews(ID param_1,SEL param_2)
+
+{
+  undefined1 auVar1 [16];
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCDownloadViewController;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"viewDidLayoutSubviews");
+  auVar1 = FUN_101581c88(param_1);
+  if ((auVar1._0_8_ & 1) == 0) {
+    FUN_1015c5a08(param_1,auVar1._8_8_,1);
+    FUN_101541948(param_1);
+    FUN_101581a88(param_1);
+  }
+  return;
+}
+
+
+
+/* NNCDownloadViewController.createView | 0x10003723c | ev_afd2dd1b43a85f16cb2dde1c4373ad02359b9afd2ac4586ceafc1263e9f7da83 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDownloadViewController::createView(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  SEL extraout_x1_06;
+  undefined8 extraout_x1_07;
+  undefined8 extraout_x1_08;
+  undefined8 extraout_x1_09;
+  undefined8 extraout_x1_10;
+  undefined8 extraout_x1_11;
+  undefined8 extraout_x1_12;
+  undefined8 extraout_x1_13;
+  undefined8 extraout_x1_14;
+  undefined8 extraout_x1_15;
+  undefined8 extraout_x1_16;
+  undefined8 extraout_x1_17;
+  undefined8 extraout_x1_18;
+  ulong uVar3;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  undefined8 uVar6;
+  double dVar7;
+  double dVar8;
+  undefined8 uVar9;
+  undefined1 auVar10 [16];
+  cfstringStruct *local_98;
+  cfstringStruct *pcStack_90;
+  long local_88;
+  
+  local_88 = *(long *)PTR____stack_chk_guard_101d78938;
+  auVar10 = _objc_alloc(&_OBJC_CLASS___UIView);
+  IVar1 = FUN_1015fa0a8(param_1,auVar10._8_8_);
+  uVar4 = FUN_1015fc468(IVar1);
+  auVar10 = FUN_101564e08(0,0,uVar4,0x404e000000000000,auVar10._0_8_);
+  FUN_1015b6e88(param_1,auVar10._8_8_,auVar10._0_8_);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1);
+  auVar10 = FUN_10155e488(param_1);
+  FUN_101527148(IVar1,auVar10._8_8_,auVar10._0_8_);
+  uVar4 = _objc_alloc(&objc::class_t::NNCCustomScrollView);
+  uVar2 = FUN_10155e488(param_1);
+  uVar5 = FUN_1015319c8(uVar2);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_00);
+  uVar6 = FUN_1015fc468(IVar1);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_01);
+  dVar7 = (double)FUN_10155e568(IVar1);
+  uVar2 = FUN_10155e488(param_1);
+  dVar8 = (double)FUN_1015319c8(uVar2);
+  auVar10 = FUN_101564e08(0,uVar5,uVar6,dVar7 - dVar8,uVar4);
+  FUN_1015cf7c8(param_1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015ac048(auVar10._0_8_,auVar10._8_8_,2);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015a8f48(auVar10._0_8_,auVar10._8_8_,1);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015aee88(auVar10._0_8_,auVar10._8_8_,1);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015c7e08(auVar10._0_8_,auVar10._8_8_,1);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015a7808(auVar10._0_8_,auVar10._8_8_,0);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015aeee8(auVar10._0_8_,auVar10._8_8_,param_1);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015d22c8(auVar10._0_8_,auVar10._8_8_,0);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_02);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_101527148(IVar1,auVar10._8_8_,auVar10._0_8_);
+  uVar4 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_03,&cf_myTextColor);
+  auVar10 = FUN_10155e488(param_1);
+  FUN_1015a5908(auVar10._0_8_,auVar10._8_8_,uVar4);
+  uVar4 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_04,&cf_myTextColor);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015a5908(auVar10._0_8_,auVar10._8_8_,uVar4);
+  local_98 = &cf__N_;
+  pcStack_90 = &cf_N__N;
+  uVar4 = FUN_10152bbc8(&_OBJC_CLASS___NSArray,extraout_x1_05,&local_98,2);
+  auVar10 = FUN_10153f908();
+  uVar2 = auVar10._8_8_;
+  if (auVar10._0_8_ != 0) {
+    uVar3 = 0;
+    do {
+      auVar10 = FUN_101534f68(&_OBJC_CLASS___UIButton,uVar2,0);
+      uVar2 = auVar10._0_8_;
+      IVar1 = FUN_1015fa0a8(param_1,auVar10._8_8_);
+      dVar7 = (double)FUN_1015fc468(IVar1);
+      IVar1 = FUN_1015fa0a8(param_1,extraout_x1_06);
+      dVar8 = (double)FUN_1015fc468(IVar1);
+      uVar5 = FUN_10155e488(param_1);
+      uVar5 = FUN_10155e568(uVar5);
+      FUN_1015b4b08(dVar7 * 0.5 * (double)(int)uVar3,0,dVar8 * 0.5,uVar5,uVar2);
+      auVar10 = FUN_101583328(uVar4,extraout_x1_07,uVar3);
+      FUN_1015d7e48(uVar2,auVar10._8_8_,auVar10._0_8_,0);
+      auVar10 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_08,&cf_myBgColor);
+      FUN_1015d7ea8(uVar2,auVar10._8_8_,auVar10._0_8_,0);
+      auVar10 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_09,0xbed4fb);
+      FUN_1015d7ea8(uVar2,auVar10._8_8_,auVar10._0_8_,4);
+      uVar5 = FUN_1015ed768(0x402e000000000000,&_OBJC_CLASS___UIFont);
+      auVar10 = FUN_1015f0328(uVar2);
+      FUN_1015b4788(auVar10._0_8_,auVar10._8_8_,uVar5);
+      FUN_1015d6328(uVar2,extraout_x1_10,uVar3 + 100);
+      FUN_101527248(uVar2,extraout_x1_11,param_1,"topButtonSelected:",0x40);
+      auVar10 = FUN_10155e488(param_1);
+      FUN_101527148(auVar10._0_8_,auVar10._8_8_,uVar2);
+      FUN_1015d03e8(uVar2,extraout_x1_12,0);
+      uVar5 = _objc_alloc(&objc::class_t::NNCDownloadView);
+      uVar6 = FUN_10159cd48(param_1);
+      dVar7 = (double)FUN_1015fc468(uVar6);
+      uVar6 = FUN_10159cd48(param_1);
+      uVar9 = FUN_1015fc468(uVar6);
+      uVar6 = FUN_10159cd48(param_1);
+      uVar6 = FUN_10155e568(uVar6);
+      uVar5 = FUN_101564e08(dVar7 * (double)(int)uVar3,0,uVar9,uVar6,uVar5);
+      auVar10 = FUN_10159cd48(param_1);
+      FUN_101527148(auVar10._0_8_,auVar10._8_8_,uVar5);
+      FUN_1015d6328(uVar5,extraout_x1_13,uVar3 + 200);
+      FUN_1015d95a8(uVar5,extraout_x1_14,uVar3);
+      if (uVar3 == 0) {
+        FUN_1015d0408(param_1,extraout_x1_15,uVar2);
+        FUN_1015d03e8(uVar2,extraout_x1_16,1);
+        FUN_1015b0d08(param_1,extraout_x1_17,uVar5);
+      }
+      else {
+        FUN_1015b0d88(param_1,extraout_x1_15,uVar5);
+      }
+      uVar3 = uVar3 + 1;
+      auVar10 = FUN_10153f908(uVar4);
+      uVar2 = auVar10._8_8_;
+    } while (uVar3 < auVar10._0_8_);
+  }
+  uVar4 = FUN_10159cd48(param_1);
+  dVar7 = (double)FUN_1015fc468(uVar4);
+  uVar4 = FUN_10159cd48(param_1);
+  uVar2 = FUN_10155e568(uVar4);
+  uVar4 = FUN_10159cd48(param_1);
+  FUN_1015ac108(dVar7 + dVar7,uVar2,uVar4);
+  uVar4 = _objc_alloc(&_OBJC_CLASS___UIImageView);
+  uVar2 = FUN_10155e488(param_1);
+  dVar7 = (double)FUN_10155e568(uVar2);
+  uVar2 = FUN_10155e488(param_1);
+  dVar8 = (double)FUN_1015fc468(uVar2);
+  auVar10 = FUN_101564e08(0,dVar7 + -2.0,dVar8 * 0.5,0x4000000000000000,uVar4);
+  FUN_1015d04e8(param_1,auVar10._8_8_,auVar10._0_8_);
+  uVar4 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_18,&cf_myTextColor);
+  auVar10 = FUN_10159e9a8(param_1);
+  FUN_1015a5908(auVar10._0_8_,auVar10._8_8_,uVar4);
+  auVar10 = FUN_10159e9a8(param_1);
+  IVar1 = FUN_101574688(auVar10._0_8_,auVar10._8_8_);
+  FUN_1015ac5e8(0x3ff0000000000000,IVar1);
+  auVar10 = FUN_10159e9a8(param_1);
+  IVar1 = FUN_101574688(auVar10._0_8_,auVar10._8_8_);
+  FUN_1015c25a8(IVar1);
+  uVar4 = FUN_10155e488(param_1);
+  auVar10 = FUN_10159e9a8(param_1);
+  FUN_101527148(uVar4,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_10155e488(param_1);
+  uVar4 = FUN_1015fa8c8(auVar10._0_8_,auVar10._8_8_,100);
+  uVar2 = FUN_1015384c8(uVar4);
+  uVar4 = FUN_10159e9a8(param_1);
+  FUN_1015a9928(uVar2,uVar4);
+  uVar4 = FUN_10156d208(param_1);
+  auVar10 = FUN_10154b568(param_1);
+  FUN_1015bb0a8(auVar10._0_8_,auVar10._8_8_,uVar4);
+  uVar4 = FUN_10156d208(param_1);
+  auVar10 = FUN_10154b5e8(param_1);
+  FUN_1015bb0a8(auVar10._0_8_,auVar10._8_8_,uVar4);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_88) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCDownloadViewController.topButtonSelected: | 0x100037c20 | ev_36e85908ad100648971a6c907ece356acdcfbf68ae083656171c62a5b201633c */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadViewController::topButtonSelected_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  double dVar4;
+  
+  iVar1 = FUN_1015edd48(param_3);
+  FUN_1015ad748(param_1,extraout_x1,iVar1 + -100);
+  uVar2 = FUN_10159cd48(param_1);
+  iVar1 = FUN_101542c28(param_1);
+  uVar3 = FUN_10159cd48(param_1);
+  dVar4 = (double)FUN_1015fc468(uVar3);
+  FUN_1015ac0e8(dVar4 * (double)iVar1,0,uVar2,extraout_x1_00,1);
+  return;
+}
+
+
+
+/* NNCDownloadViewController.scrollViewDidScroll: | 0x100037cb0 | ev_a6e6821d07c6b02da4656acaef0d58b5600c1fcd08b8757f2e9b05434f908bb4 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadViewController::scrollViewDidScroll_(ID param_1,SEL param_2,ID param_3)
+
+{
+  long lVar1;
+  long lVar2;
+  undefined8 uVar3;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  double dVar4;
+  double dVar5;
+  double in_d2;
+  undefined1 auVar6 [16];
+  
+  dVar4 = (double)FUN_10153e6e8();
+  FUN_101554148(param_3,extraout_x1);
+  dVar5 = in_d2 * 0.5;
+  FUN_101554148(param_3,extraout_x1_00);
+  auVar6 = FUN_10155e488(param_1);
+  lVar1 = FUN_1015fa8c8(auVar6._0_8_,auVar6._8_8_,(long)((int)((dVar4 + dVar5) / in_d2) + 100));
+  lVar2 = FUN_10159e908(param_1);
+  if (lVar1 != lVar2) {
+    auVar6 = FUN_10159e908(param_1);
+    FUN_1015d03e8(auVar6._0_8_,auVar6._8_8_,0);
+    FUN_1015d03e8(lVar1,extraout_x1_01,1);
+    FUN_1015d0408(param_1,extraout_x1_02,lVar1);
+  }
+  dVar5 = (double)FUN_10153e6e8(param_3);
+  auVar6 = FUN_10155e488(param_1);
+  uVar3 = FUN_1015fa8c8(auVar6._0_8_,auVar6._8_8_,100);
+  dVar4 = (double)FUN_1015384c8(uVar3);
+  uVar3 = FUN_10159e9a8(param_1);
+  FUN_1015a9928(dVar4 + dVar5 * 0.5,uVar3);
+  return;
+}
+
+
+
+/* NNCDownloadViewController.scrollViewDidEndDecelerating: | 0x100037e30 | ev_381b4ab39c254d83931f74a3be4376aa3bd137517cf75cb34c49e98f41aa6b1e */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadViewController::scrollViewDidEndDecelerating_(ID param_1,SEL param_2,ID param_3)
+
+{
+  return;
+}
+
+
+
+/* NNCDownloadViewController.nncdownloadStatusNeedRefresh | 0x100037e34 | ev_732914f9327337dfa157001c9c9dc22bf9183ece9707edf23cacb9bb2b873e73 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDownloadViewController::nncdownloadStatusNeedRefresh(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  
+  uVar1 = FUN_10154b568();
+  FUN_101591aa8(uVar1);
+  uVar1 = FUN_10154b5e8(param_1);
+  FUN_101591aa8(uVar1);
+  return;
+}
+
+
+
+/* NNCDownloadViewController.preferredStatusBarStyle | 0x100037e88 | ev_e0963d7956c911b496e6dc59f5176810bbbafff16cf4f87899108c70064b0c67 */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long NNCDownloadViewController::preferredStatusBarStyle(ID param_1,SEL param_2)
+
+{
+  return 1;
+}
+
+
+
+/* NNCDownloadViewController.headerView | 0x100037e90 | ev_e52566d615691af7993e198461c090c4b0099b8e6b384a638a9a4e4c507b85ab */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadViewController::headerView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__headerView);
+}
+
+
+
+/* NNCDownloadViewController.setHeaderView: | 0x100037ea0 | ev_ccec02024e863add1d496ba99f8034c6a7c8cb52f332427b87825e5da8f4b07c */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadViewController::setHeaderView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__headerView) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadViewController.scrollView | 0x100037eb4 | ev_a00ceb38f6d657c3ed3558f3bbb82bea62e197440f8154bafaccc0171d46387d */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadViewController::scrollView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__scrollView);
+}
+
+
+
+/* NNCDownloadViewController.setScrollView: | 0x100037ec4 | ev_77870a4ec8966e3257cfa94b16479116a9dcd3b8e676db03d52d9bee6af99040 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadViewController::setScrollView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__scrollView) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadViewController.selectedLine | 0x100037ed8 | ev_6d1c21332be86fc791589e8fd4f96eb5714494f78344110f3f27949e77123355 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadViewController::selectedLine(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__selectedLine);
+}
+
+
+
+/* NNCDownloadViewController.setSelectedLine: | 0x100037ee8 | ev_384624cec3ef1b27784626b791377a84e56c63b4bad41a110dba6f2aa815e77b */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadViewController::setSelectedLine_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__selectedLine) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadViewController.currentIndex | 0x100037efc | ev_5be679950b96959cac5f8068022840c32318f6e44103b343b3ebda1ba9d242de */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+int NNCDownloadViewController::currentIndex(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + (long)__currentIndex);
+}
+
+
+
+/* NNCDownloadViewController.setCurrentIndex: | 0x100037f0c | ev_437910e03ceea1b53b9d0c729dd30e755f0cd213aed4e6b3a968c05f9de29961 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCDownloadViewController::setCurrentIndex_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + (long)__currentIndex) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadViewController.selectedButton | 0x100037f1c | ev_852091da5cc1d96d7ab5a6f78dc0955498f367a030994960ab4e37aad105fc12 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadViewController::selectedButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__selectedButton);
+}
+
+
+
+/* NNCDownloadViewController.setSelectedButton: | 0x100037f3c | ev_540844d3227628909264c75ea266fc9036bed427120c2ce779e83ed775506922 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadViewController::setSelectedButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__selectedButton) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadViewController.isEditMode | 0x100037f50 | ev_6a5f71a8e698bd7bbba974e8a5a717905cac7b07b1ca1cfa8305ac8bfef6a55f */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCDownloadViewController::isEditMode(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__isEditMode);
+}
+
+
+
+/* NNCDownloadViewController.setIsEditMode: | 0x100037f60 | ev_df77bb4da90827ab85ac4275dec9a1de3d0f0896eca9ea31f9378964a6107166 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCDownloadViewController::setIsEditMode_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__isEditMode) = (char)param_3;
+  return;
+}
+
+
+
+/* NNCDownloadViewController.rightItem | 0x100037f70 | ev_f7bb75c9e51df416883367c3e564e32ba8d011b0bac3c40a7241c0b011d43530 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadViewController::rightItem(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__rightItem);
+}
+
+
+
+/* NNCDownloadViewController.setRightItem: | 0x100037f80 | ev_49f30dfae5ca989866a04243cec1056dca3175edd4c97369f22ba7c7f03c268f */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadViewController::setRightItem_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__rightItem) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadViewController.downloadedView | 0x100037f94 | ev_284c6ad9a03eb41e51a1a31f9113ac4c9de2f0ff616209dd5294a16f20857c96 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadViewController::downloadedView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__downloadedView);
+}
+
+
+
+/* NNCDownloadViewController.setDownloadedView: | 0x100037fa4 | ev_8e8de0ebbabe069308ec26e52d808dd8479a24fec4ea62ad0d27292bea51f3d0 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadViewController::setDownloadedView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__downloadedView) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadViewController.downloadingView | 0x100037fb8 | ev_86f459e89fced8584b53ff4c75d23f2ce501c84f1e2c069fc7ce93e968ef21e0 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadViewController::downloadingView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__downloadingView);
+}
+
+
+
+/* NNCDownloadViewController.setDownloadingView: | 0x100037fc8 | ev_c9c10f6496134f0dccaa309b7fe48cf2471de3be8c1b7c9b963142e9a00bc38e */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadViewController::setDownloadingView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__downloadingView) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadViewController..cxx_destruct | 0x100037fdc | ev_43554a58b8f4b2c8efa90b73315784488bb61abb41b6c46e53e8b957b7ec9fa0 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDownloadViewController::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__downloadingView) = 0;
+  *(undefined8 *)(param_1 + (long)__downloadedView) = 0;
+  *(undefined8 *)(param_1 + (long)__rightItem) = 0;
+  _objc_destroyWeak(param_1 + (long)__selectedButton);
+  *(undefined8 *)(param_1 + (long)__selectedLine) = 0;
+  *(undefined8 *)(param_1 + (long)__scrollView) = 0;
+  *(undefined8 *)(param_1 + (long)__headerView) = 0;
+  return;
+}
+
+

@@ -1,0 +1,341 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCBaseDownloadTask.init | 0x1000517dc | ev_ab6b690b8011f3a74d45588195bb1090bd27885aea52a57003b81cc53d11a882 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCBaseDownloadTask::init(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined1 auVar4 [16];
+  ID local_60;
+  class_t *pcStack_58;
+  
+  pcStack_58 = &objc::class_t::NNCBaseDownloadTask;
+  local_60 = param_1;
+  IVar1 = _objc_msgSendSuper2(&local_60,"init");
+  if (IVar1 != 0) {
+    uVar2 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+    uVar3 = *(undefined8 *)PTR__UIApplicationDidEnterBackgroundNotification_101d78580;
+    auVar4 = FUN_1015e0f48(&_OBJC_CLASS___UIApplication);
+    FUN_1015265c8(uVar2,auVar4._8_8_,IVar1,"applicationDidEnterBackground:",uVar3,auVar4._0_8_);
+    uVar2 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+    uVar3 = *(undefined8 *)PTR__UIApplicationWillEnterForegroundNotification_101d785c8;
+    auVar4 = FUN_1015e0f48(&_OBJC_CLASS___UIApplication);
+    FUN_1015265c8(uVar2,auVar4._8_8_,IVar1,"applicationWillEnterForeground:",uVar3,auVar4._0_8_);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCBaseDownloadTask.dealloc | 0x10005190c | ev_caf7d872a428c237c938da6685563240b2da43eb93f4c0769ea453c248450081 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCBaseDownloadTask::dealloc(ID param_1,SEL param_2)
+
+{
+  undefined1 auVar1 [16];
+  ID local_30;
+  class_t *pcStack_28;
+  
+  auVar1 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+  FUN_101594388(auVar1._0_8_,auVar1._8_8_,param_1);
+  pcStack_28 = &objc::class_t::NNCBaseDownloadTask;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"dealloc");
+  return;
+}
+
+
+
+/* NNCBaseDownloadTask.applicationDidEnterBackground: | 0x100051974 | ev_de6dfebd47732116414d689c9dda41d3cef84a1060240eb763821054981ae545 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCBaseDownloadTask::applicationDidEnterBackground_(ID param_1,SEL param_2,ID param_3)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x00010151dc38. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_msgSend_101d78f58)(param_1,"_nncBeginBackgroundTaskIfNeeded");
+  return;
+}
+
+
+
+/* NNCBaseDownloadTask.applicationWillEnterForeground: | 0x100051978 | ev_b6b954b09690915b97a955425c85a84b4023241cadc90d49071e5c66adfece48 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCBaseDownloadTask::applicationWillEnterForeground_(ID param_1,SEL param_2,ID param_3)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x00010151dc58. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_msgSend_101d78f58)(param_1,"_nncEndBackgroundTaskIfNeeded");
+  return;
+}
+
+
+
+/* NNCBaseDownloadTask._nncBeginBackgroundTaskIfNeeded | 0x10005197c | ev_a6e515ddc35a76a1c0ee14739386142b4694b5001359eccae3ec2594d1f940a3 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NNCBaseDownloadTask::_nncBeginBackgroundTaskIfNeeded(ID param_1,SEL param_2)
+
+{
+  undefined *local_38;
+  undefined8 local_30;
+  code *local_28;
+  undefined *puStack_20;
+  ID local_18;
+  
+  local_38 = PTR___NSConcreteStackBlock_101d78760;
+  local_30 = 0xc2000000;
+  local_28 = FUN_1000519cc;
+  puStack_20 = &UNK_101d7b580;
+  local_18 = param_1;
+  FUN_10003a0c0(&local_38);
+  return;
+}
+
+
+
+/* NNCBaseDownloadTask._beginBackgroundTaskInner | 0x1000519d4 | ev_3f2f17a34ce5e8877c6e12e6f694428b276ce2e68c8693e56a1dbeb3898b1ec9 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCBaseDownloadTask::_beginBackgroundTaskInner(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  long lVar3;
+  undefined1 auVar4 [16];
+  undefined *local_68;
+  undefined8 local_60;
+  code *local_58;
+  undefined *puStack_50;
+  ID local_48;
+  
+  FUN_101578ec8();
+  _NSLog(&cf_startt1____lu);
+  uVar2 = FUN_1015725e8(param_1);
+  iVar1 = FUN_1015ee5e8(uVar2);
+  if (iVar1 == 2) {
+    lVar3 = FUN_101578ec8(param_1);
+    if (lVar3 != *(long *)PTR__UIBackgroundTaskInvalid_101d785e0) {
+      return;
+    }
+  }
+  else {
+    uVar2 = FUN_1015725e8(param_1);
+    iVar1 = FUN_1015ee5e8(uVar2);
+    if (iVar1 != 3) {
+      return;
+    }
+    lVar3 = FUN_101578ec8(param_1);
+    if (lVar3 != *(long *)PTR__UIBackgroundTaskInvalid_101d785e0) {
+      return;
+    }
+  }
+  FUN_101578ec8(param_1);
+  _NSLog(&cf_startt2____lu);
+  auVar4 = FUN_1015e0f48(&_OBJC_CLASS___UIApplication);
+  local_68 = PTR___NSConcreteStackBlock_101d78760;
+  local_60 = 0xc2000000;
+  local_58 = FUN_100051b88;
+  puStack_50 = &UNK_101d7b580;
+  local_48 = param_1;
+  auVar4 = FUN_10152ee48(auVar4._0_8_,auVar4._8_8_,&local_68);
+  FUN_1015c1988(param_1,auVar4._8_8_,auVar4._0_8_);
+  FUN_101578ec8(param_1);
+  _NSLog(&cf_startt3____lu);
+  return;
+}
+
+
+
+/* NNCBaseDownloadTask._nncEndBackgroundTaskIfNeeded | 0x100051c10 | ev_f6a8a2b3de745cb9852ec7ff4098604f56216631597c27522238106d832e2fd2 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NNCBaseDownloadTask::_nncEndBackgroundTaskIfNeeded(ID param_1,SEL param_2)
+
+{
+  undefined *local_38;
+  undefined8 local_30;
+  code *local_28;
+  undefined *puStack_20;
+  ID local_18;
+  
+  local_38 = PTR___NSConcreteStackBlock_101d78760;
+  local_30 = 0xc2000000;
+  local_28 = FUN_100051c60;
+  puStack_20 = &UNK_101d7b580;
+  local_18 = param_1;
+  FUN_10003a0c0(&local_38);
+  return;
+}
+
+
+
+/* NNCBaseDownloadTask.startDownload | 0x100051cec | ev_80687ff02a50e81bd94f2bdafb5b23097fedb8ca165d62dd47f5fa4805309fb8 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NNCBaseDownloadTask::startDownload(ID param_1,SEL param_2)
+
+{
+  return;
+}
+
+
+
+/* NNCBaseDownloadTask.pauseDownload | 0x100051cf0 | ev_9ceff9484d208668f79cf7eaf83792651f2a1461dd730b299417140cf3f09144 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NNCBaseDownloadTask::pauseDownload(ID param_1,SEL param_2)
+
+{
+  return;
+}
+
+
+
+/* NNCBaseDownloadTask.listener | 0x100051cf4 | ev_303010784e1e1772d32a55dd6d8636f28ef52282221f6572bd9aa24aeed3becf */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCBaseDownloadTask::listener(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* NNCBaseDownloadTask.setListener: | 0x100051d0c | ev_231bbf5c2085d789fda950c3c42c853cbf523af37f08bbe7a7f76713f960eeb6 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCBaseDownloadTask::setListener_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCBaseDownloadTask.headers | 0x100051d18 | ev_680b8de7edcf57046164de4400547e73171c332836cbaeb41fdb297c1b48fd3f */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCBaseDownloadTask::headers(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCBaseDownloadTask.setHeaders: | 0x100051d20 | ev_0d6ea21721bcd0ea3aaf37f98d4031c30fc87a55e8f5102f7a8b59d8ad28465d */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCBaseDownloadTask::setHeaders_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCBaseDownloadTask.mBackgroundTask | 0x100051d2c | ev_6878004109dc74f53ea49862bd8ed2251d01d3872032f383b4483d4551fe2c31 */
+
+/* Function Stack Size: 0x10 bytes */
+
+unsigned_long_long NNCBaseDownloadTask::mBackgroundTask(ID param_1,SEL param_2)
+
+{
+  return *(unsigned_long_long *)(param_1 + 0x18);
+}
+
+
+
+/* NNCBaseDownloadTask.setMBackgroundTask: | 0x100051d34 | ev_0b9f074b61c1da7097d271448906060c52418e01112d744db27e2d47494cfaa5 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCBaseDownloadTask::setMBackgroundTask_(ID param_1,SEL param_2,unsigned_long_long param_3)
+
+{
+  *(unsigned_long_long *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* NNCBaseDownloadTask.item | 0x100051d3c | ev_42506daacd85f11726c116cb148ed18fb18f90fc8904233319150dd0853bf386 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCBaseDownloadTask::item(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x20);
+}
+
+
+
+/* NNCBaseDownloadTask.setItem: | 0x100051d44 | ev_5a39c1026e8adf11ff41dff1f20f54ddd174c69c3e746543db182178011047ad */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCBaseDownloadTask::setItem_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x20) = param_3;
+  return;
+}
+
+
+
+/* NNCBaseDownloadTask..cxx_destruct | 0x100051d50 | ev_695321da4413fd6e2946aec9f80bbc338eab8fa1b136c77d1125288435fd41d9 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCBaseDownloadTask::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x20) = 0;
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  _objc_destroyWeak(param_1 + 8);
+  return;
+}
+
+

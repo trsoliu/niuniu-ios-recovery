@@ -1,0 +1,873 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* TableViewPullRefresh.initWithFrame: | 0x10002baa8 | ev_8cd8391f84f79fb20f64f9aa5bb3111b49508baffa95ec080df6e9af26d6fa3c */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x30 bytes */
+
+ID TableViewPullRefresh::initWithFrame_(ID param_1,SEL param_2,CGRect param_3)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  double dVar4;
+  double dVar5;
+  undefined1 auVar6 [16];
+  ID local_88;
+  class_t *pcStack_80;
+  undefined8 local_78;
+  undefined8 local_70;
+  long local_68;
+  
+  dVar5 = param_3.field1_0x10.field0_0x0;
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  pcStack_80 = &objc::class_t::TableViewPullRefresh;
+  local_88 = param_1;
+  auVar6 = _objc_msgSendSuper2(param_3.field0_0x0.field0_0x0,param_3.field0_0x0.field1_0x8,&local_88
+                               ,"initWithFrame:");
+  IVar3 = auVar6._0_8_;
+  if (IVar3 != 0) {
+    auVar6 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar6._8_8_,0xffffff);
+    FUN_1015a5908(IVar3,auVar6._8_8_,auVar6._0_8_);
+    _objc_alloc(&_OBJC_CLASS___UIImageView);
+    dVar4 = param_3.field1_0x10.field1_0x8 + -57.5;
+    auVar6 = FUN_101564e08(0,dVar4,dVar5,0x4044000000000000);
+    FUN_1015b8888(IVar3,auVar6._8_8_,auVar6._0_8_);
+    IVar1 = FUN_101560d28(IVar3,extraout_x1);
+    FUN_1015ac0a8(IVar1);
+    FUN_101560d28(IVar3,extraout_x1_00);
+    FUN_101527148(IVar3);
+    local_78 = *(undefined8 *)PTR__NSFontAttributeName_101d782f8;
+    auVar6 = FUN_1015ed768(0x4026000000000000,&_OBJC_CLASS___UIFont);
+    local_70 = auVar6._0_8_;
+    auVar6 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar6._8_8_,&local_70,&local_78,1);
+    FUN_1015e3b28(&cf_ck,auVar6._8_8_,auVar6._0_8_);
+    _objc_alloc(&_OBJC_CLASS___UILabel);
+    auVar6 = FUN_101564e08(0,(param_3.field1_0x10.field1_0x8 - dVar4) + -9.0,dVar5,dVar4);
+    FUN_1015d4c28(IVar3,auVar6._8_8_,auVar6._0_8_);
+    auVar6 = FUN_1015ea348(IVar3);
+    FUN_1015d6f48(auVar6._0_8_,auVar6._8_8_,1);
+    uVar2 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_01,0x333333);
+    auVar6 = FUN_1015ea348(IVar3);
+    FUN_1015d6fa8(auVar6._0_8_,auVar6._8_8_,uVar2);
+    uVar2 = FUN_1015ed768(0x4026000000000000,&_OBJC_CLASS___UIFont);
+    auVar6 = FUN_1015ea348(IVar3);
+    FUN_1015b4788(auVar6._0_8_,auVar6._8_8_,uVar2);
+    auVar6 = FUN_1015ea348(IVar3);
+    FUN_101527148(IVar3,auVar6._8_8_,auVar6._0_8_);
+    _objc_alloc(&_OBJC_CLASS___UILabel);
+    auVar6 = FUN_101564e08(0,0,dVar5,0x4040000000000000);
+    FUN_1015b4008(IVar3,auVar6._8_8_,auVar6._0_8_);
+    uVar2 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_02,0xffffff);
+    auVar6 = FUN_101552d08(IVar3);
+    FUN_1015a5908(auVar6._0_8_,auVar6._8_8_,uVar2);
+    auVar6 = FUN_101552d08(IVar3);
+    FUN_1015d6f48(auVar6._0_8_,auVar6._8_8_,1);
+    uVar2 = FUN_1015fc2a8(&_OBJC_CLASS___UIColor);
+    auVar6 = FUN_101552d08(IVar3);
+    FUN_1015d6fa8(auVar6._0_8_,auVar6._8_8_,uVar2);
+    uVar2 = FUN_1015ed768(0x4030000000000000,&_OBJC_CLASS___UIFont);
+    auVar6 = FUN_101552d08(IVar3);
+    FUN_1015b4788(auVar6._0_8_,auVar6._8_8_,uVar2);
+    uVar2 = FUN_101552d08(IVar3);
+    FUN_1015a3168(0x3fe99999a0000000,uVar2);
+    FUN_1015d4ac8(IVar3,extraout_x1_03,1);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_68) {
+    return IVar3;
+  }
+  IVar3 = FUN_100ab8e90();
+  return IVar3;
+}
+
+
+
+/* TableViewPullRefresh.willMoveToSuperview: | 0x10002beec | ev_be0bcb36da86bedc68051eefa66ae51d10c25188475838e776fd824618569b61 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void TableViewPullRefresh::willMoveToSuperview_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::TableViewPullRefresh;
+  local_40 = param_1;
+  _objc_msgSendSuper2(&local_40,"willMoveToSuperview:",param_3);
+  auVar1 = FUN_10152d4c8(param_3);
+  FUN_1015a5908(param_1,auVar1._8_8_,auVar1._0_8_);
+  return;
+}
+
+
+
+/* TableViewPullRefresh.layoutSubviews | 0x10002bf78 | ev_8389f6c3335392b98601b6f3e163def5fdf3599f35948e3cfa231911d58d5304 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void TableViewPullRefresh::layoutSubviews(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  SEL extraout_x1;
+  double dVar2;
+  undefined8 uVar3;
+  double dVar4;
+  undefined8 uVar5;
+  undefined1 auVar6 [16];
+  ID local_78;
+  class_t *pcStack_70;
+  undefined8 local_68;
+  undefined8 local_60;
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  pcStack_70 = &objc::class_t::TableViewPullRefresh;
+  local_78 = param_1;
+  _objc_msgSendSuper2(&local_78,"layoutSubviews");
+  dVar2 = (double)FUN_10155e568(param_1);
+  dVar2 = dVar2 + -57.5;
+  uVar3 = FUN_1015fc468(param_1);
+  IVar1 = FUN_101560d28(param_1,extraout_x1);
+  FUN_1015b4b08(0,dVar2,uVar3,0x4044000000000000,IVar1);
+  local_68 = *(undefined8 *)PTR__NSFontAttributeName_101d782f8;
+  auVar6 = FUN_1015ed768(0x4026000000000000,&_OBJC_CLASS___UIFont);
+  local_60 = auVar6._0_8_;
+  auVar6 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar6._8_8_,&local_60,&local_68,1);
+  FUN_1015e3b28(&cf_ck,auVar6._8_8_,auVar6._0_8_);
+  dVar4 = (double)FUN_10155e568(param_1);
+  uVar5 = FUN_1015fc468(param_1);
+  uVar3 = FUN_1015ea348(param_1);
+  FUN_1015b4b08(0,(dVar4 - dVar2) + -9.0,uVar5,dVar2,uVar3);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_58) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* TableViewPullRefresh.images | 0x10002c118 | ev_032509bab59fcf6a1d9ff030b3309902f5fc09eefcec7fc189db9dcec1aef590 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID TableViewPullRefresh::images(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  long lVar3;
+  long lVar4;
+  undefined1 auVar5 [16];
+  undefined1 auVar6 [16];
+  
+  lVar3 = (long)__images;
+  IVar1 = *(ID *)(param_1 + lVar3);
+  if (IVar1 == 0) {
+    auVar5 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+    uVar2 = auVar5._8_8_;
+    lVar4 = 0;
+    do {
+      auVar6 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,uVar2,&cf_pull_down__zd);
+      auVar6 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar6._8_8_,auVar6._0_8_);
+      uVar2 = auVar6._8_8_;
+      if (auVar6._0_8_ != 0) {
+        FUN_101526528(auVar5._0_8_,uVar2,auVar6._0_8_);
+        uVar2 = extraout_x1;
+      }
+      lVar4 = lVar4 + 1;
+    } while (lVar4 != 0x18);
+    uVar2 = FUN_10153f708(auVar5._0_8_);
+    *(undefined8 *)(param_1 + lVar3) = uVar2;
+    IVar1 = *(ID *)(param_1 + lVar3);
+  }
+  return IVar1;
+}
+
+
+
+/* TableViewPullRefresh.setStatus: | 0x10002c21c | ev_adb1e764e870d9bbae8c600a8d0f489d279dee65de41b6f9cc4d4f88632650a8 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void TableViewPullRefresh::setStatus_(ID param_1,SEL param_2,int param_3)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  undefined8 extraout_x1_03;
+  SEL extraout_x1_04;
+  cfstringStruct *pcVar3;
+  double in_d1;
+  undefined1 auVar4 [16];
+  
+  if (param_3 == 2) {
+    FUN_101561088(param_1);
+    IVar1 = FUN_101560d28(param_1,extraout_x1_01);
+    FUN_1015a3768(IVar1);
+    IVar1 = FUN_101560d28(param_1,extraout_x1_02);
+    FUN_1015e87a8(IVar1);
+    auVar4 = FUN_1015ea348(param_1);
+    pcVar3 = &cf_ck_WR__;
+  }
+  else if (param_3 == 1) {
+    IVar1 = FUN_101560d28(param_1,param_2);
+    FUN_1015ea4c8(IVar1);
+    uVar2 = FUN_10159cd48(param_1);
+    FUN_10153e6e8(uVar2);
+    if (0 < (long)-in_d1) {
+      auVar4 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_03,&cf_pull_down_0);
+      auVar4 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar4._8_8_,auVar4._0_8_);
+      IVar1 = FUN_101560d28(param_1,auVar4._8_8_);
+      FUN_1015b8428(IVar1,extraout_x1_04,auVar4._0_8_);
+    }
+    auVar4 = FUN_1015ea348(param_1);
+    pcVar3 = &cf_Nb7Re;
+  }
+  else {
+    if (param_3 != 0) goto LAB_10002c49c;
+    IVar1 = FUN_101560d28(param_1,param_2);
+    FUN_1015ea4c8(IVar1);
+    uVar2 = FUN_10159cd48(param_1);
+    FUN_10153e6e8(uVar2);
+    if (0 < (long)-in_d1) {
+      auVar4 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf_pull_down_0);
+      auVar4 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar4._8_8_,auVar4._0_8_);
+      IVar1 = FUN_101560d28(param_1,auVar4._8_8_);
+      FUN_1015b8428(IVar1,extraout_x1_00,auVar4._0_8_);
+    }
+    auVar4 = FUN_1015ea348(param_1);
+    pcVar3 = &cf_>eR_fY;
+  }
+  FUN_1015d6f08(auVar4._0_8_,auVar4._8_8_,pcVar3);
+LAB_10002c49c:
+  *(int *)(param_1 + (long)__status) = param_3;
+  return;
+}
+
+
+
+/* TableViewPullRefresh.scrollViewDidScroll: | 0x10002c4bc | ev_3047ec5acabe76ddc74fe14ede80f82a9696b45f4aeccd7f113241935ad0579e */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void TableViewPullRefresh::scrollViewDidScroll_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  ulong uVar2;
+  long lVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  double dVar6;
+  double dVar7;
+  double in_d1;
+  undefined8 in_d2;
+  
+  FUN_1015cf7c8(param_1,param_2,param_3);
+  if (*(int *)(param_1 + (long)__status) == 2) {
+    FUN_10153e6e8();
+    if (0.0 <= in_d1) {
+      FUN_10153e648(param_3);
+      FUN_10153e648(param_3);
+      FUN_10153e648(param_3);
+      uVar5 = 0;
+    }
+    else {
+      FUN_10153e6e8();
+      if (0.0 <= in_d1) goto LAB_10002c618;
+      FUN_10153e648(param_3);
+      FUN_10153e648(param_3);
+      FUN_10153e648(param_3);
+      uVar5 = 0x404d800000000000;
+    }
+    FUN_1015ac028(uVar5,in_d1,in_d2,param_3);
+  }
+  else {
+    iVar1 = FUN_10156cf48(param_3);
+    if ((iVar1 != 0) &&
+       (uVar2 = FUN_1015edce8(*(undefined8 *)(param_1 + (long)__delegate),extraout_x1,param_1),
+       (uVar2 & 1) == 0)) {
+      FUN_10153e648(param_3);
+      FUN_10153e648(param_3);
+      FUN_10153e648(param_3);
+      FUN_1015ac028(0,in_d1,in_d2,param_3);
+      FUN_10153e6e8(param_3);
+      if ((in_d1 <= -65.0) || (FUN_10153e6e8(param_3), 0.0 <= in_d1)) {
+        FUN_10153e6e8(param_3);
+        if (-65.0 <= in_d1) goto LAB_10002c618;
+        uVar4 = 0;
+        uVar5 = extraout_x1_01;
+      }
+      else {
+        uVar4 = 1;
+        uVar5 = extraout_x1_00;
+      }
+      FUN_1015d4ac8(param_1,uVar5,uVar4);
+    }
+  }
+LAB_10002c618:
+  uVar5 = FUN_101552d08(param_1);
+  lVar3 = FUN_1015ec948(uVar5);
+  if ((lVar3 != 0) && (dVar6 = (double)FUN_1015279c8(param_1), dVar6 != 0.0)) {
+    dVar6 = (double)FUN_1015f0ce8(param_3);
+    dVar7 = (double)FUN_1015279c8(param_1);
+    FUN_10153e6e8(param_3);
+    uVar5 = FUN_101552d08(param_1);
+    FUN_1015d84c8((dVar6 + dVar7) - in_d1,uVar5);
+  }
+  return;
+}
+
+
+
+/* TableViewPullRefresh.scrollViewDidEndDragging: | 0x10002c6ec | ev_dfe350ce16b21d1d448bc69b7d2e579a1a1732ccb6d3db82dc1ad1c9a576bf30 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void TableViewPullRefresh::scrollViewDidEndDragging_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ulong uVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  long lVar2;
+  double in_d1;
+  
+  FUN_1015cf7c8(param_1,param_2,param_3);
+  lVar2 = (long)__delegate;
+  uVar1 = FUN_1015edce8(*(undefined8 *)(param_1 + lVar2),extraout_x1,param_1);
+  FUN_10153e6e8(param_3);
+  if ((in_d1 <= -65.0) && ((uVar1 & 1) == 0)) {
+    FUN_10159ce48(param_1,extraout_x1_00,param_3);
+    FUN_1015edcc8(*(undefined8 *)(param_1 + lVar2),extraout_x1_01,param_1);
+  }
+  return;
+}
+
+
+
+/* TableViewPullRefresh.scrollViewTriggerLoad: | 0x10002c7a4 | ev_47ff4ade55889a2ea63662f5155d9dfa4d9f39bcc2b43007337a523e579cb55a */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void TableViewPullRefresh::scrollViewTriggerLoad_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 extraout_x1;
+  
+  FUN_1015ac0e8(0,0xc050400000000000,param_3,param_2,0);
+  FUN_10159cde8(param_1,extraout_x1,param_3);
+  return;
+}
+
+
+
+/* TableViewPullRefresh.scrollViewDidStartLoad: | 0x10002c7f0 | ev_386d55e0a8060fa54f74962c34792bdac677089e6c07b46d44db6649603712e6 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void TableViewPullRefresh::scrollViewDidStartLoad_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 extraout_x1;
+  double in_d1;
+  undefined8 in_d2;
+  
+  FUN_1015d4ac8(param_1,param_2,2);
+  FUN_10152ee08(&_OBJC_CLASS___UIView,extraout_x1,0,0);
+  FUN_1015a3688(0x3fc99999a0000000,&_OBJC_CLASS___UIView);
+  FUN_10153e6e8(param_3);
+  if (in_d1 < 0.0) {
+    FUN_10153e648(param_3);
+    FUN_10153e648(param_3);
+    FUN_10153e648(param_3);
+    FUN_1015ac028(0x404d800000000000,in_d1,in_d2,param_3);
+  }
+  FUN_10153c448(&_OBJC_CLASS___UIView);
+  return;
+}
+
+
+
+/* TableViewPullRefresh.scrollViewDidFinishLoad:type: | 0x10002c8a4 | ev_b223e018f7a675cc279c14edf86a7c5966967a4cf6fea990dffa3535927ee149 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x1c bytes */
+
+void TableViewPullRefresh::scrollViewDidFinishLoad_type_
+               (ID param_1,SEL param_2,ID param_3,int param_4)
+
+{
+  cfstringStruct *pcVar1;
+  cfstringStruct *pcVar2;
+  ID IVar3;
+  undefined8 uVar4;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  SEL extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined8 extraout_x1_07;
+  undefined8 extraout_x1_08;
+  undefined8 extraout_x1_09;
+  undefined8 extraout_x1_10;
+  undefined8 extraout_x1_11;
+  undefined8 extraout_x1_12;
+  undefined8 uVar5;
+  double dVar6;
+  double dVar7;
+  undefined8 uVar8;
+  undefined8 uVar9;
+  undefined1 auVar10 [16];
+  undefined1 auStack_3b0 [128];
+  undefined1 auStack_330 [128];
+  undefined1 auStack_2b0 [128];
+  undefined1 auStack_230 [128];
+  undefined1 auStack_1b0 [128];
+  undefined *local_130;
+  undefined8 local_128;
+  code *local_120;
+  undefined *local_118;
+  ID local_110;
+  undefined *local_108;
+  undefined8 local_100;
+  code *local_f8;
+  undefined *puStack_f0;
+  ID local_e8;
+  undefined8 local_e0;
+  undefined8 local_d8;
+  undefined8 local_d0;
+  undefined8 local_c8;
+  undefined8 local_c0;
+  undefined8 local_b8;
+  undefined8 local_b0;
+  undefined8 local_a8;
+  undefined8 local_a0;
+  undefined8 local_98;
+  long local_90;
+  
+  local_90 = *(long *)PTR____stack_chk_guard_101d78938;
+  auVar10 = FUN_1015299a8(param_1);
+  FUN_1015a35e8(param_1,auVar10._8_8_,auVar10._0_8_ + 1);
+  FUN_1015d4ac8(param_1,extraout_x1,1);
+  auVar10 = FUN_101552d08(param_1);
+  IVar3 = FUN_101574688(auVar10._0_8_,auVar10._8_8_);
+  FUN_101593088(IVar3);
+  IVar3 = FUN_101560d28(param_1,extraout_x1_00);
+  FUN_1015ea4c8(IVar3);
+  auVar10 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_01,&cf_pull_down_0);
+  auVar10 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar10._8_8_,auVar10._0_8_);
+  IVar3 = FUN_101560d28(param_1,auVar10._8_8_);
+  FUN_1015b8428(IVar3,extraout_x1_02,auVar10._0_8_);
+  FUN_1015cf768(param_3);
+  local_108 = PTR___NSConcreteStackBlock_101d78760;
+  local_100 = 0xc2000000;
+  local_f8 = FUN_10002cf84;
+  puStack_f0 = &UNK_101d7b580;
+  local_130 = PTR___NSConcreteStackBlock_101d78760;
+  local_128 = 0xc2000000;
+  local_120 = FUN_10002cfd8;
+  local_118 = &UNK_101d7bd50;
+  local_110 = param_3;
+  local_e8 = param_3;
+  FUN_101529688(0x3fe3333340000000,&_OBJC_CLASS___UIView,extraout_x1_03,&local_108,&local_130);
+  auVar10 = FUN_101552d08(param_1);
+  FUN_1015b6fc8(auVar10._0_8_,auVar10._8_8_,param_4 == 3);
+  if (param_4 != 3) {
+    pcVar1 = &cfstringStruct_101de1420;
+    if (param_4 != 2) {
+      pcVar1 = &cf__fe;
+    }
+    pcVar2 = &cf_R_1Y_eNb7Re;
+    if (param_4 != 1) {
+      pcVar2 = pcVar1;
+    }
+    auVar10 = FUN_101552d08(param_1);
+    FUN_1015d6f08(auVar10._0_8_,auVar10._8_8_,pcVar2);
+    uVar4 = FUN_1015ec948(param_1);
+    uVar5 = FUN_101574da8(uVar4);
+    uVar4 = FUN_1015ec948(param_1);
+    dVar6 = (double)FUN_1015f0ce8(uVar4);
+    dVar7 = (double)FUN_1015279c8(param_1);
+    uVar4 = FUN_1015ec948(param_1);
+    uVar8 = FUN_1015fc468(uVar4);
+    uVar4 = FUN_101552d08(param_1);
+    uVar9 = FUN_10155e568(uVar4);
+    uVar4 = FUN_101552d08(param_1);
+    FUN_1015b4b08(uVar5,dVar6 + dVar7,uVar8,uVar9,uVar4);
+    uVar4 = FUN_1015ec948(param_1);
+    uVar4 = FUN_1015ec948(uVar4);
+    auVar10 = FUN_101552d08(param_1);
+    FUN_101569268(uVar4,auVar10._8_8_,auVar10._0_8_,param_3);
+    auVar10 = FUN_10152a0c8(&_OBJC_CLASS___CAKeyframeAnimation,extraout_x1_04,&cf_transform);
+    IVar3 = auVar10._0_8_;
+    FUN_1015aeee8(IVar3,auVar10._8_8_,param_1);
+    _CATransform3DMakeTranslation(auStack_1b0,0,0xc040000000000000,0);
+    local_b8 = FUN_1015f8108(&_OBJC_CLASS___NSValue,extraout_x1_05,auStack_1b0);
+    _CATransform3DMakeTranslation(auStack_230,0,0xc040000000000000,0);
+    local_b0 = FUN_1015f8108(&_OBJC_CLASS___NSValue,extraout_x1_06,auStack_230);
+    _CATransform3DMakeTranslation(auStack_2b0,0,0,0);
+    local_a8 = FUN_1015f8108(&_OBJC_CLASS___NSValue,extraout_x1_07,auStack_2b0);
+    _CATransform3DMakeTranslation(auStack_330,0,0,0);
+    local_a0 = FUN_1015f8108(&_OBJC_CLASS___NSValue,extraout_x1_08,auStack_330);
+    _CATransform3DMakeTranslation(auStack_3b0,0,0xc040000000000000,0);
+    auVar10 = FUN_1015f8108(&_OBJC_CLASS___NSValue,extraout_x1_09,auStack_3b0);
+    local_98 = auVar10._0_8_;
+    auVar10 = FUN_10152bbc8(&_OBJC_CLASS___NSArray,auVar10._8_8_,&local_b8,5);
+    FUN_1015db948(IVar3,auVar10._8_8_,auVar10._0_8_);
+    local_e0 = FUN_101583048(&_OBJC_CLASS___NSNumber,extraout_x1_10,0);
+    local_d8 = FUN_101583008(0x3fc3333333333333,&_OBJC_CLASS___NSNumber);
+    local_d0 = FUN_101583008(0x3fd6666666666666,&_OBJC_CLASS___NSNumber);
+    auVar10 = FUN_101583008(0x3fe999999999999a,&_OBJC_CLASS___NSNumber);
+    local_c8 = auVar10._0_8_;
+    auVar10 = FUN_101583048(&_OBJC_CLASS___NSNumber,auVar10._8_8_,1);
+    local_c0 = auVar10._0_8_;
+    auVar10 = FUN_10152bbc8(&_OBJC_CLASS___NSArray,auVar10._8_8_,&local_e0,5);
+    FUN_1015be7c8(IVar3,auVar10._8_8_,auVar10._0_8_);
+    FUN_1015b1188(0x40059999a0000000,IVar3);
+    FUN_1015cc908(0x3f800000,IVar3);
+    FUN_1015cc468(IVar3,extraout_x1_11,0);
+    FUN_1015b3b88(IVar3,extraout_x1_12,*(undefined8 *)PTR__kCAFillModeForwards_101d78ab0);
+    auVar10 = FUN_101552d08(param_1);
+    IVar3 = FUN_101574688(auVar10._0_8_,auVar10._8_8_);
+    FUN_101524f08(IVar3);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_90) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* TableViewPullRefresh.animationDidStop:finished: | 0x10002d070 | ev_fe6704677697840d6ca21de9bd75905d83ef0fc7f0bb2308f0ea4153e6ea2070 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x1c bytes */
+
+void TableViewPullRefresh::animationDidStop_finished_
+               (ID param_1,SEL param_2,ID param_3,bool param_4)
+
+{
+  long lVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_1015299a8();
+  FUN_1015a35e8(param_1,auVar2._8_8_,auVar2._0_8_ + -1);
+  lVar1 = FUN_1015299a8(param_1);
+  if (lVar1 != 0) {
+    return;
+  }
+  auVar2 = FUN_101552d08(param_1);
+  FUN_101593bc8(auVar2._0_8_,auVar2._8_8_);
+  return;
+}
+
+
+
+/* TableViewPullRefresh.delegate | 0x10002d0d0 | ev_0c89ae555441740be14db45022241d90976ede78dc71364a13a64dcf36e70ed3 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID TableViewPullRefresh::delegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__delegate);
+}
+
+
+
+/* TableViewPullRefresh.setDelegate: | 0x10002d0f0 | ev_fcc35e7f85af6f912f4733727d9b1a39c66d61bbb2bab3867af913c5947bd3bf */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void TableViewPullRefresh::setDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__delegate) = param_3;
+  return;
+}
+
+
+
+/* TableViewPullRefresh.status | 0x10002d104 | ev_b2299a15bcd0905210517be84dba75c6f8ac326f4b380d04180bd6142cff7926 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+int TableViewPullRefresh::status(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + (long)__status);
+}
+
+
+
+/* TableViewPullRefresh.additionalFinishHeight | 0x10002d114 | ev_1f78869b4f5af4d0a2060ea940a6f74e797f74adf5d9bafdeea43bcae4727eea */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+double TableViewPullRefresh::additionalFinishHeight(ID param_1,SEL param_2)
+
+{
+  return *(double *)(param_1 + (long)__additionalFinishHeight);
+}
+
+
+
+/* TableViewPullRefresh.setAdditionalFinishHeight: | 0x10002d124 | ev_53681eb64884e2af7ddc5cf3ddcb3339210328ad5e67327e6975d7480eb51d85 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void TableViewPullRefresh::setAdditionalFinishHeight_(ID param_1,SEL param_2,double param_3)
+
+{
+  *(double *)(param_1 + (long)__additionalFinishHeight) = param_3;
+  return;
+}
+
+
+
+/* TableViewPullRefresh.scrollView | 0x10002d134 | ev_1a0a689d1ed1310000a4b6ea2fc5bcfcc308ebe2d04e1159b585ba6e169c8b44 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID TableViewPullRefresh::scrollView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__scrollView);
+}
+
+
+
+/* TableViewPullRefresh.setScrollView: | 0x10002d154 | ev_36028ec34f67c73aa179cc042f2595c3d15b6f84e9c48983962db7b4c7634d97 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void TableViewPullRefresh::setScrollView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__scrollView) = param_3;
+  return;
+}
+
+
+
+/* TableViewPullRefresh.imageView | 0x10002d168 | ev_c57a9eee00499a242979c781f32c05bf8e838a17271c4d6aeb908481e99afd1e */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID TableViewPullRefresh::imageView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__imageView);
+}
+
+
+
+/* TableViewPullRefresh.setImageView: | 0x10002d178 | ev_c21ff485fa187858f97137aac4adb25a673476807a92222084474a7c59ccf819 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void TableViewPullRefresh::setImageView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__imageView) = param_3;
+  return;
+}
+
+
+
+/* TableViewPullRefresh.statusLabel | 0x10002d18c | ev_073b39ae684dbd14e3d6159944b43a4c71eec6e7d1d5f609c2a86486afd9fbdc */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID TableViewPullRefresh::statusLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__statusLabel);
+}
+
+
+
+/* TableViewPullRefresh.setStatusLabel: | 0x10002d19c | ev_0266e0a751f9bf3cce8b90f7aa2808460080fff1951fd40e68a896d06778473a */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void TableViewPullRefresh::setStatusLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__statusLabel) = param_3;
+  return;
+}
+
+
+
+/* TableViewPullRefresh.setImages: | 0x10002d1b0 | ev_5a96bab0dc624053ed47eb50cc5e810ccc597e2126cc309c8c46e9707f89f4dc */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void TableViewPullRefresh::setImages_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__images) = param_3;
+  return;
+}
+
+
+
+/* TableViewPullRefresh.finishedLabel | 0x10002d1c4 | ev_37b8035679c7ecf05b6d611b026d4c1453df6314849ab9b4c2c9a7c380275acb */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID TableViewPullRefresh::finishedLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__finishedLabel);
+}
+
+
+
+/* TableViewPullRefresh.setFinishedLabel: | 0x10002d1d4 | ev_49d4218ca2bbc1b99bf9bb04567a8fb793809654c423923fdd1c1fa3543216a3 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void TableViewPullRefresh::setFinishedLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__finishedLabel) = param_3;
+  return;
+}
+
+
+
+/* TableViewPullRefresh.animationCount | 0x10002d1e8 | ev_eee2a9b1d42bdd74c4ad3f5ffcd58831925af962ee1417dadc1922e5f82db2e9 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+long_long TableViewPullRefresh::animationCount(ID param_1,SEL param_2)
+
+{
+  return *(long_long *)(param_1 + (long)__animationCount);
+}
+
+
+
+/* TableViewPullRefresh.setAnimationCount: | 0x10002d1f8 | ev_cf250f33965854fcd787016f1f1515c21c4553c6f1b1f81aaba641dc054239a6 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void TableViewPullRefresh::setAnimationCount_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  *(long_long *)(param_1 + (long)__animationCount) = param_3;
+  return;
+}
+
+
+
+/* TableViewPullRefresh..cxx_destruct | 0x10002d208 | ev_457dbc0c4b624cb415ea4deb678815ed21d77e00c6b0a1d5e283a82c6d330ca2 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void TableViewPullRefresh::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__finishedLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__images) = 0;
+  *(undefined8 *)(param_1 + (long)__statusLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__imageView) = 0;
+  _objc_destroyWeak(param_1 + (long)__scrollView);
+  _objc_destroyWeak(param_1 + (long)__delegate);
+  return;
+}
+
+

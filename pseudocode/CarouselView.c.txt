@@ -1,0 +1,905 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* CarouselView.initWithFrame:imageArray: | 0x1000bf690 | ev_dc549329a00f4bf18d9eb73c276c2d58e3d5cbd9e815ac7a6cb5bd8d13e6865f */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x38 bytes */
+
+ID CarouselView::initWithFrame_imageArray_(ID param_1,SEL param_2,CGRect param_3,ID param_4)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  long lVar4;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  SEL extraout_x1_05;
+  undefined8 extraout_x1_06;
+  ulong uVar5;
+  double dVar6;
+  double dVar7;
+  undefined8 uVar8;
+  double dVar9;
+  undefined1 auVar10 [16];
+  undefined1 auVar11 [16];
+  ID local_90;
+  class_t *pcStack_88;
+  
+  dVar7 = param_3.field1_0x10.field1_0x8;
+  dVar6 = param_3.field1_0x10.field0_0x0;
+  pcStack_88 = &objc::class_t::CarouselView;
+  local_90 = param_1;
+  IVar1 = _objc_msgSendSuper2(param_3.field0_0x0.field0_0x0,param_3.field0_0x0.field1_0x8,dVar6,
+                              dVar7,&local_90,"initWithFrame:");
+  if (IVar1 == 0) {
+    return 0;
+  }
+  auVar10 = FUN_10153f908(param_4);
+  FUN_1015b85a8(IVar1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+  FUN_1015b88a8(IVar1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_10152bb08(&_OBJC_CLASS___NSMutableArray,extraout_x1,param_4);
+  FUN_1015b87c8(IVar1,auVar10._8_8_,auVar10._0_8_);
+  uVar2 = FUN_101574028(param_4);
+  uVar3 = FUN_1015532e8(param_4);
+  auVar10 = FUN_101560c28(IVar1);
+  auVar11 = FUN_10157cda8(&objc::class_t::NNCGGDataItemModel,auVar10._8_8_,uVar2);
+  FUN_1015690a8(auVar10._0_8_,auVar11._8_8_,auVar11._0_8_,0);
+  auVar10 = FUN_101560c28(IVar1);
+  uVar2 = FUN_10157cda8(&objc::class_t::NNCGGDataItemModel,auVar10._8_8_,uVar3);
+  uVar3 = FUN_101560c28(IVar1);
+  auVar11 = FUN_10153f908(uVar3);
+  FUN_1015690a8(auVar10._0_8_,auVar11._8_8_,uVar2,auVar11._0_8_);
+  _objc_alloc(&_OBJC_CLASS___UIScrollView);
+  auVar10 = FUN_101564e08(0,0,dVar6,dVar7);
+  FUN_1015cf7c8(IVar1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_10159cd48(IVar1);
+  FUN_101527148(IVar1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_10159cd48(IVar1);
+  FUN_1015c7e08(auVar10._0_8_,auVar10._8_8_,1);
+  auVar10 = FUN_10159cd48(IVar1);
+  FUN_1015a8f48(auVar10._0_8_,auVar10._8_8_,1);
+  auVar10 = FUN_10159cd48(IVar1);
+  FUN_1015aee88(auVar10._0_8_,auVar10._8_8_,1);
+  auVar10 = FUN_10159cd48(IVar1);
+  FUN_101554148(auVar10._0_8_,auVar10._8_8_);
+  dVar9 = dVar6;
+  lVar4 = FUN_101560688(IVar1);
+  uVar2 = FUN_10159cd48(IVar1);
+  FUN_1015ac108(dVar6 * (double)(lVar4 + 2),0,uVar2);
+  auVar10 = FUN_10159cd48(IVar1);
+  FUN_101554148(auVar10._0_8_,auVar10._8_8_);
+  dVar6 = dVar9;
+  uVar2 = FUN_10159cd48(IVar1);
+  FUN_1015ac0c8(dVar9,0,uVar2);
+  auVar10 = FUN_10159cd48(IVar1);
+  FUN_1015d22c8(auVar10._0_8_,auVar10._8_8_,0);
+  auVar10 = FUN_10159cd48(IVar1);
+  FUN_1015aeee8(auVar10._0_8_,auVar10._8_8_,IVar1);
+  lVar4 = FUN_101560688(IVar1);
+  if (lVar4 != -2) {
+    uVar5 = 0;
+    do {
+      uVar2 = FUN_1015790a8(&_OBJC_CLASS___NSBundle);
+      FUN_101539ca8(&objc::class_t::BannerItemView);
+      auVar10 = _NSStringFromClass();
+      auVar10 = FUN_101576788(uVar2,auVar10._8_8_,auVar10._0_8_,0,0);
+      uVar2 = FUN_101583308(auVar10._0_8_,auVar10._8_8_,0);
+      auVar10 = FUN_10159cd48(IVar1);
+      FUN_101554148(auVar10._0_8_,auVar10._8_8_);
+      dVar9 = dVar6 * (double)(int)uVar5;
+      auVar10 = FUN_10159cd48(IVar1);
+      FUN_101554148(auVar10._0_8_,auVar10._8_8_);
+      auVar10 = FUN_10159cd48(IVar1);
+      FUN_101554148(auVar10._0_8_,auVar10._8_8_);
+      FUN_1015b4b08(dVar9,0,uVar2);
+      auVar10 = FUN_101560c28(IVar1);
+      auVar10 = FUN_101583328(auVar10._0_8_,auVar10._8_8_,uVar5);
+      FUN_1015a13c8(uVar2,auVar10._8_8_,auVar10._0_8_);
+      FUN_1015aa6a8(uVar2,extraout_x1_00,1);
+      auVar10 = FUN_10159cd48(IVar1);
+      FUN_101527148(auVar10._0_8_,auVar10._8_8_,uVar2);
+      FUN_1015d6328(uVar2,extraout_x1_01,uVar5 + 40000);
+      FUN_1015db108(uVar2,extraout_x1_02,1);
+      auVar10 = _objc_alloc(&_OBJC_CLASS___UITapGestureRecognizer);
+      auVar10 = FUN_101567988(auVar10._0_8_,auVar10._8_8_,IVar1,"tappedImage:");
+      FUN_101525d08(uVar2,auVar10._8_8_,auVar10._0_8_);
+      auVar10 = FUN_101560d68(IVar1);
+      FUN_101526528(auVar10._0_8_,auVar10._8_8_,uVar2);
+      uVar5 = uVar5 + 1;
+      lVar4 = FUN_101560688(IVar1);
+    } while (uVar5 < lVar4 + 2U);
+  }
+  auVar10 = _objc_alloc(&_OBJC_CLASS___UIPageControl);
+  FUN_101554148(IVar1,auVar10._8_8_);
+  uVar3 = FUN_1015fc468(IVar1);
+  uVar8 = 0;
+  auVar10 = FUN_101564e08(0,dVar7 + -10.0,uVar3,0,auVar10._0_8_);
+  FUN_1015c7be8(IVar1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_101587b08(IVar1);
+  FUN_101527148(IVar1,auVar10._8_8_,auVar10._0_8_);
+  uVar2 = FUN_101560688(IVar1);
+  auVar10 = FUN_101587b08(IVar1);
+  FUN_1015c6188(auVar10._0_8_,auVar10._8_8_,uVar2);
+  uVar2 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_03,0xa0a0a0);
+  auVar10 = FUN_101587b08(IVar1);
+  FUN_1015c7c48(auVar10._0_8_,auVar10._8_8_,uVar2);
+  uVar2 = FUN_1015fc2a8(&_OBJC_CLASS___UIColor);
+  auVar10 = FUN_101587b08(IVar1);
+  FUN_1015ad948(auVar10._0_8_,auVar10._8_8_,uVar2);
+  uVar2 = FUN_101587b08(IVar1);
+  lVar4 = FUN_101582ec8(uVar2);
+  auVar10 = FUN_101587b08(IVar1);
+  FUN_1015b6fc8(auVar10._0_8_,auVar10._8_8_,lVar4 < 2);
+  uVar2 = FUN_101587b08(IVar1);
+  FUN_1015e3aa8(uVar2);
+  dVar6 = (double)FUN_1015fc468(IVar1);
+  uVar2 = FUN_101587b08(IVar1);
+  FUN_1015ce268(dVar6 + 20.0,uVar2);
+  dVar6 = (double)FUN_10155e568(IVar1);
+  uVar2 = FUN_101587b08(IVar1);
+  FUN_1015a76a8(dVar6 + -5.0,uVar2);
+  _objc_alloc(&_OBJC_CLASS___UILabel);
+  auVar10 = FUN_101561e88();
+  FUN_1015c6108(IVar1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_101582cc8(IVar1);
+  FUN_1015d6f48(auVar10._0_8_,auVar10._8_8_,0);
+  FUN_101560688(IVar1);
+  uVar2 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_04,&cf__d__zd);
+  auVar10 = FUN_101582cc8(IVar1);
+  FUN_1015d6f08(auVar10._0_8_,auVar10._8_8_,uVar2);
+  uVar2 = FUN_101582cc8(IVar1);
+  FUN_1015e3aa8(uVar2);
+  auVar10 = FUN_101582cc8(IVar1);
+  FUN_1015b6fc8(auVar10._0_8_,auVar10._8_8_,1);
+  auVar10 = FUN_101582cc8(IVar1);
+  FUN_101554148(auVar10._0_8_,auVar10._8_8_);
+  FUN_101554148(IVar1,extraout_x1_05);
+  uVar2 = FUN_101582cc8(IVar1);
+  FUN_1015b4b08(0x4024000000000000,0x4024000000000000,uVar3,uVar8,uVar2);
+  uVar2 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_06,&cf_myBgColor);
+  auVar10 = FUN_101582cc8(IVar1);
+  FUN_1015d6fa8(auVar10._0_8_,auVar10._8_8_,uVar2);
+  auVar10 = FUN_101582cc8(IVar1);
+  FUN_101527148(IVar1,auVar10._8_8_,auVar10._0_8_);
+  lVar4 = FUN_1015efce8(IVar1);
+  if (lVar4 == 0) {
+    auVar10 = FUN_101560688(IVar1);
+    if (1 < auVar10._0_8_) {
+      auVar10 = FUN_10159c608(0x400c000000000000,&_OBJC_CLASS___NSTimer,auVar10._8_8_,IVar1,
+                              "nextImage",0,1);
+      FUN_1015d7b88(IVar1,auVar10._8_8_,auVar10._0_8_);
+      uVar2 = FUN_101579348(&_OBJC_CLASS___NSRunLoop);
+      auVar10 = FUN_1015efce8(IVar1);
+      FUN_1015273c8(uVar2,auVar10._8_8_,auVar10._0_8_,
+                    *(undefined8 *)PTR__NSRunLoopCommonModes_101d783f8);
+      auVar10 = FUN_10159cd48(IVar1);
+      uVar2 = 1;
+      goto LAB_1000c0124;
+    }
+  }
+  auVar10 = FUN_10159cd48(IVar1);
+  uVar2 = 0;
+LAB_1000c0124:
+  FUN_1015cf768(auVar10._0_8_,auVar10._8_8_,uVar2);
+  return IVar1;
+}
+
+
+
+/* CarouselView.refresh | 0x1000c0174 | ev_21d23873a983963ffe146b9195716d5443349a35c014c2040499818437108b58 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+int __thiscall CarouselView::refresh(CarouselView *this)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  ulong uVar3;
+  ulong uVar4;
+  undefined1 auVar5 [16];
+  
+  uVar1 = FUN_101560d68();
+  lVar2 = FUN_10153f908(uVar1);
+  if (lVar2 != 0) {
+    uVar4 = 0;
+    do {
+      auVar5 = FUN_101560d68(this);
+      uVar1 = FUN_101583328(auVar5._0_8_,auVar5._8_8_,uVar4);
+      FUN_101591aa8(uVar1);
+      uVar4 = uVar4 + 1;
+      uVar1 = FUN_101560d68(this);
+      uVar3 = FUN_10153f908(uVar1);
+    } while (uVar4 < uVar3);
+  }
+  return 0;
+}
+
+
+
+/* CarouselView.nncappear | 0x1000c0230 | ev_ba8a1376ce0d7980be92484fe14b9e16c97bcb50b1fd2c0d26f76591fb74a94c */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void CarouselView::nncappear(ID param_1,SEL param_2)
+
+{
+  long lVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  
+  lVar1 = FUN_1015efce8();
+  if (lVar1 == 0) {
+    auVar3 = FUN_101560688(param_1);
+    if (auVar3._0_8_ < 2) {
+      return;
+    }
+    auVar3 = FUN_10159c608(0x400c000000000000,&_OBJC_CLASS___NSTimer,auVar3._8_8_,param_1,
+                           "nextImage",0,1);
+    FUN_1015d7b88(param_1,auVar3._8_8_,auVar3._0_8_);
+    uVar2 = FUN_101579348(&_OBJC_CLASS___NSRunLoop);
+    auVar3 = FUN_1015efce8(param_1);
+    FUN_1015273c8(uVar2,auVar3._8_8_,auVar3._0_8_,*(undefined8 *)PTR__NSRunLoopCommonModes_101d783f8
+                 );
+  }
+  return;
+}
+
+
+
+/* CarouselView.disappear | 0x1000c0310 | ev_3e52524e356f5c4c148c0ebd5764582241c78a903204f936a39abf3d1bf20be6 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void CarouselView::disappear(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  
+  uVar1 = FUN_1015efce8();
+  FUN_10156ad28(uVar1);
+  FUN_1015d7b88(param_1,extraout_x1,0);
+  return;
+}
+
+
+
+/* CarouselView.nextImage | 0x1000c0350 | ev_586aefb7d62782e9315cedd8df850eec036c0fc1f4400dd57639c867c928c85a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void CarouselView::nextImage(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  double dVar2;
+  double in_d2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined1 auVar5 [16];
+  undefined *local_60;
+  undefined8 local_58;
+  code *local_50;
+  undefined *puStack_48;
+  ID local_40;
+  double local_38;
+  
+  uVar1 = FUN_10159cd48();
+  dVar2 = (double)FUN_10153e6e8(uVar1);
+  auVar5 = FUN_10159cd48(param_1);
+  FUN_101554148(auVar5._0_8_,auVar5._8_8_);
+  auVar5 = FUN_101560688(param_1);
+  uVar1 = auVar5._8_8_;
+  if (in_d2 * (double)auVar5._0_8_ <= dVar2) {
+    uVar3 = *(undefined8 *)PTR__CGPointZero_101d78130;
+    uVar4 = *(undefined8 *)(PTR__CGPointZero_101d78130 + 8);
+    uVar1 = FUN_10159cd48(param_1);
+    FUN_1015ac0c8(uVar3,uVar4,uVar1);
+    dVar2 = 0.0;
+    uVar1 = extraout_x1;
+  }
+  local_60 = PTR___NSConcreteStackBlock_101d78760;
+  local_58 = 0xc2000000;
+  local_50 = FUN_1000c0458;
+  puStack_48 = &UNK_101d7bf50;
+  local_40 = param_1;
+  local_38 = dVar2;
+  FUN_101529668(0x3fe0000000000000,&_OBJC_CLASS___UIView,uVar1,&local_60);
+  return;
+}
+
+
+
+/* CarouselView.tappedImage: | 0x1000c04c8 | ev_d0db7efc1267d7deb1ef965ba0752c85effb45a4b40548a13898f1df2ca138fa */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void CarouselView::tappedImage_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined1 auVar2 [16];
+  undefined1 auVar3 [16];
+  
+  auVar2 = FUN_101560c28(param_1);
+  IVar1 = FUN_1015fa0a8(param_3,auVar2._8_8_);
+  auVar3 = FUN_1015edd48(IVar1);
+  auVar2 = FUN_101583328(auVar2._0_8_,auVar3._8_8_,auVar3._0_8_ + -40000);
+  IVar1 = FUN_1015fa108(param_1,auVar2._8_8_);
+  auVar3 = FUN_101580708(IVar1);
+  FUN_101581a08(&objc::class_t::AppDelegate,auVar3._8_8_,auVar2._0_8_,auVar3._0_8_);
+  return;
+}
+
+
+
+/* CarouselView.scrollViewWillBeginDragging: | 0x1000c05ac | ev_8b766057e86e6a85d5d0d6e5d5aea99be8c5726cc8b4bc159a2dc164573e21a1 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void CarouselView::scrollViewWillBeginDragging_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  
+  uVar1 = FUN_1015efce8(param_1);
+  FUN_10156ad28(uVar1);
+  FUN_1015d7b88(param_1,extraout_x1,0);
+  uVar1 = FUN_10153e6e8(param_3);
+  FUN_1015bf048(uVar1,param_1);
+  return;
+}
+
+
+
+/* CarouselView.scrollViewDidEndDecelerating: | 0x1000c062c | ev_aacc6800fe72ade644f0e7fc7bfdbfcbbef3add55de7b39490266485f4bb9472 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void CarouselView::scrollViewDidEndDecelerating_(ID param_1,SEL param_2,ID param_3)
+
+{
+  long lVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  
+  lVar1 = FUN_1015efce8();
+  if (lVar1 == 0) {
+    auVar3 = FUN_101560688(param_1);
+    if (auVar3._0_8_ < 2) {
+      return;
+    }
+    auVar3 = FUN_10159c608(0x400c000000000000,&_OBJC_CLASS___NSTimer,auVar3._8_8_,param_1,
+                           "nextImage",0,1);
+    FUN_1015d7b88(param_1,auVar3._8_8_,auVar3._0_8_);
+    uVar2 = FUN_101579348(&_OBJC_CLASS___NSRunLoop);
+    auVar3 = FUN_1015efce8(param_1);
+    FUN_1015273c8(uVar2,auVar3._8_8_,auVar3._0_8_,*(undefined8 *)PTR__NSRunLoopCommonModes_101d783f8
+                 );
+  }
+  return;
+}
+
+
+
+/* CarouselView.scrollViewDidScroll: | 0x1000c070c | ev_446125169290d6b31ad95f6656d9f1630526a2ea1d8b24df3ccdd9774f00096a */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void CarouselView::scrollViewDidScroll_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ulong uVar1;
+  undefined8 uVar2;
+  long lVar3;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  SEL extraout_x1_02;
+  SEL extraout_x1_03;
+  SEL extraout_x1_04;
+  SEL extraout_x1_05;
+  int iVar4;
+  double dVar5;
+  double dVar6;
+  double in_d2;
+  undefined1 auVar7 [16];
+  
+  dVar5 = (double)FUN_10153e6e8();
+  FUN_101554148(param_3,extraout_x1);
+  dVar6 = in_d2 * 0.5;
+  FUN_101554148(param_3,extraout_x1_00);
+  iVar4 = (int)((dVar5 + dVar6) / in_d2 + -1.0);
+  uVar1 = FUN_101560688(param_1);
+  if (uVar1 < (ulong)(long)(iVar4 + 1)) {
+    FUN_101560688(param_1);
+  }
+  FUN_101560688(param_1);
+  uVar2 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_01,&cf__zd__zd);
+  auVar7 = FUN_101582cc8(param_1);
+  FUN_1015d6f08(auVar7._0_8_,auVar7._8_8_,uVar2);
+  auVar7 = FUN_101587b08(param_1);
+  FUN_1015ad908(auVar7._0_8_,auVar7._8_8_,(long)iVar4);
+  lVar3 = FUN_1015efce8(param_1);
+  if (lVar3 != 0) {
+    return;
+  }
+  dVar6 = (double)FUN_10153e6e8(param_3);
+  FUN_101554148(param_3,extraout_x1_02);
+  dVar6 = dVar6 / in_d2;
+  lVar3 = FUN_101560688(param_1);
+  if ((double)(lVar3 + 1) <= dVar6) {
+    dVar6 = (double)FUN_10153e6e8(param_3);
+    dVar5 = (double)FUN_101574048(param_1);
+    if (dVar5 < dVar6) {
+      dVar6 = (double)FUN_10153e6e8(param_3);
+      FUN_101554148(param_3,extraout_x1_03);
+      uVar1 = FUN_101560688(param_1);
+      dVar6 = dVar6 - (double)uVar1 * in_d2;
+      goto LAB_1000c0900;
+    }
+  }
+  dVar6 = (double)FUN_10153e6e8(param_3);
+  FUN_101554148(param_3,extraout_x1_04);
+  if (0.0 < dVar6 / in_d2) {
+    return;
+  }
+  dVar6 = (double)FUN_10153e6e8(param_3);
+  dVar5 = (double)FUN_101574048(param_1);
+  if (dVar5 <= dVar6) {
+    return;
+  }
+  FUN_101554148(param_3,extraout_x1_05);
+  uVar1 = FUN_101560688(param_1);
+  dVar6 = in_d2 * (double)uVar1;
+LAB_1000c0900:
+  FUN_1015ac0c8(dVar6,0,param_3);
+  return;
+}
+
+
+
+/* CarouselView.dealloc | 0x1000c092c | ev_a4599a3576410b5dc799bef51af4a5aaaa42fb8b9c4459ebd9c28248b59b4218 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void CarouselView::dealloc(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  ID local_30;
+  class_t *pcStack_28;
+  
+  uVar1 = FUN_1015efce8();
+  FUN_10156ad28(uVar1);
+  FUN_1015d7b88(param_1,extraout_x1,0);
+  pcStack_28 = &objc::class_t::CarouselView;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"dealloc");
+  return;
+}
+
+
+
+/* CarouselView.layoutSubviews | 0x1000c0994 | ev_9e874ca5bdeed47bad2ea76cc8eacf1ee3e69bd8e4b1d1349762523a64217000 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void CarouselView::layoutSubviews(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ulong uVar2;
+  long lVar3;
+  undefined8 extraout_x1;
+  long lVar4;
+  long lVar5;
+  long lVar6;
+  undefined8 uVar7;
+  double dVar8;
+  double dVar9;
+  undefined8 in_d1;
+  double in_d2;
+  undefined8 in_d3;
+  undefined1 auVar10 [16];
+  undefined8 local_160;
+  long lStack_158;
+  long *local_150;
+  undefined8 uStack_148;
+  undefined8 local_140;
+  undefined8 uStack_138;
+  undefined8 uStack_130;
+  undefined8 uStack_128;
+  ID local_120;
+  class_t *pcStack_118;
+  undefined1 auStack_110 [128];
+  long local_90;
+  
+  local_90 = *(long *)PTR____stack_chk_guard_101d78938;
+  pcStack_118 = &objc::class_t::CarouselView;
+  local_120 = param_1;
+  _objc_msgSendSuper2(&local_120,"layoutSubviews");
+  uVar7 = FUN_101531d88(param_1);
+  uVar1 = FUN_10159cd48(param_1);
+  FUN_1015b4b08(uVar7,in_d1,in_d2,in_d3,uVar1);
+  dVar8 = (double)FUN_1015fc468(param_1);
+  uVar1 = FUN_101560d68(param_1);
+  uVar2 = FUN_10153f908(uVar1);
+  uVar7 = FUN_10155e568(param_1);
+  uVar1 = FUN_10159cd48(param_1);
+  FUN_1015ac108(dVar8 * (double)uVar2,uVar7,uVar1);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_101554148(auVar10._0_8_,auVar10._8_8_);
+  dVar8 = in_d2;
+  uVar1 = FUN_10159cd48(param_1);
+  FUN_1015ac0c8(in_d2,0,uVar1);
+  uVar1 = FUN_101587b08(param_1);
+  FUN_1015e3aa8(uVar1);
+  dVar9 = (double)FUN_1015fc468(param_1);
+  uVar1 = FUN_101587b08(param_1);
+  FUN_1015ce268(dVar9 + 20.0,uVar1);
+  dVar9 = (double)FUN_10155e568(param_1);
+  uVar1 = FUN_101587b08(param_1);
+  FUN_1015a76a8(dVar9 + -5.0,uVar1);
+  uStack_138 = 0;
+  local_140 = 0;
+  uStack_128 = 0;
+  uStack_130 = 0;
+  lStack_158 = 0;
+  local_160 = 0;
+  uStack_148 = 0;
+  local_150 = (long *)0x0;
+  auVar10 = FUN_101560d68(param_1);
+  uVar1 = auVar10._0_8_;
+  lVar3 = FUN_10153f948(uVar1,auVar10._8_8_,&local_160,auStack_110,0x10);
+  if (lVar3 != 0) {
+    lVar4 = 0;
+    lVar5 = *local_150;
+    do {
+      lVar6 = 0;
+      do {
+        if (*local_150 != lVar5) {
+          _objc_enumerationMutation(uVar1);
+        }
+        uVar7 = *(undefined8 *)(lStack_158 + lVar6 * 8);
+        auVar10 = FUN_10159cd48(param_1);
+        FUN_101554148(auVar10._0_8_,auVar10._8_8_);
+        dVar9 = dVar8 * (double)(ulong)(lVar4 + lVar6);
+        auVar10 = FUN_10159cd48(param_1);
+        FUN_101554148(auVar10._0_8_,auVar10._8_8_);
+        auVar10 = FUN_10159cd48(param_1);
+        FUN_101554148(auVar10._0_8_,auVar10._8_8_);
+        FUN_1015b4b08(dVar9,0,uVar7);
+        lVar6 = lVar6 + 1;
+      } while (lVar3 != lVar6);
+      lVar3 = FUN_10153f948(uVar1,extraout_x1,&local_160,auStack_110,0x10);
+      lVar4 = lVar4 + lVar6;
+    } while (lVar3 != 0);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_90) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* CarouselView.delegate | 0x1000c0cd4 | ev_75665cf8a9870f3c9f742cbc1817857a1b230263a3b004572573a05ac2d5fb5c */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID CarouselView::delegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__delegate);
+}
+
+
+
+/* CarouselView.setDelegate: | 0x1000c0cf4 | ev_bbf8eaa8bcdba74207d91dcfb7d38c946c06c0296f6ebb0a0cede5aceb48f272 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void CarouselView::setDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__delegate) = param_3;
+  return;
+}
+
+
+
+/* CarouselView.imageSource | 0x1000c0d08 | ev_79e36fb8184a14444eba5b2d0ea69a6febdc08e15b9a709deadaf6b09afdf4a3 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID CarouselView::imageSource(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__imageSource);
+}
+
+
+
+/* CarouselView.setImageSource: | 0x1000c0d18 | ev_8c86742f7ff6c3b0d183ff6d42ea98342f56c497f9b41a1da576462865c1a5ea */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void CarouselView::setImageSource_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__imageSource) = param_3;
+  return;
+}
+
+
+
+/* CarouselView.imageViewArray | 0x1000c0d2c | ev_4d3435d95e28528a41afd310c5fb6f79dae771b5e4c7c6999b9d5ca12a819367 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID CarouselView::imageViewArray(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__imageViewArray);
+}
+
+
+
+/* CarouselView.setImageViewArray: | 0x1000c0d3c | ev_296551d745409d80cbd4c4fafbee3de3a2122f71cf3a29f50e525bae17d6145d */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void CarouselView::setImageViewArray_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__imageViewArray) = param_3;
+  return;
+}
+
+
+
+/* CarouselView.scrollView | 0x1000c0d50 | ev_892b44ec623fcfd103db0591b6087ac7a2a16803af05468726902a449248a88c */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID CarouselView::scrollView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__scrollView);
+}
+
+
+
+/* CarouselView.setScrollView: | 0x1000c0d60 | ev_fd280ce40b5d6effafb0e31033b86d4e919aa77ac5f5667ce7059cf1e593ba63 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void CarouselView::setScrollView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__scrollView) = param_3;
+  return;
+}
+
+
+
+/* CarouselView.pageControl | 0x1000c0d74 | ev_e2cba1f24b4b579fca665ee49bc0cd26a14c44fe6edff8a314710f5c34980603 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID CarouselView::pageControl(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__pageControl);
+}
+
+
+
+/* CarouselView.setPageControl: | 0x1000c0d84 | ev_0400db0f025a634a3a39ba1f65c8d452b1c9eee0b2a5cbffcecb9aab4c0fd54c */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void CarouselView::setPageControl_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__pageControl) = param_3;
+  return;
+}
+
+
+
+/* CarouselView.numLabel | 0x1000c0d98 | ev_b27ec2fcd13987c03c60af722aea7387f9fd0c71dab4b09787f8131cb571ecb0 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID CarouselView::numLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__numLabel);
+}
+
+
+
+/* CarouselView.setNumLabel: | 0x1000c0da8 | ev_464276198004d3cec81775c5669290d4892afb65bec33c1e1dc5748a47c9e786 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void CarouselView::setNumLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__numLabel) = param_3;
+  return;
+}
+
+
+
+/* CarouselView.timer | 0x1000c0dbc | ev_43dd446f072e406e32cdc71e8d6ea41d3a031b5bdd4d7faa0dff2bec85e873ce */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID CarouselView::timer(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__timer);
+}
+
+
+
+/* CarouselView.setTimer: | 0x1000c0dcc | ev_6f29fc19752d1990ecffe876641d386a8f90762c74d835997e26a56e8196b581 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void CarouselView::setTimer_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__timer) = param_3;
+  return;
+}
+
+
+
+/* CarouselView.imageCount | 0x1000c0de0 | ev_44ea85ad603e4b1c670d0d0a91661eb98b241bf303f6458560e757ab0041a86f */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+unsigned_long_long CarouselView::imageCount(ID param_1,SEL param_2)
+
+{
+  return *(unsigned_long_long *)(param_1 + (long)__imageCount);
+}
+
+
+
+/* CarouselView.setImageCount: | 0x1000c0df0 | ev_5af68c0fd572169cb34397fe9d69f0cf67335f462ccd34eaa2296c1c454123f1 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void CarouselView::setImageCount_(ID param_1,SEL param_2,unsigned_long_long param_3)
+
+{
+  *(unsigned_long_long *)(param_1 + (long)__imageCount) = param_3;
+  return;
+}
+
+
+
+/* CarouselView.lastOffset | 0x1000c0e00 | ev_85778f0bb464bc6e7ceafdf0fdb56d1b819efb44f179cd7b2055b5ad9174ef58 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+double CarouselView::lastOffset(ID param_1,SEL param_2)
+
+{
+  return *(double *)(param_1 + (long)__lastOffset);
+}
+
+
+
+/* CarouselView.setLastOffset: | 0x1000c0e10 | ev_7c70992a355d6be6481295a36d1fb2bffe548e675237101447259ebf604a9d3e */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void CarouselView::setLastOffset_(ID param_1,SEL param_2,double param_3)
+
+{
+  *(double *)(param_1 + (long)__lastOffset) = param_3;
+  return;
+}
+
+
+
+/* CarouselView..cxx_destruct | 0x1000c0e20 | ev_60a646f0092b6896536f6bc515db1fc55fa998bb9dbf7acce567fb8ed419b070 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void CarouselView::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__timer) = 0;
+  *(undefined8 *)(param_1 + (long)__numLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__pageControl) = 0;
+  *(undefined8 *)(param_1 + (long)__scrollView) = 0;
+  *(undefined8 *)(param_1 + (long)__imageViewArray) = 0;
+  *(undefined8 *)(param_1 + (long)__imageSource) = 0;
+  _objc_destroyWeak(param_1 + (long)__delegate);
+  return;
+}
+
+

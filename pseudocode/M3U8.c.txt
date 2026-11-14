@@ -1,0 +1,331 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* M3U8.m3u8WithUrl: | 0x1000862f4 | ev_32e5a46ee09b5a52959838c78a84749c56cda7bf29125c3e81991a18126f0e2c */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID M3U8::m3u8WithUrl_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_1015813c8(&objc::class_t::M3U8);
+  IVar1 = auVar2._0_8_;
+  FUN_1015da848(IVar1,auVar2._8_8_,param_3);
+  FUN_1015b8f48(IVar1,extraout_x1,0);
+  auVar2 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+  FUN_1015d9228(IVar1,auVar2._8_8_,auVar2._0_8_);
+  return IVar1;
+}
+
+
+
+/* M3U8.addTs: | 0x100086374 | ev_a02279dc93e298ff60152aeeca0f487c9840de387eded45e22fcb4840de6d003 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void M3U8::addTs_(ID param_1,SEL param_2,ID param_3)
+
+{
+  long lVar1;
+  undefined1 auVar2 [16];
+  
+  lVar1 = FUN_1015f2908(param_1);
+  if (lVar1 == 0) {
+    auVar2 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+    FUN_1015d9228(param_1,auVar2._8_8_,auVar2._0_8_);
+  }
+  auVar2 = FUN_1015f2908(param_1);
+  FUN_101526528(auVar2._0_8_,auVar2._8_8_,param_3);
+  return;
+}
+
+
+
+/* M3U8.getDuration | 0x100086410 | ev_4c281ddb36f131eb8b288f9142d8cac8ab24024c81c4bfb321e795fdbfd0497a */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+long_long M3U8::getDuration(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  undefined8 extraout_x1;
+  long_long lVar3;
+  long lVar4;
+  long lVar5;
+  undefined1 extraout_b0;
+  undefined1 extraout_var;
+  undefined1 extraout_var_00;
+  undefined1 extraout_var_01;
+  undefined8 local_110;
+  long lStack_108;
+  long *local_100;
+  undefined8 uStack_f8;
+  undefined8 local_f0;
+  undefined8 uStack_e8;
+  undefined8 uStack_e0;
+  undefined8 uStack_d8;
+  undefined1 auStack_c8 [128];
+  long local_48;
+  
+  local_48 = *(long *)PTR____stack_chk_guard_101d78938;
+  lStack_108 = 0;
+  local_110 = 0;
+  uStack_f8 = 0;
+  local_100 = (long *)0x0;
+  uStack_e8 = 0;
+  local_f0 = 0;
+  uStack_d8 = 0;
+  uStack_e0 = 0;
+  uVar1 = *(undefined8 *)(param_1 + 0x18);
+  lVar2 = FUN_10153f948(uVar1,param_2,&local_110,auStack_c8,0x10);
+  if (lVar2 == 0) {
+    lVar3 = 0;
+  }
+  else {
+    lVar3 = 0;
+    lVar4 = *local_100;
+    do {
+      lVar5 = 0;
+      do {
+        if (*local_100 != lVar4) {
+          _objc_enumerationMutation(uVar1);
+        }
+        FUN_10154bf08(*(undefined8 *)(lStack_108 + lVar5 * 8));
+        lVar3 = (long_long)
+                ((float)CONCAT13(extraout_var_01,
+                                 CONCAT12(extraout_var_00,CONCAT11(extraout_var,extraout_b0))) +
+                (float)(long)lVar3);
+        lVar5 = lVar5 + 1;
+      } while (lVar2 != lVar5);
+      lVar2 = FUN_10153f948(uVar1,extraout_x1,&local_110,auStack_c8,0x10);
+    } while (lVar2 != 0);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_48) {
+    lVar3 = FUN_100ab8e90(0);
+    return lVar3;
+  }
+  return lVar3;
+}
+
+
+
+/* M3U8.isEqual: | 0x100086518 | ev_fab97a5b3fbd3e89e45b2ce6911cff392d5d423d44fd85f9ce3c7cfd3767bfcf */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+bool M3U8::isEqual_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  bool bVar2;
+  undefined8 uVar3;
+  long lVar4;
+  undefined1 auVar5 [16];
+  
+  auVar5 = FUN_101539ca8(&objc::class_t::M3U8);
+  iVar1 = FUN_10156e908(param_3,auVar5._8_8_,auVar5._0_8_);
+  if (iVar1 == 0) {
+    bVar2 = 0;
+  }
+  else {
+    uVar3 = FUN_1015f69c8(param_3);
+    lVar4 = FUN_1015750a8(uVar3);
+    if (lVar4 == 0) {
+      bVar2 = 0;
+    }
+    else {
+      uVar3 = FUN_1015f69c8(param_3);
+      auVar5 = FUN_1015f69c8(param_1);
+      bVar2 = FUN_10156d5e8(uVar3,auVar5._8_8_,auVar5._0_8_);
+    }
+  }
+  return bVar2;
+}
+
+
+
+/* M3U8.url | 0x100086604 | ev_af1e7a77aa3b0411ff16a5dc14c0736a3d3b14c39cc607417714464f8c8b7fca */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID M3U8::url(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* M3U8.setUrl: | 0x10008660c | ev_9b38f61f4b0dafbe3706e33febeda65d17df14d46184056c945f40d9da4d6251 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void M3U8::setUrl_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* M3U8.tsList | 0x100086614 | ev_b387327863fb48b4d425912c25d1a5fe78206c2e2bfc23488d150f58ae772053 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID M3U8::tsList(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x18);
+}
+
+
+
+/* M3U8.setTsList: | 0x10008661c | ev_d79a39b7a9de68b5d9d08338b27ad5271153ed735ea5259f07e5d872fd754948 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void M3U8::setTsList_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* M3U8.targetDuration | 0x100086628 | ev_6c074fde8baad9f4616c64a0e5e1751fca8c657477243cd37b1fb5dd8ed917df */
+
+/* Function Stack Size: 0x10 bytes */
+
+float M3U8::targetDuration(ID param_1,SEL param_2)
+
+{
+  return *(float *)(param_1 + 0xc);
+}
+
+
+
+/* M3U8.setTargetDuration: | 0x100086630 | ev_45a0ac110431762ee90d69e03de217e25c7d0455243549d3fb719fa3e79495de */
+
+/* Function Stack Size: 0x14 bytes */
+
+void M3U8::setTargetDuration_(ID param_1,SEL param_2,float param_3)
+
+{
+  *(float *)(param_1 + 0xc) = param_3;
+  return;
+}
+
+
+
+/* M3U8.initSequence | 0x100086638 | ev_fc54e5b29efc7aacf4248a35ca6e097c9dacec7cf2863f1d7a18f0da766e7100 */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long M3U8::initSequence(ID param_1,SEL param_2)
+
+{
+  return *(long_long *)(param_1 + 0x20);
+}
+
+
+
+/* M3U8.setInitSequence: | 0x100086640 | ev_b427fa6803217c141219944c08d1914f032802c88d9c88f2cf4d60f72449516a */
+
+/* Function Stack Size: 0x18 bytes */
+
+void M3U8::setInitSequence_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  *(long_long *)(param_1 + 0x20) = param_3;
+  return;
+}
+
+
+
+/* M3U8.version | 0x100086648 | ev_e60601f0a83bdf3ea5e77a9dd5e140c229c7b22cd94e15e25050efd0285fcf5e */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long M3U8::version(ID param_1,SEL param_2)
+
+{
+  return *(long_long *)(param_1 + 0x28);
+}
+
+
+
+/* M3U8.setVersion: | 0x100086650 | ev_ef0b0f4ea461a49ac64fb912ba6803dec53992c28956b42d1f06cb69d6b90cbc */
+
+/* Function Stack Size: 0x18 bytes */
+
+void M3U8::setVersion_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  *(long_long *)(param_1 + 0x28) = param_3;
+  return;
+}
+
+
+
+/* M3U8.hasEndList | 0x100086658 | ev_74e1455063c238d6abf9ba7578643d2b449440f5533db06cfd87501027b4c49e */
+
+/* Function Stack Size: 0x10 bytes */
+
+bool M3U8::hasEndList(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + 8);
+}
+
+
+
+/* M3U8.setHasEndList: | 0x100086660 | ev_8770d0272ee4479778ab07d9f21ea2e528ba32a65c5435b60ef012b467d36f5c */
+
+/* Function Stack Size: 0x14 bytes */
+
+void M3U8::setHasEndList_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + 8) = (char)param_3;
+  return;
+}
+
+
+
+/* M3U8..cxx_destruct | 0x100086668 | ev_8626727347a05b7dcaeccb0791100dd4320761dd5781b641bf01ba73955bf772 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void M3U8::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x18) = 0;
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  return;
+}
+
+

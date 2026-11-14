@@ -1,0 +1,134 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* BaseViewController.viewDidLoad | 0x100059c48 | ev_e9b3f32ba7012c182d8c3631be5e67ff2928f79fd1c1a0f49a5130a6cac20930 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void BaseViewController::viewDidLoad(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined1 auVar3 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::BaseViewController;
+  local_40 = param_1;
+  _objc_msgSendSuper2(&local_40,"viewDidLoad");
+  FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1,&cf_myTextColor);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1_00);
+  FUN_1015a5908(IVar1);
+  uVar2 = FUN_101580708(param_1);
+  auVar3 = FUN_101569e28(uVar2);
+  FUN_1015aeee8(auVar3._0_8_,auVar3._8_8_,param_1);
+  return;
+}
+
+
+
+/* BaseViewController.didReceiveMemoryWarning | 0x100059d18 | ev_e0ab1accc4343d914797b91b48fe0b207df54f153759b88fd7a6e8cb9cf5323c */
+
+/* Function Stack Size: 0x10 bytes */
+
+void BaseViewController::didReceiveMemoryWarning(ID param_1,SEL param_2)
+
+{
+  ID local_20;
+  class_t *pcStack_18;
+  
+  pcStack_18 = &objc::class_t::BaseViewController;
+  local_20 = param_1;
+  _objc_msgSendSuper2(&local_20,"didReceiveMemoryWarning");
+  return;
+}
+
+
+
+/* BaseViewController.prefersStatusBarHidden | 0x100059d4c | ev_0b0624accd43b698a1e8809507d4d7639479a95be6033074e4d505d7fead3004 */
+
+/* Function Stack Size: 0x10 bytes */
+
+bool BaseViewController::prefersStatusBarHidden(ID param_1,SEL param_2)
+
+{
+  return 0;
+}
+
+
+
+/* BaseViewController.shouldAutorotate | 0x100059d54 | ev_ba09c8dadf00af5cb655721a7d5483b9b2e7355a8a5c754bc972e1c3ed794724 */
+
+/* Function Stack Size: 0x10 bytes */
+
+bool BaseViewController::shouldAutorotate(ID param_1,SEL param_2)
+
+{
+  return 0;
+}
+
+
+
+/* BaseViewController.preferredStatusBarStyle | 0x100059d5c | ev_f4b26142c48012b64ad7fd260544dd770e4bf088cdd6369fc1ffe10466e4ab3b */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long BaseViewController::preferredStatusBarStyle(ID param_1,SEL param_2)
+
+{
+  long_long lVar1;
+  int iVar2;
+  
+  iVar2 = FUN_1014eab94(2,0xd,0,0);
+  lVar1 = 0;
+  if (iVar2 != 0) {
+    lVar1 = 3;
+  }
+  return lVar1;
+}
+
+
+
+/* BaseViewController.supportedInterfaceOrientations | 0x100059d8c | ev_55221d4ee728fa3fde3646a41f418ccb5a705326f166e9fb3920245a5e3399dc */
+
+/* Function Stack Size: 0x10 bytes */
+
+unsigned_long_long BaseViewController::supportedInterfaceOrientations(ID param_1,SEL param_2)
+
+{
+  return 2;
+}
+
+
+
+/* BaseViewController.nncisShow | 0x100059d94 | ev_4c365e902ec3328e3bd3e0837f2635c338237d3591adf775abe053a8d9c38da7 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool BaseViewController::nncisShow(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__nncisShow);
+}
+
+
+
+/* BaseViewController.setNncisShow: | 0x100059da4 | ev_afda48a9460fae07a03a10aa784f30fefb0f2ae40dfd2ce4bd17ec3149dcf7f3 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void BaseViewController::setNncisShow_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__nncisShow) = (char)param_3;
+  return;
+}
+
+

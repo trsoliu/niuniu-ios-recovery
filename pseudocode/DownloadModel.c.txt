@@ -1,0 +1,823 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* DownloadModel.getVideoBeanWithBeanString: | 0x1000b0818 | ev_ae60b92d065bc02bf61262bf0273d67f1b2ac319252013edf299ffd46e700bba */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID DownloadModel::getVideoBeanWithBeanString_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_101544828(param_3,param_2,4);
+  uVar1 = FUN_1015074c8(&_OBJC_CLASS___NSJSONSerialization,auVar2._8_8_,auVar2._0_8_,1,0);
+  auVar2 = FUN_1015813c8(&objc::class_t::NNCFileBean);
+  FUN_1015db9c8(auVar2._0_8_,auVar2._8_8_,uVar1);
+  return auVar2._0_8_;
+}
+
+
+
+/* DownloadModel.getVideoBeanDataString: | 0x1000b089c | ev_03df895acfd374630c8b8812fa2b455649c4a4da052dc53b64dd14ce23a09b8f */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID DownloadModel::getVideoBeanDataString_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined1 auVar3 [16];
+  cfstringStruct *local_d0;
+  cfstringStruct *pcStack_c8;
+  cfstringStruct *local_c0;
+  cfstringStruct *pcStack_b8;
+  cfstringStruct *local_b0;
+  cfstringStruct *pcStack_a8;
+  cfstringStruct *local_a0;
+  cfstringStruct *pcStack_98;
+  cfstringStruct *local_90;
+  cfstringStruct *pcStack_88;
+  cfstringStruct *local_80;
+  cfstringStruct *pcStack_78;
+  cfstringStruct *local_70;
+  cfstringStruct *pcStack_68;
+  cfstringStruct *local_60;
+  cfstringStruct *pcStack_58;
+  cfstringStruct *local_50;
+  cfstringStruct *pcStack_48;
+  cfstringStruct *local_40;
+  long local_38;
+  
+  local_38 = *(long *)PTR____stack_chk_guard_101d78938;
+  local_d0 = &cf_videoId;
+  pcStack_c8 = &cf_typeId;
+  local_c0 = &cf_videoName;
+  pcStack_b8 = &cf_videoSubName;
+  local_b0 = &cf_videoEnglishName;
+  pcStack_a8 = &cf_videoStatus;
+  local_a0 = &cf_videoClass;
+  pcStack_98 = &cf_vodCover;
+  local_90 = &cf_actor;
+  pcStack_88 = &cf_director;
+  local_80 = &cf_remark;
+  pcStack_78 = &cf_publishDate;
+  local_70 = &cf_videoTotal;
+  pcStack_68 = &cf_lang;
+  local_60 = &cf_year;
+  pcStack_58 = &cf_hits;
+  local_50 = &cf_score;
+  pcStack_48 = &cf_dbScore;
+  local_40 = &cf_vodBehind;
+  auVar3 = FUN_10152bbc8(&_OBJC_CLASS___NSArray,param_2,&local_d0,0x13);
+  auVar3 = FUN_101548248(param_3,auVar3._8_8_,auVar3._0_8_);
+  uVar1 = FUN_1015449e8(&_OBJC_CLASS___NSJSONSerialization,auVar3._8_8_,auVar3._0_8_,1,0);
+  auVar3 = _objc_alloc(&_OBJC_CLASS___NSString);
+  IVar2 = FUN_1015644e8(auVar3._0_8_,auVar3._8_8_,uVar1,4);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_38) {
+    return IVar2;
+  }
+  IVar2 = FUN_100ab8e90(0);
+  return IVar2;
+}
+
+
+
+/* DownloadModel.VIDEO_URL | 0x1000b0a60 | ev_8c2c7e853fe219760301f064b0b2c2a8f8134622c398b9b2f8e9df3cd5e80e91 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID DownloadModel::VIDEO_URL(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x30);
+}
+
+
+
+/* DownloadModel.setVIDEO_URL: | 0x1000b0a68 | ev_35afcfd07752ad66f09b85ea59289d79981d67337813b0f44dce8f0dbdc85d62 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setVIDEO_URL_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x30) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.MIME_TYPE | 0x1000b0a70 | ev_6f11d2c51078977708a13eae0632ba94521ff67fba72e1d3b065de29edc18df3 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID DownloadModel::MIME_TYPE(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x38);
+}
+
+
+
+/* DownloadModel.setMIME_TYPE: | 0x1000b0a78 | ev_34b9beb8511b17d7bcc651c4977d18a184620078f4b14f93dc39f2ca9dc5c276 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setMIME_TYPE_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x38) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.PLAYER_ID | 0x1000b0a80 | ev_7ca37e05d3388bad1a99adb566852c84b7c75ed562fafaa26fdfe98245d6a3f6 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID DownloadModel::PLAYER_ID(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x40);
+}
+
+
+
+/* DownloadModel.setPLAYER_ID: | 0x1000b0a88 | ev_d2271561e3440a649e8ade225f7823cb0cda1040610223e1259df996b09c8354 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setPLAYER_ID_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x40) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.EPISODE_TITLE | 0x1000b0a90 | ev_6008f4c1269bdc5fdc7b1d1fd5370e755745c88e48f5bb18f25632359913fed0 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID DownloadModel::EPISODE_TITLE(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x48);
+}
+
+
+
+/* DownloadModel.setEPISODE_TITLE: | 0x1000b0a98 | ev_5bf3bbfeacbfe9efa8647f4c339e80580f519d3bd7ce4481a582976dc0cd5f7c */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setEPISODE_TITLE_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x48) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.BEAN_STRING | 0x1000b0aa0 | ev_4b6a284262be375f72670639127dc7fd8f636a339529ddc336be1f1a614a61d7 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID DownloadModel::BEAN_STRING(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x50);
+}
+
+
+
+/* DownloadModel.setBEAN_STRING: | 0x1000b0aa8 | ev_a03df9174e66998671b30ebfcbd49b123884d4e0dc1fe757f560ed130f6fa0a4 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setBEAN_STRING_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x50) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.VIDEO_ID_STRING | 0x1000b0ab0 | ev_fe9a18ab6b974e0d5d53af0d1792557f0a388ed0bcc8613b324237943bea5282 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID DownloadModel::VIDEO_ID_STRING(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x58);
+}
+
+
+
+/* DownloadModel.setVIDEO_ID_STRING: | 0x1000b0ab8 | ev_07a0262c3d2300edc702e433eab6f6fa7cb2c020d4f34618e01723fdab6faf6b */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setVIDEO_ID_STRING_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x58) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.GROUP_NAME | 0x1000b0ac0 | ev_eebc38014acbf70d972e1d858c14079f24788c1f57ecf4eb820a777a43f3c9fd */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID DownloadModel::GROUP_NAME(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x60);
+}
+
+
+
+/* DownloadModel.setGROUP_NAME: | 0x1000b0ac8 | ev_a95cc193297f761bb73143cd13261b18e6d0c76e4c4cf64de02194faeeef60f0 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setGROUP_NAME_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x60) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.VIDEO_TITLE | 0x1000b0ad0 | ev_9ffca20c3e90397ea3a941d0e1ecba93c796a52ded77eee356e372a9ae12e24e */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID DownloadModel::VIDEO_TITLE(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x68);
+}
+
+
+
+/* DownloadModel.setVIDEO_TITLE: | 0x1000b0ad8 | ev_ed88184a7e588b038b8678f5c9706427203bd8dd7cba8ed4954876cd01371604 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setVIDEO_TITLE_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x68) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.COVER_URL | 0x1000b0ae0 | ev_223737fb5885090801f61b6014e9cd9ef8b1b86c538c4d50288b34b1ca08b6e6 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID DownloadModel::COVER_URL(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x70);
+}
+
+
+
+/* DownloadModel.setCOVER_URL: | 0x1000b0ae8 | ev_5bad3a86eaee40c8c4894000665ef6e83053985c442d248c912e03bbeb3218a3 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setCOVER_URL_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x70) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.FILE_NAME | 0x1000b0af0 | ev_f206bf1d5c809959f5fd63f1c4fc60479a96a34f4ca1308ed757b4d2aac440e5 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID DownloadModel::FILE_NAME(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x78);
+}
+
+
+
+/* DownloadModel.setFILE_NAME: | 0x1000b0af8 | ev_ec0051e8832757f15d6867827e0dfabdbe1382870dc333aed7a770ebe12718ab */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setFILE_NAME_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x78) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.FILE_PATH | 0x1000b0b00 | ev_ca62f84b30a8a4d7fa249d637a3f790c5c7bbf09043fe2b6969a71452005d6a8 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID DownloadModel::FILE_PATH(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x80);
+}
+
+
+
+/* DownloadModel.setFILE_PATH: | 0x1000b0b08 | ev_524f90cffee5d6e4ae56ff5be709b178d2150fb9b3cc83aaa4f1158f37684e35 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setFILE_PATH_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x80) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.VIDEO_ID | 0x1000b0b10 | ev_07b299abc492fd27ce76bbba0f2a61aef65e7d80c0ece493edc4744eb3c71961 */
+
+/* Function Stack Size: 0x10 bytes */
+
+int DownloadModel::VIDEO_ID(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 8);
+}
+
+
+
+/* DownloadModel.setVIDEO_ID: | 0x1000b0b18 | ev_fabc7b02d1c18e413a2c8e62b7a824a25b084a5f7e5546f4abe33bd322567b27 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void DownloadModel::setVIDEO_ID_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.EPISODE_INDEX | 0x1000b0b20 | ev_4e0c647d63670d5dea81a8d95155803088de1c12b5f056f384988178929a2227 */
+
+/* Function Stack Size: 0x10 bytes */
+
+int DownloadModel::EPISODE_INDEX(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 0xc);
+}
+
+
+
+/* DownloadModel.setEPISODE_INDEX: | 0x1000b0b28 | ev_f7ee5e677c973241ad972ac1cde51900bf57bf697cd075f0e124a70446454fd8 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void DownloadModel::setEPISODE_INDEX_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 0xc) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.COMPLETED | 0x1000b0b30 | ev_4e4ca953152d80c1c94a171b0ce4f213f478c3a8e31250d0b6fc626cc4dfc384 */
+
+/* Function Stack Size: 0x10 bytes */
+
+int DownloadModel::COMPLETED(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 0x10);
+}
+
+
+
+/* DownloadModel.setCOMPLETED: | 0x1000b0b38 | ev_0f0b957bc057c8afe3ec1eee71963119d8d026bb0164e3703c3274c4abd2b93f */
+
+/* Function Stack Size: 0x14 bytes */
+
+void DownloadModel::setCOMPLETED_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.CACHED_TS | 0x1000b0b40 | ev_50399fbf80d0f7703fd293b4d22431237b958fd1abf91f6718324bad183143c8 */
+
+/* Function Stack Size: 0x10 bytes */
+
+int DownloadModel::CACHED_TS(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 0x14);
+}
+
+
+
+/* DownloadModel.setCACHED_TS: | 0x1000b0b48 | ev_f9e76e842ea2ef745f5d26cd47564774873ecaad9c8ec76b41a9161a574973b2 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void DownloadModel::setCACHED_TS_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 0x14) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.TOTAL_TS | 0x1000b0b50 | ev_7f0f39937f409beddf2d2e92b6128a0ac672a5de13df9e86d0050d740c3b1733 */
+
+/* Function Stack Size: 0x10 bytes */
+
+int DownloadModel::TOTAL_TS(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 0x18);
+}
+
+
+
+/* DownloadModel.setTOTAL_TS: | 0x1000b0b58 | ev_b440cdb8052cf5a59a8e33cd4d63f41a36efc3d33e2309ede71f55ab061228f5 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void DownloadModel::setTOTAL_TS_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.VIDEO_TYPE | 0x1000b0b60 | ev_870334372270505d133208a169082b9de320ca4a8c6b2ba04c08f7fd605d272e */
+
+/* Function Stack Size: 0x10 bytes */
+
+int DownloadModel::VIDEO_TYPE(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 0x1c);
+}
+
+
+
+/* DownloadModel.setVIDEO_TYPE: | 0x1000b0b68 | ev_0377ac4d03aef9c7b033dc0f4dbc547bb13d0def50fc54bc8fe4ad2bc8d332b1 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void DownloadModel::setVIDEO_TYPE_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 0x1c) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.TASK_STATE | 0x1000b0b70 | ev_99a7e305f813e2e1a99876e03a2c89c4c3911ddbb1f6a1aa4f6c854a285f7213 */
+
+/* Function Stack Size: 0x10 bytes */
+
+int DownloadModel::TASK_STATE(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 0x20);
+}
+
+
+
+/* DownloadModel.setTASK_STATE: | 0x1000b0b78 | ev_b9693ba3144a8b45bc608d3b8d790e5449f842b8e9e506e495793cac54893df3 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void DownloadModel::setTASK_STATE_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 0x20) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.CACHED_LENGTH | 0x1000b0b80 | ev_a253142694cb3fd4a45e2457a343fbd84e3c714b09bb53519181ac01090f3a04 */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long DownloadModel::CACHED_LENGTH(ID param_1,SEL param_2)
+
+{
+  return *(long_long *)(param_1 + 0x88);
+}
+
+
+
+/* DownloadModel.setCACHED_LENGTH: | 0x1000b0b88 | ev_75f7f5c9497cbda5cbb773935a29bf20e578a24db54985648b57c7838358d613 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setCACHED_LENGTH_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  *(long_long *)(param_1 + 0x88) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.TOTAL_LENGTH | 0x1000b0b90 | ev_93b348a8e8a226b50ab3fe2bb5a265b5d327e8fd75ae3421a4c56dbbf70572cd */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long DownloadModel::TOTAL_LENGTH(ID param_1,SEL param_2)
+
+{
+  return *(long_long *)(param_1 + 0x90);
+}
+
+
+
+/* DownloadModel.setTOTAL_LENGTH: | 0x1000b0b98 | ev_6258ea097cf0721ea627c25037354af7d0768d66334424d6f0042df3b5869349 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setTOTAL_LENGTH_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  *(long_long *)(param_1 + 0x90) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.DOWNLOAD_TIME | 0x1000b0ba0 | ev_6bed387e67565ac899d439adf5c2672b03331d5c748cb2eb725792bfd46268b7 */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long DownloadModel::DOWNLOAD_TIME(ID param_1,SEL param_2)
+
+{
+  return *(long_long *)(param_1 + 0x98);
+}
+
+
+
+/* DownloadModel.setDOWNLOAD_TIME: | 0x1000b0ba8 | ev_615e1b9bd05aef66a7e0777da9020bc28082ec1bebd8b8a1bc4ffa7744699706 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setDOWNLOAD_TIME_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  *(long_long *)(param_1 + 0x98) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.PERCENT | 0x1000b0bb0 | ev_8aac8639c724db5ce33a0dc3071a2d3b472d88f977c62bb4bf24b892cb967ec6 */
+
+/* Function Stack Size: 0x10 bytes */
+
+float DownloadModel::PERCENT(ID param_1,SEL param_2)
+
+{
+  return *(float *)(param_1 + 0x24);
+}
+
+
+
+/* DownloadModel.setPERCENT: | 0x1000b0bb8 | ev_eae401060acd8b277a6890836d565816b19dc792d1300c8c8237a7492d047ec0 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void DownloadModel::setPERCENT_(ID param_1,SEL param_2,float param_3)
+
+{
+  *(float *)(param_1 + 0x24) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.RESUME_DATA | 0x1000b0bc0 | ev_d13294577301d278f86dc7e27b0c6e5fe653c11e83106c8a961078c30cac3e17 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID DownloadModel::RESUME_DATA(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0xa0);
+}
+
+
+
+/* DownloadModel.setRESUME_DATA: | 0x1000b0bc8 | ev_608970299be9ace08760a6e86500aa69018fade471d797df85828977ac12df25 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setRESUME_DATA_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0xa0) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.i0 | 0x1000b0bd4 | ev_bf4c820c9f4c3ec4af1931678079c11499b76d1cf54248e082b5dfd636621b58 */
+
+/* Function Stack Size: 0x10 bytes */
+
+int DownloadModel::i0(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 0x28);
+}
+
+
+
+/* DownloadModel.setI0: | 0x1000b0bdc | ev_d4ce29ef97afbfa46b85458432e94948ab1484ccb8403bfb6a23a5cef9768cdc */
+
+/* Function Stack Size: 0x14 bytes */
+
+void DownloadModel::setI0_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 0x28) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.i1 | 0x1000b0be4 | ev_cad02fc0e2b97c95814cbc1e145e02860a0be1e0d910a9da830916377ea71efd */
+
+/* Function Stack Size: 0x10 bytes */
+
+int DownloadModel::i1(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + 0x2c);
+}
+
+
+
+/* DownloadModel.setI1: | 0x1000b0bec | ev_2f10cd5a8d0e9609e9e2ea7bf88b02b94d985562a865f4335675f8941e914aa1 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void DownloadModel::setI1_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + 0x2c) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.s0 | 0x1000b0bf4 | ev_92a83bef2a9b9c30909c060bef6646c38010e29370b5474045867e7fa81f6507 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID DownloadModel::s0(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0xa8);
+}
+
+
+
+/* DownloadModel.setS0: | 0x1000b0bfc | ev_3418b163357e890892d0e8007153d7b3ae2841710c85a98ac85c02c408d63291 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setS0_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0xa8) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel.s1 | 0x1000b0c04 | ev_b94a0db54b6afd5f38011098592e5ea48103112c1c840e20de4151925ec106c8 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID DownloadModel::s1(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0xb0);
+}
+
+
+
+/* DownloadModel.setS1: | 0x1000b0c0c | ev_432fc5587c0c3d412094b7fe23c0ab08ee0c3d812f5ad8c7e3c56dc9794d7aaa */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void DownloadModel::setS1_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0xb0) = param_3;
+  return;
+}
+
+
+
+/* DownloadModel..cxx_destruct | 0x1000b0c14 | ev_bce79e55fee0fb9b688dec24ce041764d84619ab597c86d5d6b3e449575d51f0 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void DownloadModel::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0xb0) = 0;
+  *(undefined8 *)(param_1 + 0xa8) = 0;
+  *(undefined8 *)(param_1 + 0xa0) = 0;
+  *(undefined8 *)(param_1 + 0x80) = 0;
+  *(undefined8 *)(param_1 + 0x78) = 0;
+  *(undefined8 *)(param_1 + 0x70) = 0;
+  *(undefined8 *)(param_1 + 0x68) = 0;
+  *(undefined8 *)(param_1 + 0x60) = 0;
+  *(undefined8 *)(param_1 + 0x58) = 0;
+  *(undefined8 *)(param_1 + 0x50) = 0;
+  *(undefined8 *)(param_1 + 0x48) = 0;
+  *(undefined8 *)(param_1 + 0x40) = 0;
+  *(undefined8 *)(param_1 + 0x38) = 0;
+  *(undefined8 *)(param_1 + 0x30) = 0;
+  return;
+}
+
+

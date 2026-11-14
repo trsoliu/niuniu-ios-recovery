@@ -1,0 +1,413 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCVideoStopNoticeView.initWithFrame: | 0x10001cb88 | ev_f096d80628c56a36b13b9c579423c233ad07ebe6c3e6c6de7538e97f87afd08e */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x30 bytes */
+
+ID NNCVideoStopNoticeView::initWithFrame_(ID param_1,SEL param_2,CGRect param_3)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined1 auVar4 [16];
+  undefined1 auVar5 [16];
+  undefined *local_80;
+  undefined8 local_78;
+  code *local_70;
+  undefined *puStack_68;
+  undefined1 auStack_60 [8];
+  undefined1 auStack_58 [8];
+  ID local_50;
+  class_t *pcStack_48;
+  
+  pcStack_48 = &objc::class_t::NNCVideoStopNoticeView;
+  local_50 = param_1;
+  auVar4 = _objc_msgSendSuper2(param_3.field0_0x0.field0_0x0,param_3.field0_0x0.field1_0x8,
+                               param_3.field1_0x10.field0_0x0,param_3.field1_0x10.field1_0x8,
+                               &local_50,"initWithFrame:");
+  IVar1 = auVar4._0_8_;
+  if (IVar1 != 0) {
+    auVar4 = FUN_10153c008(0x3f000000,&_OBJC_CLASS___UIColor,auVar4._8_8_,0);
+    FUN_1015a5908(IVar1,auVar4._8_8_,auVar4._0_8_);
+    auVar4 = FUN_1015813c8(&_OBJC_CLASS___UILabel);
+    FUN_1015af0a8(IVar1,auVar4._8_8_,auVar4._0_8_);
+    auVar4 = FUN_101546f48(IVar1);
+    FUN_1015d6f08(auVar4._0_8_,auVar4._8_8_,&cf__ve0RN_);
+    uVar2 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1,0xffffff);
+    auVar4 = FUN_101546f48(IVar1);
+    FUN_1015d6fa8(auVar4._0_8_,auVar4._8_8_,uVar2);
+    uVar2 = FUN_1015ed768(0x4028000000000000,&_OBJC_CLASS___UIFont);
+    auVar4 = FUN_101546f48(IVar1);
+    FUN_1015b4788(auVar4._0_8_,auVar4._8_8_,uVar2);
+    auVar4 = FUN_101546f48(IVar1);
+    FUN_101527148(IVar1,auVar4._8_8_,auVar4._0_8_);
+    _objc_initWeak(auStack_58,IVar1);
+    auVar4 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1_00,0);
+    FUN_1015b9ca8(IVar1,auVar4._8_8_,auVar4._0_8_);
+    uVar2 = FUN_1015ed768(0x4028000000000000,&_OBJC_CLASS___UIFont);
+    uVar3 = FUN_10156abe8(IVar1);
+    auVar4 = FUN_1015f0328(uVar3);
+    FUN_1015b4788(auVar4._0_8_,auVar4._8_8_,uVar2);
+    uVar2 = FUN_10156abe8(IVar1);
+    FUN_1015b4b08(0,0,0x4046800000000000,0x4046800000000000,uVar2);
+    auVar4 = FUN_10156abe8(IVar1);
+    FUN_1015d7e48(auVar4._0_8_,auVar4._8_8_,&cf_Sm,0);
+    auVar4 = FUN_10156abe8(IVar1);
+    auVar5 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar4._8_8_,0x77ee);
+    FUN_1015d7ea8(auVar4._0_8_,auVar5._8_8_,auVar5._0_8_,0);
+    uVar2 = FUN_10156abe8(IVar1);
+    local_80 = PTR___NSConcreteStackBlock_101d78760;
+    local_78 = 0xc2000000;
+    local_70 = FUN_10001cf24;
+    puStack_68 = &UNK_101d7ba30;
+    _objc_copyWeak(auStack_60,auStack_58);
+    FUN_1015a70e8(uVar2,extraout_x1_01,0x40,&local_80);
+    auVar4 = FUN_10156abe8(IVar1);
+    FUN_101527148(IVar1,auVar4._8_8_,auVar4._0_8_);
+    _objc_destroyWeak(auStack_60);
+    _objc_destroyWeak(auStack_58);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCVideoStopNoticeView.showInView: | 0x10001cf98 | ev_7fd8128e2ccbf6222d92542afa91e868177ea27713664fcfecc60cf1b07e6969 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoStopNoticeView::showInView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  double dVar3;
+  double dVar4;
+  undefined8 uVar5;
+  undefined1 auVar6 [16];
+  
+  FUN_1015eaa08(param_1);
+  FUN_101593bc8(param_1,extraout_x1);
+  uVar1 = FUN_101546f48(param_1);
+  FUN_1015e3aa8(uVar1);
+  uVar1 = FUN_101546f48(param_1);
+  dVar3 = (double)FUN_1015fc468(uVar1);
+  uVar1 = FUN_10156abe8(param_1);
+  dVar4 = (double)FUN_1015fc468(uVar1);
+  FUN_1015dd9c8(dVar3 + dVar4 + 10.0,param_1);
+  uVar1 = FUN_10156abe8(param_1);
+  FUN_10155e568(uVar1);
+  FUN_1015b6f28(param_1);
+  dVar3 = (double)FUN_1015fc468(param_3);
+  dVar4 = (double)FUN_10155e568(param_3);
+  FUN_1015a97c8(dVar3 * 0.5,dVar4 * 0.5,param_1);
+  uVar1 = FUN_101546f48(param_1);
+  FUN_1015bfa48(0x4014000000000000,uVar1);
+  dVar3 = (double)FUN_10155e568(param_1);
+  uVar1 = FUN_101546f48(param_1);
+  FUN_1015a9948(dVar3 * 0.5,uVar1);
+  uVar5 = FUN_1015fc468(param_1);
+  uVar1 = FUN_10156abe8(param_1);
+  FUN_1015ce268(uVar5,uVar1);
+  uVar1 = FUN_10156abe8(param_1);
+  FUN_1015d84c8(0,uVar1);
+  IVar2 = FUN_101574688(param_1,extraout_x1_00);
+  FUN_1015ac5e8(0x4008000000000000,IVar2);
+  IVar2 = FUN_101574688(param_1,extraout_x1_01);
+  FUN_1015c25a8(IVar2);
+  FUN_101527148(param_3,extraout_x1_02,param_1);
+  auVar6 = FUN_1015eff68(0x3ff0000000000000,&_OBJC_CLASS___NSTimer,extraout_x1_03,param_1,
+                         "timerSelector:",0,1);
+  FUN_1015d7b88(param_1,auVar6._8_8_,auVar6._0_8_);
+  FUN_1015ac688(param_1,extraout_x1_04,0);
+  uVar1 = FUN_101543368(&_OBJC_CLASS___NSRunLoop);
+  auVar6 = FUN_1015efce8(param_1);
+  FUN_1015273c8(uVar1,auVar6._8_8_,auVar6._0_8_,*(undefined8 *)PTR__NSRunLoopCommonModes_101d783f8);
+  return;
+}
+
+
+
+/* NNCVideoStopNoticeView.nnconRotationEnd | 0x10001d24c | ev_a0927fd674da346d11f6e08ab1641248807b2557c06fb15fbf070f869f831b99 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoStopNoticeView::nnconRotationEnd(ID param_1,SEL param_2)
+
+{
+  long lVar1;
+  undefined1 auVar2 [16];
+  
+  lVar1 = FUN_1015ec948();
+  if (lVar1 != 0) {
+    auVar2 = FUN_1015ec948(param_1);
+    FUN_1015326c8(auVar2._0_8_,auVar2._8_8_,param_1);
+    return;
+  }
+  return;
+}
+
+
+
+/* NNCVideoStopNoticeView.timerSelector: | 0x10001d2ac | ev_424b38b4eda79d1e5bf3026bfe6c8f388fdbbaf6f0f135cee03036676cf7d583 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoStopNoticeView::timerSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  long_long lVar1;
+  undefined8 uVar2;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  ID IVar3;
+  undefined1 auVar4 [16];
+  
+  FUN_10153f968(param_1,param_2);
+  FUN_1015ac688(param_1);
+  lVar1 = FUN_10153f968(param_1,extraout_x1);
+  uVar2 = FUN_1015ebcc8(&_OBJC_CLASS___NSString);
+  auVar4 = FUN_101546f48(param_1);
+  FUN_1015d6f08(auVar4._0_8_,auVar4._8_8_,uVar2);
+  if (lVar1 == 10) {
+    uVar2 = FUN_1015e11a8(&objc::class_t::NNCInitManager);
+    IVar3 = 0;
+    FUN_1015d7ba8(uVar2);
+    FUN_1015eaa08(param_1);
+    IVar3 = FUN_101546808(param_1,extraout_x1_00,IVar3);
+    FUN_101584848(IVar3);
+    FUN_101593bc8(param_1,extraout_x1_01);
+    return;
+  }
+  return;
+}
+
+
+
+/* NNCVideoStopNoticeView.dealloc | 0x10001d3bc | ev_dc7bb94954395e032045bd21e212a01bc748233a36b45319fd655dee8cab3804 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoStopNoticeView::dealloc(ID param_1,SEL param_2)
+
+{
+  ID local_30;
+  class_t *pcStack_28;
+  
+  FUN_1015eaa08();
+  pcStack_28 = &objc::class_t::NNCVideoStopNoticeView;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"dealloc");
+  return;
+}
+
+
+
+/* NNCVideoStopNoticeView.stopTimer | 0x10001d400 | ev_136e1cebb72e30ad0aeb1fa63202769b7b2458a808d134a1b3d0121a1e937a89 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoStopNoticeView::stopTimer(ID param_1,SEL param_2)
+
+{
+  long lVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  
+  lVar1 = FUN_1015efce8();
+  if (lVar1 != 0) {
+    uVar2 = FUN_1015efce8(param_1);
+    FUN_10156ad28(uVar2);
+    FUN_1015d7b88(param_1,extraout_x1,0);
+    return;
+  }
+  return;
+}
+
+
+
+/* NNCVideoStopNoticeView.delegate | 0x10001d468 | ev_02549658e7310a59f185d018f287f6e59cae9ac548f55033c1dc9fe7d954e71b */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoStopNoticeView::delegate(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__delegate);
+}
+
+
+
+/* NNCVideoStopNoticeView.setDelegate: | 0x10001d488 | ev_82144b91537fd21ecdfc7d5a49da36b359e32036db2acfa6e093f38bcf8b6339 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoStopNoticeView::setDelegate_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__delegate) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoStopNoticeView.desLabel | 0x10001d49c | ev_cacb30193831b98b46b3153a8362a4c4f179f0f307644f22eeb02c98021fb1bf */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoStopNoticeView::desLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__desLabel);
+}
+
+
+
+/* NNCVideoStopNoticeView.setDesLabel: | 0x10001d4ac | ev_9672edd2c4ded3f117021f60edccddb46dc978cea0487d489a3237c100cacae0 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoStopNoticeView::setDesLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__desLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoStopNoticeView.interuptButton | 0x10001d4c0 | ev_2990e3ce37de6d691c8cf24f30b0085c34a767cd04ea3e76e7c604717082b181 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoStopNoticeView::interuptButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__interuptButton);
+}
+
+
+
+/* NNCVideoStopNoticeView.setInteruptButton: | 0x10001d4d0 | ev_a462fcad1fe39246d2972d48498de2fea5b65cea3d9a9951f2abb421b706764e */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoStopNoticeView::setInteruptButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__interuptButton) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoStopNoticeView.timer | 0x10001d4e4 | ev_683eaabb7a0025d6c4a4279c92a7fcb6bfac3552fb6a447d35e22e6c87144779 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoStopNoticeView::timer(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__timer);
+}
+
+
+
+/* NNCVideoStopNoticeView.setTimer: | 0x10001d4f4 | ev_a14af59ea2d21e999db4d0f37d36969d6e693fc6e727bcadc72190208abebb5e */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoStopNoticeView::setTimer_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__timer) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoStopNoticeView.countDown | 0x10001d508 | ev_c58ce8a3ba4e99bfab7d20b78617217fefeab0965b9afa3c8473ecce13b0ddfb */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+long_long NNCVideoStopNoticeView::countDown(ID param_1,SEL param_2)
+
+{
+  return *(long_long *)(param_1 + (long)__countDown);
+}
+
+
+
+/* NNCVideoStopNoticeView.setCountDown: | 0x10001d518 | ev_c576a72f17231536ae840267a4d02c9cdb26f7452d9f6c4b344295d2abbfa922 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoStopNoticeView::setCountDown_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  *(long_long *)(param_1 + (long)__countDown) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoStopNoticeView..cxx_destruct | 0x10001d528 | ev_7af7bef7dd293b7776f240ef5cac50a076532f6f6b5f005aa0af7355cc78b11a */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoStopNoticeView::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__timer) = 0;
+  *(undefined8 *)(param_1 + (long)__interuptButton) = 0;
+  *(undefined8 *)(param_1 + (long)__desLabel) = 0;
+  _objc_destroyWeak(param_1 + (long)__delegate);
+  return;
+}
+
+

@@ -1,0 +1,99 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCYoungConfig.isTeenMode | 0x100005a8c | ev_8b5d723995c91351912350ca2f358819c145b582610ac1c840c4ed058832ea91 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCYoungConfig::isTeenMode(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  long lVar2;
+  bool bVar3;
+  undefined1 auVar4 [16];
+  
+  auVar4 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  lVar2 = FUN_101583468(auVar4._0_8_,auVar4._8_8_,&cf_nnc_t_m);
+  if (lVar2 == 0) {
+    bVar3 = 1;
+  }
+  else {
+    iVar1 = FUN_1015698a8(lVar2);
+    bVar3 = (bool)(iVar1 == 1);
+  }
+  return bVar3;
+}
+
+
+
+/* NNCYoungConfig.isShownTeenMode | 0x100005b04 | ev_0f6780325149757233fc9fa4fe785ac11d6bed07ad0ec464560e5c4020a2a92d */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCYoungConfig::isShownTeenMode(ID param_1,SEL param_2)
+
+{
+  long lVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  lVar1 = FUN_101583468(auVar2._0_8_,auVar2._8_8_,&cf_nnc_t_m_s);
+  return (bool)(lVar1 != 0);
+}
+
+
+
+/* NNCYoungConfig.setShownTeenMode | 0x100005b68 | ev_7c94967cf27a0d9f580339f66a83b9bbb9a15739f322525f688b4e165ed781ab */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCYoungConfig::setShownTeenMode(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined1 auVar2 [16];
+  undefined1 auVar3 [16];
+  
+  auVar2 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  auVar3 = FUN_101583048(&_OBJC_CLASS___NSNumber,auVar2._8_8_,1);
+  FUN_1015c6468(auVar2._0_8_,auVar3._8_8_,auVar3._0_8_,&cf_nnc_t_m_s);
+  uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  FUN_1015ed5e8(uVar1);
+  return;
+}
+
+
+
+/* NNCYoungConfig.setTeenMode: | 0x100005bfc | ev_06db4828e02157ac8f6ff32d83ad1a6d25cc2274b5239080839ff1fb2df0d9d7 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCYoungConfig::setTeenMode_(ID param_1,SEL param_2,bool param_3)
+
+{
+  undefined8 uVar1;
+  undefined1 auVar2 [16];
+  
+  uVar1 = FUN_101583048(&_OBJC_CLASS___NSNumber,param_2,param_3);
+  auVar2 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  FUN_1015c6468(auVar2._0_8_,auVar2._8_8_,uVar1,&cf_nnc_t_m);
+  uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  FUN_1015ed5e8(uVar1);
+  uVar1 = FUN_1015e11a8(&objc::class_t::NNCFileHistoryManager);
+  FUN_101559128(uVar1);
+  return;
+}
+
+

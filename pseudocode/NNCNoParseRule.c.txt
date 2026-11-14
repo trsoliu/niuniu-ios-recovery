@@ -1,0 +1,151 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCNoParseRule.modelWithDict: | 0x10006ef6c | ev_7461654470295935c89d979c4cda2de9693b181590a1dccdf4262dc24fa97ae9 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCNoParseRule::modelWithDict_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_1015813c8(&objc::class_t::NNCNoParseRule);
+  IVar1 = auVar2._0_8_;
+  auVar2 = FUN_1015ebae8(param_3,auVar2._8_8_,&cf_rule);
+  FUN_1015cec28(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1,&cf_value);
+  FUN_1015db7c8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  return IVar1;
+}
+
+
+
+/* NNCNoParseRule.initWithCoder: | 0x10006f018 | ev_df69877be9f8ff3174bae5d8ece9ca7fc9d92f513cd1ab46493e87d022de1957 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCNoParseRule::initWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCNoParseRule;
+  local_40 = param_1;
+  auVar2 = _objc_msgSendSuper2(&local_40,"init");
+  IVar1 = auVar2._0_8_;
+  if (IVar1 != 0) {
+    auVar2 = FUN_101545868(param_3,auVar2._8_8_,&cf_rule);
+    FUN_1015cec28(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1,&cf_value);
+    FUN_1015db7c8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCNoParseRule.encodeWithCoder: | 0x10006f0e0 | ev_7f842a3b2875a5afc61cb1be73a3171daa51dd86ddadbc2c8ac0c8b73c442444 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCNoParseRule::encodeWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_10159ae48(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_rule);
+  auVar1 = FUN_1015f7f68(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_value);
+  return;
+}
+
+
+
+/* NNCNoParseRule.rule | 0x10006f174 | ev_897d01d3926b249a9384aa74e9514573e3e4ab7c8fcddf5a18b6cca700e2a459 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCNoParseRule::rule(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* NNCNoParseRule.setRule: | 0x10006f17c | ev_8faec2ca0d99bfead2fd1074201327fda894bf3334c5c93d439b756bd0acc99f */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCNoParseRule::setRule_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCNoParseRule.value | 0x10006f184 | ev_7191e54caf5b6b05792e3beba74cdd40c9a4fd0a5dddadcae14d6ad9085cd05b */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCNoParseRule::value(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCNoParseRule.setValue: | 0x10006f18c | ev_215d8bd9f49fe0e7728bd1386dd337adbd0804b7f85ef5ff6a97fe993b992ade */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCNoParseRule::setValue_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCNoParseRule..cxx_destruct | 0x10006f194 | ev_1cd7b6ebe6d5fb0a240a13eac28cb5719b7130ab28aca86d004d6c8931f885b6 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCNoParseRule::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

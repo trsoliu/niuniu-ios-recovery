@@ -1,0 +1,28 @@
+{
+  "classification": "name-prefix candidates only; exact package versions and licenses were not recovered",
+  "selected_application_classes": 139,
+  "all_runtime_method_addresses": 96629,
+  "families": {
+    "MJRefresh": 15,
+    "MCS": 27,
+    "HLS": 12,
+    "FILE": 6,
+    "GCDAsync": 8,
+    "AF": 27,
+    "YY": 11,
+    "SD": 45,
+    "Baidu": 259,
+    "BU": 341,
+    "SJ": 177
+  },
+  "original_package_dylib_names": [
+    "Gua2.dylib",
+    "Noads+.dylib",
+    "Noadse.dylib",
+    "Noadss.dylib",
+    "killads.dylib",
+    "libJailedShim.dylib",
+    "libsubstrate.dylib"
+  ],
+  "binary_libraries_exported": false
+}

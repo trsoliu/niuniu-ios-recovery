@@ -1,0 +1,200 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCVideoSourceBean.modelWithDict: | 0x100034d8c | ev_477647a772c31ad457e75536deee7a364c900f51e6fd1c747ad01ec8e50d111d */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCVideoSourceBean::modelWithDict_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  ID IVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 uVar4;
+  long lVar5;
+  long lVar6;
+  undefined1 auVar7 [16];
+  undefined1 auVar8 [16];
+  undefined8 local_130;
+  long lStack_128;
+  long *local_120;
+  undefined8 uStack_118;
+  undefined8 local_110;
+  undefined8 uStack_108;
+  undefined8 uStack_100;
+  undefined8 uStack_f8;
+  undefined1 auStack_e8 [128];
+  long local_68;
+  
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  auVar7 = FUN_1015813c8(&objc::class_t::NNCVideoSourceBean);
+  IVar3 = auVar7._0_8_;
+  auVar7 = FUN_1015ebae8(param_3,auVar7._8_8_,&cf_player_id);
+  FUN_1015c9328(IVar3,auVar7._8_8_,auVar7._0_8_);
+  auVar7 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+  FUN_1015b2428(IVar3,auVar7._8_8_,auVar7._0_8_);
+  auVar7 = FUN_10152baa8(param_3,extraout_x1,&cf_episodes);
+  uVar1 = auVar7._0_8_;
+  lStack_128 = 0;
+  local_130 = 0;
+  uStack_118 = 0;
+  local_120 = (long *)0x0;
+  uStack_108 = 0;
+  local_110 = 0;
+  uStack_f8 = 0;
+  uStack_100 = 0;
+  lVar2 = FUN_10153f948(uVar1,auVar7._8_8_,&local_130,auStack_e8,0x10);
+  if (lVar2 != 0) {
+    lVar5 = *local_120;
+    do {
+      lVar6 = 0;
+      do {
+        if (*local_120 != lVar5) {
+          _objc_enumerationMutation(uVar1);
+        }
+        uVar4 = *(undefined8 *)(lStack_128 + lVar6 * 8);
+        auVar7 = FUN_10154eb88(IVar3);
+        auVar8 = FUN_10157cd68(&objc::class_t::NNCFileEpisodeBean,auVar7._8_8_,uVar4);
+        FUN_101526528(auVar7._0_8_,auVar8._8_8_,auVar8._0_8_);
+        lVar6 = lVar6 + 1;
+      } while (lVar2 != lVar6);
+      lVar2 = FUN_10153f948(uVar1,extraout_x1_00,&local_130,auStack_e8,0x10);
+    } while (lVar2 != 0);
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_68) {
+    return IVar3;
+  }
+  IVar3 = FUN_100ab8e90(0);
+  return IVar3;
+}
+
+
+
+/* NNCVideoSourceBean.initWithCoder: | 0x100034f60 | ev_395ff21dcb689d3fc94f18e6c39c722821dfd36e6aa823846b3ea2d92bf19677 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCVideoSourceBean::initWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCVideoSourceBean;
+  local_40 = param_1;
+  auVar2 = _objc_msgSendSuper2(&local_40,"init");
+  IVar1 = auVar2._0_8_;
+  if (IVar1 != 0) {
+    auVar2 = FUN_101545868(param_3,auVar2._8_8_,&cf_playerId);
+    FUN_1015c9328(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1,&cf_episodeBeanList);
+    FUN_1015b2428(IVar1,auVar2._8_8_,auVar2._0_8_);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCVideoSourceBean.encodeWithCoder: | 0x100035028 | ev_17106bafc5cbd5ec51a2b0afd6caa184fadcfb32a245384afcda6c4e28416cc6 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSourceBean::encodeWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_10158b928(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_playerId);
+  auVar1 = FUN_10154eb88(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_episodeBeanList);
+  return;
+}
+
+
+
+/* NNCVideoSourceBean.playerId | 0x1000350bc | ev_98499ee30c857b5e5ea4080fbc289c478526212d8ae7ce565fe35f43a36e14f4 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSourceBean::playerId(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* NNCVideoSourceBean.setPlayerId: | 0x1000350c4 | ev_032370bdc3176f6e2a00e18de0c27b0b1c814433461c9e7fce0133d1a34240f8 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSourceBean::setPlayerId_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSourceBean.episodeBeanList | 0x1000350cc | ev_fd20dffc07c94339f0f2f35603e94b0381167562363065834f6d896d1b78d2b1 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCVideoSourceBean::episodeBeanList(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCVideoSourceBean.setEpisodeBeanList: | 0x1000350d4 | ev_5ab67f510dfbc2b82a6037185352da5b35a1f33575895cc9b3be0efc12c2cc8a */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCVideoSourceBean::setEpisodeBeanList_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCVideoSourceBean..cxx_destruct | 0x1000350e0 | ev_ec434cc28bc91db41431ce0248e1e4b8261ed53ad4135a4c002b8b9897f795cd */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCVideoSourceBean::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

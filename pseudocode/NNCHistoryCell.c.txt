@@ -1,0 +1,564 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCHistoryCell.awakeFromNib | 0x1000bad6c | ev_8f75506cd50fbe70479627795d21d6617b187f480ab9e11f29d3e3b9476b2025 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCHistoryCell::awakeFromNib(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined1 auVar3 [16];
+  ID local_50;
+  class_t *pcStack_48;
+  
+  pcStack_48 = &objc::class_t::NNCHistoryCell;
+  local_50 = param_1;
+  _objc_msgSendSuper2(&local_50,"awakeFromNib");
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1,&cf_myBgColor);
+  auVar3 = FUN_10155e3a8(param_1);
+  FUN_1015d6fa8(auVar3._0_8_,auVar3._8_8_,uVar1);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_00,&cf_myBgColor);
+  auVar3 = FUN_10157e548(param_1);
+  FUN_1015d6fa8(auVar3._0_8_,auVar3._8_8_,uVar1);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_01,&cf_myBgColor);
+  auVar3 = FUN_1015ea348(param_1);
+  FUN_1015d6fa8(auVar3._0_8_,auVar3._8_8_,uVar1);
+  uVar1 = FUN_101575408(param_1);
+  FUN_1015b6f28(0x3fe0000000000000,uVar1);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_02,&cf_TextBgViewColo);
+  auVar3 = FUN_101575408(param_1);
+  FUN_1015a5908(auVar3._0_8_,auVar3._8_8_,uVar1);
+  auVar3 = FUN_1015401e8(param_1);
+  IVar2 = FUN_101574688(auVar3._0_8_,auVar3._8_8_);
+  FUN_1015ac5e8(0x4018000000000000,IVar2);
+  auVar3 = FUN_1015401e8(param_1);
+  IVar2 = FUN_101574688(auVar3._0_8_,auVar3._8_8_);
+  FUN_1015c25a8(IVar2);
+  return;
+}
+
+
+
+/* NNCHistoryCell.cell | 0x1000baf78 | ev_425cf46f8a12df25a093a4027618e0c4f1bee6305db90d97390bc82b2303c5c8 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryCell::cell(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined1 auVar3 [16];
+  
+  uVar1 = FUN_1015790a8(&_OBJC_CLASS___NSBundle);
+  FUN_101539ca8(param_1);
+  auVar3 = _NSStringFromClass();
+  auVar3 = FUN_101576788(uVar1,auVar3._8_8_,auVar3._0_8_,0,0);
+  IVar2 = FUN_101583308(auVar3._0_8_,auVar3._8_8_,0);
+  return IVar2;
+}
+
+
+
+/* NNCHistoryCell.nnccellHeight: | 0x1000bb020 | ev_247b6ceac5aad42a35aef815508cf8fffc0e933bfff6085a79595b552444483d */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+double NNCHistoryCell::nnccellHeight_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  double dVar3;
+  
+  uVar1 = FUN_1015f01e8(param_3);
+  lVar2 = FUN_1015750a8(uVar1);
+  dVar3 = 90.0;
+  if (lVar2 != 0) {
+    dVar3 = 116.0;
+  }
+  return dVar3;
+}
+
+
+
+/* NNCHistoryCell.setIsEditMode: | 0x1000bb07c | ev_44daf4a8b9b6a4be28ec5a0a5d2c3f437077ddd081992ed6d853adf4e84a3502 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCHistoryCell::setIsEditMode_(ID param_1,SEL param_2,bool param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  *(char *)(param_1 + (long)__isEditMode) = (char)param_3;
+  auVar1 = FUN_10159e908();
+  FUN_1015b6fc8(auVar1._0_8_,auVar1._8_8_,param_3 ^ 1);
+  return;
+}
+
+
+
+/* NNCHistoryCell.setIsItemSelected: | 0x1000bb0c0 | ev_d371d8567449be454737d4e08360a9b089747b4d95921b08c0d4c5379ea3612b */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCHistoryCell::setIsItemSelected_(ID param_1,SEL param_2,bool param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  *(char *)(param_1 + (long)__isItemSelected) = (char)param_3;
+  auVar1 = FUN_10159e908();
+  FUN_1015d03e8(auVar1._0_8_,auVar1._8_8_,param_3);
+  return;
+}
+
+
+
+/* NNCHistoryCell.setInfo: | 0x1000bb104 | ev_377bfb9d833c420246f922b77ef7c77abc27dda77b027f53cf6bfd42889904bf */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryCell::setInfo_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  undefined8 uVar3;
+  long lVar4;
+  ID IVar5;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined1 auVar6 [16];
+  
+  *(ID *)(param_1 + (long)__info) = param_3;
+  uVar1 = FUN_1015f01e8(param_3);
+  lVar2 = FUN_1015750a8(uVar1);
+  auVar6 = FUN_10155e3a8(param_1);
+  if (lVar2 == 0) {
+    FUN_1015b6fc8(auVar6._0_8_,auVar6._8_8_,1);
+  }
+  else {
+    FUN_1015b6fc8(auVar6._0_8_,auVar6._8_8_,0);
+    uVar1 = FUN_1015f01e8(param_3);
+    auVar6 = FUN_10155e3a8(param_1);
+    FUN_1015d6f08(auVar6._0_8_,auVar6._8_8_,uVar1);
+  }
+  uVar1 = FUN_1015401e8(param_1);
+  uVar3 = FUN_1015725e8(param_3);
+  auVar6 = FUN_1015f8e28(uVar3);
+  auVar6 = FUN_1015156a8(&_OBJC_CLASS___NSURL,auVar6._8_8_,auVar6._0_8_);
+  FUN_10159db08(uVar1,auVar6._8_8_,auVar6._0_8_);
+  uVar1 = FUN_101561c68(param_1);
+  uVar1 = FUN_1015725e8(uVar1);
+  uVar1 = FUN_1015f91e8(uVar1);
+  auVar6 = FUN_10157e548(param_1);
+  FUN_1015d6f08(auVar6._0_8_,auVar6._8_8_,uVar1);
+  uVar1 = FUN_101561c68(param_1);
+  uVar1 = FUN_1015725e8(uVar1);
+  lVar2 = FUN_10158c7c8(uVar1);
+  if (lVar2 != 0) {
+    uVar1 = FUN_101561c68(param_1);
+    uVar1 = FUN_1015725e8(uVar1);
+    lVar2 = FUN_10154bf08(uVar1);
+    if (lVar2 != 0) {
+      uVar1 = FUN_101561c68(param_1);
+      uVar1 = FUN_1015725e8(uVar1);
+      lVar4 = FUN_10158c7c8(uVar1);
+      uVar1 = FUN_101561c68(param_1);
+      uVar1 = FUN_1015725e8(uVar1);
+      auVar6 = FUN_10154bf08(uVar1);
+      lVar2 = 0;
+      if (auVar6._0_8_ != 0) {
+        lVar2 = (lVar4 * 100) / auVar6._0_8_;
+      }
+      if (lVar2 != 0) {
+        FUN_1015ebcc8(&_OBJC_CLASS___NSString,auVar6._8_8_,&cf__w);
+      }
+    }
+  }
+  uVar1 = FUN_1015725e8(param_3);
+  FUN_10154ec28(uVar1);
+  IVar5 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf_____);
+  uVar1 = FUN_1015ea348(param_1);
+  FUN_1015d6f08(uVar1);
+  FUN_1015f5188(param_1,extraout_x1_00,IVar5);
+  return;
+}
+
+
+
+/* NNCHistoryCell.layoutSubviews | 0x1000bb4c4 | ev_3d713a1a6e6fda05514949348f4e6bc5f381b6c0e27329cde3e7c9deb6bf2b87 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void __thiscall NNCHistoryCell::layoutSubviews(NNCHistoryCell *this,ID param_1,SEL param_2)
+
+{
+  SEL extraout_x1;
+  NNCHistoryCell *local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCHistoryCell;
+  local_30 = this;
+  _objc_msgSendSuper2(&local_30,"layoutSubviews");
+  FUN_1015f5188((ID)this,extraout_x1,(ID)param_2);
+  return;
+}
+
+
+
+/* NNCHistoryCell.updateFrame | 0x1000bb50c | ev_0c8aa41ec0251bd425f452a7b4e56d5f2427009c6026f841912d314a321f40c7 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCHistoryCell::updateFrame(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  SEL extraout_x1;
+  double dVar3;
+  undefined8 uVar4;
+  
+  uVar1 = FUN_10155e3a8();
+  FUN_1015d84c8(0x4022000000000000,uVar1);
+  dVar3 = (double)FUN_10155e568(param_1);
+  IVar2 = FUN_10153e288(param_1,extraout_x1);
+  FUN_1015a76a8(dVar3 + -10.0,IVar2);
+  uVar4 = FUN_10155e568(param_1);
+  uVar1 = FUN_101575408(param_1);
+  FUN_1015a76a8(uVar4,uVar1);
+  return;
+}
+
+
+
+/* NNCHistoryCell.setSelected:animated: | 0x1000bb5b0 | ev_b769bec852bf0e427f48e67f48c31d6a17479dd575dade6bf48e802dd8937a5d */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryCell::setSelected_animated_(ID param_1,SEL param_2,bool param_3,bool param_4)
+
+{
+  return;
+}
+
+
+
+/* NNCHistoryCell.setHighlighted:animated: | 0x1000bb5b4 | ev_797bba306802def174f839f8a17f127719466a8c72dacade6482b2a699ab30b0 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryCell::setHighlighted_animated_(ID param_1,SEL param_2,bool param_3,bool param_4)
+
+{
+  return;
+}
+
+
+
+/* NNCHistoryCell.isEditMode | 0x1000bb5b8 | ev_804d8a24b333ac1b603a8a04633b97a543841bd52ca10e47cdeca4b47c0bbf15 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCHistoryCell::isEditMode(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__isEditMode);
+}
+
+
+
+/* NNCHistoryCell.isItemSelected | 0x1000bb5c8 | ev_7bb13d165290cc24430ead28b6b1c21222051b981b29ade34652021c46d70f1d */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCHistoryCell::isItemSelected(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__isItemSelected);
+}
+
+
+
+/* NNCHistoryCell.info | 0x1000bb5d8 | ev_a7e28c00792b2016e097d50f5fd9a2e09b1ffdf3bc697ff4a46eaa7cffde56b9 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryCell::info(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__info);
+}
+
+
+
+/* NNCHistoryCell.headerLabel | 0x1000bb5e8 | ev_1e8fb9e2e41e3cd99a2d218758fa6da2cc19495b7a4e712fd1759eeb53d97f2e */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryCell::headerLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__headerLabel);
+}
+
+
+
+/* NNCHistoryCell.setHeaderLabel: | 0x1000bb608 | ev_c12499c7747566aae7e67ba06457845d30e45b942330a061145bee8208fea372 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryCell::setHeaderLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__headerLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryCell.containerView | 0x1000bb61c | ev_84c499a334c164f13c49afbce3022d36abc1048bb2dbccdc3eff69f83c15c901 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryCell::containerView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__containerView);
+}
+
+
+
+/* NNCHistoryCell.setContainerView: | 0x1000bb63c | ev_e0d06b9c270688bafc8d34a4f77ad08b7c926849181688a3bed517a4b5dd9be4 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryCell::setContainerView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__containerView) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryCell.coverView | 0x1000bb650 | ev_3241a827d0fd7015c8edba43cb37792bff388773905e6fd13ca690bc9fba0c13 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryCell::coverView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__coverView);
+}
+
+
+
+/* NNCHistoryCell.setCoverView: | 0x1000bb670 | ev_b7d7fbdb0c01c5a66e1fd477d9f9b8ce8d87d2cd9f31a12730269ef380a35975 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryCell::setCoverView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__coverView) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryCell.selectedButton | 0x1000bb684 | ev_68d0186643c82e913ac2d03b6ad3bb41d62252e2436faf2964c22204b3d5ea24 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryCell::selectedButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__selectedButton);
+}
+
+
+
+/* NNCHistoryCell.setSelectedButton: | 0x1000bb6a4 | ev_7bbcae7641b34ade7e24728dab6014c5c3d7f1076a79910fc186fefce8be1b92 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryCell::setSelectedButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__selectedButton) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryCell.nameLabel | 0x1000bb6b8 | ev_bbe97f9bb6d00efc4e78546e27f98695d0a2b8012b59ad99a884d041dcd5deaa */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryCell::nameLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nameLabel);
+}
+
+
+
+/* NNCHistoryCell.setNameLabel: | 0x1000bb6d8 | ev_01bcdad885129b5a2286474d43e9d7d8a024180e720c1bc7be1b2607910d40ae */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryCell::setNameLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nameLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryCell.statusLabel | 0x1000bb6ec | ev_0c37e0c7e7caff1b7c744683e046cc5cd542f537c7604769939e1d52f1bab502 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryCell::statusLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__statusLabel);
+}
+
+
+
+/* NNCHistoryCell.setStatusLabel: | 0x1000bb70c | ev_45d4a10e4a0b07489fc702cb57e4e3ef8cdffd69e6d7d5f4885f56ad4b7e848a */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryCell::setStatusLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__statusLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryCell.line | 0x1000bb720 | ev_cf171d4b4077ce69f49289c2f9f6d3c640dc2242056413a2726f16bf55f67916 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCHistoryCell::line(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__line);
+}
+
+
+
+/* NNCHistoryCell.setLine: | 0x1000bb740 | ev_86ae5fba3884d201aac6c54f32d0d6eef0c005c0703cdaeb9848e1f9b345de09 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCHistoryCell::setLine_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__line) = param_3;
+  return;
+}
+
+
+
+/* NNCHistoryCell..cxx_destruct | 0x1000bb754 | ev_aefafef09dd36859dc371b25cd8593fb578c124a48c8f23cf2cb2feaadda4a5f */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCHistoryCell::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + (long)__line);
+  _objc_destroyWeak(param_1 + (long)__statusLabel);
+  _objc_destroyWeak(param_1 + (long)__nameLabel);
+  _objc_destroyWeak(param_1 + (long)__selectedButton);
+  _objc_destroyWeak(param_1 + (long)__coverView);
+  _objc_destroyWeak(param_1 + (long)__containerView);
+  _objc_destroyWeak(param_1 + (long)__headerLabel);
+  *(undefined8 *)(param_1 + (long)__info) = 0;
+  return;
+}
+
+

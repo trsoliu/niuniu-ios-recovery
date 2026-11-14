@@ -1,0 +1,90 @@
+; Raw ARM64 disassembly, not original source or assembler input.
+; Decoded literals and all otool comments are omitted.
+; Only contiguous method-entry slices are exported; this is not CFG/body completeness.
+; source main-image SHA-256: 5e484a2abb718a6f32fbd0f0780c07ef55673e2d6705d775afefee54680b91dd
+
+; +[NNCSpHmSourceEpisodeModel modelWithDict:]
+; entry 0x1000265d8; next boundary 0x100026690 (exclusive)
+; Objective-C encoding: @24@0:8@16
+00000001000265d8  f657bda9  stp x22, x21, [sp, #-0x30]!
+00000001000265dc  f44f01a9  stp x20, x19, [sp, #0x10]
+00000001000265e0  fd7b02a9  stp x29, x30, [sp, #0x20]
+00000001000265e4  fd830091  add x29, sp, #0x20
+00000001000265e8  e00302aa  mov x0, x2
+00000001000265ec  68190190  adrp x8, 9004
+00000001000265f0  130943f9  ldr x19, [x8, #0x610]
+00000001000265f4  14395394  bl 0x1014f4a44
+00000001000265f8  f40300aa  mov x20, x0
+00000001000265fc  e00313aa  mov x0, x19
+0000000100026600  726b5594  bl 0x1015813c8
+0000000100026604  f30300aa  mov x19, x0
+0000000100026608  c2ed00b0  adrp x2, 7609
+000000010002660c  42801791  add x2, x2, #0x5e0
+0000000100026610  e00314aa  mov x0, x20
+0000000100026614  c5715594  bl 0x101582d28
+0000000100026618  fd031daa  mov x29, x29
+000000010002661c  13395394  bl 0x1014f4a68
+0000000100026620  f50300aa  mov x21, x0
+0000000100026624  a10c5594  bl 0x1015698a8
+0000000100026628  e20300aa  mov x2, x0
+000000010002662c  e00313aa  mov x0, x19
+0000000100026630  66b45694  bl 0x1015d37c8
+0000000100026634  e00315aa  mov x0, x21
+0000000100026638  00395394  bl 0x1014f4a38
+000000010002663c  c2ed00d0  adrp x2, 7610
+0000000100026640  42802291  add x2, x2, #0x8a0
+0000000100026644  e00314aa  mov x0, x20
+0000000100026648  b8715594  bl 0x101582d28
+000000010002664c  fd031daa  mov x29, x29
+0000000100026650  06395394  bl 0x1014f4a68
+0000000100026654  f50300aa  mov x21, x0
+0000000100026658  e00314aa  mov x0, x20
+000000010002665c  f7385394  bl 0x1014f4a38
+0000000100026660  e00315aa  mov x0, x21
+0000000100026664  910c5594  bl 0x1015698a8
+0000000100026668  e20300aa  mov x2, x0
+000000010002666c  e00313aa  mov x0, x19
+0000000100026670  0e125694  bl 0x1015aaea8
+0000000100026674  e00315aa  mov x0, x21
+0000000100026678  f0385394  bl 0x1014f4a38
+000000010002667c  e00313aa  mov x0, x19
+0000000100026680  fd7b42a9  ldp x29, x30, [sp, #0x20]
+0000000100026684  f44f41a9  ldp x20, x19, [sp, #0x10]
+0000000100026688  f657c3a8  ldp x22, x21, [sp], #0x30
+000000010002668c  a9385314  b 0x1014f4930
+
+; -[NNCSpHmSourceEpisodeModel spEpisodeId]
+; entry 0x100026690; next boundary 0x100026698 (exclusive)
+; Objective-C encoding: i16@0:8
+0000000100026690  000840b9  ldr w0, [x0, #0x8]
+0000000100026694  c0035fd6  ret
+
+; -[NNCSpHmSourceEpisodeModel setSpEpisodeId:]
+; entry 0x100026698; next boundary 0x1000266a0 (exclusive)
+; Objective-C encoding: v20@0:8i16
+0000000100026698  020800b9  str w2, [x0, #0x8]
+000000010002669c  c0035fd6  ret
+
+; -[NNCSpHmSourceEpisodeModel vodId]
+; entry 0x1000266a0; next boundary 0x1000266a8 (exclusive)
+; Objective-C encoding: i16@0:8
+00000001000266a0  000c40b9  ldr w0, [x0, #0xc]
+00000001000266a4  c0035fd6  ret
+
+; -[NNCSpHmSourceEpisodeModel setVodId:]
+; entry 0x1000266a8; next boundary 0x1000266b0 (exclusive)
+; Objective-C encoding: v20@0:8i16
+00000001000266a8  020c00b9  str w2, [x0, #0xc]
+00000001000266ac  c0035fd6  ret
+
+; -[NNCSpHmSourceEpisodeModel collection]
+; entry 0x1000266b0; next boundary 0x1000266b8 (exclusive)
+; Objective-C encoding: i16@0:8
+00000001000266b0  001040b9  ldr w0, [x0, #0x10]
+00000001000266b4  c0035fd6  ret
+
+; -[NNCSpHmSourceEpisodeModel setCollection:]
+; entry 0x1000266b8; next boundary 0x1000266c0 (exclusive)
+; Objective-C encoding: v20@0:8i16
+00000001000266b8  021000b9  str w2, [x0, #0x10]
+00000001000266bc  c0035fd6  ret

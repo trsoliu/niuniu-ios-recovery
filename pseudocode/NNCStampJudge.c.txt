@@ -1,0 +1,127 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCStampJudge.shouldSkipPlayAd | 0x1000d025c | ev_606ea1cd7891b659d28ce865fbe11e46bf0233654089c0af36a9de6ce8131749 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCStampJudge::shouldSkipPlayAd(ID param_1,SEL param_2)
+
+{
+  bool bVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  
+  uVar2 = FUN_1015e11a8(&objc::class_t::NNCInitManager);
+  uVar2 = FUN_101544cc8(uVar2);
+  auVar3 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+  uVar2 = FUN_1015ebb28(uVar2,auVar3._8_8_,auVar3._0_8_);
+  auVar3 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  auVar3 = FUN_101583468(auVar3._0_8_,auVar3._8_8_,&cf_nnc_vid_play_t);
+  bVar1 = FUN_10156d5e8(uVar2,auVar3._8_8_,auVar3._0_8_);
+  return bVar1;
+}
+
+
+
+/* NNCStampJudge.startGGShown | 0x1000d0348 | ev_3d15a6905d72532990beee3f6c11956f0e56b28ebb0aba6e94b769890341dfe2 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCStampJudge::startGGShown(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined1 auVar2 [16];
+  
+  uVar1 = FUN_1015e11a8(&objc::class_t::NNCInitManager);
+  uVar1 = FUN_101544cc8(uVar1);
+  auVar2 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+  uVar1 = FUN_1015ebb28(uVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  FUN_1015c6468(auVar2._0_8_,auVar2._8_8_,uVar1,&cf_nnc_vid_play_t);
+  uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  FUN_1015ed5e8(uVar1);
+  return;
+}
+
+
+
+/* NNCStampJudge.nncstartGGUnShown | 0x1000d042c | ev_3eaf67d0d6a544b40f82a3b29f9369029ec6b21d7264ae869d427c4e2a54b399 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCStampJudge::nncstartGGUnShown(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  FUN_1015c6468(auVar2._0_8_,auVar2._8_8_,&::cf___,&cf_nnc_vid_play_t);
+  uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  FUN_1015ed5e8(uVar1);
+  return;
+}
+
+
+
+/* NNCStampJudge.noticeShown | 0x1000d0494 | ev_4d97761915b4cf07a964295a25c2bde66cad680075582a11f183d5bac5391ffe */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCStampJudge::noticeShown(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined1 auVar2 [16];
+  
+  uVar1 = FUN_1015e11a8(&objc::class_t::NNCInitManager);
+  uVar1 = FUN_101544cc8(uVar1);
+  auVar2 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+  uVar1 = FUN_1015ebb28(uVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  FUN_1015c6468(auVar2._0_8_,auVar2._8_8_,uVar1,&cf_nnc_notice_t);
+  uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  FUN_1015ed5e8(uVar1);
+  return;
+}
+
+
+
+/* NNCStampJudge.shouldSkipNotice | 0x1000d0578 | ev_c9f08149c95d5ed0719036f3373d00343afc781ef7488ced59749321ebc3b102 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCStampJudge::shouldSkipNotice(ID param_1,SEL param_2)
+
+{
+  bool bVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  
+  uVar2 = FUN_1015e11a8(&objc::class_t::NNCInitManager);
+  uVar2 = FUN_101544cc8(uVar2);
+  auVar3 = FUN_101544c08(&_OBJC_CLASS___NSDate);
+  uVar2 = FUN_1015ebb28(uVar2,auVar3._8_8_,auVar3._0_8_);
+  auVar3 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  auVar3 = FUN_101583468(auVar3._0_8_,auVar3._8_8_,&cf_nnc_notice_t);
+  bVar1 = FUN_10156d5e8(uVar2,auVar3._8_8_,auVar3._0_8_);
+  return bVar1;
+}
+
+

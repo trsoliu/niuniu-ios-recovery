@@ -1,0 +1,151 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* HeaderModel.modelWithDict: | 0x1000ca38c | ev_c0b56aa915d0a85c2d09819655fd35d549c8781f177da05f7d5bbbf998c8dcd8 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID HeaderModel::modelWithDict_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_1015813c8(&objc::class_t::HeaderModel);
+  IVar1 = auVar2._0_8_;
+  auVar2 = FUN_1015ebae8(param_3,auVar2._8_8_,&cf_key);
+  FUN_1015be6e8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1,&cf_value);
+  FUN_1015db7c8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  return IVar1;
+}
+
+
+
+/* HeaderModel.initWithCoder: | 0x1000ca438 | ev_99ed10a5b32f4577d0b043d340b808bc2f2115071caddd96581a1e2c8c35f73f */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID HeaderModel::initWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::HeaderModel;
+  local_40 = param_1;
+  auVar2 = _objc_msgSendSuper2(&local_40,"init");
+  IVar1 = auVar2._0_8_;
+  if (IVar1 != 0) {
+    auVar2 = FUN_101545868(param_3,auVar2._8_8_,&cf_key);
+    FUN_1015be6e8(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1,&cf_value);
+    FUN_1015db7c8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  }
+  return IVar1;
+}
+
+
+
+/* HeaderModel.encodeWithCoder: | 0x1000ca500 | ev_1e0f022efa1bc24084855e9461ad187a6f4a550448b2e42ebd609cf6d2be8209 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void HeaderModel::encodeWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_1015730e8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_key);
+  auVar1 = FUN_1015f7f68(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_value);
+  return;
+}
+
+
+
+/* HeaderModel.key | 0x1000ca594 | ev_c19e22a8cb9eaa975c288cd26dabd1146fd27db1e6577e2ee4594ce7feca3623 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID HeaderModel::key(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* HeaderModel.setKey: | 0x1000ca59c | ev_e7b272d8af795ca922c74da28fb31e3de9789778bc25899417b11e6c3645d562 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void HeaderModel::setKey_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* HeaderModel.value | 0x1000ca5a4 | ev_ff1bbdce7c4a583e988d0c32f036a0b1ae7862bef054396769f7d3c4d9f15459 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID HeaderModel::value(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* HeaderModel.setValue: | 0x1000ca5ac | ev_759e7b60f58b417ccb254257b4992dd3f07265f634b4ceac5dd6f68aacdeb950 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void HeaderModel::setValue_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* HeaderModel..cxx_destruct | 0x1000ca5b4 | ev_0adfce957fb7c35ed34d66d42d54c7dcf0771ea52ec3fe037f60059b00464bc7 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void HeaderModel::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

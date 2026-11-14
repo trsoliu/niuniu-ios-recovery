@@ -1,0 +1,186 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCMainPageTypeModel.modelWithDict: | 0x1000db2c8 | ev_4c5f248f2c3113c0be4418ac892809685fc83c5724c09b7081969dcf2265ba1a */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCMainPageTypeModel::modelWithDict_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_1015813c8(&objc::class_t::NNCMainPageTypeModel);
+  IVar1 = auVar2._0_8_;
+  auVar2 = FUN_1015480a8(param_3,auVar2._8_8_,&cf_type_extend);
+  auVar2 = FUN_10157cd68(&objc::class_t::NNCMainPageTypeExtendModel,auVar2._8_8_,auVar2._0_8_);
+  FUN_1015b30e8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1,&cf_type_name);
+  FUN_1015d9628(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_101582d28(param_3,extraout_x1_00,&cf_type_id);
+  FUN_1015d95c8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  return IVar1;
+}
+
+
+
+/* NNCMainPageTypeModel.initWithCoder: | 0x1000db3cc | ev_0771767799df69ff4a76bbd72796b71566cf3171bfd3a396ad94447b1928a8ca */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCMainPageTypeModel::initWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar2 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCMainPageTypeModel;
+  local_40 = param_1;
+  auVar2 = _objc_msgSendSuper2(&local_40,"init");
+  IVar1 = auVar2._0_8_;
+  if (IVar1 != 0) {
+    auVar2 = FUN_101545868(param_3,auVar2._8_8_,&cf_typeId);
+    FUN_1015d95c8(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1,&cf_typeName);
+    FUN_1015d9628(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1_00,&cf_extendModel);
+    FUN_1015b30e8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCMainPageTypeModel.encodeWithCoder: | 0x1000db4c4 | ev_20e4961655425e1c5922bcfd8def365bc44abf29299b518ad5b90e2ff93b0e43 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMainPageTypeModel::encodeWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_1015f2e08(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_typeId);
+  auVar1 = FUN_1015f2ea8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_typeName);
+  auVar1 = FUN_101550d28(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_extendModel);
+  return;
+}
+
+
+
+/* NNCMainPageTypeModel.typeId | 0x1000db588 | ev_addc726aba1c94a74a8b71810313418e5aaf7603e10139e0e386e7e13a681424 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMainPageTypeModel::typeId(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* NNCMainPageTypeModel.setTypeId: | 0x1000db590 | ev_212467bff4e733299351dda5ba5ed93eb50ad8e62b7a57b1a69aa4d2fb74d877 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMainPageTypeModel::setTypeId_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCMainPageTypeModel.typeName | 0x1000db59c | ev_9b9ebfe525fd8b9883975b096e06a1481cbaa010a83b455e73c96cf7e9271dba */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMainPageTypeModel::typeName(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCMainPageTypeModel.setTypeName: | 0x1000db5a4 | ev_7586a05ec43c2a31069338001070426afc09aacd512300bc9d127aa0b91757ff */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMainPageTypeModel::setTypeName_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCMainPageTypeModel.extendModel | 0x1000db5ac | ev_a82d85badd39c73feabd8374d75e0064fd351c150d05ae07bb7b76a2a3ef7cbd */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMainPageTypeModel::extendModel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x18);
+}
+
+
+
+/* NNCMainPageTypeModel.setExtendModel: | 0x1000db5b4 | ev_cd2da6202fd9e7b5dc3593f022f09ecfdd9607a24303892188d5c8978b41076c */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMainPageTypeModel::setExtendModel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* NNCMainPageTypeModel..cxx_destruct | 0x1000db5c0 | ev_878de14a9a3709cf66ced70723713f6eca852d91648f81aa5d6b5d40100dd4c7 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCMainPageTypeModel::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x18) = 0;
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

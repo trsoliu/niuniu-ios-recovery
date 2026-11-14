@@ -1,0 +1,45 @@
+{
+  "provider": "Ghidra 12.1.4",
+  "mode": "actual analysis profile used for successful method export",
+  "enabled": [
+    "AARCH64 ELF PLT Thunks",
+    "ASCII Strings",
+    "Aggressive Instruction Finder",
+    "Apply Data Archives",
+    "CFStrings",
+    "Call Convention ID",
+    "Call-Fixup Installer",
+    "Condense Filler Bytes",
+    "Create Address Tables",
+    "Data Reference",
+    "Decompiler Parameter ID",
+    "Demangler GNU",
+    "Disassemble Entry Points",
+    "Embedded Media",
+    "External Entry References",
+    "Function ID",
+    "Function Start Search",
+    "Function Start Search After Code",
+    "Function Start Search After Data",
+    "Mach-O Function Starts",
+    "Non-Returning Functions - Discovered",
+    "Non-Returning Functions - Known",
+    "Objective-C Type Metadata Analyzer",
+    "Reference",
+    "Scalar Operand References",
+    "Shared Return Calls",
+    "Stack",
+    "Subroutine References",
+    "Variadic Function Signature Override"
+  ],
+  "disabled": [
+    "Decompiler Switch Analysis",
+    "Basic Constant Reference Analyzer",
+    "Objective-C Message Analyzer"
+  ],
+  "limitations": [
+    "Global switch discovery, constant reference propagation and Objective-C message signature overrides were disabled.",
+    "Individual selected-method pseudocode was generated from the unchanged original main image.",
+    "Unselected functions and indirect calls are not claimed complete; audit with runtime metadata and verified disassembly."
+  ]
+}

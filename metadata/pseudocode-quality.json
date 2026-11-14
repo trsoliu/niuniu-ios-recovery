@@ -1,0 +1,98 @@
+{
+  "main_image_sha256": "5e484a2abb718a6f32fbd0f0780c07ef55673e2d6705d775afefee54680b91dd",
+  "methods_returning_pseudocode": 3453,
+  "warning_counts": {
+    "unrecovered_jump_table": 29,
+    "indirect_jump_as_call": 29,
+    "decompiler_failure_markers": 0
+  },
+  "files_with_selected_warnings": [
+    {
+      "path": "pseudocode/VideoPrepareView.c.txt",
+      "unrecovered_jump_table": 1,
+      "indirect_jump_as_call": 1,
+      "decompiler_failure_markers": 0
+    },
+    {
+      "path": "pseudocode/NNCFileHistoryManager.c.txt",
+      "unrecovered_jump_table": 1,
+      "indirect_jump_as_call": 1,
+      "decompiler_failure_markers": 0
+    },
+    {
+      "path": "pseudocode/VideoLoadErrorView.c.txt",
+      "unrecovered_jump_table": 1,
+      "indirect_jump_as_call": 1,
+      "decompiler_failure_markers": 0
+    },
+    {
+      "path": "pseudocode/NNCBIZRequest.c.txt",
+      "unrecovered_jump_table": 1,
+      "indirect_jump_as_call": 1,
+      "decompiler_failure_markers": 0
+    },
+    {
+      "path": "pseudocode/VideoPlayErrorView.c.txt",
+      "unrecovered_jump_table": 1,
+      "indirect_jump_as_call": 1,
+      "decompiler_failure_markers": 0
+    },
+    {
+      "path": "pseudocode/NNCFileDownloadManager.c.txt",
+      "unrecovered_jump_table": 2,
+      "indirect_jump_as_call": 2,
+      "decompiler_failure_markers": 0
+    },
+    {
+      "path": "pseudocode/RecommendView.c.txt",
+      "unrecovered_jump_table": 2,
+      "indirect_jump_as_call": 2,
+      "decompiler_failure_markers": 0
+    },
+    {
+      "path": "pseudocode/NNCSearchViewController.c.txt",
+      "unrecovered_jump_table": 1,
+      "indirect_jump_as_call": 1,
+      "decompiler_failure_markers": 0
+    },
+    {
+      "path": "pseudocode/NNCInitManager.c.txt",
+      "unrecovered_jump_table": 1,
+      "indirect_jump_as_call": 1,
+      "decompiler_failure_markers": 0
+    },
+    {
+      "path": "pseudocode/NNCZoneViewController.c.txt",
+      "unrecovered_jump_table": 2,
+      "indirect_jump_as_call": 2,
+      "decompiler_failure_markers": 0
+    },
+    {
+      "path": "pseudocode/NNCM3U8PlayServer.c.txt",
+      "unrecovered_jump_table": 1,
+      "indirect_jump_as_call": 1,
+      "decompiler_failure_markers": 0
+    },
+    {
+      "path": "pseudocode/AppDelegate.c.txt",
+      "unrecovered_jump_table": 4,
+      "indirect_jump_as_call": 4,
+      "decompiler_failure_markers": 0
+    },
+    {
+      "path": "pseudocode/NNCBaseDownloadTask.c.txt",
+      "unrecovered_jump_table": 2,
+      "indirect_jump_as_call": 2,
+      "decompiler_failure_markers": 0
+    },
+    {
+      "path": "pseudocode/NNCDetailViewController.c.txt",
+      "unrecovered_jump_table": 9,
+      "indirect_jump_as_call": 9,
+      "decompiler_failure_markers": 0
+    }
+  ],
+  "buildable": false,
+  "behavioral_equivalence_verified": false,
+  "note": "Pseudocode return coverage does not imply recovered jump tables, resolved indirect calls, buildability or behavioral equivalence."
+}

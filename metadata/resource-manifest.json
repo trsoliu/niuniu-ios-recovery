@@ -1,0 +1,1106 @@
+[
+  {
+    "path": "resources/AppIcon60x60@2x.png",
+    "source_member": "Payload/prince.app/AppIcon60x60@2x.png",
+    "sha256": "345571757803a31fb488bc7cf39f487b4d666715fe22a3f92ed7138d4c5a3b03",
+    "bytes": 7660
+  },
+  {
+    "path": "resources/AppIcon76x76@2x~ipad.png",
+    "source_member": "Payload/prince.app/AppIcon76x76@2x~ipad.png",
+    "sha256": "e9275454bcc9e48a9a9611d42e03dd01d6a459801e5090d17e7830f9fc0dfdb8",
+    "bytes": 10468
+  },
+  {
+    "path": "resources/Assets.car",
+    "source_member": "Payload/prince.app/Assets.car",
+    "sha256": "07c8809a4f6d40513b10d444558c98da776150a44b99c6fcff9060e2b05af98f",
+    "bytes": 719104
+  },
+  {
+    "path": "resources/BannerItemView.nib",
+    "source_member": "Payload/prince.app/BannerItemView.nib",
+    "sha256": "59f3fa68ce41bc655c783e675534b81b5126e8d6b61b072227e6108d62a49678",
+    "bytes": 2930
+  },
+  {
+    "path": "resources/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib",
+    "source_member": "Payload/prince.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib",
+    "sha256": "acdcce375e9020537635c1a6d0c61dbc21dcc02562509f37d1fb4b5f95ab4ec9",
+    "bytes": 2254
+  },
+  {
+    "path": "resources/Base.lproj/LaunchScreen.storyboardc/Info.plist",
+    "source_member": "Payload/prince.app/Base.lproj/LaunchScreen.storyboardc/Info.plist",
+    "sha256": "1f255d5cc53b531e3f29a9406a8df49a958e2bf9443d3e20bd8374f707f7d5c8",
+    "bytes": 258
+  },
+  {
+    "path": "resources/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib",
+    "source_member": "Payload/prince.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib",
+    "sha256": "54f3637f671feba5f19e82ec4f4a7fb448bb3cfc0fb180f089aa571fc8f053e2",
+    "bytes": 924
+  },
+  {
+    "path": "resources/DetailHeaderView.nib",
+    "source_member": "Payload/prince.app/DetailHeaderView.nib",
+    "sha256": "7799c0f117f52237cc192e656d733a8229e85d7bc1be96a6b55cde30e5bedd6d",
+    "bytes": 7271
+  },
+  {
+    "path": "resources/NNCChooseSourceCell.nib",
+    "source_member": "Payload/prince.app/NNCChooseSourceCell.nib",
+    "sha256": "308cc0caa8e1caa94306aa9ca7234af99f127e53b607a2a447480e134d715743",
+    "bytes": 3896
+  },
+  {
+    "path": "resources/NNCChooseSourceViewController.nib",
+    "source_member": "Payload/prince.app/NNCChooseSourceViewController.nib",
+    "sha256": "40a7eaafc7737a0bcce0c3048c6c5812f0fba25fd36ce0b321a0531a7a56c766",
+    "bytes": 1880
+  },
+  {
+    "path": "resources/NNCDetailViewController.nib",
+    "source_member": "Payload/prince.app/NNCDetailViewController.nib",
+    "sha256": "b6db9b79a4c3b72c5c57dab783de1c3a6288af870b9a1c34bb8ee09ec084891a",
+    "bytes": 3813
+  },
+  {
+    "path": "resources/NNCDiscussCell.nib",
+    "source_member": "Payload/prince.app/NNCDiscussCell.nib",
+    "sha256": "ec8bff93826500e0b97d372e7a45c663f5e23105d1c719eea8e6322de194ae8b",
+    "bytes": 5247
+  },
+  {
+    "path": "resources/NNCDownloadCell.nib",
+    "source_member": "Payload/prince.app/NNCDownloadCell.nib",
+    "sha256": "196ab8ee2a1d9da771b78a2e8ca4127946a94afa55e4db75ca32dfc3e9b7beac",
+    "bytes": 5187
+  },
+  {
+    "path": "resources/NNCEpisodeCollectionCell.nib",
+    "source_member": "Payload/prince.app/NNCEpisodeCollectionCell.nib",
+    "sha256": "f3bd39193f0a1847fa8aaf6c260103cd246cf4882c13f312e0dd36db4ef90ccb",
+    "bytes": 3218
+  },
+  {
+    "path": "resources/NNCFavViewController.nib",
+    "source_member": "Payload/prince.app/NNCFavViewController.nib",
+    "sha256": "9b3f808f4bedb0d6c95b9bd68c646af58338740afc224c441b8b5bfd16f334e3",
+    "bytes": 1245
+  },
+  {
+    "path": "resources/NNCForgetPwdViewController.nib",
+    "source_member": "Payload/prince.app/NNCForgetPwdViewController.nib",
+    "sha256": "d6785de4dc8ac921e3d5d7e0682d8f544014d47d491dede8688c1fc29d54e310",
+    "bytes": 3875
+  },
+  {
+    "path": "resources/NNCHistoryCell.nib",
+    "source_member": "Payload/prince.app/NNCHistoryCell.nib",
+    "sha256": "17c5329c13d1087d93c995ad2232a12888de4ff732487dc3fc9ab6a2a8066cbf",
+    "bytes": 4587
+  },
+  {
+    "path": "resources/NNCHistoryCollectionCell.nib",
+    "source_member": "Payload/prince.app/NNCHistoryCollectionCell.nib",
+    "sha256": "55210104218df03e4fb95bf809ec211493b52dfb449ee75c8f271db2a8cd0b2e",
+    "bytes": 2675
+  },
+  {
+    "path": "resources/NNCHistoryViewController.nib",
+    "source_member": "Payload/prince.app/NNCHistoryViewController.nib",
+    "sha256": "5dfb0ae96094d38aad4c600bdead9e8597bd9aa8c5d0af2207c6177c2c338fa1",
+    "bytes": 1256
+  },
+  {
+    "path": "resources/NNCLoginViewController.nib",
+    "source_member": "Payload/prince.app/NNCLoginViewController.nib",
+    "sha256": "9545b22e36daee47147b4d675532b3ec9735b6140d6c09e1be6ff4e8af72936c",
+    "bytes": 5727
+  },
+  {
+    "path": "resources/NNCMainViewController.nib",
+    "source_member": "Payload/prince.app/NNCMainViewController.nib",
+    "sha256": "8372238061a05de16ac0066007f8dc7dae12c832672566c7f6ceded3b4fe3b6d",
+    "bytes": 1063
+  },
+  {
+    "path": "resources/NNCMessageCell.nib",
+    "source_member": "Payload/prince.app/NNCMessageCell.nib",
+    "sha256": "dc40f05fc033b05478d16cd5a5cf484930dd74303d0d6beb8615f78dce7ec538",
+    "bytes": 3308
+  },
+  {
+    "path": "resources/NNCProfileViewController.nib",
+    "source_member": "Payload/prince.app/NNCProfileViewController.nib",
+    "sha256": "cc055962d9350c9a60f33842950c998f806e1d9197a2704dc175db25d2927498",
+    "bytes": 4257
+  },
+  {
+    "path": "resources/NNCRankCell.nib",
+    "source_member": "Payload/prince.app/NNCRankCell.nib",
+    "sha256": "adaa8478268a6c31a537c638b392463ed3f335ea4c1913ec6db3c5bb62e1268b",
+    "bytes": 4829
+  },
+  {
+    "path": "resources/NNCRankViewController.nib",
+    "source_member": "Payload/prince.app/NNCRankViewController.nib",
+    "sha256": "8372238061a05de16ac0066007f8dc7dae12c832672566c7f6ceded3b4fe3b6d",
+    "bytes": 1063
+  },
+  {
+    "path": "resources/NNCRegViewController.nib",
+    "source_member": "Payload/prince.app/NNCRegViewController.nib",
+    "sha256": "f87c130a0a9284cef601890d667099f13ba6bc5789a27c119bd1b6e89be56c28",
+    "bytes": 5292
+  },
+  {
+    "path": "resources/NNCSearchCell.nib",
+    "source_member": "Payload/prince.app/NNCSearchCell.nib",
+    "sha256": "5d43b14fc35e99a4cd35f4619966c3f865de8f990736628626e22f1103bea9df",
+    "bytes": 4685
+  },
+  {
+    "path": "resources/NNCSearchViewController.nib",
+    "source_member": "Payload/prince.app/NNCSearchViewController.nib",
+    "sha256": "d7195c5e09c182b0152cdd1c9285a4e9a6325b0dfabc13225a931bdeb90536a5",
+    "bytes": 5586
+  },
+  {
+    "path": "resources/NNCSetNickViewController.nib",
+    "source_member": "Payload/prince.app/NNCSetNickViewController.nib",
+    "sha256": "8d4193f6f610bbfa638fb2794968cb0ddc776309f69f48ba3682c029ff2b4150",
+    "bytes": 2373
+  },
+  {
+    "path": "resources/NNCSetPwdViewController.nib",
+    "source_member": "Payload/prince.app/NNCSetPwdViewController.nib",
+    "sha256": "e311e0c14be17b7a8aee0699ac90490880fda4b30566fad32c7030125212f278",
+    "bytes": 4704
+  },
+  {
+    "path": "resources/NNCSetQuestionViewController.nib",
+    "source_member": "Payload/prince.app/NNCSetQuestionViewController.nib",
+    "sha256": "5518caa53cf9022695f496e339c9280832729e824c7a7307273f993213aa777a",
+    "bytes": 4075
+  },
+  {
+    "path": "resources/NNCSettingViewController.nib",
+    "source_member": "Payload/prince.app/NNCSettingViewController.nib",
+    "sha256": "729eab7699be2749a6abf7e0ce30c646d8d21c86afdad00af36cd60da92f166b",
+    "bytes": 8471
+  },
+  {
+    "path": "resources/NNCShareVideoViewController.nib",
+    "source_member": "Payload/prince.app/NNCShareVideoViewController.nib",
+    "sha256": "c36e9eaf68378c3b947a7e1206d5af8902498c613962e75eeb923d4ba2896593",
+    "bytes": 7673
+  },
+  {
+    "path": "resources/NNCShenViewController.nib",
+    "source_member": "Payload/prince.app/NNCShenViewController.nib",
+    "sha256": "cac5d5719f58021b3756f30d352e83e0f2ac6732bb2cb29d3607d791b5839259",
+    "bytes": 4902
+  },
+  {
+    "path": "resources/NNCVideoCell.nib",
+    "source_member": "Payload/prince.app/NNCVideoCell.nib",
+    "sha256": "f13faa944433ae440f09e8196e4e978418710c21a6096645392e4f6269e64429",
+    "bytes": 1493
+  },
+  {
+    "path": "resources/NNCVideoFullScreenChooseEpisodeCell.nib",
+    "source_member": "Payload/prince.app/NNCVideoFullScreenChooseEpisodeCell.nib",
+    "sha256": "fa4720ebaf8bd5403f9bba3922c66644135db9bf30889d7b6bfbbf632fff772c",
+    "bytes": 2774
+  },
+  {
+    "path": "resources/NNCVideoFullScreenSpeedCell.nib",
+    "source_member": "Payload/prince.app/NNCVideoFullScreenSpeedCell.nib",
+    "sha256": "0f189218d9b70f909ecd14c67fcf8d6b249a6b02f7ff5950b8c47c8be683725c",
+    "bytes": 2667
+  },
+  {
+    "path": "resources/NNCZoneViewController.nib",
+    "source_member": "Payload/prince.app/NNCZoneViewController.nib",
+    "sha256": "dfbdc542bf0420853b639c3fc70008c17e1733280086a74564c32efce60528a0",
+    "bytes": 6686
+  },
+  {
+    "path": "resources/RecommendView.nib",
+    "source_member": "Payload/prince.app/RecommendView.nib",
+    "sha256": "3be1b4dc84913ae4d9052a708776be902227c474b2f56d4cbc3da57b1716cdfc",
+    "bytes": 3307
+  },
+  {
+    "path": "resources/VideoItemView.nib",
+    "source_member": "Payload/prince.app/VideoItemView.nib",
+    "sha256": "c136bc5add42dcc773b32ba63859ee9471daf9560e16dbc5748e2d3d716c33cd",
+    "bytes": 3990
+  },
+  {
+    "path": "resources/VideoLoadErrorView.nib",
+    "source_member": "Payload/prince.app/VideoLoadErrorView.nib",
+    "sha256": "ec127501169c94d36af1cf7b909500453f617996d28b8bcbd29fb779806c054d",
+    "bytes": 3650
+  },
+  {
+    "path": "resources/VideoPlayErrorView.nib",
+    "source_member": "Payload/prince.app/VideoPlayErrorView.nib",
+    "sha256": "fbd851660d9b83062c8c9400b355f58657cbbcd03304386020758d670e011b35",
+    "bytes": 4384
+  },
+  {
+    "path": "resources/VideoPrepareView.nib",
+    "source_member": "Payload/prince.app/VideoPrepareView.nib",
+    "sha256": "880379f93d9e3cfb6e9acfbd4e3833ab24cd95442824f6dd85455e3f952de632",
+    "bytes": 3309
+  },
+  {
+    "path": "resources/icon.png",
+    "source_member": "Payload/prince.app/icon.png",
+    "sha256": "b04ad7d243086aaf9a4c8511aae8bfd49c4bedd680fe57087b88c7f528dbbf14",
+    "bytes": 7697
+  },
+  {
+    "path": "resources/icon@2x.png",
+    "source_member": "Payload/prince.app/icon@2x.png",
+    "sha256": "b04ad7d243086aaf9a4c8511aae8bfd49c4bedd680fe57087b88c7f528dbbf14",
+    "bytes": 7697
+  },
+  {
+    "path": "resources/icon@3x.png",
+    "source_member": "Payload/prince.app/icon@3x.png",
+    "sha256": "b04ad7d243086aaf9a4c8511aae8bfd49c4bedd680fe57087b88c7f528dbbf14",
+    "bytes": 7697
+  },
+  {
+    "path": "resources/iconv2@2x.png",
+    "source_member": "Payload/prince.app/iconv2@2x.png",
+    "sha256": "95814b9e8090f3919a7bd671ab317472465b8d20380fd41af7bc343ee1c51b9b",
+    "bytes": 18343
+  },
+  {
+    "path": "resources/iconv2@3x.png",
+    "source_member": "Payload/prince.app/iconv2@3x.png",
+    "sha256": "e4bd949da4d71340a4b9cadfe39ba76143a253cf73049b7138b5c25033420c51",
+    "bytes": 28861
+  },
+  {
+    "path": "resources/new_launcher@2x.png",
+    "source_member": "Payload/prince.app/new_launcher@2x.png",
+    "sha256": "b1876f10dd649fa04ea98e9d5601a78bc6f6953fc367c8ff829a508e125cedf3",
+    "bytes": 46718
+  },
+  {
+    "path": "resources/nnc_back_black@2x.png",
+    "source_member": "Payload/prince.app/nnc_back_black@2x.png",
+    "sha256": "048af3034fab4e6e647c4c055033820f2516cb92692df087f2260fa222e76234",
+    "bytes": 716
+  },
+  {
+    "path": "resources/nnc_back_normal@2x.png",
+    "source_member": "Payload/prince.app/nnc_back_normal@2x.png",
+    "sha256": "974d874afa167619216649676e8adfd5244a140b81677464fe6694715d89b8b8",
+    "bytes": 292
+  },
+  {
+    "path": "resources/nnc_ic_arrow_down_white@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_arrow_down_white@2x.png",
+    "sha256": "39a5aea6d7803dce8d7ae8c2881cdab8cc30f2d8a4be3067af2cacad136f91bb",
+    "bytes": 751
+  },
+  {
+    "path": "resources/nnc_ic_avatar_default@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_avatar_default@2x.png",
+    "sha256": "757f6ca243d58b5462a3e7a0531da0536c669063349c45777032095d33921ed9",
+    "bytes": 899
+  },
+  {
+    "path": "resources/nnc_ic_back_white@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_back_white@2x.png",
+    "sha256": "5d06311d550003a39f9adf466d8238b94d5e6925cda0edceba947051d74234f5",
+    "bytes": 946
+  },
+  {
+    "path": "resources/nnc_ic_circle_next@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_circle_next@2x.png",
+    "sha256": "c4f8a9c899d76e8da5609d24c3d0ca103d6726e29b172f07814985ee5f5529c7",
+    "bytes": 2125
+  },
+  {
+    "path": "resources/nnc_ic_close@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_close@2x.png",
+    "sha256": "9c5272645f1c6ed0282a9861f9fed76e7a77113d651a9e6786484edb245a799f",
+    "bytes": 365
+  },
+  {
+    "path": "resources/nnc_ic_connect_us@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_connect_us@2x.png",
+    "sha256": "05284dcc01e4b10b62a164c3dedfb28427a3307904af16384765ea9f395b4fca",
+    "bytes": 3418
+  },
+  {
+    "path": "resources/nnc_ic_detail_change_source@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_detail_change_source@2x.png",
+    "sha256": "b4796ef16a58130808fd4b5a738a56f83e12d54020f8142938e73f4a98adc674",
+    "bytes": 742
+  },
+  {
+    "path": "resources/nnc_ic_detail_download@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_detail_download@2x.png",
+    "sha256": "42d91ea3082012c96fb8110e4cf98fbbd89bc1b6531fe797bca236d1a67f9d44",
+    "bytes": 497
+  },
+  {
+    "path": "resources/nnc_ic_detail_download_all_selected@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_detail_download_all_selected@2x.png",
+    "sha256": "cbc34777bc325cc73b0ee54fc82b5b180c39bf3d00dde1b3b53e0ce3fec604cc",
+    "bytes": 827
+  },
+  {
+    "path": "resources/nnc_ic_detail_fav_normal@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_detail_fav_normal@2x.png",
+    "sha256": "e913ac4bedadb9d3ffc50dedfa86e0b4bd2bc3a4c1305246350c2ee4c427cc51",
+    "bytes": 851
+  },
+  {
+    "path": "resources/nnc_ic_detail_fav_selected@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_detail_fav_selected@2x.png",
+    "sha256": "07a0854c526058653c0116cd2512d81d566f1603b46ceeb62d602dd9397aedda",
+    "bytes": 690
+  },
+  {
+    "path": "resources/nnc_ic_detail_feed@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_detail_feed@2x.png",
+    "sha256": "69bcfb15c415fdf6ac55e969e4c4631d12634943a55fb0bf69bb56cd5eeffdb7",
+    "bytes": 783
+  },
+  {
+    "path": "resources/nnc_ic_detail_fire@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_detail_fire@2x.png",
+    "sha256": "c71ff7719734c8056b1c262bc66249abed4a2d2a99be2923699b3e937062d696",
+    "bytes": 2515
+  },
+  {
+    "path": "resources/nnc_ic_detail_normal_order@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_detail_normal_order@2x.png",
+    "sha256": "ea73d42cea9b4da80e35d074c9dedc3ce9a95b944597c4a72106a28dc1d77762",
+    "bytes": 490
+  },
+  {
+    "path": "resources/nnc_ic_detail_reverse@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_detail_reverse@2x.png",
+    "sha256": "36267a95b7261165a9f52d996c4a1bcc41ee7daeb5435644ebe3d1cbc07dd179",
+    "bytes": 484
+  },
+  {
+    "path": "resources/nnc_ic_detail_setting@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_detail_setting@2x.png",
+    "sha256": "b27278c183ff238eceb527ae7fb4f89edfe1770d6faff82d85a6dbbf03d49a5a",
+    "bytes": 1685
+  },
+  {
+    "path": "resources/nnc_ic_detail_share@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_detail_share@2x.png",
+    "sha256": "a2fe3b5cc5ad3817295797f52d81be71179917d440e93d9723ad5001cc16d57c",
+    "bytes": 560
+  },
+  {
+    "path": "resources/nnc_ic_discuss@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_discuss@2x.png",
+    "sha256": "b9778b3eccf27aae4eb2adb6b26580871e822e2fb15b104c7eb64cc7099fc182",
+    "bytes": 23232
+  },
+  {
+    "path": "resources/nnc_ic_download@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_download@2x.png",
+    "sha256": "7445e893596c436186d927cbb4a2878b9d42781707a22a9f55939c3cda21770c",
+    "bytes": 4176
+  },
+  {
+    "path": "resources/nnc_ic_download_item_normal@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_download_item_normal@2x.png",
+    "sha256": "54712b469106843fc197278890483c1dd73ca45149118aa98b33353516a99a6a",
+    "bytes": 298
+  },
+  {
+    "path": "resources/nnc_ic_download_item_selected@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_download_item_selected@2x.png",
+    "sha256": "d60f8fba4588257e95115e3696740aea93f1b8c63eb7104d6c900d885d6fe512",
+    "bytes": 753
+  },
+  {
+    "path": "resources/nnc_ic_download_multi@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_download_multi@2x.png",
+    "sha256": "15f08440ea159deb45df3f87003c7006de2fee921601225f666ba2bf3093dec2",
+    "bytes": 1376
+  },
+  {
+    "path": "resources/nnc_ic_downloaded@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_downloaded@2x.png",
+    "sha256": "d2aec5f2239f01f88c552bb943f56beb5ee01028cf7a055c09b3042eb0b6a0e0",
+    "bytes": 1168
+  },
+  {
+    "path": "resources/nnc_ic_load_error@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_load_error@2x.png",
+    "sha256": "24ef84ebf4002bb31b63cc60b8b8f56c9def42894e490be846c17e63cd114fac",
+    "bytes": 1489
+  },
+  {
+    "path": "resources/nnc_ic_login_bg@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_login_bg@2x.png",
+    "sha256": "21d65d5b57d11de1ac335c7dcd2499331a47fc21d4e76fb61440beb00b75e640",
+    "bytes": 18548
+  },
+  {
+    "path": "resources/nnc_ic_no_data@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_no_data@2x.png",
+    "sha256": "00db90381ccd9395cd5dc6239dda3002cd3d9d41f212f6d6a6de0c3cdf7c15aa",
+    "bytes": 46699
+  },
+  {
+    "path": "resources/nnc_ic_no_net@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_no_net@2x.png",
+    "sha256": "c8d28008582e246458acec5ea97913b3ac71657a15d2c074721f5876da97ae19",
+    "bytes": 48902
+  },
+  {
+    "path": "resources/nnc_ic_play@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_play@2x.png",
+    "sha256": "8b1885a4429e936bf1448cf8fe2bec748b6810ea71b449d231c958a63027863c",
+    "bytes": 5129
+  },
+  {
+    "path": "resources/nnc_ic_play_full@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_play_full@2x.png",
+    "sha256": "1efea7b72560473f46cba98fe393f96baf27874f609289d6e9c1f7fc9a570f92",
+    "bytes": 1069
+  },
+  {
+    "path": "resources/nnc_ic_play_inside@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_play_inside@2x.png",
+    "sha256": "5ba784037ce6eed39950eb8e7a349116beda75d781db31fdc9ad0dd216cbd726",
+    "bytes": 1296
+  },
+  {
+    "path": "resources/nnc_ic_play_next_video@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_play_next_video@2x.png",
+    "sha256": "3caa6d4e053980394e94b8ac23da93c33dc4640a889892d28687e493ac794742",
+    "bytes": 794
+  },
+  {
+    "path": "resources/nnc_ic_pwd_off@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_pwd_off@2x.png",
+    "sha256": "d657d5b19d1539eb9acae292a929a7b6368c8d3314119c69f3e7460aa7aa8007",
+    "bytes": 692
+  },
+  {
+    "path": "resources/nnc_ic_pwd_on@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_pwd_on@2x.png",
+    "sha256": "387fdf7f358b89b9afb3719a15a360c42c860c4d820ae1d4b7243474052f81e1",
+    "bytes": 734
+  },
+  {
+    "path": "resources/nnc_ic_qq@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_qq@2x.png",
+    "sha256": "8f1583dbaa2d60a5825600a94dfaf84383b848d440163638957b6acb5ee3ceb5",
+    "bytes": 2251
+  },
+  {
+    "path": "resources/nnc_ic_reg_more@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_reg_more@2x.png",
+    "sha256": "a4d3cb1cf54bed619a16eef263d157de3073615ec4260908b42ba9b03b8b0e82",
+    "bytes": 1170
+  },
+  {
+    "path": "resources/nnc_ic_search@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_search@2x.png",
+    "sha256": "b21eeda1d81a03779d401a3dbf10bd1471d9b027020d4222cc5087c99cc49c58",
+    "bytes": 783
+  },
+  {
+    "path": "resources/nnc_ic_search_close@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_search_close@2x.png",
+    "sha256": "7f1c751eb6f2910b2181727085f0ca2df282184483ce16fce0561b7a2cc1da6f",
+    "bytes": 1489
+  },
+  {
+    "path": "resources/nnc_ic_search_history_del@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_search_history_del@2x.png",
+    "sha256": "f8646fa22f9f83b4608c60db96420b316a4e2beed6d71a904e3d799df62fb33f",
+    "bytes": 1806
+  },
+  {
+    "path": "resources/nnc_ic_search_play@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_search_play@2x.png",
+    "sha256": "8d7ddfb496681f4c2e06b81c4c5bf33ececc299af05d73a452c71904317b1d6b",
+    "bytes": 314
+  },
+  {
+    "path": "resources/nnc_ic_setting@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_setting@2x.png",
+    "sha256": "38e35a778443714a4e7cb85e599455f0aa3bc6ce1cfa61451d4facc819e2dbe4",
+    "bytes": 2261
+  },
+  {
+    "path": "resources/nnc_ic_setting_dark@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_setting_dark@2x.png",
+    "sha256": "78f3a17a2246d95572cfdf3786e5bbf9c9d8f204ae49cda4f5461d5620e40b25",
+    "bytes": 2411
+  },
+  {
+    "path": "resources/nnc_ic_share@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_share@2x.png",
+    "sha256": "79472c274ee888a6f65b2dbd50df652db77244a9d89691bd983f536bb09d2ccb",
+    "bytes": 3413
+  },
+  {
+    "path": "resources/nnc_ic_share_download@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_share_download@2x.png",
+    "sha256": "161c312a85201fccfce066458525e2ae5153f22bec1c0fdef43cd163237382bc",
+    "bytes": 1672
+  },
+  {
+    "path": "resources/nnc_ic_share_link@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_share_link@2x.png",
+    "sha256": "298f7f3d83e5fe9a4d7550466ab3bc03220325c1f70a7b8e7518d77c9d390c9b",
+    "bytes": 2691
+  },
+  {
+    "path": "resources/nnc_ic_share_share@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_share_share@2x.png",
+    "sha256": "55ac45a64f3c6b2a761d177857dd578c5c46e97cdefdb3c136ff619ea2c6e24f",
+    "bytes": 2379
+  },
+  {
+    "path": "resources/nnc_ic_video_back@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_video_back@2x.png",
+    "sha256": "483efdee5b5dae94ac7d24b57e2424912312df02c01f269d9d0e6a4669cde6a8",
+    "bytes": 250
+  },
+  {
+    "path": "resources/nnc_ic_video_minus@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_video_minus@2x.png",
+    "sha256": "905aff16012c35a44aa1983f33377b64cd6e045cdaf7dc6795189531d3e59235",
+    "bytes": 567
+  },
+  {
+    "path": "resources/nnc_ic_video_play_flag@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_video_play_flag@2x.png",
+    "sha256": "b13e166bb74727a1078592431e528f3650314d84c02a54456ac66163e2950cab",
+    "bytes": 127
+  },
+  {
+    "path": "resources/nnc_ic_video_plus@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_video_plus@2x.png",
+    "sha256": "80a9d5aadae177e73b04f811ccd33bc0aa0f39d7ee30808d308588c4e89eb3df",
+    "bytes": 1020
+  },
+  {
+    "path": "resources/nnc_ic_video_select_no@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_video_select_no@2x.png",
+    "sha256": "54712b469106843fc197278890483c1dd73ca45149118aa98b33353516a99a6a",
+    "bytes": 298
+  },
+  {
+    "path": "resources/nnc_ic_video_select_yes@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_video_select_yes@2x.png",
+    "sha256": "f87db51fbffad88499f88fc6908fc31295379eebc5100761c1f628397a6cbd0a",
+    "bytes": 1118
+  },
+  {
+    "path": "resources/nnc_ic_vv_play@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_vv_play@2x.png",
+    "sha256": "5f43f9cb2fb8de703d86bc432d678d2c847bd0e4cdd6bf58651fba047d8f5142",
+    "bytes": 581
+  },
+  {
+    "path": "resources/nnc_ic_zone_download@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_zone_download@2x.png",
+    "sha256": "663a8fb754898768b2769a9826f80f7d000c8a046ca77930e3ddd4f6283c7ff3",
+    "bytes": 714
+  },
+  {
+    "path": "resources/nnc_ic_zone_fav@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_zone_fav@2x.png",
+    "sha256": "2d4c08359fe9ae2444458837a31ee4b55e44d84bc565f0bd20a4ef153a6bb676",
+    "bytes": 903
+  },
+  {
+    "path": "resources/nnc_ic_zone_feed@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_zone_feed@2x.png",
+    "sha256": "6fb57fbbe80c5988129f6f3b6744269254494f1296439c163aa1016e3fdf5150",
+    "bytes": 916
+  },
+  {
+    "path": "resources/nnc_ic_zone_msg@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_zone_msg@2x.png",
+    "sha256": "c7de893f4a8ef67e4044f0a03fb87331a919bf9324c23be5a4239f457673f7fd",
+    "bytes": 781
+  },
+  {
+    "path": "resources/nnc_ic_zone_setting@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_zone_setting@2x.png",
+    "sha256": "62148ef8588b6ba9bbed5cf67d760acc66a301700865a12fcb1c875bb962afc9",
+    "bytes": 1166
+  },
+  {
+    "path": "resources/nnc_ic_zone_share@2x.png",
+    "source_member": "Payload/prince.app/nnc_ic_zone_share@2x.png",
+    "sha256": "8d79e72945f2b306a3e9af9ee3c73c51c0b3e898121cfc826b33169bd722174d",
+    "bytes": 663
+  },
+  {
+    "path": "resources/nnc_icon_circle_select_normal@2x.png",
+    "source_member": "Payload/prince.app/nnc_icon_circle_select_normal@2x.png",
+    "sha256": "6044260323651f943b635f8229633880740371264f3bb9ca1d8c5610d17dd704",
+    "bytes": 1076
+  },
+  {
+    "path": "resources/nnc_icon_circle_select_selected@2x.png",
+    "source_member": "Payload/prince.app/nnc_icon_circle_select_selected@2x.png",
+    "sha256": "5885483f39588ab83d8122b2557dd5fe54c06d2217b6a9a846f5439b0dde77a0",
+    "bytes": 1760
+  },
+  {
+    "path": "resources/nnc_image_back@2x.png",
+    "source_member": "Payload/prince.app/nnc_image_back@2x.png",
+    "sha256": "8ea4b700c0ab573c688bf7e847801fff3f1ba958adfc4ef0bb897eb64ee87c9a",
+    "bytes": 284
+  },
+  {
+    "path": "resources/nnc_img_teen@2x.png",
+    "source_member": "Payload/prince.app/nnc_img_teen@2x.png",
+    "sha256": "50c5b55171c5abfaecfdebfba8069454112384a8e237411589dd0c8ff9b6cef7",
+    "bytes": 181680
+  },
+  {
+    "path": "resources/nnc_main_normal@2x.png",
+    "source_member": "Payload/prince.app/nnc_main_normal@2x.png",
+    "sha256": "123cebbb4b599a6423af5dbf706b44b916d2fbb2ad504aa45ee542be26474700",
+    "bytes": 661
+  },
+  {
+    "path": "resources/nnc_main_selected@2x.png",
+    "source_member": "Payload/prince.app/nnc_main_selected@2x.png",
+    "sha256": "02a698436553d50adfb09d2f9d4b80687d980251d45ac66aa347a1b8414c3e05",
+    "bytes": 614
+  },
+  {
+    "path": "resources/nnc_me_normal@2x.png",
+    "source_member": "Payload/prince.app/nnc_me_normal@2x.png",
+    "sha256": "34c0bdeb3173de1c32f10f07653d5237605717aabda6792d03ebbf83cd07f0d8",
+    "bytes": 797
+  },
+  {
+    "path": "resources/nnc_me_selected@2x.png",
+    "source_member": "Payload/prince.app/nnc_me_selected@2x.png",
+    "sha256": "4ec8a8137c2d4ee298a4bcf1b852f0b252803e2a439711ca783f5c32be94a626",
+    "bytes": 743
+  },
+  {
+    "path": "resources/nnc_notice_right@2x.png",
+    "source_member": "Payload/prince.app/nnc_notice_right@2x.png",
+    "sha256": "7f25ff42f806d25c3474ca9f37751560d37f2c1d7b255641a1f6c6c9a583570c",
+    "bytes": 97874
+  },
+  {
+    "path": "resources/nnc_rank_normal@2x.png",
+    "source_member": "Payload/prince.app/nnc_rank_normal@2x.png",
+    "sha256": "d945b8cc171bcc843109c81024192f90cdc0747c716aa77e48c80c54ec7e5673",
+    "bytes": 786
+  },
+  {
+    "path": "resources/nnc_rank_selected@2x.png",
+    "source_member": "Payload/prince.app/nnc_rank_selected@2x.png",
+    "sha256": "286a764a5114a34232133f7d7f3a895ff7803e83c25c99d0da91eafe4fa46ab1",
+    "bytes": 733
+  },
+  {
+    "path": "resources/nnc_search@2x.png",
+    "source_member": "Payload/prince.app/nnc_search@2x.png",
+    "sha256": "b21eeda1d81a03779d401a3dbf10bd1471d9b027020d4222cc5087c99cc49c58",
+    "bytes": 783
+  },
+  {
+    "path": "resources/nnc_show_left@2x.png",
+    "source_member": "Payload/prince.app/nnc_show_left@2x.png",
+    "sha256": "8ea4b700c0ab573c688bf7e847801fff3f1ba958adfc4ef0bb897eb64ee87c9a",
+    "bytes": 284
+  },
+  {
+    "path": "resources/nncloading_10@2x.png",
+    "source_member": "Payload/prince.app/nncloading_10@2x.png",
+    "sha256": "5dafe8da5e7f13c4e91b8219503b8296c2c7297ce954091686efbce041bd4591",
+    "bytes": 307
+  },
+  {
+    "path": "resources/nncloading_11@2x.png",
+    "source_member": "Payload/prince.app/nncloading_11@2x.png",
+    "sha256": "fd210a734368508cb6ca972d40b223c7c19d5e7eb07c184777ad77ec6d2c1f96",
+    "bytes": 310
+  },
+  {
+    "path": "resources/nncloading_12@2x.png",
+    "source_member": "Payload/prince.app/nncloading_12@2x.png",
+    "sha256": "50a7ab341cddeb9b4ce568a7ca3459abe979aed4caf91715a90b02d83310bf2c",
+    "bytes": 313
+  },
+  {
+    "path": "resources/nncloading_13@2x.png",
+    "source_member": "Payload/prince.app/nncloading_13@2x.png",
+    "sha256": "22876fd689b75b463c5e1108d232c8ac2c851b0fae2ca1dbee2369fb4835ca94",
+    "bytes": 313
+  },
+  {
+    "path": "resources/nncloading_14@2x.png",
+    "source_member": "Payload/prince.app/nncloading_14@2x.png",
+    "sha256": "5623aeb7db8f29a31ede9df0c0981f25e6a0158d06ed23493f1c0f7a38496f52",
+    "bytes": 310
+  },
+  {
+    "path": "resources/nncloading_15@2x.png",
+    "source_member": "Payload/prince.app/nncloading_15@2x.png",
+    "sha256": "9a45701bdf806af2b46647ae9af8136d9442cc42ee4f17ace0bc920f37afd0df",
+    "bytes": 306
+  },
+  {
+    "path": "resources/nncloading_16@2x.png",
+    "source_member": "Payload/prince.app/nncloading_16@2x.png",
+    "sha256": "77141626b53d59669c2e9b107206685ff5e22063e3640075b88f1937b43d9c32",
+    "bytes": 307
+  },
+  {
+    "path": "resources/nncloading_17@2x.png",
+    "source_member": "Payload/prince.app/nncloading_17@2x.png",
+    "sha256": "9a45701bdf806af2b46647ae9af8136d9442cc42ee4f17ace0bc920f37afd0df",
+    "bytes": 306
+  },
+  {
+    "path": "resources/nncloading_18@2x.png",
+    "source_member": "Payload/prince.app/nncloading_18@2x.png",
+    "sha256": "2225fb3aca5c1004c9900f2392388034a9adfc456700f36110159da8c9882dbf",
+    "bytes": 308
+  },
+  {
+    "path": "resources/nncloading_19@2x.png",
+    "source_member": "Payload/prince.app/nncloading_19@2x.png",
+    "sha256": "8022f99a310f3b55555871a1758f2dc6fef80371c9569c62ec6d820a5adc47cd",
+    "bytes": 313
+  },
+  {
+    "path": "resources/nncloading_1@2x.png",
+    "source_member": "Payload/prince.app/nncloading_1@2x.png",
+    "sha256": "2fcf2982b7cdd4d8671178d6327d0f48fde911e443c876d6b1fe1b652506ab51",
+    "bytes": 311
+  },
+  {
+    "path": "resources/nncloading_20@2x.png",
+    "source_member": "Payload/prince.app/nncloading_20@2x.png",
+    "sha256": "e28f4ef214d247b02cf73d00722536fa45ce6ad3cdc0dbe65e9c531ec9276b19",
+    "bytes": 311
+  },
+  {
+    "path": "resources/nncloading_21@2x.png",
+    "source_member": "Payload/prince.app/nncloading_21@2x.png",
+    "sha256": "467166c9381a59ca332bf90f68b163871202729eb14054bcaf08d16c8e2ff6cc",
+    "bytes": 309
+  },
+  {
+    "path": "resources/nncloading_22@2x.png",
+    "source_member": "Payload/prince.app/nncloading_22@2x.png",
+    "sha256": "a4e3c2357979c8ae9e92186d91e247378eb9ef25e301f451366fd84ca97b184c",
+    "bytes": 307
+  },
+  {
+    "path": "resources/nncloading_23@2x.png",
+    "source_member": "Payload/prince.app/nncloading_23@2x.png",
+    "sha256": "e960e82be09f7f81f2f5152cffea51a4a94e9fda7990ccd3280f9be17c61ce0e",
+    "bytes": 303
+  },
+  {
+    "path": "resources/nncloading_24@2x.png",
+    "source_member": "Payload/prince.app/nncloading_24@2x.png",
+    "sha256": "69d98af68ee8569e55bbf2a4cd0ed3552747088754545812eee6aa984554e32b",
+    "bytes": 303
+  },
+  {
+    "path": "resources/nncloading_25@2x.png",
+    "source_member": "Payload/prince.app/nncloading_25@2x.png",
+    "sha256": "3b85e0e4ebbe0699e269799e7a57f0b04ed9e8044fc28c5ae9e9cc9f893b99a5",
+    "bytes": 300
+  },
+  {
+    "path": "resources/nncloading_26@2x.png",
+    "source_member": "Payload/prince.app/nncloading_26@2x.png",
+    "sha256": "7a8cd5ae91063c1cbeea7a1736132c289814746b9cabebc928316f80c890f7d1",
+    "bytes": 296
+  },
+  {
+    "path": "resources/nncloading_27@2x.png",
+    "source_member": "Payload/prince.app/nncloading_27@2x.png",
+    "sha256": "67e525131058f6457d1639f4fa6fc2b62b0fb86233aca69209d3d4c26b3e3f36",
+    "bytes": 302
+  },
+  {
+    "path": "resources/nncloading_28@2x.png",
+    "source_member": "Payload/prince.app/nncloading_28@2x.png",
+    "sha256": "45ea121f3513ba6d19af6f46b6cf5d79c04ace1d652457e86e236bec75bffcd0",
+    "bytes": 300
+  },
+  {
+    "path": "resources/nncloading_29@2x.png",
+    "source_member": "Payload/prince.app/nncloading_29@2x.png",
+    "sha256": "0357694ad54308dfc28b5317854598d3625cc171678ec1112c1be94e113d0e82",
+    "bytes": 301
+  },
+  {
+    "path": "resources/nncloading_2@2x.png",
+    "source_member": "Payload/prince.app/nncloading_2@2x.png",
+    "sha256": "f0c612ee04d77730b239fb82a5b18717cb850b60eb22a32a797b3f9237573c68",
+    "bytes": 315
+  },
+  {
+    "path": "resources/nncloading_30@2x.png",
+    "source_member": "Payload/prince.app/nncloading_30@2x.png",
+    "sha256": "8686d1070e210783ad4dbb563e7b9903e945ea866195cc28e67cb74c7d1dd7a4",
+    "bytes": 302
+  },
+  {
+    "path": "resources/nncloading_31@2x.png",
+    "source_member": "Payload/prince.app/nncloading_31@2x.png",
+    "sha256": "47ae0ff9dcba0ceb0d4c97f74386594f6c1155e86d5e6b8de131b8997d9dc297",
+    "bytes": 308
+  },
+  {
+    "path": "resources/nncloading_32@2x.png",
+    "source_member": "Payload/prince.app/nncloading_32@2x.png",
+    "sha256": "872107044447d0782eb18f48acd0399a11d454621ee0ce0c938e700ac814e43b",
+    "bytes": 301
+  },
+  {
+    "path": "resources/nncloading_33@2x.png",
+    "source_member": "Payload/prince.app/nncloading_33@2x.png",
+    "sha256": "65cc3690569e3f0869f43e911af5dcb1a6f61af7a7b69b6859b9e53298ed2002",
+    "bytes": 300
+  },
+  {
+    "path": "resources/nncloading_34@2x.png",
+    "source_member": "Payload/prince.app/nncloading_34@2x.png",
+    "sha256": "3cdf888263f097aaf2a3ebc42af4e8a37786dece64c4f789704fcda57a5d0681",
+    "bytes": 295
+  },
+  {
+    "path": "resources/nncloading_35@2x.png",
+    "source_member": "Payload/prince.app/nncloading_35@2x.png",
+    "sha256": "568a6382409e962c5e601b9810f031807d73982e81ea66cf9bcbf09ba8333d91",
+    "bytes": 302
+  },
+  {
+    "path": "resources/nncloading_36@2x.png",
+    "source_member": "Payload/prince.app/nncloading_36@2x.png",
+    "sha256": "686ca73796089ea7261c254e2a04e884307cc23b9b9dc847804d8584890ea585",
+    "bytes": 294
+  },
+  {
+    "path": "resources/nncloading_37@2x.png",
+    "source_member": "Payload/prince.app/nncloading_37@2x.png",
+    "sha256": "e3e3beb17c0f077588771e0b12c5acb0735e29159f840be7462f3a5078c5a324",
+    "bytes": 296
+  },
+  {
+    "path": "resources/nncloading_38@2x.png",
+    "source_member": "Payload/prince.app/nncloading_38@2x.png",
+    "sha256": "7597d3f4d46654d956b6bc70d873c3be33a2357597a3e8d272968bcf6465b199",
+    "bytes": 292
+  },
+  {
+    "path": "resources/nncloading_39@2x.png",
+    "source_member": "Payload/prince.app/nncloading_39@2x.png",
+    "sha256": "59afe2d3fc29836625a075623ed4937c744167c146ff569d130ff476fe1a8963",
+    "bytes": 303
+  },
+  {
+    "path": "resources/nncloading_3@2x.png",
+    "source_member": "Payload/prince.app/nncloading_3@2x.png",
+    "sha256": "28000ba9d80f27c0c316ec95fa3ebba98183f5f1680556249e8161702cbed5e0",
+    "bytes": 316
+  },
+  {
+    "path": "resources/nncloading_40@2x.png",
+    "source_member": "Payload/prince.app/nncloading_40@2x.png",
+    "sha256": "a64db86725815484cd038a4775a377cb0494853525360be2bd164c869f93d0dc",
+    "bytes": 304
+  },
+  {
+    "path": "resources/nncloading_41@2x.png",
+    "source_member": "Payload/prince.app/nncloading_41@2x.png",
+    "sha256": "c4f43032426983201700abcbdbf58f158e245cde69d7a41635bee1b1265a2616",
+    "bytes": 295
+  },
+  {
+    "path": "resources/nncloading_42@2x.png",
+    "source_member": "Payload/prince.app/nncloading_42@2x.png",
+    "sha256": "6ad3851301c6649a6268f261b92a1f7227ef5773eb5d18b16e409ef7164951c8",
+    "bytes": 307
+  },
+  {
+    "path": "resources/nncloading_43@2x.png",
+    "source_member": "Payload/prince.app/nncloading_43@2x.png",
+    "sha256": "c9dd22002345fb7a1c7d78e9c7b5eb0cbb1592830b7abdb382b926c60783cbab",
+    "bytes": 313
+  },
+  {
+    "path": "resources/nncloading_44@2x.png",
+    "source_member": "Payload/prince.app/nncloading_44@2x.png",
+    "sha256": "6f692689a0249bc16b89423ffc2e725f9469791571d5c5d5797775cafba2a06c",
+    "bytes": 309
+  },
+  {
+    "path": "resources/nncloading_45@2x.png",
+    "source_member": "Payload/prince.app/nncloading_45@2x.png",
+    "sha256": "21f661719c4d54258f1a1e407d1d5bced47973ae179982baeac0d142423e1daa",
+    "bytes": 315
+  },
+  {
+    "path": "resources/nncloading_46@2x.png",
+    "source_member": "Payload/prince.app/nncloading_46@2x.png",
+    "sha256": "3cabb3338cde9a400308726c39005ddfc87ec512bcef4c801f8ed0e6c30c6f93",
+    "bytes": 312
+  },
+  {
+    "path": "resources/nncloading_47@2x.png",
+    "source_member": "Payload/prince.app/nncloading_47@2x.png",
+    "sha256": "f37f8a300a6912a8344059379b4e4d2d9544555fba156f647f2df530f6e75625",
+    "bytes": 310
+  },
+  {
+    "path": "resources/nncloading_48@2x.png",
+    "source_member": "Payload/prince.app/nncloading_48@2x.png",
+    "sha256": "b4e25263a3f284d84691465cba21fe3c930c6c378bd5a591e25db45627d3878b",
+    "bytes": 309
+  },
+  {
+    "path": "resources/nncloading_49@2x.png",
+    "source_member": "Payload/prince.app/nncloading_49@2x.png",
+    "sha256": "49234451a1e22e8b07c77407e75d7adbcdc4c6a2f382d33c894053972a1b0f8b",
+    "bytes": 308
+  },
+  {
+    "path": "resources/nncloading_4@2x.png",
+    "source_member": "Payload/prince.app/nncloading_4@2x.png",
+    "sha256": "bf5f4ece3b9df9583bdb8f4dbfb3e909e32cbcc8df5ae338172c035196f7682d",
+    "bytes": 315
+  },
+  {
+    "path": "resources/nncloading_50@2x.png",
+    "source_member": "Payload/prince.app/nncloading_50@2x.png",
+    "sha256": "5fcdf706598556890c6650401cec96b9584bd6310ccfe4efe1c5404d16fa04ec",
+    "bytes": 306
+  },
+  {
+    "path": "resources/nncloading_51@2x.png",
+    "source_member": "Payload/prince.app/nncloading_51@2x.png",
+    "sha256": "6d27bc1889b8fcdeb06828801517efcfc76b6b79a12135737ec60b57873c387f",
+    "bytes": 311
+  },
+  {
+    "path": "resources/nncloading_52@2x.png",
+    "source_member": "Payload/prince.app/nncloading_52@2x.png",
+    "sha256": "b781bf51cc45cff77093bc3960adc93eab7bc037985f041d1bd071d4d8951734",
+    "bytes": 310
+  },
+  {
+    "path": "resources/nncloading_53@2x.png",
+    "source_member": "Payload/prince.app/nncloading_53@2x.png",
+    "sha256": "74cd78944757c7d1bfc005ac7c0bd9f1353b92c0fadbb21223be73ae4a73fe28",
+    "bytes": 306
+  },
+  {
+    "path": "resources/nncloading_54@2x.png",
+    "source_member": "Payload/prince.app/nncloading_54@2x.png",
+    "sha256": "56a94d0e592602cc9dcd5167b925cce9e9f70f1b1846da7fa3839f48b8a85af7",
+    "bytes": 309
+  },
+  {
+    "path": "resources/nncloading_55@2x.png",
+    "source_member": "Payload/prince.app/nncloading_55@2x.png",
+    "sha256": "55f824a182d7f31772d87cc5bacaca5d9b1b1180eb80a1def75415095ddea886",
+    "bytes": 301
+  },
+  {
+    "path": "resources/nncloading_56@2x.png",
+    "source_member": "Payload/prince.app/nncloading_56@2x.png",
+    "sha256": "b4bd179f78f9d6b59246bc8e0b40e4244d93c3cfc1e428a4b096b97866e6fd64",
+    "bytes": 311
+  },
+  {
+    "path": "resources/nncloading_57@2x.png",
+    "source_member": "Payload/prince.app/nncloading_57@2x.png",
+    "sha256": "573d350fc8a26173be74babdbe9167ef4d2dd7b713c06a008a9396bd137dedc4",
+    "bytes": 312
+  },
+  {
+    "path": "resources/nncloading_58@2x.png",
+    "source_member": "Payload/prince.app/nncloading_58@2x.png",
+    "sha256": "05eeb969290a48359a0458475969c9e50b3ee4b87b6cb12070a2d00239b2edf6",
+    "bytes": 315
+  },
+  {
+    "path": "resources/nncloading_59@2x.png",
+    "source_member": "Payload/prince.app/nncloading_59@2x.png",
+    "sha256": "2fcf2982b7cdd4d8671178d6327d0f48fde911e443c876d6b1fe1b652506ab51",
+    "bytes": 311
+  },
+  {
+    "path": "resources/nncloading_5@2x.png",
+    "source_member": "Payload/prince.app/nncloading_5@2x.png",
+    "sha256": "5a3b5fb06314d25757cc85741203d9472248eb82769c7cdd833f47f66c3d557e",
+    "bytes": 306
+  },
+  {
+    "path": "resources/nncloading_60@2x.png",
+    "source_member": "Payload/prince.app/nncloading_60@2x.png",
+    "sha256": "2fcf2982b7cdd4d8671178d6327d0f48fde911e443c876d6b1fe1b652506ab51",
+    "bytes": 311
+  },
+  {
+    "path": "resources/nncloading_6@2x.png",
+    "source_member": "Payload/prince.app/nncloading_6@2x.png",
+    "sha256": "961724e42cab45ded3bf84193f4d017a445f9efb9048ec2bd31c6c1a9cfadf0c",
+    "bytes": 304
+  },
+  {
+    "path": "resources/nncloading_7@2x.png",
+    "source_member": "Payload/prince.app/nncloading_7@2x.png",
+    "sha256": "988b374bf917944dd2d99cf52b0782937af1f968979e5eaebdfc342825c0c01a",
+    "bytes": 307
+  },
+  {
+    "path": "resources/nncloading_8@2x.png",
+    "source_member": "Payload/prince.app/nncloading_8@2x.png",
+    "sha256": "5f4a6aa0ecc16530f63be9d6d31a0e7a3a7fdb45bb69d1bcca5be8dfed812700",
+    "bytes": 305
+  },
+  {
+    "path": "resources/nncloading_9@2x.png",
+    "source_member": "Payload/prince.app/nncloading_9@2x.png",
+    "sha256": "3a507d22f0f2fba53f4f4e033ff4e00271822ab543b50b36cb82c3fcd427b110",
+    "bytes": 308
+  },
+  {
+    "path": "resources/tab_unread@2x.png",
+    "source_member": "Payload/prince.app/tab_unread@2x.png",
+    "sha256": "f01d2f7a0cffc7e1ed8b4055f2cd64ce77e0b10c42bf3873f4671ea3739dcd4f",
+    "bytes": 742
+  },
+  {
+    "path": "resources/verify_close@2x.png",
+    "source_member": "Payload/prince.app/verify_close@2x.png",
+    "sha256": "464d96bca4e26369b291a348812a2c708d118f66d933cb361eb4481012ec922f",
+    "bytes": 2517
+  }
+]

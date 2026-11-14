@@ -1,0 +1,43 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCEmptyCell.awakeFromNib | 0x1000c184c | ev_0ebf5cd56451417ee95292e7357617488727e619274bd3fb00b756d6a29a9071 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NNCEmptyCell::awakeFromNib(ID param_1,SEL param_2)
+
+{
+  ID local_20;
+  class_t *pcStack_18;
+  
+  pcStack_18 = &objc::class_t::NNCEmptyCell;
+  local_20 = param_1;
+  _objc_msgSendSuper2(&local_20,"awakeFromNib");
+  return;
+}
+
+
+
+/* NNCEmptyCell.setSelected:animated: | 0x1000c1880 | ev_42f68a11d3f1e786c1817cfde9a5e579f2750e6d6bdf645f740deadca9ceb595 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCEmptyCell::setSelected_animated_(ID param_1,SEL param_2,bool param_3,bool param_4)
+
+{
+  return;
+}
+
+
+
+/* NNCEmptyCell.setHighlighted:animated: | 0x1000c1884 | ev_0fcabc8955049147dca8c18f30ccf92bd4370dc8ab5a58bffe857f0bb4d6a774 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCEmptyCell::setHighlighted_animated_(ID param_1,SEL param_2,bool param_3,bool param_4)
+
+{
+  return;
+}
+
+

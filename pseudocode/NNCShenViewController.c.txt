@@ -1,0 +1,503 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCShenViewController.backButtonAction | 0x100029dbc | ev_ede86c845b3ea20cae717e772de4c4a1b36a2e088f3da15f81b7d12fafe1fd30 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCShenViewController::backButtonAction(ID param_1,SEL param_2)
+
+{
+  undefined8 extraout_x1;
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_101580708();
+  FUN_10158c568(auVar1._0_8_,auVar1._8_8_,1);
+  FUN_101549e68(param_1,extraout_x1,1,&UNK_101d7bd30);
+  return;
+}
+
+
+
+/* NNCShenViewController.viewDidLoad | 0x100029e14 | ev_5df3b954641095568f11ace24e4d918a03ff8c5295a11d4f4e51732b980b19e4 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCShenViewController::viewDidLoad(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  SEL extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined1 auVar3 [16];
+  ID local_60;
+  class_t *pcStack_58;
+  
+  pcStack_58 = &objc::class_t::NNCShenViewController;
+  local_60 = param_1;
+  _objc_msgSendSuper2(&local_60,"viewDidLoad");
+  FUN_1015d7e08(param_1,extraout_x1,&cf_mr_j_);
+  uVar1 = FUN_101560a48(&_OBJC_CLASS___UIImage,extraout_x1_00,&cf_fanhuiImae);
+  auVar3 = _objc_alloc(&_OBJC_CLASS___UIBarButtonItem);
+  uVar1 = FUN_1015656a8(auVar3._0_8_,auVar3._8_8_,uVar1,0,param_1,"backButtonAction");
+  auVar3 = FUN_101580748(param_1);
+  FUN_1015bfaa8(auVar3._0_8_,auVar3._8_8_,uVar1);
+  FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_01,&cf_myTextColor);
+  IVar2 = FUN_1015fa0a8(param_1,extraout_x1_02);
+  FUN_1015a5908(IVar2);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_03,&cf_myBgColor);
+  auVar3 = FUN_10157e4e8(param_1);
+  FUN_1015d6fa8(auVar3._0_8_,auVar3._8_8_,uVar1);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_04,&cf_myBgColor);
+  auVar3 = FUN_10157e508(param_1);
+  FUN_1015d6fa8(auVar3._0_8_,auVar3._8_8_,uVar1);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_05,&cf_myBgColor);
+  auVar3 = FUN_10157e528(param_1);
+  FUN_1015d6fa8(auVar3._0_8_,auVar3._8_8_,uVar1);
+  auVar3 = FUN_1015ed1a8(param_1);
+  FUN_1015d6768(auVar3._0_8_,auVar3._8_8_,param_1,"switcherSelector:",0x1000);
+  auVar3 = FUN_1015ed1c8(param_1);
+  FUN_1015d6768(auVar3._0_8_,auVar3._8_8_,param_1,"switcherSelector2:",0x1000);
+  FUN_1015f5e48(param_1);
+  return;
+}
+
+
+
+/* NNCShenViewController.traitCollectionDidChange: | 0x10002a080 | ev_96dcc2d70e5e2521b1c27781c14e97c4fe1f6b069561deca5e9e2d41be1904c1 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShenViewController::traitCollectionDidChange_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  long lVar3;
+  ID local_50;
+  class_t *pcStack_48;
+  
+  pcStack_48 = &objc::class_t::NNCShenViewController;
+  local_50 = param_1;
+  _objc_msgSendSuper2(&local_50,"traitCollectionDidChange:",param_3);
+  uVar1 = FUN_1015f20a8(param_1);
+  lVar2 = FUN_1015f74c8(uVar1);
+  lVar3 = FUN_1015f74c8(param_3);
+  if (lVar2 != lVar3) {
+    FUN_1015f5e48(param_1);
+  }
+  return;
+}
+
+
+
+/* NNCShenViewController.updateUIForCurrentInterfaceStyle | 0x10002a12c | ev_c000c27d4d82ecc2353ea8b5437a89b8aad4b1e093273b3bc57d91ee84f8eab4 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCShenViewController::updateUIForCurrentInterfaceStyle(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  undefined1 auVar3 [16];
+  undefined1 auVar4 [16];
+  cfstringStruct *local_58;
+  cfstringStruct *pcStack_50;
+  cfstringStruct *local_48;
+  cfstringStruct *pcStack_40;
+  long local_38;
+  
+  local_38 = *(long *)PTR____stack_chk_guard_101d78938;
+  uVar1 = FUN_1015f20a8();
+  lVar2 = FUN_1015f74c8(uVar1);
+  if (lVar2 != 2) {
+    _NSLog(&cf_S_MR_fEmr_j_);
+    auVar3 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+    local_58 = &cf_key;
+    pcStack_50 = &cf_1;
+    auVar4 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar3._8_8_,&pcStack_50,&local_58,1);
+    FUN_10158ca68(auVar3._0_8_,auVar4._8_8_,&cf_CustomNotificationName,0,auVar4._0_8_);
+    auVar3 = FUN_1015ed1a8(param_1);
+    FUN_1015c6788(auVar3._0_8_,auVar3._8_8_,0);
+    auVar3 = FUN_1015ed1c8(param_1);
+  }
+  else {
+    _NSLog(&cf_S_MR_fmr_j_);
+    auVar3 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+    local_48 = &cf_key;
+    pcStack_40 = &cf_2;
+    auVar4 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar3._8_8_,&pcStack_40,&local_48,1);
+    FUN_10158ca68(auVar3._0_8_,auVar4._8_8_,&cf_CustomNotificationName,0,auVar4._0_8_);
+    auVar3 = FUN_1015ed1a8(param_1);
+    FUN_1015c6788(auVar3._0_8_,auVar3._8_8_,1);
+    auVar3 = FUN_1015ed1c8(param_1);
+  }
+  FUN_1015c6788(auVar3._0_8_,auVar3._8_8_,lVar2 != 2);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_38) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCShenViewController.switcherSelector: | 0x10002a33c | ev_64feecce49d698669defaba74a8d90290f660a2eb85d33c822ecd4164ea04b7a */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShenViewController::switcherSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  long lVar3;
+  cfstringStruct *pcVar4;
+  cfstringStruct **ppcVar5;
+  cfstringStruct **ppcVar6;
+  undefined1 auVar7 [16];
+  undefined1 auVar8 [16];
+  cfstringStruct *local_58;
+  cfstringStruct *pcStack_50;
+  cfstringStruct *local_48;
+  cfstringStruct *pcStack_40;
+  long local_38;
+  
+  local_38 = *(long *)PTR____stack_chk_guard_101d78938;
+  FUN_10156f648(param_3);
+  _NSLog(&cf_isOn1_d);
+  iVar1 = FUN_10156f648(param_3);
+  if (iVar1 == 0) {
+    _NSLog(&cf_sQmr);
+    uVar2 = FUN_1015f20a8(param_1);
+    lVar3 = FUN_1015f74c8(uVar2);
+    if (lVar3 == 2) {
+      _NSLog(&cf_S_MR_fmr_j_);
+      auVar7 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+      local_58 = &cf_key;
+      pcStack_50 = &cf_1;
+      ppcVar5 = &pcStack_50;
+      ppcVar6 = &local_58;
+      goto LAB_10002a4d4;
+    }
+    pcVar4 = &cf_S_MR_fEmr_j_;
+  }
+  else {
+    _NSLog(&::cf___);
+    auVar7 = FUN_1015ed1c8(param_1);
+    FUN_1015c6788(auVar7._0_8_,auVar7._8_8_,0);
+    uVar2 = FUN_1015f20a8(param_1);
+    lVar3 = FUN_1015f74c8(uVar2);
+    if (lVar3 != 2) {
+      _NSLog(&cf_S_MR_fEmr_j_);
+      auVar7 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+      local_48 = &cf_key;
+      pcStack_40 = &cf_2;
+      ppcVar5 = &pcStack_40;
+      ppcVar6 = &local_48;
+LAB_10002a4d4:
+      auVar8 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar7._8_8_,ppcVar5,ppcVar6,1);
+      FUN_10158ca68(auVar7._0_8_,auVar8._8_8_,&cf_CustomNotificationName,0,auVar8._0_8_);
+      uVar2 = 0;
+      goto LAB_10002a520;
+    }
+    pcVar4 = &cf_S_MR_fmr_j_;
+  }
+  uVar2 = _NSLog(pcVar4);
+LAB_10002a520:
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_38) {
+    return;
+  }
+  FUN_100ab8e90(uVar2);
+  return;
+}
+
+
+
+/* NNCShenViewController.switcherSelector2: | 0x10002a550 | ev_67bfc81fe196128d81b667174064057cf5301c2515b779af70960819f7fb2801 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShenViewController::switcherSelector2_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  long lVar4;
+  SEL extraout_x1;
+  cfstringStruct **ppcVar5;
+  cfstringStruct **ppcVar6;
+  undefined1 auVar7 [16];
+  undefined1 auVar8 [16];
+  cfstringStruct *local_78;
+  cfstringStruct *pcStack_70;
+  cfstringStruct *local_68;
+  cfstringStruct *pcStack_60;
+  cfstringStruct *local_58;
+  cfstringStruct *pcStack_50;
+  cfstringStruct *local_48;
+  cfstringStruct *local_40;
+  long local_38;
+  
+  local_38 = *(long *)PTR____stack_chk_guard_101d78938;
+  FUN_10156f648(param_3);
+  _NSLog(&cf_isOn2_d);
+  iVar1 = FUN_10156f648(param_3);
+  if (iVar1 == 0) {
+    _NSLog(&cf_sQ__);
+    uVar3 = FUN_1015f20a8(param_1);
+    lVar4 = FUN_1015f74c8(uVar3);
+    if (lVar4 == 2) {
+      _NSLog(&cf_S_MR_fmr_j_);
+      auVar7 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+      local_68 = &cf_key;
+      pcStack_60 = &cf_2;
+      ppcVar5 = &pcStack_60;
+      ppcVar6 = &local_68;
+    }
+    else {
+      _NSLog(&cf_S_MR_fEmr_j_);
+      auVar7 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+      local_78 = &cf_key;
+      pcStack_70 = &cf_1;
+      ppcVar5 = &pcStack_70;
+      ppcVar6 = &local_78;
+    }
+  }
+  else {
+    _NSLog(&::cf___);
+    auVar7 = FUN_1015ed1a8(param_1);
+    FUN_1015c6788(auVar7._0_8_,auVar7._8_8_,0);
+    iVar1 = FUN_1014eab94(2,0xd,0,0);
+    if (iVar1 != 0) {
+      IVar2 = FUN_1015fa0a8(param_1,extraout_x1);
+      auVar7 = FUN_1015fd648(IVar2);
+      FUN_1015c7788(auVar7._0_8_,auVar7._8_8_,0);
+    }
+    uVar3 = FUN_1015f20a8(param_1);
+    lVar4 = FUN_1015f74c8(uVar3);
+    if (lVar4 == 2) {
+      _NSLog(&cf_S_MR_fmr_j_);
+      auVar7 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+      local_48 = &cf_key;
+      local_40 = &cf_2;
+      ppcVar5 = &local_40;
+      ppcVar6 = &local_48;
+    }
+    else {
+      _NSLog(&cf_S_MR_fEmr_j_);
+      auVar7 = FUN_101545d48(&_OBJC_CLASS___NSNotificationCenter);
+      local_58 = &cf_key;
+      pcStack_50 = &cf_1;
+      ppcVar5 = &pcStack_50;
+      ppcVar6 = &local_58;
+    }
+  }
+  auVar8 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar7._8_8_,ppcVar5,ppcVar6,1);
+  FUN_10158ca68(auVar7._0_8_,auVar8._8_8_,&cf_CustomNotificationName,0,auVar8._0_8_);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_38) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCShenViewController.nameLaA | 0x10002a838 | ev_8d8a163f515280c18d8b30593b0ee210089725505bd2ec3a023f948655be1101 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShenViewController::nameLaA(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nameLaA);
+}
+
+
+
+/* NNCShenViewController.setNameLaA: | 0x10002a858 | ev_96aff7e8ddc196d017a1dae37899deee3703c977047da1532cd93e54b7922165 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShenViewController::setNameLaA_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nameLaA) = param_3;
+  return;
+}
+
+
+
+/* NNCShenViewController.nameLaB | 0x10002a86c | ev_35fe9ad9c082e33067b5b848b2db0b5dcc83ce83b6bd944caf19a051843d7f64 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShenViewController::nameLaB(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nameLaB);
+}
+
+
+
+/* NNCShenViewController.setNameLaB: | 0x10002a88c | ev_0af353ff8f3a4c8309dee21a16b1c71face5fcc25bef2562c67fc5585c43fbf1 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShenViewController::setNameLaB_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nameLaB) = param_3;
+  return;
+}
+
+
+
+/* NNCShenViewController.nameLaC | 0x10002a8a0 | ev_18cb9a4133a38ec9864c6105398cc5de5cea8d1a6366a097817bc42ee90eea1d */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShenViewController::nameLaC(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nameLaC);
+}
+
+
+
+/* NNCShenViewController.setNameLaC: | 0x10002a8c0 | ev_eff6b642e530572a328e30ce90f30c65b0977c00c7bb3ea6ba0b24b5b0e5aa45 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShenViewController::setNameLaC_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nameLaC) = param_3;
+  return;
+}
+
+
+
+/* NNCShenViewController.switcher1 | 0x10002a8d4 | ev_aa2972033e74d5b958ad21a9a4daafb1f44dd20a807f79d7106ecc394eed841a */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShenViewController::switcher1(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__switcher1);
+}
+
+
+
+/* NNCShenViewController.setSwitcher1: | 0x10002a8f4 | ev_db59c5acdf039ff8492b178931641f835f193641a22dfdca393f6030ab6bf4a1 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShenViewController::setSwitcher1_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__switcher1) = param_3;
+  return;
+}
+
+
+
+/* NNCShenViewController.switcher2 | 0x10002a908 | ev_8a20fafa63103539e0a97bab5fe9066b5b04264226bd64509429b8cd2b2de482 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShenViewController::switcher2(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__switcher2);
+}
+
+
+
+/* NNCShenViewController.setSwitcher2: | 0x10002a928 | ev_3b99859e56d4902c0bc5b7b5a6e73083e136532873ce544ebc1af0d247210405 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShenViewController::setSwitcher2_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__switcher2) = param_3;
+  return;
+}
+
+
+
+/* NNCShenViewController..cxx_destruct | 0x10002a93c | ev_e5d461bc242679aeec3167153fde4cbcc9005f66e1e835d24c39e83ef144396c */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCShenViewController::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + (long)__switcher2);
+  _objc_destroyWeak(param_1 + (long)__switcher1);
+  _objc_destroyWeak(param_1 + (long)__nameLaC);
+  _objc_destroyWeak(param_1 + (long)__nameLaB);
+  _objc_destroyWeak(param_1 + (long)__nameLaA);
+  return;
+}
+
+

@@ -1,0 +1,1721 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCDownloadEpisodeView.initWithFrame: | 0x1000e26ac | ev_fd40f40b4e37a789170b603594d29789ddac1c1deb3a5026e4d14644e633dbd3 */
+
+/* Function Stack Size: 0x30 bytes */
+
+ID NNCDownloadEpisodeView::initWithFrame_(ID param_1,SEL param_2,CGRect param_3)
+
+{
+  ID IVar1;
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCDownloadEpisodeView;
+  local_30 = param_1;
+  IVar1 = _objc_msgSendSuper2(param_3.field0_0x0.field0_0x0,param_3.field0_0x0.field1_0x8,
+                              param_3.field1_0x10.field0_0x0,param_3.field1_0x10.field1_0x8,
+                              &local_30,"initWithFrame:");
+  if (IVar1 != 0) {
+    FUN_101541948(IVar1);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCDownloadEpisodeView.createView | 0x1000e26fc | ev_e867860f04e019f48e7ae4e2176196a0bec83e96085f50249cd29d8438cba1a7 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDownloadEpisodeView::createView(ID param_1,SEL param_2)
+
+{
+  undefined *puVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  SEL extraout_x1_03;
+  SEL extraout_x1_04;
+  undefined8 extraout_x1_05;
+  SEL extraout_x1_06;
+  undefined8 extraout_x1_07;
+  undefined8 extraout_x1_08;
+  SEL extraout_x1_09;
+  undefined8 extraout_x1_10;
+  undefined8 extraout_x1_11;
+  SEL extraout_x1_12;
+  SEL extraout_x1_13;
+  undefined8 extraout_x1_14;
+  undefined8 extraout_x1_15;
+  SEL extraout_x1_16;
+  undefined8 extraout_x1_17;
+  SEL extraout_x1_18;
+  SEL extraout_x1_19;
+  undefined8 extraout_x1_20;
+  SEL extraout_x1_21;
+  undefined8 extraout_x1_22;
+  SEL extraout_x1_23;
+  undefined8 extraout_x1_24;
+  SEL extraout_x1_25;
+  long lVar4;
+  double dVar5;
+  undefined8 uVar6;
+  undefined8 uVar7;
+  undefined8 uVar8;
+  undefined8 uVar9;
+  undefined1 auVar10 [16];
+  undefined1 auVar11 [16];
+  undefined *local_118;
+  undefined8 local_110;
+  code *local_108;
+  undefined *puStack_100;
+  undefined1 auStack_f8 [8];
+  undefined *local_f0;
+  undefined8 local_e8;
+  code *local_e0;
+  undefined *puStack_d8;
+  undefined1 auStack_d0 [8];
+  undefined *local_c8;
+  undefined8 local_c0;
+  code *local_b8;
+  undefined *puStack_b0;
+  undefined1 auStack_a8 [8];
+  undefined1 auStack_a0 [16];
+  
+  auVar10 = FUN_10153a2e8(&_OBJC_CLASS___UIColor);
+  FUN_1015a5908(param_1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1,0);
+  FUN_1015a6a88(param_1,auVar10._8_8_,auVar10._0_8_);
+  uVar2 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_00,&cf_myBgColor);
+  auVar10 = FUN_101530968(param_1);
+  FUN_1015a5908(auVar10._0_8_,auVar10._8_8_,uVar2);
+  _objc_initWeak(auStack_a0,param_1);
+  uVar2 = FUN_101530968(param_1);
+  puVar1 = PTR___NSConcreteStackBlock_101d78760;
+  local_c8 = PTR___NSConcreteStackBlock_101d78760;
+  local_c0 = 0xc2000000;
+  local_b8 = FUN_1000e382c;
+  puStack_b0 = &UNK_101d7ba30;
+  _objc_copyWeak(auStack_a8,auStack_a0);
+  FUN_1015a70e8(uVar2,extraout_x1_01,0x40,&local_c8);
+  auVar10 = FUN_101530968(param_1);
+  FUN_101527148(param_1,auVar10._8_8_,auVar10._0_8_);
+  _objc_alloc(&_OBJC_CLASS___UIView);
+  uVar6 = *(undefined8 *)PTR__CGRectZero_101d78140;
+  uVar7 = *(undefined8 *)(PTR__CGRectZero_101d78140 + 8);
+  uVar8 = *(undefined8 *)(PTR__CGRectZero_101d78140 + 0x10);
+  uVar9 = *(undefined8 *)(PTR__CGRectZero_101d78140 + 0x18);
+  auVar10 = FUN_101564e08(uVar6,uVar7,uVar8,uVar9);
+  FUN_1015abde8(param_1,auVar10._8_8_,auVar10._0_8_);
+  FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_02,&cf_myTextColor);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_03);
+  FUN_1015a5908(IVar3);
+  FUN_10153e288(param_1,extraout_x1_04);
+  FUN_101527148(param_1);
+  auVar10 = FUN_1015813c8(&_OBJC_CLASS___UILabel);
+  FUN_1015d7f48(param_1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_1015f0328(param_1);
+  FUN_1015d6f48(auVar10._0_8_,auVar10._8_8_,1);
+  uVar2 = FUN_1015ed768(0x4031000000000000,&_OBJC_CLASS___UIFont);
+  auVar10 = FUN_1015f0328(param_1);
+  FUN_1015b4788(auVar10._0_8_,auVar10._8_8_,uVar2);
+  uVar2 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_05,&cf_myBgColor);
+  auVar10 = FUN_1015f0328(param_1);
+  FUN_1015d6fa8(auVar10._0_8_,auVar10._8_8_,uVar2);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_06);
+  auVar10 = FUN_1015f0328(param_1);
+  FUN_101527148(IVar3,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1_07,0);
+  FUN_1015c6e88(param_1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_101585ae8(param_1);
+  auVar11 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar10._8_8_,&cf_nnc_ic_detail_normal_order);
+  FUN_1015b8468(auVar10._0_8_,auVar11._8_8_,auVar11._0_8_,0);
+  auVar10 = FUN_101585ae8(param_1);
+  auVar11 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar10._8_8_,&cf_nnc_ic_detail_reverse);
+  FUN_1015b8468(auVar10._0_8_,auVar11._8_8_,auVar11._0_8_,4);
+  uVar2 = FUN_101585ae8(param_1);
+  local_f0 = puVar1;
+  local_e8 = 0xc2000000;
+  local_e0 = FUN_1000e3858;
+  puStack_d8 = &UNK_101d7ba30;
+  _objc_copyWeak(auStack_d0,auStack_a0);
+  FUN_1015a70e8(uVar2,extraout_x1_08,0x40,&local_f0);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_09);
+  auVar10 = FUN_101585ae8(param_1);
+  FUN_101527148(IVar3,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1_10,0);
+  FUN_1015aa708(param_1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_10153b128(param_1);
+  auVar11 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar10._8_8_,&cf_nnc_ic_close);
+  FUN_1015b8468(auVar10._0_8_,auVar11._8_8_,auVar11._0_8_,0);
+  uVar2 = FUN_10153b128(param_1);
+  local_118 = puVar1;
+  local_110 = 0xc2000000;
+  local_108 = FUN_1000e3918;
+  puStack_100 = &UNK_101d7ba30;
+  _objc_copyWeak(auStack_f8,auStack_a0);
+  FUN_1015a70e8(uVar2,extraout_x1_11,0x40,&local_118);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_12);
+  auVar10 = FUN_10153b128(param_1);
+  FUN_101527148(IVar3,auVar10._8_8_,auVar10._0_8_);
+  _objc_alloc(&_OBJC_CLASS___UIScrollView);
+  auVar10 = FUN_101564e08(uVar6,uVar7,uVar8,uVar9);
+  FUN_1015cf7c8(param_1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015ac048(auVar10._0_8_,auVar10._8_8_,2);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015a8f48(auVar10._0_8_,auVar10._8_8_,1);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015aee88(auVar10._0_8_,auVar10._8_8_,1);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015d22c8(auVar10._0_8_,auVar10._8_8_,0);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_1015a7808(auVar10._0_8_,auVar10._8_8_,0);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_13);
+  auVar10 = FUN_10159cd48(param_1);
+  FUN_101527148(IVar3,auVar10._8_8_,auVar10._0_8_);
+  _objc_alloc(&_OBJC_CLASS___UIImageView);
+  dVar5 = 40.0;
+  auVar10 = FUN_101564e08(0,0,0x4044000000000000,0x4010000000000000);
+  FUN_1015d04e8(param_1,auVar10._8_8_,auVar10._0_8_);
+  uVar2 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_14,&cf_myTextColor);
+  auVar10 = FUN_10159e9a8(param_1);
+  FUN_1015a5908(auVar10._0_8_,auVar10._8_8_,uVar2);
+  auVar10 = FUN_10159e9a8(param_1);
+  IVar3 = FUN_101574688(auVar10._0_8_,auVar10._8_8_);
+  FUN_1015ac5e8(0x4000000000000000,IVar3);
+  auVar10 = FUN_10159e9a8(param_1);
+  IVar3 = FUN_101574688(auVar10._0_8_,auVar10._8_8_);
+  FUN_1015c25a8(IVar3);
+  _objc_alloc(&_OBJC_CLASS___UICollectionViewFlowLayout);
+  auVar10 = FUN_101561e88();
+  FUN_1015aaec8(param_1,auVar10._8_8_,auVar10._0_8_);
+  uVar2 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+  FUN_101531d88(uVar2);
+  uVar2 = FUN_10153bd28(param_1);
+  FUN_1015be0c8((dVar5 + -30.0 + -10.0) * 0.5,0x4044000000000000,uVar2);
+  uVar2 = FUN_10153bd28(param_1);
+  FUN_1015c3788(0x4024000000000000,uVar2);
+  uVar2 = FUN_10153bd28(param_1);
+  FUN_1015c37c8(0x4024000000000000,uVar2);
+  uVar2 = _objc_alloc(&_OBJC_CLASS___UICollectionView);
+  auVar10 = FUN_10153bd28(param_1);
+  auVar10 = FUN_101564f68(uVar6,uVar7,uVar8,uVar9,uVar2,auVar10._8_8_,auVar10._0_8_);
+  FUN_1015aaee8(param_1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_10153a2e8(&_OBJC_CLASS___UIColor);
+  lVar4 = (long)__collectionView;
+  FUN_1015a5908(*(undefined8 *)(param_1 + lVar4),auVar10._8_8_,auVar10._0_8_);
+  FUN_1015ae568(*(undefined8 *)(param_1 + lVar4),extraout_x1_15,param_1);
+  FUN_1015aeee8(*(ID *)(param_1 + lVar4),extraout_x1_16,param_1);
+  FUN_1015cf868(*(undefined8 *)(param_1 + lVar4));
+  FUN_1015d2308(*(undefined8 *)(param_1 + lVar4),extraout_x1_17,0);
+  FUN_1015ac0c8(0,0,*(undefined8 *)(param_1 + lVar4));
+  IVar3 = FUN_10153bd48(param_1,extraout_x1_18);
+  auVar10 = FUN_1015818a8(&_OBJC_CLASS___UINib);
+  FUN_101592688(IVar3,auVar10._8_8_,auVar10._0_8_,&cf_NNCEpisodeCollectionCell);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_19);
+  FUN_101527148(IVar3);
+  auVar10 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+  FUN_1015d04a8(param_1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1_20,0);
+  FUN_1015c5a48(param_1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_101581ea8(param_1);
+  FUN_1015d7e48(auVar10._0_8_,auVar10._8_8_,&cf_hQ,0);
+  auVar10 = FUN_101581ea8(param_1);
+  auVar11 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar10._8_8_,&cf_nnc_icon_circle_select_normal);
+  FUN_1015b8468(auVar10._0_8_,auVar11._8_8_,auVar11._0_8_,0);
+  auVar10 = FUN_101581ea8(param_1);
+  auVar11 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar10._8_8_,&cf_xuanzeImage);
+  FUN_1015b8468(auVar10._0_8_,auVar11._8_8_,auVar11._0_8_,4);
+  auVar10 = FUN_101581ea8(param_1);
+  auVar11 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar10._8_8_,&cf_myBgColor);
+  FUN_1015d7ea8(auVar10._0_8_,auVar11._8_8_,auVar11._0_8_,0);
+  uVar2 = FUN_1015ed768(0x402c000000000000,&_OBJC_CLASS___UIFont);
+  uVar6 = FUN_101581ea8(param_1);
+  auVar10 = FUN_1015f0328(uVar6);
+  FUN_1015b4788(auVar10._0_8_,auVar10._8_8_,uVar2);
+  auVar10 = FUN_101581ea8(param_1);
+  FUN_101527248(auVar10._0_8_,auVar10._8_8_,param_1,"selectAllSelector:",0x40);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_21);
+  auVar10 = FUN_101581ea8(param_1);
+  FUN_101527148(IVar3,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1_22,0);
+  FUN_1015b09a8(param_1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_10154ac88(param_1);
+  FUN_1015d7e48(auVar10._0_8_,auVar10._8_8_,&cf_zsSN_,0);
+  auVar10 = FUN_10154ac88(param_1);
+  auVar11 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar10._8_8_,0xffffff);
+  FUN_1015d7ea8(auVar10._0_8_,auVar11._8_8_,auVar11._0_8_,0);
+  auVar10 = FUN_10154ac88(param_1);
+  auVar11 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar10._8_8_,0xffffff);
+  FUN_1015d7ea8(auVar10._0_8_,auVar11._8_8_,auVar11._0_8_,2);
+  uVar2 = FUN_101531668(0x402c000000000000,&_OBJC_CLASS___UIFont);
+  uVar6 = FUN_10154ac88(param_1);
+  auVar10 = FUN_1015f0328(uVar6);
+  FUN_1015b4788(auVar10._0_8_,auVar10._8_8_,uVar2);
+  uVar2 = FUN_10154ac88(param_1);
+  auVar10 = FUN_10153c088(0x3fc8181818181818,0x3fc7171717171717,0x3fc9191919191919,
+                          0x3ff0000000000000,&_OBJC_CLASS___UIColor);
+  auVar10 = FUN_101560e88(&_OBJC_CLASS___UIImage,auVar10._8_8_,auVar10._0_8_);
+  FUN_1015a5968(uVar2,auVar10._8_8_,auVar10._0_8_,2);
+  auVar10 = FUN_10154ac88(param_1);
+  auVar11 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar10._8_8_,0xff8038);
+  auVar11 = FUN_101560e88(&_OBJC_CLASS___UIImage,auVar11._8_8_,auVar11._0_8_);
+  FUN_1015a5968(auVar10._0_8_,auVar11._8_8_,auVar11._0_8_,0);
+  auVar10 = FUN_10154ac88(param_1);
+  FUN_101527248(auVar10._0_8_,auVar10._8_8_,param_1,"downloadSelector:",0x40);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_23);
+  auVar10 = FUN_10154ac88(param_1);
+  FUN_101527148(IVar3,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1_24,0);
+  FUN_1015d0128(param_1,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_10159e408(param_1);
+  FUN_1015d7e48(auVar10._0_8_,auVar10._8_8_,&cf_gwhQN_,0);
+  auVar10 = FUN_10159e408(param_1);
+  auVar11 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar10._8_8_,0xffffff);
+  FUN_1015d7ea8(auVar10._0_8_,auVar11._8_8_,auVar11._0_8_,0);
+  uVar2 = FUN_101531668(0x402c000000000000,&_OBJC_CLASS___UIFont);
+  uVar6 = FUN_10159e408(param_1);
+  auVar10 = FUN_1015f0328(uVar6);
+  FUN_1015b4788(auVar10._0_8_,auVar10._8_8_,uVar2);
+  auVar10 = FUN_10159e408(param_1);
+  FUN_101527248(auVar10._0_8_,auVar10._8_8_,param_1,"seeDownloadSelector:",0x40);
+  IVar3 = FUN_10153e288(param_1,extraout_x1_25);
+  auVar10 = FUN_10159e408(param_1);
+  FUN_101527148(IVar3,auVar10._8_8_,auVar10._0_8_);
+  _objc_destroyWeak(auStack_f8);
+  _objc_destroyWeak(auStack_d0);
+  _objc_destroyWeak(auStack_a8);
+  _objc_destroyWeak(auStack_a0);
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.setVideoBean: | 0x1000e3944 | ev_1145918107c8b63b8503f8be7cd48745170e2fdec1dd82ed7b546fdaf41b30aa */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setVideoBean_(ID param_1,SEL param_2,ID param_3)
+
+{
+  long lVar1;
+  int iVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  long lVar5;
+  ID IVar6;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined8 extraout_x1_07;
+  undefined8 extraout_x1_08;
+  undefined8 extraout_x1_09;
+  undefined8 extraout_x1_10;
+  SEL extraout_x1_11;
+  SEL extraout_x1_12;
+  SEL pcVar7;
+  long lVar8;
+  long lVar9;
+  long lVar10;
+  long lVar11;
+  undefined8 uVar12;
+  double dVar13;
+  double dVar14;
+  double dVar15;
+  undefined1 auVar16 [16];
+  undefined *local_b0;
+  undefined8 local_a8;
+  code *local_a0;
+  undefined *puStack_98;
+  undefined1 auStack_90 [8];
+  undefined1 auStack_88 [8];
+  
+  lVar8 = (long)__videoBean;
+  *(ID *)(param_1 + lVar8) = param_3;
+  uVar3 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+  uVar4 = FUN_1015e6768(*(ID *)(param_1 + lVar8));
+  iVar2 = FUN_101543448(param_1);
+  uVar4 = FUN_101583328(uVar4,extraout_x1,(long)iVar2);
+  auVar16 = FUN_10158b928(uVar4);
+  uVar3 = FUN_101559548(uVar3,auVar16._8_8_,auVar16._0_8_);
+  auVar16 = FUN_1015f0328(param_1);
+  FUN_1015d6f08(auVar16._0_8_,auVar16._8_8_,uVar3);
+  uVar3 = FUN_1015e6768(param_3);
+  iVar2 = FUN_101543448(param_1);
+  uVar3 = FUN_101583328(uVar3,extraout_x1_00,(long)iVar2);
+  uVar3 = FUN_10154eb88(uVar3);
+  lVar5 = FUN_10153f908(uVar3);
+  auVar16 = FUN_10159cd48(param_1);
+  FUN_1015b6fc8(auVar16._0_8_,auVar16._8_8_,lVar5 < 0x33);
+  FUN_1015749c8(param_1);
+  uVar3 = FUN_10159e968(param_1);
+  FUN_101593248(uVar3);
+  auVar16 = FUN_10154ac88(param_1);
+  FUN_1015b1c28(auVar16._0_8_,auVar16._8_8_,0);
+  uVar3 = FUN_10159cd48(param_1);
+  FUN_101593328(uVar3);
+  uVar3 = FUN_10159cd48(param_1);
+  FUN_1015ac0c8(*(undefined8 *)PTR__CGPointZero_101d78130,
+                *(undefined8 *)(PTR__CGPointZero_101d78130 + 8),uVar3);
+  FUN_1015b5ec8(param_1,extraout_x1_01,0);
+  lVar8 = lVar5 / 0x32;
+  if (lVar5 != lVar8 * 0x32 && -1 < lVar5 % 0x32) {
+    lVar8 = lVar8 + 1;
+  }
+  _objc_initWeak(auStack_88,param_1);
+  if (0 < lVar8) {
+    lVar11 = 0;
+    lVar10 = 0;
+    lVar9 = 0;
+    uVar3 = extraout_x1_02;
+    do {
+      uVar3 = FUN_101534f68(&_OBJC_CLASS___UIButton,uVar3,0);
+      uVar4 = FUN_10159cd48(param_1);
+      uVar4 = FUN_10155e568(uVar4);
+      FUN_1015b4b08((double)lVar11,0,0x4056800000000000,uVar4,uVar3);
+      uVar4 = FUN_1015ed768(0x402c000000000000,&_OBJC_CLASS___UIFont);
+      auVar16 = FUN_1015f0328(uVar3);
+      FUN_1015b4788(auVar16._0_8_,auVar16._8_8_,uVar4);
+      auVar16 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_03,&cf_myBgColor);
+      FUN_1015d7ea8(uVar3,auVar16._8_8_,auVar16._0_8_,0);
+      auVar16 = FUN_101585a88(&_OBJC_CLASS___UIColor);
+      FUN_1015d7ea8(uVar3,auVar16._8_8_,auVar16._0_8_,4);
+      FUN_1015d6328(uVar3,extraout_x1_04,lVar9);
+      local_b0 = PTR___NSConcreteStackBlock_101d78760;
+      local_a8 = 0xc2000000;
+      local_a0 = FUN_1000e40b0;
+      puStack_98 = &UNK_101d7ba30;
+      _objc_copyWeak(auStack_90,auStack_88);
+      FUN_1015a70e8(uVar3,extraout_x1_05,0x40,&local_b0);
+      lVar1 = lVar10 + 0x31;
+      if (lVar5 + -1 <= lVar10 + 0x31) {
+        lVar1 = lVar5 + -1;
+      }
+      if (lVar10 == lVar1) {
+        auVar16 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_06,&cf____);
+        FUN_1015d7e48(uVar3,auVar16._8_8_,auVar16._0_8_,0);
+      }
+      else {
+        auVar16 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_06,&cf____);
+        FUN_1015d7e48(uVar3,auVar16._8_8_,auVar16._0_8_,0);
+      }
+      iVar2 = FUN_101542ae8(param_1);
+      if ((lVar10 <= iVar2) && (iVar2 = FUN_101542ae8(param_1), iVar2 <= lVar1)) {
+        FUN_1015d03e8(uVar3,extraout_x1_07,1);
+        FUN_1015d0408(param_1,extraout_x1_08,uVar3);
+        uVar4 = FUN_10159e908(param_1);
+        uVar12 = FUN_1015384c8(uVar4);
+        uVar4 = FUN_10159e9a8(param_1);
+        FUN_1015a9928(uVar12,uVar4);
+        FUN_1015b5ec8(param_1,extraout_x1_09,lVar9);
+      }
+      auVar16 = FUN_10159cd48(param_1);
+      FUN_101527148(auVar16._0_8_,auVar16._8_8_,uVar3);
+      uVar4 = FUN_10159a248(uVar3);
+      uVar3 = FUN_10159cd48(param_1);
+      uVar12 = FUN_10155e568(uVar3);
+      uVar3 = FUN_10159cd48(param_1);
+      FUN_1015ac108(uVar4,uVar12,uVar3);
+      _objc_destroyWeak(auStack_90);
+      lVar9 = lVar9 + 1;
+      lVar10 = lVar10 + 0x32;
+      lVar11 = lVar11 + 100;
+      uVar3 = extraout_x1_10;
+    } while (lVar8 != lVar9);
+  }
+  uVar3 = FUN_10159cd48(param_1);
+  auVar16 = FUN_10159e9a8(param_1);
+  FUN_101527148(uVar3,auVar16._8_8_,auVar16._0_8_);
+  uVar3 = FUN_10159e908(param_1);
+  dVar13 = (double)FUN_10159a248(uVar3);
+  uVar3 = FUN_10159cd48(param_1);
+  dVar14 = (double)FUN_1015fc468(uVar3);
+  uVar3 = FUN_10159cd48(param_1);
+  dVar15 = (double)FUN_10153e6e8(uVar3);
+  pcVar7 = extraout_x1_11;
+  if (dVar14 + dVar15 < dVar13) {
+    uVar3 = FUN_10159cd48(param_1);
+    uVar4 = FUN_10159e908(param_1);
+    dVar13 = (double)FUN_10159a248(uVar4);
+    uVar4 = FUN_10159cd48(param_1);
+    dVar14 = (double)FUN_1015fc468(uVar4);
+    FUN_1015ac0c8(dVar13 - dVar14,0,uVar3);
+    pcVar7 = extraout_x1_12;
+  }
+  IVar6 = FUN_10153bd48(param_1,pcVar7);
+  FUN_101592d08(IVar6);
+  _objc_destroyWeak(auStack_88);
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.layoutSubviews | 0x1000e41e0 | ev_c60aeb8385ab4433bc8865333b726e64c49f8b72e170ad103ae3bd55ea434680 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDownloadEpisodeView::layoutSubviews(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  SEL extraout_x1_02;
+  SEL extraout_x1_03;
+  SEL extraout_x1_04;
+  SEL extraout_x1_05;
+  undefined8 extraout_x1_06;
+  undefined8 uVar3;
+  double dVar4;
+  double dVar5;
+  undefined8 in_d1;
+  undefined8 in_d2;
+  undefined8 in_d3;
+  double dVar6;
+  undefined1 auVar7 [16];
+  undefined1 auVar8 [16];
+  ID local_90;
+  class_t *pcStack_88;
+  
+  pcStack_88 = &objc::class_t::NNCDownloadEpisodeView;
+  local_90 = param_1;
+  _objc_msgSendSuper2(&local_90,"layoutSubviews");
+  uVar3 = FUN_101531d88(param_1);
+  uVar1 = FUN_101530968(param_1);
+  FUN_1015b4b08(uVar3,in_d1,in_d2,in_d3,uVar1);
+  dVar4 = (double)FUN_1015fc468(param_1);
+  dVar6 = dRam00000001024978c8 + dVar4 * 9.0 * 0.0625;
+  uVar1 = FUN_1015fc468(param_1);
+  dVar4 = (double)FUN_10155e568(param_1);
+  dVar5 = (double)FUN_1015fc468(param_1);
+  dVar5 = dRam00000001024978c8 + dVar5 * 9.0 * 0.0625;
+  IVar2 = FUN_10153e288(param_1,extraout_x1);
+  FUN_1015b4b08(0,dVar6,uVar1,dVar4 - dVar5,IVar2);
+  uVar3 = FUN_1015fc468(param_1);
+  uVar1 = FUN_1015f0328(param_1);
+  FUN_1015b4b08(0,0x4024000000000000,uVar3,0x4044000000000000,uVar1);
+  uVar1 = FUN_101585ae8(param_1);
+  FUN_1015b4b08(0x4020000000000000,0x4024000000000000,0x4044000000000000,0x4044000000000000,uVar1);
+  uVar1 = FUN_101585ae8(param_1);
+  FUN_1015b8608(0x401c000000000000,0x401c000000000000,0x401c000000000000,0x401c000000000000,uVar1);
+  uVar1 = FUN_10153b128(param_1);
+  FUN_1015b4b08(0,0x4014000000000000,0x4049000000000000,0x4049000000000000,uVar1);
+  dVar4 = (double)FUN_1015fc468(param_1);
+  uVar1 = FUN_10153b128(param_1);
+  FUN_1015ce268(dVar4 + -10.0,uVar1);
+  uVar1 = FUN_10153b128(param_1);
+  FUN_1015b8608(0x4030000000000000,0x4030000000000000,0x4030000000000000,0x4030000000000000,uVar1);
+  uVar1 = FUN_101581ea8(param_1);
+  FUN_1015dd9c8(0x4051800000000000,uVar1);
+  auVar7 = FUN_101581ea8(param_1);
+  FUN_101534e28(0x4014000000000000,&objc::class_t::PublicFunction,auVar7._8_8_,auVar7._0_8_,0);
+  uVar1 = FUN_101581ea8(param_1);
+  FUN_1015b6f28(0x404e000000000000,uVar1);
+  IVar2 = FUN_10153e288(param_1,extraout_x1_00);
+  dVar4 = (double)FUN_10155e568(IVar2);
+  uVar1 = FUN_101581ea8(param_1);
+  FUN_1015a76a8(dVar4 + -80.0,uVar1);
+  uVar1 = FUN_101581ea8(param_1);
+  FUN_1015bfa48(0x402e000000000000,uVar1);
+  IVar2 = FUN_10153e288(param_1,extraout_x1_01);
+  dVar4 = (double)FUN_10155e568(IVar2);
+  IVar2 = FUN_10153e288(param_1,extraout_x1_02);
+  dVar5 = (double)FUN_1015fc468(IVar2);
+  uVar1 = FUN_10154ac88(param_1);
+  FUN_1015b4b08(0x402e000000000000,dVar4 + -80.0,(dVar5 + -40.0) * 0.5,0x4044000000000000,uVar1);
+  IVar2 = FUN_10153e288(param_1,extraout_x1_03);
+  dVar4 = (double)FUN_10155e568(IVar2);
+  IVar2 = FUN_10153e288(param_1,extraout_x1_04);
+  dVar5 = (double)FUN_1015fc468(IVar2);
+  uVar1 = FUN_10159e408(param_1);
+  FUN_1015b4b08(0x402e000000000000,dVar4 + -80.0,(dVar5 + -40.0) * 0.5,0x4044000000000000,uVar1);
+  IVar2 = FUN_10153e288(param_1,extraout_x1_05);
+  dVar4 = (double)FUN_1015fc468(IVar2);
+  uVar1 = FUN_10159e408(param_1);
+  FUN_1015ce268(dVar4 + -15.0,uVar1);
+  auVar7 = FUN_10159e408(param_1);
+  IVar2 = FUN_101574688(auVar7._0_8_,auVar7._8_8_);
+  FUN_1015ac5e8(0x4014000000000000,IVar2);
+  auVar7 = FUN_10159e408(param_1);
+  IVar2 = FUN_101574688(auVar7._0_8_,auVar7._8_8_);
+  FUN_1015a7628(0x3ff0000000000000,IVar2);
+  uVar1 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_06,&cf_myBgColor);
+  _objc_retainAutorelease(uVar1);
+  FUN_1014fe4c8();
+  auVar7 = FUN_10159e408(param_1);
+  IVar2 = FUN_101574688(auVar7._0_8_,auVar7._8_8_);
+  FUN_1015a7548(IVar2);
+  auVar7 = FUN_10159e408(param_1);
+  auVar8 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar7._8_8_,&cf_myBgColor);
+  FUN_1015d7ea8(auVar7._0_8_,auVar8._8_8_,auVar8._0_8_,0);
+  auVar7 = FUN_10154ac88(param_1);
+  IVar2 = FUN_101574688(auVar7._0_8_,auVar7._8_8_);
+  FUN_1015ac5e8(0x4014000000000000,IVar2);
+  auVar7 = FUN_10154ac88(param_1);
+  IVar2 = FUN_101574688(auVar7._0_8_,auVar7._8_8_);
+  FUN_1015c25a8(IVar2);
+  FUN_1015749c8(param_1);
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.layoutButtom | 0x1000e4868 | ev_90acf44365198a433b9c835baf75ad3ec3f732671b60f2ab66ac00be06e89545 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDownloadEpisodeView::layoutButtom(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  double dVar4;
+  undefined8 uVar5;
+  double dVar6;
+  double dVar7;
+  
+  dVar4 = (double)FUN_1015fc468();
+  uVar2 = FUN_10159cd48(param_1);
+  FUN_1015b4b08(0x402e000000000000,0x404b800000000000,dVar4 + -30.0,0x4044000000000000,uVar2);
+  uVar2 = FUN_10159cd48(param_1);
+  uVar5 = FUN_10155e568(uVar2);
+  uVar2 = FUN_10159e9a8(param_1);
+  FUN_1015a76a8(uVar5,uVar2);
+  uVar2 = FUN_10159cd48(param_1);
+  iVar1 = FUN_10156e108(uVar2);
+  dVar4 = 70.0;
+  if (iVar1 == 0) {
+    dVar4 = 115.0;
+  }
+  dVar6 = (double)FUN_1015fc468(param_1);
+  IVar3 = FUN_10153e288(param_1,extraout_x1);
+  dVar7 = (double)FUN_10155e568(IVar3);
+  IVar3 = FUN_10153bd48(param_1,extraout_x1_00);
+  FUN_1015b4b08(0x402e000000000000,dVar4,dVar6 + -30.0,(dVar7 - dVar4) + -140.0,IVar3);
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.collectionView:numberOfItemsInSection: | 0x1000e49c8 | ev_e38c884a40d63c209bec315970e548914f6c1eda6e63710b951dec033a1d4b1a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+long_long NNCDownloadEpisodeView::collectionView_numberOfItemsInSection_
+                    (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  long_long lVar1;
+  int iVar2;
+  ID IVar3;
+  undefined8 uVar4;
+  long lVar5;
+  long lVar6;
+  undefined8 extraout_x1;
+  long_long lVar7;
+  
+  IVar3 = FUN_1015f8c48(param_1,param_2);
+  uVar4 = FUN_1015e6768(IVar3);
+  iVar2 = FUN_101543448(param_1);
+  uVar4 = FUN_101583328(uVar4,extraout_x1,(long)iVar2);
+  uVar4 = FUN_10154eb88(uVar4);
+  lVar5 = FUN_10153f908(uVar4);
+  lVar6 = FUN_10155b9e8(param_1);
+  lVar7 = lVar5 + lVar6 * -0x32;
+  lVar1 = 0x32;
+  if ((long)lVar7 < 0x33) {
+    lVar1 = lVar7;
+  }
+  return lVar1;
+}
+
+
+
+/* NNCDownloadEpisodeView.collectionView:cellForItemAtIndexPath: | 0x1000e4a8c | ev_07e83ab93a1b8471e8546ab5b272a8a8560ac936a2e3d202e3665c8143118d74 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID NNCDownloadEpisodeView::collectionView_cellForItemAtIndexPath_
+             (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  int iVar1;
+  ID IVar2;
+  ID IVar3;
+  undefined8 uVar4;
+  long lVar5;
+  long lVar6;
+  ulong uVar7;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  ulong uVar8;
+  undefined1 auVar9 [16];
+  undefined1 auVar10 [16];
+  undefined1 auVar11 [16];
+  
+  auVar9 = FUN_101546ec8(param_3,param_2,&cf_NNCEpisodeCollectionCell,param_4);
+  IVar2 = auVar9._0_8_;
+  IVar3 = FUN_1015f8c48(param_1,auVar9._8_8_);
+  uVar4 = FUN_1015e6768(IVar3);
+  iVar1 = FUN_101543448(param_1);
+  uVar4 = FUN_101583328(uVar4,extraout_x1,(long)iVar1);
+  uVar4 = FUN_10154eb88(uVar4);
+  lVar5 = FUN_10153f908(uVar4);
+  lVar6 = FUN_10155b9e8(param_1);
+  uVar4 = FUN_101585ae8(param_1);
+  iVar1 = FUN_101570a08(uVar4);
+  if (iVar1 == 0) {
+    lVar5 = FUN_1015725e8(param_4);
+  }
+  else {
+    uVar8 = lVar5 + lVar6 * -0x32;
+    if (0x31 < uVar8) {
+      uVar8 = 0x32;
+    }
+    uVar7 = FUN_1015725e8(param_4);
+    lVar5 = uVar8 + ~uVar7;
+  }
+  auVar9 = FUN_10155b9e8(param_1);
+  lVar5 = lVar5 + auVar9._0_8_ * 0x32;
+  IVar3 = FUN_1015f8c48(param_1,auVar9._8_8_);
+  uVar4 = FUN_1015e6768(IVar3);
+  iVar1 = FUN_101543448(param_1);
+  uVar4 = FUN_101583328(uVar4,extraout_x1_00,(long)iVar1);
+  auVar9 = FUN_10154eb88(uVar4);
+  auVar9 = FUN_101583328(auVar9._0_8_,auVar9._8_8_,lVar5);
+  FUN_1015bce68(IVar2,auVar9._8_8_,1);
+  auVar10 = FUN_10159e968(param_1);
+  auVar10 = FUN_10153e4a8(auVar10._0_8_,auVar10._8_8_,auVar9._0_8_);
+  FUN_1015bbb68(IVar2,auVar10._8_8_,auVar10._0_8_);
+  FUN_1015b8ce8(IVar2,extraout_x1_01,lVar5);
+  lVar6 = FUN_101561808(IVar2);
+  iVar1 = FUN_101542ae8(param_1);
+  FUN_1015bad88(IVar2,extraout_x1_02,lVar6 == iVar1);
+  auVar10 = FUN_101581aa8(param_1);
+  uVar4 = FUN_101583068(&_OBJC_CLASS___NSNumber,auVar10._8_8_,lVar5);
+  auVar11 = FUN_1015ebbe8(uVar4);
+  auVar10 = FUN_10153e4a8(auVar10._0_8_,auVar11._8_8_,auVar11._0_8_);
+  FUN_1015bb048(IVar2,auVar10._8_8_,auVar10._0_8_);
+  FUN_1015b2408(IVar2,extraout_x1_03,auVar9._0_8_);
+  return IVar2;
+}
+
+
+
+/* NNCDownloadEpisodeView.collectionView:didSelectItemAtIndexPath: | 0x1000e4d78 | ev_799ee4b74f5493cbf8ceb48bdecb86ce0e6f1c854b0847ef2d33a8bf2fe3a090 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCDownloadEpisodeView::collectionView_didSelectItemAtIndexPath_
+               (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  int iVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  long lVar4;
+  long lVar5;
+  ulong uVar6;
+  SEL extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  SEL extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  SEL extraout_x1_05;
+  ulong uVar7;
+  undefined1 auVar8 [16];
+  undefined1 auVar9 [16];
+  
+  FUN_101547168(param_3,param_2,param_4,0);
+  IVar2 = FUN_1015f8c48(param_1,extraout_x1);
+  uVar3 = FUN_1015e6768(IVar2);
+  iVar1 = FUN_101543448(param_1);
+  uVar3 = FUN_101583328(uVar3,extraout_x1_00,(long)iVar1);
+  uVar3 = FUN_10154eb88(uVar3);
+  lVar4 = FUN_10153f908(uVar3);
+  lVar5 = FUN_10155b9e8(param_1);
+  uVar3 = FUN_101585ae8(param_1);
+  iVar1 = FUN_101570a08(uVar3);
+  if (iVar1 == 0) {
+    lVar4 = FUN_1015725e8(param_4);
+  }
+  else {
+    uVar7 = lVar4 + lVar5 * -0x32;
+    if (0x31 < uVar7) {
+      uVar7 = 0x32;
+    }
+    uVar6 = FUN_1015725e8(param_4);
+    lVar4 = uVar7 + ~uVar6;
+  }
+  auVar8 = FUN_10155b9e8(param_1);
+  uVar3 = FUN_1015381c8(param_3,auVar8._8_8_,param_4);
+  auVar9 = FUN_10156cf08(uVar3);
+  if ((auVar9._0_8_ & 1) == 0) {
+    IVar2 = FUN_1015f8c48(param_1,auVar9._8_8_);
+    uVar3 = FUN_1015e6768(IVar2);
+    iVar1 = FUN_101543448(param_1);
+    uVar3 = FUN_101583328(uVar3,extraout_x1_03,(long)iVar1);
+    auVar9 = FUN_10154eb88(uVar3);
+    uVar3 = FUN_101583328(auVar9._0_8_,auVar9._8_8_,lVar4 + auVar8._0_8_ * 0x32);
+    auVar8 = FUN_10159e968(param_1);
+    iVar1 = FUN_10153e4a8(auVar8._0_8_,auVar8._8_8_,uVar3);
+    auVar8 = FUN_10159e968(param_1);
+    if (iVar1 == 0) {
+      FUN_101526528(auVar8._0_8_,auVar8._8_8_,uVar3);
+    }
+    else {
+      FUN_1015941c8();
+    }
+    uVar3 = FUN_10159e968(param_1);
+    lVar4 = FUN_10153f908(uVar3);
+    uVar3 = FUN_101581aa8(param_1);
+    auVar8 = FUN_10153f908(uVar3);
+    IVar2 = FUN_1015f8c48(param_1,auVar8._8_8_);
+    uVar3 = FUN_1015e6768(IVar2);
+    iVar1 = FUN_101543448(param_1);
+    uVar3 = FUN_101583328(uVar3,extraout_x1_04,(long)iVar1);
+    uVar3 = FUN_10154eb88(uVar3);
+    lVar5 = FUN_10153f908(uVar3);
+    auVar9 = FUN_101581ea8(param_1);
+    FUN_1015d03e8(auVar9._0_8_,auVar9._8_8_,auVar8._0_8_ + lVar4 == lVar5);
+    uVar3 = FUN_10159e968(param_1);
+    lVar4 = FUN_10153f908(uVar3);
+    auVar8 = FUN_10154ac88(param_1);
+    FUN_1015b1c28(auVar8._0_8_,auVar8._8_8_,lVar4 != 0);
+    IVar2 = FUN_10153bd48(param_1,extraout_x1_05);
+    FUN_101592d08(IVar2);
+  }
+  else {
+    iVar1 = FUN_10156c9e8(uVar3);
+    if (iVar1 != 0) {
+      FUN_1015bad88(uVar3,extraout_x1_01,1);
+      IVar2 = FUN_10153bd48(param_1,extraout_x1_02);
+      FUN_101592d08(IVar2);
+    }
+  }
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.selectAllSelector: | 0x1000e518c | ev_bd880907900ed100a537c039b5de15048f3af038b50cae2650f2ceb1a0cfb515 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::selectAllSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  uint uVar1;
+  int iVar2;
+  undefined8 uVar3;
+  ID IVar4;
+  long lVar5;
+  undefined8 uVar6;
+  undefined8 uVar7;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  SEL extraout_x1_03;
+  long lVar8;
+  undefined8 uVar9;
+  long lVar10;
+  undefined1 auVar11 [16];
+  undefined8 local_130;
+  long lStack_128;
+  long *local_120;
+  undefined8 uStack_118;
+  undefined8 local_110;
+  undefined8 uStack_108;
+  undefined8 uStack_100;
+  undefined8 uStack_f8;
+  undefined1 auStack_f0 [128];
+  long local_70;
+  
+  local_70 = *(long *)PTR____stack_chk_guard_101d78938;
+  uVar1 = FUN_101570a08();
+  FUN_1015d03e8(param_3,extraout_x1,uVar1 ^ 1);
+  iVar2 = FUN_101570a08(param_3);
+  uVar3 = FUN_10159e968(param_1);
+  FUN_101593248(uVar3);
+  if (iVar2 != 0) {
+    IVar4 = FUN_1015f8c48(param_1,extraout_x1_00);
+    uVar3 = FUN_1015e6768(IVar4);
+    iVar2 = FUN_101543448(param_1);
+    uVar3 = FUN_101583328(uVar3,extraout_x1_01,(long)iVar2);
+    auVar11 = FUN_10154eb88(uVar3);
+    uVar3 = auVar11._0_8_;
+    uStack_108 = 0;
+    local_110 = 0;
+    uStack_f8 = 0;
+    uStack_100 = 0;
+    lStack_128 = 0;
+    local_130 = 0;
+    uStack_118 = 0;
+    local_120 = (long *)0x0;
+    lVar5 = FUN_10153f948(uVar3,auVar11._8_8_,&local_130,auStack_f0,0x10);
+    if (lVar5 != 0) {
+      lVar10 = *local_120;
+      do {
+        lVar8 = 0;
+        do {
+          if (*local_120 != lVar10) {
+            _objc_enumerationMutation(uVar3);
+          }
+          uVar9 = *(undefined8 *)(lStack_128 + lVar8 * 8);
+          uVar6 = FUN_101581aa8(param_1);
+          auVar11 = FUN_101561808(uVar9);
+          uVar7 = FUN_101583048(&_OBJC_CLASS___NSNumber,auVar11._8_8_,auVar11._0_8_);
+          auVar11 = FUN_1015ebbe8(uVar7);
+          auVar11 = FUN_10153e4a8(uVar6,auVar11._8_8_,auVar11._0_8_);
+          uVar6 = auVar11._8_8_;
+          if ((auVar11._0_8_ & 1) == 0) {
+            auVar11 = FUN_10159e968(param_1);
+            FUN_101526528(auVar11._0_8_,auVar11._8_8_,uVar9);
+            uVar6 = extraout_x1_02;
+          }
+          lVar8 = lVar8 + 1;
+        } while (lVar5 != lVar8);
+        lVar5 = FUN_10153f948(uVar3,uVar6,&local_130,auStack_f0,0x10);
+      } while (lVar5 != 0);
+    }
+  }
+  uVar3 = FUN_10159e968(param_1);
+  lVar5 = FUN_10153f908(uVar3);
+  auVar11 = FUN_10154ac88(param_1);
+  FUN_1015b1c28(auVar11._0_8_,auVar11._8_8_,lVar5 != 0);
+  IVar4 = FUN_10153bd48(param_1,extraout_x1_03);
+  FUN_101592d08(IVar4);
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_70) {
+    FUN_100ab8e90(0);
+    return;
+  }
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.downloadSelector: | 0x1000e5464 | ev_53f45dde8608b782213cc1795c308b9a8c4b6693dd341d3b4d2ee2561d226239 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::downloadSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 uVar2;
+  long lVar3;
+  long lVar4;
+  undefined1 auVar5 [16];
+  undefined8 local_110;
+  long lStack_108;
+  long *local_100;
+  undefined8 uStack_f8;
+  undefined8 local_f0;
+  undefined8 uStack_e8;
+  undefined8 uStack_e0;
+  undefined8 uStack_d8;
+  undefined1 auStack_c8 [128];
+  long local_48;
+  
+  local_48 = *(long *)PTR____stack_chk_guard_101d78938;
+  lStack_108 = 0;
+  local_110 = 0;
+  uStack_f8 = 0;
+  local_100 = (long *)0x0;
+  uStack_e8 = 0;
+  local_f0 = 0;
+  uStack_d8 = 0;
+  uStack_e0 = 0;
+  auVar5 = FUN_10159e968();
+  uVar1 = auVar5._0_8_;
+  auVar5 = FUN_10153f948(uVar1,auVar5._8_8_,&local_110,auStack_c8,0x10);
+  uVar2 = auVar5._8_8_;
+  if (auVar5._0_8_ != 0) {
+    lVar3 = *local_100;
+    do {
+      uVar2 = auVar5._8_8_;
+      lVar4 = 0;
+      do {
+        if (*local_100 != lVar3) {
+          _objc_enumerationMutation(uVar1);
+          uVar2 = extraout_x1;
+        }
+        FUN_10154b108(param_1,uVar2,*(undefined8 *)(lStack_108 + lVar4 * 8));
+        lVar4 = lVar4 + 1;
+        uVar2 = extraout_x1_00;
+      } while (auVar5._0_8_ != lVar4);
+      auVar5 = FUN_10153f948(uVar1,extraout_x1_00,&local_110,auStack_c8,0x10);
+      uVar2 = auVar5._8_8_;
+    } while (auVar5._0_8_ != 0);
+  }
+  FUN_1015e25c8(&objc::class_t::SVProgressHUD,uVar2,0,&cf__ReQN_Rh);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_48) {
+    return;
+  }
+  FUN_100ab8e90();
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.downloadSingle: | 0x1000e5574 | ev_e64b390497bf531ba52341eb0c2357734cf389c9b07943a40e51dc683449b3e7 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::downloadSingle_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  int iVar2;
+  undefined8 uVar3;
+  long lVar4;
+  ID IVar5;
+  undefined8 uVar6;
+  SEL extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  SEL extraout_x1_04;
+  SEL extraout_x1_05;
+  SEL extraout_x1_06;
+  undefined8 extraout_x1_07;
+  SEL extraout_x1_08;
+  SEL extraout_x1_09;
+  long lVar7;
+  long lVar8;
+  undefined8 uVar9;
+  undefined1 auVar10 [16];
+  undefined1 auVar11 [16];
+  undefined8 local_130;
+  long lStack_128;
+  long *local_120;
+  undefined8 uStack_118;
+  undefined8 local_110;
+  undefined8 uStack_108;
+  undefined8 uStack_100;
+  undefined8 uStack_f8;
+  undefined1 auStack_f0 [128];
+  long local_70;
+  
+  local_70 = *(long *)PTR____stack_chk_guard_101d78938;
+  uVar3 = FUN_1015e11a8(&objc::class_t::NNCFileDownloadManager);
+  auVar10 = FUN_101556608(uVar3);
+  uVar3 = auVar10._0_8_;
+  uStack_108 = 0;
+  local_110 = 0;
+  uStack_f8 = 0;
+  uStack_100 = 0;
+  lStack_128 = 0;
+  local_130 = 0;
+  uStack_118 = 0;
+  local_120 = (long *)0x0;
+  lVar4 = FUN_10153f948(uVar3,auVar10._8_8_,&local_130,auStack_f0,0x10);
+  if (lVar4 != 0) {
+    lVar8 = *local_120;
+    do {
+      lVar7 = 0;
+      do {
+        if (*local_120 != lVar8) {
+          _objc_enumerationMutation(uVar3);
+        }
+        uVar9 = *(undefined8 *)(lStack_128 + lVar7 * 8);
+        iVar1 = FUN_1015f8fe8(uVar9);
+        IVar5 = FUN_1015f8c48(param_1,extraout_x1);
+        uVar6 = FUN_1015f8fe8(IVar5);
+        iVar2 = FUN_1015698a8(uVar6);
+        uVar6 = extraout_x1_00;
+        if (iVar1 == iVar2) {
+          auVar10 = FUN_10158b928(uVar9);
+          IVar5 = FUN_1015f8c48(param_1,auVar10._8_8_);
+          uVar6 = FUN_1015e6768(IVar5);
+          iVar1 = FUN_101543448(param_1);
+          uVar6 = FUN_101583328(uVar6,extraout_x1_01,(long)iVar1);
+          auVar11 = FUN_10158b928(uVar6);
+          iVar1 = FUN_10156d5e8(auVar10._0_8_,auVar11._8_8_,auVar11._0_8_);
+          uVar6 = extraout_x1_02;
+          if (iVar1 != 0) {
+            iVar1 = FUN_10154ebc8(uVar9);
+            iVar2 = FUN_101561808(param_3);
+            uVar6 = extraout_x1_03;
+            if (iVar1 == iVar2) goto LAB_1000e5a24;
+          }
+        }
+        lVar7 = lVar7 + 1;
+      } while (lVar4 != lVar7);
+      lVar4 = FUN_10153f948(uVar3,uVar6,&local_130,auStack_f0,0x10);
+    } while (lVar4 != 0);
+  }
+  uVar3 = FUN_1015813c8(&objc::class_t::NNCFileTaskItem);
+  auVar10 = FUN_1015f69c8(param_3);
+  FUN_1015da848(uVar3,auVar10._8_8_,auVar10._0_8_);
+  IVar5 = FUN_1015f8c48(param_1,extraout_x1_04);
+  auVar10 = FUN_1015fac88(IVar5);
+  FUN_1015acb68(uVar3,auVar10._8_8_,auVar10._0_8_);
+  IVar5 = FUN_1015f8c48(param_1,extraout_x1_05);
+  auVar10 = FUN_1015f91e8(IVar5);
+  FUN_1015d7e08(uVar3,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_1015f01e8(param_3);
+  FUN_1015b24a8(uVar3,auVar10._8_8_,auVar10._0_8_);
+  IVar5 = FUN_1015f8c48(param_1,extraout_x1_06);
+  uVar6 = FUN_1015e6768(IVar5);
+  iVar1 = FUN_101543448(param_1);
+  uVar6 = FUN_101583328(uVar6,extraout_x1_07,(long)iVar1);
+  auVar10 = FUN_10158b928(uVar6);
+  FUN_1015c9328(uVar3,auVar10._8_8_,auVar10._0_8_);
+  FUN_1015f8c48(param_1,extraout_x1_08);
+  auVar10 = FUN_10155ac88(&objc::class_t::DownloadModel);
+  FUN_1015a6488(uVar3,auVar10._8_8_,auVar10._0_8_);
+  IVar5 = FUN_1015f8c48(param_1,extraout_x1_09);
+  uVar6 = FUN_1015f8fe8(IVar5);
+  auVar10 = FUN_1015698a8(uVar6);
+  FUN_1015dc188(uVar3,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_101561808(param_3);
+  FUN_1015b2448(uVar3,auVar10._8_8_,auVar10._0_8_);
+  auVar10 = FUN_1015e11a8(&objc::class_t::NNCFileDownloadManager);
+  FUN_1015e8c28(auVar10._0_8_,auVar10._8_8_,uVar3);
+LAB_1000e5a24:
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_70) {
+    FUN_100ab8e90(0);
+    return;
+  }
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.seeDownloadSelector: | 0x1000e5a78 | ev_8ffc0ed5f6dd5dc4205f88fcb4f32c979e1dbc69a323ec148cd5831d09ffdc9b */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::seeDownloadSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined1 auVar3 [16];
+  
+  _objc_alloc(&objc::class_t::NNCDownloadViewController);
+  auVar3 = FUN_101561e88();
+  uVar1 = auVar3._0_8_;
+  FUN_1015b7168(uVar1,auVar3._8_8_,1);
+  FUN_10155fc48(uVar1,extraout_x1,0);
+  IVar2 = FUN_1015fa108(param_1,extraout_x1_00);
+  auVar3 = FUN_101580708(IVar2);
+  FUN_10158f2e8(auVar3._0_8_,auVar3._8_8_,uVar1,1);
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.currentSourceIndex | 0x1000e5b08 | ev_5afd6ee4cdadd939f3b27634db055315b8c1bf1b178da6da2155c1cc360e66bf */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+int NNCDownloadEpisodeView::currentSourceIndex(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + (long)__currentSourceIndex);
+}
+
+
+
+/* NNCDownloadEpisodeView.setCurrentSourceIndex: | 0x1000e5b18 | ev_5e27add52f996bb615d5fe2a1947eb74383f4c6f9150cefb954a5acc16917dbc */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCDownloadEpisodeView::setCurrentSourceIndex_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + (long)__currentSourceIndex) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.currentEpisodeIndex | 0x1000e5b28 | ev_85164f5652c65962aca199f46e27b7c1da62be8fa552aeef6daae60656fe8244 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+int NNCDownloadEpisodeView::currentEpisodeIndex(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + (long)__currentEpisodeIndex);
+}
+
+
+
+/* NNCDownloadEpisodeView.setCurrentEpisodeIndex: | 0x1000e5b38 | ev_65c82bafbca2d43ab9e5146a69c5ef8c2c062ba9260d583028a1781b7e51b43b */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCDownloadEpisodeView::setCurrentEpisodeIndex_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + (long)__currentEpisodeIndex) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.videoBean | 0x1000e5b48 | ev_3728a83059a03e0f40fdd8b9c594e092106e97fbacad61b329889086c3b394ed */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadEpisodeView::videoBean(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__videoBean);
+}
+
+
+
+/* NNCDownloadEpisodeView.nncdownloadedEpisodeList | 0x1000e5b58 | ev_143b51c052f115e8bcce44819380bd2c65ceabd6d16aa9172ae5df1dc8e94036 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadEpisodeView::nncdownloadedEpisodeList(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nncdownloadedEpisodeList);
+}
+
+
+
+/* NNCDownloadEpisodeView.setNncdownloadedEpisodeList: | 0x1000e5b68 | ev_2fd2e273be07376d682071cc8eb4da2de0a4c18161a238c0eb7367aebd9db687 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setNncdownloadedEpisodeList_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nncdownloadedEpisodeList) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.bgButton | 0x1000e5b7c | ev_b8f8a399a14473c5b415fea38b7237ca16609a24fbcfee86dad3089ba433e2a8 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadEpisodeView::bgButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__bgButton);
+}
+
+
+
+/* NNCDownloadEpisodeView.setBgButton: | 0x1000e5b8c | ev_977139591a162ebdbb5d3d1145a6475673b3b5ce54e856ffc0849fe25f9ed157 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setBgButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__bgButton) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.containerView | 0x1000e5ba0 | ev_f0cd8cec1f6fb933ce0bc2e45ac5691bebf665debdf12daecf66b0d3a92a5a75 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadEpisodeView::containerView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__containerView);
+}
+
+
+
+/* NNCDownloadEpisodeView.setContainerView: | 0x1000e5bb0 | ev_9fc2ba0ac59908aad612c85d81ce2716a3885d42891109f86d570571ae2ae3a9 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setContainerView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__containerView) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.orderButton | 0x1000e5bc4 | ev_341ca0eaff401b735ffe584ed5531c707252f84d8022cba62bf8ba2c898cb841 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadEpisodeView::orderButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__orderButton);
+}
+
+
+
+/* NNCDownloadEpisodeView.setOrderButton: | 0x1000e5bd4 | ev_d2822bdbfb16eeff8fc7862059f97a4f9795f9ccda78dbfcd8a3a3ccd056606a */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setOrderButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__orderButton) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.titleLabel | 0x1000e5be8 | ev_9148dc89e88905f786581e90ab1799e76dac38777c2146095049f6db6b1763f1 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadEpisodeView::titleLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__titleLabel);
+}
+
+
+
+/* NNCDownloadEpisodeView.setTitleLabel: | 0x1000e5bf8 | ev_a27c1e289db4d9620ee6117ce80af95ba56dcd9a3300c0fda13a47f261247b33 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setTitleLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__titleLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.closeButton | 0x1000e5c0c | ev_83e3ea7722f6d5fe84ebedef22b1027e50bee26b3232c30247105bd57dcfb4a2 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadEpisodeView::closeButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__closeButton);
+}
+
+
+
+/* NNCDownloadEpisodeView.setCloseButton: | 0x1000e5c1c | ev_c0d0397c9aca2832a29e8ac034fe7aae4c146f785feb176c8d1682c169ce5867 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setCloseButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__closeButton) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.scrollView | 0x1000e5c30 | ev_8abc948faa181c3c95990dbd663f95fa3066d0f9ced4123c7f9bef2e2128a3be */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadEpisodeView::scrollView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__scrollView);
+}
+
+
+
+/* NNCDownloadEpisodeView.setScrollView: | 0x1000e5c40 | ev_4ab39cfba1fb5d2b1dbc2fb3d37ff61a7e0ed11deaa288121e9be2d0f5fc0f2b */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setScrollView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__scrollView) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.selectedLine | 0x1000e5c54 | ev_9d038f4ca512ee3f78da1881135a8140ca190787616dea93def72bd797c5bd29 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadEpisodeView::selectedLine(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__selectedLine);
+}
+
+
+
+/* NNCDownloadEpisodeView.setSelectedLine: | 0x1000e5c64 | ev_7860db60bc9c2024dfdfe4cdd21b9dfec54ff32fb87809e3d3bed130070e4714 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setSelectedLine_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__selectedLine) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.collectionView | 0x1000e5c78 | ev_7dba0bb65fc148c466e8fe7e3249cf33cd980067c4f96ca4dcfda8ce7e362aaa */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadEpisodeView::collectionView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__collectionView);
+}
+
+
+
+/* NNCDownloadEpisodeView.setCollectionView: | 0x1000e5c88 | ev_2efa96f58aaf024f5839bc550070d87ee407ae527b6beeca2357edd5c17d0580 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setCollectionView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__collectionView) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.collectionLayout | 0x1000e5c9c | ev_43279efe69c2a577b6c51ee17618e4fc9c4e63b7f3bf3dc3bdb7386cc22d6c4b */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadEpisodeView::collectionLayout(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__collectionLayout);
+}
+
+
+
+/* NNCDownloadEpisodeView.setCollectionLayout: | 0x1000e5cac | ev_2f874e0bc7b7842983dac5ecba3809da6c3b55f0ef0459e98fb90fa027a17f1e */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setCollectionLayout_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__collectionLayout) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.selectedButton | 0x1000e5cc0 | ev_1c513e2afee82637976498d2c871629530a63c4b95d74fe8e771355362967985 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadEpisodeView::selectedButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__selectedButton);
+}
+
+
+
+/* NNCDownloadEpisodeView.setSelectedButton: | 0x1000e5ce0 | ev_bc8d3b3ae010b121c405e3774d65abd2d62a88d95b06609317ac18ef25f833bc */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setSelectedButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__selectedButton) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.groupIndex | 0x1000e5cf4 | ev_2423e2eca9051560812b81a0b2f92fbf5f9762e62a5193286f44ccde31826de9 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+long_long NNCDownloadEpisodeView::groupIndex(ID param_1,SEL param_2)
+
+{
+  return *(long_long *)(param_1 + (long)__groupIndex);
+}
+
+
+
+/* NNCDownloadEpisodeView.setGroupIndex: | 0x1000e5d04 | ev_e9f59310972f004c310350f36540a4f08712c8011eda93c622bdd14029bf3fbe */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setGroupIndex_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  *(long_long *)(param_1 + (long)__groupIndex) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.nncselectAllButton | 0x1000e5d14 | ev_8b540dbbf6feb9009e35232d85b467fdd89944a25b30221d0cab3f5bdf9cce6e */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadEpisodeView::nncselectAllButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nncselectAllButton);
+}
+
+
+
+/* NNCDownloadEpisodeView.setNncselectAllButton: | 0x1000e5d24 | ev_3794663bf48633aad4cfe080715e8c8f30ccf2b6dffeba006247b4d4ffc2e94f */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setNncselectAllButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nncselectAllButton) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.downloadButton | 0x1000e5d38 | ev_396f830440d218092dd5f00cc5b726c41c0f1930143d503c3746f318e461fe76 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadEpisodeView::downloadButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__downloadButton);
+}
+
+
+
+/* NNCDownloadEpisodeView.setDownloadButton: | 0x1000e5d48 | ev_2bb43ab432e9dcdfd0c68dc77ac4be7676710679d733aa947eb9819f6573b162 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setDownloadButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__downloadButton) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.seeDownloadButton | 0x1000e5d5c | ev_231be1b884b7cc37aa369615fdc7d8557ca4a05375de58a1f475179fee1c85ac */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadEpisodeView::seeDownloadButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__seeDownloadButton);
+}
+
+
+
+/* NNCDownloadEpisodeView.setSeeDownloadButton: | 0x1000e5d6c | ev_90ca0ffb1f40a1b6194f84a54ee6f59b93ca10e8657f52bacf29420078b78c2c */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setSeeDownloadButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__seeDownloadButton) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView.selectedItemList | 0x1000e5d80 | ev_6ae78019b3be78b36ff017cb568ebff91bc4d6122d2f46124fa621fbc7fa9df4 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCDownloadEpisodeView::selectedItemList(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__selectedItemList);
+}
+
+
+
+/* NNCDownloadEpisodeView.setSelectedItemList: | 0x1000e5d90 | ev_93071d64630678e34888ae7371784e37f4f764b0507f567c9ce2a71a4bfa09e8 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCDownloadEpisodeView::setSelectedItemList_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__selectedItemList) = param_3;
+  return;
+}
+
+
+
+/* NNCDownloadEpisodeView..cxx_destruct | 0x1000e5da4 | ev_a9d970b0968835d119bb79eb88521e8caded063159a876b4379291bb0c8d58ef */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCDownloadEpisodeView::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__selectedItemList) = 0;
+  *(undefined8 *)(param_1 + (long)__seeDownloadButton) = 0;
+  *(undefined8 *)(param_1 + (long)__downloadButton) = 0;
+  *(undefined8 *)(param_1 + (long)__nncselectAllButton) = 0;
+  _objc_destroyWeak(param_1 + (long)__selectedButton);
+  *(undefined8 *)(param_1 + (long)__collectionLayout) = 0;
+  *(undefined8 *)(param_1 + (long)__collectionView) = 0;
+  *(undefined8 *)(param_1 + (long)__selectedLine) = 0;
+  *(undefined8 *)(param_1 + (long)__scrollView) = 0;
+  *(undefined8 *)(param_1 + (long)__closeButton) = 0;
+  *(undefined8 *)(param_1 + (long)__titleLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__orderButton) = 0;
+  *(undefined8 *)(param_1 + (long)__containerView) = 0;
+  *(undefined8 *)(param_1 + (long)__bgButton) = 0;
+  *(undefined8 *)(param_1 + (long)__nncdownloadedEpisodeList) = 0;
+  *(undefined8 *)(param_1 + (long)__videoBean) = 0;
+  return;
+}
+
+

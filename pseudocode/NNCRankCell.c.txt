@@ -1,0 +1,948 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCRankCell.awakeFromNib | 0x1000cb0e8 | ev_e70cee45a0ef8536ce7f3bde0defb80ba0c3b7e9c647ea53b134292f89f9e74b */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCRankCell::awakeFromNib(ID param_1,SEL param_2)
+
+{
+  undefined8 *puVar1;
+  int *piVar2;
+  undefined8 *puVar3;
+  undefined8 uVar4;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 uVar5;
+  long lVar6;
+  undefined8 uVar7;
+  uint uVar8;
+  undefined1 auVar9 [16];
+  ID local_70;
+  class_t *pcStack_68;
+  
+  pcStack_68 = &objc::class_t::NNCRankCell;
+  local_70 = param_1;
+  _objc_msgSendSuper2(&local_70,"awakeFromNib");
+  auVar9 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1,&cf_myBgColor);
+  FUN_1015d6fa8(*(undefined8 *)(param_1 + (long)__descLabel),auVar9._8_8_,auVar9._0_8_);
+  auVar9 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_00,&cf_myBgColor);
+  FUN_1015d6fa8(*(undefined8 *)(param_1 + (long)__nameLabel),auVar9._8_8_,auVar9._0_8_);
+  uVar7 = *(undefined8 *)PTR____NSArray0___101d78908;
+  uVar4 = FUN_10157e1c8(uVar7);
+  puVar1 = (undefined8 *)(param_1 + (long)__clzLabels);
+  uVar5 = *puVar1;
+  *puVar1 = uVar4;
+  uVar4 = FUN_10157e1c8(uVar5,uVar7);
+  lVar6 = (long)__actorLabels;
+  *(undefined8 *)(param_1 + lVar6) = uVar4;
+  auVar9 = FUN_10153c088(0x3fc8181818181818,0x3fc7171717171717,0x3fc9191919191919,0x3ff0000000000000
+                         ,&_OBJC_CLASS___UIColor);
+  FUN_1015a5908(*(undefined8 *)(param_1 + (long)__coverView),auVar9._8_8_,auVar9._0_8_);
+  uVar8 = 0;
+  do {
+    auVar9 = FUN_1015813c8(&_OBJC_CLASS___UILabel);
+    uVar4 = auVar9._0_8_;
+    auVar9 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar9._8_8_,&cf_myBgColor);
+    FUN_1015d6fa8(uVar4,auVar9._8_8_,auVar9._0_8_);
+    auVar9 = FUN_1015ed768(0x4026000000000000,&_OBJC_CLASS___UIFont);
+    FUN_1015b4788(uVar4,auVar9._8_8_,auVar9._0_8_);
+    FUN_1015d6f48(uVar4,extraout_x1_01,1);
+    auVar9 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_02,&cf_myTextColor);
+    FUN_1015a5908(uVar4,auVar9._8_8_,auVar9._0_8_);
+    piVar2 = (int *)&_clzView;
+    puVar3 = puVar1;
+    if (4 < uVar8) {
+      piVar2 = (int *)&_actorView;
+      puVar3 = (undefined8 *)(param_1 + lVar6);
+    }
+    FUN_101526528(*puVar3,extraout_x1_03,uVar4);
+    FUN_101527148(*(undefined8 *)(param_1 + (long)*piVar2),extraout_x1_04,uVar4);
+    uVar8 = uVar8 + 1;
+  } while (uVar8 != 10);
+  return;
+}
+
+
+
+/* NNCRankCell.cell | 0x1000cb39c | ev_a7ab2b76918a728d36c12d84418f29f6667c9915db4e0177aea25f475db37b18 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRankCell::cell(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  undefined1 auVar3 [16];
+  
+  uVar1 = FUN_1015790a8(&_OBJC_CLASS___NSBundle);
+  FUN_101539ca8(param_1);
+  auVar3 = _NSStringFromClass();
+  auVar3 = FUN_101576788(uVar1,auVar3._8_8_,auVar3._0_8_,0,0);
+  IVar2 = FUN_101583308(auVar3._0_8_,auVar3._8_8_,0);
+  return IVar2;
+}
+
+
+
+/* NNCRankCell.nnccellHeight | 0x1000cb444 | ev_4ea754f6bc47617a4194123123a2f30f18560ffcec20349a49b04ac558189e42 */
+
+/* Function Stack Size: 0x10 bytes */
+
+double NNCRankCell::nnccellHeight(ID param_1,SEL param_2)
+
+{
+  return 150.0;
+}
+
+
+
+/* NNCRankCell.setIndex: | 0x1000cb450 | ev_e2f0df7862e30bca3b76cbd55f8268673da00982ffebbb8d84cba517f38db859 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankCell::setIndex_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  undefined4 uVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  long lVar3;
+  int iVar4;
+  long lVar5;
+  undefined8 uVar6;
+  undefined1 auVar7 [16];
+  
+  lVar3 = (long)__index;
+  *(long_long *)(param_1 + lVar3) = param_3;
+  if (param_3 == 2) {
+    uVar1 = 0xff8044;
+LAB_1000cb50c:
+    auVar7 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,param_2,uVar1);
+    iVar4 = __rankLabel;
+    lVar5 = (long)__rankLabel;
+    FUN_1015a5908(*(undefined8 *)(param_1 + lVar5),auVar7._8_8_,auVar7._0_8_);
+    uVar2 = *(undefined8 *)(param_1 + lVar5);
+    uVar6 = 0x3ff0000000000000;
+  }
+  else {
+    if (param_3 == 1) {
+      uVar1 = 0xfa4828;
+      goto LAB_1000cb50c;
+    }
+    if (param_3 == 0) {
+      auVar7 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,param_2,0xdd405a);
+      iVar4 = __rankLabel;
+      lVar5 = (long)__rankLabel;
+      FUN_1015a5908(*(undefined8 *)(param_1 + lVar5),auVar7._8_8_,auVar7._0_8_);
+      FUN_1015a3168(0x3ff0000000000000,*(undefined8 *)(param_1 + lVar5));
+      uVar2 = extraout_x1;
+      goto LAB_1000cb5bc;
+    }
+    auVar7 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,param_2,0);
+    iVar4 = __rankLabel;
+    lVar5 = (long)__rankLabel;
+    FUN_1015a5908(*(undefined8 *)(param_1 + lVar5),auVar7._8_8_,auVar7._0_8_);
+    uVar2 = *(undefined8 *)(param_1 + lVar5);
+    uVar6 = 0x3fd8000000000000;
+  }
+  FUN_1015a3168(uVar6,uVar2);
+  uVar2 = extraout_x1_00;
+LAB_1000cb5bc:
+  if (*(long *)(param_1 + lVar3) < 3) {
+    auVar7 = FUN_10152d4c8(*(undefined8 *)(param_1 + (long)iVar4));
+    FUN_1015d6fa8(*(undefined8 *)(param_1 + (long)__hitLabel),auVar7._8_8_,auVar7._0_8_);
+  }
+  else {
+    auVar7 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,uVar2,0xffffff);
+    FUN_1015d6fa8(*(undefined8 *)(param_1 + (long)__hitLabel),auVar7._8_8_,auVar7._0_8_);
+  }
+  return;
+}
+
+
+
+/* NNCRankCell.setInfo: | 0x1000cb66c | ev_c9cbf7952d0393ba8b80c7a43ffeb11745745db1f40750330b3df94e778d4a8e */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankCell::setInfo_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  long lVar4;
+  ulong uVar5;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  ulong uVar6;
+  long lVar7;
+  undefined1 auVar8 [16];
+  undefined1 auVar9 [16];
+  
+  *(ID *)(param_1 + (long)__info) = param_3;
+  uVar3 = *(undefined8 *)(param_1 + (long)__coverView);
+  auVar8 = FUN_1015fac88(param_3);
+  auVar8 = FUN_1015156a8(&_OBJC_CLASS___NSURL,auVar8._8_8_,auVar8._0_8_);
+  FUN_10159db08(uVar3,auVar8._8_8_,auVar8._0_8_);
+  uVar3 = *(undefined8 *)(param_1 + (long)__rankLabel);
+  auVar8 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf__zd);
+  FUN_1015d6f08(uVar3,auVar8._8_8_,auVar8._0_8_);
+  uVar3 = *(undefined8 *)(param_1 + (long)__remarkLabel);
+  auVar8 = FUN_101559a28(param_3);
+  FUN_1015d6f08(uVar3,auVar8._8_8_,auVar8._0_8_);
+  uVar3 = *(undefined8 *)(param_1 + (long)__nameLabel);
+  auVar8 = FUN_1015f91e8(param_3);
+  FUN_1015d6f08(uVar3,auVar8._8_8_,auVar8._0_8_);
+  uVar3 = *(undefined8 *)(param_1 + (long)__descLabel);
+  auVar8 = FUN_101557888(param_3);
+  FUN_1015d6f08(uVar3,auVar8._8_8_,auVar8._0_8_);
+  uVar3 = *(undefined8 *)(param_1 + (long)__hitLabel);
+  uVar1 = FUN_101539ca8(param_1);
+  uVar2 = FUN_10155f068(param_3);
+  auVar8 = FUN_101578508(uVar2);
+  auVar8 = FUN_101558408(uVar1,auVar8._8_8_,auVar8._0_8_);
+  FUN_1015d6f08(uVar3,auVar8._8_8_,auVar8._0_8_);
+  uVar2 = *(undefined8 *)PTR____NSArray0___101d78908;
+  uVar3 = FUN_10157e1c8(uVar2);
+  uVar1 = FUN_1015ff248(param_3);
+  lVar4 = FUN_1015750a8(uVar1);
+  if (lVar4 != 0) {
+    auVar8 = FUN_1015ff248(param_3);
+    FUN_101526528(uVar3,auVar8._8_8_,auVar8._0_8_);
+  }
+  uVar1 = FUN_1015567c8(param_3);
+  lVar4 = FUN_1015750a8(uVar1);
+  if (lVar4 != 0) {
+    auVar8 = FUN_1015567c8(param_3);
+    FUN_101526528(uVar3,auVar8._8_8_,auVar8._0_8_);
+  }
+  uVar1 = FUN_1015f8d28(param_3);
+  lVar4 = FUN_1015750a8(uVar1);
+  if (lVar4 != 0) {
+    auVar8 = FUN_1015f8d28(param_3);
+    auVar8 = FUN_10153d0c8(auVar8._0_8_,auVar8._8_8_,&cf__);
+    FUN_101526548(uVar3,auVar8._8_8_,auVar8._0_8_);
+  }
+  lVar7 = (long)__clzLabels;
+  lVar4 = FUN_10153f908(*(undefined8 *)(param_1 + lVar7));
+  if (lVar4 != 0) {
+    uVar6 = 0;
+    do {
+      auVar8 = FUN_10153f908(uVar3);
+      auVar9 = FUN_101583328(*(undefined8 *)(param_1 + lVar7),auVar8._8_8_,uVar6);
+      if (uVar6 < auVar8._0_8_) {
+        FUN_1015b6fc8(auVar9._0_8_,auVar9._8_8_,0);
+        auVar8 = FUN_101583328(uVar3,extraout_x1_00,uVar6);
+        auVar9 = FUN_101583328(*(undefined8 *)(param_1 + lVar7),auVar8._8_8_,uVar6);
+        FUN_1015d6f08(auVar9._0_8_,auVar9._8_8_,auVar8._0_8_);
+      }
+      else {
+        FUN_1015b6fc8(auVar9._0_8_,auVar9._8_8_,1);
+      }
+      uVar6 = uVar6 + 1;
+      uVar5 = FUN_10153f908(*(undefined8 *)(param_1 + lVar7));
+    } while (uVar6 < uVar5);
+  }
+  uVar3 = FUN_10157e1c8(uVar2);
+  uVar1 = FUN_1015230c8(param_3);
+  lVar4 = FUN_1015750a8(uVar1);
+  if (lVar4 != 0) {
+    auVar8 = FUN_1015230c8(param_3);
+    auVar8 = FUN_10153d0c8(auVar8._0_8_,auVar8._8_8_,&cf__);
+    FUN_101526548(uVar3,auVar8._8_8_,auVar8._0_8_);
+  }
+  lVar7 = (long)__actorLabels;
+  lVar4 = FUN_10153f908(*(undefined8 *)(param_1 + lVar7));
+  if (lVar4 != 0) {
+    uVar6 = 0;
+    do {
+      auVar8 = FUN_10153f908(uVar3);
+      auVar9 = FUN_101583328(*(undefined8 *)(param_1 + lVar7),auVar8._8_8_,uVar6);
+      if (uVar6 < auVar8._0_8_) {
+        FUN_1015b6fc8(auVar9._0_8_,auVar9._8_8_,0);
+        auVar8 = FUN_101583328(uVar3,extraout_x1_01,uVar6);
+        auVar9 = FUN_101583328(*(undefined8 *)(param_1 + lVar7),auVar8._8_8_,uVar6);
+        FUN_1015d6f08(auVar9._0_8_,auVar9._8_8_,auVar8._0_8_);
+      }
+      else {
+        FUN_1015b6fc8(auVar9._0_8_,auVar9._8_8_,1);
+      }
+      uVar6 = uVar6 + 1;
+      uVar5 = FUN_10153f908(*(undefined8 *)(param_1 + lVar7));
+    } while (uVar6 < uVar5);
+  }
+  FUN_1015c9de8(param_1);
+  return;
+}
+
+
+
+/* NNCRankCell.getHotString: | 0x1000cbc14 | ev_b291292e5b144c8a7e1709621721cbe6d650ff43dcbebce0e211ad2b3b79d489 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCRankCell::getHotString_(ID param_1,SEL param_2,long_long param_3)
+
+{
+  ID IVar1;
+  cfstringStruct *pcVar2;
+  
+  if ((long)param_3 < 1000) {
+    pcVar2 = &cf__ld;
+  }
+  else {
+    pcVar2 = &cf___1fK_;
+  }
+  IVar1 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,param_2,pcVar2);
+  return IVar1;
+}
+
+
+
+/* NNCRankCell.layoutSubviews | 0x1000cbc80 | ev_e4acc044e1f4120bd5f920b1eab08f01e19d2d8fe857d585277fea7a0fcd3765 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NNCRankCell::layoutSubviews(ID param_1,SEL param_2)
+
+{
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCRankCell;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"layoutSubviews");
+  FUN_1015c9de8(param_1);
+  return;
+}
+
+
+
+/* NNCRankCell.setPosition | 0x1000cbcc8 | ev_82dd14077309f6f8858727f1359167ef40c96931a54759164d4cde8b2295b6bd */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCRankCell::setPosition(ID param_1,SEL param_2)
+
+{
+  ID *pIVar1;
+  undefined8 *puVar2;
+  undefined8 *puVar3;
+  ID IVar4;
+  long lVar5;
+  ulong uVar6;
+  ID IVar7;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  SEL extraout_x1_03;
+  SEL extraout_x1_04;
+  undefined8 extraout_x1_05;
+  SEL extraout_x1_06;
+  SEL extraout_x1_07;
+  ulong uVar8;
+  undefined8 uVar9;
+  undefined8 uVar10;
+  double dVar11;
+  double dVar12;
+  undefined1 auVar13 [16];
+  
+  pIVar1 = (ID *)(param_1 + (long)__coverView);
+  IVar4 = FUN_101574688(*pIVar1,param_2);
+  FUN_1015ac5e8(0x4024000000000000,IVar4);
+  IVar4 = FUN_101574688(*pIVar1,extraout_x1);
+  FUN_1015c25a8(IVar4);
+  puVar2 = (undefined8 *)(param_1 + (long)__rankLabel);
+  FUN_1015e3aa8(*puVar2);
+  uVar9 = FUN_101574da8(*pIVar1);
+  uVar10 = FUN_1015f0ce8(*pIVar1);
+  dVar11 = (double)FUN_1015fc468(*puVar2);
+  dVar12 = (double)FUN_10155e568(*puVar2);
+  FUN_1015b4b08(uVar9,uVar10,dVar11 + 16.0,dVar12 + 6.0,*puVar2);
+  uVar9 = *puVar2;
+  IVar4 = FUN_101574688(*pIVar1,extraout_x1_00);
+  uVar10 = FUN_10153f888(IVar4);
+  FUN_1015dfd68(uVar10,0,&objc::class_t::PublicFunction,extraout_x1_01,uVar9,9,0,0);
+  puVar2 = (undefined8 *)(param_1 + (long)__remarkLabel);
+  FUN_1015e3aa8(*puVar2);
+  uVar9 = FUN_1015384c8(*pIVar1);
+  FUN_1015a9928(uVar9,*puVar2);
+  dVar11 = (double)FUN_1015319c8(*pIVar1);
+  FUN_1015a76a8(dVar11 + -3.0,*puVar2);
+  dVar11 = (double)FUN_10159a248(*pIVar1);
+  puVar2 = (undefined8 *)(param_1 + (long)__hitLabel);
+  FUN_1015e3aa8(*puVar2);
+  dVar12 = (double)FUN_10155e568(*puVar2);
+  FUN_1015b6f28(dVar12 + 4.0,*puVar2);
+  dVar12 = (double)FUN_1015fc468(*puVar2);
+  FUN_1015dd9c8(dVar12 + 6.0,*puVar2);
+  dVar12 = (double)FUN_1015fc468(param_1);
+  FUN_1015ce268(dVar12 + -12.0,*puVar2);
+  FUN_1015a9948(0x403c000000000000,*puVar2);
+  uVar9 = FUN_101574da8(*puVar2);
+  puVar2 = (undefined8 *)(param_1 + (long)__fireIv);
+  FUN_1015ce268(uVar9,*puVar2);
+  FUN_1015a9948(0x403c000000000000,*puVar2);
+  puVar3 = (undefined8 *)(param_1 + (long)__nameLabel);
+  FUN_1015e3aa8(*puVar3);
+  FUN_1015a9948(0x403c000000000000,*puVar3);
+  FUN_1015bfa48(dVar11 + 10.0,*puVar3);
+  dVar12 = (double)FUN_101574da8(*puVar2);
+  dVar11 = (double)FUN_101574da8(*puVar3);
+  dVar11 = (dVar12 + -5.0) - dVar11;
+  dVar12 = (double)FUN_1015fc468(*puVar3);
+  if (dVar12 <= dVar11) {
+    dVar11 = dVar12;
+  }
+  FUN_1015dd9c8(dVar11,*puVar3);
+  uVar9 = FUN_10153ba28(param_1);
+  lVar5 = FUN_10153f908(uVar9);
+  if (lVar5 != 0) {
+    uVar8 = 0;
+    do {
+      auVar13 = FUN_10153ba28(param_1);
+      IVar4 = FUN_101583328(auVar13._0_8_,auVar13._8_8_,uVar8);
+      uVar6 = FUN_10156e108(IVar4);
+      if ((uVar6 & 1) != 0) break;
+      FUN_1015e3aa8(IVar4);
+      dVar11 = (double)FUN_1015fc468(IVar4);
+      FUN_1015dd9c8(dVar11 + 10.0,IVar4);
+      dVar11 = (double)FUN_10155e568(IVar4);
+      FUN_1015b6f28(dVar11 + 4.0,IVar4);
+      if (uVar8 == 0) {
+        FUN_1015bfa48(0,IVar4);
+      }
+      else {
+        auVar13 = FUN_10153ba28(param_1);
+        uVar9 = FUN_101583328(auVar13._0_8_,auVar13._8_8_,uVar8 - 1);
+        dVar11 = (double)FUN_10159a248(uVar9);
+        FUN_1015bfa48(dVar11 + 4.0,IVar4);
+      }
+      dVar11 = (double)FUN_101574da8(IVar4);
+      uVar9 = FUN_1015ec948(IVar4);
+      dVar12 = (double)FUN_1015fc468(uVar9);
+      if (dVar11 <= dVar12 + -10.0) {
+        dVar11 = (double)FUN_10159a248(IVar4);
+        uVar9 = FUN_1015ec948(IVar4);
+        dVar12 = (double)FUN_1015fc468(uVar9);
+        if (dVar12 < dVar11) {
+          uVar9 = FUN_1015ec948(IVar4);
+          dVar11 = (double)FUN_1015fc468(uVar9);
+          dVar12 = (double)FUN_101574da8(IVar4);
+          FUN_1015dd9c8(dVar11 - dVar12,IVar4);
+        }
+      }
+      else {
+        FUN_1015b6fc8(IVar4,extraout_x1_02,1);
+      }
+      uVar9 = FUN_1015ec948(IVar4);
+      dVar11 = (double)FUN_10155e568(uVar9);
+      FUN_1015a9948(dVar11 * 0.5,IVar4);
+      IVar7 = FUN_101574688(IVar4,extraout_x1_03);
+      FUN_1015ac5e8(0x4010000000000000,IVar7);
+      IVar4 = FUN_101574688(IVar4,extraout_x1_04);
+      FUN_1015c25a8(IVar4);
+      uVar8 = uVar8 + 1;
+      uVar9 = FUN_10153ba28(param_1);
+      uVar6 = FUN_10153f908(uVar9);
+    } while (uVar8 < uVar6);
+  }
+  uVar9 = FUN_101523108(param_1);
+  lVar5 = FUN_10153f908(uVar9);
+  if (lVar5 != 0) {
+    uVar8 = 0;
+    do {
+      auVar13 = FUN_101523108(param_1);
+      IVar4 = FUN_101583328(auVar13._0_8_,auVar13._8_8_,uVar8);
+      uVar6 = FUN_10156e108(IVar4);
+      if ((uVar6 & 1) != 0) {
+        return;
+      }
+      FUN_1015e3aa8(IVar4);
+      dVar11 = (double)FUN_1015fc468(IVar4);
+      FUN_1015dd9c8(dVar11 + 10.0,IVar4);
+      dVar11 = (double)FUN_10155e568(IVar4);
+      FUN_1015b6f28(dVar11 + 4.0,IVar4);
+      if (uVar8 == 0) {
+        FUN_1015bfa48(0,IVar4);
+      }
+      else {
+        auVar13 = FUN_101523108(param_1);
+        uVar9 = FUN_101583328(auVar13._0_8_,auVar13._8_8_,uVar8 - 1);
+        dVar11 = (double)FUN_10159a248(uVar9);
+        FUN_1015bfa48(dVar11 + 4.0,IVar4);
+      }
+      dVar11 = (double)FUN_101574da8(IVar4);
+      uVar9 = FUN_1015ec948(IVar4);
+      dVar12 = (double)FUN_1015fc468(uVar9);
+      if (dVar11 <= dVar12 + -10.0) {
+        dVar11 = (double)FUN_10159a248(IVar4);
+        uVar9 = FUN_1015ec948(IVar4);
+        dVar12 = (double)FUN_1015fc468(uVar9);
+        if (dVar12 < dVar11) {
+          uVar9 = FUN_1015ec948(IVar4);
+          dVar11 = (double)FUN_1015fc468(uVar9);
+          dVar12 = (double)FUN_101574da8(IVar4);
+          FUN_1015dd9c8(dVar11 - dVar12,IVar4);
+        }
+      }
+      else {
+        FUN_1015b6fc8(IVar4,extraout_x1_05,1);
+      }
+      uVar9 = FUN_1015ec948(IVar4);
+      dVar11 = (double)FUN_10155e568(uVar9);
+      FUN_1015a9948(dVar11 * 0.5,IVar4);
+      IVar7 = FUN_101574688(IVar4,extraout_x1_06);
+      FUN_1015ac5e8(0x4010000000000000,IVar7);
+      IVar4 = FUN_101574688(IVar4,extraout_x1_07);
+      FUN_1015c25a8(IVar4);
+      uVar8 = uVar8 + 1;
+      uVar9 = FUN_101523108(param_1);
+      uVar6 = FUN_10153f908(uVar9);
+    } while (uVar8 < uVar6);
+  }
+  return;
+}
+
+
+
+/* NNCRankCell.setSelected:animated: | 0x1000cc678 | ev_43bc766162a3b528f60fb70ef760a64b5e7c4d8ab14217938b8b1e90395f4669 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankCell::setSelected_animated_(ID param_1,SEL param_2,bool param_3,bool param_4)
+
+{
+  return;
+}
+
+
+
+/* NNCRankCell.setHighlighted:animated: | 0x1000cc67c | ev_f69e8172b199363ac94a9dcfe6031c447d1bf6f415b240e7616351dae18351a0 */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankCell::setHighlighted_animated_(ID param_1,SEL param_2,bool param_3,bool param_4)
+
+{
+  return;
+}
+
+
+
+/* NNCRankCell.info | 0x1000cc680 | ev_8f5f7d827f2fd8cfdf5294c07970b478508e6bdce2c48b1e17cad8d34ec9af44 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRankCell::info(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__info);
+}
+
+
+
+/* NNCRankCell.index | 0x1000cc690 | ev_e05326e802fcc912edaef4b4bcf04e9561a6c5406c9cf94f0fed3b0e6958a742 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+char * NNCRankCell::index(char *param_1,int param_2)
+
+{
+  return *(char **)(param_1 + __index);
+}
+
+
+
+/* NNCRankCell.coverView | 0x1000cc6a0 | ev_c6fe495713b66b70c7256f2b4dae6fcc83cbbb326bcd592baa453a721f5e8226 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRankCell::coverView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__coverView);
+}
+
+
+
+/* NNCRankCell.setCoverView: | 0x1000cc6c0 | ev_1d71c84c472db72a66a786885dcf2bcdb4cace568d9df3ae24263e901504718b */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankCell::setCoverView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__coverView) = param_3;
+  return;
+}
+
+
+
+/* NNCRankCell.rankLabel | 0x1000cc6d4 | ev_1b7a50a042fbd28fc4d6b41e06baf3af9a3631cc8528c383d32b5dfb53dce10d */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRankCell::rankLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__rankLabel);
+}
+
+
+
+/* NNCRankCell.setRankLabel: | 0x1000cc6f4 | ev_e937f03bf243f8324988f93d5b2fc8cc4c33950888983b3d63544c8e9dc976ab */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankCell::setRankLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__rankLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCRankCell.hitLabel | 0x1000cc708 | ev_8087a958018c2daa2833f1d9a94c302107a94fdc42c70fb6135843f0c058bba4 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRankCell::hitLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__hitLabel);
+}
+
+
+
+/* NNCRankCell.setHitLabel: | 0x1000cc728 | ev_c660495c6ce00bb824ea2722a64654fbd32bba715b2139da464ee8f4dcb6d5c8 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankCell::setHitLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__hitLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCRankCell.fireIv | 0x1000cc73c | ev_d2ec0ac6e317e78fff14fa95de464481be31507bb67297d54ce441dc3eea3854 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRankCell::fireIv(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__fireIv);
+}
+
+
+
+/* NNCRankCell.setFireIv: | 0x1000cc75c | ev_32ae4dcc5cc3bd4de9ec2b7443ab1c3d543eef5f288c0b83511cb71cf8b1b0cb */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankCell::setFireIv_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__fireIv) = param_3;
+  return;
+}
+
+
+
+/* NNCRankCell.nameLabel | 0x1000cc770 | ev_4fc7e6cd5c06feb8848ea391d7e736481f7283626503ee3ab5cd3ac5875e875f */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRankCell::nameLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nameLabel);
+}
+
+
+
+/* NNCRankCell.setNameLabel: | 0x1000cc790 | ev_aeef78c5719c5c628cb46e86909cbf30841b102728205bf0421c71d3bcec2b03 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankCell::setNameLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nameLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCRankCell.remarkLabel | 0x1000cc7a4 | ev_f6915a78a3d596a5f15bce0b84de951eb55f5d835cd75b9a7b1ae33ea9369879 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRankCell::remarkLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__remarkLabel);
+}
+
+
+
+/* NNCRankCell.setRemarkLabel: | 0x1000cc7c4 | ev_9687cfd0ff778d755e11c0c68e1543564af416e3bd2684b3ee8be87e442faf21 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankCell::setRemarkLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__remarkLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCRankCell.descLabel | 0x1000cc7d8 | ev_9701f47483f8203d12239a1ca6b4056e8fd9b60b272818d6e22783d98b9f0b52 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRankCell::descLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__descLabel);
+}
+
+
+
+/* NNCRankCell.setDescLabel: | 0x1000cc7f8 | ev_be4d72365c7ff1c8d2860aa63c8987a609c481f906788ea16426147be527dd8a */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankCell::setDescLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__descLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCRankCell.clzView | 0x1000cc80c | ev_4553a08784354cde4412c64454a4fbbf58705c8e774c77843c9853c7bc1a64ce */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRankCell::clzView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__clzView);
+}
+
+
+
+/* NNCRankCell.setClzView: | 0x1000cc82c | ev_ea22cc1f743a9ee5f36d2e4efd0c308696904f6689cfaed4fd22769a5fbce346 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankCell::setClzView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__clzView) = param_3;
+  return;
+}
+
+
+
+/* NNCRankCell.actorView | 0x1000cc840 | ev_09660f1599ab86b88fb63b7ca5a50705062e12206c04a61a2a5c9f743fa5e7fa */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRankCell::actorView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__actorView);
+}
+
+
+
+/* NNCRankCell.setActorView: | 0x1000cc860 | ev_e58dadf67cb42fb1b9745bdc5e296bb18f3e01dd512b8b3ef8ad1e5622b84fdd */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankCell::setActorView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__actorView) = param_3;
+  return;
+}
+
+
+
+/* NNCRankCell.clzLabels | 0x1000cc874 | ev_6f0b1987083bd6a41a102af314f4e02a5750b8d3f9f4bdaf037b4f953b278934 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRankCell::clzLabels(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__clzLabels);
+}
+
+
+
+/* NNCRankCell.setClzLabels: | 0x1000cc884 | ev_c117bcfae833971ed16322ac1beaff1ff4a8cf96bf69e788be990b66a31b8dc3 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankCell::setClzLabels_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__clzLabels) = param_3;
+  return;
+}
+
+
+
+/* NNCRankCell.actorLabels | 0x1000cc898 | ev_389afefa7936e5f1cf406f294da8bcb52dc558cd1d6ad5744b89a1661cb77555 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRankCell::actorLabels(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__actorLabels);
+}
+
+
+
+/* NNCRankCell.setActorLabels: | 0x1000cc8a8 | ev_c81c7d4ea32046a8e5ac5849e124e93f051536166e6a71f0896fa3846eb99496 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRankCell::setActorLabels_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__actorLabels) = param_3;
+  return;
+}
+
+
+
+/* NNCRankCell..cxx_destruct | 0x1000cc8bc | ev_b4d374d0670de195d33ca3bafa1f924d2e2dcb26999ef2cad9ca5ebac73563ed */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCRankCell::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__actorLabels) = 0;
+  *(undefined8 *)(param_1 + (long)__clzLabels) = 0;
+  _objc_destroyWeak(param_1 + (long)__actorView);
+  _objc_destroyWeak(param_1 + (long)__clzView);
+  _objc_destroyWeak(param_1 + (long)__descLabel);
+  _objc_destroyWeak(param_1 + (long)__remarkLabel);
+  _objc_destroyWeak(param_1 + (long)__nameLabel);
+  _objc_destroyWeak(param_1 + (long)__fireIv);
+  _objc_destroyWeak(param_1 + (long)__hitLabel);
+  _objc_destroyWeak(param_1 + (long)__rankLabel);
+  _objc_destroyWeak(param_1 + (long)__coverView);
+  *(undefined8 *)(param_1 + (long)__info) = 0;
+  return;
+}
+
+

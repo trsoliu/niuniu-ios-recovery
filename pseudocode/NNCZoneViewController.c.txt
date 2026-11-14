@@ -1,0 +1,1933 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCZoneViewController.feedView | 0x100018d60 | ev_c6c880264074edce370b7a3217a6cfe0ea6eba132c8abae64a75abec92d9bbbe */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::feedView(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  long lVar4;
+  undefined8 in_d2;
+  
+  lVar4 = (long)__feedView;
+  IVar1 = *(ID *)(param_1 + lVar4);
+  if (IVar1 == 0) {
+    uVar2 = _objc_alloc(&objc::class_t::NNCFeedView);
+    uVar3 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+    FUN_101531d88(uVar3);
+    uVar3 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+    FUN_101531d88(uVar3);
+    uVar2 = FUN_101564e08(0,0,in_d2,uVar2);
+    *(undefined8 *)(param_1 + lVar4) = uVar2;
+    IVar1 = *(ID *)(param_1 + lVar4);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCZoneViewController.viewDidLoad | 0x100018e24 | ev_4173cfde90ef8feeed7840a15411254fcbb6e6bf8bb1f05261a35b85d3689693 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCZoneViewController::viewDidLoad(ID param_1,SEL param_2)
+
+{
+  undefined1 auVar1 [16];
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCZoneViewController;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"viewDidLoad");
+  auVar1 = FUN_1015e11a8(&objc::class_t::NNCFileHistoryManager);
+  FUN_1015261a8(auVar1._0_8_,auVar1._8_8_,param_1);
+  return;
+}
+
+
+
+/* NNCZoneViewController.viewWillAppear: | 0x100018e8c | ev_46c197622a3cffd6b1d967d5c6384e1c2ba836277e0e2f491d8933f3389ccf97 */
+
+/* Function Stack Size: 0x14 bytes */
+
+void NNCZoneViewController::viewWillAppear_(ID param_1,SEL param_2,bool param_3)
+
+{
+  SEL extraout_x1;
+  double in_d1;
+  CGSize CVar1;
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCZoneViewController;
+  local_30 = param_1;
+  CVar1.field0_0x0 = (double)_objc_msgSendSuper2(&local_30,"viewWillAppear:",param_3);
+  CVar1.field1_0x8 = in_d1;
+  FUN_101581928(param_1,extraout_x1,CVar1);
+  FUN_101596ec8(param_1);
+  return;
+}
+
+
+
+/* NNCZoneViewController.viewDidLayoutSubviews | 0x100018edc | ev_3a594acfaf9a7e6b343b87054aa73cb5ceffd339c88b61016c08f36d4d6aaef7 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void __thiscall
+NNCZoneViewController::viewDidLayoutSubviews(NNCZoneViewController *this,ID param_1,SEL param_2)
+
+{
+  SEL extraout_x1;
+  double in_d1;
+  undefined1 auVar1 [16];
+  CGSize CVar2;
+  NNCZoneViewController *local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCZoneViewController;
+  local_30 = this;
+  _objc_msgSendSuper2(&local_30,"viewDidLayoutSubviews");
+  auVar1 = FUN_101581c88(this);
+  if ((auVar1._0_8_ & 1) == 0) {
+    FUN_1015c5a08(this,auVar1._8_8_,1);
+    CVar2.field0_0x0 = (double)FUN_101541948(this);
+    CVar2.field1_0x8 = in_d1;
+    FUN_101581928((ID)this,extraout_x1,CVar2);
+  }
+  return;
+}
+
+
+
+/* NNCZoneViewController.createView | 0x100018f44 | ev_c1dcd9af7d0ffd5ed7b08d8b4d26698be39b90636fc93ba297b6a32b9a3a2136 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCZoneViewController::createView(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  SEL extraout_x1;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined8 extraout_x1_02;
+  SEL extraout_x1_03;
+  undefined8 extraout_x1_04;
+  SEL extraout_x1_05;
+  undefined8 extraout_x1_06;
+  SEL extraout_x1_07;
+  undefined8 extraout_x1_08;
+  SEL extraout_x1_09;
+  undefined8 extraout_x1_10;
+  SEL extraout_x1_11;
+  SEL extraout_x1_12;
+  undefined8 extraout_x1_13;
+  SEL extraout_x1_14;
+  undefined8 extraout_x1_15;
+  undefined8 extraout_x1_16;
+  undefined8 extraout_x1_17;
+  SEL extraout_x1_18;
+  undefined8 extraout_x1_19;
+  undefined8 extraout_x1_20;
+  undefined8 extraout_x1_21;
+  undefined8 extraout_x1_22;
+  double dVar6;
+  double dVar7;
+  undefined1 auVar8 [16];
+  undefined1 auVar9 [16];
+  
+  auVar8 = _objc_alloc(&objc::class_t::NNCBgView);
+  IVar2 = FUN_1015fa0a8(param_1,auVar8._8_8_);
+  FUN_101531d88(IVar2);
+  FUN_101564e08(auVar8._0_8_);
+  IVar2 = FUN_1015fa0a8(param_1,extraout_x1);
+  FUN_101527148(IVar2);
+  IVar2 = FUN_1015fa0a8(param_1,extraout_x1_00);
+  auVar8 = FUN_10155efc8(param_1);
+  FUN_1015326c8(IVar2,auVar8._8_8_,auVar8._0_8_);
+  IVar2 = FUN_1015fa0a8(param_1,extraout_x1_01);
+  auVar8 = FUN_101572648(param_1);
+  FUN_1015326c8(IVar2,auVar8._8_8_,auVar8._0_8_);
+  dVar7 = dRam00000001024978c8 + 50.0;
+  _objc_alloc(&_OBJC_CLASS___UIImageView);
+  auVar8 = FUN_101564e08(0x402e000000000000,0,0x404e000000000000,0x404e000000000000);
+  FUN_1015b7e48(param_1,auVar8._8_8_,auVar8._0_8_);
+  uVar3 = FUN_10155ffa8(param_1);
+  dVar6 = (double)FUN_1015fc468(uVar3);
+  auVar8 = FUN_10155ffa8(param_1);
+  IVar2 = FUN_101574688(auVar8._0_8_,auVar8._8_8_);
+  FUN_1015ac5e8(dVar6 * 0.5,IVar2);
+  auVar8 = FUN_10155ffa8(param_1);
+  IVar2 = FUN_101574688(auVar8._0_8_,auVar8._8_8_);
+  FUN_1015c25a8(IVar2);
+  uVar3 = FUN_10155ffa8(param_1);
+  FUN_1015a9948(dVar7,uVar3);
+  uVar3 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_02,0xe6e6e6);
+  auVar8 = FUN_10155ffa8(param_1);
+  FUN_1015a5908(auVar8._0_8_,auVar8._8_8_,uVar3);
+  IVar2 = FUN_1015fa0a8(param_1,extraout_x1_03);
+  auVar8 = FUN_10155ffa8(param_1);
+  FUN_101527148(IVar2,auVar8._8_8_,auVar8._0_8_);
+  _objc_alloc(&_OBJC_CLASS___UILabel);
+  auVar8 = FUN_101561e88();
+  FUN_1015c10c8(param_1,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_101578168(param_1);
+  FUN_1015d6f08(auVar8._0_8_,auVar8._8_8_,&cf_pQ_vU_);
+  uVar3 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_04,0xffffff);
+  auVar8 = FUN_101578168(param_1);
+  FUN_1015d6fa8(auVar8._0_8_,auVar8._8_8_,uVar3);
+  uVar3 = FUN_1015ed768(0x4031000000000000,&_OBJC_CLASS___UIFont);
+  auVar8 = FUN_101578168(param_1);
+  FUN_1015b4788(auVar8._0_8_,auVar8._8_8_,uVar3);
+  uVar3 = FUN_101578168(param_1);
+  FUN_1015e3aa8(uVar3);
+  uVar3 = FUN_10155ffa8(param_1);
+  dVar6 = (double)FUN_10159a248(uVar3);
+  uVar3 = FUN_101578168(param_1);
+  FUN_1015bfa48(dVar6 + 10.0,uVar3);
+  uVar3 = FUN_101578168(param_1);
+  FUN_1015a9948(dVar7,uVar3);
+  IVar2 = FUN_1015fa0a8(param_1,extraout_x1_05);
+  uVar3 = FUN_10159ea88(param_1);
+  auVar8 = FUN_101578168(uVar3);
+  FUN_101527148(IVar2,auVar8._8_8_,auVar8._0_8_);
+  _objc_alloc(&_OBJC_CLASS___UILabel);
+  auVar8 = FUN_101561e88();
+  FUN_1015c4768(param_1,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_10157e548(param_1);
+  FUN_1015d6f08(auVar8._0_8_,auVar8._8_8_,&::cf___);
+  uVar3 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_06,0xffffff);
+  auVar8 = FUN_10157e548(param_1);
+  FUN_1015d6fa8(auVar8._0_8_,auVar8._8_8_,uVar3);
+  uVar3 = FUN_1015ed768(0x4031000000000000,&_OBJC_CLASS___UIFont);
+  auVar8 = FUN_10157e548(param_1);
+  FUN_1015b4788(auVar8._0_8_,auVar8._8_8_,uVar3);
+  IVar2 = FUN_1015fa0a8(param_1,extraout_x1_07);
+  uVar3 = FUN_10159ea88(param_1);
+  auVar8 = FUN_10157e548(uVar3);
+  FUN_101527148(IVar2,auVar8._8_8_,auVar8._0_8_);
+  _objc_alloc(&_OBJC_CLASS___UILabel);
+  auVar8 = FUN_101561e88();
+  FUN_1015c86e8(param_1,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_101589ec8(param_1);
+  FUN_1015d6f08(auVar8._0_8_,auVar8._8_8_,&::cf___);
+  uVar3 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_08,0x89879a);
+  auVar8 = FUN_101589ec8(param_1);
+  FUN_1015d6fa8(auVar8._0_8_,auVar8._8_8_,uVar3);
+  uVar3 = FUN_1015ed768(0x402c000000000000,&_OBJC_CLASS___UIFont);
+  auVar8 = FUN_101589ec8(param_1);
+  FUN_1015b4788(auVar8._0_8_,auVar8._8_8_,uVar3);
+  IVar2 = FUN_1015fa0a8(param_1,extraout_x1_09);
+  uVar3 = FUN_10159ea88(param_1);
+  auVar8 = FUN_101589ec8(uVar3);
+  FUN_101527148(IVar2,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1_10,0);
+  FUN_1015d8528(param_1,auVar8._8_8_,auVar8._0_8_);
+  uVar3 = FUN_10153a2e8(&_OBJC_CLASS___UIColor);
+  auVar8 = FUN_1015f0dc8(param_1);
+  FUN_1015a5908(auVar8._0_8_,auVar8._8_8_,uVar3);
+  auVar8 = FUN_1015f0dc8(param_1);
+  FUN_1015b71e8(auVar8._0_8_,auVar8._8_8_,0);
+  IVar2 = FUN_1015fa0a8(param_1,extraout_x1_11);
+  dVar6 = (double)FUN_1015fc468(IVar2);
+  uVar3 = FUN_1015f0dc8(param_1);
+  FUN_1015b4b08(0,dVar7 + -30.0,dVar6 + -60.0,0x404e000000000000,uVar3);
+  auVar8 = FUN_1015f0dc8(param_1);
+  FUN_101527248(auVar8._0_8_,auVar8._8_8_,param_1,"topSelector",0x40);
+  IVar2 = FUN_1015fa0a8(param_1,extraout_x1_12);
+  auVar8 = FUN_1015f0dc8(param_1);
+  FUN_101527148(IVar2,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_101534f68(&_OBJC_CLASS___UIButton,extraout_x1_13,0);
+  FUN_1015d0e28(param_1,auVar8._8_8_,auVar8._0_8_);
+  auVar8 = FUN_1015df3e8(param_1);
+  auVar9 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar8._8_8_,&cf_nnc_ic_setting_dark);
+  FUN_1015b8468(auVar8._0_8_,auVar9._8_8_,auVar9._0_8_,0);
+  IVar2 = FUN_1015fa0a8(param_1,extraout_x1_14);
+  dVar6 = (double)FUN_1015fc468(IVar2);
+  uVar3 = FUN_1015df3e8(param_1);
+  FUN_1015b4b08(dVar6 + -60.0,dVar7 + -30.0,0x404e000000000000,0x404e000000000000,uVar3);
+  auVar8 = FUN_1015df3e8(param_1);
+  FUN_101527248(auVar8._0_8_,auVar8._8_8_,param_1,"settingSelector",0x40);
+  uVar3 = FUN_1015df3e8(param_1);
+  dVar7 = 20.0;
+  FUN_1015b8608(0x4034000000000000,0x4034000000000000,0x4034000000000000,0x4034000000000000,uVar3);
+  uVar3 = FUN_1015f0dc8(param_1);
+  dVar6 = (double)FUN_1015319c8(uVar3);
+  uVar3 = FUN_10155efc8(param_1);
+  FUN_1015d84c8(dVar6 + 25.0,uVar3);
+  uVar3 = FUN_10155efc8(param_1);
+  dVar6 = (double)FUN_10155e568(uVar3);
+  uVar3 = FUN_10155efc8(param_1);
+  FUN_1015b6f28(dVar6 + 10.0,uVar3);
+  auVar8 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+  FUN_1015b7348(param_1,auVar8._8_8_,auVar8._0_8_);
+  _objc_alloc(&_OBJC_CLASS___UICollectionViewFlowLayout);
+  uVar3 = FUN_101561e88();
+  uVar4 = FUN_10155ee88(param_1);
+  uVar4 = FUN_10155e568(uVar4);
+  FUN_1015be0c8(0x4056800000000000,uVar4,uVar3);
+  FUN_1015c3788(0x4024000000000000,uVar3);
+  FUN_1015c37c8(0x4024000000000000,uVar3);
+  FUN_1015cf708(uVar3,extraout_x1_15,1);
+  auVar8 = FUN_10155ee88(param_1);
+  FUN_1015aaf08(auVar8._0_8_,auVar8._8_8_,uVar3);
+  uVar3 = FUN_10153a2e8(&_OBJC_CLASS___UIColor);
+  auVar8 = FUN_10155ee88(param_1);
+  FUN_1015a5908(auVar8._0_8_,auVar8._8_8_,uVar3);
+  auVar8 = FUN_10155ee88(param_1);
+  FUN_1015ae568(auVar8._0_8_,auVar8._8_8_,param_1);
+  auVar8 = FUN_10155ee88(param_1);
+  FUN_1015aeee8(auVar8._0_8_,auVar8._8_8_,param_1);
+  auVar8 = FUN_10155ee88(param_1);
+  FUN_1015cf868(auVar8._0_8_,auVar8._8_8_,0);
+  auVar8 = FUN_10155ee88(param_1);
+  FUN_1015d22c8(auVar8._0_8_,auVar8._8_8_,0);
+  uVar3 = FUN_10155ee88(param_1);
+  FUN_1015ac0c8(0,0,uVar3);
+  auVar8 = FUN_10155ee88(param_1);
+  auVar9 = FUN_1015818a8(&_OBJC_CLASS___UINib,auVar8._8_8_,&cf_NNCHistoryCollectionCell,0);
+  FUN_101592688(auVar8._0_8_,auVar9._8_8_,auVar9._0_8_,&cf_NNCHistoryCollectionCell);
+  auVar8 = FUN_10155efc8(param_1);
+  FUN_1015b6fc8(auVar8._0_8_,auVar8._8_8_,1);
+  uVar3 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_16,&cf_myBgColor);
+  auVar8 = FUN_10155efa8(param_1);
+  FUN_1015d6fa8(auVar8._0_8_,auVar8._8_8_,uVar3);
+  auVar8 = FUN_10155ee68(param_1);
+  auVar9 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar8._8_8_,&cf_myBgColor);
+  FUN_1015d7ea8(auVar8._0_8_,auVar9._8_8_,auVar9._0_8_,0);
+  uVar3 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_17,&cf_myBgColor);
+  auVar8 = FUN_101572848(param_1);
+  FUN_1015d6fa8(auVar8._0_8_,auVar8._8_8_,uVar3);
+  auVar8 = FUN_101581be8(param_1);
+  if ((auVar8._0_8_ & 1) == 0) {
+    auVar8 = FUN_101581d08(&objc::class_t::NNCGGManager,auVar8._8_8_,&cf_zoneAd);
+    FUN_1015c59c8(param_1,auVar8._8_8_,auVar8._0_8_);
+    iVar1 = FUN_101581be8(param_1);
+    if (iVar1 != 0) {
+      auVar8 = FUN_1015813c8(&_OBJC_CLASS___UIView);
+      FUN_1015c5988(param_1,auVar8._8_8_,auVar8._0_8_);
+      auVar8 = FUN_101581948(param_1);
+      IVar2 = FUN_101574688(auVar8._0_8_,auVar8._8_8_);
+      FUN_1015c25a8(IVar2);
+      uVar3 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+      FUN_101531d88(uVar3);
+      dVar7 = dVar7 + -30.0;
+      uVar3 = FUN_101581948(param_1);
+      FUN_1015b4b08(0x402e000000000000,0,dVar7,0,uVar3);
+      auVar8 = FUN_1015813c8(&objc::class_t::NNCGGManager);
+      FUN_1015a1908(param_1,auVar8._8_8_,auVar8._0_8_);
+      auVar8 = FUN_101523d48(param_1);
+      FUN_1015aeee8(auVar8._0_8_,auVar8._8_8_,param_1);
+      IVar2 = FUN_1015fa0a8(param_1,extraout_x1_18);
+      auVar8 = FUN_101581948(param_1);
+      FUN_101527148(IVar2,auVar8._8_8_,auVar8._0_8_);
+      uVar3 = FUN_101523d48(param_1);
+      uVar4 = FUN_101581948(param_1);
+      uVar5 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+      FUN_101531d88(uVar5);
+      FUN_1015e2448(dVar7 + -30.0,uVar3,extraout_x1_19,&cf_zoneAd,uVar4,param_1);
+    }
+  }
+  _objc_alloc(&_OBJC_CLASS___UIImageView);
+  auVar8 = FUN_101564e08(0,0,0x4024000000000000,0x4024000000000000);
+  FUN_1015cbdc8(param_1,auVar8._8_8_,auVar8._0_8_);
+  uVar3 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_20,0xff1924);
+  auVar8 = FUN_101591948(param_1);
+  FUN_1015a5908(auVar8._0_8_,auVar8._8_8_,uVar3);
+  auVar8 = FUN_101591948(param_1);
+  IVar2 = FUN_101574688(auVar8._0_8_,auVar8._8_8_);
+  FUN_1015ac5e8(0x4014000000000000,IVar2);
+  auVar8 = FUN_101591948(param_1);
+  IVar2 = FUN_101574688(auVar8._0_8_,auVar8._8_8_);
+  FUN_1015c25a8(IVar2);
+  auVar8 = FUN_101591948(param_1);
+  FUN_1015b6fc8(auVar8._0_8_,auVar8._8_8_,1);
+  uVar3 = FUN_101572648(param_1);
+  auVar8 = FUN_101591948(param_1);
+  FUN_101527148(uVar3,auVar8._8_8_,auVar8._0_8_);
+  uVar3 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_21,&cf_mySheCol);
+  auVar8 = FUN_10155efc8(param_1);
+  FUN_1015a5908(auVar8._0_8_,auVar8._8_8_,uVar3);
+  auVar8 = FUN_10155efc8(param_1);
+  IVar2 = FUN_101574688(auVar8._0_8_,auVar8._8_8_);
+  FUN_1015ac5e8(0x4024000000000000,IVar2);
+  auVar8 = FUN_10155efc8(param_1);
+  IVar2 = FUN_101574688(auVar8._0_8_,auVar8._8_8_);
+  FUN_1015c25a8(IVar2);
+  uVar3 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_22,&cf_mySheCol);
+  auVar8 = FUN_101572648(param_1);
+  FUN_1015a5908(auVar8._0_8_,auVar8._8_8_,uVar3);
+  auVar8 = FUN_101572648(param_1);
+  IVar2 = FUN_101574688(auVar8._0_8_,auVar8._8_8_);
+  FUN_1015ac5e8(0x4024000000000000,IVar2);
+  auVar8 = FUN_101572648(param_1);
+  IVar2 = FUN_101574688(auVar8._0_8_,auVar8._8_8_);
+  FUN_1015c25a8(IVar2);
+  return;
+}
+
+
+
+/* NNCZoneViewController.nncRefreshView | 0x10001a170 | ev_8057e49e28b6444db17f52fb5d6e47cbf9efec4a93fcaf643db72d8e26c24b11 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCZoneViewController::nncRefreshView(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  long lVar3;
+  undefined8 uVar4;
+  ulong uVar5;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  long lVar6;
+  long lVar7;
+  double dVar8;
+  double dVar9;
+  double dVar10;
+  undefined1 auVar11 [16];
+  undefined1 auVar12 [16];
+  undefined *local_a8;
+  undefined8 local_a0;
+  code *local_98;
+  undefined *puStack_90;
+  ID local_88;
+  
+  iVar1 = FUN_101581c88();
+  if (iVar1 != 0) {
+    uVar2 = FUN_1015e11a8(&objc::class_t::NNCFileHistoryManager);
+    uVar2 = FUN_101558348(uVar2);
+    lVar3 = FUN_10153f908(uVar2);
+    auVar11 = FUN_10155efc8(param_1);
+    if (lVar3 == 0) {
+      FUN_1015b6fc8(auVar11._0_8_,auVar11._8_8_,1);
+    }
+    else {
+      FUN_1015b6fc8(auVar11._0_8_,auVar11._8_8_,0);
+      uVar4 = FUN_10155ef48(param_1);
+      FUN_101593248(uVar4);
+      uVar5 = FUN_10153f908(uVar2);
+      if (uVar5 < 10) {
+        auVar11 = FUN_10155ef48(param_1);
+        FUN_101526548(auVar11._0_8_,auVar11._8_8_,uVar2);
+      }
+      else {
+        lVar3 = 0;
+        do {
+          auVar11 = FUN_10155ef48(param_1);
+          auVar12 = FUN_101583328(uVar2,auVar11._8_8_,lVar3);
+          FUN_101526528(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_);
+          lVar3 = lVar3 + 1;
+        } while (lVar3 != 9);
+      }
+      uVar2 = FUN_10155ee88(param_1);
+      FUN_101592d08(uVar2);
+    }
+    uVar2 = FUN_101543648(&objc::class_t::NNCProfileUser);
+    iVar1 = FUN_10156ed08(uVar2);
+    lVar3 = (long)__iconView;
+    FUN_1015ac0a8(*(undefined8 *)(param_1 + lVar3),extraout_x1,2);
+    if (iVar1 == 0) {
+      auVar11 = FUN_101560a48(&_OBJC_CLASS___UIImage,extraout_x1_00,&cf_nnc_ic_discuss);
+      FUN_1015b8428(*(ID *)(param_1 + lVar3),auVar11._8_8_,auVar11._0_8_);
+      FUN_1015b6fc8(*(undefined8 *)(param_1 + (long)__loginLabel));
+      FUN_1015b6fc8(*(undefined8 *)(param_1 + (long)__nameLabel),extraout_x1_05,1);
+      FUN_1015b6fc8(*(undefined8 *)(param_1 + (long)__phoneLabel),extraout_x1_06,1);
+    }
+    else {
+      uVar4 = *(undefined8 *)(param_1 + lVar3);
+      uVar2 = FUN_101543648(&objc::class_t::NNCProfileUser);
+      auVar11 = FUN_10152cea8(uVar2);
+      auVar11 = FUN_1015156a8(&_OBJC_CLASS___NSURL,auVar11._8_8_,auVar11._0_8_);
+      auVar12 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar11._8_8_,&cf_nnc_ic_discuss);
+      local_a8 = PTR___NSConcreteStackBlock_101d78760;
+      local_a0 = 0xc2000000;
+      local_98 = FUN_10001ad30;
+      puStack_90 = &UNK_101d7b5e0;
+      local_88 = param_1;
+      FUN_10159dba8(uVar4,auVar12._8_8_,auVar11._0_8_,auVar12._0_8_,&local_a8);
+      lVar3 = (long)__loginLabel;
+      FUN_1015b6fc8(*(undefined8 *)(param_1 + lVar3),extraout_x1_01,1);
+      lVar7 = (long)__nameLabel;
+      FUN_1015b6fc8(*(undefined8 *)(param_1 + lVar7),extraout_x1_02,0);
+      lVar6 = (long)__phoneLabel;
+      FUN_1015b6fc8(*(undefined8 *)(param_1 + lVar6),extraout_x1_03,0);
+      uVar2 = FUN_101543648(&objc::class_t::NNCProfileUser);
+      auVar11 = FUN_1015818e8(uVar2);
+      FUN_1015d6f08(*(undefined8 *)(param_1 + lVar7),auVar11._8_8_,auVar11._0_8_);
+      uVar2 = FUN_101543648(&objc::class_t::NNCProfileUser);
+      FUN_101589f08(uVar2);
+      auVar11 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_04,&cf_Kb_gS_);
+      FUN_1015d6f08(*(undefined8 *)(param_1 + lVar6),auVar11._8_8_,auVar11._0_8_);
+      FUN_1015e3aa8(*(undefined8 *)(param_1 + lVar7));
+      FUN_101574da8(*(undefined8 *)(param_1 + lVar3));
+      FUN_1015bfa48(*(undefined8 *)(param_1 + lVar7));
+      dVar8 = (double)FUN_1015384e8(*(undefined8 *)(param_1 + lVar3));
+      FUN_1015a76a8(dVar8 + -3.0,*(undefined8 *)(param_1 + lVar7));
+      FUN_1015e3aa8(*(undefined8 *)(param_1 + lVar6));
+      FUN_101574da8(*(undefined8 *)(param_1 + lVar3));
+      FUN_1015bfa48(*(undefined8 *)(param_1 + lVar6));
+      dVar8 = (double)FUN_1015384e8(*(undefined8 *)(param_1 + lVar3));
+      FUN_1015d84c8(dVar8 + 3.0,*(undefined8 *)(param_1 + lVar6));
+    }
+    uVar2 = FUN_10155efc8(param_1);
+    uVar5 = FUN_10156e108(uVar2);
+    uVar2 = FUN_10155efc8(param_1);
+    if ((uVar5 & 1) == 0) {
+      dVar8 = (double)FUN_1015319c8(uVar2);
+    }
+    else {
+      dVar8 = (double)FUN_1015f0ce8();
+    }
+    uVar2 = FUN_10155efc8(param_1);
+    iVar1 = FUN_10156e108(uVar2);
+    dVar10 = 0.0;
+    if (iVar1 == 0) {
+      dVar10 = 25.0;
+    }
+    uVar2 = FUN_101581948(param_1);
+    dVar9 = (double)FUN_10155e568(uVar2);
+    if (10.0 < dVar9) {
+      uVar2 = FUN_101581948(param_1);
+      FUN_1015d84c8(dVar8 + 10.0,uVar2);
+      uVar2 = FUN_101581948(param_1);
+      dVar8 = (double)FUN_1015319c8(uVar2);
+    }
+    uVar2 = FUN_101572648(param_1);
+    FUN_1015d84c8(dVar10 + dVar8,uVar2);
+    uVar2 = FUN_1015726c8(param_1);
+    FUN_1015bfa48(0x402e000000000000,uVar2);
+    uVar2 = FUN_1015726a8(param_1);
+    FUN_1015bfa48(0x402e000000000000,uVar2);
+    uVar2 = FUN_101572648(param_1);
+    dVar8 = (double)FUN_1015fc468(uVar2);
+    uVar2 = FUN_101572768(param_1);
+    FUN_1015ce268(dVar8 + -15.0,uVar2);
+    uVar2 = FUN_101572648(param_1);
+    dVar8 = (double)FUN_1015fc468(uVar2);
+    uVar2 = FUN_1015726a8(param_1);
+    dVar10 = (double)FUN_1015fc468(uVar2);
+    uVar2 = FUN_101572648(param_1);
+    dVar9 = (double)FUN_1015fc468(uVar2);
+    dVar10 = ((dVar8 + -30.0 + dVar10 * -4.0) / 3.0) * 0.5;
+    uVar2 = FUN_101572688(param_1);
+    FUN_1015ce268(dVar9 * 0.5 - dVar10,uVar2);
+    uVar2 = FUN_101572648(param_1);
+    dVar8 = (double)FUN_1015fc468(uVar2);
+    uVar2 = FUN_1015727c8(param_1);
+    FUN_1015bfa48(dVar10 + dVar8 * 0.5,uVar2);
+    uVar2 = FUN_101572648(param_1);
+    dVar8 = (double)FUN_1015fc468(uVar2);
+    uVar2 = FUN_1015727a8(param_1);
+    FUN_1015ce268(dVar8 * 0.5 - dVar10,uVar2);
+    uVar2 = FUN_101572768(param_1);
+    dVar8 = (double)FUN_10159a248(uVar2);
+    uVar2 = FUN_101591948(param_1);
+    FUN_1015ce268(dVar8 + -28.0,uVar2);
+    uVar2 = FUN_101572768(param_1);
+    dVar8 = (double)FUN_1015f0ce8(uVar2);
+    uVar2 = FUN_101591948(param_1);
+    FUN_1015d84c8(dVar8 + 15.0,uVar2);
+    auVar11 = FUN_1015726a8(param_1);
+    auVar12 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar11._8_8_,&cf_myBgColor);
+    FUN_1015d7ea8(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_,0);
+    auVar11 = FUN_101572688(param_1);
+    auVar12 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar11._8_8_,&cf_myBgColor);
+    FUN_1015d7ea8(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_,0);
+    auVar11 = FUN_1015727c8(param_1);
+    auVar12 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar11._8_8_,&cf_myBgColor);
+    FUN_1015d7ea8(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_,0);
+    auVar11 = FUN_101572768(param_1);
+    auVar12 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar11._8_8_,&cf_myBgColor);
+    FUN_1015d7ea8(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_,0);
+    auVar11 = FUN_1015726c8(param_1);
+    auVar12 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar11._8_8_,&cf_myBgColor);
+    FUN_1015d7ea8(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_,0);
+    auVar11 = FUN_1015727a8(param_1);
+    auVar12 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar11._8_8_,&cf_myBgColor);
+    FUN_1015d7ea8(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_,0);
+    FUN_1015f5e48(param_1);
+    auVar11 = FUN_1015726a8(param_1);
+    auVar12 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar11._8_8_,&cf_wodeImage1);
+    FUN_1015b8468(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_,0);
+    auVar11 = FUN_101572688(param_1);
+    auVar12 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar11._8_8_,&cf_wodeImage2);
+    FUN_1015b8468(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_,0);
+    auVar11 = FUN_1015727c8(param_1);
+    auVar12 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar11._8_8_,&cf_wodeImage3);
+    FUN_1015b8468(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_,0);
+    auVar11 = FUN_101572768(param_1);
+    auVar12 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar11._8_8_,&cf_wodeImage4);
+    FUN_1015b8468(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_,0);
+    auVar11 = FUN_1015726c8(param_1);
+    auVar12 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar11._8_8_,&cf_wodeImage5);
+    FUN_1015b8468(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_,0);
+    auVar11 = FUN_1015727a8(param_1);
+    auVar12 = FUN_101560a48(&_OBJC_CLASS___UIImage,auVar11._8_8_,&cf_wodeImage6);
+    FUN_1015b8468(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_,0);
+  }
+  return;
+}
+
+
+
+/* NNCZoneViewController.traitCollectionDidChange: | 0x10001ad70 | ev_007f27fb22e529474d2c212ce0f6708e524f2f4053203352bf349cb8e135851e */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::traitCollectionDidChange_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  long lVar3;
+  ID local_50;
+  class_t *pcStack_48;
+  
+  pcStack_48 = &objc::class_t::NNCZoneViewController;
+  local_50 = param_1;
+  _objc_msgSendSuper2(&local_50,"traitCollectionDidChange:",param_3);
+  uVar1 = FUN_1015f20a8(param_1);
+  lVar2 = FUN_1015f74c8(uVar1);
+  lVar3 = FUN_1015f74c8(param_3);
+  if (lVar2 != lVar3) {
+    FUN_1015f5e48(param_1);
+  }
+  return;
+}
+
+
+
+/* NNCZoneViewController.updateUIForCurrentInterfaceStyle | 0x10001ae1c | ev_575925f01ec475a11b12bc13cbf783d00c041167c83207cfa78e7da8ed5e38e7 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCZoneViewController::updateUIForCurrentInterfaceStyle(ID param_1,SEL param_2)
+
+{
+  cfstringStruct *pcVar1;
+  undefined8 uVar2;
+  long lVar3;
+  
+  uVar2 = FUN_1015f20a8();
+  lVar3 = FUN_1015f74c8(uVar2);
+  pcVar1 = &cf_S_MR_fmr_j_2;
+  if (lVar3 != 2) {
+    pcVar1 = &cf_S_MR_fEmr_j_2;
+  }
+  _NSLog(pcVar1);
+  return;
+}
+
+
+
+/* NNCZoneViewController.requestUserInfo | 0x10001ae70 | ev_8355f89b7abd4a6f0db334731feeaccf40542a4595e5fa854e014c4f762ccd56 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCZoneViewController::requestUserInfo(ID param_1,SEL param_2)
+
+{
+  undefined *puVar1;
+  int iVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x0;
+  undefined8 extraout_x0_00;
+  _Unwind_Exception *exception_object;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  SEL extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined1 auVar4 [16];
+  undefined1 auVar5 [16];
+  undefined *local_148;
+  undefined8 local_140;
+  code *local_138;
+  undefined *puStack_130;
+  undefined1 auStack_128 [8];
+  undefined *local_120;
+  undefined8 local_118;
+  code *local_110;
+  undefined *puStack_108;
+  undefined1 auStack_100 [8];
+  undefined *local_f8;
+  undefined8 local_f0;
+  code *local_e8;
+  undefined *puStack_e0;
+  undefined1 auStack_d8 [8];
+  undefined *local_d0;
+  undefined8 local_c8;
+  code *local_c0;
+  undefined *puStack_b8;
+  undefined1 auStack_b0 [8];
+  undefined1 auStack_a8 [8];
+  cfstringStruct *local_a0;
+  undefined8 local_98;
+  cfstringStruct *local_90;
+  undefined8 local_88;
+  long local_80;
+  
+  local_80 = *(long *)PTR____stack_chk_guard_101d78938;
+  FUN_101572f68();
+  uVar3 = FUN_101543648(&objc::class_t::NNCProfileUser);
+  iVar2 = FUN_10156ed08(uVar3);
+  if (iVar2 != 0) {
+    FUN_101557508(&objc::class_t::NNCRequestDo);
+    auVar4 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf___noti__);
+    local_90 = &cf_page;
+    auVar5 = FUN_101583048(&_OBJC_CLASS___NSNumber,auVar4._8_8_,1);
+    local_88 = auVar5._0_8_;
+    uVar3 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar5._8_8_,&local_88,&local_90,1);
+    _objc_initWeak(auStack_a8,param_1);
+    FUN_101596288((ID)&objc::class_t::NNCBIZRequest,extraout_x1_00);
+    puVar1 = PTR___NSConcreteStackBlock_101d78760;
+    local_d0 = PTR___NSConcreteStackBlock_101d78760;
+    local_c8 = 0xc2000000;
+    local_c0 = FUN_10001b280;
+    puStack_b8 = &UNK_101d7b990;
+    _objc_copyWeak(auStack_b0,auStack_a8);
+    local_f8 = puVar1;
+    local_f0 = 0xc2000000;
+    local_e8 = FUN_10001b3dc;
+    puStack_e0 = &UNK_101d7b9c0;
+    _objc_copyWeak(auStack_d8,auStack_a8);
+    FUN_101596fa8(extraout_x0,extraout_x1_01,auVar4._0_8_,uVar3,&local_d0,&local_f8);
+    _objc_destroyWeak(auStack_d8);
+    _objc_destroyWeak(auStack_b0);
+    _objc_destroyWeak(auStack_a8);
+  }
+  FUN_101557508(&objc::class_t::NNCRequestDo);
+  auVar4 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1_02,&cf___sysnoti__);
+  local_a0 = &cf_page;
+  auVar5 = FUN_101583048(&_OBJC_CLASS___NSNumber,auVar4._8_8_,1);
+  local_98 = auVar5._0_8_;
+  uVar3 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar5._8_8_,&local_98,&local_a0,1);
+  _objc_initWeak(auStack_a8,param_1);
+  FUN_101596288((ID)&objc::class_t::NNCBIZRequest,extraout_x1_03);
+  puVar1 = PTR___NSConcreteStackBlock_101d78760;
+  local_120 = PTR___NSConcreteStackBlock_101d78760;
+  local_118 = 0xc2000000;
+  local_110 = FUN_10001b3f4;
+  puStack_108 = &UNK_101d7b990;
+  _objc_copyWeak(auStack_100,auStack_a8);
+  local_148 = puVar1;
+  local_140 = 0xc2000000;
+  local_138 = FUN_10001b550;
+  puStack_130 = &UNK_101d7b9c0;
+  _objc_copyWeak(auStack_128,auStack_a8);
+  FUN_101596fa8(extraout_x0_00,extraout_x1_04,auVar4._0_8_,uVar3,&local_120,&local_148);
+  _objc_destroyWeak(auStack_128);
+  _objc_destroyWeak(auStack_100);
+  _objc_destroyWeak(auStack_a8);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_80) {
+    return;
+  }
+  exception_object = (_Unwind_Exception *)FUN_100ab8e90(0);
+  _objc_destroyWeak(param_1);
+  _objc_destroyWeak(extraout_x0_00);
+  _objc_destroyWeak(auStack_a8);
+                    /* WARNING: Subroutine does not return */
+  __Unwind_Resume(exception_object);
+}
+
+
+
+/* NNCZoneViewController.judgeRed | 0x10001b568 | ev_d2cb361869509f15dba680dc3d0e7d8cf83ae6b6416a7479f5fd72078aed89db */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCZoneViewController::judgeRed(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  long lVar5;
+  long lVar6;
+  undefined1 auVar7 [16];
+  
+  auVar7 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  uVar1 = FUN_101583468(auVar7._0_8_,auVar7._8_8_,&cf_nnc_n_s_l);
+  auVar7 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  uVar2 = FUN_101583468(auVar7._0_8_,auVar7._8_8_,&cf_nnc_n_s_d);
+  auVar7 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  uVar3 = FUN_101583468(auVar7._0_8_,auVar7._8_8_,&cf_nnc_n_l);
+  auVar7 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  uVar4 = FUN_101583468(auVar7._0_8_,auVar7._8_8_,&cf_nnc_n_d);
+  lVar5 = FUN_101578508(uVar4);
+  lVar6 = FUN_101578508(uVar3);
+  if (lVar5 == lVar6) {
+    lVar5 = FUN_101578508(uVar1);
+    lVar6 = FUN_101578508(uVar2);
+    if (lVar5 == lVar6) {
+      auVar7 = FUN_101591948(param_1);
+      uVar1 = 1;
+      goto LAB_10001b6c0;
+    }
+  }
+  auVar7 = FUN_101591948(param_1);
+  uVar1 = 0;
+LAB_10001b6c0:
+  FUN_1015b6fc8(auVar7._0_8_,auVar7._8_8_,uVar1);
+  return;
+}
+
+
+
+/* NNCZoneViewController.topSelector | 0x10001b6fc | ev_7def5bc843503ce7d26cf0c49b0cd0245b98d45212bfd79e263246d148dc4b42 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCZoneViewController::topSelector(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined1 auVar3 [16];
+  undefined1 auVar4 [16];
+  
+  uVar2 = FUN_101543648(&objc::class_t::NNCProfileUser);
+  iVar1 = FUN_10156ed08(uVar2);
+  if (iVar1 == 0) {
+    auVar3 = _objc_alloc(&objc::class_t::NNCLoginViewController);
+    auVar3 = FUN_1015665e8(auVar3._0_8_,auVar3._8_8_,&cf_NNCLoginViewController,0);
+    FUN_10155fc48(auVar3._0_8_,auVar3._8_8_,1);
+    auVar4 = _objc_alloc(&objc::class_t::BaseNavCV);
+    auVar3 = FUN_101567168(auVar4._0_8_,auVar4._8_8_,auVar3._0_8_);
+    FUN_1015c3c28(auVar3._0_8_,auVar3._8_8_,0);
+    FUN_10158dbc8(param_1,extraout_x1,auVar3._0_8_,1,&UNK_101d7b9f0);
+  }
+  else {
+    auVar3 = _objc_alloc(&objc::class_t::NNCProfileViewController);
+    auVar3 = FUN_1015665e8(auVar3._0_8_,auVar3._8_8_,&cf_NNCProfileViewController,0);
+    FUN_1015b7168(auVar3._0_8_,auVar3._8_8_,1);
+    auVar4 = FUN_101580708(param_1);
+    FUN_10158f2e8(auVar4._0_8_,auVar4._8_8_,auVar3._0_8_,1);
+  }
+  return;
+}
+
+
+
+/* NNCZoneViewController.settingSelector | 0x10001b808 | ev_7797655c726ab0624e89b5b1e1990538df28cc96e842e2333f387d520ebbb3f3 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCZoneViewController::settingSelector(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = _objc_alloc(&objc::class_t::NNCSettingViewController);
+  auVar2 = FUN_1015665e8(auVar2._0_8_,auVar2._8_8_,&cf_NNCSettingViewController,0);
+  uVar1 = auVar2._0_8_;
+  FUN_10155fc48(uVar1,auVar2._8_8_,0);
+  FUN_1015b7168(uVar1,extraout_x1,1);
+  auVar2 = FUN_101580708(param_1);
+  FUN_10158f2e8(auVar2._0_8_,auVar2._8_8_,uVar1,1);
+  return;
+}
+
+
+
+/* NNCZoneViewController.nnconHistoryUpdated | 0x10001b884 | ev_14a84e2b41b618342bba7c3d70adf21c548e729e16843f869b02c6e4d458b2e6 */
+
+/* Function Stack Size: 0x10 bytes */
+
+void NNCZoneViewController::nnconHistoryUpdated(ID param_1,SEL param_2,CGSize param_3)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x000101581938. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_msgSend_101d78f58)
+            (param_3.field0_0x0,param_3.field1_0x8,param_1,"nncRefreshView");
+  return;
+}
+
+
+
+/* NNCZoneViewController.collectionView:numberOfItemsInSection: | 0x10001b888 | ev_2c46bb308ec022fbf9033404cd3cf673a119b829693aa32f89a8f29f250da5de */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+long_long NNCZoneViewController::collectionView_numberOfItemsInSection_
+                    (ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  undefined8 uVar1;
+  long_long lVar2;
+  
+  uVar1 = FUN_10155ef48();
+  lVar2 = FUN_10153f908(uVar1);
+  return lVar2;
+}
+
+
+
+/* NNCZoneViewController.collectionView:cellForItemAtIndexPath: | 0x10001b8c4 | ev_22b0758cbcfd57d6b345d37940df0172acb1465a96519cf014b503e8b6b92bcc */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+ID NNCZoneViewController::collectionView_cellForItemAtIndexPath_
+             (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  
+  IVar1 = FUN_101546ec8(param_3,param_2,&cf_NNCHistoryCollectionCell,param_4);
+  uVar2 = FUN_10155ef48(param_1);
+  auVar3 = FUN_1015725e8(param_4);
+  auVar3 = FUN_101583328(uVar2,auVar3._8_8_,auVar3._0_8_);
+  FUN_1015b72c8(IVar1,auVar3._8_8_,auVar3._0_8_);
+  return IVar1;
+}
+
+
+
+/* NNCZoneViewController.collectionView:didSelectItemAtIndexPath: | 0x10001b978 | ev_6babc822b6133421112cec05004b34b77c7fe1c6bba1ec5f9f2b7810d4fed5e6 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCZoneViewController::collectionView_didSelectItemAtIndexPath_
+               (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar3 [16];
+  
+  FUN_101547168(param_3,param_2,param_4,0);
+  auVar3 = _objc_alloc(&objc::class_t::NNCDetailViewController);
+  uVar1 = FUN_1015665e8(auVar3._0_8_,auVar3._8_8_,&cf_NNCDetailViewController,0);
+  uVar2 = FUN_10155ef48(param_1);
+  auVar3 = FUN_1015725e8(param_4);
+  uVar2 = FUN_101583328(uVar2,auVar3._8_8_,auVar3._0_8_);
+  auVar3 = FUN_1015f8fe8(uVar2);
+  FUN_1015dc188(uVar1,auVar3._8_8_,auVar3._0_8_);
+  FUN_1015b7168(uVar1,extraout_x1,1);
+  FUN_10155fc48(uVar1,extraout_x1_00,1);
+  auVar3 = FUN_101580708(param_1);
+  FUN_10158f2e8(auVar3._0_8_,auVar3._8_8_,uVar1,1);
+  return;
+}
+
+
+
+/* NNCZoneViewController.historyMoreSelector: | 0x10001ba88 | ev_abf4546b4a840c41a285e1bf8a69f2be0b371ddc1221c14da887372186d94d1f */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::historyMoreSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  undefined1 auVar2 [16];
+  
+  auVar1 = _objc_alloc(&objc::class_t::NNCHistoryViewController);
+  auVar1 = FUN_1015665e8(auVar1._0_8_,auVar1._8_8_,&cf_NNCHistoryViewController,0);
+  FUN_1015b7168(auVar1._0_8_,auVar1._8_8_,1);
+  auVar2 = FUN_101580708(param_1);
+  FUN_10158f2e8(auVar2._0_8_,auVar2._8_8_,auVar1._0_8_,1);
+  return;
+}
+
+
+
+/* NNCZoneViewController.settingSelector: | 0x10001baf8 | ev_4fd4114468a1aa12778254aac8d451a263899fa2e579a461e99b34cdfef7b92a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::settingSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  
+  auVar2 = _objc_alloc(&objc::class_t::NNCSettingViewController);
+  auVar2 = FUN_1015665e8(auVar2._0_8_,auVar2._8_8_,&cf_NNCSettingViewController,0);
+  uVar1 = auVar2._0_8_;
+  FUN_10155fc48(uVar1,auVar2._8_8_,0);
+  FUN_1015b7168(uVar1,extraout_x1,1);
+  auVar2 = FUN_101580708(param_1);
+  FUN_10158f2e8(auVar2._0_8_,auVar2._8_8_,uVar1,1);
+  return;
+}
+
+
+
+/* NNCZoneViewController.feedSelector: | 0x10001bb74 | ev_bd7f8f7ac8a0c33679d3529f92ab3fd40c0c59ed3c491d5564a59d73f07f49e1 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::feedSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined1 auVar2 [16];
+  
+  uVar1 = FUN_101551888();
+  auVar2 = FUN_1015edb08(param_1);
+  FUN_1015fa0a8(auVar2._0_8_,auVar2._8_8_);
+  FUN_1015e26a8(uVar1);
+  return;
+}
+
+
+
+/* NNCZoneViewController.msgSelector: | 0x10001bbec | ev_14ba015545c9c2d3e3070c579fcc8d3ec82ef808177d345b13c134f6c1e5b3fc */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::msgSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  
+  _objc_alloc(&objc::class_t::NNCMessageViewController);
+  auVar2 = FUN_101561e88();
+  uVar1 = auVar2._0_8_;
+  FUN_10155fc48(uVar1,auVar2._8_8_,0);
+  FUN_1015b7168(uVar1,extraout_x1,1);
+  auVar2 = FUN_101580708(param_1);
+  FUN_10158f2e8(auVar2._0_8_,auVar2._8_8_,uVar1,1);
+  return;
+}
+
+
+
+/* NNCZoneViewController.shareSelector: | 0x10001bc5c | ev_79bf9bbe8f47ff85c5a6492fbb4f151739854addf926d10c90fc7fa3aa639540 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::shareSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  undefined8 extraout_x1;
+  undefined1 auVar3 [16];
+  
+  uVar1 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+  uVar1 = FUN_1015e0e48(uVar1);
+  uVar1 = FUN_1015e0dc8(uVar1);
+  lVar2 = FUN_1015750a8(uVar1);
+  if (lVar2 != 0) {
+    auVar3 = FUN_101555788(&_OBJC_CLASS___UIPasteboard);
+    FUN_1015d52e8(auVar3._0_8_,auVar3._8_8_,uVar1);
+    FUN_1015e25c8(&objc::class_t::SVProgressHUD,extraout_x1,0,&cfstringStruct_101dddce0);
+  }
+  return;
+}
+
+
+
+/* NNCZoneViewController.downloadSelector: | 0x10001bd14 | ev_a617c003d4e28ac3f43433764db44a993699346e29169657bc7adba6b5afd3cb */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::downloadSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  
+  _NSLog(&cf_N_);
+  _objc_alloc(&objc::class_t::NNCDownloadViewController);
+  auVar2 = FUN_101561e88();
+  uVar1 = auVar2._0_8_;
+  FUN_1015b7168(uVar1,auVar2._8_8_,1);
+  FUN_10155fc48(uVar1,extraout_x1,0);
+  auVar2 = FUN_101580708(param_1);
+  FUN_10158f2e8(auVar2._0_8_,auVar2._8_8_,uVar1,1);
+  return;
+}
+
+
+
+/* NNCZoneViewController.favSelector: | 0x10001bd90 | ev_40624bbd22ebdb8398d12bd9fa5c6fd18626ffece4e8715a918adc09222748aa */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::favSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined1 auVar3 [16];
+  undefined1 auVar4 [16];
+  
+  uVar2 = FUN_101543648(&objc::class_t::NNCProfileUser);
+  iVar1 = FUN_10156ed08(uVar2);
+  if (iVar1 == 0) {
+    auVar3 = _objc_alloc(&objc::class_t::NNCLoginViewController);
+    auVar3 = FUN_1015665e8(auVar3._0_8_,auVar3._8_8_,&cf_NNCLoginViewController,0);
+    FUN_10155fc48(auVar3._0_8_,auVar3._8_8_,1);
+    auVar4 = _objc_alloc(&objc::class_t::BaseNavCV);
+    auVar3 = FUN_101567168(auVar4._0_8_,auVar4._8_8_,auVar3._0_8_);
+    FUN_1015c3c28(auVar3._0_8_,auVar3._8_8_,0);
+    FUN_10158dbc8(param_1,extraout_x1_00,auVar3._0_8_,1,&UNK_101d7ba10);
+  }
+  else {
+    auVar3 = _objc_alloc(&objc::class_t::NNCFavViewController);
+    auVar3 = FUN_1015665e8(auVar3._0_8_,auVar3._8_8_,&cf_NNCFavViewController,0);
+    uVar2 = auVar3._0_8_;
+    FUN_1015b7168(uVar2,auVar3._8_8_,1);
+    FUN_10155fc48(uVar2,extraout_x1,0);
+    auVar3 = FUN_101580708(param_1);
+    FUN_10158f2e8(auVar3._0_8_,auVar3._8_8_,uVar2,1);
+  }
+  return;
+}
+
+
+
+/* NNCZoneViewController.nnconAdSizeChanged: | 0x10001bea8 | ev_4d8581ae40d969600e5a3dd54df8771de82dac77602bc99e48e3e5b50b327d39 */
+
+/* Function Stack Size: 0x20 bytes */
+
+void NNCZoneViewController::nnconAdSizeChanged_(ID param_1,SEL param_2,CGSize param_3)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x000101581938. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_msgSend_101d78f58)
+            (param_3.field0_0x0,param_3.field1_0x8,param_1,"nncRefreshView");
+  return;
+}
+
+
+
+/* NNCZoneViewController.preferredStatusBarStyle | 0x10001beac | ev_35e2f1b4ff1b9fe220ab3fbeca03379cc10093f26c68fce00e3d26bd3d00e39f */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long NNCZoneViewController::preferredStatusBarStyle(ID param_1,SEL param_2)
+
+{
+  return 1;
+}
+
+
+
+/* NNCZoneViewController.iconView | 0x10001beb4 | ev_6714d635eefdd23d403e5ed5647e8f30ab9c2df1b3591749b6d62d492b6c9da5 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::iconView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__iconView);
+}
+
+
+
+/* NNCZoneViewController.setIconView: | 0x10001bec4 | ev_8b2ce06106ae7bcf7d59507e9d7e34b592a3a3f88f568161fd732c32d4f84559 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setIconView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__iconView) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.loginLabel | 0x10001bed8 | ev_cfa0a575f6e7f9962e17f4270a077489d6dc39036c72c6c97a0812efddaf8ac5 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::loginLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__loginLabel);
+}
+
+
+
+/* NNCZoneViewController.setLoginLabel: | 0x10001bee8 | ev_5752d0eceb32fa240d77d9c2b5dfef6d9edddc08fb583a4dd5489ad2fe5d3f56 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setLoginLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__loginLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.nameLabel | 0x10001befc | ev_a31293a85801906f6c5fa3696c7de9974f8043cdef00798033d2bb732e0de4a3 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::nameLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nameLabel);
+}
+
+
+
+/* NNCZoneViewController.setNameLabel: | 0x10001bf0c | ev_637781f26821a6d327064ffcf0a3a141e747d9f137fb26331deaaabd6553fe98 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setNameLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nameLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.phoneLabel | 0x10001bf20 | ev_56b5eb0f7ab29d35ecf0f6b464176859f9587f9fe2be5c2d3369ab74f113f140 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::phoneLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__phoneLabel);
+}
+
+
+
+/* NNCZoneViewController.setPhoneLabel: | 0x10001bf30 | ev_6133ead6f7d9211f7f62376cd278051fb5b82c7f8e33e0ede8745af53ecca554 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setPhoneLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__phoneLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.topButton | 0x10001bf44 | ev_2aac68b4154f0e94ce8243639c954231e0a13f9160b6316396db032f3bbfb5e5 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::topButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__topButton);
+}
+
+
+
+/* NNCZoneViewController.setTopButton: | 0x10001bf54 | ev_5984490ddefd5cbcb908fe9ea8f838bd1d9949d9ac1c539f273478fd4da1219a */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setTopButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__topButton) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.settingButton | 0x10001bf68 | ev_45ef21590771897386f0d1d23fb1ef5731411a83d66019fd3a03eaedf969283a */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::settingButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__settingButton);
+}
+
+
+
+/* NNCZoneViewController.setSettingButton: | 0x10001bf78 | ev_d06d8b4b69ab4460845048463b2ed45d03c3eda43853d4342441a878c88189e4 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setSettingButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__settingButton) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.historyCollectionView | 0x10001bf8c | ev_f683b17016bb7e1ad9e2fcea0c6f796bce1825d4240a4484234ccf7e2f03e0de */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::historyCollectionView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__historyCollectionView);
+}
+
+
+
+/* NNCZoneViewController.setHistoryCollectionView: | 0x10001bfac | ev_4982ecde14d99280cf1bda78e5f1cc7a985b1bd235eb39c6bf2753a135c482fc */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setHistoryCollectionView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__historyCollectionView) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.historyView | 0x10001bfc0 | ev_20906b5ebd1b1f0527f245815b3fbca87210e638cfdecff1a080084c98c0257c */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::historyView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__historyView);
+}
+
+
+
+/* NNCZoneViewController.setHistoryView: | 0x10001bfe0 | ev_5d9059ef5d5da4deebb334b7e01cf47eacf11987aeb3e854496643f10775f6b8 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setHistoryView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__historyView) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.historyButton | 0x10001bff4 | ev_7b8f8d06bb23cbf131229617b3b6a955dd410aa895466362b13a929af9f017b0 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::historyButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__historyButton);
+}
+
+
+
+/* NNCZoneViewController.setHistoryButton: | 0x10001c014 | ev_4f0fd157c28ef0f0e948bd65d9089b060421b365542695e17d8c3551ce421e43 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setHistoryButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__historyButton) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.historyTitleLabel | 0x10001c028 | ev_a506f935bad2b688e830bf1950aa09a105ebe9f29709d627a87537dde5304f28 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::historyTitleLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__historyTitleLabel);
+}
+
+
+
+/* NNCZoneViewController.setHistoryTitleLabel: | 0x10001c048 | ev_c3914fb5ae03030fe0a285584375249dd6fd0ad1e08dbd9f0ef797979d411b40 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setHistoryTitleLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__historyTitleLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.historySource | 0x10001c05c | ev_29706fe395e655e22dea982c09610ce1854e24097eab12e8da724acfadc88545 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::historySource(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__historySource);
+}
+
+
+
+/* NNCZoneViewController.setHistorySource: | 0x10001c06c | ev_eef9824ae01b01d8ff36b5da87a4a590b50cc24bb50de1eef61c3b8c3df3fcb6 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setHistorySource_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__historySource) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.itemContainerView | 0x10001c080 | ev_73f2171740ff7030895f037586746070efbce15ce4bad456fc1eb0cf62cb4c1a */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::itemContainerView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__itemContainerView);
+}
+
+
+
+/* NNCZoneViewController.setItemContainerView: | 0x10001c0a0 | ev_beaca2061100ec5f58b75847012534f14a70b30e3adcf9db845dc1e5a0a92552 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setItemContainerView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__itemContainerView) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.itemTitleView | 0x10001c0b4 | ev_36044eab0a22ded6cba978e16ed6a30bbe295ec1b46447685707e1216bba1422 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::itemTitleView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__itemTitleView);
+}
+
+
+
+/* NNCZoneViewController.setItemTitleView: | 0x10001c0d4 | ev_b7d716b72a8bbb27465eb41c066445890dd0031fe30aa916b55c0afc6912e34b */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setItemTitleView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__itemTitleView) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.itemFav | 0x10001c0e8 | ev_2502a6b5893903b74ed8fb279db614fc999c23f13cd614ec204fc6787d3d8027 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::itemFav(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__itemFav);
+}
+
+
+
+/* NNCZoneViewController.setItemFav: | 0x10001c108 | ev_9c4ac7df12e62570a28e81320160e78cde1e34d8df4a276295380874d0fe5480 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setItemFav_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__itemFav) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.itemDownload | 0x10001c11c | ev_c8dfa5ec692c11c2983edf3d58a44338324912b44aeda78f14c70f233d0b6ab5 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::itemDownload(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__itemDownload);
+}
+
+
+
+/* NNCZoneViewController.setItemDownload: | 0x10001c13c | ev_5bc3193b48516ec43687d0341c486f7f8672b467cfa50001fab39494af402811 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setItemDownload_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__itemDownload) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.itemShare | 0x10001c150 | ev_c43bb27daa09cc3fed056e72059d7fd5bf1cf5513fd7250766f346d8b948a624 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::itemShare(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__itemShare);
+}
+
+
+
+/* NNCZoneViewController.setItemShare: | 0x10001c170 | ev_eb2fe2b7cde70435ee64ceb874074953724664f8f3b1bd5dff7dd67aeb3c4f99 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setItemShare_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__itemShare) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.itemMsg | 0x10001c184 | ev_3034455cd48511894435ea049cf3c46f0be0027eb7b8e087502437105da2846f */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::itemMsg(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__itemMsg);
+}
+
+
+
+/* NNCZoneViewController.setItemMsg: | 0x10001c1a4 | ev_b38f592a9f348e238882c9ce5c9d67016b7cc3d69dc4da0cbb2dfc702662c154 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setItemMsg_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__itemMsg) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.itemFeed | 0x10001c1b8 | ev_1703e449da46ec374e2b8d24067d08fe5a6fa09d713e9038dbe4d1f00d2b28e3 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::itemFeed(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__itemFeed);
+}
+
+
+
+/* NNCZoneViewController.setItemFeed: | 0x10001c1d8 | ev_f5d8ada41b8eda9fc6fd281dac120614a1e3ccd6752a3ec44a2344a8d602dbfb */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setItemFeed_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__itemFeed) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.itemSetting | 0x10001c1ec | ev_d789ba71b6e9acef75aefc189b2cb06c419108b4de3dfd1fad31e60baef20d01 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::itemSetting(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__itemSetting);
+}
+
+
+
+/* NNCZoneViewController.setItemSetting: | 0x10001c20c | ev_5995c245afae4d160163c5c6a47cb01d3dd2dfcb9c9339908f6233476ccd359a */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setItemSetting_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__itemSetting) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.redView | 0x10001c220 | ev_ec14360c7a6c491ed91b6421e90825dac404b48d81a83550a2302aeeff51a32d */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::redView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__redView);
+}
+
+
+
+/* NNCZoneViewController.setRedView: | 0x10001c230 | ev_069b5b84c5aeae8576d8f06a5a112307a136231df9d91bd4031791e2f05c68a7 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setRedView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__redView) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.nncadView | 0x10001c244 | ev_ebb6cff23fdb2455e81349ba05c3a9891894b12f78f8e9884f990bdd8c6d5bf2 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::nncadView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nncadView);
+}
+
+
+
+/* NNCZoneViewController.setNncadView: | 0x10001c254 | ev_7262b4d71abcd75bf9c40601c2c88ea06a8aef5f47410518984ced2fa2c33fe2 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setNncadView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nncadView) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.adManager | 0x10001c268 | ev_08e937dd7b4606e4bd7d057e40c4317dc64db5657cba9b721c45835044d6d8e8 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCZoneViewController::adManager(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__adManager);
+}
+
+
+
+/* NNCZoneViewController.setAdManager: | 0x10001c278 | ev_51e3bba50bc7598d7698d79e1b0a62e5c8f4af4050d28ebe1e833c4e496adf4f */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setAdManager_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__adManager) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.nnchasAd | 0x10001c28c | ev_193d77a97c2ebc81104e71187d71ee6296faf8994686774eaabafc13662a5329 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCZoneViewController::nnchasAd(ID param_1,SEL param_2)
+
+{
+  return (bool)*(byte *)(param_1 + (long)__nnchasAd);
+}
+
+
+
+/* NNCZoneViewController.setNnchasAd: | 0x10001c29c | ev_bc2f2e499c02635f2f08d0eef19a1ad68da6bc1981412ea432faeb010c6b3d04 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCZoneViewController::setNnchasAd_(ID param_1,SEL param_2,bool param_3)
+
+{
+  *(char *)(param_1 + (long)__nnchasAd) = (char)param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController.setFeedView: | 0x10001c2ac | ev_e33edc670e76f9b992104fbf68514abd6ec6b7f2e3531c46f2e6528c4aeb5a71 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCZoneViewController::setFeedView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__feedView) = param_3;
+  return;
+}
+
+
+
+/* NNCZoneViewController..cxx_destruct | 0x10001c2c0 | ev_bd7b62e93537497e634ef69b82920edab23ffd6985a2d134766b99d6eb1fe24c */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCZoneViewController::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + (long)__feedView) = 0;
+  *(undefined8 *)(param_1 + (long)__adManager) = 0;
+  *(undefined8 *)(param_1 + (long)__nncadView) = 0;
+  *(undefined8 *)(param_1 + (long)__redView) = 0;
+  _objc_destroyWeak(param_1 + (long)__itemSetting);
+  _objc_destroyWeak(param_1 + (long)__itemFeed);
+  _objc_destroyWeak(param_1 + (long)__itemMsg);
+  _objc_destroyWeak(param_1 + (long)__itemShare);
+  _objc_destroyWeak(param_1 + (long)__itemDownload);
+  _objc_destroyWeak(param_1 + (long)__itemFav);
+  _objc_destroyWeak(param_1 + (long)__itemTitleView);
+  _objc_destroyWeak(param_1 + (long)__itemContainerView);
+  *(undefined8 *)(param_1 + (long)__historySource) = 0;
+  _objc_destroyWeak(param_1 + (long)__historyTitleLabel);
+  _objc_destroyWeak(param_1 + (long)__historyButton);
+  _objc_destroyWeak(param_1 + (long)__historyView);
+  _objc_destroyWeak(param_1 + (long)__historyCollectionView);
+  *(undefined8 *)(param_1 + (long)__settingButton) = 0;
+  *(undefined8 *)(param_1 + (long)__topButton) = 0;
+  *(undefined8 *)(param_1 + (long)__phoneLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__nameLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__loginLabel) = 0;
+  *(undefined8 *)(param_1 + (long)__iconView) = 0;
+  return;
+}
+
+

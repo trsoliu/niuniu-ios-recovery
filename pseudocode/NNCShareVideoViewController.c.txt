@@ -1,0 +1,1023 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCShareVideoViewController.viewDidLoad | 0x100005cb0 | ev_f7c908ff0a07b3cb9cbad458ecf596ef5bc20fdd09b1ade995f0a9b0462e7883 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCShareVideoViewController::viewDidLoad(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined1 auVar2 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCShareVideoViewController;
+  local_40 = param_1;
+  _objc_msgSendSuper2(&local_40,"viewDidLoad");
+  uVar1 = FUN_101580708(param_1);
+  auVar2 = FUN_101569e28(uVar1);
+  FUN_1015aeee8(auVar2._0_8_,auVar2._8_8_,param_1);
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.preferredStatusBarStyle | 0x100005d34 | ev_be480085de049b513092cbd1d34bfe2e38368146edf490704f183c145d97bbbe */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long NNCShareVideoViewController::preferredStatusBarStyle(ID param_1,SEL param_2)
+
+{
+  return 1;
+}
+
+
+
+/* NNCShareVideoViewController.viewDidLayoutSubviews | 0x100005d3c | ev_042cf340b863459d98129765a91c9a37c845ba0ec728163b2e942e9f4058cdbf */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCShareVideoViewController::viewDidLayoutSubviews(ID param_1,SEL param_2)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  ID IVar3;
+  ulong uVar4;
+  SEL extraout_x1;
+  SEL pcVar5;
+  SEL extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined8 extraout_x1_02;
+  SEL extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 extraout_x1_06;
+  SEL extraout_x1_07;
+  SEL extraout_x1_08;
+  SEL extraout_x1_09;
+  SEL extraout_x1_10;
+  SEL extraout_x1_11;
+  SEL extraout_x1_12;
+  ID IVar6;
+  long lVar7;
+  long lVar8;
+  double dVar9;
+  double dVar10;
+  undefined1 auVar11 [16];
+  undefined1 auVar12 [16];
+  undefined8 local_1f0;
+  undefined8 uStack_1e8;
+  undefined8 uStack_1e0;
+  undefined8 uStack_1d8;
+  undefined8 local_1d0;
+  undefined8 uStack_1c8;
+  undefined8 local_1c0;
+  undefined8 uStack_1b8;
+  undefined8 uStack_1b0;
+  undefined8 uStack_1a8;
+  undefined8 local_1a0;
+  undefined8 uStack_198;
+  undefined8 local_190;
+  long lStack_188;
+  long *local_180;
+  undefined8 uStack_178;
+  undefined8 local_170;
+  undefined8 uStack_168;
+  undefined8 uStack_160;
+  undefined8 uStack_158;
+  undefined *local_150;
+  undefined8 local_148;
+  code *local_140;
+  undefined *puStack_138;
+  ID local_130;
+  ID local_128;
+  class_t *pcStack_120;
+  undefined1 auStack_118 [128];
+  undefined8 local_98;
+  undefined8 local_90;
+  undefined8 local_88;
+  long local_80;
+  
+  local_80 = *(long *)PTR____stack_chk_guard_101d78938;
+  pcStack_120 = &objc::class_t::NNCShareVideoViewController;
+  local_128 = param_1;
+  _objc_msgSendSuper2(&local_128,"viewDidLayoutSubviews");
+  auVar11 = FUN_101581c88(param_1);
+  uVar4 = auVar11._0_8_;
+  if ((uVar4 & 1) == 0) {
+    FUN_1015c5a08(param_1,auVar11._8_8_,1);
+    uVar1 = FUN_10152d188(param_1);
+    FUN_1015bfa48(0x402e000000000000,uVar1);
+    uVar1 = uRam00000001024978c8;
+    uVar2 = FUN_10152d188(param_1);
+    FUN_1015d84c8(uVar1,uVar2);
+    auVar11 = FUN_101530ac8(param_1);
+    IVar3 = FUN_1015f8c48(param_1,auVar11._8_8_);
+    auVar12 = FUN_1015fac88(IVar3);
+    auVar12 = FUN_1015156a8(&_OBJC_CLASS___NSURL,auVar12._8_8_,auVar12._0_8_);
+    local_150 = PTR___NSConcreteStackBlock_101d78760;
+    local_148 = 0xc2000000;
+    local_140 = FUN_10000682c;
+    puStack_138 = &UNK_101d7b5e0;
+    local_130 = param_1;
+    FUN_10159db28(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_,&local_150);
+    IVar3 = FUN_1015fa0a8(param_1,extraout_x1);
+    dVar9 = (double)FUN_1015fc468(IVar3);
+    uVar1 = FUN_1015ff068(param_1);
+    dVar10 = (double)FUN_1015fc468(uVar1);
+    dVar10 = (dVar9 + dVar10 * -3.0) * 0.25;
+    uVar1 = FUN_1015ff068(param_1);
+    FUN_1015bfa48(dVar10,uVar1);
+    uVar1 = FUN_1015ff068(param_1);
+    dVar9 = (double)FUN_1015fc468(uVar1);
+    uVar1 = FUN_10159c048(param_1);
+    FUN_1015bfa48(dVar10 + dVar10 + dVar9,uVar1);
+    uVar1 = FUN_1015ff068(param_1);
+    dVar9 = (double)FUN_1015fc468(uVar1);
+    uVar1 = FUN_1015756a8(param_1);
+    FUN_1015bfa48(dVar10 + (dVar10 + dVar9) * 2.0,uVar1);
+    local_98 = FUN_1015fefe8(param_1);
+    local_90 = FUN_10159b988(param_1);
+    auVar11 = FUN_101575648(param_1);
+    local_88 = auVar11._0_8_;
+    auVar11 = FUN_10152bbc8(&_OBJC_CLASS___NSArray,auVar11._8_8_,&local_98,3);
+    uVar1 = auVar11._0_8_;
+    uStack_168 = 0;
+    local_170 = 0;
+    uStack_158 = 0;
+    uStack_160 = 0;
+    lStack_188 = 0;
+    local_190 = 0;
+    uStack_178 = 0;
+    local_180 = (long *)0x0;
+    auVar11 = FUN_10153f948(uVar1,auVar11._8_8_,&local_190,auStack_118,0x10);
+    if (auVar11._0_8_ != 0) {
+      lVar7 = *local_180;
+      do {
+        pcVar5 = auVar11._8_8_;
+        lVar8 = 0;
+        do {
+          if (*local_180 != lVar7) {
+            _objc_enumerationMutation(uVar1);
+            pcVar5 = extraout_x1_00;
+          }
+          IVar6 = *(ID *)(lStack_188 + lVar8 * 8);
+          IVar3 = FUN_101574688(IVar6,pcVar5);
+          FUN_1015ac5e8(0x4014000000000000,IVar3);
+          IVar3 = FUN_101574688(IVar6,extraout_x1_01);
+          FUN_1015c25a8(IVar3);
+          auVar12 = FUN_10153c008(0x3f000000,&_OBJC_CLASS___UIColor,extraout_x1_02,0xffffff);
+          FUN_1015a5908(IVar6,auVar12._8_8_,auVar12._0_8_);
+          lVar8 = lVar8 + 1;
+          pcVar5 = extraout_x1_03;
+        } while (auVar11._0_8_ != lVar8);
+        auVar11 = FUN_10153f948(uVar1,extraout_x1_03,&local_190,auStack_118,0x10);
+      } while (auVar11._0_8_ != 0);
+    }
+    uVar1 = FUN_10152d188(param_1);
+    dVar9 = (double)FUN_1015319c8(uVar1);
+    uVar1 = FUN_1015384a8(param_1);
+    FUN_1015d84c8(dVar9 + 20.0,uVar1);
+    uVar1 = FUN_1015ff068(param_1);
+    dVar9 = (double)FUN_1015f0ce8(uVar1);
+    uVar1 = FUN_1015384a8(param_1);
+    dVar10 = (double)FUN_1015f0ce8(uVar1);
+    uVar1 = FUN_1015384a8(param_1);
+    FUN_1015b6f28((dVar9 + -40.0) - dVar10,uVar1);
+    auVar11 = FUN_1015384a8(param_1);
+    IVar3 = FUN_101574688(auVar11._0_8_,auVar11._8_8_);
+    FUN_1015ac5e8(0x4014000000000000,IVar3);
+    auVar11 = FUN_1015384a8(param_1);
+    IVar3 = FUN_101574688(auVar11._0_8_,auVar11._8_8_);
+    FUN_1015c25a8(IVar3);
+    uVar1 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,extraout_x1_04,0xffffff);
+    auVar11 = FUN_101547948(param_1);
+    FUN_1015d6fa8(auVar11._0_8_,auVar11._8_8_,uVar1);
+    uVar1 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+    uVar1 = FUN_1015e0e48(uVar1);
+    auVar11 = FUN_1015e0ec8(uVar1);
+    auVar11 = FUN_101544828(auVar11._0_8_,auVar11._8_8_,4);
+    auVar12 = FUN_101552748(&_OBJC_CLASS___CIFilter,auVar11._8_8_,&cf_CIQRCodeGenerator);
+    uVar1 = auVar12._0_8_;
+    FUN_1015db868(uVar1,auVar12._8_8_,auVar11._0_8_,&cf_inputMessage);
+    FUN_1015db868(uVar1,extraout_x1_05,&cf_M,&cf_inputCorrectionLevel);
+    uVar1 = FUN_101586328(uVar1);
+    _CGAffineTransformMakeScale(&local_1c0,0x4024000000000000,0x4024000000000000);
+    uStack_1e8 = uStack_1b8;
+    local_1f0 = local_1c0;
+    uStack_1d8 = uStack_1a8;
+    uStack_1e0 = uStack_1b0;
+    uStack_1c8 = uStack_198;
+    local_1d0 = local_1a0;
+    auVar11 = FUN_1015605e8(uVar1,extraout_x1_06,&local_1f0);
+    IVar3 = FUN_101560e48(&_OBJC_CLASS___UIImage,auVar11._8_8_,auVar11._0_8_);
+    auVar11 = FUN_10158f408(param_1);
+    FUN_1015b8428(auVar11._0_8_,auVar11._8_8_,IVar3);
+    auVar11 = FUN_1015383a8(param_1);
+    IVar3 = FUN_1015f8c48(param_1,auVar11._8_8_);
+    auVar12 = FUN_1015fac88(IVar3);
+    auVar12 = FUN_1015156a8(&_OBJC_CLASS___NSURL,auVar12._8_8_,auVar12._0_8_);
+    FUN_10159db08(auVar11._0_8_,auVar12._8_8_,auVar12._0_8_);
+    IVar3 = FUN_1015f8c48(param_1,extraout_x1_07);
+    uVar1 = FUN_1015f91e8(IVar3);
+    auVar11 = FUN_10157e548(param_1);
+    FUN_1015d6f08(auVar11._0_8_,auVar11._8_8_,uVar1);
+    IVar3 = FUN_1015f8c48(param_1,extraout_x1_08);
+    uVar1 = FUN_101557888(IVar3);
+    auVar11 = FUN_101546f88(param_1);
+    FUN_1015d6f08(auVar11._0_8_,auVar11._8_8_,uVar1);
+    auVar11 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+    uVar1 = auVar11._0_8_;
+    IVar3 = FUN_1015f8c48(param_1,auVar11._8_8_);
+    auVar11 = FUN_1015ff248(IVar3);
+    pcVar5 = auVar11._8_8_;
+    if (auVar11._0_8_ != 0) {
+      IVar3 = FUN_1015f8c48(param_1,pcVar5);
+      auVar11 = FUN_1015ff248(IVar3);
+      FUN_101526528(uVar1,auVar11._8_8_,auVar11._0_8_);
+      pcVar5 = extraout_x1_09;
+    }
+    IVar3 = FUN_1015f8c48(param_1,pcVar5);
+    auVar11 = FUN_1015567c8(IVar3);
+    pcVar5 = auVar11._8_8_;
+    if (auVar11._0_8_ != 0) {
+      IVar3 = FUN_1015f8c48(param_1,pcVar5);
+      auVar11 = FUN_1015567c8(IVar3);
+      FUN_101526528(uVar1,auVar11._8_8_,auVar11._0_8_);
+      pcVar5 = extraout_x1_10;
+    }
+    IVar3 = FUN_1015f8c48(param_1,pcVar5);
+    auVar11 = FUN_1015f8d28(IVar3);
+    pcVar5 = auVar11._8_8_;
+    if (auVar11._0_8_ != 0) {
+      IVar3 = FUN_1015f8c48(param_1,pcVar5);
+      auVar11 = FUN_1015f8d28(IVar3);
+      auVar11 = FUN_10153d0c8(auVar11._0_8_,auVar11._8_8_,&cf__);
+      FUN_101526548(uVar1,auVar11._8_8_,auVar11._0_8_);
+      pcVar5 = extraout_x1_11;
+    }
+    uVar1 = FUN_10153d068(uVar1,pcVar5,&cf__);
+    auVar11 = FUN_101553648(param_1);
+    FUN_1015d6f08(auVar11._0_8_,auVar11._8_8_,uVar1);
+    IVar3 = FUN_1015f8c48(param_1,extraout_x1_12);
+    auVar11 = FUN_1015230c8(IVar3);
+    auVar11 = FUN_10153d0c8(auVar11._0_8_,auVar11._8_8_,&cf__);
+    uVar1 = FUN_10153d068(auVar11._0_8_,auVar11._8_8_,&cf__);
+    auVar11 = FUN_1015230e8(param_1);
+    FUN_1015d6f08(auVar11._0_8_,auVar11._8_8_,uVar1);
+    uVar4 = 0;
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_80) {
+    return;
+  }
+  FUN_100ab8e90(uVar4);
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.backSelector: | 0x100006a60 | ev_28d0105c51a479029f2a2ebf4fe136c03a695777343e8c5d20dd64999ef5f43c */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::backSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_101580708();
+  FUN_10158c568(auVar1._0_8_,auVar1._8_8_,1);
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.cancelSelector: | 0x100006a9c | ev_fc38ff871f7141ca1fc2a96f8facd609159b1133334204d29a5a8fcb3765d475 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::cancelSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_101580708();
+  FUN_10158c568(auVar1._0_8_,auVar1._8_8_,1);
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.linkSelector: | 0x100006ad8 | ev_a4175bcdb5d10be56d6705314ad011c23f4c4e78955020b97f5e677778a24250 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::linkSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  undefined8 extraout_x1;
+  undefined1 auVar3 [16];
+  
+  uVar1 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+  uVar1 = FUN_1015e0e48(uVar1);
+  uVar1 = FUN_1015e0dc8(uVar1);
+  lVar2 = FUN_1015750a8(uVar1);
+  if (lVar2 != 0) {
+    auVar3 = FUN_101555788(&_OBJC_CLASS___UIPasteboard);
+    FUN_1015d52e8(auVar3._0_8_,auVar3._8_8_,uVar1);
+    FUN_1015e25c8(&objc::class_t::SVProgressHUD,extraout_x1,0,&cfstringStruct_101dddce0);
+  }
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.saveSelector: | 0x100006b90 | ev_2634a044836049fcfe250321add1ce0932253563a9f38677250871edc3ae167f */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::saveSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_1015384a8();
+  auVar1 = FUN_101560888(param_1,auVar1._8_8_,auVar1._0_8_);
+  FUN_10159bb68(param_1,auVar1._8_8_,auVar1._0_8_);
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.wxSelector: | 0x100006bf4 | ev_da07ee07e9cf2a4a657b7a069a58c83b991fb7a0cf040a4a030f4a8db60364d8 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::wxSelector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  undefined8 extraout_x1;
+  undefined1 auVar2 [16];
+  undefined8 local_40;
+  long local_38;
+  
+  local_38 = *(long *)PTR____stack_chk_guard_101d78938;
+  uVar1 = FUN_101542a28(&objc::class_t::NNCAppConfig);
+  uVar1 = FUN_1015e0e48(uVar1);
+  auVar2 = FUN_1015e0dc8(uVar1);
+  local_40 = auVar2._0_8_;
+  uVar1 = FUN_10152bbc8(&_OBJC_CLASS___NSArray,auVar2._8_8_,&local_40,1);
+  auVar2 = _objc_alloc(&_OBJC_CLASS___UIActivityViewController);
+  auVar2 = FUN_101563368(auVar2._0_8_,auVar2._8_8_,uVar1,0);
+  FUN_1015ab5c8(auVar2._0_8_,auVar2._8_8_,&UNK_101d7b630);
+  FUN_10158dbc8(param_1,extraout_x1,auVar2._0_8_,1,0);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_38) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.imageFromView: | 0x100006d48 | ev_9d852d663d1aa9616c8dd1ae5d031663f56a46129baf7b9dc534bd32390eba54 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCShareVideoViewController::imageFromView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  ID IVar2;
+  SEL extraout_x1;
+  undefined8 in_d2;
+  undefined8 in_d3;
+  undefined1 auVar3 [16];
+  
+  FUN_101531d88();
+  uVar1 = FUN_101579368(&_OBJC_CLASS___UIScreen);
+  uVar1 = FUN_10159c0e8(uVar1);
+  _UIGraphicsBeginImageContextWithOptions(in_d2,in_d3,uVar1,0);
+  IVar2 = FUN_101574688(param_3,extraout_x1);
+  auVar3 = _UIGraphicsGetCurrentContext(0);
+  FUN_101595028(IVar2,auVar3._8_8_,auVar3._0_8_);
+  IVar2 = _UIGraphicsGetImageFromCurrentImageContext(0);
+  _UIGraphicsEndImageContext();
+  return IVar2;
+}
+
+
+
+/* NNCShareVideoViewController.saveImageToPhotos: | 0x100006e04 | ev_7bd778d3fdb5be99b9586fcea958806e8bc5196742aa193a6137171d40603b9b */
+
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::saveImageToPhotos_(ID param_1,SEL param_2,ID param_3)
+
+{
+  _UIImageWriteToSavedPhotosAlbum(param_3,param_1,"image:didFinishSavingWithError:contextInfo:",0);
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.image:didFinishSavingWithError:contextInfo: | 0x100006e20 | ev_60c5fdab0cdb3f49bf90dcb0eebac42a93ff4a902490ef3e7cd8c4ab686bcc88 */
+
+/* Function Stack Size: 0x28 bytes */
+
+void NNCShareVideoViewController::image_didFinishSavingWithError_contextInfo_
+               (ID param_1,SEL param_2,ID param_3,ID param_4,void *param_5)
+
+{
+  SEL extraout_x1;
+  cfstringStruct *pcVar1;
+  
+  if (param_4 == 0) {
+    pcVar1 = &cf_X_eQKb_gvQbR;
+    FUN_1015e25c8(&objc::class_t::SVProgressHUD,param_2,0,&cf_X_eQKb_gvQbR);
+    param_2 = extraout_x1;
+  }
+  else {
+    pcVar1 = &cf_X_eQKb_gvQ1Y_;
+  }
+  _NSLog(pcVar1,param_2);
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.videoBean | 0x100006e6c | ev_04168c3f8cae667ba2f112bbf0cb2778bc7cc30957bdc2c76922bfbe845d1d5d */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::videoBean(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__videoBean);
+}
+
+
+
+/* NNCShareVideoViewController.setVideoBean: | 0x100006e7c | ev_c0279fee6fe0314981feae1ee3995b1bd425f88b95287fd599b56132ed298420 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setVideoBean_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__videoBean) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.backButton | 0x100006e90 | ev_fd57911697f63d91c82bb4285bdc9ebd4267d905ea195df12565dd0ceb079ea1 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::backButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__backButton);
+}
+
+
+
+/* NNCShareVideoViewController.setBackButton: | 0x100006eb0 | ev_74ab55780eab853775998ab3fdf5f6dcb76b61f4619747c43a79e5a95af3da30 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setBackButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__backButton) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.bgView | 0x100006ec4 | ev_dee513ca6016d99d28de0049340a70ef0375411eab7fad358b35587b5d058f07 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::bgView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__bgView);
+}
+
+
+
+/* NNCShareVideoViewController.setBgView: | 0x100006ee4 | ev_5ce135c8ae8f626a58892cdbff45d4555867421ae68831f16675e627d14867fb */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setBgView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__bgView) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.wxView | 0x100006ef8 | ev_c8e46973ee6e580c45eb01c7f58ab77dcc8429f79e8fd4b5574c09ee0b442fde */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::wxView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__wxView);
+}
+
+
+
+/* NNCShareVideoViewController.setWxView: | 0x100006f18 | ev_3e1eb2d33ae1d672ef7bb518a93d533c414b209b27718aac47debff71b7465c9 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setWxView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__wxView) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.wxButton | 0x100006f2c | ev_ac0281e9a6fbbd9ba34ef09d0fd1571678afe83173e7314f48197af336715a24 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::wxButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__wxButton);
+}
+
+
+
+/* NNCShareVideoViewController.setWxButton: | 0x100006f4c | ev_92c667dfeb3e8c9b3d2ea4c8c9e0613dcd935a1a3813aba767cec12318b840ba */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setWxButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__wxButton) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.saveView | 0x100006f60 | ev_7b18d35062d6890888664992df7240b46db9e3dc40de20c3c71a18b8c52b4605 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::saveView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__saveView);
+}
+
+
+
+/* NNCShareVideoViewController.setSaveView: | 0x100006f80 | ev_b62e6be5353b2fccb1b916cd53325c128334f817ca71c34f879f3593e2f730bc */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setSaveView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__saveView) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.saveButton | 0x100006f94 | ev_b90211f06c3bd0f92d7993ea31ee404223179dd0e8d402ed1192e6e9f1ac99a5 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::saveButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__saveButton);
+}
+
+
+
+/* NNCShareVideoViewController.setSaveButton: | 0x100006fb4 | ev_1f2b344fcd6cd5f1e049b85fb191981ff846214faf11fb9322adc7fcf5eadc14 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setSaveButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__saveButton) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.linkView | 0x100006fc8 | ev_cc6c2d7bda76d8087442894523a96ca0fed98a99e408076939c6b203d2f0d186 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::linkView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__linkView);
+}
+
+
+
+/* NNCShareVideoViewController.setLinkView: | 0x100006fe8 | ev_13455aa94f17d85464c9edc064e0ba736d3e5103180884ac372c02da2ccffa41 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setLinkView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__linkView) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.linkButton | 0x100006ffc | ev_1c5fe52f86e5b6ae4ebde5d447d191b9551fb826918d3392607f48df2b090c7c */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::linkButton(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__linkButton);
+}
+
+
+
+/* NNCShareVideoViewController.setLinkButton: | 0x10000701c | ev_58aa5689257f9fca044f6ae81c523931ec591732940ce1576d4000003aa74218 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setLinkButton_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__linkButton) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.centerIv | 0x100007030 | ev_3bc880b7913cf90b0f0bc6a3b1804d0bf6bddb70965d1ef9bb3dbbabae92a180 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::centerIv(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__centerIv);
+}
+
+
+
+/* NNCShareVideoViewController.setCenterIv: | 0x100007050 | ev_8621b5a645dfef95ba3549361cf2c6a65eefd0d959fee2cc1211ecd58c5d814d */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setCenterIv_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__centerIv) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.detailView | 0x100007064 | ev_447ab814ac217c60f509bc2b2e9c42790a7acb44c580d056ef4a107d2904b239 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::detailView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__detailView);
+}
+
+
+
+/* NNCShareVideoViewController.setDetailView: | 0x100007084 | ev_e1aef44fde923b263819b8431bf204b59dffce4014d8c58427bc909a632de19c */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setDetailView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__detailView) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.qrView | 0x100007098 | ev_e695e4e41422538bbd3d8e85475044eac85d662d086b7593ef96c11cda7b065c */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::qrView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__qrView);
+}
+
+
+
+/* NNCShareVideoViewController.setQrView: | 0x1000070b8 | ev_3f50a6ebbeb0ee141f4e43054e6f9ac0b24013239772d67bd3bb348f6aa31b9a */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setQrView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__qrView) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.nameLabel | 0x1000070cc | ev_43b5a12451864bcd7fd1b0c60397592ed1247279df7ac823b5955c6511814c5c */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::nameLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nameLabel);
+}
+
+
+
+/* NNCShareVideoViewController.setNameLabel: | 0x1000070ec | ev_81eeaf6e469a2dc4a93512055b36e5cbe3c9c2c45e099ad1958f255c899ce6a8 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setNameLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nameLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.flagLabel | 0x100007100 | ev_353f15aff8069d08f418b79b3187eaa44fb8542a7f581ade438d6a8402da2bbc */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::flagLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__flagLabel);
+}
+
+
+
+/* NNCShareVideoViewController.setFlagLabel: | 0x100007120 | ev_5607309dcc26711a72bad031b41058dcd60990bc1e750635d8f82f09e59300cd */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setFlagLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__flagLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.actorLabel | 0x100007134 | ev_377eaaa7818c8da89dbeb219384983f44eb1846c3345ef440d1a3567bafb8c5b */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::actorLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__actorLabel);
+}
+
+
+
+/* NNCShareVideoViewController.setActorLabel: | 0x100007154 | ev_fec143fc1a42afb950c579e47cd97c1f9da3baa8a45f42381724fc2d121e5d69 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setActorLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__actorLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.descLabel | 0x100007168 | ev_59cce604d6abd294ced226e51ebdad3a7c11e9ede281ca43133022af9553c923 */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::descLabel(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__descLabel);
+}
+
+
+
+/* NNCShareVideoViewController.setDescLabel: | 0x100007188 | ev_810f8885943032bfcec97e7fcdad5c0bfa4e700bb8a8182fcde05d9fc8e33e68 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setDescLabel_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__descLabel) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController.centerView | 0x10000719c | ev_c6fa65bfb009c1a7e1e5ac21dbe237582d6d1b4b7a204f461f4f777572dcb29b */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCShareVideoViewController::centerView(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__centerView);
+}
+
+
+
+/* NNCShareVideoViewController.setCenterView: | 0x1000071bc | ev_3cbe77cfd2ab1d2eb2bc08c1696fccfe9196779e61d0443dd8f0c45abad61abd */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCShareVideoViewController::setCenterView_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__centerView) = param_3;
+  return;
+}
+
+
+
+/* NNCShareVideoViewController..cxx_destruct | 0x1000071d0 | ev_8d5ed0434b64c7ba8f73a37d9d98a4b9e3ea7576a9dd0c22345bfb12541b6a46 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCShareVideoViewController::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + (long)__centerView);
+  _objc_destroyWeak(param_1 + (long)__descLabel);
+  _objc_destroyWeak(param_1 + (long)__actorLabel);
+  _objc_destroyWeak(param_1 + (long)__flagLabel);
+  _objc_destroyWeak(param_1 + (long)__nameLabel);
+  _objc_destroyWeak(param_1 + (long)__qrView);
+  _objc_destroyWeak(param_1 + (long)__detailView);
+  _objc_destroyWeak(param_1 + (long)__centerIv);
+  _objc_destroyWeak(param_1 + (long)__linkButton);
+  _objc_destroyWeak(param_1 + (long)__linkView);
+  _objc_destroyWeak(param_1 + (long)__saveButton);
+  _objc_destroyWeak(param_1 + (long)__saveView);
+  _objc_destroyWeak(param_1 + (long)__wxButton);
+  _objc_destroyWeak(param_1 + (long)__wxView);
+  _objc_destroyWeak(param_1 + (long)__bgView);
+  _objc_destroyWeak(param_1 + (long)__backButton);
+  *(undefined8 *)(param_1 + (long)__videoBean) = 0;
+  return;
+}
+
+

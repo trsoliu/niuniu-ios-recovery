@@ -1,0 +1,87 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCFontButton.setSelected: | 0x1000c2a24 | ev_8fb56591483c7a6684f5cab53af47f720d127ce891fdacfda1444dc5ffdd6271 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCFontButton::setSelected_(ID param_1,SEL param_2,bool param_3)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCFontButton;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"setSelected:");
+  iVar1 = __normalSize;
+  if (param_3 != 0) {
+    iVar1 = __selectedSize;
+  }
+  uVar2 = FUN_1015ed768((double)*(int *)(param_1 + (long)iVar1),&_OBJC_CLASS___UIFont);
+  auVar3 = FUN_1015f0328(param_1);
+  FUN_1015b4788(auVar3._0_8_,auVar3._8_8_,uVar2);
+  return;
+}
+
+
+
+/* NNCFontButton.normalSize | 0x1000c2acc | ev_7eb2232e62090bb92d9071559c1b879d52628f4773e85b860563aac956627241 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+int NNCFontButton::normalSize(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + (long)__normalSize);
+}
+
+
+
+/* NNCFontButton.setNormalSize: | 0x1000c2adc | ev_15862cfeac02a245aeabbe6820f98b04aa7984b0662840b24fbac20d52bdfbf8 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCFontButton::setNormalSize_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + (long)__normalSize) = param_3;
+  return;
+}
+
+
+
+/* NNCFontButton.selectedSize | 0x1000c2aec | ev_b95ed6522c156affaae230348204c5025f6f44b39c583c28011d31c7afd476f8 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+int NNCFontButton::selectedSize(ID param_1,SEL param_2)
+
+{
+  return *(int *)(param_1 + (long)__selectedSize);
+}
+
+
+
+/* NNCFontButton.setSelectedSize: | 0x1000c2afc | ev_23ae4b14cf9e04d0bbf7d787c4348705a5d0f3f047e63e52b9592421b8191870 */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCFontButton::setSelectedSize_(ID param_1,SEL param_2,int param_3)
+
+{
+  *(int *)(param_1 + (long)__selectedSize) = param_3;
+  return;
+}
+
+

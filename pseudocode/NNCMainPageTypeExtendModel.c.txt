@@ -1,0 +1,729 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCMainPageTypeExtendModel.modelWithDict: | 0x100039200 | ev_aae443dc43bda5ba07ff6e918a5e02aaa9f908310b17d77986ca6c73afc3997a */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCMainPageTypeExtendModel::modelWithDict_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined1 auVar2 [16];
+  
+  auVar2 = FUN_1015813c8(&objc::class_t::NNCMainPageTypeExtendModel);
+  IVar1 = auVar2._0_8_;
+  auVar2 = FUN_1015ebae8(param_3,auVar2._8_8_,&cf_class);
+  FUN_1015aa088(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1,&cf_area);
+  FUN_1015a4728(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1_00,&cf_lang);
+  FUN_1015bed48(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1_01,&cf_year);
+  FUN_1015dea28(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1_02,&cf_star);
+  FUN_1015d4308(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1_03,&cf_director);
+  FUN_1015aff28(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1_04,&cf_state);
+  FUN_1015d49c8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  auVar2 = FUN_1015ebae8(param_3,extraout_x1_05,&cf_version);
+  FUN_1015dbcc8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  return IVar1;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.isAdultOnly | 0x1000393cc | ev_464563546df5f02d9d1f3dd1f01a160b01c8226643db4a9087e3020332a09d40 */
+
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCMainPageTypeExtendModel::isAdultOnly(ID param_1,SEL param_2)
+
+{
+  bool bVar1;
+  
+  bVar1 = FUN_10156d5e8(&cf_adult,param_2,*(undefined8 *)(param_1 + 0x40));
+  return bVar1;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.getRankOrder | 0x1000393dc | ev_755ba8e181672f83ccde15ab2ccdc53fe86508e7fe438ded817edaf2a7c65ae5 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+int NNCMainPageTypeExtendModel::getRankOrder(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  int iVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x1;
+  undefined1 auVar4 [16];
+  
+  iVar1 = FUN_101571448();
+  if (iVar1 == 0) {
+    iVar2 = 999;
+  }
+  else {
+    auVar4 = FUN_10153d0c8(*(undefined8 *)(param_1 + 0x30),extraout_x1,&cf__);
+    uVar3 = FUN_101583328(auVar4._0_8_,auVar4._8_8_,2);
+    iVar2 = FUN_1015698a8(uVar3);
+  }
+  return iVar2;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.getRankName | 0x10003945c | ev_d48d899624baf4dc9bc09c87901d05eeb039e1ecaa657169c9e8a5176abc73e7 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMainPageTypeExtendModel::getRankName(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  cfstringStruct *pcVar2;
+  undefined8 extraout_x1;
+  undefined1 auVar3 [16];
+  
+  iVar1 = FUN_101571448();
+  if (iVar1 == 0) {
+    pcVar2 = &::cf___;
+  }
+  else {
+    auVar3 = FUN_10153d0c8(*(undefined8 *)(param_1 + 0x30),extraout_x1,&cf__);
+    pcVar2 = (cfstringStruct *)FUN_101583328(auVar3._0_8_,auVar3._8_8_,1);
+  }
+  return (ID)pcVar2;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.getRankParams | 0x1000394c8 | ev_af937f59bed080f51444dd5fb2bebb9968be632c30d41506e31f3305924fcb0b */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMainPageTypeExtendModel::getRankParams(ID param_1,SEL param_2)
+
+{
+  int iVar1;
+  cfstringStruct *pcVar2;
+  undefined8 extraout_x1;
+  undefined1 auVar3 [16];
+  
+  iVar1 = FUN_101571448();
+  if (iVar1 == 0) {
+    pcVar2 = &::cf___;
+  }
+  else {
+    auVar3 = FUN_10153d0c8(*(undefined8 *)(param_1 + 0x30),extraout_x1,&cf__);
+    pcVar2 = (cfstringStruct *)FUN_101583328(auVar3._0_8_,auVar3._8_8_,0);
+  }
+  return (ID)pcVar2;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.isSupportRank | 0x100039534 | ev_cbbe124b8baeb25d38d5abfb950ee991a7ddf0f0de5c8334e52449736151378d */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCMainPageTypeExtendModel::isSupportRank(ID param_1,SEL param_2)
+
+{
+  bool bVar1;
+  undefined8 uVar2;
+  undefined1 auVar3 [16];
+  
+  auVar3 = FUN_1015750a8(*(undefined8 *)(param_1 + 0x30));
+  if (auVar3._0_8_ == 0) {
+    bVar1 = 0;
+  }
+  else {
+    uVar2 = FUN_10153d0c8(*(undefined8 *)(param_1 + 0x30),auVar3._8_8_,&cf__);
+    auVar3 = FUN_10153f908();
+    if (auVar3._0_8_ == 3) {
+      auVar3 = FUN_101583328(uVar2,auVar3._8_8_,2);
+      bVar1 = FUN_10156f568(&objc::class_t::PublicFunction,auVar3._8_8_,auVar3._0_8_);
+    }
+    else {
+      bVar1 = 0;
+    }
+  }
+  return bVar1;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.getClazzList | 0x1000395e0 | ev_f6405a86eb2844b97114474bbe9b2d74f7ef1cad25fbf96be7f61290fa1d2ff2 */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMainPageTypeExtendModel::getClazzList(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  long lVar3;
+  undefined8 extraout_x1;
+  undefined8 uVar4;
+  long lVar5;
+  long lVar6;
+  undefined1 auVar7 [16];
+  undefined8 local_120;
+  long lStack_118;
+  long *local_110;
+  undefined8 uStack_108;
+  undefined8 local_100;
+  undefined8 uStack_f8;
+  undefined8 uStack_f0;
+  undefined8 uStack_e8;
+  undefined1 auStack_d8 [128];
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  IVar1 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+  auVar7 = _objc_alloc(&objc::class_t::Pair);
+  auVar7 = FUN_101564d28(auVar7._0_8_,auVar7._8_8_,&cf___W,&::cf___);
+  FUN_101526528(IVar1,auVar7._8_8_,auVar7._0_8_);
+  auVar7 = FUN_1015750a8(*(undefined8 *)(param_1 + 8));
+  if (auVar7._0_8_ != 0) {
+    auVar7 = FUN_10153d0c8(*(undefined8 *)(param_1 + 8),auVar7._8_8_,&cf__);
+    uVar2 = auVar7._0_8_;
+    lStack_118 = 0;
+    local_120 = 0;
+    uStack_108 = 0;
+    local_110 = (long *)0x0;
+    uStack_f8 = 0;
+    local_100 = 0;
+    uStack_e8 = 0;
+    uStack_f0 = 0;
+    lVar3 = FUN_10153f948(uVar2,auVar7._8_8_,&local_120,auStack_d8,0x10);
+    if (lVar3 != 0) {
+      lVar5 = *local_110;
+      do {
+        lVar6 = 0;
+        do {
+          if (*local_110 != lVar5) {
+            _objc_enumerationMutation(uVar2);
+          }
+          uVar4 = *(undefined8 *)(lStack_118 + lVar6 * 8);
+          auVar7 = _objc_alloc(&objc::class_t::Pair);
+          auVar7 = FUN_101564d28(auVar7._0_8_,auVar7._8_8_,uVar4,uVar4);
+          FUN_101526528(IVar1,auVar7._8_8_,auVar7._0_8_);
+          lVar6 = lVar6 + 1;
+        } while (lVar3 != lVar6);
+        lVar3 = FUN_10153f948(uVar2,extraout_x1,&local_120,auStack_d8,0x10);
+      } while (lVar3 != 0);
+    }
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_58) {
+    IVar1 = FUN_100ab8e90(0);
+    return IVar1;
+  }
+  return IVar1;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.getAreaList | 0x10003976c | ev_b36e45948eae30ee7cc33997e019ecda2cf29cc60c326c69aaa886f7f5f0d71b */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMainPageTypeExtendModel::getAreaList(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  long lVar3;
+  undefined8 extraout_x1;
+  undefined8 uVar4;
+  long lVar5;
+  long lVar6;
+  undefined1 auVar7 [16];
+  undefined8 local_120;
+  long lStack_118;
+  long *local_110;
+  undefined8 uStack_108;
+  undefined8 local_100;
+  undefined8 uStack_f8;
+  undefined8 uStack_f0;
+  undefined8 uStack_e8;
+  undefined1 auStack_d8 [128];
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  IVar1 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+  auVar7 = _objc_alloc(&objc::class_t::Pair);
+  auVar7 = FUN_101564d28(auVar7._0_8_,auVar7._8_8_,&cf_0W_S,&::cf___);
+  FUN_101526528(IVar1,auVar7._8_8_,auVar7._0_8_);
+  auVar7 = FUN_1015750a8(*(undefined8 *)(param_1 + 0x10));
+  if (auVar7._0_8_ != 0) {
+    auVar7 = FUN_10153d0c8(*(undefined8 *)(param_1 + 0x10),auVar7._8_8_,&cf__);
+    uVar2 = auVar7._0_8_;
+    lStack_118 = 0;
+    local_120 = 0;
+    uStack_108 = 0;
+    local_110 = (long *)0x0;
+    uStack_f8 = 0;
+    local_100 = 0;
+    uStack_e8 = 0;
+    uStack_f0 = 0;
+    lVar3 = FUN_10153f948(uVar2,auVar7._8_8_,&local_120,auStack_d8,0x10);
+    if (lVar3 != 0) {
+      lVar5 = *local_110;
+      do {
+        lVar6 = 0;
+        do {
+          if (*local_110 != lVar5) {
+            _objc_enumerationMutation(uVar2);
+          }
+          uVar4 = *(undefined8 *)(lStack_118 + lVar6 * 8);
+          auVar7 = _objc_alloc(&objc::class_t::Pair);
+          auVar7 = FUN_101564d28(auVar7._0_8_,auVar7._8_8_,uVar4,uVar4);
+          FUN_101526528(IVar1,auVar7._8_8_,auVar7._0_8_);
+          lVar6 = lVar6 + 1;
+        } while (lVar3 != lVar6);
+        lVar3 = FUN_10153f948(uVar2,extraout_x1,&local_120,auStack_d8,0x10);
+      } while (lVar3 != 0);
+    }
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_58) {
+    IVar1 = FUN_100ab8e90(0);
+    return IVar1;
+  }
+  return IVar1;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.getYearList | 0x1000398f8 | ev_9cbd8368ada8071a9771669aa64ffcc2587ef36d499927cbac481ca66f5f5c03 */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMainPageTypeExtendModel::getYearList(ID param_1,SEL param_2)
+
+{
+  ID IVar1;
+  undefined8 uVar2;
+  long lVar3;
+  undefined8 extraout_x1;
+  undefined8 uVar4;
+  long lVar5;
+  long lVar6;
+  undefined1 auVar7 [16];
+  undefined8 local_120;
+  long lStack_118;
+  long *local_110;
+  undefined8 uStack_108;
+  undefined8 local_100;
+  undefined8 uStack_f8;
+  undefined8 uStack_f0;
+  undefined8 uStack_e8;
+  undefined1 auStack_d8 [128];
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  IVar1 = FUN_10157e1c8(*(undefined8 *)PTR____NSArray0___101d78908);
+  auVar7 = _objc_alloc(&objc::class_t::Pair);
+  auVar7 = FUN_101564d28(auVar7._0_8_,auVar7._8_8_,&cf_t_N,&::cf___);
+  FUN_101526528(IVar1,auVar7._8_8_,auVar7._0_8_);
+  auVar7 = FUN_1015750a8(*(undefined8 *)(param_1 + 0x20));
+  if (auVar7._0_8_ != 0) {
+    auVar7 = FUN_10153d0c8(*(undefined8 *)(param_1 + 0x20),auVar7._8_8_,&cf__);
+    uVar2 = auVar7._0_8_;
+    lStack_118 = 0;
+    local_120 = 0;
+    uStack_108 = 0;
+    local_110 = (long *)0x0;
+    uStack_f8 = 0;
+    local_100 = 0;
+    uStack_e8 = 0;
+    uStack_f0 = 0;
+    lVar3 = FUN_10153f948(uVar2,auVar7._8_8_,&local_120,auStack_d8,0x10);
+    if (lVar3 != 0) {
+      lVar5 = *local_110;
+      do {
+        lVar6 = 0;
+        do {
+          if (*local_110 != lVar5) {
+            _objc_enumerationMutation(uVar2);
+          }
+          uVar4 = *(undefined8 *)(lStack_118 + lVar6 * 8);
+          auVar7 = _objc_alloc(&objc::class_t::Pair);
+          auVar7 = FUN_101564d28(auVar7._0_8_,auVar7._8_8_,uVar4,uVar4);
+          FUN_101526528(IVar1,auVar7._8_8_,auVar7._0_8_);
+          lVar6 = lVar6 + 1;
+        } while (lVar3 != lVar6);
+        lVar3 = FUN_10153f948(uVar2,extraout_x1,&local_120,auStack_d8,0x10);
+      } while (lVar3 != 0);
+    }
+  }
+  if (*(long *)PTR____stack_chk_guard_101d78938 != local_58) {
+    IVar1 = FUN_100ab8e90(0);
+    return IVar1;
+  }
+  return IVar1;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.initWithCoder: | 0x100039a84 | ev_fe4445dabe0f5d39f833de9e785f86478e663ad00b0e88b01a47ad2238354fe9 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+ID NNCMainPageTypeExtendModel::initWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  ID IVar1;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined1 auVar2 [16];
+  ID local_40;
+  class_t *pcStack_38;
+  
+  pcStack_38 = &objc::class_t::NNCMainPageTypeExtendModel;
+  local_40 = param_1;
+  auVar2 = _objc_msgSendSuper2(&local_40,"init");
+  IVar1 = auVar2._0_8_;
+  if (IVar1 != 0) {
+    auVar2 = FUN_101545868(param_3,auVar2._8_8_,&cf_clazz);
+    FUN_1015aa088(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1,&cf_area);
+    FUN_1015a4728(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1_00,&cf_lang);
+    FUN_1015bed48(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1_01,&cf_year);
+    FUN_1015dea28(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1_02,&cf_star);
+    FUN_1015d4308(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1_03,&cf_director);
+    FUN_1015aff28(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1_04,&cf_state);
+    FUN_1015d49c8(IVar1,auVar2._8_8_,auVar2._0_8_);
+    auVar2 = FUN_101545868(param_3,extraout_x1_05,&cf_version);
+    FUN_1015dbcc8(IVar1,auVar2._8_8_,auVar2._0_8_);
+  }
+  return IVar1;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.encodeWithCoder: | 0x100039c6c | ev_98ad42e73239d9f510230f3ae7cc6a4ea708daba7b5d0019cd5ff3584db4d203 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMainPageTypeExtendModel::encodeWithCoder_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_101539da8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_clazz);
+  auVar1 = FUN_10152b8c8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_area);
+  auVar1 = FUN_101573c48(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_lang);
+  auVar1 = FUN_1015ff248(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_year);
+  auVar1 = FUN_1015e8448(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_star);
+  auVar1 = FUN_101549068(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_director);
+  auVar1 = FUN_1015ea028(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_state);
+  auVar1 = FUN_1015f86a8(param_1);
+  FUN_10154d7e8(param_3,auVar1._8_8_,auVar1._0_8_,&cf_version);
+  return;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.clazz | 0x100039e20 | ev_50e32627a66f1b70110d6d0378899d171d34c0a4094d580f25a097c7bbb98739 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMainPageTypeExtendModel::clazz(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+
+
+/* NNCMainPageTypeExtendModel.setClazz: | 0x100039e28 | ev_43c8e68cd41406b096c49333c501e266d57b362e2b9db125a999af799cd06bfe */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMainPageTypeExtendModel::setClazz_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  return;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.area | 0x100039e30 | ev_ff1b8294660e8afed0b6b4aac343f4994828124f673db51a74a2015eea4370c4 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMainPageTypeExtendModel::area(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+
+
+/* NNCMainPageTypeExtendModel.setArea: | 0x100039e38 | ev_ceae23504efa92fbcad3f4263faed40925be346eb6a77d9351a253969ed19e07 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMainPageTypeExtendModel::setArea_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  return;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.lang | 0x100039e40 | ev_9426b3a935f4a626c364968954664d6c5614af72a9f5e07efea8b1a77274b1a1 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMainPageTypeExtendModel::lang(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x18);
+}
+
+
+
+/* NNCMainPageTypeExtendModel.setLang: | 0x100039e48 | ev_4e02fac3040b6eb1f09ac7c77abbdf0b61bccb968d36fba4f64bb1bfa0e356d6 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMainPageTypeExtendModel::setLang_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x18) = param_3;
+  return;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.year | 0x100039e50 | ev_f7140b7f389301a1091ff0f6f499fc72f5fa1fa2cedb5da8e0cfc3faa583e116 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMainPageTypeExtendModel::year(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x20);
+}
+
+
+
+/* NNCMainPageTypeExtendModel.setYear: | 0x100039e58 | ev_bbc59379565cd0549b0e2b6ebe73cb198ed8349b38e0780470e82f36a32e8d67 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMainPageTypeExtendModel::setYear_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x20) = param_3;
+  return;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.star | 0x100039e60 | ev_7d1e4b303cac2a178056e9dd7b71d8ad6b6a0ff798d3ed4698a8c0c4fc5ccf66 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMainPageTypeExtendModel::star(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x28);
+}
+
+
+
+/* NNCMainPageTypeExtendModel.setStar: | 0x100039e68 | ev_3e1a9fe272f652c90aab7c9c54c656334af2dbb71bb167c895fac54b9ea80728 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMainPageTypeExtendModel::setStar_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x28) = param_3;
+  return;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.director | 0x100039e70 | ev_a0f2fc6af06c74fe096eb8511f34269d5a9001738b6d99eced6376cbdc376354 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMainPageTypeExtendModel::director(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x30);
+}
+
+
+
+/* NNCMainPageTypeExtendModel.setDirector: | 0x100039e78 | ev_68a4286c17cc35847f1790f21f7768fec98465bdeda083dfe1d71898bf3cc8c5 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMainPageTypeExtendModel::setDirector_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x30) = param_3;
+  return;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.state | 0x100039e80 | ev_9fa41155af2c46f8a366bcadeb34099cac1d5d28b5cea52e1555594a0287ae0a */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMainPageTypeExtendModel::state(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x38);
+}
+
+
+
+/* NNCMainPageTypeExtendModel.setState: | 0x100039e88 | ev_e692daeef4249e2a4112040280dd43645edb0a20e3276a4c8367c39e9bb3d4c4 */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMainPageTypeExtendModel::setState_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x38) = param_3;
+  return;
+}
+
+
+
+/* NNCMainPageTypeExtendModel.version | 0x100039e90 | ev_ca216df3d58c2a153e939562bab9a1993e2e969851ac38ff86db4032daa63df6 */
+
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCMainPageTypeExtendModel::version(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x40);
+}
+
+
+
+/* NNCMainPageTypeExtendModel.setVersion: | 0x100039e98 | ev_76a161078add07cf484c1ec9a00fd4664b5672bb0f1a6d2d897d9dcdffc3470b */
+
+/* WARNING: Function: _objc_setProperty_nonatomic_copy replaced with injection:
+   _objc_setProperty_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCMainPageTypeExtendModel::setVersion_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x40) = param_3;
+  return;
+}
+
+
+
+/* NNCMainPageTypeExtendModel..cxx_destruct | 0x100039ea0 | ev_55a2c61d36aa4b8761399a2b2229cbd2b0da6c33a237dc3293fa860f634ec7d4 */
+
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCMainPageTypeExtendModel::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x40) = 0;
+  *(undefined8 *)(param_1 + 0x38) = 0;
+  *(undefined8 *)(param_1 + 0x30) = 0;
+  *(undefined8 *)(param_1 + 0x28) = 0;
+  *(undefined8 *)(param_1 + 0x20) = 0;
+  *(undefined8 *)(param_1 + 0x18) = 0;
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  *(undefined8 *)(param_1 + 8) = 0;
+  return;
+}
+
+

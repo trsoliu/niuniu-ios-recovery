@@ -1,0 +1,263 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCRequestDo.getCurrentDomain | 0x1000c499c | ev_01b2f7ba49cd667b07dce2e76f022ae60179392fa1ecf21096e99c83884b7839 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retainAutoreleaseReturnValue replaced with injection: _objc_retain_fixup
+    */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCRequestDo::getCurrentDomain(ID param_1,SEL param_2)
+
+{
+  cfstringStruct *pcVar1;
+  long lVar2;
+  cfstringStruct *pcVar3;
+  undefined1 auVar4 [16];
+  
+  lVar2 = FUN_1015750a8(pcRam000000010243f1c8);
+  if (lVar2 == 0) {
+    auVar4 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+    pcVar3 = (cfstringStruct *)FUN_101583468(auVar4._0_8_,auVar4._8_8_,&cf_nnc_dm);
+    pcVar1 = pcRam000000010243f1c8;
+    pcRam000000010243f1c8 = pcVar3;
+    auVar4 = FUN_1015750a8(pcVar1,pcVar3);
+    if (auVar4._0_8_ == 0) {
+      pcRam000000010243f1c8 = &cf_https___xin_tudouge_com_9931;
+    }
+    auVar4 = FUN_10155ddc8(pcRam000000010243f1c8,auVar4._8_8_,&cf__);
+    if ((auVar4._0_8_ & 1) == 0) {
+      pcRam000000010243f1c8 =
+           (cfstringStruct *)FUN_1015ebcc8(&_OBJC_CLASS___NSString,auVar4._8_8_,&cf____);
+    }
+  }
+  return (ID)pcRam000000010243f1c8;
+}
+
+
+
+/* NNCRequestDo.isGetDomainSuccess | 0x1000c4a7c | ev_93da370e8ed06434a86e572eb070937e5c1e78f957c08c0f1be839b86252b3f9 */
+
+/* Function Stack Size: 0x10 bytes */
+
+bool NNCRequestDo::isGetDomainSuccess(ID param_1,SEL param_2)
+
+{
+  return (bool)bRam000000010243f1d0;
+}
+
+
+
+/* NNCRequestDo.initDomain:isFirstRequest: | 0x1000c4a88 | ev_839043dceab011b4e2e9c056aac2820c20b09dd2c61a9ace2e27325e08ea285f */
+
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRequestDo::initDomain_isFirstRequest_(ID param_1,SEL param_2,bool param_3,bool param_4)
+
+{
+  undefined8 uVar1;
+  undefined8 in_x6;
+  undefined8 in_x7;
+  cfstringStruct *pcVar2;
+  cfstringStruct *pcVar3;
+  undefined1 auVar4 [16];
+  cfstringStruct *pcVar5;
+  undefined *local_98;
+  undefined8 local_90;
+  code *local_88;
+  undefined *puStack_80;
+  ID local_78;
+  undefined1 local_70;
+  undefined1 local_6f;
+  undefined *local_68;
+  undefined8 local_60;
+  code *local_58;
+  undefined *puStack_50;
+  ID local_48;
+  
+  auVar4._8_8_ = param_2;
+  auVar4._0_8_ = lRam000000010243f1b8;
+  if (lRam000000010243f1b8 == 0) {
+    auVar4 = _objc_alloc(&objc::class_t::NNCBIZRequest);
+    auVar4 = FUN_101567b08(0x4008000000000000,auVar4._0_8_,auVar4._8_8_,&cf___bull___video__,0);
+  }
+  lRam000000010243f1b8 = auVar4._0_8_;
+  uVar1 = *(undefined8 *)PTR____NSDictionary0___101d78910;
+  if (param_3 == 0) {
+    pcVar5 = &cf__nn_php;
+    pcVar2 = &cf__beijing_myqcloud_com;
+    pcVar3 = &cf_nn_1305799997_cos_ap;
+  }
+  else {
+    pcVar5 = &cf_nn_php;
+    pcVar2 = &cf__aliyuncs_com_;
+    pcVar3 = &cf_nnal_oss_cn_beijing;
+  }
+  auVar4 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,auVar4._8_8_,&cf_https_________);
+  local_68 = PTR___NSConcreteStackBlock_101d78760;
+  local_60 = 0xc0000000;
+  local_58 = FUN_1000c4c00;
+  puStack_50 = &UNK_101d7dc10;
+  local_98 = PTR___NSConcreteStackBlock_101d78760;
+  local_90 = 0xc0000000;
+  local_88 = FUN_1000c4c54;
+  puStack_80 = &UNK_101d7dc50;
+  local_70 = (undefined1)param_4;
+  local_6f = (undefined1)param_3;
+  local_78 = param_1;
+  local_48 = param_1;
+  FUN_101596fa8(lRam000000010243f1b8,auVar4._8_8_,auVar4._0_8_,uVar1,&local_68,&local_98,in_x6,in_x7
+                ,pcVar3,pcVar2,pcVar5);
+  return;
+}
+
+
+
+/* NNCRequestDo.judgeDomains: | 0x1000c4d1c | ev_fbbcec1f22dd07f894c11d59415a1b309928795c282d2dcbece443dadfdb0b0a */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRequestDo::judgeDomains_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_10153d0c8(param_3,param_2,&cf_newline_s_);
+  FUN_101572fc8(param_1,auVar1._8_8_,auVar1._0_8_,0);
+  return;
+}
+
+
+
+/* NNCRequestDo.judgeSingleDomain:index: | 0x1000c4d6c | ev_f10a86aaf3db52dcbf27fad16573d12abc1675449c6975f6e6cbec1584edda37 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* Function Stack Size: 0x20 bytes */
+
+void NNCRequestDo::judgeSingleDomain_index_(ID param_1,SEL param_2,ID param_3,long_long param_4)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined8 extraout_x1;
+  undefined8 in_x6;
+  undefined8 in_x7;
+  long lVar3;
+  undefined1 auVar4 [16];
+  undefined1 auVar5 [16];
+  undefined8 uVar6;
+  cfstringStruct *pcVar7;
+  undefined *local_c8;
+  undefined8 local_c0;
+  code *local_b8;
+  undefined *puStack_b0;
+  ID local_a8;
+  ID local_a0;
+  long_long local_98;
+  undefined *local_90;
+  undefined8 local_88;
+  code *local_80;
+  undefined *puStack_78;
+  undefined8 local_70;
+  ID local_68;
+  
+  auVar4 = FUN_10153f908();
+  if (param_4 < auVar4._0_8_) {
+    auVar4 = FUN_101583328(param_3,auVar4._8_8_,param_4);
+    uVar2 = auVar4._0_8_;
+    auVar5 = FUN_10158fcc8(uVar2,auVar4._8_8_,&cf_http);
+    auVar4._8_8_ = auVar5._8_8_;
+    auVar4._0_8_ = lRam000000010243f1c0;
+    if (auVar5._0_8_ == 0) {
+      lVar3 = lRam000000010243f1c0;
+      if (lRam000000010243f1c0 == 0) {
+        auVar4 = _objc_alloc(&objc::class_t::NNCBIZRequest);
+        auVar4 = FUN_101567b08(0x4008000000000000,auVar4._0_8_,auVar4._8_8_,0,1);
+        lVar3 = lRam000000010243f1c0;
+      }
+      lRam000000010243f1c0 = auVar4._0_8_;
+      iVar1 = FUN_10155ddc8(lVar3,uVar2,auVar4._8_8_,&cf__);
+      lVar3 = lRam000000010243f1c0;
+      pcVar7 = &::cf___;
+      if (iVar1 == 0) {
+        pcVar7 = &cf__;
+      }
+      uVar6 = uVar2;
+      auVar4 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf_____tik);
+      local_90 = PTR___NSConcreteStackBlock_101d78760;
+      local_88 = 0xc2000000;
+      local_80 = FUN_1000c4f4c;
+      puStack_78 = &UNK_101d7dc70;
+      local_c8 = PTR___NSConcreteStackBlock_101d78760;
+      local_c0 = 0xc2000000;
+      local_b8 = FUN_1000c4f58;
+      puStack_b0 = &UNK_101d7dca0;
+      local_a8 = param_3;
+      local_a0 = param_1;
+      local_98 = param_4;
+      local_70 = uVar2;
+      local_68 = param_1;
+      FUN_101596fa8(lVar3,auVar4._8_8_,auVar4._0_8_,*(undefined8 *)PTR____NSDictionary0___101d78910,
+                    &local_90,&local_c8,in_x6,in_x7,uVar6,pcVar7);
+    }
+    else {
+      FUN_101572fc8(param_1,auVar5._8_8_,param_3,param_4 + 1);
+    }
+  }
+  return;
+}
+
+
+
+/* NNCRequestDo.domainSuccess: | 0x1000c4f6c | ev_c196bba7c809005b1857fdd4bd9931021a6e94c4bb89ca985fc1444fc56a13c3 */
+
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCRequestDo::domainSuccess_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined8 uVar1;
+  long lVar2;
+  ulong uVar3;
+  ID IVar4;
+  undefined1 auVar5 [16];
+  
+  auVar5 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+  uVar1 = FUN_101583468(auVar5._0_8_,auVar5._8_8_,&cf_nnc_dm);
+  lVar2 = FUN_1015750a8(uVar1);
+  if ((lVar2 == 0) || (IVar4 = param_3, uVar3 = FUN_10156d5e8(uVar1), (uVar3 & 1) == 0)) {
+    auVar5 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+    FUN_1015c6468(auVar5._0_8_,auVar5._8_8_,param_3,&cf_nnc_dm);
+    uVar1 = FUN_1015e83c8(&_OBJC_CLASS___NSUserDefaults);
+    FUN_1015ed5e8(uVar1);
+    uRam000000010243f1c8 = 0;
+    IVar4 = param_3;
+  }
+  uRam000000010243f1d0 = 1;
+  auVar5 = FUN_1015e0f48(&_OBJC_CLASS___UIApplication);
+  IVar4 = FUN_101546808(auVar5._0_8_,auVar5._8_8_,IVar4);
+  FUN_101581d48(IVar4);
+  return;
+}
+
+

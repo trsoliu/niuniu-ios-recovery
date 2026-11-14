@@ -1,0 +1,324 @@
+/* REA/Ghidra recovered pseudocode. Not original source; not a build target. */
+
+/* NNCSetNickViewController.backButtonAction | 0x1000f3f38 | ev_1fe5ebab4201b8f43d9a1c2bf04268ff3292e415410c5ad569c997efada72518 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCSetNickViewController::backButtonAction(ID param_1,SEL param_2)
+
+{
+  undefined8 extraout_x1;
+  undefined1 auVar1 [16];
+  
+  auVar1 = FUN_101580708();
+  FUN_10158c568(auVar1._0_8_,auVar1._8_8_,1);
+  FUN_101549e68(param_1,extraout_x1,1,&UNK_101d7e290);
+  return;
+}
+
+
+
+/* NNCSetNickViewController.viewDidLoad | 0x1000f3f90 | ev_19af6096fcd32a859aa88d0dbcd043c09ee6146d1dde13c7483cb208f6fe35e1 */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCSetNickViewController::viewDidLoad(ID param_1,SEL param_2)
+
+{
+  undefined8 *puVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  SEL extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  undefined8 extraout_x1_04;
+  undefined8 extraout_x1_05;
+  undefined8 uVar5;
+  undefined1 auVar6 [16];
+  undefined1 auVar7 [16];
+  ID local_b8;
+  class_t *pcStack_b0;
+  undefined8 local_a8;
+  undefined8 local_a0;
+  undefined8 uStack_98;
+  undefined8 local_90;
+  undefined8 local_88;
+  undefined8 local_80;
+  undefined8 uStack_78;
+  undefined8 local_70;
+  long local_68;
+  
+  local_68 = *(long *)PTR____stack_chk_guard_101d78938;
+  pcStack_b0 = &objc::class_t::NNCSetNickViewController;
+  local_b8 = param_1;
+  _objc_msgSendSuper2(&local_b8,"viewDidLoad");
+  FUN_1015d7e08(param_1,extraout_x1,&cfstringStruct_101dea600);
+  FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_00,&cf_myTextColor);
+  IVar2 = FUN_1015fa0a8(param_1,extraout_x1_01);
+  FUN_1015a5908(IVar2);
+  uVar3 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_02,&cf_myBgColor);
+  auVar6 = FUN_1015818c8(param_1);
+  FUN_1015d6fa8(auVar6._0_8_,auVar6._8_8_,uVar3);
+  uVar3 = FUN_10153bf08(&_OBJC_CLASS___UIColor,extraout_x1_03,&cf_TextBgViewColo);
+  auVar6 = FUN_101560548(param_1);
+  FUN_1015a5908(auVar6._0_8_,auVar6._8_8_,uVar3);
+  uVar3 = FUN_101560a48(&_OBJC_CLASS___UIImage,extraout_x1_04,&cf_fanhuiImae);
+  auVar6 = _objc_alloc(&_OBJC_CLASS___UIBarButtonItem);
+  uVar3 = FUN_1015656a8(auVar6._0_8_,auVar6._8_8_,uVar3,0,param_1,"backButtonAction");
+  auVar6 = FUN_101580748(param_1);
+  FUN_1015bfaa8(auVar6._0_8_,auVar6._8_8_,uVar3);
+  uVar3 = _objc_alloc(&_OBJC_CLASS___NSAttributedString);
+  uVar4 = FUN_1015818c8(param_1);
+  auVar6 = FUN_10158a308(uVar4);
+  uVar4 = *(undefined8 *)PTR__NSForegroundColorAttributeName_101d78300;
+  local_88 = uVar4;
+  uStack_78 = FUN_10153bfe8(&_OBJC_CLASS___UIColor,auVar6._8_8_,0xffffff);
+  uVar5 = *(undefined8 *)PTR__NSFontAttributeName_101d782f8;
+  puVar1 = (undefined8 *)(param_1 + (long)__nickField);
+  local_80 = uVar5;
+  auVar7 = FUN_101553a08(*puVar1);
+  local_70 = auVar7._0_8_;
+  auVar7 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar7._8_8_,&uStack_78,&local_88,2);
+  auVar6 = FUN_101567728(uVar3,auVar7._8_8_,auVar6._0_8_,auVar7._0_8_);
+  FUN_1015a4e88(*puVar1,auVar6._8_8_,auVar6._0_8_);
+  FUN_1015a70e8(*puVar1,extraout_x1_05,0x20000,&UNK_101d7e2b0);
+  auVar6 = _objc_alloc(&_OBJC_CLASS___UIBarButtonItem);
+  auVar6 = FUN_101567b68(auVar6._0_8_,auVar6._8_8_,&cf_nx_,2,param_1,"nncsure");
+  local_a8 = uVar4;
+  uStack_98 = FUN_10153bf08(&_OBJC_CLASS___UIColor,auVar6._8_8_,&cf_myBgColor);
+  local_a0 = uVar5;
+  auVar7 = FUN_1015ed768(0x4030000000000000,&_OBJC_CLASS___UIFont);
+  local_90 = auVar7._0_8_;
+  auVar7 = FUN_101548208(&_OBJC_CLASS___NSDictionary,auVar7._8_8_,&uStack_98,&local_a8,2);
+  FUN_1015d8028(auVar6._0_8_,auVar7._8_8_,auVar7._0_8_,0);
+  auVar7 = FUN_101580748(param_1);
+  FUN_1015ce2e8(auVar7._0_8_,auVar7._8_8_,auVar6._0_8_);
+  if (*(long *)PTR____stack_chk_guard_101d78938 == local_68) {
+    return;
+  }
+  FUN_100ab8e90(0);
+  return;
+}
+
+
+
+/* NNCSetNickViewController.viewWillDisappear: | 0x1000f43e4 | ev_bfa1a869f449df5911867d2e4435a9c46b9672a9f29af14e6953c16517af0e0c */
+
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* Function Stack Size: 0x14 bytes */
+
+void NNCSetNickViewController::viewWillDisappear_(ID param_1,SEL param_2,bool param_3)
+
+{
+  ID IVar1;
+  SEL extraout_x1;
+  ID local_30;
+  class_t *pcStack_28;
+  
+  pcStack_28 = &objc::class_t::NNCSetNickViewController;
+  local_30 = param_1;
+  _objc_msgSendSuper2(&local_30,"viewWillDisappear:",param_3);
+  IVar1 = FUN_1015fa0a8(param_1,extraout_x1);
+  FUN_10154dd68(IVar1);
+  return;
+}
+
+
+
+/* NNCSetNickViewController.nncsure | 0x1000f4448 | ev_6479944891a55e5735d5cf6c7792a2efd8231f950cbfe6391a7c8bc5f93622ed */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_unsafeClaimAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCSetNickViewController::nncsure(ID param_1,SEL param_2)
+
+{
+  undefined *puVar1;
+  ID IVar2;
+  undefined8 uVar3;
+  undefined8 extraout_x0;
+  class_t *pcVar4;
+  _Unwind_Exception *exception_object;
+  undefined8 extraout_x1;
+  SEL extraout_x1_00;
+  undefined8 extraout_x1_01;
+  long lVar5;
+  undefined1 *puVar6;
+  undefined1 auVar7 [16];
+  undefined *local_c0;
+  undefined8 local_b8;
+  code *local_b0;
+  undefined *puStack_a8;
+  undefined1 auStack_a0 [8];
+  undefined *local_98;
+  undefined8 local_90;
+  code *local_88;
+  undefined *puStack_80;
+  undefined1 auStack_78 [8];
+  undefined1 auStack_70 [8];
+  cfstringStruct *local_68;
+  ID local_60;
+  long local_58;
+  
+  local_58 = *(long *)PTR____stack_chk_guard_101d78938;
+  lVar5 = (long)__nickField;
+  IVar2 = FUN_1015eee68(*(ID *)(param_1 + lVar5),param_2);
+  auVar7 = FUN_1015750a8(IVar2);
+  if (auVar7._0_8_ == 0) {
+    pcVar4 = &objc::class_t::SVProgressHUD;
+    puVar6 = (undefined1 *)0x0;
+    if (*(long *)PTR____stack_chk_guard_101d78938 == local_58) {
+      FUN_1015e2328(&objc::class_t::SVProgressHUD,auVar7._8_8_,&cf_5fyN_Nzz);
+      return;
+    }
+  }
+  else {
+    IVar2 = FUN_1015fa0a8(param_1,auVar7._8_8_);
+    FUN_10154dd68(IVar2);
+    FUN_1015e2a68(0xbf800000,&objc::class_t::SVProgressHUD);
+    FUN_101557508(&objc::class_t::NNCRequestDo);
+    auVar7 = FUN_1015ebcc8(&_OBJC_CLASS___NSString,extraout_x1,&cf___user__);
+    local_68 = &cf_user_nick_name;
+    local_60 = FUN_1015eee68(*(ID *)(param_1 + lVar5),auVar7._8_8_);
+    uVar3 = FUN_101548208(&_OBJC_CLASS___NSDictionary);
+    _objc_initWeak(auStack_70,param_1);
+    FUN_101596288((ID)&objc::class_t::NNCBIZRequest,extraout_x1_00);
+    puVar1 = PTR___NSConcreteStackBlock_101d78760;
+    local_98 = PTR___NSConcreteStackBlock_101d78760;
+    local_90 = 0xc2000000;
+    local_88 = FUN_1000f472c;
+    puStack_80 = &UNK_101d7b990;
+    param_1 = (ID)auStack_78;
+    _objc_copyWeak(param_1,auStack_70);
+    local_c0 = puVar1;
+    local_b8 = 0xc2000000;
+    local_b0 = FUN_1000f4808;
+    puStack_a8 = &UNK_101d7b9c0;
+    puVar6 = auStack_a0;
+    _objc_copyWeak(puVar6,auStack_70);
+    FUN_101597048(extraout_x0,extraout_x1_01,auVar7._0_8_,uVar3,&local_98,&local_c0);
+    _objc_destroyWeak(puVar6);
+    _objc_destroyWeak(param_1);
+    _objc_destroyWeak(auStack_70);
+    pcVar4 = (class_t *)0x0;
+    if (*(long *)PTR____stack_chk_guard_101d78938 == local_58) {
+      return;
+    }
+  }
+  exception_object = (_Unwind_Exception *)FUN_100ab8e90(pcVar4);
+  _objc_destroyWeak(puVar6);
+  _objc_destroyWeak(param_1);
+  _objc_destroyWeak(auStack_70);
+                    /* WARNING: Subroutine does not return */
+  __Unwind_Resume(exception_object);
+}
+
+
+
+/* NNCSetNickViewController.preferredStatusBarStyle | 0x1000f48e8 | ev_0738248fa1a1190ea9d866d3b9cbe56ab54857c71f5715ede7117ef859cedb65 */
+
+/* Function Stack Size: 0x10 bytes */
+
+long_long NNCSetNickViewController::preferredStatusBarStyle(ID param_1,SEL param_2)
+
+{
+  return 1;
+}
+
+
+
+/* NNCSetNickViewController.nickField | 0x1000f48f0 | ev_bffb5fa6d2a1c6c37dafe4b2e1e07c49ba034e1fd054782a32be1745d9a6d2bf */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCSetNickViewController::nickField(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__nickField);
+}
+
+
+
+/* NNCSetNickViewController.setNickField: | 0x1000f4910 | ev_445d76d77ee9257699fae8b9f87043115f360df65d42ef670aaaaa52ddd25b37 */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCSetNickViewController::setNickField_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__nickField) = param_3;
+  return;
+}
+
+
+
+/* NNCSetNickViewController.imageBg | 0x1000f4924 | ev_7bbcb021956e7d0870331d4c4572a089a8ac683069911757cc415506ab599c6e */
+
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+ID NNCSetNickViewController::imageBg(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + (long)__imageBg);
+}
+
+
+
+/* NNCSetNickViewController.setImageBg: | 0x1000f4944 | ev_59397497a6f8577b73ddbbb087f7f9efb672565e2d39d829d2e36501fefd330e */
+
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x18 bytes */
+
+void NNCSetNickViewController::setImageBg_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + (long)__imageBg) = param_3;
+  return;
+}
+
+
+
+/* NNCSetNickViewController..cxx_destruct | 0x1000f4958 | ev_5bbf65014cf54e8152025afcf11091d7a2e8950bc29efc1958c80722b574bdce */
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Function Stack Size: 0x10 bytes */
+
+void NNCSetNickViewController::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  _objc_destroyWeak(param_1 + (long)__imageBg);
+  _objc_destroyWeak(param_1 + (long)__nickField);
+  return;
+}
+
+
